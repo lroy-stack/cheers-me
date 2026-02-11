@@ -19,11 +19,17 @@ export const viewport: Viewport = {
 
 export default function KioskLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div
-      className="min-h-screen bg-background select-none"
-      style={{ touchAction: 'manipulation' }}
-    >
-      {children}
-    </div>
+    <>
+      {/* Preconnect to Cloudflare Turnstile for faster widget loading */}
+      <link rel="preconnect" href="https://challenges.cloudflare.com" />
+      <link rel="dns-prefetch" href="https://challenges.cloudflare.com" />
+
+      <div
+        className="min-h-screen bg-background select-none"
+        style={{ touchAction: 'manipulation' }}
+      >
+        {children}
+      </div>
+    </>
   )
 }

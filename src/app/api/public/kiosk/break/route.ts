@@ -1,6 +1,7 @@
 import { createAdminClient } from '@/lib/supabase/server'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
+import { requireKioskSession, validateEmployeeMatch } from '@/lib/kiosk/auth-middleware'
 
 const schema = z.object({
   employee_id: z.string().uuid(),
@@ -9,6 +10,12 @@ const schema = z.object({
 })
 
 export async function POST(request: NextRequest) {
+  // Verify session token
+  const authResult = await requireKioskSession(request)
+  if (!authResult.success) {
+    return authResult.response
+  }
+
   let body
   try {
     body = await request.json()
@@ -25,6 +32,12 @@ export async function POST(request: NextRequest) {
   }
 
   const { employee_id, clock_record_id, action } = validation.data
+
+  // Verify employee_id matches session token
+  const mismatchError = await validateEmployeeMatch(authResult.employeeId, employee_id, request)
+  if (mismatchError) {
+    return mismatchError
+  }
   const supabase = createAdminClient()
 
   // Verify clock record belongs to employee and is open

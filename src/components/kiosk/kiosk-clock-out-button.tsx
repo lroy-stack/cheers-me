@@ -23,9 +23,13 @@ export function KioskClockOutButton({
   async function handleClockOut() {
     setLoading(true)
     try {
+      const sessionToken = localStorage.getItem('kiosk_session_token')
       const res = await fetch('/api/public/kiosk/clock-out', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${sessionToken}`,
+        },
         body: JSON.stringify({
           employee_id: employeeId,
           clock_record_id: clockRecordId,

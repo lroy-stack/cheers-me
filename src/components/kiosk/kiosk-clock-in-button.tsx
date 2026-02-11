@@ -60,9 +60,13 @@ export function KioskClockInButton({ employeeId, onClockIn }: KioskClockInButton
   async function handleClockIn() {
     setLoading(true)
     try {
+      const sessionToken = localStorage.getItem('kiosk_session_token')
       const res = await fetch('/api/public/kiosk/clock-in', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${sessionToken}`,
+        },
         body: JSON.stringify({ employee_id: employeeId }),
       })
 

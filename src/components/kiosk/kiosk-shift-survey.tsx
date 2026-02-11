@@ -123,9 +123,13 @@ export function KioskShiftSurvey({
     setStep('submitting')
 
     try {
+      const sessionToken = localStorage.getItem('kiosk_session_token')
       const response = await fetch('/api/public/kiosk/survey', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${sessionToken}`,
+        },
         body: JSON.stringify({
           employee_id: employeeId,
           clock_record_id: clockRecordId,

@@ -44,9 +44,23 @@ export function KioskDashboard({
   useEffect(() => {
     const fetchHours = async () => {
       try {
+        const sessionToken = localStorage.getItem('kiosk_session_token')
         const response = await fetch(
-          `/api/public/kiosk/accumulated-hours?employee_id=${employeeStatus.employee_id}`
+          `/api/public/kiosk/accumulated-hours?employee_id=${employeeStatus.employee_id}`,
+          {
+            headers: {
+              'Authorization': `Bearer ${sessionToken}`,
+            },
+          }
         )
+
+        // Handle session expiration
+        if (response.status === 401) {
+          localStorage.removeItem('kiosk_session_token')
+          onBack()
+          return
+        }
+
         if (response.ok) {
           const data = await response.json()
           setWeekHours(data.weekHours)
@@ -57,7 +71,7 @@ export function KioskDashboard({
       }
     }
     fetchHours()
-  }, [employeeStatus.employee_id])
+  }, [employeeStatus.employee_id, onBack])
 
   // Auto-lock timer
   const resetLockTimer = useCallback(() => {
