@@ -129,11 +129,21 @@ export default function BookingWizard() {
   const prev = useCallback(() => { lockHeight(); dispatch({ type: 'PREV_STEP' }) }, [lockHeight])
   const goTo = useCallback((index: number) => { lockHeight(); dispatch({ type: 'GO_TO_STEP', index }) }, [lockHeight])
 
+  // Track initial mount to prevent auto-scroll on page load
+  const isInitialMount = useRef(true)
+
   // After step renders, release locked height and keep wizard in viewport
   useLayoutEffect(() => {
     if (containerRef.current) {
       containerRef.current.style.minHeight = ''
     }
+
+    // Skip scroll on initial mount
+    if (isInitialMount.current) {
+      isInitialMount.current = false
+      return
+    }
+
     if (wrapperRef.current) {
       const rect = wrapperRef.current.getBoundingClientRect()
       if (rect.top < 0 || rect.top > window.innerHeight * 0.4) {
