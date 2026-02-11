@@ -42,10 +42,20 @@ export function KioskTurnstileWidget({ onSuccess, onError, onExpire }: KioskTurn
   // Cloudflare Turnstile site key from environment
   const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
 
+  // Log configuration on mount
+  useEffect(() => {
+    console.log('[Turnstile] Widget mounted', {
+      siteKey: siteKey ? `${siteKey.substring(0, 10)}...` : 'undefined',
+      locale,
+      theme: resolvedTheme
+    })
+  }, [])
+
   useEffect(() => {
     // Set timeout for widget load (30 seconds)
     timeoutRef.current = setTimeout(() => {
       if (state === 'LOADING' || state === 'READY') {
+        console.error('[Turnstile] Widget timeout after 30s - check domain configuration', { state, siteKey })
         setState('TIMEOUT')
         onError(t('securityCheckTimeout'))
       }
@@ -59,6 +69,7 @@ export function KioskTurnstileWidget({ onSuccess, onError, onExpire }: KioskTurn
   }, [state, onError, t])
 
   const handleSuccess = (token: string) => {
+    console.log('[Turnstile] Success! Token received')
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current)
     }
@@ -67,6 +78,7 @@ export function KioskTurnstileWidget({ onSuccess, onError, onExpire }: KioskTurn
   }
 
   const handleErrorCallback = () => {
+    console.error('[Turnstile] Widget error callback triggered')
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current)
     }
@@ -99,11 +111,15 @@ export function KioskTurnstileWidget({ onSuccess, onError, onExpire }: KioskTurn
   }
 
   if (!siteKey) {
+    console.error('[Turnstile] NEXT_PUBLIC_TURNSTILE_SITE_KEY is not configured')
     return (
       <div className="flex flex-col items-center space-y-4 p-6 bg-destructive/10 rounded-lg border border-destructive">
         <AlertCircle className="h-12 w-12 text-destructive" />
         <p className="text-sm text-destructive text-center">
-          Turnstile configuration error. Please contact support.
+          Turnstile configuration error. NEXT_PUBLIC_TURNSTILE_SITE_KEY is missing.
+        </p>
+        <p className="text-xs text-muted-foreground text-center">
+          Check Vercel environment variables
         </p>
       </div>
     )
@@ -169,6 +185,7 @@ export function KioskTurnstileWidget({ onSuccess, onError, onExpire }: KioskTurn
             retry: 'auto',
           }}
           onLoad={() => {
+            console.log('[Turnstile] Widget loaded successfully')
             setState('READY')
           }}
         />
