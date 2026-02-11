@@ -26,30 +26,30 @@ export default function StepPartySize({ partySize, onPartySizeChange, onNext }: 
   }
 
   return (
-    <div className="space-y-8">
-      <div className="text-center">
-        <h2 className="text-2xl font-bold text-foreground">
+    <div className="space-y-6 sm:space-y-8">
+      <div className="text-center px-2">
+        <h2 className="text-xl sm:text-2xl font-bold text-foreground">
           {t('partySize.heading')}
         </h2>
-        <p className="text-muted-foreground mt-2">
+        <p className="text-sm sm:text-base text-muted-foreground mt-2">
           {t('partySize.subheading')}
         </p>
       </div>
 
       {/* Counter */}
-      <div className="flex items-center justify-center gap-6">
+      <div className="flex items-center justify-center gap-4 sm:gap-6">
         <motion.button
           type="button"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => handleChange(-1)}
           disabled={partySize <= 1}
-          className="w-14 h-14 rounded-full border-2 border-border flex items-center justify-center text-muted-foreground hover:border-cheers-amber hover:text-cheers-amber disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-border flex items-center justify-center text-muted-foreground hover:border-cheers-amber hover:text-cheers-amber disabled:opacity-30 disabled:cursor-not-allowed transition-colors touch-manipulation"
         >
-          <Minus className="w-6 h-6" />
+          <Minus className="w-5 h-5 sm:w-6 sm:h-6" />
         </motion.button>
 
-        <div className="w-24 text-center">
+        <div className="w-20 sm:w-24 text-center">
           <AnimatePresence mode="wait">
             <motion.span
               key={partySize}
@@ -57,13 +57,13 @@ export default function StepPartySize({ partySize, onPartySizeChange, onNext }: 
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.15 }}
-              className="block text-6xl font-bold text-cheers-amber"
+              className="block text-5xl sm:text-6xl font-bold text-cheers-amber"
             >
               {partySize}
             </motion.span>
           </AnimatePresence>
-          <span className="text-sm text-muted-foreground mt-1 flex items-center justify-center gap-1">
-            <Users className="w-4 h-4" />
+          <span className="text-xs sm:text-sm text-muted-foreground mt-1 flex items-center justify-center gap-1">
+            <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             {partySize === 1 ? t('partySize.guest') : t('partySize.guests')}
           </span>
         </div>
@@ -74,14 +74,14 @@ export default function StepPartySize({ partySize, onPartySizeChange, onNext }: 
           whileTap={{ scale: 0.9 }}
           onClick={() => handleChange(1)}
           disabled={partySize >= 20}
-          className="w-14 h-14 rounded-full border-2 border-border flex items-center justify-center text-muted-foreground hover:border-cheers-amber hover:text-cheers-amber disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-border flex items-center justify-center text-muted-foreground hover:border-cheers-amber hover:text-cheers-amber disabled:opacity-30 disabled:cursor-not-allowed transition-colors touch-manipulation"
         >
-          <Plus className="w-6 h-6" />
+          <Plus className="w-5 h-5 sm:w-6 sm:h-6" />
         </motion.button>
       </div>
 
       {/* Presets */}
-      <div className="flex flex-wrap justify-center gap-2">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-2.5 px-2">
         {PRESETS.map(({ label, value }) => (
           <motion.button
             key={value}
@@ -89,7 +89,7 @@ export default function StepPartySize({ partySize, onPartySizeChange, onNext }: 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => onPartySizeChange(value)}
-            className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors ${
+            className={`px-3 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium border transition-colors touch-manipulation ${
               partySize === value
                 ? 'bg-cheers-amber border-cheers-amber text-white'
                 : 'bg-card border-border text-muted-foreground hover:border-cheers-coral'
@@ -124,13 +124,13 @@ export default function StepPartySize({ partySize, onPartySizeChange, onNext }: 
       </AnimatePresence>
 
       {/* Next button */}
-      <div className="text-center">
+      <div className="text-center pt-2">
         <motion.button
           type="button"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           onClick={onNext}
-          className="px-8 py-3 rounded-xl bg-cheers-amber text-white font-semibold shadow-lg hover:shadow-xl transition-shadow"
+          className="px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl bg-cheers-amber text-white font-semibold shadow-lg hover:shadow-xl transition-shadow touch-manipulation min-w-[200px]"
         >
           {t('partySize.continue')}
         </motion.button>

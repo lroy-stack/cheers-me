@@ -23,17 +23,17 @@ export function PolaroidPhoto({ image, captionKey, rotation = 0, className = '' 
       whileHover={{ scale: 1.05, rotate: 0, zIndex: 10 }}
       className={`inline-block ${className}`}
     >
-      <div className="bg-white p-2.5 pb-12 rounded-sm shadow-[4px_6px_20px_rgba(0,0,0,0.25)] relative">
-        <div className="relative w-[200px] h-[200px] sm:w-[220px] sm:h-[220px] overflow-hidden">
+      <div className="bg-white p-2 sm:p-2.5 pb-10 sm:pb-12 rounded-sm shadow-[4px_6px_20px_rgba(0,0,0,0.25)] relative">
+        <div className="relative w-[140px] h-[140px] sm:w-[180px] sm:h-[180px] md:w-[220px] md:h-[220px] overflow-hidden">
           <Image
             src={image}
             alt={t(`experience.${captionKey}`)}
             fill
             className="object-cover"
-            sizes="220px"
+            sizes="(max-width: 640px) 140px, (max-width: 768px) 180px, 220px"
           />
         </div>
-        <p className="absolute bottom-2.5 left-0 right-0 text-center text-sm font-medium text-gray-700 font-[cursive]">
+        <p className="absolute bottom-2 sm:bottom-2.5 left-0 right-0 text-center text-xs sm:text-sm font-medium text-gray-700 font-[cursive]">
           {t(`experience.${captionKey}`)}
         </p>
       </div>
@@ -48,7 +48,7 @@ export function PolaroidPair({
   items: { image: string; captionKey: string; rotation: number }[]
 }) {
   return (
-    <div className="py-6 sm:py-10 flex justify-center items-center gap-4 sm:gap-8 overflow-visible">
+    <div className="py-4 sm:py-6 md:py-10 flex justify-center items-center gap-2 sm:gap-4 md:gap-8 overflow-visible px-4">
       {items.map((item) => (
         <PolaroidPhoto
           key={item.captionKey}

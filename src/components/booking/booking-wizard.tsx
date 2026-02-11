@@ -336,11 +336,11 @@ export default function BookingWizard() {
   }
 
   return (
-    <div ref={wrapperRef} className="py-8 px-4 sm:px-6 scroll-mt-4">
-      <div className="max-w-3xl mx-auto">
+    <div ref={wrapperRef} className="py-6 sm:py-8 px-4 sm:px-6 scroll-mt-4">
+      <div className="max-w-2xl lg:max-w-3xl mx-auto">
         <ProgressBar currentIndex={stepIndex} onStepClick={goTo} />
 
-        <div ref={containerRef} className="relative">
+        <div ref={containerRef} className="relative mt-6 sm:mt-8">
           <AnimatePresence mode="wait" custom={direction}>
             <motion.div
               key={currentStep}
@@ -357,7 +357,9 @@ export default function BookingWizard() {
         </div>
       </div>
 
-      <BookingAIAssistant onApplySuggestion={handleApplySuggestion} />
+      <div className="mt-8 sm:mt-12">
+        <BookingAIAssistant onApplySuggestion={handleApplySuggestion} />
+      </div>
     </div>
   )
 }
