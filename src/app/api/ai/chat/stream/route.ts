@@ -226,6 +226,12 @@ export async function POST(request: NextRequest) {
   const encoder = new TextEncoder()
   const stream = new ReadableStream({
     async start(controller) {
+      console.log('[SSE] Stream opened', {
+        conversationId: finalConvId,
+        model: selectedModel,
+        userId: user.id
+      })
+
       try {
         controller.enqueue(encoder.encode(
           sseEncode('message_start', {
@@ -620,7 +626,12 @@ export async function POST(request: NextRequest) {
 
         controller.close()
       } catch (error) {
-        console.error('Stream error:', error)
+        console.error('[SSE] Stream error', {
+          error: error instanceof Error ? error.message : 'Unknown',
+          stack: error instanceof Error ? error.stack : undefined,
+          conversationId: finalConvId,
+          userId: user.id
+        })
         try {
           controller.enqueue(encoder.encode(
             sseEncode('error', {
@@ -638,8 +649,10 @@ export async function POST(request: NextRequest) {
   return new Response(stream, {
     headers: {
       'Content-Type': 'text/event-stream; charset=utf-8',
-      'Cache-Control': 'no-cache',
+      'Cache-Control': 'no-cache, no-transform',
       'Connection': 'keep-alive',
+      'X-Accel-Buffering': 'no',
+      'Transfer-Encoding': 'chunked',
     },
   })
 }

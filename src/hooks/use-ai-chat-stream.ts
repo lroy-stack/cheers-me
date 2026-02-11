@@ -145,30 +145,34 @@ export function useAIChatStream(): UseAIChatStreamReturn {
     }
     setMessages(prev => [...prev, userMsg])
 
-    try {
-      abortRef.current = new AbortController()
+    const MAX_RETRIES = 3
+    const INITIAL_RETRY_DELAY = 1000 // 1s
 
-      const res = await fetch('/api/ai/chat/stream', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message,
-          conversation_id: conversationId,
-          attachments: attachments?.map(a => ({
-            id: a.id,
-            filename: a.filename,
-            mimeType: a.mimeType,
-            processedContent: a.processedContent,
-            base64: a.base64,
-          })),
-        }),
-        signal: abortRef.current.signal,
-      })
+    const sendMessageWithRetry = async (retryCount = 0): Promise<void> => {
+      try {
+        abortRef.current = new AbortController()
 
-      if (!res.ok) {
-        const errData = await res.json().catch(() => ({ error: 'Request failed' }))
-        throw new Error(errData.error || `HTTP ${res.status}`)
-      }
+        const res = await fetch('/api/ai/chat/stream', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message,
+            conversation_id: conversationId,
+            attachments: attachments?.map(a => ({
+              id: a.id,
+              filename: a.filename,
+              mimeType: a.mimeType,
+              processedContent: a.processedContent,
+              base64: a.base64,
+            })),
+          }),
+          signal: abortRef.current.signal,
+        })
+
+        if (!res.ok) {
+          const errData = await res.json().catch(() => ({ error: 'Request failed' }))
+          throw new Error(errData.error || `HTTP ${res.status}`)
+        }
 
       const reader = res.body?.getReader()
       if (!reader) throw new Error('No response body')
@@ -326,13 +330,35 @@ export function useAIChatStream(): UseAIChatStreamReturn {
         setConversationId(convId)
         loadConversations()
       }
-    } catch (err) {
-      if (err instanceof DOMException && err.name === 'AbortError') {
-        // User cancelled — finalize what we have
-        setStreamingText('')
-        setActiveTools([])
-        return
+      } catch (err) {
+        // Handle AbortError (user cancelled)
+        if (err instanceof DOMException && err.name === 'AbortError') {
+          // User cancelled — exit retry loop
+          return
+        }
+
+        // Retry on network errors
+        if (retryCount < MAX_RETRIES &&
+            (err instanceof TypeError || // Network error
+             (err instanceof Error && err.message.includes('fetch')) ||
+             (err instanceof Error && err.message.includes('Failed to fetch')))) {
+
+          const delay = INITIAL_RETRY_DELAY * Math.pow(2, retryCount)
+          console.log(`[AI Chat] Network error, retry attempt ${retryCount + 1}/${MAX_RETRIES} in ${delay}ms`)
+
+          await new Promise(resolve => setTimeout(resolve, delay))
+          return sendMessageWithRetry(retryCount + 1)
+        }
+
+        // Final error - re-throw to outer catch
+        throw err
       }
+    }
+
+    // Execute with retry logic
+    try {
+      await sendMessageWithRetry()
+    } catch (err) {
       const errorMsg = err instanceof Error ? err.message : 'Unknown error'
       setError(errorMsg)
       // Remove user message on error (use functional update to target exact msg)
