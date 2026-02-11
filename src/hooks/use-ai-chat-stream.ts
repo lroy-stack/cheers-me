@@ -480,6 +480,13 @@ export function useAIChatStream(): UseAIChatStreamReturn {
       )
       setError(null)
       setSubAgentEvent(null)
+      setDetectedArtifacts([])
+      setStreamingText('')
+      setActiveTools([])
+      setCompletedTools([])
+      setErrorTools([])
+      setActiveModel(null)
+      setModelReason(null)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load conversation')
     }
