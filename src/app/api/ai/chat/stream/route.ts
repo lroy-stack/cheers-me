@@ -16,6 +16,9 @@ import type { UserRole, PromptContext, ModelId, FileAttachment } from '@/lib/ai/
 import { calculateCost, calculateCacheHitRate, formatCost } from '@/lib/ai/cost-calculator'
 import { parseArtifacts } from '@/lib/ai/artifact-parser'
 
+// Vercel timeout config for long-running AI streaming
+export const maxDuration = 60 // seconds
+
 const SUB_AGENT_TOOLS = new Set([
   'delegate_document_generator', 'delegate_web_researcher', 'delegate_schedule_optimizer',
   'delegate_compliance_auditor', 'delegate_financial_reporter', 'delegate_marketing_campaign',
