@@ -17,6 +17,7 @@ import { calculateCost, calculateCacheHitRate, formatCost } from '@/lib/ai/cost-
 import { parseArtifacts } from '@/lib/ai/artifact-parser'
 
 // Vercel timeout config for long-running AI streaming
+export const runtime = 'nodejs'
 export const maxDuration = 60 // seconds
 
 const SUB_AGENT_TOOLS = new Set([
@@ -652,7 +653,6 @@ export async function POST(request: NextRequest) {
       'Cache-Control': 'no-cache, no-transform',
       'Connection': 'keep-alive',
       'X-Accel-Buffering': 'no',
-      'Transfer-Encoding': 'chunked',
     },
   })
 }
