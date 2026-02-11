@@ -1,0 +1,196 @@
+{
+  "title": "Risk Assessment",
+  "legalBasis": "Spanish Royal Decree 39/1997, Regulation of Prevention Services (Reglamento de los Servicios de Prevención); Law 31/1995 on Occupational Risk Prevention (Ley de Prevención de Riesgos Laborales); EU Framework Directive 89/391/EEC on worker health and safety",
+  "summary": "Risk assessment is the cornerstone of occupational health and safety management in hospitality establishments. Under RD 39/1997, every employer must conduct a comprehensive evaluation of all workplace risks to identify potential hazards and determine appropriate preventive measures. The assessment must be specific to each workstation and job role, evaluating both the likelihood and severity of potential harm.\n\nIn hospitality environments, risk assessment must address sector-specific hazards including thermal burns from cooking equipment, cuts from knives and broken glass, slips and falls on wet surfaces, manual handling injuries from heavy deliveries, repetitive strain from food preparation tasks, chemical exposure from cleaning products, and psychosocial risks from high-pressure service periods. The assessment process involves identifying hazards, determining who might be harmed and how, evaluating the existing control measures, deciding if additional measures are needed, and documenting the findings.\n\nThe risk assessment is not a one-time exercise — it must be reviewed whenever working conditions change significantly, when new equipment is introduced, after an accident or near-miss incident, or when a worker reports work-related health issues. Regular review ensures that the prevention plan remains effective and responsive to the evolving nature of hospitality operations. A well-executed risk assessment protects both workers and the business from the human and financial costs of workplace injuries.",
+  "keyPoints": [
+    "Risk assessment is legally mandatory under RD 39/1997 for all employers regardless of business size",
+    "Assessment must be specific to each workstation and role, not generic to the hospitality sector",
+    "Both likelihood and severity of each identified hazard must be evaluated to determine risk level",
+    "Workers or their representatives must be consulted during the assessment process",
+    "The assessment must be documented in writing and form the basis of the Prevention Plan",
+    "Reassessment is required when conditions change, after incidents, or when new hazards are identified",
+    "Preventive measures must be implemented in a hierarchical order: elimination, substitution, engineering controls, administrative controls, then PPE",
+    "Pregnant workers, young workers, and those with specific vulnerabilities require additional specific risk assessment"
+  ],
+  "sections": [
+    {
+      "heading": "1. Legal Framework and Requirements",
+      "content": "Spanish occupational health and safety law, primarily Law 31/1995 and its implementing regulation RD 39/1997, establishes the employer's fundamental duty to ensure worker safety through a systematic process of risk assessment and prevention. This legal framework transposes EU Directive 89/391/EEC and makes risk assessment not merely a recommended practice but a mandatory legal obligation enforceable through labor inspection.\n\nThe assessment must be conducted before workers are exposed to new risks, whether at business start-up, when introducing new equipment or processes, when hiring new workers, or when workplace conditions change. Competent authorities may impose fines ranging from 2,000 to 40,000 euros for failure to conduct or properly document risk assessments. More importantly, failure to identify and control workplace risks exposes employers to civil liability in the event of workplace accidents.\n\nFor hospitality businesses, the assessment must cover all areas: kitchens, bars, dining rooms, storage areas, delivery areas, and staff facilities. It must address all types of work: food preparation, service, cleaning, maintenance, and administrative tasks. The level of detail and formality of the assessment should be proportionate to the size and complexity of the operation, but even a small tapas bar must identify and evaluate its workplace risks systematically.",
+      "subsections": [
+        {
+          "heading": "1.1 Employer Responsibilities",
+          "content": "The employer bears ultimate responsibility for ensuring that risk assessment is conducted, though the actual work may be delegated to internal safety personnel or an external prevention service. The employer must provide the necessary resources, ensure worker participation, implement the recommended preventive measures, and document the entire process. This responsibility cannot be outsourced — even when using an external consultant to conduct the assessment, the employer remains legally accountable for workplace safety.\n\nSmall businesses with fewer than 10 employees and low-risk activities may opt for the employer to assume prevention functions directly, provided they work regularly at the establishment and have received appropriate training. Larger businesses or those with higher risks must either establish an internal prevention service or contract an external authorized prevention service."
+        },
+        {
+          "heading": "1.2 Worker Participation Rights",
+          "content": "Law 31/1995 grants workers the right to participate in all matters relating to health and safety at work. During risk assessment, workers must be consulted about the hazards they face, their perceptions of risk, and the adequacy of existing control measures. Workers or their safety representatives should participate in workplace inspections that form part of the assessment process.\n\nWorker participation improves the quality of risk assessment by incorporating frontline knowledge of actual working conditions, informal practices, and near-miss incidents that may not be visible to management or external consultants. It also enhances acceptance and compliance with the preventive measures that result from the assessment."
+        },
+        {
+          "heading": "1.3 Documentation Requirements",
+          "content": "The risk assessment must be documented in writing, regardless of business size. The documentation should include: identification of workstations and tasks assessed, hazards identified for each, persons at risk, evaluation of risk level (combination of likelihood and severity), existing preventive measures, assessment of whether existing measures are adequate, additional measures recommended, timeline for implementation, and person responsible for each action.\n\nThis documentation forms part of the Prevention Plan and must be available for inspection by labor authorities and accessible to workers and their representatives. It must be updated whenever circumstances change and should be reviewed at least annually even if no changes have occurred."
+        }
+      ]
+    },
+    {
+      "heading": "2. The Risk Assessment Process",
+      "content": "Risk assessment follows a structured five-step process: hazard identification, determination of who might be harmed and how, evaluation of risks and adequacy of existing controls, recording findings and implementing additional measures, and regular review and updating. This systematic approach ensures that all significant risks are identified and appropriately controlled.\n\nThe process begins with a thorough workplace inspection covering all areas, equipment, and work activities. This should be conducted during actual operations to observe real working practices, not just official procedures. The inspection should note all potential sources of harm: equipment, substances, work processes, workplace layout, environmental conditions, work organization, and human factors.",
+      "subsections": [
+        {
+          "heading": "2.1 Hazard Identification in Hospitality",
+          "content": "Hospitality workplaces present multiple categories of hazards. Safety hazards include: slips, trips, and falls on wet or greasy floors; cuts from knives, slicers, and broken glass; burns from cooking equipment, hot liquids, and steam; manual handling injuries from lifting heavy deliveries or moving equipment; entanglement with machinery such as mixers and food processors; fire and explosion risks from cooking equipment and gas installations; and electrical hazards from equipment used in wet conditions.\n\nHealth hazards include: exposure to cleaning chemicals and degreasers; biological hazards from handling raw foods; thermal stress from prolonged work in hot kitchen environments; noise exposure in bar environments with loud music; ergonomic risks from prolonged standing, repetitive movements, and awkward postures; and psychosocial risks from high-pressure work, irregular hours, customer aggression, and work-life imbalance. Each of these categories must be systematically evaluated for every workstation and role."
+        },
+        {
+          "heading": "2.2 Risk Evaluation Methodology",
+          "content": "For each identified hazard, risk level is determined by assessing both the likelihood of the hazard causing harm and the potential severity of that harm. A common approach uses a three-level scale for each dimension: likelihood (low, medium, high) and severity (minor injury, moderate injury, serious injury or death). Combining these produces risk levels from trivial to intolerable.\n\nHigh-risk hazards (high likelihood and high severity) require immediate action. Medium risks require planned measures with defined timelines. Low risks may be acceptable with existing controls but should still be monitored. This prioritization ensures that limited resources are focused on the most significant threats to worker safety."
+        },
+        {
+          "heading": "2.3 Hierarchy of Control Measures",
+          "content": "Once risks are evaluated, appropriate control measures must be selected following the established hierarchy: elimination (removing the hazard entirely), substitution (replacing with something safer), engineering controls (guards, ventilation, safety devices), administrative controls (procedures, training, job rotation), and finally personal protective equipment. This hierarchy reflects the relative effectiveness and reliability of different approaches.\n\nFor example, the risk of cuts from manual vegetable preparation could be addressed by elimination (purchasing pre-cut vegetables), substitution (using safer cutting tools), engineering controls (using mandolines with hand guards), administrative controls (training in safe knife handling), or PPE (cut-resistant gloves). The most effective solution uses multiple levels of the hierarchy in combination."
+        }
+      ]
+    },
+    {
+      "heading": "3. Workstation-Specific Assessments",
+      "content": "While hospitality establishments share common hazards, the specific risk profile varies significantly by workstation. A comprehensive assessment must evaluate each distinct work area and role separately, recognizing that a waiter faces very different risks than a kitchen porter or a bartender. This workstation-specific approach ensures that control measures are appropriately targeted and that no significant risks are overlooked.\n\nThe assessment should consider not just physical location but also task variation throughout a shift. A cook who works primarily on the hot line during service may also perform prep work in the cold kitchen earlier in the day, and thus be exposed to different hazard profiles at different times.",
+      "subsections": [
+        {
+          "heading": "3.1 Kitchen Risk Profile",
+          "content": "Kitchen environments present the highest concentration of risks in hospitality. The hot kitchen exposes workers to burns from open flames, hot surfaces, ovens, grills, fryers, and steam equipment. Knife work creates continuous cut risk. Manual handling of stockpots, delivery boxes, and equipment causes musculoskeletal strain. Wet, greasy floors create slip hazards. Chemical exposure occurs during cleaning. Confined spaces and poor ventilation may lead to heat stress or poor air quality.\n\nThe cold kitchen and preparation areas involve knife work with reduced burn risk but increased cut risk from repetitive slicing and dicing. Standing for extended periods on hard surfaces contributes to lower back and leg fatigue. The pastry section adds specific risks from hot ovens, mixers with exposed moving parts, and manual handling of flour sacks. Each of these zones requires specific control measures tailored to its risk profile."
+        },
+        {
+          "heading": "3.2 Service and Bar Risk Profile",
+          "content": "Front-of-house service staff face different hazards: carrying heavy trays creates manual handling and slip risk, particularly when navigating stairs or uneven surfaces. Customer interaction introduces psychosocial risks including verbal aggression or sexual harassment. Glass handling creates cut risk, especially during collection of used glassware and when dealing with breakages. Working late-night or early-morning shifts affects fatigue and personal safety when traveling to and from work.\n\nBar environments add specific risks: repetitive strain from cocktail shaking, bottle opening, and beverage preparation; chemical exposure from cleaning agents and sanitizers; noise exposure in venues with loud music or entertainment; working in confined spaces behind the bar; and potential for violence or aggression in alcohol-serving environments, especially late at night."
+        },
+        {
+          "heading": "3.3 Support Function Risk Profile",
+          "content": "Kitchen porters and cleaning staff face manual handling risks from moving heavy bins and equipment, chemical exposure from cleaning products and degreasers, wet conditions creating slip hazards, and fatigue from physically demanding work. Delivery and warehouse personnel encounter risks from manual handling of heavy or awkward loads, forklift or pallet truck operation, temperature extremes when moving between cold storage and ambient areas, and vehicle-related hazards.\n\nManagement and administrative staff, while facing fewer physical hazards, are subject to psychosocial risks from long or irregular hours, high workload and time pressure, conflicting demands from customers and staff, and lack of work-life balance. These psychosocial risks are often underestimated but can have serious health consequences including stress-related illness, burnout, and cardiovascular disease."
+        }
+      ]
+    },
+    {
+      "heading": "4. Special Risk Assessments",
+      "content": "Beyond the general workplace risk assessment, Spanish law requires additional specific assessments for certain groups of workers or types of risk. These special assessments recognize that some workers face particular vulnerabilities and require additional protection measures. Failure to conduct these assessments when required constitutes a serious breach of occupational safety law.\n\nSpecial assessments must be conducted before the worker is exposed to the relevant risks, and the protective measures must be in place from the beginning of the work relationship or condition. These assessments should be documented separately from the general risk assessment, though they form part of the overall Prevention Plan.",
+      "subsections": [
+        {
+          "heading": "4.1 Pregnancy and Breastfeeding",
+          "content": "When a worker notifies the employer of pregnancy or breastfeeding, a specific risk assessment of her workstation and tasks must be conducted immediately. The assessment must identify risks that could affect the health of the mother or the developing or nursing child, including: prolonged standing, manual handling of loads, exposure to biological or chemical agents, night work, extreme temperatures, and high psychological or physical workload.\n\nIf significant risks are identified, the employer must adapt the working conditions or working hours to eliminate or reduce the risk. If adaptation is not possible or sufficient, the worker must be reassigned to a different, suitable job. If no suitable alternative work is available, the worker is entitled to suspension from work with full pay protection until maternity leave begins or the breastfeeding period ends."
+        },
+        {
+          "heading": "4.2 Young Workers (Under 18)",
+          "content": "Workers under 18 require specific risk assessment because they may lack experience, awareness of risks, and full physical development. The assessment must consider their psychological and physical immaturity and account for their lack of experience. Young workers are legally prohibited from certain high-risk activities including working with dangerous machinery, exposure to toxic substances, night work, and work involving excessive physical or psychological strain.\n\nBefore a young worker begins employment, the specific risk assessment must be completed and communicated to the worker and their parent or guardian. The assessment findings must demonstrate that the work is suitable for a young person and that appropriate supervision and training will be provided."
+        },
+        {
+          "heading": "4.3 Workers with Disabilities or Health Conditions",
+          "content": "Workers with disabilities or chronic health conditions have the right to accommodation that allows them to perform their work safely. A specific risk assessment must be conducted to evaluate how the worker's condition interacts with workplace hazards and to identify necessary adaptations. This may include modifying equipment, adjusting work schedules, reassigning certain tasks, or providing additional support.\n\nThe assessment must be conducted with the worker's participation and, with their consent, may involve their treating physician or the occupational health service. The goal is to enable the worker to perform meaningful work safely while respecting their privacy and dignity. Reasonable accommodations are legally required unless they impose a disproportionate burden on the employer."
+        }
+      ]
+    },
+    {
+      "heading": "5. Implementation and Follow-Up",
+      "content": "A risk assessment creates value only when its findings are translated into concrete preventive actions. The implementation phase requires planning, resource allocation, assignment of responsibilities, and monitoring of progress. A common failure is conducting a thorough assessment but then filing it away without acting on the recommendations — this provides no protection to workers and no defense against liability.\n\nEffective implementation follows a structured action plan with clear priorities, timelines, responsible persons, and success criteria. High-priority risks should be addressed immediately, even if with temporary measures, while longer-term improvements are planned and resourced. All implemented measures should be documented, and their effectiveness should be verified.",
+      "subsections": [
+        {
+          "heading": "5.1 Action Planning",
+          "content": "For each risk requiring additional control measures, an action plan should specify: the preventive measure to be implemented, the person responsible for implementation, the timeline for completion, the resources required (budget, equipment, training), and how effectiveness will be measured. Action plans should be realistic and achievable — overly ambitious plans that cannot be resourced or completed undermine the entire prevention system.\n\nPriorities should be based on risk level: intolerable risks require immediate action (including stopping the work activity if necessary until controls are in place), high risks should be addressed within weeks, medium risks within months, and low risks may be addressed opportunistically or during planned equipment upgrades. This prioritization ensures that resources are focused on the most significant threats."
+        },
+        {
+          "heading": "5.2 Review and Updating",
+          "content": "The risk assessment is a living document that must be reviewed and updated regularly. Mandatory review triggers include: significant changes to the workplace, equipment, processes, or work organization; introduction of new substances or technologies; after any workplace accident, dangerous occurrence, or occupational illness; when monitoring indicates that preventive measures are not working as intended; when workers report new or changed risks; and at least every two years even if no changes have occurred.\n\nReview does not necessarily mean conducting the entire assessment from scratch — it may involve updating specific sections affected by changes. However, periodic comprehensive reviews are advisable to ensure that gradual changes have not been missed and that the overall assessment remains coherent and current."
+        }
+      ]
+    },
+    {
+      "heading": "6. Integration with Prevention Services",
+      "content": "Risk assessment is not conducted in isolation — it forms the foundation of the entire occupational risk prevention system. The assessment findings inform the Prevention Plan, determine training needs, guide health surveillance programmes, shape emergency procedures, and drive continuous improvement. Integration with the broader prevention system ensures that risk assessment translates into tangible safety improvements.\n\nFor businesses using external prevention services, clear communication of the assessment process and findings is essential. The external service can provide technical expertise in hazard identification and risk evaluation, but workplace-specific knowledge must come from the employer and workers. The most effective assessments combine technical expertise with practical operational knowledge.",
+      "subsections": [
+        {
+          "heading": "6.1 Coordinating with External Services",
+          "content": "Most small and medium hospitality businesses contract with an external authorized prevention service for technical support. The external service typically conducts or assists with the risk assessment, provides expert advice on control measures, delivers required training, and performs health surveillance examinations. However, the employer retains responsibility for implementing the assessment findings and ensuring day-to-day compliance with preventive measures.\n\nEffective coordination requires regular communication between the employer and the prevention service, prompt notification of any changes that might affect risks, and honest sharing of information about incidents, near-misses, and worker concerns. The prevention service should visit the workplace periodically to verify that their recommendations have been implemented and remain effective."
+        },
+        {
+          "heading": "6.2 Training Based on Assessment Findings",
+          "content": "Risk assessment directly informs training requirements. Every worker must receive general health and safety training and specific training on the risks of their particular workstation and tasks. The assessment identifies which training topics are needed, which workers need which training, and the level of detail required. Training should not be generic but tailored to the actual risks identified in the assessment.\n\nTraining effectiveness should be verified — after training, workers should demonstrate understanding of the hazards they face, the control measures in place, and their own responsibilities. Training should be repeated periodically, particularly when workers change roles, when new equipment or procedures are introduced, or when the risk assessment is updated."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Risk Assessment Process Checklist",
+      "items": [
+        "Define the scope of assessment: all workstations, tasks, and workers to be covered",
+        "Assemble the assessment team including management, workers or safety representatives, and technical expertise",
+        "Conduct workplace inspections during actual operations, not just when quiet",
+        "Consult with workers about hazards they experience and near-miss incidents",
+        "Review accident and incident records to identify problem areas",
+        "Identify all hazards for each workstation: safety hazards, health hazards, ergonomic risks, psychosocial factors",
+        "Determine who might be harmed: all workers, visitors, contractors, vulnerable groups",
+        "Evaluate likelihood and severity for each hazard to determine risk level",
+        "Review existing control measures and assess their adequacy",
+        "Determine additional measures needed, applying the hierarchy of controls",
+        "Document all findings in the required format",
+        "Develop an action plan with priorities, timelines, and responsibilities",
+        "Communicate assessment findings to all affected workers",
+        "Implement preventive measures according to the action plan",
+        "Verify effectiveness of implemented measures",
+        "Set a schedule for review and updating of the assessment"
+      ]
+    },
+    {
+      "title": "Kitchen Risk Assessment Checklist",
+      "items": [
+        "Slips, trips, falls: floor condition, drainage, cleaning procedures, footwear",
+        "Burns: hot surfaces, liquids, steam, oil — PPE, procedures, first aid",
+        "Cuts: knives, slicers, broken glass — training, PPE, equipment guards",
+        "Manual handling: delivery reception, stockpot handling, equipment movement",
+        "Heat stress: ventilation, temperature, hydration, rotation",
+        "Fire risk: gas equipment, grease accumulation, fire suppression, extinguishers",
+        "Electrical safety: equipment condition, water proximity, inspection records",
+        "Chemical exposure: cleaning products, storage, PPE, Safety Data Sheets",
+        "Machinery: guards, emergency stops, lockout procedures, training",
+        "Confined spaces: walk-in refrigerators, dry stores — ventilation, emergency release",
+        "Ergonomics: standing duration, repetitive movements, work surface heights",
+        "Hygiene and cross-contamination: handwashing, food separation, personal hygiene"
+      ]
+    },
+    {
+      "title": "Special Risk Assessment Checklist (Pregnancy)",
+      "items": [
+        "Prolonged standing or sitting: assess current workstation and tasks",
+        "Manual handling: weight of loads, frequency, assistance available",
+        "Biological hazards: raw meat handling, contact with potentially contaminated materials",
+        "Chemical exposure: cleaning products, sanitizers, ventilation",
+        "Physical workload: shift duration, rest breaks, physical demands",
+        "Night work: current schedule, ability to transfer to day shifts",
+        "Thermal stress: kitchen temperature, ability to regulate temperature",
+        "Psychosocial factors: workload, stress, work-life balance",
+        "Conclusion: Can all risks be eliminated/reduced through workplace adaptation?",
+        "If not: Is alternative suitable work available?",
+        "Worker informed of assessment findings and protective measures",
+        "Reassessment scheduled if circumstances change during pregnancy"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Involve frontline workers in the assessment process — they have the most detailed knowledge of actual working conditions and informal practices",
+    "Use visual aids and photos in the assessment documentation to illustrate hazards and control measures clearly",
+    "Don't just assess compliance with legal minimums — aim for best practice standards that truly protect worker health",
+    "Review accident and near-miss records as part of hazard identification — these reveal real-world problems",
+    "Observe work during different times: peak service periods, quiet times, opening and closing procedures — risks vary",
+    "Consider the cumulative effect of multiple low-level risks that together may create significant strain",
+    "Prioritize measures that eliminate or reduce hazards over those that just manage exposure",
+    "Create a positive safety culture where workers feel comfortable reporting hazards and suggesting improvements without fear of blame",
+    "Use the risk assessment as a continuous improvement tool, not just a compliance document"
+  ],
+  "glossary": {
+    "Risk": "The combination of the likelihood that a hazard will cause harm and the severity of that harm",
+    "Hazard": "Anything with the potential to cause harm to people (injury or ill health)",
+    "Risk Assessment": "The systematic process of identifying hazards, evaluating the associated risks, and determining appropriate control measures",
+    "Prevention Plan": "The comprehensive document setting out the employer's approach to occupational risk prevention, based on the risk assessment",
+    "Critical Risk": "A risk evaluated as high likelihood and high severity, requiring immediate control measures",
+    "Control Measure": "An action or safeguard implemented to eliminate or reduce a risk to an acceptable level",
+    "Hierarchy of Controls": "The principle that control measures should be selected in order of effectiveness: elimination, substitution, engineering controls, administrative controls, PPE",
+    "External Prevention Service": "A specialized company authorized by labor authorities to provide technical occupational safety and health services to businesses",
+    "Safety Representative": "A worker elected or appointed to represent workers on health and safety matters and participate in risk assessment"
+  }
+}

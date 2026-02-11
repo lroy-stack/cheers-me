@@ -1,0 +1,185 @@
+{
+  "title": "Kitchen Fire Safety",
+  "legalBasis": "Royal Decree 513/2017 of May 22 (Technical Regulation on Fire Protection Installations); Ley 31/1995 on Occupational Risk Prevention; Royal Decree 2267/2004 (Fire Safety Regulation for Industrial Establishments); UNE 23510 on portable fire extinguishers",
+  "summary": "Kitchen fire safety is one of the most critical risk areas in hospitality establishments. Commercial kitchens combine open flames, heated oils, electrical equipment, and combustible materials in confined spaces, making fire prevention an absolute operational priority. Royal Decree 513/2017 establishes the technical requirements for fire protection installations, including the types, placement, and maintenance of extinguishing systems that must be present in commercial kitchens.\n\nThis guide covers the complete spectrum of kitchen fire safety: from understanding fire classes relevant to cooking environments (Class F/K fires involving cooking oils and fats), to the correct selection and use of fire suppression systems, evacuation procedures, and the legal obligations of employers under Spanish occupational health legislation. Every kitchen worker must understand the fire triangle, know the location and operation of all extinguishing equipment, and be trained in emergency evacuation protocols.\n\nCompliance with RD 513/2017 requires not only the installation of appropriate fire protection systems but also their periodic inspection, maintenance by authorized companies, and proper documentation. Failure to comply can result in administrative sanctions, criminal liability in the event of injury, and invalidation of insurance coverage.",
+  "keyPoints": [
+    "Commercial kitchens must have Class F (cooking oil/fat) fire extinguishers within 15 meters of any cooking station",
+    "Automatic fire suppression systems are mandatory for deep fryers and cooking ranges exceeding 1.2 meters in length",
+    "Fire extinguishers must be inspected quarterly by trained staff and annually by an authorized maintenance company",
+    "All kitchen staff must receive fire safety training within the first week of employment and refresher training annually",
+    "Emergency evacuation routes must be clearly marked, unobstructed, and practiced in drills at least twice per year",
+    "Fire blankets must be available within 2 meters of any deep-frying station",
+    "Grease traps and extraction hoods must be cleaned at minimum quarterly to prevent grease buildup fires",
+    "Gas installations must have automatic shut-off valves and be inspected every 5 years by an authorized installer"
+  ],
+  "sections": [
+    {
+      "heading": "1. Understanding Kitchen Fire Risks",
+      "content": "Commercial kitchens present unique fire hazards due to the convergence of high temperatures, combustible materials, and intensive equipment use. Understanding the specific fire classes and ignition sources in a kitchen environment is the foundation of any effective prevention program. Spanish fire safety regulations classify fires into classes, with Class F (cooking oils and fats) being the most common and dangerous in kitchen settings due to the extremely high auto-ignition temperatures and the violent reaction of burning oil with water.",
+      "subsections": [
+        {
+          "heading": "1.1 Fire Classes in Kitchen Environments",
+          "content": "Kitchen fires are categorized by the fuel source: Class A fires involve solid combustibles like wood, paper, and textiles (common in storage areas and near service counters). Class B fires involve flammable liquids such as alcohol-based sauces or cleaning solvents. Class C fires involve gases, particularly natural gas or propane used in cooking ranges. Class F fires (designated Class K in American standards) involve cooking oils and fats and are the most prevalent kitchen fire type. Each class requires specific extinguishing agents; using the wrong agent (particularly water on a Class F fire) can cause explosive splashing that spreads the fire and causes severe burns. Kitchen staff must be trained to identify the fire class before selecting an extinguishing method."
+        },
+        {
+          "heading": "1.2 Common Ignition Sources",
+          "content": "The primary ignition sources in commercial kitchens include: unattended cooking operations (the leading cause of kitchen fires), overheated cooking oils exceeding their smoke point (typically 230-260 degrees Celsius for common cooking oils), grease accumulation in extraction hoods and ductwork, faulty or damaged electrical equipment and wiring, improper storage of combustible materials near heat sources, gas leaks from deteriorated connections or improperly maintained equipment, and spontaneous combustion of oil-soaked rags or cleaning materials. Each ignition source requires specific preventive measures that must be incorporated into daily kitchen operations and safety protocols."
+        },
+        {
+          "heading": "1.3 Legal Framework and Employer Obligations",
+          "content": "Under Royal Decree 513/2017, employers must ensure that all fire protection installations meet the technical specifications established in the regulation. This includes proper selection, installation, and maintenance of fire detection and extinguishing systems. Ley 31/1995 on Occupational Risk Prevention places a general duty on employers to ensure the safety and health of workers, including fire risk assessment as part of the mandatory Plan de Prevencion. The employer must designate trained emergency response personnel (equipos de emergencia), develop an Emergency Plan (Plan de Emergencia), and ensure all workers receive adequate fire safety training. Non-compliance can result in fines ranging from 2,046 to 819,780 euros depending on the severity classification under the Law on Offenses and Sanctions in the Social Order (LISOS)."
+        }
+      ]
+    },
+    {
+      "heading": "2. Fire Prevention Measures",
+      "content": "Prevention is the most effective fire safety strategy. A comprehensive prevention program in the kitchen addresses equipment maintenance, housekeeping practices, safe cooking procedures, and proper storage of combustible materials. These measures must be documented in the establishment's Risk Assessment and Prevention Plan as required by Ley 31/1995.",
+      "subsections": [
+        {
+          "heading": "2.1 Equipment Maintenance and Inspection",
+          "content": "All cooking equipment must be maintained according to manufacturer specifications and inspected regularly. Gas-powered equipment requires particular attention: connections must be checked for leaks using approved detection methods (never open flame), flexible hoses must be replaced before their expiration date, and automatic gas shut-off valves must be tested monthly. Electrical equipment must be inspected for frayed cords, damaged plugs, and proper grounding. Deep fryers must have functioning thermostats and high-temperature limit switches. Extraction hoods and grease filters must be cleaned weekly, with deep cleaning of the entire ductwork system performed quarterly by specialized companies. Documentation of all maintenance and inspections must be retained for at least 5 years."
+        },
+        {
+          "heading": "2.2 Daily Kitchen Fire Safety Practices",
+          "content": "Every shift must begin with a fire safety check: verify that all extinguishers are in place and pressure gauges are in the green zone, ensure fire exits are unobstructed, confirm that extraction systems are functioning, and check that no combustible materials are stored near heat sources. During cooking operations, oil temperatures must be monitored and never exceed the smoke point of the oil in use. Cooking stations must never be left unattended when actively heating oils or fats. At the end of each shift, all gas supplies must be turned off at the main valve, electrical equipment must be powered down (except refrigeration), and a final walk-through must verify that no heat sources remain active and no hot surfaces are in contact with combustible materials."
+        },
+        {
+          "heading": "2.3 Storage and Housekeeping",
+          "content": "Proper storage is critical to fire prevention. Flammable liquids (cleaning solvents, alcohol) must be stored in approved containers in ventilated areas away from heat sources. Cooking oils must be stored at ambient temperature away from direct heat. Paper products, cardboard packaging, and textile items must be kept at least 1 meter from any cooking appliance. Used cooking oil must be collected in sealed metal containers and removed regularly by authorized waste management companies. Cleaning rags, especially those contaminated with oil or grease, must be stored in self-closing metal containers and laundered or disposed of daily to prevent spontaneous combustion. Grease traps must be emptied according to schedule and never allowed to overflow."
+        }
+      ]
+    },
+    {
+      "heading": "3. Fire Detection and Suppression Systems",
+      "content": "Royal Decree 513/2017 establishes the requirements for fire detection and suppression installations in commercial establishments. Kitchen areas have specific requirements due to the nature of cooking fire hazards and the presence of high ambient temperatures that can affect conventional detection systems.",
+      "subsections": [
+        {
+          "heading": "3.1 Detection Systems",
+          "content": "Standard smoke detectors are generally unsuitable for kitchen areas due to cooking fumes and steam that cause false alarms. Instead, kitchens should use rate-of-rise heat detectors or fixed-temperature heat detectors rated above normal cooking temperatures (typically set at 90-100 degrees Celsius). Linear heat detection cables can be installed along extraction ductwork to detect grease fires within the ventilation system. Gas detection systems are mandatory where natural gas or propane is used, with sensors placed both near the floor (for propane, which is heavier than air) and near the ceiling (for natural gas). All detection systems must be connected to an audible alarm and, where applicable, to automatic suppression systems and gas shut-off valves."
+        },
+        {
+          "heading": "3.2 Fixed Suppression Systems",
+          "content": "Automatic fire suppression systems for commercial kitchen cooking equipment typically use wet chemical agents (potassium acetate or potassium carbonate solutions) specifically designed for Class F fires. These systems consist of nozzles positioned above cooking surfaces and within extraction hoods, connected to pressurized agent tanks. When activated (either automatically by fusible links or manually by pull stations), the system discharges the wet chemical agent which cools the burning oil and creates a foam blanket that prevents re-ignition. The system must also automatically shut off gas and electrical supplies to cooking equipment and activate the extraction system to remove smoke. Installation and maintenance must be performed by companies authorized under RD 513/2017, and the system must be inspected semi-annually."
+        },
+        {
+          "heading": "3.3 Portable Extinguishers and Fire Blankets",
+          "content": "Portable fire extinguishers in kitchen areas must include Class F rated units (wet chemical type, typically 6-liter capacity) positioned within 15 meters of any cooking station. Additional ABC powder or CO2 extinguishers should be available for electrical and general fires. Extinguishers must be wall-mounted at a height where the top of the unit is no more than 1.20 meters from the floor, clearly marked with signage visible from a distance, and unobstructed at all times. Fire blankets (meeting EN 1869 standards, minimum 1.2m x 1.2m) must be placed within 2 meters of deep-frying stations and other high-risk cooking areas. All staff must be trained in the PASS technique (Pull, Aim, Squeeze, Sweep) for extinguisher use and the proper deployment of fire blankets."
+        }
+      ]
+    },
+    {
+      "heading": "4. Emergency Response Procedures",
+      "content": "Despite the best prevention efforts, fires can still occur. A well-rehearsed emergency response plan can mean the difference between a minor incident and a catastrophe. Spanish law requires every workplace to have an Emergency Plan (Plan de Emergencia y Evacuacion) that is communicated to all workers and practiced regularly.",
+      "subsections": [
+        {
+          "heading": "4.1 Immediate Response Protocol",
+          "content": "When a kitchen fire is detected, the response depends on its size and nature. For small, contained fires (such as a pan fire): alert nearby colleagues, turn off the heat source if safely possible, cover the fire with a lid or fire blanket (never move the burning pan), and if necessary use the appropriate portable extinguisher. For larger fires or fires involving the extraction system: activate the manual pull station for the fixed suppression system, alert all kitchen personnel to evacuate, close kitchen doors to contain the fire, call 112 (emergency services), and proceed with the establishment's evacuation plan. Under no circumstances should anyone attempt to fight a fire that has spread beyond the initial cooking surface or that blocks their evacuation route."
+        },
+        {
+          "heading": "4.2 Evacuation Procedures",
+          "content": "The evacuation plan must identify primary and secondary evacuation routes from the kitchen, assembly points outside the building, and personnel responsible for verifying complete evacuation. Evacuation routes must be marked with photoluminescent signage meeting UNE 23034 standards, kept clear of obstacles at all times, and equipped with emergency lighting that activates automatically upon power failure. During evacuation, the designated emergency coordinator must ensure all gas supplies are shut off (using the emergency shut-off valve), verify that all personnel have evacuated using a headcount at the assembly point, and brief arriving emergency services on the fire location, type, and any hazardous materials present. Evacuation drills must be conducted at least twice annually, with records maintained."
+        },
+        {
+          "heading": "4.3 Post-Incident Procedures",
+          "content": "After any fire incident, no matter how minor, a formal investigation must be conducted to determine the cause and prevent recurrence. The investigation should document the origin and cause of the fire, the effectiveness of detection and suppression systems, the response of personnel, any injuries sustained, and the damage caused. Findings must be reported to the Servicio de Prevencion (Prevention Service), and corrective actions must be implemented and documented. If the fire resulted in injury requiring more than first aid, it must be reported to the labor authority as a workplace accident. The fire suppression systems and extinguishers used must be recharged or replaced by an authorized company before the kitchen can resume operations."
+        }
+      ]
+    },
+    {
+      "heading": "5. Training Requirements",
+      "content": "Fire safety training is a legal obligation under Ley 31/1995. All kitchen workers must receive specific, practical training on fire prevention and emergency response, tailored to the risks present in their specific workplace.",
+      "subsections": [
+        {
+          "heading": "5.1 Initial Training Content",
+          "content": "New kitchen employees must receive fire safety training before beginning unsupervised work. This training must cover: the specific fire risks in the kitchen and their prevention, the location and operation of all fire detection and suppression systems, the correct use of portable extinguishers (with hands-on practice using training extinguishers), the correct deployment of fire blankets, the establishment's emergency and evacuation plan including routes and assembly points, the procedure for calling emergency services (112), first aid for burns, and the employee's specific role in the emergency response plan. Training must be documented with the date, duration, content covered, trainer qualifications, and the employee's signed acknowledgment."
+        },
+        {
+          "heading": "5.2 Ongoing Training and Drills",
+          "content": "Annual refresher training must be provided to all kitchen staff, covering any changes to equipment, procedures, or the emergency plan. Practical exercises should include hands-on extinguisher use, fire blanket deployment, and simulated evacuation. At least two evacuation drills per year must involve all staff present during the drill, and the results must be documented including the time to complete evacuation, any obstacles encountered, and areas for improvement. Designated emergency response team members (members of the equipo de emergencia) must receive additional specialized training, including advanced fire fighting techniques, first aid certification, and coordination with external emergency services."
+        },
+        {
+          "heading": "5.3 Special Training for High-Risk Operations",
+          "content": "Staff performing high-risk operations such as flambe cooking, deep frying, or operating wood-fired ovens must receive additional specialized training. Flambe operations require specific protocols including maximum alcohol quantities, safe ignition techniques, and having extinguishing equipment immediately at hand. Deep fryer operators must understand oil temperature management, the dangers of water contact with hot oil, and the specific protocols for fryer fires. Wood-fired oven operators need training on proper fuel types, ash disposal procedures, and chimney maintenance. Each of these specialized training modules must be documented separately and renewed annually."
+        }
+      ]
+    },
+    {
+      "heading": "6. Documentation and Compliance",
+      "content": "Maintaining comprehensive documentation is essential for legal compliance and for demonstrating due diligence in the event of an incident or inspection. RD 513/2017 and Ley 31/1995 both impose specific documentation requirements.",
+      "subsections": [
+        {
+          "heading": "6.1 Required Documentation",
+          "content": "The following fire safety documents must be maintained and available for inspection: the Fire Risk Assessment (as part of the overall Risk Assessment under Ley 31/1995), the Emergency and Evacuation Plan, certificates of installation for all fire protection systems (issued by authorized installers registered with the relevant Autonomous Community), maintenance records for all fire protection installations (quarterly inspections by trained staff, annual and five-year inspections by authorized maintenance companies), training records for all staff including dates, content, and signed acknowledgments, evacuation drill records, and any incident reports and investigation findings. All certificates and maintenance records must comply with the formats established in Annex II of RD 513/2017."
+        },
+        {
+          "heading": "6.2 Inspection Readiness",
+          "content": "Fire safety inspections may be conducted by the fire department (Bomberos), labor inspectors (Inspeccion de Trabajo), or insurance company representatives. To ensure readiness: maintain a fire safety binder containing all required documentation in chronological order, ensure all fire protection equipment is visibly tagged with current inspection dates, keep evacuation plans posted at required locations, verify that emergency lighting and signage are functional, and confirm that all staff can articulate their role in the emergency plan. Regular internal audits (at least quarterly) should verify compliance with all fire safety requirements and identify any deficiencies before an external inspection."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Daily Kitchen Fire Safety Checklist",
+      "items": [
+        "All fire extinguishers are in place and pressure gauges show green",
+        "Fire blankets are accessible and in good condition",
+        "Emergency exits are clear and unobstructed",
+        "Extraction hood and ventilation system are functioning properly",
+        "No combustible materials are stored near heat sources",
+        "Gas connections show no signs of leaks (smell, hissing)",
+        "Electrical cords and plugs are undamaged",
+        "Deep fryer thermostats are functioning correctly",
+        "Fire suppression system manual pull station is accessible",
+        "Emergency lighting is functional"
+      ]
+    },
+    {
+      "title": "Weekly Fire Prevention Checklist",
+      "items": [
+        "Grease filters in extraction hoods have been cleaned",
+        "Cooking oil containers are properly sealed and stored",
+        "Used oil collection containers are not overfull",
+        "Cleaning rags are stored in self-closing metal containers",
+        "Gas flexible hoses are checked for wear and expiration dates",
+        "Emergency evacuation route signs are visible and illuminated",
+        "Fire safety equipment signage is clean and visible"
+      ]
+    },
+    {
+      "title": "Quarterly Fire Safety Audit Checklist",
+      "items": [
+        "All fire extinguishers inspected and documented",
+        "Extraction ductwork deep-cleaned by specialized company",
+        "Grease traps emptied and cleaned",
+        "Emergency and evacuation plan reviewed and updated if needed",
+        "Gas installation integrity check performed",
+        "Fixed suppression system visual inspection completed",
+        "Training records reviewed for completeness",
+        "Internal fire safety audit conducted and documented"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Never leave cooking oil or fats unattended on active heat sources; assign a dedicated monitor for deep-frying operations",
+    "Install a clearly visible oil temperature chart near each fryer showing smoke points for all oils used in the kitchen",
+    "Keep a dedicated fire safety log book in the kitchen for recording daily checks, incidents, and maintenance activities",
+    "Conduct surprise mini-drills during service to test staff readiness under realistic conditions",
+    "Establish a buddy system where kitchen staff are paired to ensure mutual awareness during emergency evacuation",
+    "Post laminated fire response quick-reference cards at each cooking station with steps sized for reading at a glance",
+    "Replace deep fryer oil on schedule rather than waiting for visual degradation, as degraded oil has a lower flash point",
+    "Maintain a minimum 1-meter clearance zone around all fire extinguishers and suppression system pull stations at all times"
+  ],
+  "glossary": {
+    "Class F Fire": "A fire involving cooking oils and fats, characterized by extremely high temperatures and the risk of explosive re-ignition; requires wet chemical extinguishing agents",
+    "Fire Triangle": "The three elements required for combustion: fuel, oxygen, and heat; removing any one element extinguishes the fire",
+    "Wet Chemical Agent": "A fire suppressant (typically potassium acetate or carbonate solution) specifically designed for Class F fires that cools the fuel and creates a saponification layer to prevent re-ignition",
+    "PASS Technique": "The four-step method for using a portable fire extinguisher: Pull the pin, Aim at the base, Squeeze the handle, Sweep side to side",
+    "Fusible Link": "A heat-sensitive device that melts at a predetermined temperature to automatically activate a fire suppression system",
+    "Flash Point": "The lowest temperature at which a liquid produces sufficient vapor to ignite when exposed to an ignition source; critical for cooking oil safety",
+    "Auto-Ignition Temperature": "The temperature at which a substance spontaneously ignites without an external ignition source; for cooking oils typically between 300-370 degrees Celsius",
+    "Equipo de Emergencia": "Emergency response team designated under Spanish workplace safety law, consisting of trained personnel responsible for fire response and evacuation coordination",
+    "Plan de Emergencia": "The mandatory Emergency Plan required for workplaces under Spanish law, detailing detection, alert, evacuation, and response procedures",
+    "RD 513/2017": "Royal Decree 513/2017 approving the Technical Regulation on Fire Protection Installations (Reglamento de Instalaciones de Proteccion contra Incendios)"
+  }
+}

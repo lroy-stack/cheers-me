@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "Reserveer een Tafel | GrandCafe Cheers Mallorca",
+    "description": "Reserveer je tafel bij GrandCafe Cheers, de beste strandrestaurant-ervaring in El Arenal, Mallorca. Wereldkeuken, cocktails, live DJs en meer.",
+    "ogTitle": "Reserveer een Tafel | GrandCafe Cheers Mallorca",
+    "ogDescription": "Reserveer je tafel bij GrandCafe Cheers, de beste strandrestaurant-ervaring in El Arenal, Mallorca."
+  },
+  "hero": {
+    "title": "GrandCafe Cheers",
+    "tagline": "Wereldkeuken, groot feest!",
+    "description": "El Arenal, Platja de Palma, Mallorca — Jouw strandbestemming voor wereldkeuken, cocktails, sport en live DJ-avonden.",
+    "ratingBadge": "4.8/5 Google",
+    "hoursBadge": "Open 10:30 — 03:00",
+    "craftBeersBadge": "22 Speciaalbieren",
+    "liveDjBadge": "Live DJs",
+    "reserveTable": "Reserveer Je Tafel",
+    "location": "Carrer de Cartago 22, El Arenal",
+    "hours": "Dagelijks open 10:30 — 03:00"
+  },
+  "experience": {
+    "heading": "Beleef Cheers",
+    "worldKitchen": "Wereldkeuken",
+    "burgers": "Gourmet Burgers & Meer",
+    "cocktails": "50+ Ambachtelijke Cocktails",
+    "vibes": "Strandsfeer & Live Muziek"
+  },
+  "giftVoucher": {
+    "heading": "Geef het Cadeau van Cheers",
+    "description": "Verras iemand speciaal met een GrandCafe Cheers cadeaubon. Perfect voor verjaardagen, feesten of gewoon zomaar!",
+    "buyNow": "Koop een Cadeaubon",
+    "fromAmount": "Vanaf €25"
+  },
+  "newsletter": {
+    "heading": "Blijf op de Hoogte",
+    "description": "Ontvang exclusieve deals, evenementupdates en insider tips in je inbox.",
+    "emailPlaceholder": "jouw@email.com",
+    "namePlaceholder": "Je naam (optioneel)",
+    "subscribe": "Abonneren",
+    "subscribing": "Bezig met abonneren...",
+    "successTitle": "Welkom bij de Cheers familie!",
+    "successDescription": "Check je inbox voor een speciaal welkomstaanbod.",
+    "errorAlreadySubscribed": "Je bent al geabonneerd!",
+    "errorGeneric": "Er ging iets mis. Probeer het opnieuw."
+  },
+  "wizard": {
+    "occasion": "Gelegenheid",
+    "dateTime": "Datum & Tijd",
+    "guests": "Gasten",
+    "details": "Gegevens",
+    "confirm": "Bevestigen"
+  },
+  "occasion": {
+    "heading": "Wat brengt je naar Cheers?",
+    "subheading": "Help ons de perfecte ervaring voor je voor te bereiden",
+    "casual": "Casual Dineren",
+    "casualDesc": "Lekker eten, drankjes & goede sfeer",
+    "birthday": "Verjaardag",
+    "birthdayDesc": "Maak het bijzonder!",
+    "group": "Groepsuitje",
+    "groupDesc": "6+ vrienden klaar om te feesten",
+    "cocktails": "Cocktailavond",
+    "cocktailsDesc": "50+ cocktails om te ontdekken",
+    "sports": "Sportavond",
+    "sportsDesc": "15 schermen, koud bier",
+    "party": "DJ Avond",
+    "partyDesc": "DJ Winston vanaf 22:00"
+  },
+  "dateTime": {
+    "heading": "Wanneer kom je?",
+    "subheading": "Kies een datum en je gewenste tijdslot",
+    "morning": "Ochtend",
+    "afternoon": "Middag",
+    "sunset": "Zonsondergang",
+    "night": "Nacht"
+  },
+  "partySize": {
+    "heading": "Hoeveel gasten?",
+    "subheading": "Inclusief jezelf",
+    "solo": "Solo",
+    "couple": "Koppel",
+    "group": "Groep",
+    "bigGroup": "Grote Groep",
+    "party": "Feest!",
+    "guest": "gast",
+    "guests": "gasten",
+    "largeGroupMessage": "Voor groepen groter dan 12 raden we aan om ons direct te bellen voor de beste ervaring.",
+    "continue": "Doorgaan"
+  },
+  "guestInfo": {
+    "heading": "Jouw gegevens",
+    "subheading": "Zodat we je reservering kunnen bevestigen",
+    "fullName": "Volledige Naam",
+    "required": "*",
+    "phone": "Telefoonnummer",
+    "email": "E-mail",
+    "optional": "(optioneel)",
+    "specialRequests": "Speciale Verzoeken",
+    "namePlaceholder": "Je naam",
+    "phonePlaceholder": "+34 600 000 000",
+    "emailPlaceholder": "jouw@email.com",
+    "requestsPlaceholder": "Allergieën, verjaardagstaart, raamplaats...",
+    "preferredLanguage": "Voorkeurstaal",
+    "back": "Terug",
+    "continue": "Doorgaan",
+    "nameRequired": "Naam is verplicht",
+    "phoneRequired": "Telefoonnummer is verplicht",
+    "phoneInvalid": "Voer een geldig telefoonnummer in",
+    "emailInvalid": "Voer een geldig e-mailadres in"
+  },
+  "review": {
+    "heading": "Controleer je boeking",
+    "subheading": "Zorg dat alles er goed uitziet",
+    "date": "Datum",
+    "time": "Tijd",
+    "guestsLabel": "Gasten",
+    "name": "Naam",
+    "phone": "Telefoon",
+    "emailLabel": "E-mail",
+    "requests": "Verzoeken",
+    "edit": "Wijzig",
+    "checkingAvailability": "Beschikbaarheid controleren...",
+    "available": "Beschikbaar!",
+    "tablesReady": "{count} tafel(s) klaar",
+    "notAvailable": "Niet beschikbaar voor dit tijdslot.",
+    "trySuggested": "Probeer: {times}",
+    "back": "Terug",
+    "checking": "Controleren...",
+    "confirmReservation": "Reservering Bevestigen",
+    "policy": "Door te bevestigen ga je akkoord met ons reserveringsbeleid. We bevestigen binnen 24 uur."
+  },
+  "success": {
+    "title": "Reservering Bevestigd!",
+    "thankYou": "Bedankt voor het kiezen van GrandCafe Cheers",
+    "detailsHeading": "Reserveringsdetails",
+    "nameLabel": "Naam:",
+    "dateLabel": "Datum:",
+    "timeLabel": "Tijd:",
+    "guestsLabel": "Gasten:",
+    "tableLabel": "Tafel:",
+    "statusLabel": "Status:",
+    "shareWhatsApp": "Deel via WhatsApp",
+    "copyLink": "Kopieer Link",
+    "copied": "Gekopieerd!",
+    "addCalendar": "Toevoegen aan Agenda",
+    "beforeYouArrive": "Voordat je aankomt",
+    "tipLocation": "Carrer de Cartago 22, El Arenal — direct aan het strand!",
+    "tipParking": "Gratis straatparkeren in de buurt",
+    "tipHours": "We zijn dagelijks open van 10:30 tot 03:00",
+    "tipDJ": "DJ Winston Black vanaf 22:00 — dresscode: casual!",
+    "makeAnother": "Nog een reservering maken"
+  },
+  "aiAssistant": {
+    "title": "Cheers Assistent",
+    "subtitle": "Vraag me alles!",
+    "greeting": "Hoi! Ik kan je helpen met je boeking.",
+    "greetingHint": "Vraag over ons menu, evenementen of boek een tafel.",
+    "suggestion1": "Welke cocktails hebben jullie?",
+    "suggestion2": "Is er vanavond een DJ?",
+    "suggestion3": "Boek voor 4 op zaterdag",
+    "suggestion4": "Welke gerechten raden jullie aan?",
+    "applyToBooking": "Toepassen op boeking",
+    "applied": "Klaar! Ik heb je boekingsgegevens bijgewerkt. Bekijk het formulier hierboven.",
+    "errorReply": "Sorry, dat kon ik niet verwerken. Probeer het opnieuw!",
+    "errorGeneric": "Oeps, er ging iets mis. Probeer het opnieuw!",
+    "inputPlaceholder": "Vraag me alles...",
+    "tryAgain": "Opnieuw Proberen"
+  },
+  "tonight": {
+    "heading": "Vanavond bij Cheers",
+    "liveDJ": "Live DJ",
+    "sports": "Sport"
+  },
+  "socialProof": {
+    "onGoogleReviews": "op Google Reviews",
+    "followersCount": "@cheersmallorca — 5.4K volgers"
+  },
+  "footer": {
+    "needHelp": "Hulp Nodig?",
+    "helpDescription": "Voor grote groepen (12+), reserveringen op dezelfde dag of speciale verzoeken, bel ons direct.",
+    "address": "Carrer de Cartago 22, El Arenal (Platja de Palma), Mallorca 07600",
+    "hours": "Open 1 april - 1 november • Hoogseizoen: 10:30 - 03:00",
+    "copyright": "© 2026 GrandCafe Cheers. Alle rechten voorbehouden."
+  },
+  "widget": {
+    "title": "Reserveer een Tafel | GrandCafe Cheers",
+    "description": "Reserveer je tafel bij GrandCafe Cheers"
+  }
+}

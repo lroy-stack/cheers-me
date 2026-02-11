@@ -1,0 +1,196 @@
+{
+  "title": "Evaluación de Riesgos",
+  "legalBasis": "Real Decreto 39/1997, Reglamento de los Servicios de Prevención; Ley 31/1995 de Prevención de Riesgos Laborales; Directiva Marco 89/391/CEE de la UE sobre seguridad y salud de los trabajadores",
+  "summary": "La evaluación de riesgos es la piedra angular de la gestión de la seguridad y salud laboral en los establecimientos de hostelería. Conforme al RD 39/1997, todo empresario debe realizar una evaluación exhaustiva de todos los riesgos del lugar de trabajo para identificar los peligros potenciales y determinar las medidas preventivas adecuadas. La evaluación debe ser específica para cada puesto de trabajo y rol profesional, evaluando tanto la probabilidad como la severidad del daño potencial.\n\nEn entornos de hostelería, la evaluación de riesgos debe abordar los peligros específicos del sector, incluyendo quemaduras térmicas por equipos de cocina, cortes por cuchillos y cristales rotos, resbalones y caídas en superficies mojadas, lesiones por manipulación manual de cargas pesadas en entregas, lesiones por esfuerzo repetitivo en la preparación de alimentos, exposición química a productos de limpieza y riesgos psicosociales derivados de periodos de servicio de alta presión. El proceso de evaluación comprende la identificación de peligros, la determinación de quién puede resultar afectado y cómo, la evaluación de las medidas de control existentes, la decisión sobre si se necesitan medidas adicionales y la documentación de los hallazgos.\n\nLa evaluación de riesgos no es un ejercicio puntual — debe revisarse siempre que cambien significativamente las condiciones de trabajo, cuando se introduzcan nuevos equipos, tras un accidente o incidente sin consecuencias, o cuando un trabajador comunique problemas de salud relacionados con el trabajo. La revisión periódica asegura que el plan de prevención siga siendo eficaz y responda a la naturaleza cambiante de las operaciones de hostelería. Una evaluación de riesgos bien ejecutada protege tanto a los trabajadores como al negocio de los costes humanos y económicos de las lesiones laborales.",
+  "keyPoints": [
+    "La evaluación de riesgos es legalmente obligatoria conforme al RD 39/1997 para todos los empresarios, independientemente del tamaño del negocio",
+    "La evaluación debe ser específica para cada puesto de trabajo y rol, no genérica para el sector de hostelería",
+    "Deben evaluarse tanto la probabilidad como la severidad de cada peligro identificado para determinar el nivel de riesgo",
+    "Los trabajadores o sus representantes deben ser consultados durante el proceso de evaluación",
+    "La evaluación debe documentarse por escrito y constituir la base del Plan de Prevención",
+    "Se requiere una reevaluación cuando cambien las condiciones, tras los incidentes o cuando se identifiquen nuevos peligros",
+    "Las medidas preventivas deben implantarse en un orden jerárquico: eliminación, sustitución, controles de ingeniería, controles administrativos y, por último, EPI",
+    "Las trabajadoras embarazadas, los trabajadores jóvenes y los que presenten vulnerabilidades específicas requieren una evaluación de riesgos adicional específica"
+  ],
+  "sections": [
+    {
+      "heading": "1. Marco Legal y Requisitos",
+      "content": "La legislación española en materia de seguridad y salud laboral, principalmente la Ley 31/1995 y su reglamento de desarrollo RD 39/1997, establece el deber fundamental del empresario de garantizar la seguridad de los trabajadores mediante un proceso sistemático de evaluación de riesgos y prevención. Este marco legal transpone la Directiva 89/391/CEE de la UE y convierte la evaluación de riesgos no solo en una práctica recomendada, sino en una obligación legal exigible a través de la inspección de trabajo.\n\nLa evaluación debe realizarse antes de que los trabajadores estén expuestos a nuevos riesgos, ya sea al inicio de la actividad, al introducir nuevos equipos o procesos, al contratar nuevos trabajadores o cuando cambien las condiciones del lugar de trabajo. Las autoridades competentes pueden imponer multas de entre 2.000 y 40.000 euros por no realizar o documentar adecuadamente las evaluaciones de riesgos. Más importante aún, la falta de identificación y control de los riesgos laborales expone al empresario a responsabilidad civil en caso de accidente de trabajo.\n\nPara los negocios de hostelería, la evaluación debe cubrir todas las zonas: cocinas, barras, comedores, almacenes, zonas de recepción de mercancías e instalaciones para el personal. Debe abarcar todos los tipos de trabajo: preparación de alimentos, servicio, limpieza, mantenimiento y tareas administrativas. El nivel de detalle y formalidad de la evaluación debe ser proporcional al tamaño y complejidad de la operación, pero incluso un pequeño bar de tapas debe identificar y evaluar sus riesgos laborales de forma sistemática.",
+      "subsections": [
+        {
+          "heading": "1.1 Responsabilidades del Empresario",
+          "content": "El empresario asume la responsabilidad última de garantizar que se realice la evaluación de riesgos, aunque el trabajo efectivo puede delegarse en personal de seguridad interno o en un servicio de prevención externo. El empresario debe proporcionar los recursos necesarios, asegurar la participación de los trabajadores, implantar las medidas preventivas recomendadas y documentar todo el proceso. Esta responsabilidad no puede externalizarse — incluso cuando se recurre a un consultor externo para realizar la evaluación, el empresario sigue siendo legalmente responsable de la seguridad en el lugar de trabajo.\n\nLas pequeñas empresas con menos de 10 trabajadores y actividades de bajo riesgo pueden optar por que el empresario asuma directamente las funciones de prevención, siempre que trabaje habitualmente en el establecimiento y haya recibido la formación adecuada. Las empresas más grandes o con riesgos más elevados deben constituir un servicio de prevención propio o contratar un servicio de prevención ajeno autorizado."
+        },
+        {
+          "heading": "1.2 Derechos de Participación de los Trabajadores",
+          "content": "La Ley 31/1995 otorga a los trabajadores el derecho a participar en todas las cuestiones relativas a la seguridad y salud en el trabajo. Durante la evaluación de riesgos, los trabajadores deben ser consultados sobre los peligros a los que se enfrentan, sus percepciones del riesgo y la adecuación de las medidas de control existentes. Los trabajadores o sus representantes de seguridad deben participar en las inspecciones del lugar de trabajo que formen parte del proceso de evaluación.\n\nLa participación de los trabajadores mejora la calidad de la evaluación de riesgos al incorporar el conocimiento de primera línea sobre las condiciones reales de trabajo, las prácticas informales y los incidentes sin consecuencias que pueden no ser visibles para la dirección o los consultores externos. También mejora la aceptación y el cumplimiento de las medidas preventivas resultantes de la evaluación."
+        },
+        {
+          "heading": "1.3 Requisitos de Documentación",
+          "content": "La evaluación de riesgos debe documentarse por escrito, independientemente del tamaño del negocio. La documentación debe incluir: identificación de los puestos de trabajo y tareas evaluados, peligros identificados para cada uno, personas en riesgo, evaluación del nivel de riesgo (combinación de probabilidad y severidad), medidas preventivas existentes, valoración de la adecuación de las medidas existentes, medidas adicionales recomendadas, plazo de implantación y persona responsable de cada acción.\n\nEsta documentación forma parte del Plan de Prevención y debe estar disponible para la inspección por parte de la autoridad laboral y accesible para los trabajadores y sus representantes. Debe actualizarse siempre que cambien las circunstancias y revisarse al menos anualmente aunque no se hayan producido cambios."
+        }
+      ]
+    },
+    {
+      "heading": "2. El Proceso de Evaluación de Riesgos",
+      "content": "La evaluación de riesgos sigue un proceso estructurado en cinco pasos: identificación de peligros, determinación de quién puede resultar afectado y cómo, evaluación de los riesgos y adecuación de los controles existentes, registro de hallazgos e implantación de medidas adicionales, y revisión y actualización periódicas. Este enfoque sistemático garantiza que se identifiquen todos los riesgos significativos y se controlen adecuadamente.\n\nEl proceso comienza con una inspección exhaustiva del lugar de trabajo que cubra todas las zonas, equipos y actividades laborales. Esta inspección debe realizarse durante las operaciones reales para observar las prácticas de trabajo efectivas, no solo los procedimientos oficiales. La inspección debe registrar todas las fuentes potenciales de daño: equipos, sustancias, procesos de trabajo, distribución del lugar de trabajo, condiciones ambientales, organización del trabajo y factores humanos.",
+      "subsections": [
+        {
+          "heading": "2.1 Identificación de Peligros en Hostelería",
+          "content": "Los lugares de trabajo en hostelería presentan múltiples categorías de peligros. Los peligros de seguridad incluyen: resbalones, tropiezos y caídas en suelos mojados o grasientos; cortes por cuchillos, cortadoras y cristales rotos; quemaduras por equipos de cocina, líquidos calientes y vapor; lesiones por manipulación manual al levantar entregas pesadas o mover equipos; atrapamientos por maquinaria como batidoras y robots de cocina; riesgos de incendio y explosión por equipos de cocina e instalaciones de gas; y riesgos eléctricos por equipos utilizados en condiciones de humedad.\n\nLos peligros para la salud incluyen: exposición a productos químicos de limpieza y desengrasantes; riesgos biológicos por la manipulación de alimentos crudos; estrés térmico por trabajo prolongado en cocinas calientes; exposición al ruido en ambientes de bar con música alta; riesgos ergonómicos por bipedestación prolongada, movimientos repetitivos y posturas forzadas; y riesgos psicosociales por trabajo bajo presión, horarios irregulares, agresión de clientes y desequilibrio entre vida laboral y personal. Cada una de estas categorías debe evaluarse sistemáticamente para cada puesto de trabajo y rol."
+        },
+        {
+          "heading": "2.2 Metodología de Evaluación del Riesgo",
+          "content": "Para cada peligro identificado, el nivel de riesgo se determina evaluando tanto la probabilidad de que el peligro cause daño como la severidad potencial de ese daño. Un enfoque habitual utiliza una escala de tres niveles para cada dimensión: probabilidad (baja, media, alta) y severidad (lesión leve, lesión moderada, lesión grave o muerte). La combinación de ambas produce niveles de riesgo desde trivial hasta intolerable.\n\nLos peligros de alto riesgo (probabilidad alta y severidad alta) requieren acción inmediata. Los riesgos medios requieren medidas planificadas con plazos definidos. Los riesgos bajos pueden ser aceptables con los controles existentes, pero deben seguir siendo monitorizados. Esta priorización garantiza que los recursos limitados se concentren en las amenazas más significativas para la seguridad de los trabajadores."
+        },
+        {
+          "heading": "2.3 Jerarquía de Medidas de Control",
+          "content": "Una vez evaluados los riesgos, deben seleccionarse las medidas de control adecuadas siguiendo la jerarquía establecida: eliminación (eliminar completamente el peligro), sustitución (reemplazar por algo más seguro), controles de ingeniería (protecciones, ventilación, dispositivos de seguridad), controles administrativos (procedimientos, formación, rotación de puestos) y, finalmente, equipos de protección individual. Esta jerarquía refleja la eficacia y fiabilidad relativas de los distintos enfoques.\n\nPor ejemplo, el riesgo de cortes por la preparación manual de verduras podría abordarse mediante la eliminación (comprar verduras precortadas), sustitución (utilizar herramientas de corte más seguras), controles de ingeniería (usar mandolinas con protectores), controles administrativos (formación en técnicas seguras con cuchillos) o EPI (guantes anticorte). La solución más eficaz combina múltiples niveles de la jerarquía."
+        }
+      ]
+    },
+    {
+      "heading": "3. Evaluaciones Específicas por Puesto de Trabajo",
+      "content": "Aunque los establecimientos de hostelería comparten peligros comunes, el perfil de riesgo específico varía significativamente según el puesto de trabajo. Una evaluación exhaustiva debe evaluar cada zona de trabajo y rol por separado, reconociendo que un camarero se enfrenta a riesgos muy diferentes a los de un ayudante de cocina o un barman. Este enfoque específico por puesto garantiza que las medidas de control estén debidamente orientadas y que no se pasen por alto riesgos significativos.\n\nLa evaluación debe considerar no solo la ubicación física, sino también la variación de tareas a lo largo del turno. Un cocinero que trabaja principalmente en la partida caliente durante el servicio puede también realizar tareas de preparación en la cocina fría al inicio de la jornada, y por tanto estar expuesto a diferentes perfiles de peligro en diferentes momentos.",
+      "subsections": [
+        {
+          "heading": "3.1 Perfil de Riesgo de la Cocina",
+          "content": "Los entornos de cocina presentan la mayor concentración de riesgos en la hostelería. La cocina caliente expone a los trabajadores a quemaduras por llamas abiertas, superficies calientes, hornos, parrillas, freidoras y equipos de vapor. El trabajo con cuchillos genera un riesgo continuo de cortes. La manipulación manual de ollas, cajas de entregas y equipos causa tensión musculoesquelética. Los suelos mojados y grasientos crean peligro de resbalones. La exposición a productos químicos se produce durante la limpieza. Los espacios confinados y la ventilación deficiente pueden provocar estrés térmico o mala calidad del aire.\n\nLa cocina fría y las zonas de preparación implican trabajo con cuchillos con menor riesgo de quemaduras pero mayor riesgo de cortes por el cortado y troceado repetitivo. La bipedestación prolongada sobre superficies duras contribuye a la fatiga lumbar y de piernas. La sección de pastelería añade riesgos específicos por hornos calientes, batidoras con partes móviles expuestas y manipulación manual de sacos de harina. Cada una de estas zonas requiere medidas de control específicas adaptadas a su perfil de riesgo."
+        },
+        {
+          "heading": "3.2 Perfil de Riesgo de Servicio y Barra",
+          "content": "El personal de sala se enfrenta a peligros diferentes: transportar bandejas pesadas genera riesgo de manipulación manual y resbalones, especialmente al recorrer escaleras o superficies irregulares. La interacción con los clientes introduce riesgos psicosociales que incluyen agresión verbal o acoso sexual. La manipulación de cristalería genera riesgo de cortes, especialmente durante la recogida de vasos usados y la gestión de roturas. Trabajar en turnos de noche o madrugada afecta a la fatiga y la seguridad personal al desplazarse desde y hacia el trabajo.\n\nLos entornos de bar añaden riesgos específicos: esfuerzo repetitivo por agitar cócteles, abrir botellas y preparar bebidas; exposición química a agentes de limpieza y desinfectantes; exposición al ruido en locales con música alta o espectáculos; trabajo en espacios reducidos detrás de la barra; y posibilidad de violencia o agresión en establecimientos que sirven alcohol, especialmente en horario nocturno."
+        },
+        {
+          "heading": "3.3 Perfil de Riesgo de Funciones de Apoyo",
+          "content": "Los ayudantes de cocina y el personal de limpieza se enfrentan a riesgos de manipulación manual al mover cubos pesados y equipos, exposición a productos químicos de limpieza y desengrasantes, condiciones de humedad que generan riesgo de resbalones y fatiga por un trabajo físicamente exigente. El personal de recepción de mercancías y almacén encuentra riesgos por la manipulación manual de cargas pesadas o voluminosas, operación de carretillas o transpaletas, extremos de temperatura al desplazarse entre cámaras frigoríficas y zonas a temperatura ambiente, y peligros relacionados con vehículos.\n\nEl personal directivo y administrativo, aunque se enfrenta a menos peligros físicos, está sujeto a riesgos psicosociales derivados de horarios prolongados o irregulares, alta carga de trabajo y presión de tiempo, demandas contradictorias de clientes y personal, y falta de conciliación entre vida laboral y personal. Estos riesgos psicosociales suelen subestimarse, pero pueden tener consecuencias graves para la salud, incluyendo enfermedades relacionadas con el estrés, agotamiento profesional y enfermedades cardiovasculares."
+        }
+      ]
+    },
+    {
+      "heading": "4. Evaluaciones de Riesgos Especiales",
+      "content": "Además de la evaluación general de riesgos del lugar de trabajo, la legislación española exige evaluaciones específicas adicionales para determinados grupos de trabajadores o tipos de riesgo. Estas evaluaciones especiales reconocen que algunos trabajadores presentan vulnerabilidades particulares y requieren medidas de protección adicionales. No realizar estas evaluaciones cuando sea necesario constituye una infracción grave de la normativa de seguridad laboral.\n\nLas evaluaciones especiales deben realizarse antes de que el trabajador esté expuesto a los riesgos correspondientes, y las medidas de protección deben estar vigentes desde el inicio de la relación laboral o de la condición. Estas evaluaciones deben documentarse por separado de la evaluación general de riesgos, aunque forman parte del Plan de Prevención global.",
+      "subsections": [
+        {
+          "heading": "4.1 Embarazo y Lactancia",
+          "content": "Cuando una trabajadora comunica al empresario su situación de embarazo o lactancia, debe realizarse inmediatamente una evaluación de riesgos específica de su puesto de trabajo y sus tareas. La evaluación debe identificar los riesgos que puedan afectar a la salud de la madre o del feto o lactante, incluyendo: bipedestación prolongada, manipulación manual de cargas, exposición a agentes biológicos o químicos, trabajo nocturno, temperaturas extremas y carga de trabajo física o psicológica elevada.\n\nSi se identifican riesgos significativos, el empresario debe adaptar las condiciones de trabajo o la jornada laboral para eliminar o reducir el riesgo. Si la adaptación no es posible o resulta insuficiente, la trabajadora debe ser reasignada a un puesto diferente y adecuado. Si no existe trabajo alternativo disponible, la trabajadora tiene derecho a la suspensión del contrato de trabajo con protección retributiva plena hasta el inicio de la baja por maternidad o el fin del periodo de lactancia."
+        },
+        {
+          "heading": "4.2 Trabajadores Jóvenes (Menores de 18 años)",
+          "content": "Los trabajadores menores de 18 años requieren una evaluación de riesgos específica porque pueden carecer de experiencia, conciencia de los riesgos y pleno desarrollo físico. La evaluación debe considerar su inmadurez psicológica y física y tener en cuenta su falta de experiencia. Los trabajadores jóvenes tienen legalmente prohibidas determinadas actividades de alto riesgo, incluyendo el trabajo con maquinaria peligrosa, la exposición a sustancias tóxicas, el trabajo nocturno y el trabajo que implique una tensión física o psicológica excesiva.\n\nAntes de que un trabajador joven comience su actividad laboral, la evaluación de riesgos específica debe estar completada y comunicada al trabajador y a su padre, madre o tutor. Los resultados de la evaluación deben demostrar que el trabajo es adecuado para un joven y que se proporcionará la supervisión y formación apropiadas."
+        },
+        {
+          "heading": "4.3 Trabajadores con Discapacidad o Condiciones de Salud",
+          "content": "Los trabajadores con discapacidad o condiciones de salud crónicas tienen derecho a adaptaciones que les permitan realizar su trabajo de forma segura. Debe realizarse una evaluación de riesgos específica para evaluar cómo interactúa la condición del trabajador con los peligros del lugar de trabajo e identificar las adaptaciones necesarias. Esto puede incluir la modificación de equipos, el ajuste de horarios de trabajo, la reasignación de determinadas tareas o la provisión de apoyo adicional.\n\nLa evaluación debe realizarse con la participación del trabajador y, con su consentimiento, puede involucrar a su médico tratante o al servicio de salud laboral. El objetivo es permitir que el trabajador desempeñe un trabajo significativo de forma segura, respetando su privacidad y dignidad. Las adaptaciones razonables son legalmente obligatorias, salvo que supongan una carga desproporcionada para el empresario."
+        }
+      ]
+    },
+    {
+      "heading": "5. Implantación y Seguimiento",
+      "content": "Una evaluación de riesgos solo genera valor cuando sus hallazgos se traducen en acciones preventivas concretas. La fase de implantación requiere planificación, asignación de recursos, atribución de responsabilidades y seguimiento del progreso. Un error frecuente es realizar una evaluación exhaustiva para después archivarla sin actuar sobre las recomendaciones — esto no protege a los trabajadores ni constituye una defensa ante la responsabilidad legal.\n\nUna implantación eficaz sigue un plan de acción estructurado con prioridades claras, plazos, personas responsables y criterios de éxito. Los riesgos de alta prioridad deben abordarse de inmediato, incluso con medidas provisionales, mientras se planifican y dotan de recursos las mejoras a largo plazo. Todas las medidas implantadas deben documentarse y debe verificarse su eficacia.",
+      "subsections": [
+        {
+          "heading": "5.1 Planificación de Acciones",
+          "content": "Para cada riesgo que requiera medidas de control adicionales, un plan de acción debe especificar: la medida preventiva a implantar, la persona responsable de la implantación, el plazo de ejecución, los recursos necesarios (presupuesto, equipos, formación) y cómo se medirá la eficacia. Los planes de acción deben ser realistas y alcanzables — los planes excesivamente ambiciosos que no pueden dotarse de recursos ni completarse socavan todo el sistema de prevención.\n\nLas prioridades deben basarse en el nivel de riesgo: los riesgos intolerables requieren acción inmediata (incluyendo la paralización de la actividad laboral si es necesario hasta que se implanten los controles), los riesgos altos deben abordarse en semanas, los riesgos medios en meses y los riesgos bajos pueden abordarse de forma oportunista o durante actualizaciones planificadas de equipos. Esta priorización garantiza que los recursos se concentren en las amenazas más significativas."
+        },
+        {
+          "heading": "5.2 Revisión y Actualización",
+          "content": "La evaluación de riesgos es un documento vivo que debe revisarse y actualizarse periódicamente. Los motivos obligatorios de revisión incluyen: cambios significativos en el lugar de trabajo, equipos, procesos u organización del trabajo; introducción de nuevas sustancias o tecnologías; después de cualquier accidente laboral, suceso peligroso o enfermedad profesional; cuando la monitorización indique que las medidas preventivas no están funcionando como se esperaba; cuando los trabajadores comuniquen riesgos nuevos o modificados; y al menos cada dos años aunque no se hayan producido cambios.\n\nLa revisión no implica necesariamente realizar la evaluación completa desde cero — puede consistir en actualizar secciones específicas afectadas por los cambios. Sin embargo, las revisiones periódicas exhaustivas son aconsejables para asegurar que no se hayan pasado por alto cambios graduales y que la evaluación global siga siendo coherente y actual."
+        }
+      ]
+    },
+    {
+      "heading": "6. Integración con los Servicios de Prevención",
+      "content": "La evaluación de riesgos no se realiza de forma aislada — constituye la base de todo el sistema de prevención de riesgos laborales. Los resultados de la evaluación alimentan el Plan de Prevención, determinan las necesidades formativas, orientan los programas de vigilancia de la salud, configuran los procedimientos de emergencia e impulsan la mejora continua. La integración con el sistema de prevención más amplio garantiza que la evaluación de riesgos se traduzca en mejoras tangibles de seguridad.\n\nPara los negocios que utilizan servicios de prevención externos, una comunicación clara del proceso de evaluación y sus resultados es esencial. El servicio externo puede aportar experiencia técnica en la identificación de peligros y la evaluación de riesgos, pero el conocimiento específico del lugar de trabajo debe provenir del empresario y los trabajadores. Las evaluaciones más eficaces combinan la experiencia técnica con el conocimiento práctico operativo.",
+      "subsections": [
+        {
+          "heading": "6.1 Coordinación con Servicios Externos",
+          "content": "La mayoría de los pequeños y medianos negocios de hostelería contratan un servicio de prevención ajeno autorizado para el apoyo técnico. El servicio externo normalmente realiza o asiste en la evaluación de riesgos, proporciona asesoramiento experto sobre medidas de control, imparte la formación requerida y realiza los reconocimientos de vigilancia de la salud. Sin embargo, el empresario conserva la responsabilidad de implantar los hallazgos de la evaluación y asegurar el cumplimiento diario de las medidas preventivas.\n\nUna coordinación eficaz requiere comunicación regular entre el empresario y el servicio de prevención, notificación rápida de cualquier cambio que pueda afectar a los riesgos, y compartir de forma honesta la información sobre incidentes, cuasi-accidentes e inquietudes de los trabajadores. El servicio de prevención debe visitar periódicamente el lugar de trabajo para verificar que sus recomendaciones se han implantado y siguen siendo eficaces."
+        },
+        {
+          "heading": "6.2 Formación Basada en los Resultados de la Evaluación",
+          "content": "La evaluación de riesgos determina directamente los requisitos formativos. Todo trabajador debe recibir formación general en seguridad y salud laboral y formación específica sobre los riesgos de su puesto de trabajo y sus tareas. La evaluación identifica qué temas formativos son necesarios, qué trabajadores necesitan qué formación y el nivel de detalle requerido. La formación no debe ser genérica, sino adaptada a los riesgos reales identificados en la evaluación.\n\nDebe verificarse la eficacia de la formación — tras la formación, los trabajadores deben demostrar comprensión de los peligros a los que se enfrentan, las medidas de control vigentes y sus propias responsabilidades. La formación debe repetirse periódicamente, especialmente cuando los trabajadores cambien de puesto, cuando se introduzcan nuevos equipos o procedimientos, o cuando se actualice la evaluación de riesgos."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Lista de Verificación del Proceso de Evaluación de Riesgos",
+      "items": [
+        "Definir el alcance de la evaluación: todos los puestos de trabajo, tareas y trabajadores a cubrir",
+        "Formar el equipo evaluador incluyendo dirección, trabajadores o representantes de seguridad, y experiencia técnica",
+        "Realizar inspecciones del lugar de trabajo durante las operaciones reales, no solo en periodos tranquilos",
+        "Consultar con los trabajadores sobre los peligros que experimentan y los incidentes sin consecuencias",
+        "Revisar los registros de accidentes e incidentes para identificar áreas problemáticas",
+        "Identificar todos los peligros para cada puesto: peligros de seguridad, riesgos para la salud, riesgos ergonómicos, factores psicosociales",
+        "Determinar quién puede resultar afectado: todos los trabajadores, visitantes, contratistas, grupos vulnerables",
+        "Evaluar la probabilidad y severidad para cada peligro para determinar el nivel de riesgo",
+        "Revisar las medidas de control existentes y evaluar su adecuación",
+        "Determinar las medidas adicionales necesarias aplicando la jerarquía de controles",
+        "Documentar todos los hallazgos en el formato requerido",
+        "Desarrollar un plan de acción con prioridades, plazos y responsabilidades",
+        "Comunicar los resultados de la evaluación a todos los trabajadores afectados",
+        "Implantar las medidas preventivas conforme al plan de acción",
+        "Verificar la eficacia de las medidas implantadas",
+        "Establecer un calendario de revisión y actualización de la evaluación"
+      ]
+    },
+    {
+      "title": "Lista de Verificación de Evaluación de Riesgos de Cocina",
+      "items": [
+        "Resbalones, tropiezos, caídas: estado del suelo, drenaje, procedimientos de limpieza, calzado",
+        "Quemaduras: superficies calientes, líquidos, vapor, aceite — EPI, procedimientos, primeros auxilios",
+        "Cortes: cuchillos, cortadoras, cristales rotos — formación, EPI, protecciones de equipos",
+        "Manipulación manual: recepción de entregas, manejo de ollas, movimiento de equipos",
+        "Estrés térmico: ventilación, temperatura, hidratación, rotación",
+        "Riesgo de incendio: equipos de gas, acumulación de grasa, sistemas de extinción, extintores",
+        "Seguridad eléctrica: estado de los equipos, proximidad al agua, registros de inspección",
+        "Exposición a productos químicos: productos de limpieza, almacenamiento, EPI, Fichas de Datos de Seguridad",
+        "Maquinaria: protecciones, paradas de emergencia, procedimientos de bloqueo, formación",
+        "Espacios confinados: cámaras frigoríficas, almacenes secos — ventilación, apertura de emergencia",
+        "Ergonomía: duración de bipedestación, movimientos repetitivos, alturas de superficies de trabajo",
+        "Higiene y contaminación cruzada: lavado de manos, separación de alimentos, higiene personal"
+      ]
+    },
+    {
+      "title": "Lista de Verificación de Evaluación de Riesgos Especial (Embarazo)",
+      "items": [
+        "Bipedestación o sedestación prolongada: evaluar el puesto de trabajo y las tareas actuales",
+        "Manipulación manual: peso de las cargas, frecuencia, ayuda disponible",
+        "Riesgos biológicos: manipulación de carne cruda, contacto con materiales potencialmente contaminados",
+        "Exposición a productos químicos: productos de limpieza, desinfectantes, ventilación",
+        "Carga física de trabajo: duración del turno, pausas de descanso, exigencias físicas",
+        "Trabajo nocturno: horario actual, posibilidad de traslado a turnos diurnos",
+        "Estrés térmico: temperatura de la cocina, posibilidad de regulación de temperatura",
+        "Factores psicosociales: carga de trabajo, estrés, conciliación laboral y personal",
+        "Conclusión: ¿Pueden eliminarse/reducirse todos los riesgos mediante adaptación del puesto?",
+        "En caso negativo: ¿Existe un trabajo alternativo adecuado disponible?",
+        "La trabajadora ha sido informada de los resultados de la evaluación y las medidas de protección",
+        "Reevaluación programada si las circunstancias cambian durante el embarazo"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Involucre a los trabajadores de primera línea en el proceso de evaluación — poseen el conocimiento más detallado de las condiciones reales de trabajo y las prácticas informales",
+    "Utilice ayudas visuales y fotografías en la documentación de la evaluación para ilustrar claramente los peligros y las medidas de control",
+    "No se limite a evaluar el cumplimiento de los mínimos legales — aspire a estándares de mejores prácticas que protejan verdaderamente la salud de los trabajadores",
+    "Revise los registros de accidentes y cuasi-accidentes como parte de la identificación de peligros — revelan problemas del mundo real",
+    "Observe el trabajo en diferentes momentos: periodos punta de servicio, periodos tranquilos, procedimientos de apertura y cierre — los riesgos varían",
+    "Considere el efecto acumulativo de múltiples riesgos de bajo nivel que juntos pueden generar una tensión significativa",
+    "Priorice las medidas que eliminen o reduzcan los peligros sobre las que simplemente gestionan la exposición",
+    "Cree una cultura de seguridad positiva donde los trabajadores se sientan cómodos comunicando peligros y sugiriendo mejoras sin temor a represalias",
+    "Utilice la evaluación de riesgos como una herramienta de mejora continua, no solo como un documento de cumplimiento"
+  ],
+  "glossary": {
+    "Riesgo": "La combinación de la probabilidad de que un peligro cause daño y la severidad de ese daño",
+    "Peligro": "Cualquier cosa con potencial para causar daño a las personas (lesión o enfermedad)",
+    "Evaluación de Riesgos": "El proceso sistemático de identificación de peligros, evaluación de los riesgos asociados y determinación de las medidas de control adecuadas",
+    "Plan de Prevención": "El documento integral que establece el enfoque del empresario en materia de prevención de riesgos laborales, basado en la evaluación de riesgos",
+    "Riesgo Crítico": "Un riesgo evaluado como de probabilidad alta y severidad alta, que requiere medidas de control inmediatas",
+    "Medida de Control": "Una acción o salvaguarda implantada para eliminar o reducir un riesgo a un nivel aceptable",
+    "Jerarquía de Controles": "El principio de que las medidas de control deben seleccionarse por orden de eficacia: eliminación, sustitución, controles de ingeniería, controles administrativos, EPI",
+    "Servicio de Prevención Ajeno": "Empresa especializada autorizada por la autoridad laboral para proporcionar servicios técnicos de seguridad y salud laboral a las empresas",
+    "Representante de Seguridad": "Trabajador elegido o designado para representar a los trabajadores en materia de seguridad y salud y participar en la evaluación de riesgos"
+  }
+}

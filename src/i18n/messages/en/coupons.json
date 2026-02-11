@@ -1,0 +1,123 @@
+{
+  "title": "Gift Coupons",
+  "subtitle": "Manage gift vouchers and redemptions",
+  "noCoupons": "No coupons yet",
+  "noCouponsDescription": "Gift coupons will appear here once customers purchase them.",
+  "status": {
+    "pending_payment": "Pending Payment",
+    "active": "Active",
+    "partially_used": "Partially Used",
+    "fully_used": "Fully Used",
+    "expired": "Expired",
+    "cancelled": "Cancelled"
+  },
+  "theme": {
+    "elegant": "Elegant",
+    "tropical": "Tropical",
+    "celebration": "Celebration",
+    "seasonal": "Seasonal"
+  },
+  "stats": {
+    "totalSold": "Total Sold",
+    "totalRevenue": "Total Revenue",
+    "activeCoupons": "Active Coupons",
+    "redeemed": "Redeemed"
+  },
+  "detail": {
+    "couponCode": "Coupon Code",
+    "amount": "Original Amount",
+    "remaining": "Remaining Balance",
+    "purchaser": "Purchased By",
+    "recipient": "Recipient",
+    "message": "Personal Message",
+    "purchasedAt": "Purchased",
+    "expiresAt": "Expires",
+    "redemptionHistory": "Redemption History",
+    "noRedemptions": "No redemptions yet",
+    "downloadPdf": "Download PDF"
+  },
+  "validate": {
+    "title": "Validate Coupon",
+    "subtitle": "Scan QR code or enter coupon code manually",
+    "scanQr": "Scan QR Code",
+    "enterCode": "Enter Code",
+    "codePlaceholder": "GC-XXXXXX",
+    "lookup": "Look Up",
+    "looking": "Looking up...",
+    "invalidFormat": "Invalid coupon code format",
+    "notFound": "Coupon not found",
+    "expired": "This coupon has expired",
+    "fullyUsed": "This coupon has been fully used",
+    "cancelled": "This coupon has been cancelled",
+    "cameraPermission": "Camera permission is required to scan QR codes",
+    "scannerReady": "Point camera at QR code"
+  },
+  "redeem": {
+    "title": "Redeem Coupon",
+    "amountLabel": "Redemption Amount",
+    "amountHelp": "Enter the amount to deduct (max: {max})",
+    "fullAmount": "Full Amount",
+    "customAmount": "Custom Amount",
+    "notes": "Notes (optional)",
+    "confirm": "Confirm Redemption",
+    "confirming": "Processing...",
+    "success": "Coupon redeemed successfully!",
+    "error": "Failed to redeem coupon"
+  },
+  "purchase": {
+    "heroTitle": "Give the Gift of Cheers",
+    "heroSubtitle": "The perfect present — a gift voucher for GrandCafe Cheers, Mallorca's beachfront restaurant & bar.",
+    "step1": "Choose Amount",
+    "step2": "Personalize",
+    "step3": "Your Details",
+    "step4": "Payment",
+    "selectAmount": "Select an amount",
+    "customAmount": "Custom amount",
+    "minAmount": "Minimum €{min}",
+    "maxAmount": "Maximum €{max}",
+    "recipientName": "Recipient's Name",
+    "recipientNamePlaceholder": "Who is this gift for?",
+    "personalMessage": "Personal Message",
+    "personalMessagePlaceholder": "Add a heartfelt message...",
+    "optional": "Optional",
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "emailHelp": "We'll send the voucher to this email",
+    "gdprConsent": "I agree that my data will be processed to fulfill this gift voucher purchase",
+    "gdprRequired": "Consent is required to proceed",
+    "payNow": "Pay Now — {amount}",
+    "processing": "Redirecting to payment...",
+    "chooseTheme": "Choose a Style",
+    "preview": "Preview"
+  },
+  "success": {
+    "title": "Payment Successful!",
+    "subtitle": "Your gift voucher is ready",
+    "description": "The voucher has been created and is ready to download. Share it with your loved one!",
+    "viewVoucher": "View Voucher",
+    "downloadPdf": "Download PDF",
+    "buyAnother": "Buy Another"
+  },
+  "cancelled": {
+    "title": "Payment Cancelled",
+    "subtitle": "Your payment was not completed",
+    "description": "No charges were made. You can try again anytime.",
+    "tryAgain": "Try Again"
+  },
+  "publicView": {
+    "giftVoucher": "Gift Voucher",
+    "balance": "Current Balance",
+    "validUntil": "Valid Until",
+    "from": "From",
+    "downloadPdf": "Download PDF",
+    "redeemInStore": "Present this voucher at GrandCafe Cheers to redeem"
+  },
+  "filters": {
+    "allStatuses": "All Statuses",
+    "search": "Search by code or name..."
+  },
+  "pageTabs": {
+    "overview": "Overview",
+    "validate": "Validate Coupon"
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "title": "Mandatory Documentation Checklist",
+  "legalBasis": "Comprehensive compilation based on: EU Regulation 852/2004 (food safety documentation); Ley 31/1995 (occupational health documentation); Estatuto de los Trabajadores and RD 8/2019 (employment documentation); Law 12/2012 on business registration; various sectoral regulations",
+  "summary": "Operating a hospitality establishment in Spain requires maintaining extensive documentation across multiple regulatory domains including food safety, occupational health and safety, employment law, business registration, tax compliance, and sector-specific licensing. This documentation serves multiple purposes: demonstrating legal compliance to inspectors and authorities, protecting the business in the event of claims or litigation, managing operations effectively, and providing continuity when staff changes occur. Failure to maintain required documentation can result in administrative fines, operational restrictions, license suspension, and serious difficulty defending against complaints or legal claims.\n\nThe documentation burden can feel overwhelming, particularly for small establishments with limited administrative resources. However, much of the documentation follows templates or standard formats, and many items require only periodic updates rather than continuous maintenance. The key is establishing organized systems from the beginning, maintaining consistent practices for record-keeping and filing, and allocating adequate time and responsibility for documentation management. Digital document management systems can significantly reduce the physical storage burden and improve accessibility, though certain documents may still be required in original paper format.\n\nThis guide provides a comprehensive checklist of mandatory documentation organized by category, with brief explanations of what each document is, why it is required, who is responsible for maintaining it, retention requirements, and where it must be accessible. The checklist should be reviewed annually and whenever regulations change to ensure all required documentation is current and complete. Proactive documentation management prevents the crisis of discovering missing or outdated documents during an inspection.",
+  "keyPoints": [
+    "Multiple regulatory domains require specific documentation from hospitality establishments",
+    "Food safety documentation includes APPCC plan, temperature logs, cleaning records, supplier documents, and traceability records",
+    "Occupational health documentation includes PRL Prevention Plan, risk assessments, training records, and emergency plans",
+    "Employment documentation includes contracts, time records, payroll records, and Social Security registration",
+    "Business licenses and registrations must be current, displayed as required, and renewed timely",
+    "Many documents have specific retention periods ranging from 2 to 10+ years",
+    "Documents must be accessible to competent authorities during inspections",
+    "Organized filing systems (physical and/or digital) are essential for managing documentation",
+    "Regular audits of documentation completeness help identify and address gaps before inspections",
+    "Assign clear responsibility for maintaining each category of documentation"
+  ],
+  "sections": [
+    {
+      "heading": "1. Food Safety Documentation",
+      "content": "Food safety documentation is among the most extensive and frequently inspected categories. EU Regulation 852/2004 and Spanish implementing legislation require comprehensive documentation of the HACCP/APPCC system and all related food safety procedures. These documents must be kept current, available for inspection, and retained for specified periods. Health inspectors will review these documents during official controls to verify that food safety management is not merely theoretical but actively implemented and monitored.\n\nThe foundation document is the HACCP Plan itself, which describes the food safety management system specific to the establishment. This plan includes: hazard analysis for all processes, identification of Critical Control Points (CCPs), critical limits for each CCP, monitoring procedures, corrective action procedures, verification procedures, and documentation/record-keeping protocols. The HACCP Plan must be reviewed at least annually and whenever significant changes occur (menu changes, equipment changes, layout modifications). Retain the current version and previous versions for at least 2 years to demonstrate how the system has evolved.\n\nOperational records generated through implementing the HACCP Plan are equally important. Temperature monitoring logs (refrigerators, freezers, hot holding, cooking core temperatures) must be completed daily and retained for at least 6 months, longer if required by regional regulation. Cleaning and disinfection records documenting that the cleaning plan has been followed should be maintained daily and retained for at least 3 months. Delivery reception records showing that incoming products were checked for temperature compliance, quality, and proper documentation should be maintained for at least 1 year. Traceability records linking products to suppliers and lot numbers must be retained for at least 5 years as required by EU traceability regulations.",
+      "subsections": [
+        {
+          "heading": "1.1 Supplier and Product Documentation",
+          "content": "Maintain a current approved supplier list with each supplier's business name, health registration number (RGSEAA or equivalent), contact information, and products supplied. Update this list whenever suppliers change and verify at least annually that supplier registrations remain valid. Keep delivery notes and invoices showing product descriptions, lot numbers, quantities, delivery dates, and supplier details. These documents support traceability and must be retained for at least 5 years.\n\nFor specific high-risk products, additional documentation may be required. Animal products (meat, fish, dairy, eggs) must come from approved establishments with health registration numbers appearing on labels or delivery documentation. Keep certificates of analysis for products where required (such as frozen fish for raw consumption requiring parasite inspection). Maintain Material Safety Data Sheets (MSDS or SDS) for all cleaning chemicals and other food-contact chemical products, updated whenever products change and accessible to staff using the products."
+        },
+        {
+          "heading": "1.2 Training and Competence Records",
+          "content": "All food handlers must hold valid Food Handler Certificates (Carnet de Manipulador de Alimentos). Maintain copies of all certificates in a dedicated file, organized by employee name. Check certificates during hiring before the employee handles food, and track expiration dates to ensure renewal where required by regional regulation. If the establishment provides internal training, maintain records of all training sessions including: date, duration, topic, trainer qualifications, attendees with signatures, and training materials.\n\nThe HACCP team must include at least one member with formal HACCP training. Maintain certificates or evidence of HACCP training for designated team members. Document HACCP plan reviews with meeting minutes showing date, attendees, issues discussed, any changes made, and next review date. Annual reviews are minimum, but reviews should also occur when significant changes are made to operations."
+        }
+      ]
+    },
+    {
+      "heading": "2. Occupational Health and Safety Documentation",
+      "content": "Ley 31/1995 de Prevención de Riesgos Laborales and its implementing regulations establish extensive documentation requirements for occupational health and safety. These documents demonstrate that the employer has identified workplace hazards, assessed risks, implemented preventive measures, trained workers, and monitored effectiveness. Labor inspectors will review this documentation during occupational health inspections, and it becomes critical evidence in the event of workplace accidents or occupational illness claims.\n\nThe foundation is the Prevention Plan (Plan de Prevención de Riesgos Laborales), a comprehensive document establishing the organization's occupational health and safety management system. The plan describes: organizational structure and responsibilities for prevention, integration of prevention into all business activities, coordination with external prevention services if used, and how the plan will be monitored and updated. For companies with fewer than 6 employees, simplified documentation may be permitted, but even micro-businesses must have basic prevention documentation.\n\nRisk Assessment (Evaluación de Riesgos) documents must identify all workplace hazards, evaluate the likelihood and severity of harm, determine current preventive measures, identify any additional measures needed, and prioritize risk control actions. Assessments must cover all workplaces, all tasks, all workers including temporary and part-time staff, and all equipment. Special assessments are required for pregnant workers, young workers (under 18), night workers, and workers in roles with specific risks. Risk assessments must be reviewed whenever significant changes occur and at least whenever working conditions change.",
+      "subsections": [
+        {
+          "heading": "2.1 Emergency and Health Surveillance Documentation",
+          "content": "The Emergency Plan (Plan de Emergencia) must describe procedures for all foreseeable emergencies including fire, gas leaks, serious injuries, and natural disasters. The plan includes: emergency procedures for each scenario, evacuation routes and assembly points, roles and responsibilities (fire wardens, first aiders, evacuation coordinators), emergency contact information, and training and drill schedules. Conduct evacuation drills at least twice annually and document each drill with date, time, duration, participants, observations, and any corrective actions needed.\n\nHealth surveillance records document periodic health examinations offered to workers in roles with specific health risks. Maintain records showing: health examinations offered to each worker (initial examination and periodic renewals), worker acceptance or refusal (refusal must be voluntary and documented), any work restrictions or accommodations recommended by occupational health service, and follow-up on recommendations. These records are confidential medical information subject to strict privacy protections — maintain separately from general personnel files with restricted access."
+        },
+        {
+          "heading": "2.2 Training and Consultation Documentation",
+          "content": "All workers must receive health and safety training appropriate to their role during induction and whenever conditions change. Maintain training records including: date, duration, content covered, trainer qualifications, attendees with signatures, and training materials provided. Specific training records are required for: general health and safety induction, job-specific safety training, emergency procedure training, equipment-specific training, and any specialized training (forklift operation, working at height, chemical handling).\n\nWorker consultation and participation is a legal requirement. Document consultation processes including: establishment of worker representatives or health and safety committee if required by size, meeting minutes for safety committee or worker consultation meetings, worker input on risk assessment and preventive measures, and responses to worker safety concerns. This documentation demonstrates compliance with consultation requirements and can be valuable if workers later claim they were not consulted about safety matters."
+        }
+      ]
+    },
+    {
+      "heading": "3. Employment and Labor Law Documentation",
+      "content": "Spanish employment law requires extensive documentation of the employment relationship from recruitment through termination and beyond. These documents protect both employer and employee rights, facilitate tax and social security compliance, and provide evidence in the event of labor disputes. Employment documentation requirements apply to all employees regardless of contract type, working hours, or duration of employment. Particular care must be taken with temporary and part-time contracts to ensure they meet legal requirements and are properly documented.\n\nEmployment Contracts must be in writing for all employment relationships except indefinite full-time contracts (though written contracts are recommended even for these). Temporary contracts, part-time contracts, training contracts, and fijo discontinuo contracts must be in writing and must specify: parties to the contract, start date (and end date for temporary contracts), job category and duties, workplace location, working hours and schedule, remuneration, trial period if applicable, and applicable collective agreement. Contracts must be registered with the employment service (SEPE) within specified timeframes. Maintain original signed contracts and proof of registration indefinitely.\n\nTime recording (Registro de Jornada) has been mandatory since 2019 under RD-ley 8/2019. The system must record the daily start time and end time (not merely total hours) for every worker every day. Records must be retained for 4 years and be accessible to workers, worker representatives, and labor inspectors at any time. The recording system must be reliable, objective, and verifiable — accepted methods include electronic time clocks, digital systems with individual logins, or manual registers with individual signatures. Records that are incomplete, obviously falsified, or inaccessible can result in substantial fines.",
+      "subsections": [
+        {
+          "heading": "3.1 Payroll and Social Security Documentation",
+          "content": "Monthly payroll documents (nóminas) must be provided to each employee showing: gross salary including all components (base, supplements, overtime, bonuses), deductions (income tax withholding, Social Security contributions), net pay, employer Social Security contributions, and accumulated totals for the year. Retain copies of all payroll documents for at least 5 years. Payroll must comply with applicable collective agreement minimums and equal pay requirements.\n\nSocial Security registration documents must be maintained for all employees including: original registration with Social Security (proof of inscription), any modifications to registration (changes in salary, category, working hours), periods of temporary incapacity (sick leave documentation), and deregistration when employment ends. Maintain complete copies of Social Security contribution documents (TC1, TC2) showing monthly contributions paid. These documents are essential for defending against claims of irregular employment or Social Security fraud. Retain indefinitely, as claims can arise years after employment ends."
+        },
+        {
+          "heading": "3.2 Disciplinary and Termination Documentation",
+          "content": "Any disciplinary actions must be documented in writing specifying: the facts constituting the infraction, the applicable provision of the collective agreement or company rules violated, the sanction imposed, and the right to appeal. Provide copies to the worker and worker representatives as required by collective agreement. Maintain copies in personnel files. If employment is terminated for disciplinary reasons, documentation must be particularly thorough as it will be scrutinized if the worker claims unfair dismissal.\n\nTermination documentation varies by type of termination. Voluntary resignation requires written resignation letter from employee. Termination by employer requires written communication specifying effective date, reason for termination, notice period or compensation, and any outstanding payments. Terminations other than voluntary resignation or completion of temporary contract require prior communication to worker representatives (10-day consultation period for objective termination, immediate for disciplinary dismissal). Maintain complete documentation of all termination processes including notifications, consultations, and settlements."
+        }
+      ]
+    },
+    {
+      "heading": "4. Business Licenses and Registrations",
+      "content": "Operating a hospitality establishment requires multiple licenses, registrations, and permits at various government levels. These documents must be obtained before commencing operations, renewed as required, and displayed or made available as specified by regulations. Failure to maintain current licenses can result in operational prohibitions, fines, and in serious cases criminal liability. The specific requirements vary by autonomous community and municipality, so verify local requirements in addition to the general framework described here.\n\nHealth Registration (Número de Registro Sanitario) is issued by the regional health authority after verifying that the establishment meets hygiene and food safety requirements. The registration number must be displayed in a visible location accessible to customers. Registration is typically indefinite but must be updated if significant changes occur (ownership change, major renovation, change in food activities). Maintain the original registration certificate and any modification certificates. Some autonomous communities require periodic renewal or re-inspection.\n\nActivity License (Licencia de Actividad) is issued by the municipal authority after verifying that the establishment complies with urban planning, fire safety, accessibility, environmental, and other local regulations. The license process typically requires submission of technical project, environmental impact declaration, fire safety plan, and payment of fees. Once issued, the license must be displayed on the premises. Maintain the original license and all supporting documentation (technical projects, inspector reports, payment receipts). The license must be updated if significant changes occur to the establishment or its activities.",
+      "subsections": [
+        {
+          "heading": "4.1 Alcohol, Music, and Specialized Permits",
+          "content": "Alcohol service license is required for serving alcoholic beverages and is typically integrated with the activity license or health registration depending on region. Some regions have separate alcohol licenses. Restrictions on hours, age verification requirements, and advertising may apply. Music and entertainment permits are required for establishments offering live music, DJ performances, or amplified music beyond background level. Requirements vary significantly by municipality and may involve acoustic studies and restrictions on hours and sound levels.\n\nOutdoor terrace permits (Licencia de Terraza) are required for operating outdoor seating areas on public sidewalks or other public space. These permits specify: maximum number of tables and chairs, authorized area (often marked on a map), authorized hours, seasonal limitations (many are issued only for warmer months), and obligations regarding cleaning and maintenance. Permits must typically be renewed annually. Smoking area compliance should be documented if the establishment permits smoking anywhere, including outdoor terraces, showing compliance with Law 42/2010 anti-smoking regulations."
+        },
+        {
+          "heading": "4.2 Fire Safety and Accessibility Certification",
+          "content": "Fire safety certificate or compliance documentation is required demonstrating that the establishment meets fire safety requirements of the Technical Building Code (Código Técnico de la Edificación, CTE) and RD 513/2017 on fire protection installations. This typically involves: fire safety installation certificate showing that fire extinguishers, alarms, emergency lighting, and suppression systems have been installed by authorized installers, maintenance contracts for fire safety equipment with periodic inspection records, and evacuation plan meeting CTE requirements.\n\nAccessibility certification demonstrates compliance with requirements for accessibility for persons with disabilities. For new establishments or major renovations after applicable dates, full accessibility compliance is required. For older establishments, requirements may be graduated. Maintain documentation of accessibility features (ramps, accessible restrooms, width of doors and aisles) and any exemptions granted due to physical impossibility in historic buildings. This documentation is important for defending against discrimination complaints as well as for licensing compliance."
+        }
+      ]
+    },
+    {
+      "heading": "5. Tax and Financial Documentation",
+      "content": "Tax compliance requires maintaining comprehensive financial records documenting all business transactions, income, expenses, and tax obligations. Spanish tax law establishes strict requirements for what records must be maintained, in what format, for how long, and how quickly they must be made available to tax authorities. While tax documentation is often managed by external accountants or tax advisors, the business owner retains ultimate responsibility for ensuring compliance and maintaining required records. Digital records are generally acceptable if they meet prescribed security and integrity requirements.\n\nAccounting books required depend on the legal form of business and whether the business is in normal or simplified tax regime. Minimum requirements for most hospitality businesses include: Journal (Libro Diario) recording all business transactions chronologically, Ledger (Libro Mayor) organizing transactions by account, and Annual Accounts including balance sheet, profit and loss statement, and notes. These books must be submitted to the Mercantile Registry annually for registered companies. Maintain accounting books indefinitely as they form the historical financial record of the business.\n\nInvoice documentation includes copies of all invoices issued to customers and all invoices received from suppliers. Spanish invoicing regulations (RD 1619/2012) establish specific requirements for invoice content, numbering, and retention. Invoices must be retained for at least 6 years (some advisors recommend 10 years to cover the maximum statute of limitations for tax matters). Increasingly, electronic invoicing is becoming standard, but paper invoices remain valid. Simplified invoices may be issued for transactions under €400 but full invoices are required for larger amounts.",
+      "subsections": [
+        {
+          "heading": "5.1 VAT and Income Tax Documentation",
+          "content": "VAT (IVA) documentation includes: records of all taxable transactions showing tax base and VAT charged, records of all purchases showing VAT paid, VAT returns filed quarterly or monthly depending on business size, and annual VAT summary. Particular care is required with mixed VAT rates common in hospitality (reduced rate for food service, standard rate for alcohol, potential super-reduced rate for certain items). Maintain comprehensive records supporting VAT treatment of all transactions. Errors in VAT accounting can result in assessments of underpaid tax plus interest and penalties.\n\nIncome tax documentation for business income includes: all revenue and expense records, documentation of capital expenditures and depreciation schedules, records of any special tax provisions claimed (such as deductions for certain investments or incentives), quarterly income tax prepayments (pagos fraccionados), and annual income tax returns. For corporations, corporate income tax (Impuesto sobre Sociedades) applies; for sole proprietors and partnerships, personal income tax (IRPF) applies to business income. Maintain records for at least 6 years from filing, though longer retention is prudent."
+        },
+        {
+          "heading": "5.2 Cash Register and Point of Sale Documentation",
+          "content": "Cash registers and point-of-sale systems must comply with regulations intended to prevent tax fraud. Systems must produce detailed records of all transactions, records must be secure and unalterable after creation, and daily closing reports (Z reports) must be produced and retained. Some autonomous communities have specific requirements for cash register certification or real-time reporting to tax authorities (SII system for large businesses). Maintain all Z reports, transaction logs, and system configuration documentation.\n\nIf the business operates in cash-intensive environment, additional scrutiny applies. Large cash transactions (€1,000 or more in some contexts, €2,500 in others) may have reporting requirements or restrictions. Maintain records documenting the source of cash deposits to bank accounts to defend against allegations of unreported income. Banking records (bank statements, deposit records, payment records) should be retained for at least 6 years and cross-referenced to accounting books to demonstrate that all business funds are properly accounted for."
+        }
+      ]
+    },
+    {
+      "heading": "6. Insurance and Contractual Documentation",
+      "content": "Various types of insurance are required by law or highly advisable for risk management. Maintain current insurance policies, proof of premium payment, and updated certificates of insurance accessible for inspection when required. Civil liability insurance is mandatory in most contexts, covering third-party claims for bodily injury or property damage. The policy must provide adequate coverage limits appropriate to the business size and activities. Some regions or municipalities require specific minimum coverage amounts for licensing purposes.\n\nWorkers' compensation insurance through a mutual society (Mutua) or directly with Social Security covers workplace accidents and occupational illnesses. Employers must register with a chosen Mutua and display the Mutua's contact information prominently for workers. Maintain documentation of Mutua enrollment, premium payments, and any workplace accident reports filed with the Mutua. Property and business interruption insurance, while not legally mandatory, provides critical protection against fire, flood, theft, and other perils. Maintain policies and ensure adequate coverage limits are reviewed periodically.\n\nSupplier and service provider contracts should be documented in writing specifying: parties, services or products provided, prices, payment terms, delivery or performance schedules, liability provisions, and termination conditions. Key contracts to maintain include: food and beverage supply agreements, equipment maintenance contracts, waste collection contracts, pest control service agreements, cleaning service agreements if outsourced, and lease or property documentation. Maintain original signed contracts plus any amendments for at least 6 years after termination of the contractual relationship.",
+      "subsections": [
+        {
+          "heading": "6.1 Franchise and Brand Agreements",
+          "content": "If operating under franchise or brand agreement, maintain all franchise documentation including: franchise agreement specifying rights and obligations, operations manuals and brand standards, trademark and intellectual property usage agreements, territory definitions and exclusivity provisions, fee structures and payment schedules, and termination conditions. These agreements are typically extensive and legally complex. Maintain original agreements plus all amendments and supplementary documents indefinitely, as rights and obligations may extend beyond the termination of the active franchise relationship.\n\nComply with reporting requirements to franchisors (operational reports, financial reports, compliance audits) and maintain copies of all reports submitted. Document any communications regarding brand compliance, quality issues, or disputes. This documentation protects both franchisor and franchisee rights and provides evidence if disputes arise about compliance with franchise standards or financial obligations."
+        },
+        {
+          "heading": "6.2 Leases and Property Documentation",
+          "content": "If operating in leased premises, maintain: original lease agreement specifying rent, duration, renewal options, permitted uses, maintenance responsibilities, and termination conditions; proof of rent payments; communications with landlord regarding maintenance issues or modifications; and any licenses or consents from landlord for business operations, alterations, or subletting if applicable. Lease disputes are common in commercial contexts, and comprehensive documentation of the lease relationship is essential protection.\n\nFor owned property, maintain: property title documents, mortgage documentation if applicable, property tax (IBI) payment records, community fees payment records if in multi-unit property, building permits for any renovations or modifications, and property insurance policies. Even though the business is the operator rather than the property itself, property documentation is important for demonstrating legal right to operate at the location and for compliance with licensing requirements that may depend on property ownership or authorization."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Food Safety Documentation Checklist",
+      "items": [
+        "HACCP/APPCC Plan current and reviewed annually",
+        "Temperature monitoring logs (refrigerators, freezers, cooking, hot holding) current and complete",
+        "Cleaning and disinfection records current and signed off",
+        "Delivery reception records for recent deliveries",
+        "Approved supplier list current with verified health registration numbers",
+        "Delivery notes and invoices showing traceability for current stock plus retention period",
+        "Food handler certificates for all staff handling food, current and valid",
+        "HACCP training certificates for team members",
+        "Pest control service contract and inspection records",
+        "Water quality test results if using private supply",
+        "Calibration records for thermometers and measuring equipment",
+        "Non-conformity and corrective action records"
+      ]
+    },
+    {
+      "title": "Occupational Health and Safety Documentation Checklist",
+      "items": [
+        "Prevention Plan (Plan de PRL) current and reviewed",
+        "Risk Assessment (Evaluación de Riesgos) current covering all positions and hazards",
+        "Emergency Plan (Plan de Emergencia) current with evacuation routes and procedures",
+        "Evacuation drill records for past year (minimum 2 drills)",
+        "Health and safety training records for all employees",
+        "Health surveillance records (if applicable) maintained confidentially",
+        "Work accident records (Parte de Accidente) for any workplace accidents",
+        "First aid supplies inventory and replenishment records",
+        "Fire safety equipment inspection certificates current",
+        "Contract with external prevention service if applicable",
+        "Worker representative or safety committee meeting minutes",
+        "Risk assessment updates for pregnant workers, young workers, or night workers if applicable"
+      ]
+    },
+    {
+      "title": "Employment Documentation Checklist",
+      "items": [
+        "Employment contracts for all employees, signed and registered with SEPE",
+        "Social Security registration documentation for all employees",
+        "Time recording system operational with complete records for past 4 years",
+        "Monthly payroll documents (nóminas) for all employees with proof of delivery",
+        "Social Security contribution records (TC1, TC2) current and paid",
+        "Income tax withholding records (Modelo 111) filed quarterly",
+        "Employment contract registration confirmations from SEPE",
+        "Personnel files with copies of ID, qualifications, references, performance records",
+        "Leave records (vacation, sick leave, parental leave) with authorizations",
+        "Disciplinary records if any, with proper notification documentation",
+        "Termination documentation for employees who have left with settlement records",
+        "Collective bargaining agreement applicable to the establishment"
+      ]
+    },
+    {
+      "title": "Business Licenses and Registrations Checklist",
+      "items": [
+        "Health registration (Número de Registro Sanitario) current and displayed",
+        "Activity license (Licencia de Actividad) current and displayed",
+        "Alcohol service authorization current if serving alcoholic beverages",
+        "Outdoor terrace permit current if operating terrace",
+        "Music and entertainment permit current if offering music",
+        "Tax identification number (NIF/CIF) registration current",
+        "Business registration (inscription in Registro Mercantil if required)",
+        "Fire safety certificate or compliance documentation current",
+        "Fire equipment maintenance records current",
+        "Accessibility compliance documentation or exemption",
+        "Data protection registration or accountability documentation",
+        "Insurance certificates current (civil liability, workers' compensation, property)"
+      ]
+    },
+    {
+      "title": "Financial and Tax Documentation Checklist",
+      "items": [
+        "Accounting books current (Journal, Ledger, Annual Accounts)",
+        "All invoices issued to customers properly numbered and retained",
+        "All invoices received from suppliers organized and retained",
+        "VAT returns filed quarterly/monthly and payment records",
+        "Income tax prepayments filed quarterly and payment records",
+        "Annual tax returns filed (corporate income tax or personal income tax)",
+        "Cash register Z reports and transaction logs retained",
+        "Bank statements for all business accounts retained",
+        "Fixed asset register and depreciation schedules current",
+        "Inventory records current if required by tax regime",
+        "Tax payment records and payment confirmations",
+        "Tax advisor communications and any correspondence with tax authorities"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Establish organized filing systems from day one — both physical and digital — with clear folder structures and naming conventions",
+    "Assign specific responsibility for each category of documentation to named individuals who understand the requirements",
+    "Create document retention schedules specifying how long each type of document must be kept, and implement automatic archival/deletion",
+    "Conduct quarterly internal audits of documentation completeness, addressing gaps immediately rather than waiting for external inspections",
+    "Digitize paper documentation where feasible for easier backup, search, and retrieval, but maintain originals where legally required",
+    "Use checklists and templates to standardize routine documentation tasks and ensure consistency",
+    "Keep master copies of all registrations, licenses, and certificates in a secure, fireproof location with backup copies accessible for daily operations",
+    "Create an inspection readiness folder with the most commonly requested documents ready for immediate presentation to inspectors",
+    "Review documentation requirements annually and whenever regulations change to ensure ongoing compliance",
+    "Use document management software or cloud storage with proper access controls and backup to prevent loss of critical records"
+  ],
+  "glossary": {
+    "HACCP Plan": "Hazard Analysis and Critical Control Points plan documenting the food safety management system",
+    "Prevention Plan": "Plan de Prevención de Riesgos Laborales, the foundational occupational health and safety management document",
+    "Risk Assessment": "Evaluación de Riesgos, systematic identification and evaluation of workplace hazards",
+    "Time Recording": "Registro de Jornada, mandatory daily recording of employee start and end times since 2019",
+    "Health Registration": "Número de Registro Sanitario, registration with health authority required for food establishments",
+    "Activity License": "Licencia de Actividad, municipal authorization to operate specific business activities at a location",
+    "Social Security Registration": "Afiliación a la Seguridad Social, mandatory enrollment of employees in social security system",
+    "Mutua": "Mutual society providing workers' compensation insurance for workplace accidents and occupational illness",
+    "SEPE": "Servicio Público de Empleo Estatal, Spanish Public Employment Service requiring registration of employment contracts",
+    "Retention Period": "The legally required or recommended period for maintaining specific documents before they may be destroyed",
+    "RGSEAA": "Registro General Sanitario de Empresas Alimentarias y Alimentos, general health registry for food businesses and products",
+    "CTE": "Código Técnico de la Edificación, Technical Building Code establishing construction and safety standards"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "title": "Plan de Prevención de Riesgos Laborales",
+  "legalBasis": "Ley 31/1995 de Prevención de Riesgos Laborales (Artículos 14-16), Real Decreto 39/1997 Reglamento de los Servicios de Prevención (Artículos 1-9)",
+  "summary": "El Plan de Prevención de Riesgos Laborales es el documento fundamental que estructura y organiza todas las actividades preventivas dentro de un negocio de hostelería. Tal como establece el Artículo 16 de la Ley 31/1995, todo empresario debe integrar la prevención de riesgos en el sistema general de gestión de la empresa mediante la implantación de un plan de prevención integral. Este plan debe abarcar todas las actividades, niveles jerárquicos y procesos dentro del establecimiento, desde las operaciones de cocina hasta el servicio en sala.\n\nPara negocios de hostelería como restaurantes, bares y cafeterías, el plan de prevención sirve como marco rector que coordina las evaluaciones de riesgos, los programas de formación, la vigilancia de la salud y los procedimientos de emergencia. Debe ser aprobado por la dirección y comunicado a todos los trabajadores, incluidos los temporales y de temporada, habituales en el sector. El plan debe ser un documento vivo, revisado y actualizado siempre que se produzcan cambios significativos en las condiciones de trabajo, los equipos o la estructura organizativa.\n\nEl plan de prevención no es un mero requisito administrativo, sino una herramienta estratégica que reduce los accidentes laborales, minimiza el absentismo, mejora la moral de los empleados y protege a la empresa frente a la responsabilidad legal. El incumplimiento puede dar lugar a sanciones administrativas que oscilan entre 2.046 y 819.780 EUR según la gravedad de la infracción, conforme a lo establecido en la Ley sobre Infracciones y Sanciones en el Orden Social (LISOS).",
+  "keyPoints": [
+    "Todo negocio de hostelería debe disponer de un Plan de Prevención por escrito, independientemente de su tamaño",
+    "El plan debe estar integrado en el sistema general de gestión de la empresa, no tratarse como una actividad independiente",
+    "La dirección asume la responsabilidad última en materia de prevención y debe asignar los recursos adecuados",
+    "Todos los trabajadores, incluidos los temporales y de temporada, deben estar informados y cubiertos por el plan",
+    "El plan debe revisarse siempre que cambien significativamente las condiciones de trabajo, los procesos o los equipos",
+    "Debe elegirse la modalidad preventiva: recursos propios, trabajadores designados, servicio de prevención ajeno o modalidad combinada",
+    "La participación de los trabajadores a través de delegados de prevención y comités de seguridad y salud es obligatoria en empresas con 50 o más trabajadores",
+    "La documentación debe conservarse y estar disponible para la autoridad laboral cuando la solicite"
+  ],
+  "sections": [
+    {
+      "heading": "1. Marco Legal y Obligaciones",
+      "content": "El marco legal español en materia de seguridad y salud en el trabajo se fundamenta en la Ley 31/1995 de Prevención de Riesgos Laborales (LPRL), que transpone la Directiva europea 89/391/CEE al derecho nacional. Esta ley establece el deber fundamental del empresario de proteger a los trabajadores frente a los riesgos laborales y garantizar su seguridad y salud en todos los aspectos relacionados con el trabajo. El Artículo 14 establece el deber general de protección del empresario, mientras que el Artículo 16 exige específicamente la elaboración e implantación de un plan de prevención.\n\nEl plan de prevención debe desarrollarse conforme al Real Decreto 39/1997, que regula los Servicios de Prevención y detalla los requisitos organizativos de las actividades preventivas. Para los negocios de hostelería, el cumplimiento también implica normativa sectorial específica que incluye estándares de seguridad alimentaria (Reglamento CE 852/2004), seguridad contra incendios (CTE DB-SI) y condiciones de los lugares de trabajo (RD 486/1997). El plan debe contemplar cómo se coordinan estos requisitos normativos superpuestos dentro del establecimiento.",
+      "subsections": [
+        {
+          "heading": "1.1 Obligaciones del Empresario según la Ley 31/1995",
+          "content": "Las obligaciones del empresario conforme a la LPRL son amplias e indelegables. El Artículo 14.2 establece que el empresario debe garantizar la seguridad y salud de los trabajadores mediante la adopción de todas las medidas necesarias, incluyendo actividades de prevención de riesgos, información y formación de los trabajadores, y el establecimiento de una organización y medios proporcionados a los riesgos. El deber de protección es continuo y dinámico, requiriendo una adaptación constante a las circunstancias cambiantes.\n\nEn el sector de la hostelería específicamente, los empresarios deben tener en cuenta las características particulares del sector: alta rotación de personal, uso de contratos temporales, diversidad de perfiles en la plantilla, horarios de trabajo prolongados y presencia de clientes en las instalaciones. El empresario no puede transferir estas obligaciones a los trabajadores, aunque estos tienen un deber correlativo de cooperar con las medidas de prevención conforme al Artículo 29."
+        },
+        {
+          "heading": "1.2 Modalidades de Organización Preventiva",
+          "content": "El Artículo 10 del RD 39/1997 establece cuatro modalidades de organización de las actividades preventivas. Para pequeños negocios de hostelería (hasta 25 trabajadores) con actividades de bajo riesgo, el empresario puede asumir personalmente las funciones de prevención, siempre que disponga de formación adecuada y permanezca habitualmente presente en el centro de trabajo. Esta es una opción frecuente en pequeños restaurantes y cafeterías.\n\nPara establecimientos de mayor tamaño, las opciones incluyen designar uno o más trabajadores encargados de la prevención (quienes deben disponer de la formación necesaria y del tiempo para desempeñar sus funciones), constituir un servicio de prevención propio (obligatorio en empresas con más de 500 trabajadores, o más de 250 en determinadas actividades de alto riesgo), o contratar un servicio de prevención ajeno (SPA). La mayoría de los negocios de hostelería con 10-250 empleados optan por una combinación de trabajadores designados y un SPA externo que cubra las cuatro disciplinas preventivas: seguridad en el trabajo, higiene industrial, ergonomía y psicosociología aplicada, y medicina del trabajo."
+        },
+        {
+          "heading": "1.3 Derechos y Participación de los Trabajadores",
+          "content": "Los trabajadores tienen derechos fundamentales conforme a la LPRL que incluyen el derecho a una protección eficaz, el derecho a la información sobre riesgos y medidas preventivas, el derecho a la formación, el derecho a la vigilancia de la salud y, de forma esencial, el derecho a participar en las cuestiones de prevención. En empresas con seis o más trabajadores, deben elegirse delegados de prevención de entre los representantes del personal.\n\nEn establecimientos con 50 o más trabajadores, debe constituirse un Comité de Seguridad y Salud, compuesto de forma paritaria por delegados de prevención y representantes del empresario. Este comité debe reunirse trimestralmente y tiene derecho a ser consultado antes de cualquier decisión que pueda modificar sustancialmente las condiciones de trabajo o afectar la seguridad de los trabajadores. Para cadenas de hostelería y grandes establecimientos, estas estructuras participativas son esenciales para una prevención eficaz."
+        }
+      ]
+    },
+    {
+      "heading": "2. Estructura y Contenido del Plan de Prevención",
+      "content": "El Artículo 2 del RD 39/1997 especifica el contenido mínimo del plan de prevención. El plan debe identificar la empresa, su actividad productiva, el número y características de los puestos de trabajo, el número de trabajadores y su distribución, y la estructura organizativa de la actividad preventiva. Asimismo, debe incluir la política de prevención de la empresa, los objetivos y los recursos asignados para alcanzarlos. Para negocios de hostelería, esto supone documentar cada puesto, desde el ayudante de cocina hasta el jefe de cocina, desde el camarero hasta el gerente.\n\nEl plan sirve como documento paraguas bajo el cual se organizan todos los demás documentos de prevención: evaluaciones de riesgos, planificación de la actividad preventiva, registros de formación, protocolos de vigilancia de la salud y planes de emergencia. Debe establecer líneas claras de responsabilidad y mecanismos de comunicación, asegurando que la prevención no quede aislada sino integrada en todas las áreas operativas del negocio.",
+      "subsections": [
+        {
+          "heading": "2.1 Identificación de la Empresa y Descripción de la Actividad",
+          "content": "El plan debe comenzar con una descripción exhaustiva del negocio: denominación social, número de identificación fiscal (CIF), domicilio social y todos los centros de trabajo. Para negocios de hostelería que operan en varios locales, cada ubicación debe documentarse individualmente. La actividad productiva debe describirse en detalle, incluyendo el tipo de establecimiento (restaurante, bar, cafetería, hotel), aforo, horario de funcionamiento y periodos de máxima actividad.\n\nDebe incluirse un inventario completo de las zonas de trabajo: cocina, cámaras frigoríficas, zonas de comedor, barras, oficinas, almacenes, vestuarios, muelles de carga y terrazas exteriores. Deben anotarse las características específicas de cada zona, incluyendo dimensiones, sistemas de ventilación, condiciones de iluminación y cualquier peligro particular. El plan también debe describir los equipos y sustancias utilizados en cada zona, desde hornos industriales y freidoras hasta productos de limpieza e instalaciones de gas."
+        },
+        {
+          "heading": "2.2 Estructura Organizativa para la Prevención",
+          "content": "El plan debe definir claramente quién hace qué en materia de prevención. Esto incluye identificar la modalidad preventiva elegida, los nombres y cualificaciones de los trabajadores designados para la prevención o el servicio de prevención ajeno contratado, y las responsabilidades específicas asignadas a cada nivel de la jerarquía organizativa. En un restaurante típico, el gerente general ostenta la responsabilidad última, el jefe de cocina es responsable de la seguridad en cocina y el responsable de sala supervisa la seguridad en la zona de atención al público.\n\nDebe incluirse un organigrama funcional de prevención, que muestre las líneas de comunicación, los canales de información y los procedimientos de escalado. El plan debe especificar la periodicidad de las reuniones de la organización preventiva, cómo se documentan las decisiones y cómo se realiza el seguimiento de las acciones preventivas hasta su cumplimiento. También deben definirse las funciones de los representantes de los trabajadores en materia de prevención, incluyendo cómo se llevan a cabo las consultas y cómo se incorporan las aportaciones de los trabajadores en las decisiones preventivas."
+        },
+        {
+          "heading": "2.3 Política de Prevención y Objetivos",
+          "content": "La política de prevención es una declaración formal de la dirección sobre su compromiso con la seguridad y salud de los trabajadores. Debe estar firmada por la persona de mayor rango en la organización y comunicada a todos los empleados. La política debe expresar el compromiso de la empresa de ir más allá del mero cumplimiento legal y fomentar una auténtica cultura de la prevención. En la hostelería, donde el ritmo es acelerado y los atajos tentadores, este compromiso cultural es especialmente importante.\n\nLa definición de objetivos debe seguir la metodología SMART: específicos, medibles, alcanzables, relevantes y con plazo definido. Ejemplos para hostelería incluyen reducir los incidentes por quemaduras en cocina un 30% en un año, lograr la finalización del 100% de la formación en seguridad para nuevas incorporaciones durante su primera semana, o implantar recorridos de seguridad mensuales en todas las zonas de trabajo. Cada objetivo debe contar con un responsable asignado, un calendario, recursos asignados y un método para medir su consecución."
+        }
+      ]
+    },
+    {
+      "heading": "3. Integración de la Evaluación de Riesgos",
+      "content": "El plan de prevención debe incorporar o referenciar la evaluación inicial de riesgos (Evaluación de Riesgos) como su componente analítico central. El Artículo 16.2 de la LPRL exige que la evaluación de riesgos se realice inicialmente y se revise cuando cambien las condiciones de trabajo, cuando se produzcan daños a la salud de los trabajadores o cuando las medidas preventivas resulten inadecuadas. Para negocios de hostelería, esto significa evaluar los riesgos en cada zona de trabajo y para cada puesto.\n\nEl proceso de evaluación de riesgos implica identificar los peligros, evaluar la probabilidad y severidad del daño potencial y determinar las medidas preventivas y de protección necesarias. El plan debe establecer la metodología a utilizar (el método simplificado del INSST es el más habitual en hostelería), el calendario de evaluaciones y revisiones, y el proceso para traducir los resultados de la evaluación en acciones preventivas concretas con responsabilidades y plazos asignados.",
+      "subsections": [
+        {
+          "heading": "3.1 Identificación de Peligros en Hostelería",
+          "content": "Los lugares de trabajo en hostelería presentan una amplia variedad de peligros que deben identificarse de forma sistemática. Los peligros físicos incluyen suelos resbaladizos, superficies calientes, equipos cortantes, instalaciones eléctricas, ruido de equipos de cocina y estrés térmico por cocinas calientes o cámaras frigoríficas. Los peligros químicos provienen de productos de limpieza, desengrasantes, sustancias de control de plagas y gases de cocción. Los peligros biológicos incluyen patógenos transmitidos por alimentos y riesgos de exposición durante la gestión de residuos.\n\nLos riesgos ergonómicos son especialmente frecuentes: bipedestación prolongada, movimientos repetitivos durante la preparación de alimentos, manipulación manual de suministros pesados, posturas forzadas en espacios reducidos de cocina y trabajo sostenido a ritmo elevado durante los picos de servicio. Los riesgos psicosociales incluyen periodos de servicio de alta presión, horarios de trabajo irregulares, estrés derivado de la atención al público y culturas laborales jerárquicas. Cada una de estas categorías debe evaluarse exhaustivamente para cada puesto del establecimiento."
+        },
+        {
+          "heading": "3.2 Planificación de la Actividad Preventiva",
+          "content": "Una vez evaluados y priorizados los riesgos, el plan debe establecer una Planificación de la Actividad Preventiva conforme al Artículo 9 del RD 39/1997. Esta planificación traduce los resultados de la evaluación de riesgos en acciones concretas: eliminación de peligros cuando sea posible, sustitución por alternativas menos peligrosas, controles de ingeniería (como suelos antideslizantes o ventilación extractora), controles administrativos (como rotación de puestos o pausas programadas) y equipos de protección individual como último recurso.\n\nCada acción preventiva debe incluir: la medida específica a implantar, la persona responsable de la implantación, el presupuesto asignado, el plazo de ejecución y el método para verificar su eficacia. Para negocios de hostelería, esta planificación debe tener en cuenta las variaciones estacionales de actividad, los picos de contratación temporal y la necesidad de mantener la continuidad del servicio mientras se implantan mejoras de seguridad."
+        }
+      ]
+    },
+    {
+      "heading": "4. Programas de Formación e Información",
+      "content": "Los Artículos 18 y 19 de la LPRL establecen las obligaciones del empresario en materia de información y formación de los trabajadores. Los trabajadores deben recibir información adecuada y suficiente sobre los riesgos específicos de su puesto, las medidas preventivas adoptadas y los procedimientos de emergencia vigentes. La formación debe impartirse en el momento de la contratación, cuando se produzcan cambios en las funciones del puesto y cuando se introduzcan nuevas tecnologías o equipos. Toda la formación debe impartirse dentro de la jornada laboral o compensarse como tal.\n\nPara negocios de hostelería con alta rotación de personal, un programa robusto de formación inicial es esencial. Los nuevos empleados, ya sean fijos o temporales, deben recibir una inducción de seguridad antes de comenzar sus tareas. Esta inducción debe cubrir los riesgos generales del lugar de trabajo, los riesgos específicos de su puesto, los procedimientos de emergencia y evacuación, la ubicación y uso de los equipos de extinción de incendios, las disposiciones de primeros auxilios y el uso correcto de cualquier equipo de protección individual requerido.",
+      "subsections": [
+        {
+          "heading": "4.1 Formación por Puesto de Trabajo",
+          "content": "El personal de cocina necesita formación sobre prevención de quemaduras, seguridad con cuchillos, uso seguro de equipos de cocina industrial (cortadoras, batidoras, freidoras), técnicas de manipulación manual de cargas para ollas pesadas y entregas de suministros, seguridad química para productos de limpieza y prevención de incendios. Deben comprender los riesgos específicos de su estación, ya sea la parrilla, la partida de frío, pastelería o el área de lavavajillas.\n\nEl personal de sala necesita formación sobre prevención de resbalones y caídas, técnicas seguras de transporte de bandejas y platos, prácticas ergonómicas para bipedestación y deambulación prolongadas, respuesta ante emergencias con clientes y servicio responsable de bebidas alcohólicas. El personal de barra requiere además formación sobre prevención de lesiones por esfuerzo repetitivo, manipulación segura de cristalería y uso seguro de equipos de bar. El personal directivo debe recibir formación sobre sus responsabilidades legales, investigación de incidentes, liderazgo en seguridad y cómo realizar inspecciones de seguridad en el lugar de trabajo."
+        },
+        {
+          "heading": "4.2 Documentación y Registros de Formación",
+          "content": "Todas las actividades de formación deben documentarse y conservarse los registros. Para cada sesión formativa, los registros deben incluir: la fecha, duración y lugar de la formación; los temas tratados; los nombres y cualificaciones de los formadores; los nombres y firmas de los asistentes; y cualquier resultado de evaluación o examen. Estos registros deben conservarse durante toda la duración de la relación laboral y durante el periodo legalmente exigido con posterioridad.\n\nEl plan de prevención debe incluir un calendario anual de formación que programe la formación de reciclaje periódica, cursos especializados y simulacros de emergencia. También debe establecer estándares mínimos de formación para cada puesto de trabajo y un proceso para verificar que todos los trabajadores, incluidos los que regresan de una baja prolongada, están al día con sus requisitos formativos. Los sistemas digitales de gestión de la formación pueden ser especialmente valiosos para negocios de hostelería con múltiples ubicaciones y alta rotación."
+        },
+        {
+          "heading": "4.3 Comunicación y Concienciación en Seguridad",
+          "content": "Más allá de la formación reglada, el plan de prevención debe establecer mecanismos de comunicación continua en materia de seguridad. Esto incluye señalización de seguridad en los idiomas apropiados (especialmente importante dada la diversidad de la plantilla en hostelería), reuniones informativas periódicas sobre seguridad antes de los turnos, exhibición visible de los procedimientos de emergencia en todas las zonas de trabajo y canales para que los trabajadores comuniquen peligros o sugieran mejoras de seguridad sin temor a represalias.\n\nUn sistema de sugerencias de seguridad, ya sea un buzón físico o una herramienta digital de comunicación, fomenta la participación de los trabajadores y puede identificar riesgos antes de que causen incidentes. Boletines o circulares periódicas de seguridad, programas de reconocimiento del comportamiento seguro y discusión abierta de los incidentes sin consecuencias en las reuniones de equipo contribuyen a construir la cultura de seguridad que el plan de prevención pretende establecer."
+        }
+      ]
+    },
+    {
+      "heading": "5. Vigilancia de la Salud",
+      "content": "El Artículo 22 de la LPRL obliga al empresario a garantizar la vigilancia periódica de la salud de los trabajadores, adecuada a los riesgos inherentes a su trabajo. La vigilancia de la salud debe realizarla personal médico cualificado y debe respetar la intimidad y dignidad del trabajador. Como regla general, la vigilancia de la salud es voluntaria para el trabajador, pero se convierte en obligatoria en circunstancias específicas: cuando la valoración de los efectos del riesgo lo requiera, cuando sea indispensable para verificar que el estado de salud del trabajador no constituye un peligro para terceros, o cuando una disposición legal exija reconocimientos específicos.\n\nEn hostelería, la vigilancia de la salud obligatoria se aplica a los manipuladores de alimentos conforme al Real Decreto 202/2000 y al RD 109/2010, que exigen que los trabajadores que manipulan alimentos no padezcan ni sean portadores de enfermedades transmisibles a través de los alimentos. El plan de prevención debe especificar los protocolos de vigilancia de la salud para cada puesto de trabajo, la periodicidad de los reconocimientos y los procedimientos para gestionar los resultados respetando la confidencialidad médica.",
+      "subsections": [
+        {
+          "heading": "5.1 Protocolos de Vigilancia de la Salud para Trabajadores de Hostelería",
+          "content": "Los protocolos de vigilancia de la salud deben ser específicos para los riesgos identificados en la evaluación de riesgos. Para el personal de cocina, los protocolos deben incluir valoraciones de salud musculoesquelética (dada la manipulación manual de cargas y las tareas repetitivas), función respiratoria (dada la exposición a humos de cocción y productos químicos de limpieza), evaluación dermatológica (dado el trabajo frecuente en húmedo y el contacto con sustancias químicas) e indicadores de estrés térmico. Para trabajadores expuestos al ruido de equipos de cocina, deben incluirse pruebas audiométricas.\n\nPara todos los manipuladores de alimentos, los protocolos deben incluir el cribado de enfermedades transmisibles conforme a la normativa de seguridad alimentaria. Para trabajadores en turnos rotativos o nocturnos, los protocolos deben abordar los efectos específicos sobre la salud de los horarios de trabajo irregulares, incluyendo la evaluación de la calidad del sueño y el cribado de riesgo cardiovascular. El plan debe establecer procedimientos claros para los reconocimientos médicos previos a la contratación, exámenes periódicos (habitualmente anuales) y reconocimientos de reincorporación tras enfermedad o lesión."
+        },
+        {
+          "heading": "5.2 Confidencialidad y Gestión de Datos",
+          "content": "Los resultados de la vigilancia de la salud son datos médicos estrictamente confidenciales protegidos tanto por la LPRL como por el Reglamento General de Protección de Datos (RGPD). Solo el servicio médico tiene acceso a los datos sanitarios completos. El empresario recibe únicamente un certificado de aptitud o no aptitud para el puesto específico, sin detalles diagnósticos. Los trabajadores tienen derecho a acceder a sus propios registros sanitarios y a ser informados de los resultados de cualquier vigilancia de la salud realizada.\n\nEl plan de prevención debe establecer procedimientos claros para el tratamiento de datos sanitarios: quién tiene acceso, cómo se almacenan y protegen los datos, durante cuánto tiempo se conservan los registros (mínimo cinco años tras el fin de la exposición, conforme al Artículo 22.3 de la LPRL) y cómo se facilita el ejercicio de los derechos de acceso y rectificación de los trabajadores. En la práctica, esto suele significar que el servicio de prevención ajeno (SPA) contratado gestiona todos los datos de vigilancia de la salud a través de su departamento médico."
+        }
+      ]
+    },
+    {
+      "heading": "6. Seguimiento, Revisión y Mejora Continua",
+      "content": "Un plan de prevención no es un documento estático, sino que debe someterse a seguimiento continuo, revisión periódica y mejora sistemática. El Artículo 16 de la LPRL exige que el plan se revise cuando resulte inadecuado, cuando cambien las condiciones de trabajo, cuando aparezcan nuevos riesgos o cuando se produzcan daños a la salud pese a las medidas preventivas. El plan debe establecer un ciclo formal de revisión, habitualmente anual, con revisiones adicionales puntuales motivadas por eventos específicos.\n\nEl seguimiento implica monitorizar indicadores proactivos (tasas de finalización de formación, resultados de inspecciones, comunicaciones de peligros) e indicadores reactivos (tasas de accidentalidad, bajas por enfermedad, siniestros de seguros). Los negocios de hostelería deben comparar su rendimiento con las medias sectoriales publicadas por el Instituto Nacional de Seguridad y Salud en el Trabajo (INSST). La mejora continua sigue el ciclo Planificar-Hacer-Verificar-Actuar, donde cada revisión identifica áreas de mejora y genera nuevos objetivos y acciones.",
+      "subsections": [
+        {
+          "heading": "6.1 Investigación y Notificación de Incidentes",
+          "content": "El plan de prevención debe establecer procedimientos claros para la comunicación e investigación de todos los incidentes laborales, incluidos los accidentes con lesión, los sucesos peligrosos (cuasi-accidentes) y las enfermedades profesionales. Todos los accidentes que causen baja laboral deben notificarse a la autoridad laboral a través del sistema electrónico Delt@ en un plazo de cinco días hábiles, o en un plazo de 24 horas en caso de fallecimiento, lesión grave o incidentes que afecten a cuatro o más trabajadores.\n\nLa investigación de incidentes debe seguir una metodología estructurada (como el método del árbol de causas recomendado por el INSST) que busque las causas raíz en lugar de atribuir culpas. Los hallazgos de la investigación deben traducirse en acciones correctivas y preventivas, con seguimiento hasta su cumplimiento y verificación de su eficacia. El plan de prevención también debe establecer un proceso de análisis de tendencias de incidentes a lo largo del tiempo para identificar problemas sistémicos que las investigaciones individuales podrían no detectar."
+        },
+        {
+          "heading": "6.2 Auditorías e Inspecciones Internas",
+          "content": "Las inspecciones y auditorías internas periódicas son esenciales para verificar que el plan de prevención se está implantando de manera eficaz. El plan debe establecer un calendario de inspecciones de seguridad del lugar de trabajo, habitualmente mensuales o trimestrales, que cubran todas las zonas de trabajo y se centren en condiciones como el orden y limpieza, el mantenimiento de equipos, la disponibilidad y uso de EPI, la operatividad de los equipos de emergencia y el cumplimiento de los procedimientos de trabajo seguro.\n\nAdemás, las empresas que no cuenten con un servicio de prevención ajeno para las cuatro disciplinas deben someterse a una auditoría de prevención cada dos años (o anualmente en empresas con actividades de mayor riesgo), conforme al Artículo 29 del RD 39/1997. Incluso cuando se utiliza un SPA externo, las auditorías internas voluntarias utilizando herramientas como la herramienta de evaluación de prevención PYME del INSST ayudan a identificar áreas de mejora y demuestran el compromiso de la dirección con la prevención."
+        },
+        {
+          "heading": "6.3 Informe Anual y Actualización del Plan",
+          "content": "El plan de prevención debe exigir la elaboración de un informe anual de prevención que resuma: las actividades preventivas realizadas durante el año, el estado de las acciones planificadas, las actividades formativas completadas, los resultados de la vigilancia de la salud (agregados y anonimizados), las estadísticas de siniestralidad y análisis de tendencias, los hallazgos de inspecciones y auditorías, y las recomendaciones para el año siguiente.\n\nEste informe debe presentarse al Comité de Seguridad y Salud (cuando exista) y a la dirección. Constituye la base para actualizar los objetivos del plan de prevención y la planificación de la actividad preventiva del siguiente ciclo. El informe debe ser transparente tanto sobre los logros como sobre las deficiencias, fomentando una cultura de evaluación honesta y mejora continua en lugar de una de ocultamiento y mentalidad de mero cumplimiento normativo."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Lista de Verificación de Completitud del Plan de Prevención",
+      "items": [
+        "Los datos de identificación de la empresa están completos y actualizados (denominación, CIF, dirección, todos los centros)",
+        "La actividad productiva y todas las zonas de trabajo están descritas exhaustivamente",
+        "El número y características de los trabajadores y puestos de trabajo están documentados",
+        "La modalidad preventiva está elegida y formalmente constituida (recursos propios, trabajadores designados, SPA o combinada)",
+        "La política de prevención está firmada por la dirección y comunicada a todos los trabajadores",
+        "La estructura organizativa de la prevención está definida con responsabilidades claras",
+        "La evaluación inicial de riesgos está completada para todos los puestos y zonas de trabajo",
+        "La planificación de la actividad preventiva está documentada con acciones, plazos y responsables",
+        "El plan de formación está establecido con contenido específico por puesto y calendario anual",
+        "Los protocolos de vigilancia de la salud están definidos para cada puesto de trabajo",
+        "El plan de emergencia está integrado o referenciado",
+        "Los mecanismos de consulta y participación de los trabajadores están establecidos",
+        "Los procedimientos de gestión documental están definidos",
+        "Los procedimientos de revisión y actualización están establecidos con criterios de activación definidos",
+        "La asignación presupuestaria para actividades preventivas está documentada"
+      ]
+    },
+    {
+      "title": "Lista de Verificación de la Revisión Anual",
+      "items": [
+        "Todas las acciones preventivas planificadas del año anterior han sido revisadas en cuanto a su cumplimiento",
+        "Las estadísticas de siniestralidad han sido analizadas en busca de tendencias y causas raíz",
+        "Las evaluaciones de riesgos han sido revisadas y actualizadas cuando ha sido necesario",
+        "Los registros de formación están al día y todos los trabajadores han recibido la formación requerida",
+        "La vigilancia de la salud está actualizada para todos los trabajadores correspondientes",
+        "Los equipos de emergencia han sido inspeccionados y mantenidos",
+        "Se han realizado y evaluado simulacros de emergencia",
+        "Se ha consultado a los trabajadores y se han incorporado sus aportaciones",
+        "Se han establecido nuevos objetivos y acciones preventivas para el año entrante",
+        "El presupuesto para las actividades preventivas del año entrante ha sido aprobado"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Trate el plan de prevención como una herramienta de gestión viva, no como un documento para archivar — revíselo trimestralmente y actualícelo siempre que cambien las condiciones",
+    "Involucre a los trabajadores de todos los niveles en la elaboración y revisión del plan, ya que poseen el conocimiento más directo de los peligros del lugar de trabajo",
+    "Integre los objetivos de prevención en los objetivos generales del negocio y en las reuniones de dirección para asegurar que la prevención no se trate como un aspecto secundario",
+    "Utilice el plan de prevención como base para la incorporación de nuevos empleados, asegurando que todos comprendan el compromiso de la empresa con la seguridad desde el primer día",
+    "Mantenga una versión resumida y accesible del plan además del documento completo, para que todos los trabajadores puedan consultar rápidamente la información clave",
+    "Designe un responsable o coordinador de prevención para cada turno que pueda proporcionar orientación y seguimiento en el día a día",
+    "Compare sus tasas de accidentalidad y absentismo con las medias sectoriales publicadas por el INSST para identificar áreas que necesitan mejora",
+    "Aproveche las herramientas digitales para el seguimiento de formación, inspecciones, incidentes y acciones correctivas, reduciendo la carga administrativa y mejorando la visibilidad"
+  ],
+  "glossary": {
+    "LPRL": "Ley 31/1995 de Prevención de Riesgos Laborales — la ley fundamental española en materia de seguridad y salud en el trabajo",
+    "SPA (Servicio de Prevención Ajeno)": "Servicio de prevención externo contratado por la empresa para llevar a cabo las actividades preventivas en una o más disciplinas",
+    "Delegado de Prevención": "Representante de los trabajadores con funciones específicas en materia de prevención de riesgos laborales, elegido de entre los representantes del personal",
+    "Comité de Seguridad y Salud": "Órgano paritario de participación empresario-trabajadores para la consulta en materia de prevención, obligatorio en empresas con 50 o más trabajadores",
+    "Evaluación de Riesgos": "Proceso sistemático de identificación de peligros, evaluación de riesgos y determinación de las medidas preventivas necesarias",
+    "Planificación de la Actividad Preventiva": "Proceso de definición de acciones concretas, responsables, plazos y recursos para el control de los riesgos identificados",
+    "Vigilancia de la Salud": "Reconocimientos médicos periódicos y seguimiento sanitario específicos para los riesgos laborales de cada puesto de trabajo",
+    "INSST": "Instituto Nacional de Seguridad y Salud en el Trabajo — el organismo nacional español de seguridad y salud laboral, que proporciona orientación técnica y estadísticas sectoriales",
+    "LISOS": "Ley sobre Infracciones y Sanciones en el Orden Social — la ley que establece las sanciones por incumplimiento de la normativa de seguridad laboral",
+    "Delt@": "Sistema electrónico utilizado en España para la notificación de accidentes de trabajo y enfermedades profesionales a la autoridad laboral"
+  }
+}

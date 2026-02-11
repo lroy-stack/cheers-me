@@ -1,0 +1,42 @@
+{
+  "welcome": "Welkom terug, {name}!",
+  "subtitle": "GrandCafe Cheers Beheerplatform",
+  "stats": {
+    "activeStaff": "Actief Personeel",
+    "activeEmployees": "Actieve medewerkers",
+    "reservationsToday": "Reserveringen Vandaag",
+    "confirmed": "{count} bevestigd",
+    "pending": "{count} in afwachting",
+    "confirmedPending": "{confirmed} bevestigd, {pending} in afwachting",
+    "teamSize": "Teamgrootte",
+    "stockAlerts": "Voorraadmeldingen",
+    "needsAttention": "Aandacht nodig",
+    "allGood": "Alles in orde"
+  },
+  "profile": {
+    "title": "Uw Profiel",
+    "subtitle": "Overzicht van uw accountinformatie",
+    "email": "E-mail",
+    "phone": "Telefoon",
+    "language": "Taal",
+    "notSet": "Niet ingesteld"
+  },
+  "quickAccess": {
+    "title": "Snelle Toegang",
+    "subtitle": "Navigeer naar uw beschikbare modules",
+    "staffManagement": "Personeelsbeheer",
+    "salesOverview": "Verkoopoverzicht",
+    "registerClose": "Kassa Afsluiten",
+    "menuLabel": "Menu",
+    "kitchenDisplay": "Keukenscherm",
+    "inventory": "Inventaris",
+    "beerKegs": "Biervaten",
+    "events": "Evenementen",
+    "djs": "DJs",
+    "sports": "Sport",
+    "reservations": "Reserveringen",
+    "floorPlan": "Plattegrond",
+    "marketing": "Marketing",
+    "settings": "Instellingen"
+  }
+}

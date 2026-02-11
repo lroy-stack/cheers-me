@@ -1,0 +1,123 @@
+{
+  "title": "Cupones Regalo",
+  "subtitle": "Gestiona cupones regalo y canjes",
+  "noCoupons": "Aún no hay cupones",
+  "noCouponsDescription": "Los cupones regalo aparecerán aquí cuando los clientes los compren.",
+  "status": {
+    "pending_payment": "Pago pendiente",
+    "active": "Activo",
+    "partially_used": "Parcialmente usado",
+    "fully_used": "Totalmente usado",
+    "expired": "Expirado",
+    "cancelled": "Cancelado"
+  },
+  "theme": {
+    "elegant": "Elegante",
+    "tropical": "Tropical",
+    "celebration": "Celebración",
+    "seasonal": "Temporada"
+  },
+  "stats": {
+    "totalSold": "Total vendidos",
+    "totalRevenue": "Ingresos totales",
+    "activeCoupons": "Cupones activos",
+    "redeemed": "Canjeados"
+  },
+  "detail": {
+    "couponCode": "Código de cupón",
+    "amount": "Importe original",
+    "remaining": "Saldo restante",
+    "purchaser": "Comprado por",
+    "recipient": "Destinatario",
+    "message": "Mensaje personal",
+    "purchasedAt": "Comprado el",
+    "expiresAt": "Expira el",
+    "redemptionHistory": "Historial de canjes",
+    "noRedemptions": "Sin canjes aún",
+    "downloadPdf": "Descargar PDF"
+  },
+  "validate": {
+    "title": "Validar cupón",
+    "subtitle": "Escanea el código QR o introduce el código manualmente",
+    "scanQr": "Escanear QR",
+    "enterCode": "Introducir código",
+    "codePlaceholder": "GC-XXXXXX",
+    "lookup": "Buscar",
+    "looking": "Buscando...",
+    "invalidFormat": "Formato de código inválido",
+    "notFound": "Cupón no encontrado",
+    "expired": "Este cupón ha expirado",
+    "fullyUsed": "Este cupón ha sido completamente usado",
+    "cancelled": "Este cupón ha sido cancelado",
+    "cameraPermission": "Se necesita permiso de cámara para escanear códigos QR",
+    "scannerReady": "Apunta la cámara al código QR"
+  },
+  "redeem": {
+    "title": "Canjear cupón",
+    "amountLabel": "Importe del canje",
+    "amountHelp": "Introduce el importe a deducir (máx: {max})",
+    "fullAmount": "Importe completo",
+    "customAmount": "Importe personalizado",
+    "notes": "Notas (opcional)",
+    "confirm": "Confirmar canje",
+    "confirming": "Procesando...",
+    "success": "¡Cupón canjeado con éxito!",
+    "error": "Error al canjear cupón"
+  },
+  "purchase": {
+    "heroTitle": "Regala la experiencia Cheers",
+    "heroSubtitle": "El regalo perfecto — un cupón regalo para GrandCafe Cheers, el restaurante & bar frente a la playa de Mallorca.",
+    "step1": "Elige importe",
+    "step2": "Personaliza",
+    "step3": "Tus datos",
+    "step4": "Pago",
+    "selectAmount": "Selecciona un importe",
+    "customAmount": "Importe personalizado",
+    "minAmount": "Mínimo €{min}",
+    "maxAmount": "Máximo €{max}",
+    "recipientName": "Nombre del destinatario",
+    "recipientNamePlaceholder": "¿Para quién es este regalo?",
+    "personalMessage": "Mensaje personal",
+    "personalMessagePlaceholder": "Añade un mensaje con cariño...",
+    "optional": "Opcional",
+    "yourName": "Tu nombre",
+    "yourEmail": "Tu email",
+    "emailHelp": "Enviaremos el cupón a este email",
+    "gdprConsent": "Acepto que mis datos sean procesados para esta compra de cupón regalo",
+    "gdprRequired": "El consentimiento es obligatorio para continuar",
+    "payNow": "Pagar ahora — {amount}",
+    "processing": "Redirigiendo al pago...",
+    "chooseTheme": "Elige un estilo",
+    "preview": "Vista previa"
+  },
+  "success": {
+    "title": "¡Pago exitoso!",
+    "subtitle": "Tu cupón regalo está listo",
+    "description": "El cupón ha sido creado y está listo para descargar. ¡Compártelo con esa persona especial!",
+    "viewVoucher": "Ver cupón",
+    "downloadPdf": "Descargar PDF",
+    "buyAnother": "Comprar otro"
+  },
+  "cancelled": {
+    "title": "Pago cancelado",
+    "subtitle": "Tu pago no se completó",
+    "description": "No se realizó ningún cargo. Puedes intentarlo de nuevo en cualquier momento.",
+    "tryAgain": "Intentar de nuevo"
+  },
+  "publicView": {
+    "giftVoucher": "Cupón Regalo",
+    "balance": "Saldo actual",
+    "validUntil": "Válido hasta",
+    "from": "De",
+    "downloadPdf": "Descargar PDF",
+    "redeemInStore": "Presenta este cupón en GrandCafe Cheers para canjearlo"
+  },
+  "filters": {
+    "allStatuses": "Todos los estados",
+    "search": "Buscar por código o nombre..."
+  },
+  "pageTabs": {
+    "overview": "Vista general",
+    "validate": "Validar cupón"
+  }
+}

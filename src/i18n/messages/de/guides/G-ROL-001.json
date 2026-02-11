@@ -1,0 +1,185 @@
+{
+  "title": "Brandschutz in der Küche",
+  "legalBasis": "Königliches Dekret 513/2017 vom 22. Mai (Technische Vorschrift über Brandschutzanlagen); Gesetz 31/1995 über die Verhütung von Arbeitsrisiken; Königliches Dekret 2267/2004 (Brandschutzverordnung für Gewerbebetriebe); UNE 23510 über tragbare Feuerlöscher",
+  "summary": "Brandschutz in der Küche gehört zu den kritischsten Risikobereichen in Gastronomiebetrieben. Gewerbliche Küchen vereinen offene Flammen, erhitztes Öl, elektrische Geräte und brennbare Materialien auf engem Raum, weshalb die Brandprävention eine absolute betriebliche Priorität darstellt. Das Königliche Dekret 513/2017 legt die technischen Anforderungen an Brandschutzanlagen fest, einschließlich der Art, Platzierung und Wartung von Löschsystemen, die in gewerblichen Küchen vorhanden sein müssen.\n\nDieser Leitfaden behandelt das gesamte Spektrum des Küchenbrandschutzes: vom Verständnis der für Kochumgebungen relevanten Brandklassen (Klasse-F/K-Brände mit Speiseölen und -fetten) über die richtige Auswahl und Anwendung von Löschsystemen, Evakuierungsverfahren bis hin zu den gesetzlichen Pflichten der Arbeitgeber nach spanischem Arbeitsschutzrecht. Jeder Küchenmitarbeiter muss das Feuerdreieck verstehen, den Standort und die Bedienung aller Löschgeräte kennen und in Notfall-Evakuierungsprotokollen geschult sein.\n\nDie Einhaltung des KD 513/2017 erfordert nicht nur die Installation geeigneter Brandschutzsysteme, sondern auch deren regelmäßige Inspektion, Wartung durch zugelassene Unternehmen und eine ordnungsgemäße Dokumentation. Bei Verstößen drohen Verwaltungssanktionen, strafrechtliche Haftung bei Verletzungen und die Ungültigkeit des Versicherungsschutzes.",
+  "keyPoints": [
+    "Gewerbliche Küchen müssen Feuerlöscher der Klasse F (Speiseöl/Fett) in maximal 15 Metern Entfernung von jeder Kochstelle vorhalten",
+    "Automatische Löschanlagen sind für Fritteusen und Kochzeilen mit einer Länge von mehr als 1,2 Metern vorgeschrieben",
+    "Feuerlöscher müssen vierteljährlich durch geschultes Personal und jährlich durch ein zugelassenes Wartungsunternehmen geprüft werden",
+    "Alle Küchenmitarbeiter müssen innerhalb der ersten Arbeitswoche eine Brandschutzschulung erhalten und jährlich eine Auffrischungsschulung absolvieren",
+    "Flucht- und Rettungswege müssen deutlich gekennzeichnet, frei begehbar und mindestens zweimal jährlich in Übungen erprobt werden",
+    "Löschdecken müssen in maximal 2 Metern Entfernung von jeder Frittierstelle verfügbar sein",
+    "Fettabscheider und Abzugshauben müssen mindestens vierteljährlich gereinigt werden, um Fettablagerungsbrände zu verhindern",
+    "Gasinstallationen müssen über automatische Absperrventile verfügen und alle 5 Jahre von einem zugelassenen Installateur geprüft werden"
+  ],
+  "sections": [
+    {
+      "heading": "1. Brandrisiken in der Küche verstehen",
+      "content": "Gewerbliche Küchen stellen aufgrund der Kombination von hohen Temperaturen, brennbaren Materialien und intensiver Gerätenutzung besondere Brandgefahren dar. Das Verständnis der spezifischen Brandklassen und Zündquellen in einer Küchenumgebung ist die Grundlage jedes wirksamen Präventionsprogramms. Die spanischen Brandschutzvorschriften klassifizieren Brände in Klassen, wobei Klasse F (Speiseöle und -fette) in Küchenumgebungen die häufigste und gefährlichste ist – aufgrund der extrem hohen Selbstentzündungstemperaturen und der heftigen Reaktion von brennendem Öl mit Wasser.",
+      "subsections": [
+        {
+          "heading": "1.1 Brandklassen in Küchenumgebungen",
+          "content": "Küchenbrände werden nach der Brennstoffquelle kategorisiert: Klasse-A-Brände betreffen feste Brennstoffe wie Holz, Papier und Textilien (häufig in Lagerbereichen und in der Nähe von Ausgabetheken). Klasse-B-Brände betreffen brennbare Flüssigkeiten wie alkoholhaltige Saucen oder Reinigungslösemittel. Klasse-C-Brände betreffen Gase, insbesondere Erdgas oder Propan, die in Kochherden verwendet werden. Klasse-F-Brände (in amerikanischen Normen als Klasse K bezeichnet) betreffen Speiseöle und -fette und sind der häufigste Küchenbrandtyp. Jede Klasse erfordert spezifische Löschmittel; die Verwendung des falschen Mittels (insbesondere Wasser bei einem Klasse-F-Brand) kann zu explosionsartigem Spritzen führen, das den Brand ausbreitet und schwere Verbrennungen verursacht. Küchenpersonal muss geschult sein, die Brandklasse zu erkennen, bevor eine Löschmethode gewählt wird."
+        },
+        {
+          "heading": "1.2 Häufige Zündquellen",
+          "content": "Die primären Zündquellen in gewerblichen Küchen umfassen: unbeaufsichtigte Kochvorgänge (die häufigste Ursache von Küchenbränden), überhitzte Speiseöle, die ihren Rauchpunkt überschreiten (typischerweise 230–260 Grad Celsius bei gängigen Speiseölen), Fettansammlungen in Abzugshauben und Lüftungskanälen, fehlerhafte oder beschädigte elektrische Geräte und Verkabelungen, unsachgemäße Lagerung brennbarer Materialien in der Nähe von Wärmequellen, Gaslecks durch verschlissene Verbindungen oder unzureichend gewartete Geräte sowie Selbstentzündung von ölgetränkten Lappen oder Reinigungsmaterialien. Jede Zündquelle erfordert spezifische Präventivmaßnahmen, die in den täglichen Küchenbetrieb und die Sicherheitsprotokolle integriert werden müssen."
+        },
+        {
+          "heading": "1.3 Rechtsrahmen und Arbeitgeberpflichten",
+          "content": "Gemäß dem Königlichen Dekret 513/2017 müssen Arbeitgeber sicherstellen, dass alle Brandschutzanlagen die in der Verordnung festgelegten technischen Spezifikationen erfüllen. Dies umfasst die ordnungsgemäße Auswahl, Installation und Wartung von Brandmelde- und Löschsystemen. Das Gesetz 31/1995 über die Verhütung von Arbeitsrisiken verpflichtet Arbeitgeber allgemein zur Gewährleistung der Sicherheit und Gesundheit der Beschäftigten, einschließlich der Brandrisikobewertung als Teil des vorgeschriebenen Präventionsplans (Plan de Prevención). Der Arbeitgeber muss geschultes Notfallpersonal (equipos de emergencia) benennen, einen Notfallplan (Plan de Emergencia) erstellen und sicherstellen, dass alle Beschäftigten eine angemessene Brandschutzschulung erhalten. Bei Nichteinhaltung drohen Bußgelder von 2.046 bis 819.780 Euro, je nach Schweregrad gemäß dem Gesetz über Verstöße und Sanktionen im Sozialbereich (LISOS)."
+        }
+      ]
+    },
+    {
+      "heading": "2. Brandschutzmaßnahmen",
+      "content": "Prävention ist die wirksamste Brandschutzstrategie. Ein umfassendes Präventionsprogramm in der Küche umfasst die Gerätewartung, Ordnung und Sauberkeit, sichere Kochverfahren und die sachgemäße Lagerung brennbarer Materialien. Diese Maßnahmen müssen in der Gefährdungsbeurteilung und dem Präventionsplan des Betriebs gemäß Gesetz 31/1995 dokumentiert sein.",
+      "subsections": [
+        {
+          "heading": "2.1 Gerätewartung und Inspektion",
+          "content": "Alle Kochgeräte müssen gemäß den Herstellerangaben gewartet und regelmäßig geprüft werden. Gasbetriebene Geräte erfordern besondere Aufmerksamkeit: Anschlüsse müssen mit zugelassenen Methoden auf Undichtigkeiten geprüft werden (niemals mit offener Flamme), flexible Schläuche müssen vor Ablauf ihres Verfallsdatums ausgetauscht werden, und automatische Gasabsperrventile müssen monatlich getestet werden. Elektrische Geräte müssen auf beschädigte Kabel, defekte Stecker und ordnungsgemäße Erdung geprüft werden. Fritteusen müssen über funktionierende Thermostate und Hochtemperatur-Begrenzungsschalter verfügen. Abzugshauben und Fettfilter müssen wöchentlich gereinigt werden, wobei eine Grundreinigung des gesamten Kanalsystems vierteljährlich durch Fachunternehmen erfolgen muss. Dokumentationen aller Wartungen und Inspektionen müssen mindestens 5 Jahre aufbewahrt werden."
+        },
+        {
+          "heading": "2.2 Tägliche Brandschutzpraktiken in der Küche",
+          "content": "Jede Schicht muss mit einer Brandschutzprüfung beginnen: Überprüfung, ob alle Feuerlöscher an ihrem Platz sind und die Druckanzeigen im grünen Bereich liegen, Sicherstellung, dass Notausgänge frei sind, Bestätigung, dass Absauganlagen funktionieren, und Kontrolle, dass keine brennbaren Materialien in der Nähe von Wärmequellen gelagert sind. Während des Kochens müssen Öltemperaturen überwacht werden und dürfen den Rauchpunkt des verwendeten Öls niemals überschreiten. Kochstellen dürfen niemals unbeaufsichtigt bleiben, wenn aktiv Öle oder Fette erhitzt werden. Am Ende jeder Schicht müssen alle Gaszufuhren am Hauptventil abgesperrt, elektrische Geräte ausgeschaltet (außer Kühlung) und ein abschließender Rundgang durchgeführt werden, um zu überprüfen, dass keine Wärmequellen aktiv bleiben und keine heißen Oberflächen mit brennbaren Materialien in Kontakt stehen."
+        },
+        {
+          "heading": "2.3 Lagerung und Ordnung",
+          "content": "Eine sachgemäße Lagerung ist entscheidend für die Brandprävention. Brennbare Flüssigkeiten (Reinigungslösemittel, Alkohol) müssen in zugelassenen Behältern in belüfteten Bereichen abseits von Wärmequellen gelagert werden. Speiseöle müssen bei Raumtemperatur und nicht in der Nähe direkter Wärme aufbewahrt werden. Papierprodukte, Kartonverpackungen und Textilien müssen mindestens 1 Meter von jedem Kochgerät entfernt aufbewahrt werden. Gebrauchtes Speiseöl muss in verschlossenen Metallbehältern gesammelt und regelmäßig von zugelassenen Entsorgungsunternehmen abgeholt werden. Reinigungstücher, insbesondere solche, die mit Öl oder Fett kontaminiert sind, müssen in selbstschließenden Metallbehältern aufbewahrt und täglich gewaschen oder entsorgt werden, um Selbstentzündung zu verhindern. Fettabscheider müssen planmäßig entleert werden und dürfen niemals überlaufen."
+        }
+      ]
+    },
+    {
+      "heading": "3. Brandmelde- und Löschsysteme",
+      "content": "Das Königliche Dekret 513/2017 legt die Anforderungen an Brandmelde- und Löschanlagen in Gewerbebetrieben fest. Küchenbereiche haben besondere Anforderungen aufgrund der Art der Kochbrandgefahren und der hohen Umgebungstemperaturen, die herkömmliche Meldesysteme beeinträchtigen können.",
+      "subsections": [
+        {
+          "heading": "3.1 Meldesysteme",
+          "content": "Standard-Rauchmelder sind für Küchenbereiche aufgrund von Kochdämpfen und Dampf, die Fehlalarme auslösen, grundsätzlich ungeeignet. Stattdessen sollten in Küchen Differentialwärmemelder oder Festwert-Wärmemelder verwendet werden, die über den normalen Kochtemperaturen kalibriert sind (typischerweise auf 90–100 Grad Celsius eingestellt). Lineare Wärmemeldeleitungen können entlang der Abluftkanäle installiert werden, um Fettbrände im Lüftungssystem zu erkennen. Gasdetektionssysteme sind überall vorgeschrieben, wo Erdgas oder Propan verwendet wird, mit Sensoren sowohl in Bodennähe (für Propan, das schwerer als Luft ist) als auch in Deckennähe (für Erdgas). Alle Meldesysteme müssen mit einem akustischen Alarm und gegebenenfalls mit automatischen Löschanlagen und Gasabsperrventilen verbunden sein."
+        },
+        {
+          "heading": "3.2 Stationäre Löschanlagen",
+          "content": "Automatische Löschanlagen für gewerbliche Küchenkochgeräte verwenden typischerweise Nasslöschmittel (Kaliumacetat- oder Kaliumcarbonatlösungen), die speziell für Klasse-F-Brände entwickelt wurden. Diese Systeme bestehen aus Düsen, die über Kochflächen und in Abzugshauben positioniert sind und mit druckbeaufschlagten Löschmittelbehältern verbunden werden. Bei Auslösung (entweder automatisch durch Schmelzlotauslöser oder manuell durch Handauslöser) wird das Nasslöschmittel freigesetzt, das das brennende Öl abkühlt und eine Schaumschicht bildet, die eine Wiederentzündung verhindert. Das System muss außerdem automatisch die Gas- und Stromversorgung der Kochgeräte abschalten und die Absauganlage zur Rauchentfernung aktivieren. Installation und Wartung müssen durch gemäß KD 513/2017 zugelassene Unternehmen erfolgen, und das System muss halbjährlich geprüft werden."
+        },
+        {
+          "heading": "3.3 Tragbare Feuerlöscher und Löschdecken",
+          "content": "Tragbare Feuerlöscher in Küchenbereichen müssen Geräte der Klasse F (Nasslöschtyp, typischerweise 6 Liter Fassungsvermögen) umfassen, die innerhalb von 15 Metern von jeder Kochstelle positioniert sind. Zusätzlich sollten ABC-Pulver- oder CO2-Löscher für elektrische und allgemeine Brände verfügbar sein. Feuerlöscher müssen an der Wand montiert werden, wobei die Oberkante des Geräts höchstens 1,20 Meter vom Boden entfernt sein darf, mit aus der Ferne sichtbarer Beschilderung gekennzeichnet und jederzeit frei zugänglich sein. Löschdecken (gemäß EN 1869, mindestens 1,2 m x 1,2 m) müssen innerhalb von 2 Metern von Frittierstationen und anderen Hochrisiko-Kochbereichen angebracht sein. Alle Mitarbeiter müssen in der PASS-Technik (Sicherung lösen, Ausrichten, Betätigen, Schwenken) für die Feuerlöscherverwendung und in der sachgemäßen Handhabung von Löschdecken geschult sein."
+        }
+      ]
+    },
+    {
+      "heading": "4. Notfallmaßnahmen",
+      "content": "Trotz bester Präventionsmaßnahmen können Brände auftreten. Ein gut eingeübter Notfallplan kann den Unterschied zwischen einem kleinen Zwischenfall und einer Katastrophe ausmachen. Das spanische Recht schreibt vor, dass jeder Arbeitsplatz über einen Notfallplan (Plan de Emergencia y Evacuación) verfügt, der allen Beschäftigten mitgeteilt und regelmäßig geübt wird.",
+      "subsections": [
+        {
+          "heading": "4.1 Sofortige Reaktionsmaßnahmen",
+          "content": "Wenn ein Küchenbrand festgestellt wird, richtet sich die Reaktion nach Größe und Art des Brandes. Bei kleinen, eingegrenzten Bränden (z. B. einem Pfannenbrand): Kollegen in der Nähe alarmieren, die Wärmequelle abstellen, sofern dies gefahrlos möglich ist, den Brand mit einem Deckel oder einer Löschdecke abdecken (die brennende Pfanne niemals bewegen) und bei Bedarf den geeigneten tragbaren Feuerlöscher verwenden. Bei größeren Bränden oder Bränden, die das Absaugsystem betreffen: den Handauslöser der stationären Löschanlage betätigen, alle Küchenmitarbeiter zur Evakuierung auffordern, Küchentüren schließen, um den Brand einzugrenzen, 112 (Notruf) anrufen und gemäß dem Evakuierungsplan des Betriebs vorgehen. Unter keinen Umständen sollte jemand versuchen, einen Brand zu bekämpfen, der sich über die ursprüngliche Kochfläche hinaus ausgebreitet hat oder den Fluchtweg versperrt."
+        },
+        {
+          "heading": "4.2 Evakuierungsverfahren",
+          "content": "Der Evakuierungsplan muss primäre und sekundäre Fluchtwege aus der Küche, Sammelplätze außerhalb des Gebäudes und für die Überprüfung der vollständigen Evakuierung verantwortliche Personen benennen. Fluchtwege müssen mit nachleuchtender Beschilderung gemäß UNE 23034 gekennzeichnet, jederzeit hindernisfrei gehalten und mit Notbeleuchtung ausgestattet sein, die bei Stromausfall automatisch aktiviert wird. Während der Evakuierung muss der benannte Notfallkoordinator sicherstellen, dass alle Gaszufuhren abgesperrt werden (über das Notabsperrventil), die vollständige Evakuierung aller Personen durch Kopfzählung am Sammelplatz überprüfen und die eintreffenden Rettungskräfte über Brandort, Brandart und eventuell vorhandene Gefahrstoffe informieren. Evakuierungsübungen müssen mindestens zweimal jährlich durchgeführt und protokolliert werden."
+        },
+        {
+          "heading": "4.3 Maßnahmen nach einem Vorfall",
+          "content": "Nach jedem Brandvorfall, egal wie geringfügig, muss eine formelle Untersuchung durchgeführt werden, um die Ursache festzustellen und ein erneutes Auftreten zu verhindern. Die Untersuchung sollte Ursprung und Ursache des Brandes, die Wirksamkeit der Melde- und Löschsysteme, das Verhalten des Personals, etwaige erlittene Verletzungen und den entstandenen Schaden dokumentieren. Die Ergebnisse müssen dem Präventionsdienst (Servicio de Prevención) gemeldet und Korrekturmaßnahmen umgesetzt und dokumentiert werden. Wenn der Brand zu einer Verletzung geführt hat, die über Erste Hilfe hinausgeht, muss dies der Arbeitsbehörde als Arbeitsunfall gemeldet werden. Die eingesetzten Löschanlagen und Feuerlöscher müssen von einem zugelassenen Unternehmen wieder befüllt oder ersetzt werden, bevor der Küchenbetrieb wieder aufgenommen werden kann."
+        }
+      ]
+    },
+    {
+      "heading": "5. Schulungsanforderungen",
+      "content": "Brandschutzschulung ist eine gesetzliche Pflicht gemäß Gesetz 31/1995. Alle Küchenmitarbeiter müssen eine spezifische, praxisnahe Schulung zu Brandprävention und Notfallmaßnahmen erhalten, die auf die Risiken ihres konkreten Arbeitsplatzes zugeschnitten ist.",
+      "subsections": [
+        {
+          "heading": "5.1 Inhalte der Erstschulung",
+          "content": "Neue Küchenmitarbeiter müssen eine Brandschutzschulung absolvieren, bevor sie eigenständig arbeiten. Diese Schulung muss folgende Themen abdecken: die spezifischen Brandrisiken in der Küche und deren Prävention, den Standort und die Bedienung aller Brandmelde- und Löschsysteme, den korrekten Umgang mit tragbaren Feuerlöschern (mit praktischer Übung an Übungslöschern), den sachgemäßen Einsatz von Löschdecken, den Notfall- und Evakuierungsplan des Betriebs einschließlich Fluchtwegen und Sammelplätzen, das Verfahren zum Rufen der Rettungsdienste (112), Erste Hilfe bei Verbrennungen und die spezifische Rolle des Mitarbeiters im Notfallplan. Die Schulung muss mit Datum, Dauer, behandelten Inhalten, Qualifikation des Schulungsleiters und der unterschriebenen Bestätigung des Mitarbeiters dokumentiert werden."
+        },
+        {
+          "heading": "5.2 Fortlaufende Schulung und Übungen",
+          "content": "Jährliche Auffrischungsschulungen müssen für alle Küchenmitarbeiter durchgeführt werden und alle Änderungen an Geräten, Verfahren oder dem Notfallplan abdecken. Praktische Übungen sollten den Umgang mit Feuerlöschern, den Einsatz von Löschdecken und simulierte Evakuierungen umfassen. Mindestens zwei Evakuierungsübungen pro Jahr müssen alle anwesenden Mitarbeiter einbeziehen, und die Ergebnisse müssen dokumentiert werden, einschließlich der Evakuierungszeit, etwaiger Hindernisse und Verbesserungsmöglichkeiten. Mitglieder des Notfallteams (equipo de emergencia) müssen eine zusätzliche Fachschulung erhalten, einschließlich fortgeschrittener Brandbekämpfungstechniken, Erste-Hilfe-Zertifizierung und Koordination mit externen Rettungsdiensten."
+        },
+        {
+          "heading": "5.3 Spezialschulungen für Hochrisikotätigkeiten",
+          "content": "Mitarbeiter, die Hochrisikotätigkeiten wie Flambieren, Frittieren oder das Bedienen von Holzöfen ausführen, müssen eine zusätzliche Fachschulung erhalten. Flambiervorgänge erfordern spezifische Protokolle, einschließlich maximaler Alkoholmengen, sicherer Zündtechniken und der Bereitstellung von Löschausrüstung in unmittelbarer Reichweite. Fritteusenbediener müssen die Öltemperatursteuerung, die Gefahren des Wasserkontakts mit heißem Öl und die spezifischen Protokolle für Fritteusenbrände verstehen. Holzofenbediener benötigen eine Schulung in geeigneten Brennstoffarten, Verfahren zur Ascheentsorgung und Kaminwartung. Jedes dieser Spezialschulungsmodule muss gesondert dokumentiert und jährlich erneuert werden."
+        }
+      ]
+    },
+    {
+      "heading": "6. Dokumentation und Compliance",
+      "content": "Eine umfassende Dokumentation ist für die Einhaltung gesetzlicher Vorschriften und den Nachweis der Sorgfaltspflicht im Falle eines Vorfalls oder einer Inspektion unerlässlich. KD 513/2017 und Gesetz 31/1995 stellen jeweils spezifische Dokumentationsanforderungen.",
+      "subsections": [
+        {
+          "heading": "6.1 Erforderliche Dokumentation",
+          "content": "Folgende Brandschutzdokumente müssen geführt und für Inspektionen verfügbar sein: die Brandgefährdungsbeurteilung (als Teil der allgemeinen Gefährdungsbeurteilung gemäß Gesetz 31/1995), der Notfall- und Evakuierungsplan, Installationszertifikate für alle Brandschutzsysteme (ausgestellt von zugelassenen Installateuren, die bei der jeweiligen Autonomen Gemeinschaft registriert sind), Wartungsprotokolle für alle Brandschutzanlagen (vierteljährliche Prüfungen durch geschultes Personal, jährliche und fünfjährliche Prüfungen durch zugelassene Wartungsunternehmen), Schulungsnachweise für alle Mitarbeiter einschließlich Datum, Inhalt und unterschriebener Bestätigungen, Evakuierungsübungsprotokolle sowie etwaige Vorfallberichte und Untersuchungsergebnisse. Alle Zertifikate und Wartungsprotokolle müssen den in Anhang II des KD 513/2017 festgelegten Formaten entsprechen."
+        },
+        {
+          "heading": "6.2 Inspektionsbereitschaft",
+          "content": "Brandschutzinspektionen können durch die Feuerwehr (Bomberos), Arbeitsinspektoren (Inspección de Trabajo) oder Vertreter der Versicherungsgesellschaft durchgeführt werden. Zur Sicherstellung der Bereitschaft: einen Brandschutzordner mit allen erforderlichen Dokumenten in chronologischer Reihenfolge führen, sicherstellen, dass alle Brandschutzgeräte sichtbar mit aktuellen Inspektionsdaten gekennzeichnet sind, Evakuierungspläne an den vorgeschriebenen Stellen aushängen, die Funktionsfähigkeit der Notbeleuchtung und Beschilderung überprüfen und bestätigen, dass alle Mitarbeiter ihre Rolle im Notfallplan erläutern können. Regelmäßige interne Audits (mindestens vierteljährlich) sollten die Einhaltung aller Brandschutzanforderungen überprüfen und etwaige Mängel vor einer externen Inspektion identifizieren."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Tägliche Brandschutz-Checkliste für die Küche",
+      "items": [
+        "Alle Feuerlöscher befinden sich an ihrem Platz und die Druckanzeigen zeigen grün",
+        "Löschdecken sind zugänglich und in gutem Zustand",
+        "Notausgänge sind frei und unversperrt",
+        "Abzugshaube und Lüftungsanlage funktionieren einwandfrei",
+        "Keine brennbaren Materialien in der Nähe von Wärmequellen gelagert",
+        "Gasanschlüsse zeigen keine Anzeichen von Undichtigkeiten (Geruch, Zischgeräusche)",
+        "Elektrische Kabel und Stecker sind unbeschädigt",
+        "Fritteusen-Thermostate funktionieren ordnungsgemäß",
+        "Handauslöser der Löschanlage ist zugänglich",
+        "Notbeleuchtung ist funktionsfähig"
+      ]
+    },
+    {
+      "title": "Wöchentliche Brandschutz-Checkliste",
+      "items": [
+        "Fettfilter in Abzugshauben wurden gereinigt",
+        "Speiseölbehälter sind ordnungsgemäß verschlossen und gelagert",
+        "Altölsammelbehälter sind nicht überfüllt",
+        "Reinigungstücher werden in selbstschließenden Metallbehältern aufbewahrt",
+        "Flexible Gasschläuche auf Verschleiß und Verfallsdaten geprüft",
+        "Hinweisschilder für Flucht- und Rettungswege sind sichtbar und beleuchtet",
+        "Brandschutzbeschilderung ist sauber und sichtbar"
+      ]
+    },
+    {
+      "title": "Vierteljährliche Brandschutz-Audit-Checkliste",
+      "items": [
+        "Alle Feuerlöscher geprüft und dokumentiert",
+        "Abluftkanäle durch Fachunternehmen grundgereinigt",
+        "Fettabscheider entleert und gereinigt",
+        "Notfall- und Evakuierungsplan überprüft und bei Bedarf aktualisiert",
+        "Integritätsprüfung der Gasinstallation durchgeführt",
+        "Sichtprüfung der stationären Löschanlage abgeschlossen",
+        "Schulungsnachweise auf Vollständigkeit geprüft",
+        "Internes Brandschutz-Audit durchgeführt und dokumentiert"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Speiseöl oder Fett niemals unbeaufsichtigt auf aktiven Wärmequellen lassen; für Frittiervorgänge eine zuständige Aufsichtsperson einteilen",
+    "Eine gut sichtbare Öltemperaturtabelle in der Nähe jeder Fritteuse anbringen, die die Rauchpunkte aller in der Küche verwendeten Öle zeigt",
+    "Ein spezielles Brandschutz-Logbuch in der Küche führen, um tägliche Prüfungen, Vorfälle und Wartungsarbeiten festzuhalten",
+    "Überraschende Mini-Übungen während des Betriebs durchführen, um die Einsatzbereitschaft des Personals unter realistischen Bedingungen zu testen",
+    "Ein Buddy-System einführen, bei dem Küchenmitarbeiter paarweise eingeteilt werden, um gegenseitige Aufmerksamkeit bei der Notfallevakuierung zu gewährleisten",
+    "Laminierte Brandschutz-Schnellreferenzkarten an jeder Kochstation aushängen, mit auf einen Blick lesbaren Schritten",
+    "Fritteusenöl planmäßig wechseln, anstatt auf sichtbare Verschlechterung zu warten, da degradiertes Öl einen niedrigeren Flammpunkt hat",
+    "Eine Mindest-Freihaltezone von 1 Meter um alle Feuerlöscher und Auslösevorrichtungen der Löschanlage jederzeit einhalten"
+  ],
+  "glossary": {
+    "Klasse-F-Brand": "Ein Brand mit Speiseölen und -fetten, gekennzeichnet durch extrem hohe Temperaturen und das Risiko einer explosionsartigen Wiederentzündung; erfordert Nasslöschmittel",
+    "Feuerdreieck": "Die drei für eine Verbrennung erforderlichen Elemente: Brennstoff, Sauerstoff und Wärme; das Entfernen eines Elements löscht das Feuer",
+    "Nasslöschmittel": "Ein Feuerlöschmittel (typischerweise Kaliumacetat- oder Karbonatlösung), das speziell für Klasse-F-Brände entwickelt wurde, den Brennstoff abkühlt und eine Verseifungsschicht bildet, um eine Wiederentzündung zu verhindern",
+    "PASS-Technik": "Die vierstufige Methode zur Bedienung eines tragbaren Feuerlöschers: Sicherung lösen (Pull), Auf den Brandherd richten (Aim), Hebel betätigen (Squeeze), Seitlich schwenken (Sweep)",
+    "Schmelzlotauslöser": "Ein wärmeempfindliches Bauteil, das bei einer vorbestimmten Temperatur schmilzt und automatisch eine Löschanlage auslöst",
+    "Flammpunkt": "Die niedrigste Temperatur, bei der eine Flüssigkeit ausreichend Dampf erzeugt, um sich bei Kontakt mit einer Zündquelle zu entzünden; entscheidend für die Sicherheit beim Umgang mit Speiseöl",
+    "Selbstentzündungstemperatur": "Die Temperatur, bei der sich ein Stoff ohne externe Zündquelle spontan entzündet; bei Speiseölen typischerweise zwischen 300–370 Grad Celsius",
+    "Equipo de Emergencia": "Notfallteam, das gemäß dem spanischen Arbeitsschutzgesetz benannt wird und aus geschultem Personal besteht, das für Brandbekämpfung und Evakuierungskoordination verantwortlich ist",
+    "Plan de Emergencia": "Der gemäß spanischem Recht für Arbeitsplätze vorgeschriebene Notfallplan, der Erkennungs-, Alarm-, Evakuierungs- und Reaktionsverfahren beschreibt",
+    "KD 513/2017": "Königliches Dekret 513/2017 zur Genehmigung der Technischen Vorschrift über Brandschutzanlagen (Reglamento de Instalaciones de Protección contra Incendios)"
+  }
+}

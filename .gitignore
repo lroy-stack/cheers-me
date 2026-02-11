@@ -1,0 +1,72 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+/.vitest
+/.playwright
+
+# Next.js
+/.next
+/out
+/build
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+Thumbs.db
+
+# Supabase
+.supabase
+supabase/.temp
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Internal documentation
+docs/dev-reports/
+INFORME_*.md
+
+# Claude Code settings
+.claude/
+.claude_settings.json
+
+# Build info
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Vercel local
+.vercel
+
+# pnpm store
+.pnpm-store/
+
+# Backups
+*.bak
+
+# Additional OS
+**/.DS_Store

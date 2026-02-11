@@ -1,0 +1,10 @@
+PLACEHOLDER: Add a notification sound file here (MP3 format).
+
+Recommended: A short, pleasant kitchen bell or notification sound (1-2 seconds).
+
+You can use:
+- A free sound from freesound.org
+- Generate one with tools like Audacity
+- Use a system sound from your OS
+
+The file should be named: notification-sound.mp3

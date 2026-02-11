@@ -1,0 +1,180 @@
+{
+  "title": "Prevención del Estrés Térmico en Establecimientos de Hostelería",
+  "legalBasis": "Real Decreto 486/1997 sobre disposiciones mínimas de seguridad y salud en los lugares de trabajo; Ley 31/1995 de Prevención de Riesgos Laborales; NTP 322 (INSST) sobre evaluación del ambiente térmico",
+  "summary": "El estrés térmico es uno de los riesgos laborales más significativos en los entornos de hostelería, particularmente en las cocinas donde los trabajadores están expuestos de forma habitual a calor extremo procedente de hornos, parrillas, freidoras y fogones. El Real Decreto 486/1997 establece las condiciones mínimas de temperatura, humedad y ventilación en el lugar de trabajo que los empleadores deben mantener para proteger la salud y seguridad de los trabajadores.\n\nEsta guía abarca tanto los escenarios de estrés por calor como de estrés por frío relevantes para las operaciones de hostelería, incluyendo la exposición al calor en cocinas, el trabajo en cámaras frigoríficas y el servicio en terrazas exteriores durante condiciones climáticas extremas. Proporciona estrategias prácticas de evaluación, prevención y respuesta ante emergencias conforme a la normativa española de salud laboral.\n\nComprender la prevención del estrés térmico es esencial tanto para los responsables de hostelería como para los trabajadores, ya que la exposición prolongada a extremos térmicos puede provocar golpe de calor, agotamiento por calor, hipotermia y enfermedades crónicas. La legislación española exige a los empleadores realizar evaluaciones de riesgos específicas para los peligros térmicos e implementar las medidas de control adecuadas.",
+  "keyPoints": [
+    "El RD 486/1997 establece los límites de temperatura en el lugar de trabajo: 17-27°C para trabajo sedentario, 14-25°C para trabajo físico ligero",
+    "Los ambientes de cocina superan frecuentemente los umbrales de temperatura seguros, requiriendo medidas de control específicas",
+    "Los empleadores deben proporcionar ventilación adecuada, con tasas mínimas de renovación de aire según el tipo de espacio de trabajo",
+    "La humedad relativa debe mantenerse entre el 30% y el 70% en todos los espacios de trabajo",
+    "Los trabajadores en cámaras frigoríficas deben disponer de EPI apropiados y tiempos de exposición limitados",
+    "Se recomiendan períodos de aclimatación al calor de 7-14 días para los nuevos trabajadores de cocina",
+    "Las evaluaciones de riesgo por estrés térmico deben documentarse y revisarse anualmente",
+    "Deben establecerse y entrenarse protocolos de emergencia para golpe de calor e hipotermia"
+  ],
+  "sections": [
+    {
+      "heading": "1. Marco Legal y Obligaciones",
+      "content": "La legislación española establece un marco integral para la protección de los trabajadores frente a los peligros del estrés térmico. La normativa principal es el Real Decreto 486/1997, que fija parámetros ambientales específicos para los lugares de trabajo, complementado por el deber general de protección establecido en la Ley 31/1995 de Prevención de Riesgos Laborales.",
+      "subsections": [
+        {
+          "heading": "1.1 Requisitos de Temperatura según el RD 486/1997",
+          "content": "El artículo 7 y el Anexo III del RD 486/1997 establecen rangos de temperatura específicos para diferentes tipos de trabajo. Para el trabajo sedentario (como la administración de oficina en un restaurante), las temperaturas deben mantenerse entre 17°C y 27°C. Para el trabajo físico ligero (como el servicio de mesas), el rango es de 14°C a 25°C. Estos límites se aplican a espacios de trabajo cerrados donde las condiciones ambientales pueden controlarse. La normativa también exige que las diferencias de temperatura entre espacios de trabajo adyacentes no superen ciertos umbrales para prevenir el choque térmico cuando los trabajadores se desplazan entre zonas."
+        },
+        {
+          "heading": "1.2 Normas de Ventilación y Humedad",
+          "content": "La misma normativa establece tasas mínimas de ventilación de 30 m³/hora por trabajador en ambientes no contaminados y 50 m³/hora donde haya contaminantes presentes (como los humos de cocina). La humedad relativa debe mantenerse entre el 30% y el 70%, excepto cuando exista riesgo de electricidad estática, en cuyo caso el mínimo asciende al 50%. Las cocinas requieren sistemas de ventilación mecánica mejorados, incluyendo campanas extractoras sobre todos los equipos generadores de calor."
+        },
+        {
+          "heading": "1.3 Deberes del Empleador y Derechos de los Trabajadores",
+          "content": "Conforme a la Ley 31/1995, los empleadores tienen el deber absoluto de proteger a los trabajadores frente a los riesgos previsibles, incluidos los peligros térmicos. Esto incluye la realización de evaluaciones de riesgos (Art. 16), la proporción de información y formación (Art. 18-19), la vigilancia de la salud (Art. 22) y la consulta con los representantes de los trabajadores. Los trabajadores tienen derecho a interrumpir su actividad en caso de peligro grave e inminente (Art. 21) y no pueden ser sancionados por ello."
+        }
+      ]
+    },
+    {
+      "heading": "2. Estrés por Calor en Entornos de Cocina",
+      "content": "Las cocinas son la zona de mayor riesgo de estrés por calor en cualquier operación de hostelería. Las temperaturas ambientales cerca de las estaciones de cocción pueden superar los 40°C durante el servicio punta, agravando el calor metabólico generado por la actividad física intensa. La evaluación y el control adecuados del estrés por calor requieren comprender tanto los factores ambientales como los personales.",
+      "subsections": [
+        {
+          "heading": "2.1 Evaluación del Índice WBGT",
+          "content": "El índice de Temperatura de Globo y Bulbo Húmedo (WBGT) es el método estándar para evaluar la exposición al estrés por calor en los lugares de trabajo, según recomienda el INSST (Instituto Nacional de Seguridad y Salud en el Trabajo) en su guía técnica NTP 322. El WBGT combina la temperatura del aire, la humedad, el calor radiante y el movimiento del aire en un índice único. Para la intensidad de trabajo moderada típica de las operaciones de cocina, el límite de referencia WBGT es de 26°C. Las mediciones deben realizarse a nivel del puesto de trabajo durante los períodos de cocción punta. Cuando los valores de WBGT superan los límites de referencia, los empleadores deben implementar medidas de control o restringir el tiempo de exposición mediante ciclos de trabajo-descanso."
+        },
+        {
+          "heading": "2.2 Controles de Ingeniería para el Calor en Cocina",
+          "content": "La jerarquía de controles exige priorizar las soluciones de ingeniería. Las medidas eficaces incluyen: instalar campanas extractoras de alta capacidad con sistemas de aire de reposición que suministren aire fresco refrigerado; colocar cortinas de aire entre las zonas de cocina y servicio; utilizar pantallas contra el calor radiante cerca de parrillas y hornos; seleccionar equipos energéticamente eficientes que generen menos calor residual; mantener una separación adecuada entre los aparatos generadores de calor; e instalar sistemas de refrigeración puntual dirigidos a las estaciones de trabajo. La climatización en los entornos de cocina debe diseñarse para evitar crear corrientes molestas mientras se mantiene una refrigeración eficaz."
+        },
+        {
+          "heading": "2.3 Organización del Trabajo e Hidratación",
+          "content": "Los controles administrativos son complementos esenciales de las medidas de ingeniería. Estos incluyen implementar turnos de rotación para que ningún trabajador esté expuesto continuamente a las estaciones más calientes; programar las tareas de preparación más intensas en calor (como la cocción por lotes a gran escala) durante los períodos más frescos; establecer pausas de descanso obligatorias en zonas frescas durante los servicios prolongados; proporcionar acceso ilimitado a agua potable fresca (los empleadores deben suministrar al menos 250 ml por trabajador y hora en condiciones de calor); y permitir la autorregulación del ritmo de trabajo cuando sea posible. Los nuevos trabajadores deben someterse a un programa de aclimatación al calor de 7-14 días con una exposición gradualmente creciente."
+        }
+      ]
+    },
+    {
+      "heading": "3. Estrés por Frío en Zonas de Almacenamiento y Exteriores",
+      "content": "El estrés por frío afecta a los trabajadores de hostelería que entran regularmente en cámaras frigoríficas, congeladores o trabajan en terrazas exteriores durante los meses de invierno. Aunque es menos frecuente que el estrés por calor en hostelería, la exposición al frío puede ser igualmente peligrosa y requiere medidas preventivas específicas.",
+      "subsections": [
+        {
+          "heading": "3.1 Trabajo en Cámaras y Congeladores",
+          "content": "Las cámaras frigoríficas (típicamente 0-5°C) y los congeladores (-18°C o menos) presentan riesgos significativos de estrés por frío. La normativa española exige que los trabajadores que entren en estos espacios dispongan de ropa aislante adecuada, incluidos guantes térmicos, y que los tiempos de exposición estén limitados. Para el trabajo en congeladores a -18°C, la exposición continua no debe superar los 60 minutos sin una pausa de calentamiento. Las cámaras frigoríficas deben contar con mecanismos de apertura interior de puertas y sistemas de alarma como requisito de seguridad. Los trabajadores nunca deben entrar solos en las cámaras frigoríficas, y debe establecerse un sistema de compañeros o un protocolo de registro regular."
+        },
+        {
+          "heading": "3.2 Trabajo en Terraza Exterior en Temperaturas Extremas",
+          "content": "El personal de terraza está expuesto tanto a extremos de calor como de frío según la estación. Durante las olas de calor estival, cuando las temperaturas ambientales superan los 35°C, los empleadores deben proporcionar estructuras de sombra, hidratación adicional y horarios modificados. Durante el invierno, los trabajadores en exteriores necesitan ropa adecuada para el frío y acceso a zonas de descanso climatizadas. Las normativas municipales en muchas ciudades españolas exigen ahora sistemas de calefacción o refrigeración en las terrazas para la comodidad de los clientes, pero los empleadores deben asegurarse de que estos también beneficien a los trabajadores. La evaluación de riesgos del empleador debe abordar específicamente las condiciones de trabajo estacionales en exteriores."
+        },
+        {
+          "heading": "3.3 Transición Entre Zonas de Temperatura",
+          "content": "Los trabajadores de hostelería se desplazan frecuentemente entre ambientes térmicos drásticamente diferentes, como de una cocina caliente a una cámara frigorífica o de un comedor climatizado a una terraza expuesta al sol. Estas transiciones rápidas pueden causar choque térmico y aumentar el riesgo de eventos cardiovasculares. Las medidas de prevención incluyen establecer zonas de transición con temperaturas intermedias, permitir breves pausas de aclimatación al desplazarse entre ambientes extremos y asegurar que los uniformes de trabajo puedan superponerse fácilmente en capas para la adaptabilidad térmica."
+        }
+      ]
+    },
+    {
+      "heading": "4. Vigilancia de la Salud y Monitorización",
+      "content": "La prevención eficaz del estrés térmico requiere tanto la monitorización ambiental como programas de vigilancia de la salud de los trabajadores. La legislación española establece obligaciones específicas de vigilancia de la salud para los trabajadores expuestos a peligros térmicos.",
+      "subsections": [
+        {
+          "heading": "4.1 Programas de Monitorización Ambiental",
+          "content": "Los empleadores deben implementar una monitorización ambiental continua o periódica de la temperatura, la humedad y la velocidad del aire en todas las zonas de trabajo. En las cocinas, la monitorización debe realizarse durante los períodos de servicio punta cuando las cargas térmicas son más elevadas. Los equipos de medición deben estar calibrados y los registros deben conservarse. Los registradores digitales de temperatura y humedad colocados en las estaciones de trabajo clave proporcionan datos continuos para la evaluación de riesgos. Los resultados deben revisarse mensualmente y tras cualquier cambio en la disposición de equipos, sistemas de ventilación o procesos de trabajo."
+        },
+        {
+          "heading": "4.2 Evaluaciones de Salud de los Trabajadores",
+          "content": "Conforme al artículo 22 de la Ley 31/1995, los empleadores deben ofrecer vigilancia de la salud específica a los trabajadores expuestos a riesgos térmicos. Esto incluye evaluaciones médicas previas a la contratación para identificar a trabajadores con condiciones que aumenten la vulnerabilidad al estrés térmico (enfermedad cardiovascular, diabetes, obesidad, ciertos medicamentos), reconocimientos médicos periódicos durante el empleo y evaluaciones de reincorporación al trabajo tras una enfermedad relacionada con el calor. La vigilancia de la salud debe ser realizada por el servicio de prevención y los resultados son confidenciales. No se puede exigir a los trabajadores someterse a vigilancia de la salud excepto cuando esté legalmente obligado por razones de seguridad pública."
+        }
+      ]
+    },
+    {
+      "heading": "5. Procedimientos de Respuesta ante Emergencias",
+      "content": "A pesar de las medidas preventivas, pueden producirse emergencias térmicas. Todo establecimiento de hostelería debe contar con procedimientos de emergencia documentados para golpe de calor, agotamiento por calor e hipotermia, con personal de primeros auxilios formado disponible durante todas las horas de funcionamiento.",
+      "subsections": [
+        {
+          "heading": "5.1 Respuesta ante Golpe de Calor y Agotamiento por Calor",
+          "content": "El golpe de calor es una emergencia médica que requiere actuación inmediata. El protocolo de emergencia debe incluir: reconocer los síntomas (confusión, pérdida de consciencia, piel caliente/seca, temperatura corporal superior a 40°C); llamar inmediatamente a los servicios de emergencia (112); trasladar al trabajador a una zona fresca; iniciar el enfriamiento activo con agua fría, bolsas de hielo en cuello/axilas/ingles y ventilación; y monitorizar las constantes vitales hasta la llegada de los sanitarios. El agotamiento por calor, aunque menos inmediatamente peligroso, requiere igualmente la retirada del ambiente caliente, rehidratación con soluciones electrolíticas, descanso en zona fresca y evaluación médica antes de reincorporarse al trabajo."
+        },
+        {
+          "heading": "5.2 Respuesta ante Hipotermia",
+          "content": "La hipotermia por exposición en cámaras frigoríficas requiere: reconocer los síntomas (temblores, confusión, somnolencia, habla confusa); trasladar al trabajador a un ambiente cálido; retirar cualquier ropa mojada; envolver en mantas calientes empezando por el torso; proporcionar bebidas dulces templadas (no calientes) si el trabajador está consciente; llamar a los servicios de emergencia para casos moderados a graves (temperatura corporal inferior a 32°C); y evitar el recalentamiento rápido de las extremidades que puede causar complicaciones cardíacas."
+        },
+        {
+          "heading": "5.3 Documentación y Notificación",
+          "content": "Todos los incidentes de estrés térmico deben documentarse, incluyendo los cuasi-accidentes. Conforme a la legislación española, los accidentes y enfermedades profesionales deben notificarse a través del sistema electrónico Delt@. El informe del incidente debe incluir las condiciones ambientales en el momento, las actividades del trabajador y la duración de la exposición, los síntomas observados, los primeros auxilios prestados y el tratamiento médico recibido. Tras cualquier incidente, la evaluación de riesgos debe revisarse y las medidas preventivas actualizarse. El Comité de Seguridad y Salud (cuando corresponda) debe ser informado de todos los incidentes."
+        }
+      ]
+    },
+    {
+      "heading": "6. Formación y Concienciación",
+      "content": "La prevención eficaz del estrés térmico depende de que todos los trabajadores comprendan los riesgos y sepan cómo protegerse a sí mismos y a sus compañeros. La formación es un requisito legal según los artículos 18 y 19 de la Ley 31/1995.",
+      "subsections": [
+        {
+          "heading": "6.1 Requisitos de Formación Inicial y Continua",
+          "content": "Todos los trabajadores de hostelería deben recibir formación de concienciación sobre estrés térmico al ser contratados, cuando cambia su puesto de trabajo o cuando se introducen nuevos equipos o procesos. La formación debe cubrir: reconocer los signos y síntomas del golpe de calor, agotamiento por calor e hipotermia; comprender los factores de riesgo personales; uso adecuado de los equipos de refrigeración y los EPI; requisitos de hidratación; programas de trabajo-descanso; cuándo y cómo activar los procedimientos de emergencia; y obligaciones de notificación. La formación debe ser práctica, incluir demostraciones prácticas de los equipos de refrigeración y primeros auxilios, y impartirse en un idioma que el trabajador comprenda."
+        },
+        {
+          "heading": "6.2 Responsabilidades de Supervisión",
+          "content": "Los responsables de cocina, jefes de cocina y supervisores de turno tienen responsabilidades adicionales en la gestión del estrés térmico. Deben monitorizar las condiciones ambientales durante el servicio, observar a los trabajadores en busca de signos tempranos de enfermedad por calor, hacer cumplir los programas de hidratación y pausas de descanso, asegurar que los sistemas de ventilación funcionan correctamente, ajustar las cargas de trabajo durante los períodos de calor extremo y mantener la preparación para la respuesta ante emergencias. La formación de los supervisores debe incluir la interpretación de la evaluación WBGT y la autoridad para modificar las operaciones cuando las condiciones térmicas se vuelvan peligrosas."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Lista de Verificación Diaria de Seguridad Térmica en Cocina",
+      "items": [
+        "Comprobar que todos los sistemas de ventilación y extracción funcionan antes del servicio",
+        "Verificar las lecturas de temperatura y humedad en las estaciones de trabajo clave",
+        "Asegurar que el suministro adecuado de agua potable está disponible y accesible",
+        "Confirmar que todos los ventiladores y sistemas de refrigeración puntual son funcionales",
+        "Revisar los niveles de personal para permitir la rotación en las estaciones de alto calor",
+        "Comprobar que las alarmas de temperatura de cámaras y congeladores funcionan",
+        "Verificar que los mecanismos de apertura de emergencia de las cámaras funcionan correctamente",
+        "Informar al personal sobre las condiciones meteorológicas actuales y las precauciones especiales"
+      ]
+    },
+    {
+      "title": "Lista de Verificación de Evaluación de Riesgos por Estrés Térmico",
+      "items": [
+        "Medir la temperatura ambiente en todas las estaciones de trabajo durante los períodos punta",
+        "Calcular el índice WBGT para las zonas de cocina cercanas a las fuentes de calor",
+        "Evaluar los niveles de humedad en todas las zonas de trabajo cerradas",
+        "Valorar la eficacia de los sistemas de ventilación y extracción",
+        "Revisar los programas de trabajo-descanso en relación con los datos de exposición térmica",
+        "Identificar a los trabajadores con condiciones médicas que aumenten la vulnerabilidad térmica",
+        "Comprobar la provisión de EPI para los trabajadores de cámaras frigoríficas",
+        "Documentar los hallazgos y actualizar el plan de prevención en consecuencia",
+        "Revisar y actualizar los procedimientos de respuesta ante emergencias",
+        "Verificar que los suministros de primeros auxilios incluyen equipamiento para emergencias térmicas"
+      ]
+    },
+    {
+      "title": "Lista de Verificación de Preparación Estacional",
+      "items": [
+        "Revisar y probar todos los sistemas de aire acondicionado antes del verano",
+        "Revisar las medidas de protección de los trabajadores de terrazas para la próxima temporada",
+        "Actualizar el protocolo de respuesta ante olas de calor con los contactos de emergencia actuales",
+        "Comprobar el inventario de ropa aislante para las operaciones en clima frío",
+        "Programar el mantenimiento de HVAC y la sustitución de filtros",
+        "Revisar y actualizar la evaluación de riesgos térmicos para las condiciones estacionales"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Instalar pantallas digitales de temperatura y humedad en tiempo real en las zonas de cocina visibles para todo el personal",
+    "Proporcionar bebidas de reposición de electrolitos además de agua durante los servicios de alto calor",
+    "Implementar un sistema de compañeros donde los trabajadores se vigilen mutuamente en busca de signos de enfermedad por calor",
+    "Programar el trabajo intensivo de preparación (como la elaboración de caldos y la cocción por lotes) durante las horas de la mañana antes de que el calor ambiental alcance su máximo",
+    "Mantener una distancia mínima de 2 metros entre los trabajadores y los equipos de alto calor siempre que sea posible",
+    "Utilizar equipos aislantes de mantenimiento de alimentos para reducir la necesidad de cocción continua a alta temperatura",
+    "Crear una zona de enfriamiento designada de fácil acceso desde la cocina con asientos y agua fría",
+    "Realizar reuniones informativas previas al turno sobre las condiciones térmicas durante los períodos de clima extremo"
+  ],
+  "glossary": {
+    "WBGT (Temperatura de Globo y Bulbo Húmedo)": "Un índice compuesto que combina la temperatura del aire, la humedad, la velocidad del viento y el calor radiante para evaluar el riesgo de exposición al estrés por calor en los trabajadores.",
+    "Golpe de Calor": "Una condición potencialmente mortal en la que falla la regulación térmica del cuerpo, la temperatura corporal supera los 40°C y se afecta el sistema nervioso central. Requiere tratamiento de emergencia inmediato.",
+    "Agotamiento por Calor": "Una condición causada por la pérdida excesiva de agua y sales a través de la sudoración, caracterizada por sudoración intensa, debilidad, náuseas y mareos. Precede al golpe de calor si no se trata.",
+    "Hipotermia": "Un descenso peligroso de la temperatura corporal central por debajo de 35°C, típicamente causado por exposición prolongada al frío, que provoca temblores, confusión y potencialmente paro cardíaco.",
+    "Aclimatación al Calor": "El proceso de adaptación fisiológica durante 7-14 días en el que el cuerpo del trabajador mejora su capacidad de regulación térmica mediante una mayor eficiencia en la sudoración y la función cardiovascular.",
+    "Calor Metabólico": "El calor corporal interno generado por la actividad física y los procesos metabólicos, que se suma a la carga térmica ambiental y aumenta el riesgo de estrés térmico.",
+    "Servicio de Prevención": "El servicio de prevención de riesgos laborales (interno o externo) que todo empleador debe contratar para realizar evaluaciones de riesgos, vigilancia de la salud y proporcionar asesoramiento técnico.",
+    "NTP (Nota Técnica de Prevención)": "Notas técnicas de prevención publicadas por el INSST que proporcionan orientación detallada sobre temas de seguridad y salud laboral, incluidos los métodos de evaluación del estrés térmico.",
+    "EPI (Equipo de Protección Individual)": "Equipamiento que usan los trabajadores para minimizar la exposición a los riesgos, incluyendo guantes aislantes, ropa térmica y delantales resistentes al calor en el contexto de la protección térmica.",
+    "Sistema Delt@": "El sistema electrónico español para la notificación de accidentes y enfermedades profesionales a las autoridades laborales, obligatorio para todos los incidentes en el lugar de trabajo."
+  }
+}

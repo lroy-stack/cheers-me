@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "Book a Table | GrandCafe Cheers Mallorca",
+    "description": "Reserve your table at GrandCafe Cheers, the finest beachfront dining experience in El Arenal, Mallorca. World kitchen, cocktails, live DJs & more.",
+    "ogTitle": "Book a Table | GrandCafe Cheers Mallorca",
+    "ogDescription": "Reserve your table at GrandCafe Cheers, the finest beachfront dining experience in El Arenal, Mallorca."
+  },
+  "hero": {
+    "title": "GrandCafe Cheers",
+    "tagline": "World kitchen, big fiesta!",
+    "description": "El Arenal, Platja de Palma, Mallorca — Your beachfront destination for world kitchen, cocktails, sports, and live DJ nights.",
+    "ratingBadge": "4.8/5 Google",
+    "hoursBadge": "Open 10:30 — 03:00",
+    "craftBeersBadge": "22 Craft Beers",
+    "liveDjBadge": "Live DJs",
+    "reserveTable": "Reserve Your Table",
+    "location": "Carrer de Cartago 22, El Arenal",
+    "hours": "Open daily 10:30 — 03:00"
+  },
+  "experience": {
+    "heading": "Experience Cheers",
+    "worldKitchen": "World Kitchen",
+    "burgers": "Gourmet Burgers & More",
+    "cocktails": "50+ Craft Cocktails",
+    "vibes": "Beach Vibes & Live Music"
+  },
+  "giftVoucher": {
+    "heading": "Give the Gift of Cheers",
+    "description": "Surprise someone special with a GrandCafe Cheers gift voucher. Perfect for birthdays, celebrations, or just because!",
+    "buyNow": "Buy a Gift Voucher",
+    "fromAmount": "From €25"
+  },
+  "newsletter": {
+    "heading": "Stay in the Loop",
+    "description": "Get exclusive deals, event updates, and insider tips delivered to your inbox.",
+    "emailPlaceholder": "your@email.com",
+    "namePlaceholder": "Your name (optional)",
+    "subscribe": "Subscribe",
+    "subscribing": "Subscribing...",
+    "successTitle": "Welcome to the Cheers family!",
+    "successDescription": "Check your inbox for a special welcome offer.",
+    "errorAlreadySubscribed": "You're already subscribed!",
+    "errorGeneric": "Something went wrong. Please try again."
+  },
+  "wizard": {
+    "occasion": "Occasion",
+    "dateTime": "Date & Time",
+    "guests": "Guests",
+    "details": "Details",
+    "confirm": "Confirm"
+  },
+  "occasion": {
+    "heading": "What brings you to Cheers?",
+    "subheading": "Help us prepare the perfect experience for you",
+    "casual": "Casual Dining",
+    "casualDesc": "Great food, drinks & good vibes",
+    "birthday": "Birthday",
+    "birthdayDesc": "Make it special!",
+    "group": "Group Outing",
+    "groupDesc": "6+ friends ready to party",
+    "cocktails": "Cocktail Night",
+    "cocktailsDesc": "50+ cocktails to explore",
+    "sports": "Sports Night",
+    "sportsDesc": "15 screens, cold beers",
+    "party": "DJ Night",
+    "partyDesc": "DJ Winston from 22:00"
+  },
+  "dateTime": {
+    "heading": "When are you coming?",
+    "subheading": "Pick a date and your preferred time slot",
+    "morning": "Morning",
+    "afternoon": "Afternoon",
+    "sunset": "Sunset",
+    "night": "Night"
+  },
+  "partySize": {
+    "heading": "How many guests?",
+    "subheading": "Including yourself",
+    "solo": "Solo",
+    "couple": "Couple",
+    "group": "Group",
+    "bigGroup": "Big Group",
+    "party": "Party!",
+    "guest": "guest",
+    "guests": "guests",
+    "largeGroupMessage": "For groups larger than 12, we recommend calling us directly for the best experience.",
+    "continue": "Continue"
+  },
+  "guestInfo": {
+    "heading": "Your details",
+    "subheading": "So we can confirm your reservation",
+    "fullName": "Full Name",
+    "required": "*",
+    "phone": "Phone Number",
+    "email": "Email",
+    "optional": "(optional)",
+    "specialRequests": "Special Requests",
+    "namePlaceholder": "Your name",
+    "phonePlaceholder": "+34 600 000 000",
+    "emailPlaceholder": "your@email.com",
+    "requestsPlaceholder": "Allergies, birthday cake, window seat...",
+    "preferredLanguage": "Preferred Language",
+    "back": "Back",
+    "continue": "Continue",
+    "nameRequired": "Name is required",
+    "phoneRequired": "Phone number is required",
+    "phoneInvalid": "Please enter a valid phone number",
+    "emailInvalid": "Please enter a valid email"
+  },
+  "review": {
+    "heading": "Review your booking",
+    "subheading": "Make sure everything looks good",
+    "date": "Date",
+    "time": "Time",
+    "guestsLabel": "Guests",
+    "name": "Name",
+    "phone": "Phone",
+    "emailLabel": "Email",
+    "requests": "Requests",
+    "edit": "Edit",
+    "checkingAvailability": "Checking availability...",
+    "available": "Available!",
+    "tablesReady": "{count} table(s) ready",
+    "notAvailable": "Not available for this slot.",
+    "trySuggested": "Try: {times}",
+    "back": "Back",
+    "checking": "Checking...",
+    "confirmReservation": "Confirm Reservation",
+    "policy": "By confirming, you agree to our reservation policy. We will confirm within 24 hours."
+  },
+  "success": {
+    "title": "Reservation Confirmed!",
+    "thankYou": "Thank you for choosing GrandCafe Cheers",
+    "detailsHeading": "Reservation Details",
+    "nameLabel": "Name:",
+    "dateLabel": "Date:",
+    "timeLabel": "Time:",
+    "guestsLabel": "Guests:",
+    "tableLabel": "Table:",
+    "statusLabel": "Status:",
+    "shareWhatsApp": "Share WhatsApp",
+    "copyLink": "Copy Link",
+    "copied": "Copied!",
+    "addCalendar": "Add to Calendar",
+    "beforeYouArrive": "Before you arrive",
+    "tipLocation": "Carrer de Cartago 22, El Arenal — right on the beach!",
+    "tipParking": "Free street parking available nearby",
+    "tipHours": "We're open 10:30 - 03:00 daily",
+    "tipDJ": "DJ Winston Black from 22:00 — dress code: casual!",
+    "makeAnother": "Make another reservation"
+  },
+  "aiAssistant": {
+    "title": "Cheers Assistant",
+    "subtitle": "Ask me anything!",
+    "greeting": "Hi! I can help you with your booking.",
+    "greetingHint": "Try asking about our menu, events, or book a table.",
+    "suggestion1": "What cocktails do you have?",
+    "suggestion2": "Is there a DJ tonight?",
+    "suggestion3": "Book for 4 on Saturday",
+    "suggestion4": "What dishes do you recommend?",
+    "applyToBooking": "Apply to booking",
+    "applied": "Done! I've updated your booking details. Check the form above.",
+    "errorReply": "Sorry, I couldn't process that. Please try again!",
+    "errorGeneric": "Oops, something went wrong. Please try again!",
+    "inputPlaceholder": "Ask me anything...",
+    "tryAgain": "Try Again"
+  },
+  "tonight": {
+    "heading": "Tonight at Cheers",
+    "liveDJ": "Live DJ",
+    "sports": "Sports"
+  },
+  "socialProof": {
+    "onGoogleReviews": "on Google Reviews",
+    "followersCount": "@cheersmallorca — 5.4K followers"
+  },
+  "footer": {
+    "needHelp": "Need Help?",
+    "helpDescription": "For large groups (12+), same-day reservations, or special requests, call us directly.",
+    "address": "Carrer de Cartago 22, El Arenal (Platja de Palma), Mallorca 07600",
+    "hours": "Open April 1 - November 1 • High Season Hours: 10:30 - 03:00",
+    "copyright": "© 2026 GrandCafe Cheers. All rights reserved."
+  },
+  "widget": {
+    "title": "Book a Table | GrandCafe Cheers",
+    "description": "Reserve your table at GrandCafe Cheers"
+  }
+}

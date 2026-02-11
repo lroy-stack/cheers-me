@@ -1,0 +1,195 @@
+{
+  "title": "Temperature Control — Cold Chain",
+  "legalBasis": "Royal Decree 3484/2000 establishing hygiene standards for food preparation and sale; EU Regulation (EC) No 852/2004, Annex II, Chapter IX; Commission Regulation (EC) No 2073/2005 on microbiological criteria for foodstuffs",
+  "summary": "The cold chain refers to the unbroken sequence of refrigerated storage and distribution from production through to the final consumer. Maintaining the cold chain is one of the most critical food safety controls in hospitality, as temperature abuse — allowing food to reach temperatures above safe refrigeration levels — creates ideal conditions for rapid bacterial growth and toxin production. Most foodborne illness outbreaks are associated with temperature control failures.\n\nEU Regulation 852/2004 requires that foodstuffs likely to support the growth of pathogenic microorganisms must be kept at temperatures that do not result in risks to health. For most chilled foods, this means maintaining temperatures at or below 4°C. Frozen foods must be kept at -18°C or below. Food business operators must ensure that refrigeration equipment is adequate for the volume and type of food stored, that temperatures are monitored regularly and accurately, and that corrective action is taken immediately when temperatures deviate from safe ranges.\n\nTemperature monitoring records are among the first documents inspectors review during official controls. Incomplete or inaccurate temperature logs, evidence of temperature abuse, or inadequate refrigeration capacity are serious non-conformities that can result in enforcement action. Every member of staff must understand the importance of temperature control and their role in maintaining the cold chain.",
+  "keyPoints": [
+    "Refrigerated foods must be kept at 4°C or below (some sources specify 0-4°C range)",
+    "Frozen foods must be maintained at -18°C or below at all times",
+    "Temperature must be monitored and recorded at least twice daily (morning and evening)",
+    "Check delivery temperatures immediately upon arrival with a calibrated probe thermometer",
+    "Any break in the cold chain lasting more than specified time limits requires product assessment and possible disposal",
+    "FIFO (First In, First Out) rotation ensures older stock is used before it reaches use-by dates",
+    "Never refreeze food that has been thawed unless it has been cooked thoroughly first",
+    "Equipment malfunctions must be reported and addressed immediately to prevent temperature abuse"
+  ],
+  "sections": [
+    {
+      "heading": "1. Temperature Requirements for Chilled Storage",
+      "content": "Refrigeration slows bacterial growth but does not stop it entirely. Most pathogenic bacteria grow slowly at refrigeration temperatures but multiply rapidly as temperature increases above 5°C. The European Union specifies that perishable foods must be stored at temperatures that prevent the growth of pathogenic microorganisms or the formation of toxins. For most chilled foods, this translates to a maximum of 4°C, though some businesses operate at 0-2°C for enhanced safety and shelf life extension.\n\nDifferent food categories have different storage requirements. Raw meat and poultry are particularly high-risk and should be stored at the coldest part of the refrigerator, ideally 0-2°C. Fish and seafood are highly perishable and require storage at 0-2°C on ice where possible. Dairy products typically specify storage at 4°C or below. Ready-to-eat foods must also be kept refrigerated, and critically, must be stored separately from raw foods to prevent cross-contamination. Understanding these requirements and organizing refrigeration accordingly is essential for maintaining food safety in a busy hospitality kitchen.",
+      "subsections": [
+        {
+          "heading": "1.1 Refrigerator Organization",
+          "content": "Proper refrigerator organization prevents cross-contamination and ensures efficient operation. The fundamental rule is to store raw foods below cooked and ready-to-eat foods to prevent drip contamination. A typical organization scheme from bottom to top is: raw meat and poultry (bottom shelf), raw fish, cooked meats, prepared foods and dairy, and ready-to-eat foods including vegetables for salad (top shelf). All foods should be covered or sealed in containers to prevent drips and maintain quality. Labels should show content and date of opening or preparation. Refrigerators should not be overloaded: overcrowding restricts airflow and prevents even cooling. Leave space between items and avoid blocking air vents. Door shelves, which experience the most temperature fluctuation, should be used for low-risk items like beverages, not for high-risk foods like meat or dairy."
+        },
+        {
+          "heading": "1.2 Temperature Monitoring Procedures",
+          "content": "Temperature monitoring is a Critical Control Point in most HACCP plans. Each refrigeration unit should have a clearly visible thermometer. Built-in thermometers may not be accurate and should be verified with a calibrated probe thermometer. Temperatures must be recorded at least twice daily: at the start and end of the working day. Additional checks during the day may be advisable for high-volume operations or critical storage units. The recorded temperature should reflect the warmest part of the refrigerator (typically near the door or top). If temperature exceeds 4°C, corrective action must be taken immediately: investigate the cause, transfer food to functioning refrigeration if available, increase the refrigerator setting, avoid opening the door unnecessarily, and assess whether the food is still safe. Temperature logs must be maintained and reviewed regularly by a supervisor to identify trends or recurring issues."
+        },
+        {
+          "heading": "1.3 Equipment Maintenance",
+          "content": "Refrigeration equipment must be properly maintained to ensure reliable operation. Regular maintenance tasks include: cleaning condenser coils (dust buildup reduces efficiency), checking door seals for airtight closure (damaged seals cause temperature loss), defrosting manual-defrost freezers before ice buildup exceeds 6mm, ensuring drainage holes are clear, and verifying that thermostats are functioning correctly. A preventive maintenance schedule should be established with a qualified refrigeration technician, typically quarterly for commercial equipment. Any malfunction must be reported immediately and not ignored. A backup plan should be in place for equipment failure: access to alternative refrigeration, emergency supplier contacts for same-day equipment rental, and clear protocols for assessing and potentially discarding food that has been temperature-abused."
+        }
+      ]
+    },
+    {
+      "heading": "2. Frozen Food Storage",
+      "content": "Freezing preserves food by reducing the temperature to levels where microorganisms cannot grow and enzymatic reactions are drastically slowed. EU regulations specify that frozen food must be maintained at -18°C or below. At this temperature, pathogenic bacteria do not grow, though they are not killed and will resume growth if the food is thawed. Freezer storage does not improve food quality; it only maintains it. Food that was not fresh before freezing will not be fresh after thawing.\n\nIn hospitality operations, freezer storage serves multiple functions: preserving seasonal ingredients for year-round use, managing inventory and reducing waste, storing convenience products, and maintaining reserves for unexpected demand. However, frozen storage is not a permanent solution. Even at -18°C, quality gradually declines over time due to moisture loss (freezer burn), oxidation, and slow enzymatic changes. Proper packaging, labeling, rotation, and respect for maximum storage times are essential for maintaining quality and safety.",
+      "subsections": [
+        {
+          "heading": "2.1 Freezer Management",
+          "content": "Effective freezer management requires organization and discipline. All items should be properly packaged to prevent freezer burn: use airtight containers or heavy-duty freezer bags, remove excess air, and ensure packaging is intact. Every item must be clearly labeled with content, weight or quantity, and date of freezing. FIFO rotation is as critical in the freezer as in the refrigerator. Organize the freezer logically: group similar items together, keep an inventory list if the freezer is large, and conduct regular audits to identify items approaching their recommended storage limits. Most frozen foods maintain quality for 3-6 months, though specific items may have shorter or longer limits. Freezers should be defrosted regularly if not self-defrosting: ice buildup reduces efficiency and storage capacity. During defrosting, food must be transferred to another freezer or kept frozen with dry ice."
+        },
+        {
+          "heading": "2.2 Temperature Monitoring for Freezers",
+          "content": "Freezer temperatures must be monitored with the same rigor as refrigerator temperatures. The critical limit is -18°C or colder. Some operations maintain freezers at -22°C or below to provide a safety margin. Temperature monitoring should occur at least daily, and more frequently in warmer weather or high-use periods. If freezer temperature rises above -18°C, immediate action is required: investigate the cause (door left open, equipment malfunction, power failure), avoid opening the freezer unnecessarily (each opening allows warm air in), and assess the food. If temperature has risen but food is still frozen solid and the interruption was brief (under 2 hours), food can usually be retained. If food has begun to thaw, particularly meat, poultry, or seafood, it may need to be cooked and used immediately or discarded. Never refreeze fully thawed raw food."
+        },
+        {
+          "heading": "2.3 Safe Thawing Procedures",
+          "content": "Thawing is a high-risk operation because as food temperature rises into the danger zone (5-63°C), any bacteria present can multiply rapidly, particularly on the surface of the food which thaws first. Safe thawing methods are: in the refrigerator at 0-4°C (slowest but safest method, requiring advance planning — large items may take 24-48 hours), under cold running water in sealed packaging (faster than refrigerator thawing, but requires monitoring and water usage), in the microwave immediately before cooking (uneven thawing may require finishing in conventional cooking), or as part of the cooking process for certain items (small items like vegetables). Never thaw food at room temperature, in warm water, or in any way that allows surface temperature to rise into the danger zone while the interior is still frozen. Once thawed, food should be used within 24 hours and must never be refrozen unless it has been cooked thoroughly first."
+        }
+      ]
+    },
+    {
+      "heading": "3. Receiving Deliveries",
+      "content": "Receiving is a critical control point because once temperature-abused food enters your facility, no amount of proper storage can make it safe. Every delivery of chilled or frozen food must be checked immediately upon arrival before it is accepted and moved into storage. The delivery vehicle should itself be refrigerated or insulated. Delivery personnel should minimize the time food spends out of temperature control. Have receiving procedures in place: designate a receiving area, ensure probe thermometers are available and calibrated, train staff on what to check, and empower them to reject non-conforming deliveries.\n\nSpeed is essential during receiving. Chilled and frozen foods should not be left at ambient temperature while other items are inspected. Check temperature-sensitive items first and move them into proper storage immediately. In hot weather or for large deliveries, consider receiving in batches to minimize exposure time. Document all deliveries including temperatures recorded, any issues noted, and the time food was moved into storage.",
+      "subsections": [
+        {
+          "heading": "3.1 Temperature Verification",
+          "content": "Check the temperature of chilled deliveries by inserting a clean, calibrated probe thermometer into the product — not into the packaging or between packages. For meat and fish, insert the probe into the thickest part of the product. For packaged items like dairy, check several packages. The temperature should be 4°C or below. If temperature is between 4-7°C, the food may still be acceptable if the deviation was brief and recent (e.g., the food was properly refrigerated but has been in the delivery vehicle for a short time). Use professional judgment, consider the food type, and when in doubt, reject the delivery. For frozen deliveries, food should be frozen solid with no signs of thawing. Check for ice crystals inside packaging (a sign of thawing and refreezing), soft spots, or leaking packaging. Temperature should be -18°C or below. If frozen food has thawed partially, reject the delivery."
+        },
+        {
+          "heading": "3.2 Delivery Rejection Procedures",
+          "content": "Staff must be empowered to reject deliveries that do not meet temperature requirements or show other signs of temperature abuse. Rejecting a delivery can feel difficult, particularly for junior staff or when the supplier is insistent, but accepting compromised food creates food safety risks and potential liability. Clear procedures help: define specific acceptance criteria, train all receiving staff on these criteria and the authority to reject deliveries, document rejected deliveries including date, supplier, product, reason for rejection, and staff member who rejected, and follow up with the supplier to ensure the issue is resolved for future deliveries. Repeated temperature failures from a single supplier should trigger a supplier review and potential termination of the relationship. Remember: rejecting an unsafe delivery is protecting your customers and your business."
+        },
+        {
+          "heading": "3.3 Documentation and Traceability",
+          "content": "Maintain records of all deliveries including: date and time of delivery, supplier name and registration number, products received with quantities and batch/lot numbers, temperature readings for chilled and frozen items, any issues noted, acceptance or rejection decision, and staff member who received the delivery. These records serve multiple purposes: demonstrating compliance with traceability requirements, providing evidence for HACCP verification, supporting supplier performance evaluation, and documenting due diligence in the event of a food safety incident or complaint. Delivery notes from suppliers should be retained for at least five years per traceability regulations. Temperature records for deliveries should be retained as part of HACCP monitoring records, typically for at least one year or as specified in your HACCP plan."
+        }
+      ]
+    },
+    {
+      "heading": "4. FIFO and Stock Rotation",
+      "content": "FIFO (First In, First Out) is the stock rotation principle that older stock should be used before newer stock. This simple principle is fundamental to food safety and quality management. When FIFO is not followed, older stock accumulates at the back of refrigerators or freezers while newer stock is used from the front, resulting in stock reaching or exceeding use-by dates while still in storage. This wastes food, increases costs, and creates food safety risks if expired products are inadvertently used.\n\nImplementing FIFO requires organization and discipline. It cannot be left to chance. Physical organization of storage areas, clear labeling with dates, regular stock rotation duties, and supervisor oversight are all necessary. In high-volume operations with rapid stock turnover, FIFO may occur naturally. In lower-volume operations or for less frequently used items, deliberate attention is required to prevent stock aging in storage.",
+      "subsections": [
+        {
+          "heading": "4.1 FIFO Implementation",
+          "content": "Implementing FIFO requires several complementary practices. First, organize storage so that older stock is at the front or top and newer stock is placed behind or beneath. When new deliveries arrive, rotate existing stock forward and place new stock behind. This physical organization makes FIFO intuitive during busy periods when staff are working quickly. Second, label everything with dates: use-by dates for purchased products should be visible, and date-opened or date-prepared labels should be applied to opened packages or prepared items. Third, train all staff on FIFO principles and why they matter. Staff are more likely to follow procedures when they understand that FIFO prevents waste and protects customers. Fourth, assign regular stock rotation duties: designate time (e.g., weekly) for a thorough review of all storage, rotation of stock, and removal of items approaching or past use-by dates."
+        },
+        {
+          "heading": "4.2 Understanding Date Marking",
+          "content": "Food products carry different types of date markings with different meanings. 'Use-by' dates apply to highly perishable foods like fresh meat, fish, and ready-to-eat products. Food should not be used after the use-by date as it may be unsafe even if it looks and smells fine. 'Best before' dates apply to less perishable foods and indicate quality rather than safety. Food past its best-before date may have reduced quality but is not necessarily unsafe if it has been stored correctly and shows no signs of spoilage. For prepared foods, the establishment must determine and label the appropriate use-by date based on the HACCP plan and shelf-life validation. As a general guideline, prepared foods stored chilled should typically be used within 3 days, though specific products may have shorter or longer shelf lives based on their characteristics and preparation methods."
+        },
+        {
+          "heading": "4.3 Managing Stock Approaching Expiry",
+          "content": "Proactive management of stock approaching use-by dates prevents waste and reduces the risk of expired food being served. Conduct regular stock checks (at least weekly, daily in small refrigerators) to identify items approaching expiry. Short-dated items can be managed through: prioritizing them in daily specials or menu planning, transferring them to freezer storage if appropriate and permitted (note: some products specifically state 'do not freeze' and this must be respected), offering them to staff at reduced prices, or donating them to food banks or charities if permitted and if sufficient time remains before expiry. Items that have reached or passed their use-by date must be discarded. They should be clearly marked as expired, removed from food storage immediately, and disposed of in a way that prevents accidental use. Document the disposal of expired food as part of waste records."
+        }
+      ]
+    },
+    {
+      "heading": "5. Equipment and Technology",
+      "content": "Reliable refrigeration equipment is fundamental to cold chain management. Commercial refrigeration differs significantly from domestic equipment in terms of capacity, cooling power, and durability. Understanding the capabilities and limitations of your equipment, maintaining it properly, and using it correctly ensures consistent temperature control. Investment in appropriate equipment is an investment in food safety.\n\nTechnology is increasingly available to support cold chain management. Digital temperature monitoring systems with wireless sensors provide continuous temperature logging, alerts for out-of-specification conditions, and cloud-based records accessible for verification and inspection. While technology cannot replace good practices, it can significantly reduce manual recording burden, provide early warning of equipment problems, and create more reliable documentation.",
+      "subsections": [
+        {
+          "heading": "5.1 Types of Commercial Refrigeration",
+          "content": "Commercial refrigeration includes various types suited to different purposes. Upright refrigerators and freezers are most common for general storage; choose models with solid doors rather than glass for better temperature stability. Walk-in cold rooms provide high-capacity storage and are essential for large operations, but require careful organization and discipline to maintain temperature (minimize door opening time, use strip curtains, establish clear zones for different product types). Blast chillers rapidly cool cooked food from 63°C to 10°C or below, meeting cooling time requirements that standard refrigerators cannot achieve. Display refrigerators for service areas must balance accessibility with temperature control; they typically operate slightly warmer than storage refrigerators and require more frequent temperature monitoring. Prep refrigerators with cutting boards on top allow cold ingredient storage with convenient access during preparation, but their frequent opening means they should be used for short-term storage of items actively being used, not for general storage."
+        },
+        {
+          "heading": "5.2 Temperature Monitoring Technology",
+          "content": "Digital temperature monitoring systems offer significant advantages over manual recording. Wireless sensors placed in refrigerators and freezers continuously monitor temperature and transmit data to a central system. Benefits include: continuous monitoring (not just two daily checks), immediate alerts if temperature exceeds set parameters (via text message or app notification), automatic record keeping eliminating manual logs, ability to monitor multiple units remotely from a single dashboard, and accessible records for verification and inspection. These systems have become increasingly affordable and are no longer limited to large operations. When implementing a digital system, ensure sensors are properly positioned (away from doors and cooling vents, in representative locations), calibrate sensors regularly, and establish protocols for responding to alerts. Technology should supplement, not replace, visual monitoring: staff should still notice if refrigerators feel warm, if condensation is excessive, or if other signs of malfunction are present."
+        },
+        {
+          "heading": "5.3 Thermometers and Calibration",
+          "content": "Accurate thermometers are essential for cold chain management. Probe thermometers should be commercial-grade with digital displays for accuracy and ease of reading. Infrared thermometers are useful for quick surface temperature checks but are not suitable for core temperature measurement or verification of stored product temperature. Each refrigeration unit should have a thermometer: built-in thermometers may not be accurate and should be verified. Calibration is critical: a thermometer that reads 2°C high will show safe temperatures when food is actually at 6°C and unsafe. Calibrate probe thermometers regularly (weekly or monthly depending on use intensity) using the ice-water method: fill a container with ice and water, allow to equilibrate at 0°C, insert the thermometer probe without touching the container sides or bottom, and verify it reads 0°C ±1°C. If not, recalibrate according to manufacturer instructions or replace the thermometer. Keep calibration records as part of HACCP verification documentation."
+        }
+      ]
+    },
+    {
+      "heading": "6. Cold Chain During Preparation and Service",
+      "content": "Maintaining the cold chain extends beyond storage into preparation and service. Ingredients should be removed from refrigeration only when needed and returned promptly if not used. Prolonged exposure to room temperature during preparation — for example, leaving ingredients on the counter while preparing multiple dishes — allows bacterial growth and violates cold chain principles. Organize preparation work to minimize time at room temperature: take out ingredients as needed, work with small batches, and return unused portions to refrigeration immediately.\n\nDuring service, cold food must be held at 8°C or below. Display refrigeration, salad bars, and cold buffets present particular challenges as food is repeatedly exposed to warm air when customers serve themselves. These situations require careful monitoring and time limits. Cold food should not be displayed for more than four hours even if temperature is maintained. After four hours, food should be discarded or, if temperature was maintained properly, potentially returned to proper cold storage for later service (though quality may be compromised).",
+      "subsections": [
+        {
+          "heading": "6.1 Cold Preparation Work",
+          "content": "When preparing cold dishes or working with ingredients that will not be cooked (salads, sandwiches, cold appetizers), maintaining temperature control throughout preparation is critical. Use chilled prep refrigerators that allow ingredients to be stored at working height for convenient access while maintaining refrigeration. Take out only the quantity of ingredients needed for immediate preparation. If preparing multiple portions, work in batches: prepare a batch, refrigerate it, then prepare the next batch. Keep finished cold dishes refrigerated until service. In warm kitchens, ingredients left at room temperature can reach unsafe temperatures within 30-60 minutes. If ingredients have been out for extended periods, assess whether they have warmed to unsafe temperatures: use a probe thermometer to check, and if in doubt, discard."
+        },
+        {
+          "heading": "6.2 Cold Display and Service",
+          "content": "Cold display equipment must be designed and operated to maintain food at 8°C or below. Display refrigerators have refrigerated bases or shelves with cold air circulation over the displayed food. However, repeated opening, room temperature air exposure, and lights that generate heat make maintaining safe temperatures challenging. Monitor display temperatures frequently: check at least every two hours during service. Use appropriate depth of ice for items displayed on ice beds. Do not overload displays: overfilled containers restrict cold air circulation. Use covers or sneeze guards not only for hygiene but also to help maintain temperature. Implement time limits: many operations follow a four-hour rule for cold display even if temperature is maintained. Label displayed items with time of display and schedule replacement. Replenish displays with fresh product rather than adding new product on top of old."
+        },
+        {
+          "heading": "6.3 Off-Site Service and Delivery",
+          "content": "Maintaining cold chain during off-site catering or food delivery presents significant challenges. Food must be transported in insulated containers or refrigerated vehicles. Chilled food should be transported at 4°C or below. Monitor transport time: the longer the journey, the greater the risk of temperature abuse. Use sufficient ice packs or refrigeration to maintain temperature throughout transport, not just at the start. For delivery services, minimize time from leaving the restaurant to customer receipt. Consider whether the distance and timing allow safe temperature maintenance. On arrival at event sites, food should be transferred immediately to refrigeration or display refrigeration. If no refrigeration is available on site, use the food within time limits that prevent temperature abuse (typically no more than two hours at ambient temperature for high-risk cold foods). Maintain temperature logs during transport and service at off-site locations as part of HACCP documentation."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Daily Cold Chain Monitoring",
+      "items": [
+        "Check and record all refrigerator temperatures — must be ≤4°C (morning check)",
+        "Check and record all freezer temperatures — must be ≤-18°C (morning check)",
+        "Check refrigerator and freezer temperatures again at end of day",
+        "Verify all delivery temperatures upon arrival with calibrated probe thermometer",
+        "Check that all stored food items are properly covered and labeled with dates",
+        "Verify FIFO rotation during preparation — older stock being used first",
+        "Monitor cold display temperatures during service (every 2 hours minimum)",
+        "Check for any signs of equipment malfunction (excessive ice, warm spots, unusual noises)",
+        "Document any temperature deviations and corrective actions taken",
+        "Review daily temperature logs for completeness before end of shift"
+      ]
+    },
+    {
+      "title": "Weekly Refrigeration Maintenance",
+      "items": [
+        "Conduct thorough inspection of all refrigerators and freezers",
+        "Check door seals for damage or gaps — replace if necessary",
+        "Clean interior surfaces, shelves, and drawers",
+        "Check and clean drainage holes to prevent water buildup",
+        "Calibrate probe thermometers using ice-water method",
+        "Review temperature logs for trends or recurring deviations",
+        "Rotate stock and check for items approaching use-by dates",
+        "Remove and discard any expired items",
+        "Clean condenser coils if accessible (monthly for high-use equipment)",
+        "Report any equipment issues to maintenance for repair"
+      ]
+    },
+    {
+      "title": "Receiving Cold and Frozen Deliveries",
+      "items": [
+        "Prepare receiving area with calibrated probe thermometer and delivery log",
+        "Check delivery vehicle is refrigerated or insulated appropriately",
+        "Inspect chilled foods first and check core temperatures — must be ≤4°C",
+        "Inspect frozen foods for signs of thawing (soft spots, ice crystals, leaking) — must be frozen solid at ≤-18°C",
+        "Verify packaging integrity — reject damaged or open packages",
+        "Check use-by dates — reject items with insufficient shelf life for intended use",
+        "Document all temperatures and observations in delivery log",
+        "Reject any items not meeting standards and document reason",
+        "Transfer accepted items immediately to proper refrigerated or frozen storage",
+        "Rotate existing stock forward and place new deliveries at back (FIFO)",
+        "File delivery documentation with temperature records and supplier details"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Invest in quality commercial refrigeration equipment appropriate to your volume — undersized equipment cannot maintain safe temperatures when fully loaded",
+    "Position refrigerators and freezers away from heat sources (ovens, direct sunlight, hot water heaters) and ensure adequate ventilation around equipment",
+    "Minimize door opening time — train staff to know what they need before opening refrigerators and to close doors promptly",
+    "Never place hot food directly into refrigerators — cool food to below 10°C using blast chillers or ice baths before refrigeration",
+    "Consider implementing a digital temperature monitoring system to provide continuous oversight and reduce manual recording burden",
+    "Conduct regular stock audits (weekly minimum) to identify items approaching expiry and maintain FIFO rotation",
+    "Create a culture where staff feel empowered to report equipment problems immediately without fear of blame — early detection prevents larger failures",
+    "Have a contingency plan for equipment failure: know where to source emergency refrigeration, have supplier contacts for emergency repairs, and establish protocols for food assessment and disposal if necessary"
+  ],
+  "glossary": {
+    "Cold Chain": "The unbroken sequence of refrigerated production, storage, distribution, and handling that maintains food at safe low temperatures from production to consumption",
+    "Temperature Abuse": "Allowing food to be stored or held at temperatures outside the safe range, creating conditions for rapid bacterial growth",
+    "FIFO": "First In, First Out — stock rotation principle that older stock should be used before newer stock to prevent items expiring in storage",
+    "Use-by Date": "The date after which highly perishable food should not be consumed as it may be unsafe, even if it appears and smells normal",
+    "Best Before Date": "The date until which food maintains optimal quality; food past this date may have reduced quality but is not necessarily unsafe",
+    "Probe Thermometer": "A temperature measuring device with a metal probe that is inserted into food to measure core or internal temperature accurately",
+    "Calibration": "The process of verifying and adjusting a measuring instrument (such as a thermometer) against a known standard to ensure accuracy",
+    "Danger Zone": "The temperature range (5°C to 63°C) at which bacteria multiply most rapidly",
+    "Critical Control Point (CCP)": "A step in food handling where control is essential to prevent, eliminate, or reduce a food safety hazard to acceptable levels",
+    "Blast Chiller": "Commercial refrigeration equipment designed to rapidly cool hot food from cooking temperature to safe cold storage temperature"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "welcome": "Willkommen zurück, {name}!",
+  "subtitle": "GrandCafe Cheers Management-Plattform",
+  "stats": {
+    "activeStaff": "Aktives Personal",
+    "activeEmployees": "Aktive Mitarbeiter",
+    "reservationsToday": "Reservierungen Heute",
+    "confirmed": "{count} bestätigt",
+    "pending": "{count} ausstehend",
+    "confirmedPending": "{confirmed} bestätigt, {pending} ausstehend",
+    "teamSize": "Teamgröße",
+    "stockAlerts": "Lageralarme",
+    "needsAttention": "Erfordert Aufmerksamkeit",
+    "allGood": "Alles in Ordnung"
+  },
+  "profile": {
+    "title": "Ihr Profil",
+    "subtitle": "Schnellübersicht Ihrer Kontoinformationen",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "language": "Sprache",
+    "notSet": "Nicht festgelegt"
+  },
+  "quickAccess": {
+    "title": "Schnellzugriff",
+    "subtitle": "Navigieren Sie zu Ihren verfügbaren Modulen",
+    "staffManagement": "Personalverwaltung",
+    "salesOverview": "Verkaufsübersicht",
+    "registerClose": "Kassenabschluss",
+    "menuLabel": "Menü",
+    "kitchenDisplay": "Küchenanzeige",
+    "inventory": "Inventar",
+    "beerKegs": "Bierfässer",
+    "events": "Veranstaltungen",
+    "djs": "DJs",
+    "sports": "Sport",
+    "reservations": "Reservierungen",
+    "floorPlan": "Raumplan",
+    "marketing": "Marketing",
+    "settings": "Einstellungen"
+  }
+}

@@ -1,0 +1,547 @@
+{
+  "title": "Informatie & Handleidingen",
+  "subtitle": "Nalevingshandleidingen, veiligheidsprotocollen en trainingsmateriaal voor al het personeel",
+  "searchPlaceholder": "Zoek handleidingen op naam of code...",
+  "guidesCount": "handleidingen",
+  "noGuidesInCategory": "Geen handleidingen gevonden in deze categorie die aan uw criteria voldoen.",
+  "noResults": "Geen handleidingen gevonden die overeenkomen met uw zoekopdracht",
+  "allRoles": "Alle Functies",
+  "legalBasis": "Wettelijke grondslag",
+  "summary": "Samenvatting",
+  "keyPointsLabel": "Belangrijkste punten",
+  "applicableRoles": "Toepasselijke functies",
+  "relatedGuides": "Gerelateerde handleidingen",
+  "print": "Afdrukken",
+  "printGuide": "Handleiding afdrukken",
+  "allCategories": "Alle",
+  "categories": {
+    "foodSafety": "Voedselveiligheid",
+    "occupationalHealth": "Arbeidsomstandigheden",
+    "laborRegulations": "Arbeidsregelgeving",
+    "roleSpecific": "Functiespecifiek",
+    "requiredDocs": "Documentatie",
+    "environmental": "Milieu"
+  },
+  "training": {
+    "downloadPdf": "Download PDF",
+    "takeTest": "Test Afleggen",
+    "shareGuide": "Gids Delen",
+    "testScore": "Score",
+    "testPassed": "Test Geslaagd!",
+    "testFailed": "Test Niet Geslaagd",
+    "retakeTest": "Test Herhalen",
+    "assignTraining": "Training Toewijzen",
+    "complianceOverview": "Compliance",
+    "totalMandatory": "Verplichte Gidsen",
+    "completedTraining": "Voltooid",
+    "pendingTraining": "In Afwachting",
+    "overdueTraining": "Verlopen",
+    "passRate": "Voltooiingspercentage",
+    "fullyCompliant": "Conform",
+    "employeeStatus": "Medewerker",
+    "lastActivity": "Laatste Activiteit",
+    "submitTest": "Test Indienen",
+    "question": "Vraag",
+    "correctAnswer": "Juist Antwoord",
+    "explanation": "Uitleg",
+    "statusViewed": "Bekeken",
+    "statusNotViewed": "Niet Bekeken",
+    "statusPassed": "Geslaagd",
+    "statusFailed": "Niet Geslaagd",
+    "statusOverdue": "Verlopen",
+    "statusPending": "In Afwachting",
+    "exportReport": "Rapport Exporteren",
+    "myTraining": "Mijn Training",
+    "testInstructions": "Beantwoord alle vragen en klik op Indienen. U heeft minimaal 70% nodig om te slagen.",
+    "noTestsAvailable": "Er zijn nog geen testvragen beschikbaar voor deze gids.",
+    "assignToEmployee": "Toewijzen aan Medewerker",
+    "assignToRole": "Toewijzen aan Rol",
+    "dueDate": "Uiterste Datum",
+    "cancel": "Annuleren",
+    "myCertificates": "Mijn Certificaten",
+    "noCertificates": "Nog geen certificaten",
+    "noCertificatesDesc": "Voltooi trainingen en slaag voor de tests om certificaten te verdienen.",
+    "certifiedOn": "Gecertificeerd op",
+    "score": "Score",
+    "downloadCertificate": "Certificaat Downloaden",
+    "employeeCertifications": "Certificeringen Medewerker",
+    "noCertificatesForEmployee": "Deze medewerker heeft nog geen certificeringen."
+  },
+  "course": {
+    "noPending": "Geen openstaande training",
+    "allComplete": "Alle toegewezen trainingen zijn voltooid.",
+    "startCourse": "Cursus Starten",
+    "continueCourse": "Doorgaan",
+    "progress": "Voortgang",
+    "sections": "Secties",
+    "studyMaterial": "Studiemateriaal",
+    "certification": "Certificering",
+    "estimatedTime": "Geschatte Tijd",
+    "courseOverview": "Cursusoverzicht",
+    "sectionOf": "Sectie {current} van {total}",
+    "readSection": "Sectie Lezen",
+    "sectionCompleted": "Sectie Voltooid",
+    "allSectionsRead": "Alle secties gelezen. Klaar voor de test!",
+    "downloadCertificate": "Certificaat Downloaden",
+    "noEmployeesMatch": "Geen medewerkers komen overeen met de huidige filters.",
+    "roleFilter": "Filteren op functie",
+    "statusFilter": "Filteren op status",
+    "allRoles": "Alle Functies",
+    "allStatuses": "Alle Statussen",
+    "notStarted": "Niet Gestart",
+    "inProgress": "Bezig",
+    "studyComplete": "Studie Voltooid",
+    "testPassed": "Test Geslaagd",
+    "timeRemaining": "resterend",
+    "dueDate": "Deadline",
+    "questionsOf": "Vraag {current} van {total}",
+    "reviewSections": "Bestudeer secties {sections} opnieuw en probeer het nogmaals.",
+    "congratulations": "Gefeliciteerd!",
+    "certificateReady": "Uw certificaat is klaar om te downloaden.",
+    "legalBasisTitle": "Wettelijke Grondslag",
+    "bestPractices": "Beste Praktijken",
+    "glossary": "Woordenlijst",
+    "checklist": "Checklist",
+    "minutes": "min"
+  },
+  "guides": {
+    "GFS001": {
+      "title": "HACCP/APPCC-systeem",
+      "legalBasis": "EU-verordening 852/2004 inzake levensmiddelenhygiene",
+      "summary": "Het HACCP-systeem (Hazard Analysis and Critical Control Points) is het fundamentele kader voor voedselveiligheid in de horeca. In Spanje staat het bekend als APPCC. Elke horecagelegenheid moet een gedocumenteerd APPCC-plan implementeren en bijhouden dat biologische, chemische en fysieke gevaren identificeert in elke fase van de voedselbehandeling. Het plan moet kritische beheerspunten, kritische grenzen, monitoringprocedures, corrigerende maatregelen en verificatieprocedures bevatten.",
+      "keyPoints": ["Identificeer alle voedselveiligheidsrisico's in uw vestiging", "Definieer kritische beheerspunten (CCP's) voor elk proces", "Stel kritische grenzen en monitoringprocedures vast", "Documenteer corrigerende maatregelen voor elk CCP", "Houd registraties bij en evalueer het plan jaarlijks", "Train alle voedselbehandelaars in APPCC-principes", "Hang het APPCC-plan op toegankelijke locaties op"]
+    },
+    "GFS002": {
+      "title": "Certificaat voedselveiligheid",
+      "legalBasis": "RD 109/2010 inzake opleidingseisen voor voedselbehandelaars",
+      "summary": "Alle medewerkers die met voedsel omgaan, moeten in het bezit zijn van een geldig certificaat voor voedselbehandeling (Carnet de Manipulador de Alimentos). De opleiding moet levensmiddelenhygiene, preventie van besmetting, allergenenkennis en persoonlijke hygiene omvatten. Certificaten moeten worden vernieuwd volgens regionale voorschriften. De vestiging moet kopieen van alle certificaten bewaren en ervoor zorgen dat de opleiding is afgerond voordat medewerkers voedsel gaan behandelen.",
+      "keyPoints": ["Alle voedselbehandelaars moeten een gecertificeerde opleiding voltooien", "Bewaar kopieen van alle certificaten in het dossier", "Vernieuw certificaten volgens regionale vereisten", "Nieuwe medewerkers moeten opgeleid zijn voordat zij voedsel behandelen", "Opleiding omvat hygiene, allergenen en besmettingspreventie"]
+    },
+    "GFS003": {
+      "title": "Temperatuurbeheersing — Koude keten",
+      "legalBasis": "RD 3484/2000 inzake hygienische normen voor voedselbereiding",
+      "summary": "Het handhaven van de koude keten is cruciaal voor de voedselveiligheid. Gekoelde producten moeten op 0-4°C worden bewaard en diepvriesproducten op -18°C of lager. Temperatuurregistraties moeten minimaal tweemaal per dag worden vastgelegd. Elke onderbreking van de koude keten vereist onmiddellijke beoordeling en mogelijke verwijdering van de betrokken producten.",
+      "keyPoints": ["Koelkasten: 0-4°C, vriezers: -18°C of lager", "Registreer temperaturen minimaal tweemaal per dag", "Controleer leveringen bij aankomst met een steekthermometer", "Nooit ontdooide producten opnieuw invriezen", "FIFO: First In, First Out rotatiesysteem", "Meld apparatuurstoringen onmiddellijk"]
+    },
+    "GFS004": {
+      "title": "Temperatuurbeheersing — Warmhouden",
+      "legalBasis": "RD 3484/2000 inzake hygienische normen",
+      "summary": "Warm voedsel moet op 65°C of hoger worden gehouden om bacteriegroei te voorkomen. Voedsel dat langer dan 2 uur onder deze temperatuur komt, moet worden weggegooid. Bij opwarmen moet een kerntemperatuur van 75°C worden bereikt. Temperatuurregistraties voor warmhouden moeten worden bijgehouden.",
+      "keyPoints": ["Warm voedsel moet op 65°C of hoger worden gehouden", "Gooi voedsel weg dat langer dan 2 uur onder 65°C is geweest", "Verwarm voedsel opnieuw tot een kerntemperatuur van 75°C", "Gebruik gekalibreerde thermometers voor controles", "Registreer warmhoudtemperaturen regelmatig"]
+    },
+    "GFS005": {
+      "title": "Reinigings- en desinfectieplan",
+      "legalBasis": "EU-verordening 852/2004, bijlage II",
+      "summary": "Elke vestiging moet een gedocumenteerd R&D-plan (Limpieza y Desinfeccion) hebben voor alle ruimtes, apparatuur en oppervlakken. Het plan specificeert reinigingsfrequentie, producten, verdunningsverhoudingen, inwerkingstijden en verantwoordelijk personeel. Registraties van reinigingsactiviteiten moeten worden bijgehouden.",
+      "keyPoints": ["Documenteer reinigingsprocedures voor elke ruimte", "Specificeer producten, verdunningen en inwerkingstijden", "Wijs reinigingsverantwoordelijkheden toe aan specifieke medewerkers", "Houd dagelijkse reinigingsregistraties bij", "Gebruik voedselveilige reinigingsproducten", "Scheid reinigingsmateriaal per zone (kleurcodering)", "Stel een schema op voor grondige reiniging van apparatuur en moeilijk bereikbare plekken"]
+    },
+    "GFS006": {
+      "title": "Allergenenbeheer",
+      "legalBasis": "EU-verordening 1169/2011 inzake voedselinformatie aan consumenten",
+      "summary": "De EU-wetgeving vereist duidelijke communicatie van 14 belangrijke allergenen in al het geserveerde voedsel. Medewerkers moeten getraind zijn om allergenen in menugerechten te identificeren en deze nauwkeurig aan klanten te communiceren. Allergeneninformatie moet schriftelijk beschikbaar zijn en medewerkers moeten de procedures voor het voorkomen van kruisbesmetting kennen.",
+      "keyPoints": ["Ken de 14 door de EU gereguleerde allergenen", "Toon allergeneninformatie voor alle menugerechten", "Train al het bedienend personeel in allergenencommunicatie", "Voorkom kruisbesmetting bij de bereiding", "Zorg voor een protocol bij allergische noodgevallen", "Werk allergeneninformatie bij wanneer recepten veranderen"]
+    },
+    "GFS007": {
+      "title": "Preventie van voedselverspilling",
+      "legalBasis": "Ley 1/2025 de prevencion de las perdidas y el desperdicio alimentario",
+      "summary": "De Spaanse wet op voedselverspilling verplicht horecabedrijven om preventieplannen te implementeren, afhaalopties aan te bieden voor niet-opgegeten maaltijden en verspillingsregistraties bij te houden. Vestigingen moeten prioriteit geven aan donatie van overtollig voedsel aan erkende organisaties boven afvoer.",
+      "keyPoints": ["Implementeer een plan ter preventie van voedselverspilling", "Bied afhaalbakjes aan voor niet-opgegeten maaltijden", "Geef prioriteit aan voedseldonatie boven afvoer", "Houd registraties bij van voedselverspillingsvolumes", "Train personeel in portiecontrole", "Monitor en verminder overproductie", "Werk samen met voedselbanken of donatieplatforms"]
+    },
+    "GFS008": {
+      "title": "Traceerbaarheidssysteem",
+      "legalBasis": "EU-verordening 178/2002 inzake traceerbaarheid",
+      "summary": "Alle horecagelegenheden moeten een traceerbaarheidssysteem bijhouden waarmee leveranciers en producten in elke fase kunnen worden geidentificeerd. Dit omvat het registreren van lotnummers, leverdata, leveranciersgegevens en het bijhouden van registraties gedurende minimaal 5 jaar.",
+      "keyPoints": ["Registreer leveranciersgegevens voor alle producten", "Bewaar afleveringsbonnen met lotnummers en data", "Bewaar registraties minimaal 5 jaar", "Implementeer traceerbaarheid een stap terug, een stap vooruit", "Zorg voor een snelle terugroepprocedure"]
+    },
+    "GFS009": {
+      "title": "Leverancierscontrole",
+      "legalBasis": "EU-verordening 852/2004 inzake leveranciersgoedkeuring",
+      "summary": "Vestigingen moeten verifieren dat alle voedselleveranciers geregistreerd zijn en voldoen aan voedselveiligheidsregelgeving. Er moet een goedkeuringsprocedure voor leveranciers zijn, inclusief verificatie van gezondheidsregistraties, leveringsomstandigheden en productkwaliteit.",
+      "keyPoints": ["Verifieer gezondheidsregistratienummers van leveranciers", "Controleer temperaturen van leveringsvoertuigen", "Inspecteer producten bij aankomst op kwaliteit", "Houd een lijst van goedgekeurde leveranciers bij", "Evalueer leveranciersprestaties periodiek"]
+    },
+    "GFS010": {
+      "title": "Ontvangst van grondstoffen",
+      "legalBasis": "RD 3484/2000 inzake normen voor voedselontvangst",
+      "summary": "Alle leveringen moeten bij aankomst worden geinspecteerd op temperatuurconformiteit, verpakkingsintegriteit, houdbaarheidsdatums en organoleptische kwaliteit. Afgekeurde producten moeten worden gedocumenteerd. Leveringen moeten onmiddellijk onder geschikte omstandigheden worden opgeslagen.",
+      "keyPoints": ["Controleer de temperatuur van gekoelde/diepvrieseveringen", "Verifieer de integriteit en etikettering van verpakkingen", "Controleer houdbaarheidsdatums op alle producten", "Documenteer en retourneer niet-conforme producten", "Sla leveringen onmiddellijk na inspectie op"]
+    },
+    "GFS011": {
+      "title": "Opslagprocedures",
+      "legalBasis": "RD 3484/2000, EU-verordening 852/2004",
+      "summary": "Correcte opslag voorkomt besmetting en bederf. Rauwe en bereide producten moeten gescheiden worden. FIFO-rotatie moet strikt worden nageleefd. Alle containers moeten afgedekt en geettiketteerd zijn met inhoud en datum. Opslagruimtes moeten schoon zijn en op de juiste temperatuur.",
+      "keyPoints": ["Scheid rauwe en bereide producten", "Volg FIFO-rotatie strikt", "Etiketeer alle containers met inhoud en datum", "Houd opslagruimtes schoon en georganiseerd", "Bewaar voedsel nooit op de grond", "Controleer temperaturen dagelijks"]
+    },
+    "GFS012": {
+      "title": "Preventie van kruisbesmetting",
+      "legalBasis": "EU-verordening 852/2004",
+      "summary": "Kruisbesmetting is een belangrijk voedselveiligheidsrisico. Preventie vereist scheiding van rauwe en kant-en-klare levensmiddelen, gebruik van kleurgecodeerde snijplanken, goed handen wassen tussen taken en specifieke apparatuur voor allergeenvrije bereiding.",
+      "keyPoints": ["Gebruik kleurgecodeerde snijplanken en keukengerei", "Scheid rauwe en kant-en-klare levensmiddelen te allen tijde", "Was uw handen tussen het behandelen van verschillende voedselsoorten", "Reinig en desinfecteer werkoppervlakken tussen taken", "Bewaar rauwe producten onder bereide producten"]
+    },
+    "GFS013": {
+      "title": "Ongediertebestrijding",
+      "legalBasis": "RD 830/2010 inzake biocideproducten, EU 852/2004",
+      "summary": "Een ongediertebestrijdingsprogramma moet worden uitgevoerd door een erkend bedrijf. De vestiging moet fysieke barrieres, goed onderhoud en regelmatige inspecties handhaven. Registraties van ongediertebestrijdingsbezoeken en eventuele incidenten moeten worden bewaard.",
+      "keyPoints": ["Sluit een contract met een erkend ongediertebestrijdingsbedrijf", "Handhaaf fysieke barrieres (horren, deursluiters)", "Houd alle ruimtes schoon en vrij van voedselresten", "Dicht kieren en toegangspunten af", "Meld elke waarneming van ongedierte onmiddellijk", "Bewaar registraties van ongediertebestrijding"]
+    },
+    "GFS014": {
+      "title": "Waterkwaliteit",
+      "legalBasis": "RD 140/2003 inzake drinkwaterkwaliteit",
+      "summary": "Water dat wordt gebruikt voor voedselbereiding moet voldoen aan drinkwaternormen. Bij gebruik van een eigen watervoorziening zijn regelmatige tests vereist. IJsmachines moeten worden onderhouden en gereinigd volgens de instructies van de fabrikant.",
+      "keyPoints": ["Controleer of de waterleiding aan de normen voldoet", "Test eigen watervoorzieningen regelmatig", "Reinig en onderhoud ijsmachines maandelijks", "Gebruik drinkwater voor alle voedselbereiding", "Bewaar wateranalyseverslagen"]
+    },
+    "GFS015": {
+      "title": "Persoonlijke hygiene voor voedselbehandelaars",
+      "legalBasis": "EU-verordening 852/2004 bijlage II",
+      "summary": "Voedselbehandelaars moeten hoge normen van persoonlijke hygiene hanteren, waaronder handen wassen, het dragen van schone werkkleding, haarbedekking, geen sieraden en het melden van ziektes die de voedselveiligheid kunnen beinvloeden.",
+      "keyPoints": ["Was uw handen regelmatig en correct", "Draag schone werkkleding en haarbedekking", "Verwijder sieraden en horloges voor het behandelen van voedsel", "Bedek wondjes met blauwe waterdichte pleisters", "Meld ziekte, braken of diarree aan de leidinggevende", "Behandel geen voedsel wanneer u ziek bent"]
+    },
+    "GFS016": {
+      "title": "Monsterneming en -bewaring",
+      "legalBasis": "RD 3484/2000 inzake bewaring van voedselmonsters",
+      "summary": "Vestigingen die meer dan een bepaald aantal maaltijden serveren, moeten representatieve monsters van elk geserveerd gerecht bewaren. Monsters moeten worden opgeslagen in geettiketteerde containers bij geschikte temperaturen gedurende minimaal 72 uur.",
+      "keyPoints": ["Bewaar monsters van alle geserveerde gerechten", "Etiketeer met gerechtnaam, datum en tijdstip", "Bewaar op 0-4°C gedurende minimaal 72 uur", "Gebruik schone, afgesloten containers", "Gooi monsters weg na de bewaarperiode"]
+    },
+    "GFS017": {
+      "title": "Ontdooiprocedures",
+      "legalBasis": "RD 3484/2000",
+      "summary": "Diepvriesproducten moeten veilig in de koelkast worden ontdooid, nooit op kamertemperatuur. Ontdooitijd moet van tevoren worden ingepland. Eenmaal ontdooide producten moeten binnen 24 uur worden gebruikt en mogen nooit opnieuw worden ingevroren.",
+      "keyPoints": ["Ontdooi in de koelkast op 0-4°C", "Ontdooi nooit op kamertemperatuur", "Plan de ontdooitijd van tevoren", "Gebruik ontdooide producten binnen 24 uur", "Vries eerder ontdooide producten nooit opnieuw in"]
+    },
+    "GFS018": {
+      "title": "Kwaliteitscontrole van bakolie",
+      "legalBasis": "RD 2207/1995 inzake regelgeving voor frituurolien",
+      "summary": "Frituurolien moeten worden gecontroleerd op degradatie met behulp van tests op polaire verbindingen. Olie die meer dan 25% polaire verbindingen bevat, moet worden vervangen. De olietemperatuur mag niet hoger zijn dan 180°C. Registraties van oliewissels en testresultaten moeten worden bijgehouden.",
+      "keyPoints": ["Test de oliekwaliteit met een meter voor polaire verbindingen", "Vervang olie wanneer polaire verbindingen boven 25% komen", "Overschrijd nooit de frituurtemperatuur van 180°C", "Filter olie dagelijks en tussen verschillende producten", "Registreer oliewissels en testresultaten"]
+    },
+    "GFS019": {
+      "title": "Voedselveiligheid bij buffetten en uitgestalde gerechten",
+      "legalBasis": "RD 3484/2000",
+      "summary": "Voedsel dat op buffetten wordt uitgestald, moet op veilige temperaturen worden gehouden. Warm voedsel op 65°C of hoger, koud voedsel op 8°C of lager. De uitstalperiode moet worden beperkt en gemonitord. Niesschermen moeten aanwezig zijn.",
+      "keyPoints": ["Warm voedsel op 65°C of hoger, koud voedsel op 8°C of lager", "Beperk de uitstalperiode tot maximaal 4 uur", "Gebruik niesschermen en afgedekte schalen", "Vervang uitgestalde items in plaats van bij te vullen", "Monitor en registreer uitstallingstemperaturen"]
+    },
+    "GFS020": {
+      "title": "Voedselveiligheid bij bezorging",
+      "legalBasis": "RD 3484/2000, EU 852/2004",
+      "summary": "Voedsel dat aan klanten wordt bezorgd, moet tijdens het transport op de juiste temperatuur worden gehouden. Er moeten geisoleerde containers worden gebruikt. Bezorgtijden moeten worden geminimaliseerd. Verpakking moet voedsel beschermen tegen besmetting.",
+      "keyPoints": ["Gebruik geisoleerde containers voor bezorging", "Handhaaf de temperatuur tijdens transport", "Minimaliseer de bezorgtijd", "Sluit verpakkingen af om besmetting te voorkomen", "Registreer bezorgtemperaturen indien vereist"]
+    },
+    "GFS021": {
+      "title": "Microbiologische controle",
+      "legalBasis": "EU-verordening 2073/2005 inzake microbiologische criteria",
+      "summary": "Regelmatige microbiologische tests van voedsel, oppervlakken en apparatuur helpen de effectiviteit van het APPCC-systeem te verifieren. Testfrequentie en parameters moeten worden vastgelegd in het voedselveiligheidsplan.",
+      "keyPoints": ["Plan regelmatige oppervlakte- en voedselbemonstering", "Gebruik een geaccrediteerd laboratorium voor analyses", "Definieer acceptatiecriteria op basis van EU-normen", "Neem corrigerende maatregelen bij niet-conforme resultaten", "Bewaar alle analyseverslagen"]
+    },
+    "GFS022": {
+      "title": "Beheer van afwijkingen",
+      "legalBasis": "EU-verordening 852/2004",
+      "summary": "Wanneer niet aan de voedselveiligheidsnormen wordt voldaan, moet een proces voor afwijkingsbeheer worden gevolgd. Dit omvat het identificeren van het probleem, het isoleren van betrokken producten, het onderzoeken van de oorzaak, het implementeren van corrigerende maatregelen en het voorkomen van herhaling.",
+      "keyPoints": ["Identificeer en registreer afwijkingen", "Isoleer betrokken producten onmiddellijk", "Onderzoek de oorzaak", "Implementeer corrigerende maatregelen", "Verifieer de effectiviteit van correcties", "Werk procedures bij om herhaling te voorkomen"]
+    },
+    "GPRL001": {
+      "title": "PRL-preventieplan",
+      "legalBasis": "Ley 31/1995 de Prevencion de Riesgos Laborales",
+      "summary": "Elke werkgever moet een gedocumenteerd preventieplan voor arbeidsrisico's (Plan de PRL) hebben. Dit uitgebreide document identificeert alle gevaren op de werkplek, stelt preventieve maatregelen vast, definieert verantwoordelijkheden en beschrijft noodprocedures. Het moet jaarlijks worden herzien en telkens wanneer er significante wijzigingen optreden.",
+      "keyPoints": ["Documenteer alle geidentificeerde risico's op de werkplek", "Definieer preventieve maatregelen voor elk risico", "Wijs preventieverantwoordelijkheden toe", "Herzien en actualiseer jaarlijks", "Maak het toegankelijk voor alle medewerkers", "Coordineer met een externe preventiedienst"]
+    },
+    "GPRL002": {
+      "title": "Risicobeoordeling",
+      "legalBasis": "RD 39/1997 Reglamento de los Servicios de Prevencion",
+      "summary": "Een formele risicobeoordeling moet alle gevaren op de werkplek evalueren die specifiek zijn voor de horeca: brandwonden, snijwonden, valpartijen, handmatig tillen, blootstelling aan chemicalien en ergonomische risico's. Elke werkplek en functie moet worden beoordeeld. De resultaten vormen de basis voor het preventieplan en beschermende maatregelen.",
+      "keyPoints": ["Beoordeel risico's voor elke werkplek en functie", "Evalueer de waarschijnlijkheid en ernst van elk gevaar", "Definieer beheersmaatregelen voor elk geidentificeerd risico", "Herbeoordeel wanneer omstandigheden veranderen", "Documenteer alle beoordelingen en herzieningen", "Betrek medewerkers bij het beoordelingsproces"]
+    },
+    "GPRL003": {
+      "title": "PBM per functie",
+      "legalBasis": "RD 773/1997 inzake persoonlijke beschermingsmiddelen",
+      "summary": "De vereisten voor persoonlijke beschermingsmiddelen (PBM) varieren per functie. Keukenpersoneel heeft snijbestendige handschoenen, antislipschoenen en hittebescherming nodig. Barpersoneel heeft antislipschoeisel en oogbescherming nodig voor bepaalde taken. Alle medewerkers hebben geschikt schoeisel nodig voor natte oppervlakken.",
+      "keyPoints": ["Keuken: antislipschoenen, hittebestendige handschoenen, snijbestendige handschoenen", "Bar: antislipschoenen, oogbescherming bij chemicalien", "Allen: geschikt gesloten schoeisel", "Verstrek PBM gratis", "Train medewerkers in correct gebruik en onderhoud", "Vervang beschadigde PBM onmiddellijk"]
+    },
+    "GPRL004": {
+      "title": "Noodplan",
+      "legalBasis": "RD 393/2007 inzake zelfbeschermingsvereisten",
+      "summary": "Een noodplan moet brand, medische noodgevallen, gaslekken, stroomuitval en natuurrampen dekken. Het moet ontruimingsroutes, verzamelplaatsen, noodcontacten en rollen en verantwoordelijkheden bevatten. Er moeten regelmatig oefeningen worden gehouden.",
+      "keyPoints": ["Definieer procedures voor alle soorten noodgevallen", "Geef ontruimingsroutes duidelijk aan", "Wijs verzamelplaatsen aan", "Wijs noodrollen toe (brandwacht, EHBO-er)", "Voer tweemaal per jaar ontruimingsoefeningen uit", "Houd een lijst met noodcontacten bij"]
+    },
+    "GPRL005": {
+      "title": "Ontruimingsprotocol",
+      "legalBasis": "RD 393/2007, CTE DB-SI (bouwbesluit)",
+      "summary": "Duidelijke ontruimingsprocedures moeten worden opgesteld en geoefend. Nooduitgangen moeten duidelijk gemarkeerd en ongehinderd zijn. De maximale bezettingsgraad moet worden gerespecteerd. Medewerkers moeten hun rol kennen tijdens een ontruiming, inclusief het begeleiden van klanten en het tellen van personen.",
+      "keyPoints": ["Houd nooduitgangen te allen tijde vrij", "Markeer uitgangen met verlichte borden", "Ken de ontruimingsroute vanaf uw werkplek", "Help klanten rustig te evacueren", "Voer een persoonentelling uit op de verzamelplaats", "Gebruik nooit liften tijdens een noodgeval"]
+    },
+    "GPRL006": {
+      "title": "Eerste hulp",
+      "legalBasis": "RD 39/1997, Ley 31/1995 Art. 20",
+      "summary": "EHBO-koffers moeten worden bijgehouden en toegankelijk zijn. Per dienst moet minimaal een opgeleide EHBO-er aanwezig zijn. De inhoud van de koffer moet regelmatig worden gecontroleerd en aangevuld. Veel voorkomende verwondingen in de horeca zijn brandwonden, snijwonden, valpartijen en allergische reacties.",
+      "keyPoints": ["Houd een gevulde EHBO-koffer bij op een toegankelijke locatie", "Minimaal een opgeleide EHBO-er per dienst", "Controleer en vul de koffer maandelijks aan", "Registreer alle EHBO-incidenten", "Ken de locatie van het dichtstbijzijnde ziekenhuis en het alarmnummer (112)", "Hang EHBO-procedures zichtbaar op"]
+    },
+    "GPRL007": {
+      "title": "Ergonomie in de keuken",
+      "legalBasis": "RD 487/1997 inzake handmatig tillen, Ley 31/1995",
+      "summary": "Keukenwerk omvat langdurig staan, herhaalde bewegingen en zwaar tillen. Ergonomische maatregelen omvatten anti-vermoeidheidsmatten, verstelbare werkoppervlakken, juiste tiltechnieken en regelmatige pauzes. Werkorganisatie moet herhaalde belasting minimaliseren.",
+      "keyPoints": ["Gebruik anti-vermoeidheidsmatten op werkplekken", "Pas de hoogte van werkoppervlakken aan waar mogelijk", "Wissel taken af om herhaalde belasting te verminderen", "Neem regelmatig korte pauzes", "Gebruik juiste tiltechnieken", "Meld eventuele klachten aan het bewegingsapparaat vroegtijdig"]
+    },
+    "GPRL008": {
+      "title": "Handmatig tillen",
+      "legalBasis": "RD 487/1997 inzake handmatig tillen van lasten",
+      "summary": "Handmatig tillen van zware voorwerpen (leveringen, fusten, apparatuur) is een belangrijke oorzaak van arbeidsongevallen. Het maximaal aanbevolen gewicht is 25 kg. Medewerkers moeten worden opgeleid in veilige tiltechnieken. Waar mogelijk moeten mechanische hulpmiddelen worden verstrekt.",
+      "keyPoints": ["Maximaal aanbevolen gewicht: 25 kg", "Gebruik de juiste tiltechniek: buig de knieen, rechte rug", "Gebruik steekwagens en mechanische hulpmiddelen wanneer beschikbaar", "Vraag om hulp bij zware of onhandige lasten", "Bewaar zware voorwerpen op taillehoogte", "Meld rugpijn of verwondingen onmiddellijk"]
+    },
+    "GPRL009": {
+      "title": "Omgang met chemische producten",
+      "legalBasis": "RD 374/2001 inzake blootstelling aan chemische stoffen",
+      "summary": "Reinigingsmiddelen, ontvettingsmiddelen en desinfectiemiddelen moeten veilig worden behandeld. Veiligheidsinformatiebladen moeten beschikbaar zijn voor alle producten. Medewerkers moeten geschikte PBM dragen. Chemicalien moeten gescheiden van voedsel worden opgeslagen in geettiketteerde containers. Meng nooit verschillende chemicalien.",
+      "keyPoints": ["Lees veiligheidsinformatiebladen voordat u een product gebruikt", "Draag geschikte PBM (handschoenen, oogbescherming)", "Meng nooit verschillende chemische producten", "Sla chemicalien gescheiden van voedsel op", "Bewaar chemicalien in de originele geettiketteerde verpakking", "Ken de locatie van het oogspoelstation"]
+    },
+    "GPRL010": {
+      "title": "Preventie van thermische belasting",
+      "legalBasis": "RD 486/1997 inzake arbeidsomstandigheden",
+      "summary": "Keukenomgevingen kunnen extreme temperaturen bereiken. Preventieve maatregelen omvatten adequate ventilatie, toegang tot water, afwisseling tussen warme en koele zones, geschikte kleding en het monitoren van symptomen van hittestress.",
+      "keyPoints": ["Zorg voor adequate ventilatie in keukenruimtes", "Bied gratis toegang tot drinkwater", "Wissel af tussen warme en koele stations", "Draag ademende, geschikte kleding", "Monitor medewerkers op symptomen van hittestress", "Sta extra pauzes toe bij extreme hitte"]
+    },
+    "GPRL011": {
+      "title": "Geluidsblootstelling",
+      "legalBasis": "RD 286/2006 inzake geluidsbescherming",
+      "summary": "Bar- en evenementenomgevingen kunnen veilige geluidsniveaus (85 dB) overschrijden. Geluidsbeoordelingen moeten worden uitgevoerd. Gehoorbescherming moet worden verstrekt aan medewerkers in luidruchtige omgevingen. Muziekvolumegrenzen kunnen gelden volgens lokale verordeningen.",
+      "keyPoints": ["Voer geluidsniveaubeoordelingen uit", "Verstrek gehoorbescherming boven 85 dB", "Beperk continue blootstelling aan harde muziek", "Plaats medewerkers waar mogelijk weg van luidsprekers", "Monitor gehoorklachten", "Voldoe aan lokale geluidsverordeningen"]
+    },
+    "GPRL012": {
+      "title": "Elektrische veiligheid",
+      "legalBasis": "RD 614/2001 inzake bescherming tegen elektrische risico's",
+      "summary": "Alle elektrische apparatuur moet goed worden onderhouden en geinspecteerd. Medewerkers mogen geen beschadigde kabels of apparatuur gebruiken. Water- en elektriciteitszones moeten goed worden gescheiden. Alleen gekwalificeerde technici mogen elektrische reparaties uitvoeren.",
+      "keyPoints": ["Gebruik nooit beschadigde elektrische apparatuur", "Houd water weg van elektrische apparatuur", "Meld defecte apparatuur onmiddellijk", "Gebruik alleen gekwalificeerde elektriciens voor reparaties", "Controleer stekkers en kabels regelmatig", "Ken de locatie van de hoofdschakelaar"]
+    },
+    "GPRL013": {
+      "title": "Brandpreventie",
+      "legalBasis": "RD 513/2017 Reglamento de Instalaciones de Proteccion contra Incendios",
+      "summary": "Brandpreventie in de horeca vereist goed onderhoud van brandbeveiligingssystemen, vrije toegang tot brandblussers, regelmatige training van personeel en strikte keukenprotocollen voor vetbranden en gasapparatuur.",
+      "keyPoints": ["Ken de locatie en het gebruik van brandblussers", "Onderhoud brandblussystemen in de afzuigkap van de keuken", "Houd nooduitgangen vrij en toegankelijk", "Gooi nooit water op vetbranden", "Controleer brandbestrijdingsapparatuur maandelijks", "Voer elke 6 maanden brandoefeningen uit"]
+    },
+    "GPRL014": {
+      "title": "Gasveiligheid",
+      "legalBasis": "RD 919/2006 inzake regelgeving voor gasinstallaties",
+      "summary": "Gasinstallaties moeten regelmatig worden geinspecteerd door erkende technici. Medewerkers moeten weten hoe ze gaslekken kunnen detecteren (geur, sissend geluid), de gastoevoer kunnen afsluiten en kunnen evacueren. Gasapparatuur moet worden onderhouden volgens de specificaties van de fabrikant.",
+      "keyPoints": ["Weet hoe u een gaslek kunt detecteren", "Ken de locatie van de gasafsluitkraan", "Evacueer onmiddellijk bij vermoeden van een gaslek", "Gebruik nooit open vuur om te controleren op lekken", "Plan regelmatige inspecties van de gasinstallatie", "Ventileer de ruimte voordat u apparatuur opnieuw aansteekt"]
+    },
+    "GPRL015": {
+      "title": "Bescherming bij zwangerschap en borstvoeding",
+      "legalBasis": "Ley 31/1995 Art. 26, RD 298/2009",
+      "summary": "Zwangere en borstvoeding gevende werkneemsters hebben recht op een risicobeoordeling van hun specifieke functie, aanpassing van de arbeidsomstandigheden en vrijstelling van nachtdiensten en gevaarlijke taken. Als aanpassing niet mogelijk is, moet tijdelijke herplaatsing worden aangeboden.",
+      "keyPoints": ["Voer een specifieke risicobeoordeling uit voor zwangere werkneemsters", "Pas arbeidsomstandigheden aan om risico's te elimineren", "Stel vrij van nachtdiensten indien medisch geadviseerd", "Voorkom blootstelling aan chemicalien, zwaar tillen en langdurig staan", "Bied borstvoedingspauze aan: 1 uur per dag", "Bied tijdelijke herplaatsing aan als risico's niet kunnen worden weggenomen"]
+    },
+    "GPRL016": {
+      "title": "Bescherming van jonge werknemers",
+      "legalBasis": "Ley 31/1995, RD 1/1995 Estatuto de los Trabajadores",
+      "summary": "Werknemers onder de 18 jaar hebben aanvullende bescherming: geen nachtarbeid, beperkte werktijden, specifieke risicobeoordeling en verbod op gevaarlijke taken. Werktijden mogen niet meer dan 8 uur per dag bedragen, inclusief opleidingstijd.",
+      "keyPoints": ["Geen nachtarbeid voor jongeren onder de 18", "Maximaal 8 uur per dag inclusief opleiding", "Specifieke risicobeoordeling vereist", "Verbod op het bedienen van bepaalde apparatuur", "Extra rustpauzes vereist", "Toestemming van ouders vereist voor jongeren onder de 16"]
+    },
+    "GPRL017": {
+      "title": "Gezondheidstoezicht bij nachtarbeid",
+      "legalBasis": "ET Art. 36, Ley 31/1995",
+      "summary": "Nachtwerkers (22:00-06:00) hebben recht op periodiek gezondheidstoezicht. De werkgever moet specifieke gezondheidsrisico's van nachtarbeid beoordelen en gratis medische onderzoeken aanbieden. Overplaatsing naar dagwerk moet worden aangeboden als gezondheidsproblemen zich voordoen.",
+      "keyPoints": ["Bied periodieke gezondheidscontroles aan nachtwerkers aan", "Beoordeel specifieke risico's van nachtarbeid", "Bied overplaatsing naar dagwerk aan bij gezondheidsproblemen", "Maximaal gemiddeld 8 uur in elke periode van 15 dagen", "Zorg voor voldoende rust tussen diensten", "Monitor op slaapgerelateerde gezondheidsproblemen"]
+    },
+    "GPRL018": {
+      "title": "Preventie van psychosociale risico's",
+      "legalBasis": "Ley 31/1995, EU-kaderrichtlijn 89/391/EEG",
+      "summary": "Psychosociale risico's omvatten werkgerelateerde stress, burn-out, intimidatie en disbalans tussen werk en priveleven. Preventieve maatregelen omvatten redelijke werkbelasting, duidelijke communicatie, anti-intimidatieprotocollen en ondersteuningssystemen. Deze risico's moeten worden opgenomen in de risicobeoordeling.",
+      "keyPoints": ["Neem psychosociale risico's op in de risicobeoordeling", "Bevorder redelijke werkbelasting en roosters", "Implementeer beleid tegen intimidatie en pesterijen", "Bied kanalen voor het melden van zorgen", "Ondersteun een gezonde werk-privebalans", "Train leidinggevenden om stresssignalen te herkennen"]
+    },
+    "GLAB001": {
+      "title": "Collectieve arbeidsovereenkomst (Convenio Colectivo)",
+      "legalBasis": "ET Art. 82-92, toepasselijke horeca-CAO",
+      "summary": "De Convenio Colectivo de Hosteleria stelt minimumvoorwaarden voor de sector vast, waaronder loonschalen, werktijden, overwerk, vakantie en beroepscategorieen. De toepasselijke overeenkomst hangt af van de provincie. Alle arbeidsvoorwaarden moeten voldoen aan of beter zijn dan het CAO-minimum.",
+      "keyPoints": ["Ken uw toepasselijke provinciale CAO", "Minimumvoorwaarden kunnen niet worden verminderd door een contract", "Loonschalen per beroepscategorie zijn van toepassing", "Arbeidstijdlimieten zijn wettelijk bindend", "De CAO wordt periodiek bijgewerkt — blijf op de hoogte", "Vermeld de CAO-referentie op de werkplek"]
+    },
+    "GLAB002": {
+      "title": "Werktijden en rustperioden",
+      "legalBasis": "ET Art. 34-37, RD 1561/1995",
+      "summary": "De maximale werkweek is 40 uur, gemiddeld op jaarbasis. De maximale dagdienst is 9 uur. De minimale rust tussen diensten is 12 uur. Een pauze van minimaal 15 minuten is verplicht bij diensten langer dan 6 uur. De wekelijkse rust bedraagt minimaal 1,5 aaneengesloten dag.",
+      "keyPoints": ["Maximaal 40 uur per week (jaargemiddelde)", "Maximaal 9 uur per dag (tenzij de CAO meer toestaat)", "Minimaal 12 uur rust tussen diensten", "15 minuten pauze bij diensten langer dan 6 uur", "1,5 dag wekelijkse rust (kan worden opgespaard)", "Maximaal 80 overuren per jaar"]
+    },
+    "GLAB003": {
+      "title": "Overwerkregeling",
+      "legalBasis": "ET Art. 35, toepasselijke CAO",
+      "summary": "Overuren moeten vrijwillig zijn (behalve bij overmacht). Het maximum is 80 overuren per jaar. Overwerk moet worden gecompenseerd met betaling (minimaal 175% volgens de CAO) of gelijkwaardige vrije tijd binnen 4 maanden. Alle overuren moeten worden geregistreerd.",
+      "keyPoints": ["Overwerk is vrijwillig (kan niet worden afgedwongen)", "Maximaal 80 overuren per jaar", "Compenseer tegen 175% of met vrije tijd", "Vrije tijd moet binnen 4 maanden worden opgenomen", "Registreer alle overuren", "Deeltijdwerkers: overwerk heeft specifieke regels"]
+    },
+    "GLAB004": {
+      "title": "Vakantierechten",
+      "legalBasis": "ET Art. 38, toepasselijke CAO",
+      "summary": "Alle werknemers hebben recht op minimaal 30 kalenderdagen (22 werkdagen) betaald vakantieverlof per jaar. Vakantiedatums moeten worden overeengekomen tussen werkgever en werknemer. Minimaal een periode moet 2 aaneengesloten weken omvatten. Vakantie kan niet samenvallen met ziekteverlof.",
+      "keyPoints": ["Minimaal 30 kalenderdagen per jaar", "Minimaal 2 aaneengesloten weken in een periode", "Vakantierooster wordt door beide partijen overeengekomen", "Vakantie wordt 2 maanden van tevoren gepubliceerd", "Kan niet samenvallen met ziekteverlof", "Naar rato bij gedeeltelijk dienstjaar"]
+    },
+    "GLAB005": {
+      "title": "Werktijdregistratie (Registro de Jornada)",
+      "legalBasis": "RD-ley 8/2019 inzake werktijdregistratie",
+      "summary": "Sinds 2019 moeten alle werkgevers dagelijks de begin- en eindtijd van elke werknemer registreren. Registraties moeten 4 jaar worden bewaard. Het systeem moet betrouwbaar en toegankelijk zijn voor werknemers en arbeidsinspecteurs. Niet-naleving kan leiden tot boetes van 626-6.250 euro.",
+      "keyPoints": ["Registreer dagelijks begin- en eindtijden van alle medewerkers", "Bewaar registraties gedurende 4 jaar", "Het systeem moet betrouwbaar en controleerbaar zijn", "Werknemers moeten toegang hebben tot hun registraties", "Op elk moment beschikbaar voor arbeidsinspectie", "Boetes bij niet-naleving: 626-6.250 euro"]
+    },
+    "GLAB006": {
+      "title": "Contracttypen in de horeca",
+      "legalBasis": "ET Art. 8-16, RD-ley 32/2021 arbeidshervorming",
+      "summary": "De arbeidshervorming van 2021 heeft contracttypen aanzienlijk gewijzigd. Het contract voor onbepaalde tijd is nu de standaard. Tijdelijke contracten zijn beperkt tot specifieke omstandigheden (productiepieken, vervanging). Het discontinu vast contract (fijo discontinuo) is gebruikelijk in de seizoensgebonden horeca.",
+      "keyPoints": ["Contract voor onbepaalde tijd is de standaard", "Tijdelijk contract alleen bij specifieke wettelijke redenen", "Fijo discontinuo voor seizoensgebonden terugkerend werk", "Opleidingscontracten voor jonge werknemers", "Deeltijdcontracten moeten exacte uren specificeren", "Proeftijd: 6 maanden (afgestudeerden), 2 maanden (overig)"]
+    },
+    "GLAB007": {
+      "title": "Rechten en plichten van werknemers",
+      "legalBasis": "ET Art. 4-5, Spaanse Grondwet Art. 35",
+      "summary": "Werknemers hebben fundamentele rechten waaronder eerlijk loon, non-discriminatie, waardigheid op het werk, gezondheid en veiligheid, vakbondslidmaatschap en informatie/medezeggenschap. Plichten omvatten goede trouw, zorgvuldigheid, naleving van veiligheidsvoorschriften en vertrouwelijkheid.",
+      "keyPoints": ["Recht op eerlijke en tijdige betaling", "Recht op non-discriminatie en gelijke behandeling", "Recht op arbeidsomstandigheden en veiligheid", "Recht op privacy en waardigheid", "Plicht om veiligheidsinstructies op te volgen", "Plicht om te goeder trouw te handelen"]
+    },
+    "GLAB008": {
+      "title": "Uw loonstrook begrijpen",
+      "legalBasis": "ET Art. 29, toepasselijke CAO",
+      "summary": "Het begrijpen van uw nomina (loonstrook) is belangrijk. Deze toont het basisloon, complementos (toeslagen), overwerk, inhoudingen (IRPF, sociale zekerheid) en nettoloon. De loonstrook moet maandelijks worden verstrekt. Eventuele afwijkingen moeten direct worden gemeld.",
+      "keyPoints": ["Basisloon per CAO-categorie", "Toeslagen: ancienniteit, nachtwerk, fooien", "Verschil tussen bruto- en nettoloon", "IRPF-inhouding hangt af van persoonlijke situatie", "Sociale zekerheidsbijdrage (circa 6,35%)", "Twee extra uitbetalingen (pagas extra) per jaar"]
+    },
+    "GLAB009": {
+      "title": "Sociale zekerheid",
+      "legalBasis": "Ley General de la Seguridad Social (RD Legislativo 8/2015)",
+      "summary": "Alle werknemers moeten bij de sociale zekerheid zijn geregistreerd. Premies dekken gezondheidszorg, pensioenen, werkloosheid en ziekteverlof. De werkgever is verantwoordelijk voor registratie en premiebetalingen. Werknemers moeten hun arbeidsverleden (Informe de Vida Laboral) periodiek controleren.",
+      "keyPoints": ["Registratie is verplicht vanaf de eerste dag", "Werkgever verzorgt registratie en premiebetalingen", "Dekt gezondheidszorg, pensioen en werkloosheid", "Controleer uw Vida Laboral-rapport periodiek", "Meld onregelmatigheden bij de sociale zekerheid", "Bewaar uw sofinummer veilig"]
+    },
+    "GROL001": {
+      "title": "Brandveiligheid in de keuken",
+      "legalBasis": "RD 513/2017, CTE DB-SI",
+      "summary": "Keukenbranden zijn het meest voorkomende type in de horeca. Vetbranden vereisen speciale blusmethoden — gebruik nooit water. Afzuigkappen moeten automatische brandblussystemen hebben. Blusdekens moeten toegankelijk zijn. Alle keukenmedewerkers moeten de gasafsluitprocedures kennen.",
+      "keyPoints": ["Gebruik nooit water op vetbranden", "Ken de locatie en het gebruik van de blusdeken", "De brandblussing in de afzuigkap moet worden onderhouden", "Ken de locatie van de gasafsluitkraan", "Houd een brandblusser toegankelijk (klasse F voor vet)", "Reinig afzuigkapfilters regelmatig om vetophoping te voorkomen"]
+    },
+    "GROL002": {
+      "title": "Mesveiligheid in de keuken",
+      "legalBasis": "Ley 31/1995, RD 773/1997",
+      "summary": "Mesverwondingen behoren tot de meest voorkomende in keukens. Preventie vereist goede training, gebruik van scherpe messen (botte messen zijn gevaarlijker), juiste snijtechnieken, snijbestendige handschoenen voor bepaalde taken en correcte opslag.",
+      "keyPoints": ["Gebruik scherpe messen — botte messen glijden sneller uit", "Gebruik de juiste snijtechniek", "Snijd weg van uw lichaam", "Gebruik snijbestendige handschoenen voor uitbenen en dergelijke", "Berg messen op in daarvoor bestemde rekken of messenblokken", "Laat nooit messen in gootstenen of onder water liggen", "Draag messen met de punt naar beneden langs uw zij"]
+    },
+    "GROL003": {
+      "title": "Brandwondenpreventie in de keuken",
+      "legalBasis": "Ley 31/1995, RD 486/1997",
+      "summary": "Brandwonden door hete oppervlakken, vloeistoffen, stoom en olie zijn veelvoorkomende keukengevaren. Preventie omvat juiste PBM (hittebestendige handschoenen, lange mouwen), bewustzijn van hete oppervlakken, juiste pannentechnieken en onmiddellijke eerste hulp bij brandwonden.",
+      "keyPoints": ["Gebruik hittebestendige handschoenen bij het hanteren van hete voorwerpen", "Waarschuw bij het dragen van hete voorwerpen: 'achter u!' 'heet!'", "Draai pannengrepen naar binnen op het fornuis", "Open deksels van u af om stoomverbranding te voorkomen", "Houd een brandwondenset toegankelijk in de keuken", "Eerste hulp: koel water 10+ minuten, gebruik geen ijs"]
+    },
+    "GROL004": {
+      "title": "Keukenventilatie",
+      "legalBasis": "RD 486/1997, RITE (RD 1027/2007)",
+      "summary": "Adequate ventilatie is essentieel voor de veiligheid en het comfort in de keuken. Afzuigkappen moeten de juiste afmetingen hebben en worden onderhouden. De luchttoevoer moet in balans zijn met de afzuiging. Filters moeten regelmatig worden gereinigd om vetophoping en brandgevaar te voorkomen.",
+      "keyPoints": ["Zorg ervoor dat afzuigkappen functioneren", "Reinig afzuigkapfilters wekelijks", "Controleer het onderhoudsschema van het ventilatiesysteem", "Meld slechte ventilatie onmiddellijk", "Blokkeer nooit ventilatieopeningen", "Monitor CO-niveaus in keukens met gas"]
+    },
+    "GROL005": {
+      "title": "Veiligheid van keukenapparatuur",
+      "legalBasis": "RD 1215/1997 inzake veiligheid van arbeidsmiddelen",
+      "summary": "Keukenapparatuur (snijmachines, mixers, friteuses, ovens) moet worden gebruikt volgens de instructies van de fabrikant. Medewerkers moeten op elk apparaat worden getraind. Veiligheidsbeschermingen mogen nooit worden verwijderd. Apparatuur moet goed worden onderhouden en geinspecteerd.",
+      "keyPoints": ["Lees en volg de instructies van de fabrikant", "Voltooi de training voordat u apparatuur gebruikt", "Verwijder nooit veiligheidsbeschermingen", "Zet apparatuur uit en haal de stekker eruit voor reiniging", "Meld elke storing onmiddellijk", "Houd handen uit de buurt van bewegende onderdelen"]
+    },
+    "GROL006": {
+      "title": "Verantwoord alcoholschenken",
+      "legalBasis": "Ley 5/2018 (verschilt per regio), Ley 26/2015 kinderbescherming",
+      "summary": "Barpersoneel moet alcohol verantwoord schenken. Dit omvat het weigeren van alcohol aan minderjarigen (onder 18), het herkennen van tekenen van dronkenschap en het hebben van protocollen voor het weigeren van bediening. Medewerkers moeten de wettelijke aansprakelijkheid kennen bij het schenken aan beschonken personen.",
+      "keyPoints": ["Schenk nooit alcohol aan minderjarigen (onder 18)", "Controleer het identiteitsbewijs bij twijfel over de leeftijd", "Herken tekenen van dronkenschap", "Weet hoe u diplomatiek bediening kunt weigeren", "Bied water en eten aan beschonken klanten aan", "Ken uw wettelijke aansprakelijkheid"]
+    },
+    "GROL007": {
+      "title": "Omgang met glaswerk aan de bar",
+      "legalBasis": "Ley 31/1995, algemene veiligheid",
+      "summary": "Gebroken glas is een aanzienlijk gevaar in baromgevingen. Juiste behandeling, opslag en opruimprocedures minimaliseren het risico. Raak gebroken glas nooit aan met blote handen. Gebruik speciale containers voor gebroken glas.",
+      "keyPoints": ["Inspecteer glazen voor gebruik op barsten en beschadigingen", "Gooi beschadigd glaswerk onmiddellijk weg", "Raak gebroken glas nooit aan met blote handen", "Gebruik een stoffer en blik of een vochtige doek", "Gebruik een aparte bak voor gebroken glas", "Gebruik nooit een glas om ijs te scheppen"]
+    },
+    "GROL008": {
+      "title": "Dienblad dragen in de bediening",
+      "legalBasis": "Ley 31/1995, RD 487/1997",
+      "summary": "Correct dienblad dragen voorkomt verwondingen en gemorste vloeistoffen. Training in juiste draaghouding, verdeling van gewicht en routebewustzijn is essentieel. Zware dienbladen moeten met beide handen worden ondersteund.",
+      "keyPoints": ["Verdeel het gewicht gelijkmatig over het dienblad", "Ondersteun zware dienbladen met beide handen", "Let op uw route en obstakels", "Gebruik dienbladestandaards voor zware ladingen", "Let op natte vloeren en oneffen ondergronden", "Meld situaties waarin te veel wordt geladen"]
+    },
+    "GROL009": {
+      "title": "Valpreventie in de bediening",
+      "legalBasis": "RD 486/1997, Ley 31/1995",
+      "summary": "Uitglijden en vallen zijn veelvoorkomende ongelukken in de horeca. Preventie vereist antislipschoeisel, onmiddellijk opruimen van gemorste vloeistoffen, goed vloeronderhoud en duidelijke bewegwijzering bij natte zones.",
+      "keyPoints": ["Draag te allen tijde antislipschoenen", "Ruim gemorste vloeistoffen onmiddellijk op", "Plaats waarschuwingsborden bij natte vloeren", "Houd looppaden vrij van obstakels", "Meld beschadigde of oneffen vloeren", "Wees extra voorzichtig bij de overgang van keuken naar bediening"]
+    },
+    "GROL010": {
+      "title": "Anti-intimidatieprotocol",
+      "legalBasis": "LO 3/2007 voor gelijkheid, ET Art. 4.2.e",
+      "summary": "Elk bedrijf moet een anti-intimidatieprotocol hebben dat seksuele intimidatie, intimidatie op basis van geslacht en pesterijen op de werkplek dekt. Het protocol moet preventieve maatregelen, klachtenprocedures, onderzoeksprocessen en sancties omvatten. Alle medewerkers moeten worden geinformeerd.",
+      "keyPoints": ["Nultolerantie voor alle vormen van intimidatie", "Ken de klachtenprocedure", "Alle klachten worden vertrouwelijk onderzocht", "Vergeldingsmaatregelen tegen klagers zijn verboden", "Training over preventie is verplicht", "Sancties varieren van waarschuwing tot ontslag"]
+    },
+    "GROL011": {
+      "title": "Gelijkheidsplan",
+      "legalBasis": "LO 3/2007, RD 901/2020 inzake gelijkheidsplannen",
+      "summary": "Bedrijven met 50 of meer werknemers moeten een gelijkheidsplan hebben. Ook kleinere bedrijven moeten de principes van gelijke behandeling respecteren. Het plan behandelt gelijke beloning, werving, promotie, werk-privebalans en preventie van seksuele intimidatie.",
+      "keyPoints": ["Gelijke beloning voor gelijk werk", "Non-discriminatoire wervingsprocessen", "Gelijke toegang tot opleiding en promotie", "Maatregelen voor werk-privebalans", "Preventie van seksuele intimidatie", "Regelmatige monitoring en evaluatie van gelijkheidsindicatoren"]
+    },
+    "GROL012": {
+      "title": "Recht op digitale ontkoppeling",
+      "legalBasis": "LO 3/2018 LOPDGDD Art. 88, ET Art. 20 bis",
+      "summary": "Werknemers hebben het recht op digitale ontkoppeling buiten werktijden. Werkgevers mogen niet van medewerkers eisen dat zij e-mails, berichten of oproepen beantwoorden tijdens rustperioden. Er moet een intern beleid worden opgesteld dat de voorwaarden van dit recht definieert.",
+      "keyPoints": ["Geen verplichting om werkberichten buiten werktijden te beantwoorden", "Respecteer rustperioden en vakantietijd", "Leidinggevenden moeten het goede voorbeeld geven", "Uitzonderingen alleen bij echte noodgevallen", "Beleid moet aan alle medewerkers worden gecommuniceerd", "Werknemers mogen niet worden bestraft voor het ontkoppelen"]
+    },
+    "GROL013": {
+      "title": "Preventie van pesterijen op de werkplek",
+      "legalBasis": "Ley 31/1995, ET Art. 4.2.e, CC Art. 173.1",
+      "summary": "Pesterijen op de werkplek (acoso laboral) omvatten herhaaldelijk vijandig gedrag dat een intimiderende of vernederende werkomgeving creeert. Preventie vereist duidelijk beleid, meldkanalen, onderzoeksprocedures en een ondersteunende werkcultuur.",
+      "keyPoints": ["Herken tekenen van pesterijen op de werkplek", "Meld incidenten via officiele kanalen", "Vertrouwelijk onderzoek van alle klachten", "Ondersteuning voor getroffen medewerkers", "Sancties voor daders", "Bevorder een respectvolle werkcultuur"]
+    },
+    "GROL014": {
+      "title": "Gegevensbescherming (AVG/LOPDGDD)",
+      "legalBasis": "EU AVG 2016/679, LO 3/2018 LOPDGDD",
+      "summary": "Medewerkers gaan om met persoonsgegevens van klanten en collega's. Naleving van de AVG vereist begrip van dataminimalisatie, toestemming, veilige opslag en de rechten van betrokkenen. Werknemersgegevens (roosters, salarisadministratie, gezondheid) moeten worden beschermd.",
+      "keyPoints": ["Verzamel alleen noodzakelijke persoonsgegevens", "Verkrijg toestemming waar vereist", "Sla gegevens veilig op (fysiek en digitaal)", "Ken de rechten van klanten (inzage, verwijdering)", "Meld datalekken binnen 72 uur", "Deel nooit persoonsgegevens zonder toestemming"]
+    },
+    "GDOC001": {
+      "title": "Checklist verplichte documentatie",
+      "legalBasis": "Meerdere regelgevingen — compilatie",
+      "summary": "Deze checklist omvat alle wettelijk verplichte documentatie voor een horecavestiging: voedselveiligheidsregistraties, PRL-documentatie, arbeidsovereenkomsten, gezondheidsregistraties, vergunningen, verzekeringen en wettelijke certificeringen.",
+      "keyPoints": ["APPCC-plan en registraties", "PRL-preventieplan", "Nood-/ontruimingsplan", "Arbeidsovereenkomsten en registraties van werknemers", "Certificaten voor voedselbehandeling", "Gezondheidsregistratie (RGSEAA)", "Exploitatievergunning en openingsvergunning", "Verzekeringsdocumentatie", "Brandveiligheidscertificaat", "Registraties van werktijdregistratiesysteem"]
+    },
+    "GDOC002": {
+      "title": "Opleidingsregistraties",
+      "legalBasis": "Ley 31/1995, EU 852/2004",
+      "summary": "Alle aan medewerkers gegeven opleidingen moeten worden gedocumenteerd. Registraties moeten het onderwerp, de datum, de duur, de trainer, de deelnemers en de inhoud bevatten. Zowel registraties van voedselveiligheidstrainingen als arbeidsomstandighedentrainingen moeten worden bijgehouden en beschikbaar zijn voor inspectie.",
+      "keyPoints": ["Registreer alle trainingen met data en inhoud", "Houd aanwezigheidsregistraties bij, ondertekend door deelnemers", "Bewaar certificaten en kwalificaties in het dossier", "Documenteer de inwerktraining voor nieuwe medewerkers", "Registreer data van opfriscursussen", "Maak registraties beschikbaar voor inspectie"]
+    },
+    "GDOC003": {
+      "title": "Jaarlijks opleidingsplan",
+      "legalBasis": "Ley 31/1995 Art. 19, ET Art. 4.2.b",
+      "summary": "Een jaarlijks opleidingsplan zorgt ervoor dat alle medewerkers de nodige trainingen in voedselveiligheid, arbeidsomstandigheden en vaardigheden ontvangen. Het plan moet opleidingsbehoeften identificeren, sessies plannen, budget toewijzen en voltooiing bijhouden.",
+      "keyPoints": ["Beoordeel opleidingsbehoeften per functie", "Plan trainingen gedurende het hele jaar", "Neem opfristrainingen voedselveiligheid op", "Neem PRL-specifieke trainingen op", "Houd voltooiingspercentages bij", "Evalueer de effectiviteit van trainingen"]
+    },
+    "GDOC004": {
+      "title": "Voorbereiding op gezondheidsinspectie",
+      "legalBasis": "EU 882/2004 inzake officiele controles",
+      "summary": "Gezondheidsinspecties kunnen zonder vooraankondiging plaatsvinden. Voorbereiding vereist het bijhouden van alle voedselveiligheidsdocumentatie, het waarborgen dat het pand aan hygienische normen voldoet en het aanwijzen van medewerkers die inspecteurs kunnen begeleiden.",
+      "keyPoints": ["Houd alle voedselveiligheidsdocumentatie actueel", "Zorg dat APPCC-registraties up-to-date zijn", "Temperatuurlogboeken moeten volledig zijn", "Reinigingsregistraties moeten actueel zijn", "Certificaten voor voedselbehandeling direct toegankelijk", "Weet wie verantwoordelijk is voor het begeleiden van inspecteurs"]
+    },
+    "GDOC005": {
+      "title": "Voorbereiding op arbeidsinspectie",
+      "legalBasis": "Ley 23/2015 de la Inspeccion de Trabajo",
+      "summary": "Arbeidsinspecties controleren de naleving van het arbeidsrecht, arbeidsomstandigheden en sociale zekerheid. Inspecteurs kunnen onaangekondigd komen. Belangrijke documenten die beschikbaar moeten zijn, zijn arbeidsovereenkomsten, werktijdregistraties, salarisadministratie, het PRL-plan en sociale zekerheidsregistraties.",
+      "keyPoints": ["Houd alle arbeidsovereenkomsten toegankelijk", "Het werktijdregistratiesysteem moet operationeel zijn", "Salarisadministratie beschikbaar voor het huidige jaar", "PRL-documentatie up-to-date", "Sociale zekerheidsregistraties geverifieerd", "Weet wie bevoegd is om met inspecteurs te spreken"]
+    },
+    "GENV001": {
+      "title": "Afvalbeheer",
+      "legalBasis": "Ley 7/2022 de residuos y suelos contaminados",
+      "summary": "De Spaanse afvalwet verplicht bedrijven om afval te minimaliseren, te scheiden en correct af te voeren. Horecavestigingen moeten minimaal scheiden in: organisch, verpakkingen, glas, papier/karton en gebruikt olie. Afvalregistraties moeten worden bijgehouden.",
+      "keyPoints": ["Scheid afval in de vereiste categorieen", "Sluit een contract met een erkende afvalinzamelingsdienst", "Houd registraties bij van afvalproductie", "Minimaliseer eenmalig plastic gebruik", "Train alle medewerkers in afvalscheiding", "Hang afvalscheidingsinstructies duidelijk op"]
+    },
+    "GENV002": {
+      "title": "Protocol voor afvalscheiding",
+      "legalBasis": "Ley 7/2022, lokale gemeentelijke verordeningen",
+      "summary": "Correcte afvalscheiding is zowel een wettelijke verplichting als een milieuverantwoordelijkheid. Elk afvaltype heeft aangewezen containers en ophaalschema's. Medewerkers moeten worden opgeleid om correct te scheiden. Verontreinigde afvalfracties verminderen de effectiviteit van recycling.",
+      "keyPoints": ["Organisch afval: bruine/groene container", "Verpakkingen: gele container", "Glas: groene container", "Papier/karton: blauwe container", "Gebruikt frituurvet: erkende inzamelaar", "Restafval: grijze container", "Etiketeer alle afvalcontainers duidelijk"]
+    },
+    "GENV003": {
+      "title": "Beheer van gebruikt frituurvet",
+      "legalBasis": "Ley 7/2022, RD 679/2006",
+      "summary": "Gebruikt frituurvet mag nooit via het riool worden afgevoerd. Het moet worden verzameld in daarvoor bestemde containers en worden opgehaald door erkende recyclingbedrijven. Registraties van olie-afvoer moeten worden bijgehouden. Een liter olie kan 1.000 liter water vervuilen.",
+      "keyPoints": ["Giet nooit olie in het riool", "Verzamel gebruikt olie in daarvoor bestemde containers", "Sluit een contract met een erkende olie-inzamelingsdienst", "Bewaar ophaalbonnen en registraties", "Bewaar oliecontainers in een beveiligde ruimte", "Wissel frituurvet voor het degradeert"]
+    },
+    "GENV004": {
+      "title": "Energie-efficientie",
+      "legalBasis": "RD 390/2021 inzake energie-efficientie, EU 2012/27",
+      "summary": "Energie-efficientie verlaagt kosten en milieubelasting. Belangrijke maatregelen zijn LED-verlichting, zuinige apparatuur, temperatuurbeheer, preventief onderhoud en bewustzijn van energiebesparende praktijken bij het personeel.",
+      "keyPoints": ["Gebruik overal LED-verlichting", "Zet apparatuur uit wanneer deze niet in gebruik is", "Handhaaf optimale temperatuurinstellingen", "Houd koelkastdeuren gesloten", "Plan regelmatig onderhoud van apparatuur", "Monitor het energieverbruik maandelijks"]
+    },
+    "GENV005": {
+      "title": "Programma voor vermindering van voedselverspilling",
+      "legalBasis": "Ley 1/2025, EU boer-tot-bord-strategie",
+      "summary": "Naast wettelijke naleving toont een programma voor vermindering van voedselverspilling milieuverantwoordelijkheid. Het omvat afvalaudits, menuplanning om verspilling te minimaliseren, training van personeel in portiegroottes, compostering waar mogelijk en samenwerkingen met voedseldonatie-organisaties.",
+      "keyPoints": ["Voer audits uit op voedselverspilling om de belangrijkste bronnen te identificeren", "Plan menu's om ingredienten efficient te gebruiken", "Train personeel in correcte portiegroottes", "Implementeer compostering waar haalbaar", "Werk samen met voedseldonatie-organisaties", "Stel doelen voor afvalvermindering en monitor de voortgang"]
+    }
+  }
+}

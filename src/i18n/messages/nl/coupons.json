@@ -1,0 +1,123 @@
+{
+  "title": "Cadeaubonnen",
+  "subtitle": "Beheer cadeaubonnen en inwisselingen",
+  "noCoupons": "Nog geen cadeaubonnen",
+  "noCouponsDescription": "Cadeaubonnen verschijnen hier zodra klanten ze kopen.",
+  "status": {
+    "pending_payment": "Betaling in behandeling",
+    "active": "Actief",
+    "partially_used": "Gedeeltelijk gebruikt",
+    "fully_used": "Volledig gebruikt",
+    "expired": "Verlopen",
+    "cancelled": "Geannuleerd"
+  },
+  "theme": {
+    "elegant": "Elegant",
+    "tropical": "Tropisch",
+    "celebration": "Feestelijk",
+    "seasonal": "Seizoensgebonden"
+  },
+  "stats": {
+    "totalSold": "Totaal verkocht",
+    "totalRevenue": "Totale omzet",
+    "activeCoupons": "Actieve bonnen",
+    "redeemed": "Ingewisseld"
+  },
+  "detail": {
+    "couponCode": "Boncode",
+    "amount": "Oorspronkelijk bedrag",
+    "remaining": "Resterend saldo",
+    "purchaser": "Gekocht door",
+    "recipient": "Ontvanger",
+    "message": "Persoonlijk bericht",
+    "purchasedAt": "Gekocht op",
+    "expiresAt": "Verloopt op",
+    "redemptionHistory": "Inwisselingsgeschiedenis",
+    "noRedemptions": "Nog geen inwisselingen",
+    "downloadPdf": "PDF downloaden"
+  },
+  "validate": {
+    "title": "Bon valideren",
+    "subtitle": "Scan QR-code of voer boncode handmatig in",
+    "scanQr": "QR-code scannen",
+    "enterCode": "Code invoeren",
+    "codePlaceholder": "GC-XXXXXX",
+    "lookup": "Opzoeken",
+    "looking": "Opzoeken...",
+    "invalidFormat": "Ongeldig boncode formaat",
+    "notFound": "Bon niet gevonden",
+    "expired": "Deze bon is verlopen",
+    "fullyUsed": "Deze bon is volledig gebruikt",
+    "cancelled": "Deze bon is geannuleerd",
+    "cameraPermission": "Cameratoestemming is vereist om QR-codes te scannen",
+    "scannerReady": "Richt camera op QR-code"
+  },
+  "redeem": {
+    "title": "Bon inwisselen",
+    "amountLabel": "Inwisselbedrag",
+    "amountHelp": "Voer het af te trekken bedrag in (max: {max})",
+    "fullAmount": "Volledig bedrag",
+    "customAmount": "Aangepast bedrag",
+    "notes": "Opmerkingen (optioneel)",
+    "confirm": "Inwisseling bevestigen",
+    "confirming": "Verwerken...",
+    "success": "Bon succesvol ingewisseld!",
+    "error": "Inwisseling mislukt"
+  },
+  "purchase": {
+    "heroTitle": "Geef het cadeau van Cheers",
+    "heroSubtitle": "Het perfecte cadeau — een cadeaubon voor GrandCafe Cheers, Mallorca's strandrestaurant & bar.",
+    "step1": "Kies bedrag",
+    "step2": "Personaliseer",
+    "step3": "Jouw gegevens",
+    "step4": "Betaling",
+    "selectAmount": "Selecteer een bedrag",
+    "customAmount": "Aangepast bedrag",
+    "minAmount": "Minimum €{min}",
+    "maxAmount": "Maximum €{max}",
+    "recipientName": "Naam ontvanger",
+    "recipientNamePlaceholder": "Voor wie is dit cadeau?",
+    "personalMessage": "Persoonlijk bericht",
+    "personalMessagePlaceholder": "Voeg een hartelijk bericht toe...",
+    "optional": "Optioneel",
+    "yourName": "Jouw naam",
+    "yourEmail": "Jouw e-mail",
+    "emailHelp": "We sturen de bon naar dit e-mailadres",
+    "gdprConsent": "Ik ga akkoord dat mijn gegevens worden verwerkt voor deze cadeaubon aankoop",
+    "gdprRequired": "Toestemming is vereist om door te gaan",
+    "payNow": "Nu betalen — {amount}",
+    "processing": "Doorverwijzen naar betaling...",
+    "chooseTheme": "Kies een stijl",
+    "preview": "Voorbeeld"
+  },
+  "success": {
+    "title": "Betaling gelukt!",
+    "subtitle": "Je cadeaubon is klaar",
+    "description": "De bon is aangemaakt en klaar om te downloaden. Deel het met je geliefde!",
+    "viewVoucher": "Bon bekijken",
+    "downloadPdf": "PDF downloaden",
+    "buyAnother": "Nog een kopen"
+  },
+  "cancelled": {
+    "title": "Betaling geannuleerd",
+    "subtitle": "Je betaling is niet voltooid",
+    "description": "Er zijn geen kosten in rekening gebracht. Je kunt het op elk moment opnieuw proberen.",
+    "tryAgain": "Opnieuw proberen"
+  },
+  "publicView": {
+    "giftVoucher": "Cadeaubon",
+    "balance": "Huidig saldo",
+    "validUntil": "Geldig tot",
+    "from": "Van",
+    "downloadPdf": "PDF downloaden",
+    "redeemInStore": "Presenteer deze bon bij GrandCafe Cheers om in te wisselen"
+  },
+  "filters": {
+    "allStatuses": "Alle statussen",
+    "search": "Zoek op code of naam..."
+  },
+  "pageTabs": {
+    "overview": "Overzicht",
+    "validate": "Coupon valideren"
+  }
+}

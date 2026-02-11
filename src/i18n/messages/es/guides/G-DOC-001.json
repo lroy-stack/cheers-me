@@ -1,0 +1,216 @@
+{
+  "title": "Lista de Verificacion de Documentacion Obligatoria",
+  "legalBasis": "Recopilacion integral basada en: Reglamento UE 852/2004 (documentacion de seguridad alimentaria); Ley 31/1995 (documentacion de salud laboral); Estatuto de los Trabajadores y RD 8/2019 (documentacion laboral); Ley 12/2012 sobre registro de actividades empresariales; diversas normativas sectoriales",
+  "summary": "La gestion de un establecimiento hostelero en Espana requiere mantener una documentacion exhaustiva en multiples ambitos regulatorios, incluyendo seguridad alimentaria, salud y seguridad laboral, legislacion laboral, registro empresarial, cumplimiento tributario y licencias sectoriales especificas. Esta documentacion cumple multiples propositos: demostrar el cumplimiento legal ante inspectores y autoridades, proteger el negocio en caso de reclamaciones o litigios, gestionar las operaciones de manera efectiva y garantizar la continuidad cuando se producen cambios de personal. El incumplimiento en el mantenimiento de la documentacion requerida puede resultar en multas administrativas, restricciones operativas, suspension de licencias y serias dificultades para defenderse ante quejas o reclamaciones legales.\n\nLa carga documental puede resultar abrumadora, especialmente para establecimientos pequenos con recursos administrativos limitados. Sin embargo, gran parte de la documentacion sigue plantillas o formatos estandar, y muchos elementos requieren solo actualizaciones periodicas en lugar de un mantenimiento continuo. La clave esta en establecer sistemas organizados desde el principio, mantener practicas consistentes de registro y archivo, y asignar tiempo y responsabilidad adecuados para la gestion documental. Los sistemas de gestion documental digital pueden reducir significativamente la carga de almacenamiento fisico y mejorar la accesibilidad, aunque ciertos documentos pueden seguir requiriendose en formato original en papel.\n\nEsta guia proporciona una lista de verificacion completa de la documentacion obligatoria organizada por categorias, con breves explicaciones de que es cada documento, por que se requiere, quien es responsable de su mantenimiento, los requisitos de conservacion y donde debe estar accesible. La lista debe revisarse anualmente y siempre que cambien las normativas para asegurar que toda la documentacion requerida este vigente y completa. La gestion documental proactiva previene la crisis de descubrir documentos faltantes o desactualizados durante una inspeccion.",
+  "keyPoints": [
+    "Multiples ambitos regulatorios exigen documentacion especifica a los establecimientos hosteleros",
+    "La documentacion de seguridad alimentaria incluye el plan APPCC, registros de temperatura, registros de limpieza, documentos de proveedores y registros de trazabilidad",
+    "La documentacion de salud laboral incluye el Plan de Prevencion de Riesgos Laborales, evaluaciones de riesgos, registros de formacion y planes de emergencia",
+    "La documentacion laboral incluye contratos, registros de jornada, registros de nominas y alta en la Seguridad Social",
+    "Las licencias y registros empresariales deben estar vigentes, expuestos segun se requiera, y renovados a tiempo",
+    "Muchos documentos tienen periodos de conservacion especificos que van de 2 a mas de 10 anos",
+    "Los documentos deben estar accesibles para las autoridades competentes durante las inspecciones",
+    "Los sistemas de archivo organizados (fisicos y/o digitales) son esenciales para la gestion documental",
+    "Las auditorias periodicas de la documentacion completa ayudan a identificar y subsanar carencias antes de las inspecciones",
+    "Asignar responsabilidad clara para el mantenimiento de cada categoria de documentacion"
+  ],
+  "sections": [
+    {
+      "heading": "1. Documentacion de Seguridad Alimentaria",
+      "content": "La documentacion de seguridad alimentaria es una de las categorias mas extensas e inspeccionadas con mayor frecuencia. El Reglamento UE 852/2004 y la legislacion espanola de aplicacion exigen una documentacion exhaustiva del sistema APPCC y de todos los procedimientos de seguridad alimentaria relacionados. Estos documentos deben mantenerse actualizados, disponibles para inspeccion y conservarse durante los periodos especificados. Los inspectores sanitarios revisaran estos documentos durante los controles oficiales para verificar que la gestion de la seguridad alimentaria no es meramente teorica, sino que esta activamente implementada y supervisada.\n\nEl documento base es el propio Plan APPCC, que describe el sistema de gestion de seguridad alimentaria especifico del establecimiento. Este plan incluye: analisis de peligros para todos los procesos, identificacion de los Puntos de Control Critico (PCC), limites criticos para cada PCC, procedimientos de vigilancia, procedimientos de acciones correctivas, procedimientos de verificacion y protocolos de documentacion y registro. El Plan APPCC debe revisarse al menos anualmente y siempre que se produzcan cambios significativos (cambios en el menu, cambios en equipos, modificaciones en la distribucion). Conservar la version vigente y las versiones anteriores durante al menos 2 anos para demostrar como ha evolucionado el sistema.\n\nLos registros operativos generados mediante la implementacion del Plan APPCC son igualmente importantes. Los registros de control de temperaturas (frigorificos, congeladores, mantenimiento en caliente, temperaturas internas de coccion) deben completarse diariamente y conservarse durante al menos 6 meses, mas si lo exige la normativa autonomica. Los registros de limpieza y desinfeccion que documentan el cumplimiento del plan de limpieza deben mantenerse diariamente y conservarse durante al menos 3 meses. Los registros de recepcion de mercancias que demuestran que los productos entrantes fueron verificados en cuanto a temperatura, calidad y documentacion adecuada deben mantenerse durante al menos 1 ano. Los registros de trazabilidad que vinculan los productos con los proveedores y numeros de lote deben conservarse durante al menos 5 anos segun lo exigido por la normativa de trazabilidad de la UE.",
+      "subsections": [
+        {
+          "heading": "1.1 Documentacion de Proveedores y Productos",
+          "content": "Mantener una lista actualizada de proveedores aprobados con la razon social de cada proveedor, numero de registro sanitario (RGSEAA o equivalente), informacion de contacto y productos suministrados. Actualizar esta lista siempre que cambien los proveedores y verificar al menos anualmente que los registros sanitarios de los proveedores siguen vigentes. Conservar los albaranes de entrega y las facturas que muestren las descripciones de los productos, numeros de lote, cantidades, fechas de entrega y datos del proveedor. Estos documentos respaldan la trazabilidad y deben conservarse durante al menos 5 anos.\n\nPara productos especificos de alto riesgo, puede requerirse documentacion adicional. Los productos de origen animal (carne, pescado, lacteos, huevos) deben proceder de establecimientos autorizados con numeros de registro sanitario que aparezcan en las etiquetas o en la documentacion de entrega. Conservar los certificados de analisis de los productos que lo requieran (como el pescado congelado para consumo en crudo que requiere inspeccion de parasitos). Mantener las Fichas de Datos de Seguridad (FDS) de todos los productos quimicos de limpieza y otros productos quimicos en contacto con alimentos, actualizadas siempre que cambien los productos y accesibles para el personal que los utiliza."
+        },
+        {
+          "heading": "1.2 Registros de Formacion y Competencias",
+          "content": "Todos los manipuladores de alimentos deben poseer un Carnet de Manipulador de Alimentos valido. Mantener copias de todos los carnets en un archivo dedicado, organizados por nombre del empleado. Verificar los carnets durante la contratacion antes de que el empleado manipule alimentos, y controlar las fechas de caducidad para asegurar la renovacion cuando lo requiera la normativa autonomica. Si el establecimiento proporciona formacion interna, mantener registros de todas las sesiones de formacion incluyendo: fecha, duracion, tema, cualificaciones del formador, asistentes con firmas y materiales de formacion.\n\nEl equipo APPCC debe incluir al menos un miembro con formacion formal en APPCC. Mantener certificados o evidencia de formacion en APPCC de los miembros designados del equipo. Documentar las revisiones del plan APPCC con actas de reuniones que muestren la fecha, asistentes, temas tratados, cambios realizados y fecha de la proxima revision. Las revisiones anuales son el minimo, pero tambien deben realizarse revisiones cuando se produzcan cambios significativos en las operaciones."
+        }
+      ]
+    },
+    {
+      "heading": "2. Documentacion de Salud y Seguridad Laboral",
+      "content": "La Ley 31/1995 de Prevencion de Riesgos Laborales y sus reglamentos de desarrollo establecen extensos requisitos de documentacion para la salud y seguridad laboral. Estos documentos demuestran que el empleador ha identificado los peligros en el lugar de trabajo, evaluado los riesgos, implementado medidas preventivas, formado a los trabajadores y supervisado la eficacia. Los inspectores de trabajo revisaran esta documentacion durante las inspecciones de salud laboral, y se convierte en evidencia critica en caso de accidentes laborales o reclamaciones por enfermedad profesional.\n\nLa base es el Plan de Prevencion de Riesgos Laborales, un documento integral que establece el sistema de gestion de salud y seguridad laboral de la organizacion. El plan describe: estructura organizativa y responsabilidades en materia de prevencion, integracion de la prevencion en todas las actividades empresariales, coordinacion con servicios de prevencion externos si se utilizan, y como se supervisara y actualizara el plan. Para empresas con menos de 6 empleados, puede permitirse documentacion simplificada, pero incluso las microempresas deben tener documentacion basica de prevencion.\n\nLos documentos de Evaluacion de Riesgos deben identificar todos los peligros en el lugar de trabajo, evaluar la probabilidad y gravedad del dano, determinar las medidas preventivas actuales, identificar cualquier medida adicional necesaria y priorizar las acciones de control de riesgos. Las evaluaciones deben cubrir todos los puestos de trabajo, todas las tareas, todos los trabajadores incluidos los temporales y a tiempo parcial, y todos los equipos. Se requieren evaluaciones especiales para trabajadoras embarazadas, trabajadores jovenes (menores de 18 anos), trabajadores nocturnos y trabajadores en puestos con riesgos especificos. Las evaluaciones de riesgos deben revisarse siempre que se produzcan cambios significativos y al menos cuando cambien las condiciones de trabajo.",
+      "subsections": [
+        {
+          "heading": "2.1 Documentacion de Emergencias y Vigilancia de la Salud",
+          "content": "El Plan de Emergencia debe describir los procedimientos para todas las emergencias previsibles incluyendo incendios, fugas de gas, lesiones graves y desastres naturales. El plan incluye: procedimientos de emergencia para cada escenario, rutas de evacuacion y puntos de reunion, funciones y responsabilidades (encargados de incendios, socorristas, coordinadores de evacuacion), informacion de contacto de emergencia y calendarios de formacion y simulacros. Realizar simulacros de evacuacion al menos dos veces al ano y documentar cada simulacro con fecha, hora, duracion, participantes, observaciones y cualquier accion correctiva necesaria.\n\nLos registros de vigilancia de la salud documentan los reconocimientos medicos periodicos ofrecidos a los trabajadores en puestos con riesgos especificos para la salud. Mantener registros que muestren: reconocimientos medicos ofrecidos a cada trabajador (reconocimiento inicial y renovaciones periodicas), aceptacion o rechazo del trabajador (el rechazo debe ser voluntario y documentado), cualquier restriccion laboral o adaptacion recomendada por el servicio de salud laboral, y seguimiento de las recomendaciones. Estos registros son informacion medica confidencial sujeta a estrictas protecciones de privacidad: mantenerlos separados de los expedientes generales de personal con acceso restringido."
+        },
+        {
+          "heading": "2.2 Documentacion de Formacion y Consulta",
+          "content": "Todos los trabajadores deben recibir formacion en salud y seguridad adecuada a su puesto durante la incorporacion y siempre que cambien las condiciones. Mantener registros de formacion incluyendo: fecha, duracion, contenido tratado, cualificaciones del formador, asistentes con firmas y materiales de formacion proporcionados. Se requieren registros de formacion especificos para: formacion general en salud y seguridad durante la incorporacion, formacion en seguridad especifica del puesto, formacion en procedimientos de emergencia, formacion especifica en equipos y cualquier formacion especializada (manejo de carretillas, trabajo en altura, manipulacion de productos quimicos).\n\nLa consulta y participacion de los trabajadores es un requisito legal. Documentar los procesos de consulta incluyendo: establecimiento de delegados de prevencion o comite de seguridad y salud si lo requiere el tamano, actas de reuniones del comite de seguridad o consultas con los trabajadores, aportaciones de los trabajadores sobre la evaluacion de riesgos y medidas preventivas, y respuestas a las preocupaciones de seguridad de los trabajadores. Esta documentacion demuestra el cumplimiento de los requisitos de consulta y puede ser valiosa si los trabajadores alegan posteriormente que no fueron consultados sobre cuestiones de seguridad."
+        }
+      ]
+    },
+    {
+      "heading": "3. Documentacion Laboral y de Derecho del Trabajo",
+      "content": "La legislacion laboral espanola exige una documentacion exhaustiva de la relacion laboral desde la contratacion hasta la extincion y mas alla. Estos documentos protegen los derechos tanto del empleador como del empleado, facilitan el cumplimiento fiscal y de Seguridad Social, y proporcionan pruebas en caso de conflictos laborales. Los requisitos de documentacion laboral se aplican a todos los empleados independientemente del tipo de contrato, horario de trabajo o duracion del empleo. Debe tenerse especial cuidado con los contratos temporales y a tiempo parcial para asegurar que cumplen los requisitos legales y estan debidamente documentados.\n\nLos Contratos de Trabajo deben constar por escrito para todas las relaciones laborales excepto los contratos indefinidos a jornada completa (aunque se recomiendan contratos escritos incluso para estos). Los contratos temporales, a tiempo parcial, de formacion y fijos discontinuos deben constar por escrito y deben especificar: las partes del contrato, fecha de inicio (y fecha de finalizacion para contratos temporales), categoria profesional y funciones, lugar de trabajo, horario y jornada, retribucion, periodo de prueba si procede, y convenio colectivo aplicable. Los contratos deben registrarse en el servicio de empleo (SEPE) dentro de los plazos establecidos. Conservar los contratos originales firmados y el justificante de registro de forma indefinida.\n\nEl Registro de Jornada es obligatorio desde 2019 en virtud del RD-ley 8/2019. El sistema debe registrar la hora de inicio y la hora de finalizacion diaria (no simplemente el total de horas) de cada trabajador cada dia. Los registros deben conservarse durante 4 anos y estar accesibles para los trabajadores, los representantes de los trabajadores y los inspectores de trabajo en todo momento. El sistema de registro debe ser fiable, objetivo y verificable; los metodos aceptados incluyen relojes electronicos de fichaje, sistemas digitales con acceso individual o registros manuales con firmas individuales. Los registros incompletos, evidentemente falsificados o inaccesibles pueden dar lugar a multas sustanciales.",
+      "subsections": [
+        {
+          "heading": "3.1 Documentacion de Nominas y Seguridad Social",
+          "content": "Los documentos mensuales de nomina deben proporcionarse a cada empleado mostrando: salario bruto incluyendo todos los conceptos (base, complementos, horas extraordinarias, pagas extras), deducciones (retencion del IRPF, cotizaciones a la Seguridad Social), salario neto, cotizaciones empresariales a la Seguridad Social y totales acumulados del ano. Conservar copias de todos los documentos de nomina durante al menos 5 anos. Las nominas deben cumplir con los minimos del convenio colectivo aplicable y los requisitos de igualdad retributiva.\n\nLos documentos de alta en la Seguridad Social deben mantenerse para todos los empleados incluyendo: alta original en la Seguridad Social (justificante de inscripcion), cualquier modificacion del alta (cambios de salario, categoria, jornada), periodos de incapacidad temporal (documentacion de bajas medicas) y baja cuando finaliza la relacion laboral. Mantener copias completas de los documentos de cotizacion a la Seguridad Social (TC1, TC2) que muestren las cotizaciones mensuales abonadas. Estos documentos son esenciales para defenderse contra reclamaciones de empleo irregular o fraude a la Seguridad Social. Conservar de forma indefinida, ya que las reclamaciones pueden surgir anos despues de finalizada la relacion laboral."
+        },
+        {
+          "heading": "3.2 Documentacion Disciplinaria y de Extincion",
+          "content": "Cualquier medida disciplinaria debe documentarse por escrito especificando: los hechos que constituyen la infraccion, la disposicion aplicable del convenio colectivo o normativa interna vulnerada, la sancion impuesta y el derecho a recurrir. Proporcionar copias al trabajador y a los representantes de los trabajadores segun lo establecido en el convenio colectivo. Mantener copias en los expedientes de personal. Si la relacion laboral se extingue por razones disciplinarias, la documentacion debe ser particularmente exhaustiva ya que sera examinada si el trabajador alega despido improcedente.\n\nLa documentacion de extincion varia segun el tipo de finalizacion. La dimision voluntaria requiere carta de dimision escrita del empleado. La extincion por parte del empleador requiere comunicacion escrita especificando la fecha efectiva, el motivo de la extincion, el periodo de preaviso o indemnizacion, y cualquier pago pendiente. Las extinciones distintas de la dimision voluntaria o la finalizacion de contrato temporal requieren comunicacion previa a los representantes de los trabajadores (periodo de consulta de 10 dias para despido objetivo, inmediato para despido disciplinario). Mantener documentacion completa de todos los procesos de extincion incluyendo notificaciones, consultas y finiquitos."
+        }
+      ]
+    },
+    {
+      "heading": "4. Licencias y Registros Empresariales",
+      "content": "La explotacion de un establecimiento hostelero requiere multiples licencias, registros y permisos de diversos niveles de la administracion. Estos documentos deben obtenerse antes de iniciar la actividad, renovarse segun se requiera, y exhibirse o ponerse a disposicion segun establezcan las normativas. El incumplimiento en el mantenimiento de licencias vigentes puede resultar en prohibiciones de actividad, multas y, en casos graves, responsabilidad penal. Los requisitos especificos varian segun la comunidad autonoma y el municipio, por lo que es necesario verificar los requisitos locales ademas del marco general aqui descrito.\n\nEl Numero de Registro Sanitario es emitido por la autoridad sanitaria autonomica tras verificar que el establecimiento cumple los requisitos de higiene y seguridad alimentaria. El numero de registro debe exhibirse en un lugar visible y accesible para los clientes. El registro es tipicamente indefinido pero debe actualizarse si se producen cambios significativos (cambio de titularidad, reforma importante, cambio en las actividades alimentarias). Conservar el certificado de registro original y cualquier certificado de modificacion. Algunas comunidades autonomas requieren renovacion periodica o reinspeccion.\n\nLa Licencia de Actividad es emitida por la autoridad municipal tras verificar que el establecimiento cumple con la normativa urbanistica, de seguridad contra incendios, accesibilidad, medio ambiente y otras regulaciones locales. El proceso de licencia normalmente requiere la presentacion de un proyecto tecnico, declaracion de impacto ambiental, plan de seguridad contra incendios y pago de tasas. Una vez emitida, la licencia debe exhibirse en el local. Conservar la licencia original y toda la documentacion de apoyo (proyectos tecnicos, informes de inspeccion, justificantes de pago). La licencia debe actualizarse si se producen cambios significativos en el establecimiento o en sus actividades.",
+      "subsections": [
+        {
+          "heading": "4.1 Permisos de Alcohol, Musica y Especializados",
+          "content": "La licencia de servicio de bebidas alcoholicas es necesaria para servir bebidas alcoholicas y normalmente esta integrada en la licencia de actividad o el registro sanitario segun la region. Algunas regiones tienen licencias de alcohol separadas. Pueden aplicarse restricciones de horarios, requisitos de verificacion de edad y publicidad. Los permisos de musica y espectaculos son necesarios para establecimientos que ofrezcan musica en vivo, actuaciones de DJ o musica amplificada por encima del nivel ambiental. Los requisitos varian significativamente segun el municipio y pueden implicar estudios acusticos y restricciones de horarios y niveles de sonido.\n\nLos permisos de terraza son necesarios para operar zonas de asiento al aire libre en aceras publicas u otros espacios publicos. Estos permisos especifican: numero maximo de mesas y sillas, area autorizada (a menudo marcada en un plano), horarios autorizados, limitaciones estacionales (muchos se emiten solo para los meses mas calidos) y obligaciones de limpieza y mantenimiento. Los permisos normalmente deben renovarse anualmente. El cumplimiento en materia de zonas de fumadores debe documentarse si el establecimiento permite fumar en alguna zona, incluidas las terrazas exteriores, demostrando el cumplimiento de la Ley 42/2010 de regulacion antitabaco."
+        },
+        {
+          "heading": "4.2 Certificacion de Seguridad contra Incendios y Accesibilidad",
+          "content": "El certificado de seguridad contra incendios o documentacion de cumplimiento es obligatorio para demostrar que el establecimiento cumple los requisitos de seguridad contra incendios del Codigo Tecnico de la Edificacion (CTE) y el RD 513/2017 sobre instalaciones de proteccion contra incendios. Esto normalmente implica: certificado de instalacion de seguridad contra incendios que acredite que los extintores, alarmas, alumbrado de emergencia y sistemas de extincion han sido instalados por instaladores autorizados, contratos de mantenimiento de los equipos de seguridad contra incendios con registros de inspeccion periodica, y plan de evacuacion conforme a los requisitos del CTE.\n\nLa certificacion de accesibilidad demuestra el cumplimiento de los requisitos de accesibilidad para personas con discapacidad. Para nuevos establecimientos o reformas importantes posteriores a las fechas aplicables, se requiere el cumplimiento total de accesibilidad. Para establecimientos mas antiguos, los requisitos pueden ser graduales. Mantener documentacion de las caracteristicas de accesibilidad (rampas, aseos accesibles, anchura de puertas y pasillos) y cualquier exencion concedida por imposibilidad fisica en edificios historicos. Esta documentacion es importante tanto para defenderse ante quejas por discriminacion como para el cumplimiento de los requisitos de licencia."
+        }
+      ]
+    },
+    {
+      "heading": "5. Documentacion Fiscal y Financiera",
+      "content": "El cumplimiento tributario requiere mantener registros financieros completos que documenten todas las transacciones empresariales, ingresos, gastos y obligaciones fiscales. La legislacion tributaria espanola establece requisitos estrictos sobre que registros deben mantenerse, en que formato, durante cuanto tiempo y con que rapidez deben ponerse a disposicion de las autoridades fiscales. Aunque la documentacion fiscal suele ser gestionada por asesores contables o fiscales externos, el titular del negocio conserva la responsabilidad ultima de garantizar el cumplimiento y mantener los registros requeridos. Los registros digitales son generalmente aceptables si cumplen los requisitos de seguridad e integridad prescritos.\n\nLos libros contables requeridos dependen de la forma juridica del negocio y de si la empresa esta en regimen fiscal normal o simplificado. Los requisitos minimos para la mayoria de los negocios hosteleros incluyen: Libro Diario que registra todas las transacciones empresariales cronologicamente, Libro Mayor que organiza las transacciones por cuenta, y Cuentas Anuales que incluyen balance de situacion, cuenta de perdidas y ganancias, y memoria. Estos libros deben presentarse en el Registro Mercantil anualmente para las sociedades inscritas. Conservar los libros contables de forma indefinida ya que constituyen el registro financiero historico del negocio.\n\nLa documentacion de facturas incluye copias de todas las facturas emitidas a clientes y todas las facturas recibidas de proveedores. El Reglamento de facturacion espanol (RD 1619/2012) establece requisitos especificos sobre el contenido de las facturas, numeracion y conservacion. Las facturas deben conservarse durante al menos 6 anos (algunos asesores recomiendan 10 anos para cubrir el plazo maximo de prescripcion en materia fiscal). La facturacion electronica es cada vez mas habitual, pero las facturas en papel siguen siendo validas. Pueden emitirse facturas simplificadas para transacciones inferiores a 400 euros, pero se requieren facturas completas para importes superiores.",
+      "subsections": [
+        {
+          "heading": "5.1 Documentacion de IVA e IRPF/Impuesto de Sociedades",
+          "content": "La documentacion del IVA incluye: registros de todas las operaciones sujetas que muestren la base imponible y el IVA repercutido, registros de todas las compras que muestren el IVA soportado, declaraciones de IVA presentadas trimestral o mensualmente segun el tamano del negocio, y resumen anual de IVA. Se requiere especial atencion con los tipos de IVA mixtos habituales en hosteleria (tipo reducido para servicios de alimentacion, tipo general para bebidas alcoholicas, posible tipo superreducido para ciertos articulos). Mantener registros completos que respalden el tratamiento del IVA de todas las operaciones. Los errores en la contabilidad del IVA pueden dar lugar a liquidaciones de impuesto no pagado mas intereses y sanciones.\n\nLa documentacion del impuesto sobre la renta empresarial incluye: todos los registros de ingresos y gastos, documentacion de inversiones de capital y cuadros de amortizacion, registros de cualquier provision fiscal especial aplicada (como deducciones por determinadas inversiones o incentivos), pagos fraccionados trimestrales del impuesto sobre la renta, y declaraciones anuales del impuesto sobre la renta. Para sociedades se aplica el Impuesto sobre Sociedades; para empresarios individuales y comunidades de bienes, el IRPF se aplica a los rendimientos de actividad economica. Conservar los registros durante al menos 6 anos desde la presentacion, aunque una conservacion mas prolongada es prudente."
+        },
+        {
+          "heading": "5.2 Documentacion de Cajas Registradoras y Terminales Punto de Venta",
+          "content": "Las cajas registradoras y los sistemas de punto de venta deben cumplir con las normativas destinadas a prevenir el fraude fiscal. Los sistemas deben producir registros detallados de todas las transacciones, los registros deben ser seguros e inalterables tras su creacion, y deben producirse y conservarse los informes de cierre diario (informes Z). Algunas comunidades autonomas tienen requisitos especificos de certificacion de cajas registradoras o de comunicacion en tiempo real a las autoridades fiscales (sistema SII para grandes empresas). Conservar todos los informes Z, registros de transacciones y documentacion de configuracion del sistema.\n\nSi el negocio opera en un entorno intensivo en efectivo, se aplica un escrutinio adicional. Las transacciones en efectivo de gran cuantia (1.000 euros o mas en algunos contextos, 2.500 euros en otros) pueden tener requisitos de comunicacion o restricciones. Mantener registros que documenten el origen de los depositos en efectivo en cuentas bancarias para defenderse ante alegaciones de ingresos no declarados. Los registros bancarios (extractos bancarios, justificantes de deposito, registros de pagos) deben conservarse durante al menos 6 anos y cruzarse con los libros contables para demostrar que todos los fondos del negocio estan debidamente contabilizados."
+        }
+      ]
+    },
+    {
+      "heading": "6. Documentacion de Seguros y Contratos",
+      "content": "Diversos tipos de seguros son exigidos por ley o altamente recomendables para la gestion de riesgos. Mantener las polizas de seguro vigentes, los justificantes de pago de primas y los certificados de seguro actualizados accesibles para inspeccion cuando se requiera. El seguro de responsabilidad civil es obligatorio en la mayoria de los contextos, cubriendo reclamaciones de terceros por danos personales o materiales. La poliza debe proporcionar limites de cobertura adecuados segun el tamano y las actividades del negocio. Algunas regiones o municipios exigen importes minimos de cobertura especificos para fines de licencia.\n\nEl seguro de accidentes de trabajo a traves de una mutua o directamente con la Seguridad Social cubre los accidentes laborales y las enfermedades profesionales. Los empleadores deben inscribirse en la mutua elegida y exhibir de forma visible la informacion de contacto de la mutua para los trabajadores. Mantener documentacion de la inscripcion en la mutua, los pagos de primas y cualquier parte de accidente de trabajo presentado ante la mutua. El seguro de danos materiales e interrupcion de negocio, aunque no es legalmente obligatorio, proporciona una proteccion critica contra incendios, inundaciones, robos y otros siniestros. Mantener las polizas y asegurar que los limites de cobertura adecuados se revisen periodicamente.\n\nLos contratos con proveedores y prestadores de servicios deben documentarse por escrito especificando: las partes, los servicios o productos proporcionados, los precios, las condiciones de pago, los plazos de entrega o ejecucion, las disposiciones de responsabilidad y las condiciones de resolucion. Los contratos clave a mantener incluyen: acuerdos de suministro de alimentos y bebidas, contratos de mantenimiento de equipos, contratos de recogida de residuos, acuerdos de servicio de control de plagas, acuerdos de servicio de limpieza si se externalizan, y documentacion de arrendamiento o propiedad. Conservar los contratos originales firmados mas cualquier modificacion durante al menos 6 anos tras la finalizacion de la relacion contractual.",
+      "subsections": [
+        {
+          "heading": "6.1 Acuerdos de Franquicia y Marca",
+          "content": "Si se opera bajo un acuerdo de franquicia o marca, mantener toda la documentacion de franquicia incluyendo: contrato de franquicia que especifique derechos y obligaciones, manuales de operaciones y estandares de marca, acuerdos de uso de marca registrada y propiedad intelectual, definiciones territoriales y clausulas de exclusividad, estructuras de tarifas y calendarios de pago, y condiciones de resolucion. Estos acuerdos suelen ser extensos y juridicamente complejos. Conservar los acuerdos originales mas todas las modificaciones y documentos complementarios de forma indefinida, ya que los derechos y obligaciones pueden extenderse mas alla de la terminacion de la relacion de franquicia activa.\n\nCumplir con los requisitos de informacion al franquiciador (informes operativos, informes financieros, auditorias de cumplimiento) y mantener copias de todos los informes presentados. Documentar cualquier comunicacion relativa al cumplimiento de la marca, cuestiones de calidad o disputas. Esta documentacion protege los derechos tanto del franquiciador como del franquiciado y proporciona evidencia si surgen disputas sobre el cumplimiento de los estandares de franquicia o las obligaciones financieras."
+        },
+        {
+          "heading": "6.2 Arrendamientos y Documentacion de la Propiedad",
+          "content": "Si se opera en un local arrendado, mantener: contrato de arrendamiento original que especifique la renta, duracion, opciones de renovacion, usos permitidos, responsabilidades de mantenimiento y condiciones de resolucion; justificantes de pago de la renta; comunicaciones con el arrendador relativas a cuestiones de mantenimiento o modificaciones; y cualquier licencia o consentimiento del arrendador para las operaciones del negocio, reformas o subarriendo si procede. Los conflictos de arrendamiento son comunes en contextos comerciales, y una documentacion exhaustiva de la relacion arrendaticia es una proteccion esencial.\n\nPara la propiedad en regimen de propiedad, mantener: documentos de titulo de propiedad, documentacion hipotecaria si procede, justificantes de pago del IBI, justificantes de pago de cuotas de la comunidad si se trata de un inmueble en regimen de propiedad horizontal, licencias de obras para cualquier reforma o modificacion, y polizas de seguro del inmueble. Aunque el negocio es el explotador y no la propia propiedad, la documentacion inmobiliaria es importante para demostrar el derecho legal a operar en la ubicacion y para el cumplimiento de los requisitos de licencia que pueden depender de la titularidad o autorizacion de la propiedad."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Lista de Verificacion de Documentacion de Seguridad Alimentaria",
+      "items": [
+        "Plan APPCC vigente y revisado anualmente",
+        "Registros de control de temperaturas (frigorificos, congeladores, coccion, mantenimiento en caliente) actualizados y completos",
+        "Registros de limpieza y desinfeccion actualizados y firmados",
+        "Registros de recepcion de mercancias para las entregas recientes",
+        "Lista de proveedores aprobados actualizada con numeros de registro sanitario verificados",
+        "Albaranes de entrega y facturas que muestren la trazabilidad del stock actual mas el periodo de conservacion",
+        "Carnets de manipulador de alimentos de todo el personal que manipula alimentos, vigentes y validos",
+        "Certificados de formacion en APPCC para los miembros del equipo",
+        "Contrato de servicio de control de plagas y registros de inspecciones",
+        "Resultados de analisis de calidad del agua si se utiliza suministro propio",
+        "Registros de calibracion de termometros y equipos de medicion",
+        "Registros de no conformidades y acciones correctivas"
+      ]
+    },
+    {
+      "title": "Lista de Verificacion de Documentacion de Salud y Seguridad Laboral",
+      "items": [
+        "Plan de Prevencion de Riesgos Laborales vigente y revisado",
+        "Evaluacion de Riesgos vigente que cubra todos los puestos y peligros",
+        "Plan de Emergencia vigente con rutas de evacuacion y procedimientos",
+        "Registros de simulacros de evacuacion del ultimo ano (minimo 2 simulacros)",
+        "Registros de formacion en salud y seguridad de todos los empleados",
+        "Registros de vigilancia de la salud (si procede) mantenidos confidencialmente",
+        "Registros de accidentes laborales (Parte de Accidente) para cualquier accidente de trabajo",
+        "Inventario de material de primeros auxilios y registros de reposicion",
+        "Certificados de inspeccion de equipos de seguridad contra incendios vigentes",
+        "Contrato con servicio de prevencion externo si procede",
+        "Actas de reuniones de delegados de prevencion o comite de seguridad y salud",
+        "Actualizaciones de la evaluacion de riesgos para trabajadoras embarazadas, trabajadores jovenes o trabajadores nocturnos si procede"
+      ]
+    },
+    {
+      "title": "Lista de Verificacion de Documentacion Laboral",
+      "items": [
+        "Contratos de trabajo de todos los empleados, firmados y registrados en el SEPE",
+        "Documentacion de alta en la Seguridad Social de todos los empleados",
+        "Sistema de registro de jornada operativo con registros completos de los ultimos 4 anos",
+        "Documentos mensuales de nomina de todos los empleados con justificante de entrega",
+        "Registros de cotizaciones a la Seguridad Social (TC1, TC2) vigentes y abonados",
+        "Registros de retenciones del IRPF (Modelo 111) presentados trimestralmente",
+        "Confirmaciones de registro de contratos de trabajo del SEPE",
+        "Expedientes de personal con copias de DNI, cualificaciones, referencias, registros de rendimiento",
+        "Registros de permisos (vacaciones, bajas medicas, permisos parentales) con autorizaciones",
+        "Registros disciplinarios si los hubiera, con documentacion de notificacion adecuada",
+        "Documentacion de extincion de empleados que han causado baja con registros de finiquito",
+        "Convenio colectivo aplicable al establecimiento"
+      ]
+    },
+    {
+      "title": "Lista de Verificacion de Licencias y Registros Empresariales",
+      "items": [
+        "Registro sanitario (Numero de Registro Sanitario) vigente y exhibido",
+        "Licencia de actividad vigente y exhibida",
+        "Autorizacion de servicio de bebidas alcoholicas vigente si se sirven bebidas alcoholicas",
+        "Permiso de terraza vigente si se opera terraza",
+        "Permiso de musica y espectaculos vigente si se ofrece musica",
+        "Numero de identificacion fiscal (NIF/CIF) vigente",
+        "Registro empresarial (inscripcion en el Registro Mercantil si es obligatoria)",
+        "Certificado de seguridad contra incendios o documentacion de cumplimiento vigente",
+        "Registros de mantenimiento de equipos contra incendios vigentes",
+        "Documentacion de cumplimiento de accesibilidad o exencion",
+        "Registro en proteccion de datos o documentacion de responsabilidad proactiva",
+        "Certificados de seguros vigentes (responsabilidad civil, accidentes de trabajo, danos materiales)"
+      ]
+    },
+    {
+      "title": "Lista de Verificacion de Documentacion Financiera y Fiscal",
+      "items": [
+        "Libros contables al dia (Libro Diario, Libro Mayor, Cuentas Anuales)",
+        "Todas las facturas emitidas a clientes debidamente numeradas y conservadas",
+        "Todas las facturas recibidas de proveedores organizadas y conservadas",
+        "Declaraciones de IVA presentadas trimestral/mensualmente y justificantes de pago",
+        "Pagos fraccionados del impuesto sobre la renta presentados trimestralmente y justificantes de pago",
+        "Declaraciones anuales de impuestos presentadas (Impuesto de Sociedades o IRPF)",
+        "Informes Z de caja registradora y registros de transacciones conservados",
+        "Extractos bancarios de todas las cuentas empresariales conservados",
+        "Registro de activos fijos y cuadros de amortizacion actualizados",
+        "Registros de inventario actualizados si lo requiere el regimen fiscal",
+        "Justificantes de pago de impuestos y confirmaciones de pago",
+        "Comunicaciones del asesor fiscal y cualquier correspondencia con las autoridades fiscales"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Establecer sistemas de archivo organizados desde el primer dia, tanto fisicos como digitales, con estructuras de carpetas y convenciones de nomenclatura claras",
+    "Asignar la responsabilidad especifica de cada categoria de documentacion a personas concretas que comprendan los requisitos",
+    "Crear calendarios de conservacion de documentos que especifiquen cuanto tiempo debe conservarse cada tipo de documento, e implementar el archivado/eliminacion automaticos",
+    "Realizar auditorias internas trimestrales de la documentacion completa, subsanando las carencias de inmediato en lugar de esperar a inspecciones externas",
+    "Digitalizar la documentacion en papel cuando sea viable para facilitar las copias de seguridad, la busqueda y la recuperacion, pero mantener los originales cuando sea legalmente obligatorio",
+    "Utilizar listas de verificacion y plantillas para estandarizar las tareas de documentacion rutinarias y garantizar la coherencia",
+    "Mantener copias maestras de todos los registros, licencias y certificados en un lugar seguro e ignifugo, con copias de respaldo accesibles para las operaciones diarias",
+    "Crear una carpeta de preparacion para inspecciones con los documentos solicitados con mayor frecuencia listos para su presentacion inmediata a los inspectores",
+    "Revisar los requisitos de documentacion anualmente y siempre que cambien las normativas para garantizar el cumplimiento continuo",
+    "Utilizar software de gestion documental o almacenamiento en la nube con controles de acceso y copias de seguridad adecuados para prevenir la perdida de registros criticos"
+  ],
+  "glossary": {
+    "HACCP Plan": "Plan de Analisis de Peligros y Puntos de Control Critico (APPCC) que documenta el sistema de gestion de seguridad alimentaria",
+    "Prevention Plan": "Plan de Prevencion de Riesgos Laborales, el documento fundamental de gestion de salud y seguridad laboral",
+    "Risk Assessment": "Evaluacion de Riesgos, identificacion y evaluacion sistematica de los peligros en el lugar de trabajo",
+    "Time Recording": "Registro de Jornada, registro diario obligatorio de las horas de inicio y finalizacion de los empleados desde 2019",
+    "Health Registration": "Numero de Registro Sanitario, registro ante la autoridad sanitaria requerido para establecimientos alimentarios",
+    "Activity License": "Licencia de Actividad, autorizacion municipal para operar actividades empresariales especificas en una ubicacion",
+    "Social Security Registration": "Afiliacion a la Seguridad Social, inscripcion obligatoria de los empleados en el sistema de la Seguridad Social",
+    "Mutua": "Mutua de accidentes de trabajo que proporciona seguro de accidentes laborales y enfermedades profesionales",
+    "SEPE": "Servicio Publico de Empleo Estatal, que requiere el registro de los contratos de trabajo",
+    "Retention Period": "El periodo legalmente establecido o recomendado para mantener documentos especificos antes de que puedan ser destruidos",
+    "RGSEAA": "Registro General Sanitario de Empresas Alimentarias y Alimentos, registro sanitario general para empresas y productos alimentarios",
+    "CTE": "Codigo Tecnico de la Edificacion, que establece los estandares de construccion y seguridad"
+  }
+}

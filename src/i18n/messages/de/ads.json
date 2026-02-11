@@ -1,0 +1,88 @@
+{
+  "title": "Werbung",
+  "subtitle": "Verwalte Anzeigen für digitale Speisekarte und Buchungsseiten",
+  "createAd": "Anzeige erstellen",
+  "editAd": "Anzeige bearbeiten",
+  "allAds": "Alle Anzeigen",
+  "noAds": "Noch keine Anzeigen",
+  "noAdsDescription": "Erstelle deine erste Anzeige, um Specials auf der digitalen Speisekarte und Buchungsseiten zu bewerben.",
+  "status": {
+    "draft": "Entwurf",
+    "active": "Aktiv",
+    "paused": "Pausiert",
+    "expired": "Abgelaufen",
+    "archived": "Archiviert"
+  },
+  "template": {
+    "label": "Vorlage",
+    "football_match": "Fußballspiel",
+    "special_menu": "Spezial-Menü",
+    "happy_hour": "Happy Hour",
+    "cocktail_presentation": "Cocktail-Präsentation",
+    "custom": "Benutzerdefiniert"
+  },
+  "placement": {
+    "label": "Platzierung",
+    "banner_top": "Oberes Banner",
+    "between_categories": "Zwischen Kategorien",
+    "fullscreen_overlay": "Vollbild-Overlay"
+  },
+  "displayPages": {
+    "label": "Anzeigen auf",
+    "digital_menu": "Digitale Speisekarte",
+    "booking": "Buchungsseite"
+  },
+  "form": {
+    "content": "Inhalt",
+    "visuals": "Visuell",
+    "scheduling": "Planung",
+    "titleLabel": "Titel",
+    "descriptionLabel": "Beschreibung",
+    "ctaText": "Call-to-Action Text",
+    "ctaUrl": "CTA Link URL",
+    "backgroundColor": "Hintergrundfarbe",
+    "textColor": "Textfarbe",
+    "image": "Bild",
+    "uploadImage": "Bild hochladen",
+    "removeImage": "Bild entfernen",
+    "startDate": "Startdatum",
+    "endDate": "Enddatum",
+    "startTime": "Startzeit",
+    "endTime": "Endzeit",
+    "daysOfWeek": "Wochentage",
+    "priority": "Priorität",
+    "priorityHelp": "Anzeigen mit höherer Priorität werden zuerst angezeigt",
+    "save": "Anzeige speichern",
+    "saving": "Speichern...",
+    "publish": "Veröffentlichen",
+    "saveDraft": "Als Entwurf speichern"
+  },
+  "tabs": {
+    "en": "Englisch",
+    "nl": "Niederländisch",
+    "es": "Spanisch",
+    "de": "Deutsch"
+  },
+  "analytics": {
+    "impressions": "Aufrufe",
+    "clicks": "Klicks",
+    "ctr": "Klickrate"
+  },
+  "actions": {
+    "activate": "Aktivieren",
+    "pause": "Pausieren",
+    "archive": "Archivieren",
+    "duplicate": "Duplizieren",
+    "delete": "Löschen",
+    "confirmDelete": "Bist du sicher, dass du diese Anzeige löschen möchtest?"
+  },
+  "filters": {
+    "allStatuses": "Alle Status",
+    "allTemplates": "Alle Vorlagen",
+    "allPlacements": "Alle Platzierungen"
+  },
+  "pageTabs": {
+    "overview": "Übersicht",
+    "createAd": "Anzeige erstellen"
+  }
+}

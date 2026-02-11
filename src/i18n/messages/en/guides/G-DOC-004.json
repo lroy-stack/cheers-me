@@ -1,0 +1,200 @@
+{
+  "title": "Health Inspection Preparation",
+  "legalBasis": "EU Regulation (EC) No 882/2004 on official controls performed to ensure compliance with food law; EU Regulation (EC) No 852/2004 on food hygiene; Real Decreto 640/2006 on hygiene conditions for food preparation and sale; Ley 17/2011 de seguridad alimentaria y nutrición",
+  "summary": "Health inspections are official controls conducted by competent authorities to verify compliance with food safety regulations. In Spain, these inspections are carried out by inspectors from the autonomous community health departments (typically Sanidad or Salud Pública), and they can occur at any time without prior notice. Food business operators must be prepared for inspection at all times, which means maintaining food safety documentation, ensuring premises and practices meet hygiene standards, and having designated staff who can assist inspectors professionally and knowledgeably.\n\nThe inspection process typically involves a comprehensive review of HACCP documentation and records, physical inspection of premises including storage areas, preparation zones, and equipment, observation of food handling practices and staff hygiene, temperature checks of refrigeration, freezing, and hot holding equipment, examination of food products for labeling, date marking, and condition, review of supplier documentation and traceability systems, checking cleaning and pest control records, and verification that all food handlers possess valid certificates. Inspectors use standardized checklists and scoring systems, with findings categorized by severity from minor observations to critical non-conformities that may trigger enforcement action.\n\nPreparation for health inspection is not a one-time activity but an ongoing commitment to maintaining compliance. This includes daily monitoring and record-keeping, regular internal audits to identify and correct issues before inspectors find them, ensuring all staff understand their responsibilities and can answer basic questions about procedures, maintaining documentation in an organized and readily accessible manner, and keeping premises, equipment, and practices consistently at inspection-ready standards. A proactive approach to food safety compliance ensures that routine inspections proceed smoothly, builds a positive relationship with health authorities, and most importantly, protects customers from foodborne illness and the business from enforcement action, reputational damage, and financial penalties.",
+  "keyPoints": [
+    "Health inspections can occur without notice at any time during operating hours—permanent readiness is required",
+    "Inspectors will review HACCP documentation, temperature records, cleaning logs, traceability systems, and training certificates",
+    "Physical inspection covers storage areas, preparation zones, equipment condition, and staff hygiene practices",
+    "All food handlers must possess valid food safety certificates (Carnet de Manipulador de Alimentos) accessible during inspection",
+    "Temperature monitoring records must be current, complete, and show evidence of corrective actions when limits were exceeded",
+    "Critical non-conformities (serious food safety hazards) can result in immediate enforcement action including closure orders",
+    "Inspectors assess not just documentation but practical implementation—whether procedures are actually followed in practice",
+    "Designated staff should be trained to accompany inspectors professionally, provide requested documentation, and answer questions accurately",
+    "Follow-up inspections verify that corrective actions for identified non-conformities have been implemented effectively",
+    "Building a cooperative relationship with health inspectors supports compliance and enables constructive dialogue about requirements"
+  ],
+  "sections": [
+    {
+      "heading": "1. Understanding the Health Inspection Process",
+      "content": "Official food safety inspections in Spain are governed by EU Regulation 882/2004, which establishes a harmonized framework for official controls throughout the European Union. Inspections are risk-based, meaning that establishments handling high-risk products or with a history of non-compliance are inspected more frequently than low-risk businesses with good compliance records. For typical hospitality establishments, inspection frequency ranges from annually for well-performing businesses to quarterly or more for those with compliance issues.\n\nInspections are generally unannounced to ensure that inspectors observe normal operating practices rather than special preparations. Upon arrival, the inspector will identify themselves and present official credentials. The inspection typically begins with a review of documentation (HACCP plan, monitoring records, certificates) while simultaneously or subsequently conducting a physical inspection of the premises and observation of food handling practices. The inspector will ask questions of staff and management to assess knowledge and understanding of food safety procedures.\n\nAt the conclusion of the inspection, the inspector will discuss preliminary findings with the manager or person in charge. A formal inspection report is typically provided or sent within days, categorizing findings by severity: observations (minor issues not requiring immediate action), non-conformities (deficiencies that must be corrected, with deadlines), and critical non-conformities (serious food safety hazards requiring immediate corrective action). The report will specify required corrective actions and deadlines, and follow-up inspections may be scheduled to verify compliance.",
+      "subsections": [
+        {
+          "heading": "1.1 Inspector Rights and Powers",
+          "content": "Health inspectors have extensive legal powers to enter and inspect food business premises without notice during operating hours or at other reasonable times. They may examine any food products, equipment, or documentation, take samples for laboratory analysis, photograph or video record premises and practices, interview staff, and in cases of serious non-compliance, seize products or equipment and order immediate closure. Food business operators must provide access and cooperation.\n\nObstructing an inspection or providing false information is a serious offense that can result in significant penalties. However, inspectors also have obligations to conduct inspections professionally, minimize disruption to business operations where possible, maintain confidentiality of business information, and provide clear explanation of findings and required actions."
+        },
+        {
+          "heading": "1.2 Inspection Criteria and Scoring",
+          "content": "Most autonomous communities use standardized inspection checklists based on EU and national requirements, often with numerical scoring systems. Common frameworks include assessment of HACCP implementation (hazard analysis documented, CCPs identified and monitored, records maintained), structural and equipment conditions (adequate facilities, good repair, appropriate design for food safety), cleaning and disinfection (plan documented, records current, visible cleanliness), temperature control (refrigeration, freezing, cooking, hot holding within legal limits), pest control (contracted service, records available, no evidence of infestation), staff hygiene and training (valid certificates, appropriate clothing, correct practices), and traceability and supplier control (documented suppliers, delivery records, lot identification).\n\nEstablishments typically receive a numerical score or categorization (e.g., favorable, acceptable, deficient, very deficient). Some regions publicly display inspection results or ratings at the establishment entrance or online. Poor scores or categorizations can trigger more frequent inspections, enforcement action, and reputational damage."
+        },
+        {
+          "heading": "1.3 Consequences of Non-Compliance",
+          "content": "The consequences of inspection findings depend on the nature and severity of non-conformities. Minor observations may require corrective action but typically do not trigger formal enforcement. Non-conformities usually result in an improvement notice specifying required actions and deadlines, with follow-up inspection to verify compliance. Failure to comply with improvement notices can result in financial penalties.\n\nCritical non-conformities that present imminent risk to public health can trigger immediate enforcement action: prohibition orders preventing use of specific equipment or areas, product withdrawal or destruction orders, temporary closure until hazards are corrected, and in cases of serious or repeated violations, sanctions under Ley 17/2011 ranging from fines of €5,001 to €600,000 depending on severity, permanent closure, and potential criminal prosecution in cases of gross negligence or intentional violations. Beyond legal penalties, failed inspections can cause severe reputational damage, loss of customer trust, negative publicity, and declining business."
+        }
+      ]
+    },
+    {
+      "heading": "2. HACCP Documentation Requirements",
+      "content": "The HACCP plan and associated records are central to any health inspection. Inspectors will review the HACCP documentation in detail to verify that it is comprehensive, current, and actually implemented in practice. The HACCP plan must identify all food safety hazards relevant to the establishment's operations, determine Critical Control Points (CCPs) for controlling those hazards, establish critical limits for each CCP, define monitoring procedures, specify corrective actions for deviations, and establish verification and record-keeping procedures.\n\nDocumentation must be site-specific and reflect actual operations, not generic templates. The plan should be dated and signed by the person responsible, with evidence of annual review and updates following any significant changes to operations, equipment, or products. Inspectors will check whether the HACCP team is identified and whether at least one member has appropriate training. Most importantly, inspectors will compare the documented plan with actual practices and records to verify implementation.",
+      "subsections": [
+        {
+          "heading": "2.1 Temperature Monitoring Records",
+          "content": "Temperature control is one of the most critical aspects of food safety and receives close inspector scrutiny. Records must demonstrate daily monitoring of refrigerator temperatures (target 0-4°C, maximum 5°C), freezer temperatures (minimum -18°C), hot holding temperatures (minimum 63°C), and cooking temperatures for high-risk foods (minimum 75°C core temperature). Records should also document delivery temperatures for chilled and frozen goods.\n\nInspectors will verify that temperature records are current (up to and including the day of inspection), complete (no missing dates or unexplained gaps), accurate (spot-checking against actual temperatures during inspection), and show appropriate corrective actions when temperatures exceeded limits. Missing records, falsified entries, or systematic failures to maintain required temperatures are serious non-conformities. All thermometers must be calibrated regularly with calibration records maintained."
+        },
+        {
+          "heading": "2.2 Cleaning and Disinfection Documentation",
+          "content": "The establishment must have a documented cleaning and disinfection plan (Plan L+D) covering all areas, surfaces, equipment, and utensils. The plan should specify what is cleaned, how (method and products), when (frequency), and by whom (responsible person). Cleaning records must demonstrate that the plan is followed in practice, with daily checklists signed by the person who performed each task.\n\nInspectors will compare cleaning records with actual observed cleanliness. Discrepancies—such as signed records claiming areas were cleaned when visible dirt or grease is present—indicate either non-compliance or falsification. Food-safe cleaning products should be identifiable, properly stored (separated from food), and used at correct dilutions. Safety Data Sheets for all cleaning chemicals should be available."
+        },
+        {
+          "heading": "2.3 Traceability and Supplier Records",
+          "content": "EU Regulation 178/2002 requires full traceability of food products. Establishments must be able to identify suppliers for all food products and demonstrate one-step-back, one-step-forward traceability. This requires maintaining supplier details including name, address, and health registration number, delivery notes with dates, lot numbers, and product descriptions, and records linking delivered products to their use or sale. Records must be retained for a minimum period (typically five years).\n\nInspectors may select specific products and trace them back to the supplier or forward to service/sale. Inability to provide this information is a non-conformity. Inspectors also verify that suppliers are approved and registered food businesses. Purchasing food from unauthorized or unregistered suppliers is a serious violation."
+        }
+      ]
+    },
+    {
+      "heading": "3. Premises and Equipment Standards",
+      "content": "The physical condition and design of the food premises are essential for food safety. EU Regulation 852/2004 Annex II establishes general hygiene requirements for premises and equipment that apply to all food businesses. Inspectors will assess whether the layout, design, construction, size, and location of premises are appropriate for food operations, whether surfaces are smooth, washable, non-toxic, and in good repair, whether there is adequate separation between raw and ready-to-eat food handling areas, and whether ventilation, lighting, drainage, and water supply are adequate.\n\nEquipment must be appropriate for food use, made of suitable materials, maintained in good repair and clean condition, and designed to permit thorough cleaning. Refrigeration and freezing equipment must be adequate in size for the volume of chilled/frozen products handled and capable of maintaining required temperatures. Inspectors will check for evidence of deterioration (damaged surfaces, rust, cracks), inadequate maintenance (non-functioning equipment, makeshift repairs), and poor cleanliness (grease buildup, food residues, limescale).",
+      "subsections": [
+        {
+          "heading": "3.1 Storage Areas",
+          "content": "Storage areas for food must be designed, constructed, and maintained to protect food from contamination and deterioration. Dry storage should be clean, dry, well-ventilated, free from pests, organized with clear separation of food and non-food items, and arranged to permit FIFO (First In, First Out) stock rotation. Food must not be stored directly on the floor; shelving should be used with the lowest shelf at least 15-20 cm above floor level.\n\nRefrigeration and freezer storage must have adequate capacity, maintain required temperatures consistently (verified by installed thermometers), allow air circulation around products, and be organized to separate raw and cooked products (raw products on lower shelves to prevent drip contamination). Inspectors will check for overloading that prevents proper air circulation, expired products, unlabeled items, and cross-contamination risks."
+        },
+        {
+          "heading": "3.2 Preparation and Cooking Areas",
+          "content": "Food preparation areas must have adequate space for the volume and type of food processed, with clear workflows that minimize cross-contamination risks. Separate preparation areas or clearly defined zones should be designated for raw and ready-to-eat foods. Work surfaces must be smooth, impervious, easy to clean, and in good repair. Adequate handwashing facilities with hot and cold running water, soap, and hand drying facilities must be conveniently located and used.\n\nCooking equipment must be adequate for the operations performed and maintained in good working order. Ventilation hoods over cooking equipment must be properly sized, functioning effectively, and kept clean (particularly filters, which should show evidence of regular cleaning). Inspectors will observe practices such as handwashing frequency, use of separate cutting boards and utensils for different food types, and prevention of bare-hand contact with ready-to-eat foods."
+        },
+        {
+          "heading": "3.3 Sanitary Facilities",
+          "content": "Adequate toilet facilities separate from food handling areas must be provided, with handwashing facilities having hot and cold running water, soap, and hygienic hand drying. Toilets must not open directly into food handling areas. Changing facilities for staff should be provided where appropriate. Facilities must be kept clean and in good repair.\n\nInspectors will check that staff toilets are equipped with handwashing notices, that soap and hand drying facilities are adequately stocked, and that facilities are maintained in hygienic condition. Lack of adequate staff facilities or poor maintenance is a common non-conformity that reflects poorly on the establishment's commitment to hygiene."
+        }
+      ]
+    },
+    {
+      "heading": "4. Food Handling Practices and Staff Hygiene",
+      "content": "Inspectors will observe food handling practices during the inspection to assess whether staff follow correct food safety procedures in practice. Key observations include personal hygiene (clean uniforms, hair restraints, no jewelry, correct handwashing), temperature control (monitoring, recording, correct hot holding and cold storage), cross-contamination prevention (separation of raw and cooked foods, use of color-coded equipment), correct thawing procedures (in refrigerator, not at room temperature), and appropriate storage and labeling (date marking, covering foods, FIFO rotation).\n\nPoor practices observed during inspection can result in non-conformities even if documentation is perfect—inspectors assess actual food safety, not just paperwork. Common issues include inadequate handwashing (frequency, technique, or after contaminating activities), bare-hand contact with ready-to-eat foods, using the same utensils or boards for raw and cooked products without proper cleaning, staff wearing outdoor clothing or jewelry in food preparation areas, and improper food storage (uncovered foods, incorrect temperatures, expired products).",
+      "subsections": [
+        {
+          "heading": "4.1 Personal Hygiene Requirements",
+          "content": "All food handlers must maintain high standards of personal cleanliness and wear suitable, clean, and where appropriate, protective clothing. Specific requirements include wearing clean uniforms or protective clothing when handling food, using hair restraints to prevent hair from contaminating food, removing jewelry (except plain wedding bands) which can harbor bacteria and contaminate food, covering cuts or wounds with waterproof, colored (typically blue) dressings, and not handling food when suffering from or carrying a disease transmissible through food.\n\nHandwashing is particularly critical. Staff must wash hands thoroughly with soap and hot water before handling food, after handling raw food, after using the toilet, after touching hair or face, after handling waste, and after any activity that could contaminate hands. Inspectors will observe whether handwashing facilities are used appropriately and whether staff demonstrate correct handwashing technique (minimum 20 seconds, attention to fingernails and between fingers)."
+        },
+        {
+          "heading": "4.2 Food Handler Certificates",
+          "content": "All staff who handle food must possess a valid Food Handler Certificate (Carnet de Manipulador de Alimentos) demonstrating they have completed certified food hygiene training. Certificates must be readily available for inspection—many establishments keep copies in a folder accessible at all times. Inspectors will verify that all staff observed handling food during the inspection possess valid certificates.\n\nEmploying staff without valid certificates is a non-conformity. New staff must complete certification before beginning food handling, or must work only under direct supervision of a certified food handler if training is in progress. The establishment should maintain a system to track certificate expiry dates and ensure timely renewal where required by regional regulations."
+        },
+        {
+          "heading": "4.3 Knowledge and Training Verification",
+          "content": "Inspectors may ask staff questions to assess their understanding of food safety procedures relevant to their role. Questions might include: What are the correct storage temperatures for refrigerated and frozen food? What should you do if you notice a refrigerator temperature is too high? What are the 14 major allergens? How should you prevent cross-contamination between raw and cooked foods? What is the minimum core cooking temperature for chicken?\n\nInability of staff to answer basic questions about procedures they should follow daily indicates that training has been inadequate or that documented procedures are not actually implemented. This can result in non-conformities and recommendations for improved training. Well-trained staff who can confidently explain what they do and why demonstrate a positive food safety culture."
+        }
+      ]
+    },
+    {
+      "heading": "5. Preparing for Inspection: Practical Steps",
+      "content": "Effective inspection preparation is an ongoing process, not a last-minute activity. The goal is to maintain inspection-ready standards at all times so that an unannounced inspection can be received with confidence. Key preparation activities include conducting regular internal audits using the same criteria inspectors will use, maintaining all documentation current and organized, ensuring all staff understand basic food safety procedures and their responsibilities, keeping premises and equipment consistently clean and well-maintained, and addressing identified issues immediately rather than allowing them to accumulate.\n\nDesignate a responsible person (typically the manager or head chef) who will accompany inspectors during the inspection, knows where all documentation is located, can answer questions about procedures and operations, and has authority to commit to corrective actions if needed. This person should be familiar with food safety regulations and the establishment's HACCP plan. If the designated person is unavailable when an inspector arrives, another senior staff member should be trained to perform this role.",
+      "subsections": [
+        {
+          "heading": "5.1 Internal Audit Program",
+          "content": "Conducting internal audits is one of the most effective preparation strategies. Using the same inspection checklist that health inspectors use (often available from the autonomous community health department), systematically evaluate your own compliance at least monthly, and more frequently for specific high-risk areas like temperature control and cleaning. Internal audits should be documented, with findings recorded and corrective actions implemented.\n\nInternal audits identify and enable correction of non-conformities before an official inspection. They also familiarize staff with inspection processes, reducing anxiety when a real inspection occurs. Consider having different staff members perform internal audits to broaden food safety knowledge and engagement across the team."
+        },
+        {
+          "heading": "5.2 Documentation Organization",
+          "content": "Organize all inspection-relevant documentation in a readily accessible format. Common approaches include a dedicated inspection folder or binder containing: current HACCP plan with evidence of annual review, current month's temperature monitoring logs, cleaning and disinfection plan and records, pest control service contract and visit reports, copies of all staff food handler certificates, supplier approval list and relevant documentation, training records, and equipment maintenance records and certificates (e.g., fire suppression, gas installations).\n\nDigital documentation systems are acceptable if they can be accessed quickly during the inspection—ensure systems are operational, login credentials are available, and someone on-site knows how to navigate them. Many establishments maintain both digital systems for long-term record-keeping and current hard copies for immediate inspection access."
+        },
+        {
+          "heading": "5.3 Staff Briefing and Preparation",
+          "content": "All staff should understand that health inspections can occur at any time and should know how to respond appropriately. Brief staff on: how to identify official inspectors (credentials), who to notify immediately when an inspector arrives (manager or designated responsible person), continuing normal work practices while being observed (do not change what you are doing just because an inspector is present), responding politely and honestly to any questions, and not providing information or documentation unless requested—the designated responsible person handles this.\n\nConduct periodic training refreshers on key food safety topics likely to be observed or questioned during inspections. Role-play inspection scenarios to reduce staff anxiety and build confidence. Emphasize that the purpose of inspections is to verify food safety, and that cooperation and honesty are essential."
+        }
+      ]
+    },
+    {
+      "heading": "6. During and After the Inspection",
+      "content": "When an inspector arrives, the designated responsible person should greet them professionally, verify their credentials, and offer to accompany them during the inspection. Provide requested documentation promptly and answer questions honestly and completely. If you do not know an answer, say so rather than guessing—offer to find the information or follow up after the inspection. Facilitate the inspection by providing access to all areas, but do not volunteer information or documentation that has not been requested.\n\nTake notes during the inspection, particularly regarding any issues or non-conformities the inspector identifies. This helps ensure accurate understanding and effective follow-up. At the conclusion, the inspector will typically discuss preliminary findings. Listen carefully, ask for clarification if needed, and avoid becoming defensive. If you disagree with a finding, express your perspective professionally, but recognize that the inspector has the final determination.\n\nAfter the inspection, review the formal report carefully when it arrives. Prioritize corrective actions by urgency, addressing critical items immediately. Document all corrective actions taken, including dates, methods, and responsible persons. If follow-up inspection is scheduled, ensure all required actions are completed and documented before that date. Use inspection findings as learning opportunities to improve systems and procedures, even when findings are minor.",
+      "subsections": [
+        {
+          "heading": "6.1 Responding to Non-Conformities",
+          "content": "For each non-conformity identified, develop and implement a corrective action that addresses both the immediate issue and the underlying cause. For example, if expired food products were found, the immediate action is to remove and dispose of them; the underlying corrective action might be implementing a more rigorous stock rotation system and weekly expiry date checks. Document the root cause analysis and preventive measures to demonstrate thoroughness.\n\nIf a deadline is specified for corrective actions, ensure compliance well before the deadline and notify the health authority in writing (with evidence such as photographs, updated procedures, or receipts) that actions have been completed. This demonstrates commitment to compliance and may avoid the need for a follow-up inspection. If you need additional time or have difficulty implementing a required action, communicate with the inspector proactively to discuss options rather than missing the deadline."
+        },
+        {
+          "heading": "6.2 Appeals and Dispute Resolution",
+          "content": "If you believe an inspection finding is incorrect or a penalty is disproportionate, you have the right to appeal. The inspection report should specify the appeal procedure and deadlines. Appeals typically must be filed within a specific period (often 15-30 days) and should be supported by evidence. Consider seeking advice from a food safety consultant or legal advisor if appealing complex or serious findings.\n\nIn many cases, issues can be resolved through constructive dialogue with the inspector or their supervisor without formal appeals. If there is a misunderstanding or if corrective actions have already been implemented before the formal report is issued, communicating this information may result in findings being revised or withdrawn. Maintain professionalism throughout any dispute—health inspectors are enforcing regulations to protect public health, and working cooperatively is more productive than confrontation."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Pre-Inspection Readiness Checklist (Daily/Weekly)",
+      "items": [
+        "All temperature monitoring logs are current, complete, and show corrective actions for any deviations",
+        "HACCP plan and supporting documentation are readily accessible",
+        "All refrigerators and freezers are maintaining correct temperatures (verify with spot checks)",
+        "Cleaning schedule tasks are up to date with signed completion records",
+        "Food storage areas are organized with proper FIFO rotation and no expired products",
+        "All food is properly covered, labeled, and stored at correct temperatures",
+        "Staff are wearing clean uniforms, hair restraints, and no prohibited jewelry",
+        "Handwashing facilities are fully stocked with soap and hand drying materials",
+        "Premises are clean with no visible dirt, grease buildup, or waste accumulation",
+        "Pest control monitoring stations are in place with no evidence of pest activity",
+        "All food handler certificates are current and copies are accessible",
+        "Thermometers and other monitoring equipment are calibrated and functioning"
+      ]
+    },
+    {
+      "title": "During Inspection Protocol Checklist",
+      "items": [
+        "Verify inspector credentials and note inspector name and authority",
+        "Notify manager or designated responsible person immediately",
+        "Offer to accompany inspector during the inspection",
+        "Provide requested documentation promptly and politely",
+        "Answer questions honestly and completely; say \"I don't know\" if uncertain",
+        "Avoid becoming defensive or argumentative about findings",
+        "Take notes on issues identified and questions asked",
+        "Do not volunteer unrequested information or documentation",
+        "Ensure staff continue normal work practices (do not change behaviors for the inspection)",
+        "Listen carefully to preliminary findings at conclusion of inspection",
+        "Ask for clarification on any findings you do not fully understand",
+        "Thank the inspector for their time and professionalism"
+      ]
+    },
+    {
+      "title": "Post-Inspection Follow-Up Checklist",
+      "items": [
+        "Review the formal inspection report thoroughly when received",
+        "Identify all non-conformities and required corrective actions",
+        "Prioritize actions by severity and deadline",
+        "Assign responsibility for each corrective action to specific staff",
+        "Implement immediate corrections for critical issues",
+        "Conduct root cause analysis for each non-conformity",
+        "Develop and document preventive measures to avoid recurrence",
+        "Update HACCP plan or procedures if needed based on findings",
+        "Provide training or retraining to staff if knowledge gaps were identified",
+        "Document all corrective actions with dates and evidence (photos, receipts, updated logs)",
+        "Notify health authority in writing when all corrective actions are complete",
+        "Conduct internal audit to verify effectiveness of corrective actions before follow-up inspection"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Treat every day as if an inspection could occur—maintain consistent standards rather than scrambling when an inspector arrives",
+    "Build a positive, cooperative relationship with your local health inspection team by being consistently compliant and responsive",
+    "Use inspection checklists as daily or weekly self-audit tools so that your own standards match or exceed inspector expectations",
+    "Invest in digital temperature monitoring systems with automated logging to ensure temperature records are always complete and accurate",
+    "Designate a dedicated, organized location for all inspection-relevant documentation so it can be accessed within seconds when needed",
+    "Conduct surprise internal inspections during peak service periods to verify that standards are maintained when staff are under pressure",
+    "Train all staff on basic food safety knowledge so that any employee can answer inspector questions confidently",
+    "Address identified issues immediately rather than waiting—small problems become major non-conformities if ignored",
+    "Keep a photo log of corrections implemented after internal audits or previous inspections to demonstrate continuous improvement",
+    "Stay informed about regulatory updates by subscribing to health department communications and attending food safety workshops or briefings"
+  ],
+  "glossary": {
+    "Official Control": "Inspection or verification activity performed by competent authorities to ensure compliance with food law and protect public health",
+    "Competent Authority": "The central authority of a member state responsible for organizing official controls (in Spain, autonomous community health departments)",
+    "Non-Conformity": "Failure to comply with a legal requirement, procedure, or standard identified during inspection",
+    "Critical Non-Conformity": "A serious food safety hazard that presents imminent risk to public health and typically requires immediate corrective action",
+    "Improvement Notice": "Formal notice issued by an inspector specifying non-conformities and requiring corrective actions by specified deadlines",
+    "Prohibition Order": "Official order prohibiting use of specific equipment, areas, or processes due to serious food safety risks",
+    "Corrective Action": "Measures taken to eliminate the cause of a non-conformity and prevent its recurrence",
+    "Follow-Up Inspection": "Subsequent inspection conducted to verify that required corrective actions have been implemented effectively",
+    "Risk-Based Inspection": "Inspection approach where frequency and intensity are determined by the food safety risk profile of the establishment",
+    "Traceability": "Ability to track the history, location, and movement of food products through all stages of production, processing, and distribution"
+  }
+}

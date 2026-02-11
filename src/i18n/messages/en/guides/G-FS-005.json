@@ -1,0 +1,194 @@
+{
+  "title": "Cleaning & Disinfection Plan",
+  "legalBasis": "EU Regulation (EC) No 852/2004, Annex II, Chapter I and V on premises cleanliness and equipment hygiene; Royal Decree 3484/2000 on food hygiene standards; ISO 22000 food safety management systems guidance",
+  "summary": "A comprehensive cleaning and disinfection plan — known in Spanish as Plan de Limpieza y Desinfección (L+D) — is a fundamental prerequisite programme that supports the HACCP system. EU Regulation 852/2004 requires food premises and equipment to be kept clean and maintained in good repair and condition. A documented plan ensures that cleaning is systematic, comprehensive, and verifiable rather than ad hoc or reliant on individual initiative.\n\nThe L+D plan must cover all food contact surfaces, equipment, utensils, and non-food contact surfaces including floors, walls, ceilings, and facilities. For each area and item, the plan specifies: what must be cleaned, how often, which cleaning products and concentrations to use, the cleaning method and procedure, contact time for disinfectants, responsible personnel, and verification procedures. Detailed cleaning records demonstrate compliance during inspections and provide evidence that cleaning has been carried out as planned.\n\nEffective cleaning removes food residues, grease, and dirt that can harbor bacteria and attract pests. Disinfection reduces bacterial populations to safe levels. Together, these processes prevent bacterial accumulation, cross-contamination, and pest infestation. Without rigorous cleaning and disinfection, even the best HACCP system will fail. Health inspectors routinely assess both the written cleaning plan and physical evidence of its implementation through visual inspection and surface testing.",
+  "keyPoints": [
+    "Every food establishment must maintain a documented cleaning and disinfection (L+D) plan",
+    "The plan must specify procedures, frequencies, products, dilutions, contact times, and responsible staff for every area and item",
+    "Cleaning removes visible soil; disinfection reduces bacteria to safe levels — both are necessary",
+    "Use food-safe cleaning products and disinfectants appropriate for the surfaces and soil type",
+    "Implement color-coded cleaning equipment to prevent cross-contamination between areas",
+    "Maintain daily cleaning records demonstrating that scheduled cleaning has been completed",
+    "Schedule deep cleaning for equipment and hard-to-reach areas in addition to routine cleaning",
+    "Store cleaning chemicals separately from food in labeled containers with safety data sheets accessible"
+  ],
+  "sections": [
+    {
+      "heading": "1. Cleaning and Disinfection Principles",
+      "content": "Cleaning and disinfection are distinct but complementary processes. Cleaning is the physical removal of visible soil, food residues, grease, and dirt using water, detergents, and mechanical action (scrubbing, pressure). Disinfection is the reduction of microorganisms to safe levels using chemical disinfectants or heat. Disinfection cannot be effective on dirty surfaces — organic matter protects bacteria from disinfectants and inactivates some disinfectant types. Therefore, the sequence is always: clean first, then disinfect.\n\nA standard cleaning procedure follows the principle of 6 stages: pre-rinse to remove loose soil, apply detergent at the correct concentration, scrub or agitate to remove adhered soil, rinse thoroughly to remove detergent and loosened soil, apply disinfectant at correct concentration, and allow adequate contact time before final rinse if required. The specific procedure varies by surface type, soil type, and products used, but the principles remain consistent. Understanding these principles helps staff perform cleaning effectively rather than mechanically following procedures without understanding their purpose.",
+      "subsections": [
+        {
+          "heading": "1.1 Types of Soil and Appropriate Cleaning",
+          "content": "Different types of soil require different cleaning approaches. Protein soils from meat, fish, and eggs require enzymatic cleaners or alkaline detergents and cool to warm water — hot water coagulates protein making it harder to remove. Fat and grease require alkaline degreasers and hot water to emulsify and remove oils. Mineral deposits such as limescale require acidic cleaners. Sugars dissolve easily in water and require less aggressive cleaning. Understanding soil types helps select appropriate products and methods. In hospitality kitchens, most cleaning involves mixed soils (protein, fat, and carbohydrates together), requiring versatile cleaning products and thorough mechanical action."
+        },
+        {
+          "heading": "1.2 Cleaning Products and Selection",
+          "content": "Cleaning products must be food-safe, meaning they are approved for use in food preparation areas and, when used correctly, leave no harmful residues. Detergents remove soil and come in various types: neutral detergents for routine cleaning, alkaline degreasers for heavy grease, acidic cleaners for mineral deposits, and enzymatic cleaners for protein soils. Disinfectants reduce bacterial populations and include: hypochlorite (bleach) which is effective and economical but corrosive and affected by organic matter, quaternary ammonium compounds (QUATS) which are less corrosive and maintain activity in the presence of some organic matter, and alcohol-based disinfectants for rapid disinfection of clean surfaces. Product selection should consider: effectiveness against target soil and microorganisms, compatibility with surfaces being cleaned, safety for staff, environmental impact, and cost-effectiveness. Safety Data Sheets must be available for all cleaning products."
+        },
+        {
+          "heading": "1.3 Dilution and Contact Time",
+          "content": "Using cleaning and disinfecting products at incorrect dilutions reduces effectiveness and may create safety hazards. Too dilute and the product does not work; too concentrated and it may damage surfaces, create safety risks, waste product, and leave excessive residues. Manufacturers specify dilution rates for different applications — these must be followed precisely. Use measuring equipment (graduated beakers, dosing pumps) rather than estimating. Contact time is equally critical: disinfectants require specific contact time to achieve their antimicrobial effect, typically 1-5 minutes. Applying disinfectant and immediately rinsing does not allow sufficient time for disinfection to occur. Staff must understand that waiting for the specified contact time is part of the procedure, not optional."
+        }
+      ]
+    },
+    {
+      "heading": "2. Developing the L+D Plan",
+      "content": "Creating a comprehensive L+D plan requires systematically identifying every surface, area, and piece of equipment that requires cleaning, then specifying appropriate procedures for each. The plan should be documented in a clear, accessible format — typically a table or spreadsheet listing all items with corresponding procedures. While the format may vary, essential information includes: item/area to be cleaned, frequency (after each use, daily, weekly, monthly), procedure (products, methods, steps), responsible person or position, and verification method.\n\nThe L+D plan should be tailored to your specific operation. Generic plans copied from templates may miss specific equipment or areas in your facility. Involve staff who perform cleaning in developing the plan — they often have practical insights into effective procedures and potential challenges. The plan should be realistic and achievable within available time and resources. An overly ambitious plan that cannot be followed consistently is worse than a simpler plan that is reliably implemented.",
+      "subsections": [
+        {
+          "heading": "2.1 Cleaning Frequencies",
+          "content": "Cleaning frequency depends on the item and its use. Food contact surfaces used for raw food require cleaning and disinfection after each use and before being used for different food (particularly between raw and ready-to-eat foods). Food contact surfaces used continuously during service may be cleaned and disinfected every 2-4 hours. Non-food contact surfaces such as walls and ceilings may be cleaned weekly or monthly. High-touch surfaces like door handles, light switches, and refrigerator handles should be cleaned and disinfected daily. Equipment should be cleaned according to use intensity: daily for equipment used daily, before and after use for occasional use equipment. Deep cleaning of equipment (dismantling, cleaning internal components, descaling) should be scheduled at appropriate intervals, typically monthly or quarterly depending on the equipment and usage."
+        },
+        {
+          "heading": "2.2 Responsibility Assignment",
+          "content": "The L+D plan must clearly assign responsibility for each cleaning task. Assignment can be by position (head chef responsible for oven deep cleaning) or by name for small teams. Avoid vague assignments like 'kitchen staff' which create ambiguity about who is actually responsible. For tasks performed multiple times per shift, responsibility may rotate or be assigned to whoever uses the equipment. For scheduled cleaning tasks (weekly, monthly), assign to specific individuals with backup responsibility if the primary person is absent. Include cleaning responsibilities in job descriptions and training so staff understand that cleaning is part of their role, not an additional task. Management should monitor completion and address any systematic failures in responsibility fulfillment."
+        },
+        {
+          "heading": "2.3 Special Areas and Equipment",
+          "content": "Certain areas and equipment require special attention in the L+D plan. Walk-in refrigerators and freezers should be emptied and thoroughly cleaned on a scheduled basis, typically monthly. Extraction hoods and filters accumulate grease and require weekly cleaning (filters) and monthly deep cleaning (hoods and ductwork). Grease traps must be cleaned regularly to prevent blockages and maintain drainage. Ice machines require regular cleaning and sanitization according to manufacturer recommendations to prevent slime and mold accumulation. Storage areas including dry stores require regular cleaning and organization. Waste storage areas are high-risk for pest attraction and require daily cleaning. Each of these special areas should have specific procedures in the L+D plan."
+        }
+      ]
+    },
+    {
+      "heading": "3. Color-Coded Cleaning Systems",
+      "content": "Color-coded cleaning equipment prevents cross-contamination by designating specific colors for specific areas. A typical system assigns: red for toilets and washrooms, yellow for sinks and drains, green for food preparation areas, and blue for general lower-risk areas. All cleaning equipment — cloths, mops, buckets, brushes, and handles — are color-coded so staff can instantly identify appropriate equipment for each area. This system prevents, for example, a cloth used in toilets being subsequently used in food preparation areas.\n\nImplementing a color-coded system requires investment in sufficient equipment in each color, clear training so all staff understand the system, visual reminders (posters showing which colors go where), and monitoring to ensure compliance. Storage of cleaning equipment should be organized by color to prevent mixing. When purchasing new cleaning equipment, maintain the color-coding system. While the specific color assignments can vary, consistency within your operation is essential.",
+      "subsections": [
+        {
+          "heading": "3.1 Implementing Color Coding",
+          "content": "Successful implementation of color coding requires: select a color-coding system appropriate for your facility (four-color systems are common but three-color or six-color systems exist for different needs), purchase complete sets of equipment in each color (cloths, mops, buckets, brushes, squeegees, dustpans), clearly label storage areas for each color, post color-coded charts or posters in cleaning storage areas showing which colors are used where, train all staff including new hires on the color-coding system, and audit compliance regularly. Color coding should extend to single-use disposable cloths if used. Initially, staff may find the system cumbersome, but with consistent use it becomes automatic. The food safety benefits of preventing cross-contamination far outweigh the modest additional cost and complexity."
+        },
+        {
+          "heading": "3.2 Maintenance of Cleaning Equipment",
+          "content": "Cleaning equipment itself must be kept clean. Dirty mops, cloths, and brushes spread contamination rather than removing it. After each use, cleaning equipment should be thoroughly rinsed, cleaned with detergent if visibly soiled, and allowed to dry completely. Wet cleaning equipment harbors bacteria. Mop heads should be laundered regularly (daily or every few days depending on use intensity). Cloths should be laundered after each use or day of use. Brushes should be cleaned, sanitized, and air-dried. Buckets should be emptied, rinsed, and stored upside down to dry. Replace worn cleaning equipment: cloths that are threadbare or stained, mop heads that are frayed, and brushes with worn bristles are less effective and may harbor bacteria. Schedule replacement of cleaning equipment as part of the L+D plan maintenance."
+        }
+      ]
+    },
+    {
+      "heading": "4. Cleaning Procedures for Key Areas",
+      "content": "While the L+D plan covers all areas, certain key areas require particular attention due to their food safety significance. Food preparation surfaces, cooking equipment, refrigeration units, and dishwashing areas are high-priority because contamination or inadequate cleaning in these areas directly affects food safety. Detailed procedures for these key areas should be documented and staff should be specifically trained on them.\n\nConsistency in cleaning procedures is achieved through clear documentation, training, and supervision. Standard Operating Procedures (SOPs) for cleaning key areas should specify the exact steps, products, and acceptance criteria. Visual guides with photographs showing clean vs. unclean can help establish standards. Regular monitoring and feedback help maintain consistency even with staff turnover.",
+      "subsections": [
+        {
+          "heading": "4.1 Food Preparation Surfaces",
+          "content": "Cutting boards, preparation tables, and counters are the highest risk surfaces as they have direct contact with food. Cleaning procedure: remove food debris and scrape or wipe the surface, wash with hot water and detergent using appropriate cloth or brush, rinse thoroughly with clean water to remove all detergent, apply food-safe disinfectant at correct dilution, allow contact time (typically 2 minutes), rinse if required by product instructions or allow to air dry. This complete procedure must be performed after each use, particularly when switching between different food types and always when switching from raw to ready-to-eat foods. Cutting boards should be replaced when heavily scored or worn as bacteria can harbor in deep cuts. Consider color-coding cutting boards (red for raw meat, green for vegetables, etc.) in addition to cleaning to prevent cross-contamination."
+        },
+        {
+          "heading": "4.2 Cooking Equipment",
+          "content": "Ovens, stovetops, grills, fryers, and other cooking equipment accumulate baked-on food, grease, and carbon that require regular cleaning. Daily cleaning includes: allow equipment to cool sufficiently to be safe but clean while still warm when possible (easier grease removal), remove loose debris, apply appropriate degreaser, scrub or scour using non-abrasive materials on surfaces that could be damaged, rinse thoroughly, and dry. Deep cleaning should be scheduled regularly: ovens and grills monthly or more frequently in high-use operations, fryers after oil changes, and extraction hoods weekly (filters) to monthly (hoods and ducts). Follow equipment manufacturer cleaning instructions — improper cleaning can damage equipment and void warranties. Schedule deep cleaning during closed periods when equipment can be fully out of service for extended cleaning procedures."
+        },
+        {
+          "heading": "4.3 Refrigeration Units",
+          "content": "Refrigerators and freezers require regular cleaning despite low temperatures, as bacteria can still grow slowly and spills can occur. Weekly cleaning: remove all items from a section, check items for expiry and quality while out, clean interior surfaces with detergent and warm water (not hot water which creates condensation and temperature stress), clean door seals and gaskets, dry surfaces, and return food to storage following FIFO. Monthly or quarterly deep cleaning: empty the entire unit (transfer food to backup refrigeration), defrost if necessary, remove shelves and drawers for thorough washing, clean drainage holes, clean exterior including top and sides, clean condenser coils if accessible, verify door seals are intact, and verify temperature after cleaning. Do not use harsh chemicals or abrasives that could damage interior surfaces. Ensure food is not left at room temperature during refrigerator cleaning — work quickly or maintain food in other refrigeration."
+        },
+        {
+          "heading": "4.4 Dishwashing Areas",
+          "content": "Whether washing dishes manually or with machines, dishwashing areas must be kept scrupulously clean. Manual dishwashing procedure: scrape dishes to remove food debris, pre-rinse if necessary, wash in hot water (minimum 45°C) with detergent using first sink, rinse in clean hot water using second sink, sanitize in third sink using disinfectant at correct concentration or very hot water (minimum 80°C for 2 minutes) if sink allows, and air dry on clean racks (towel drying can recontaminate). Machine dishwashing requires: scrape and pre-rinse dishes, load correctly allowing water and detergent to reach all surfaces, operate at manufacturer-specified temperatures (typically 55-65°C wash, 80-90°C rinse), use appropriate chemicals, allow dishes to air dry completely, and clean the machine itself daily including filters, spray arms, and interior. Dishwashing areas should be cleaned throughout the shift and thoroughly at the end."
+        }
+      ]
+    },
+    {
+      "heading": "5. Documentation and Verification",
+      "content": "Documentation demonstrates that the L+D plan has been implemented as specified. Cleaning records are essential for HACCP verification and for demonstrating due diligence during inspections. Records should be simple to complete — complex record-keeping systems are less likely to be maintained consistently. A typical cleaning record is a checklist showing the date, tasks completed, staff member responsible (initials or signature), and any notes about issues encountered.\n\nSeparate records may be maintained for different cleaning frequencies: daily cleaning checklists completed each day, weekly cleaning records, and deep cleaning logs for monthly or quarterly tasks. Records should be reviewed regularly by a supervisor who signs to indicate verification. This review identifies incomplete records, recurring issues, and training needs. Maintain cleaning records for at least one year as part of HACCP documentation.",
+      "subsections": [
+        {
+          "heading": "5.1 Visual Inspection and Standards",
+          "content": "Verification of cleaning effectiveness includes visual inspection. Establish clear standards for cleanliness: surfaces should be free from visible soil, grease, and residues; equipment should appear clean and well-maintained; floors should be dry and free from food debris; and storage areas should be organized with no accumulation of dust or spillages. Take photographs of cleaned areas meeting standards to provide visual references for staff. Conduct regular inspections (daily by supervisors, weekly or monthly by management) using checklists covering all areas. Document inspection findings and address any deficiencies through immediate correction and, if issues are recurring, additional training or procedural modifications."
+        },
+        {
+          "heading": "5.2 Environmental Monitoring",
+          "content": "Some operations implement environmental monitoring through microbiological testing of surfaces. Surface swabs or contact plates are used to sample food contact surfaces after cleaning and disinfection to verify that bacterial populations are at acceptable levels. This is particularly valuable in high-risk operations or as part of verification following food safety incidents. Environmental monitoring is typically performed by external laboratories on a scheduled basis (monthly or quarterly). Results inform the effectiveness of cleaning procedures and can identify areas requiring additional attention or procedural changes. While not required for all operations, environmental monitoring provides objective verification of cleaning effectiveness beyond visual inspection."
+        },
+        {
+          "heading": "5.3 Supplier Documentation",
+          "content": "Maintain documentation for all cleaning products including: product name and specifications, supplier information, Safety Data Sheets (SDS) for each product showing safe use, hazards, first aid, and disposal, product labels with usage instructions, and certificates of food safety approval if applicable. Store SDS in an accessible location known to all staff — in the event of chemical exposure, emergency responders will need this information. When changing products or suppliers, ensure new products are food-safe and appropriate for intended use. Update the L+D plan if product changes require procedural modifications."
+        }
+      ]
+    },
+    {
+      "heading": "6. Staff Training and Safety",
+      "content": "All staff who perform cleaning must be trained on the L+D plan, proper cleaning procedures, correct use and dilution of chemicals, personal protective equipment requirements, and safety precautions. Training should be practical: demonstrate procedures, allow staff to practice under supervision, and verify competency before staff perform cleaning independently. Training should emphasize why cleaning is important for food safety, not just how to perform tasks.\n\nCleaning chemicals can be hazardous. Staff must understand risks and protective measures: wear appropriate PPE (gloves, eye protection, aprons) when handling concentrated chemicals, never mix different chemicals (particularly bleach with acids or ammonia — creates toxic gases), ensure adequate ventilation, store chemicals securely away from food, keep chemicals in original labeled containers or properly labeled transfer containers, and know first aid procedures for chemical exposure including eye wash station locations.",
+      "subsections": [
+        {
+          "heading": "6.1 Personal Protective Equipment",
+          "content": "Appropriate PPE for cleaning includes: chemical-resistant gloves (nitrile or rubber depending on chemicals used — check SDS for recommendations), eye protection (safety glasses or face shields) when handling concentrated chemicals or when splashing is possible, aprons or protective clothing to prevent chemical contact with skin and clothing, and non-slip footwear particularly when wet floors are involved. Provide PPE in appropriate sizes and replace when worn or damaged. Train staff on when PPE is required, how to put on and remove PPE correctly (particularly gloves — removing gloves without contaminating hands requires proper technique), and PPE limitations (gloves degrade over time and with chemical exposure, requiring replacement). Make PPE readily available where cleaning is performed."
+        },
+        {
+          "heading": "6.2 Chemical Storage and Handling",
+          "content": "Cleaning chemicals must be stored safely in a dedicated area separate from food, preferably in a locked storage room or cabinet. Storage area should be cool, dry, and well-ventilated. Store chemicals in original containers with labels intact. If transferring to smaller containers, label clearly with product name, dilution, date, and hazard warnings. Store incompatible chemicals separately (acids away from bases, bleach separate from everything). Keep SDS in or near the chemical storage area. Limit access to chemicals to trained staff. Implement procedures for chemical disposal — do not pour concentrated chemicals down drains; follow local regulations for hazardous waste disposal. Maintain an inventory of chemicals, checking periodically for expired products or damaged containers."
+        },
+        {
+          "heading": "6.3 Training and Competency Assessment",
+          "content": "Initial training on the L+D plan should include: overview of the plan and its importance, specific procedures for tasks the employee will perform, chemical safety including SDS, dilution procedures, PPE use, and emergency procedures for chemical exposure. Provide hands-on training with demonstration and supervised practice. Assess competency through observation and questioning before allowing independent cleaning. Refresher training should be provided annually or when procedures change. Document all training including date, content, trainer, and attendees. New products or equipment may require additional training. Involve experienced staff in training new employees — peer training is effective and empowers senior staff."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Daily Cleaning Tasks",
+      "items": [
+        "Clean and disinfect all food preparation surfaces after each use and at end of day",
+        "Clean and disinfect cutting boards after each use and between different food types",
+        "Sweep floors during service to remove debris and spills",
+        "Mop floors with detergent at end of service",
+        "Clean cooking equipment (stovetops, ovens, grills) after use",
+        "Clean and disinfect sinks and drains",
+        "Empty and clean waste containers and replace liners",
+        "Clean high-touch surfaces (door handles, light switches, refrigerator handles)",
+        "Clean and disinfect service equipment (trays, serving utensils)",
+        "Complete daily cleaning checklist with initials and date"
+      ]
+    },
+    {
+      "title": "Weekly Cleaning Tasks",
+      "items": [
+        "Deep clean refrigerators: remove items, clean interior, door seals, shelves",
+        "Clean extraction hood filters in degreaser or dishwasher",
+        "Clean walls and splash-backs in food preparation areas",
+        "Clean and disinfect under and behind movable equipment",
+        "Deep clean floors including corners and edges",
+        "Clean dry storage areas: remove items, clean shelves, check for pests, reorganize",
+        "Clean external surfaces of all equipment",
+        "Clean and disinfect trash and recycling collection areas",
+        "Check pest control stations and document findings",
+        "Review week's cleaning records for completeness"
+      ]
+    },
+    {
+      "title": "Monthly Deep Cleaning Tasks",
+      "items": [
+        "Deep clean ovens and grills: degrease interior, clean racks, clean door seals",
+        "Deep clean extraction hoods and accessible ductwork (or arrange professional cleaning)",
+        "Deep clean walk-in refrigerators and freezers: defrost if needed, full cleaning",
+        "Clean refrigerator and freezer condenser coils",
+        "Deep clean fryers: drain, clean interior, replace oil",
+        "Clean and descale dishwashers following manufacturer instructions",
+        "Clean ceilings and high surfaces",
+        "Clean light fixtures and replace bulbs as needed",
+        "Clean and organize chemical storage area",
+        "Review and update L+D plan for any procedural or equipment changes"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Clean as you go during food preparation rather than allowing surfaces and equipment to accumulate soil — frequent light cleaning is easier and more effective than occasional heavy cleaning",
+    "Organize cleaning tasks into daily, weekly, and monthly schedules so nothing is overlooked and tasks are distributed manageably across time",
+    "Post simplified cleaning procedures and product dilutions at relevant areas as quick references for staff during operations",
+    "Establish a policy that the person who uses equipment is responsible for cleaning it — this creates accountability and ensures cleaning occurs promptly",
+    "Use disposable food-safe cloths for high-risk surfaces if laundering is difficult to maintain hygiene consistently",
+    "Schedule deep cleaning tasks during closed periods when you can fully access equipment and areas without disrupting service",
+    "Involve all staff in maintaining cleanliness — create a culture where keeping the operation clean is everyone's responsibility, not just designated cleaners",
+    "Regularly audit your cleaning plan and procedures to ensure they remain effective and practical as operations, equipment, or staffing change"
+  ],
+  "glossary": {
+    "Cleaning": "The physical removal of visible soil, food residues, grease, and dirt from surfaces using water, detergent, and mechanical action",
+    "Disinfection": "The reduction of microorganisms on surfaces to safe levels using chemical disinfectants or heat",
+    "L+D Plan": "Limpieza y Desinfección Plan — a documented plan specifying cleaning and disinfection procedures, frequencies, products, and responsibilities for all areas and equipment",
+    "Food Contact Surface": "Any surface that comes into direct contact with food, including cutting boards, prep tables, utensils, and equipment surfaces",
+    "Contact Time": "The length of time a disinfectant must remain in contact with a surface to achieve its antimicrobial effect",
+    "Color-Coded System": "A system using different colored cleaning equipment for different areas to prevent cross-contamination",
+    "Safety Data Sheet (SDS)": "Document providing detailed information about a chemical including hazards, safe handling, first aid, and disposal",
+    "Prerequisite Programme": "Basic conditions and activities necessary to maintain a hygienic environment, supporting the HACCP system",
+    "Deep Cleaning": "Thorough, intensive cleaning including dismantling equipment, accessing hard-to-reach areas, and performing tasks not included in routine cleaning",
+    "Environmental Monitoring": "Microbiological testing of surfaces to verify cleaning effectiveness"
+  }
+}

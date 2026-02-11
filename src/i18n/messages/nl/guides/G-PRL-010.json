@@ -1,0 +1,180 @@
+{
+  "title": "Preventie van thermische belasting op horecawerkplekken",
+  "legalBasis": "Koninklijk Besluit 486/1997 inzake minimumvereisten voor gezondheid en veiligheid op de werkplek; Wet 31/1995 inzake Preventie van Arbeidsrisico's; NTP 322 (INSST) inzake beoordeling van het thermisch klimaat",
+  "summary": "Thermische belasting is een van de belangrijkste arbeidsrisico's in de horeca, met name in keukens waar werknemers regelmatig worden blootgesteld aan extreme hitte van ovens, grills, friteuses en kookplaten. Koninklijk Besluit 486/1997 stelt de minimumvoorwaarden vast voor werkplektemperatuur, luchtvochtigheid en ventilatie die werkgevers moeten handhaven om de gezondheid en veiligheid van werknemers te beschermen.\n\nDeze gids behandelt zowel hittestress als koudestress in horecasituaties, waaronder blootstelling aan keukenhitte, werk in koelcellen en buitenterrasservice tijdens extreme weersomstandigheden. De gids biedt praktische strategieën voor beoordeling, preventie en noodrespons in overeenstemming met de Spaanse arbeidsgezondheidsregelgeving.\n\nHet begrijpen van de preventie van thermische belasting is essentieel voor zowel horecamanagers als werknemers, aangezien langdurige blootstelling aan thermische extremen kan leiden tot zonnesteek, hitte-uitputting, onderkoeling en chronische gezondheidsaandoeningen. De Spaanse wet vereist dat werkgevers specifieke risico-inventarisaties uitvoeren voor thermische gevaren en passende beheersmaatregelen implementeren.",
+  "keyPoints": [
+    "KB 486/1997 stelt werkplektemperatuurlimieten vast: 17-27°C voor zittend werk, 14-25°C voor licht lichamelijk werk",
+    "Keukenomgevingen overschrijden regelmatig veilige temperatuurdrempels, waarvoor specifieke beheersmaatregelen nodig zijn",
+    "Werkgevers moeten zorgen voor adequate ventilatie, met minimale luchtverversingssnelheden afhankelijk van het type werkruimte",
+    "De relatieve luchtvochtigheid moet in alle werkruimten tussen 30% en 70% worden gehouden",
+    "Werknemers in koelruimten moeten beschikken over geschikte PBM's en beperkte blootstellingstijden",
+    "Hitteacclimatisatieperioden van 7-14 dagen worden aanbevolen voor nieuwe keukenwerknemers",
+    "Risico-inventarisaties voor thermische belasting moeten worden gedocumenteerd en jaarlijks worden herzien",
+    "Noodprotocollen voor zonnesteek en onderkoeling moeten worden opgesteld en getraind"
+  ],
+  "sections": [
+    {
+      "heading": "1. Wettelijk kader en verplichtingen",
+      "content": "De Spaanse wetgeving stelt een uitgebreid kader vast voor de bescherming van werknemers tegen thermische belasting. De belangrijkste regelgeving is Koninklijk Besluit 486/1997, dat specifieke omgevingsparameters voor werkplekken vaststelt, aangevuld door de algemene zorgplicht uit Wet 31/1995 inzake Preventie van Arbeidsrisico's.",
+      "subsections": [
+        {
+          "heading": "1.1 Temperatuurvereisten onder KB 486/1997",
+          "content": "Artikel 7 en Bijlage III van KB 486/1997 stellen specifieke temperatuurbereiken vast voor verschillende soorten werk. Voor zittend werk (zoals kantooradministratie in een restaurant) moet de temperatuur tussen 17°C en 27°C worden gehouden. Voor licht lichamelijk werk (zoals bediening) is het bereik 14°C tot 25°C. Deze limieten gelden voor gesloten werkruimten waar de omgevingscondities kunnen worden beheerst. De regelgeving vereist ook dat temperatuurverschillen tussen aangrenzende werkruimten bepaalde drempelwaarden niet overschrijden om thermische schok te voorkomen wanneer werknemers zich tussen ruimten verplaatsen."
+        },
+        {
+          "heading": "1.2 Ventilatie- en vochtigheidsnormen",
+          "content": "Dezelfde regelgeving schrijft minimale ventilatiedebieten voor van 30 m³/uur per werknemer in niet-verontreinigde omgevingen en 50 m³/uur waar verontreinigingen aanwezig zijn (zoals keukendampen). De relatieve luchtvochtigheid moet tussen 30% en 70% worden gehouden, behalve waar risico op statische elektriciteit bestaat, in welk geval het minimum stijgt naar 50%. Keukens vereisen verbeterde mechanische ventilatiesystemen, inclusief afzuigkappen boven alle warmtegenererende apparatuur."
+        },
+        {
+          "heading": "1.3 Werkgeversverplichtingen en werknemersrechten",
+          "content": "Op grond van Wet 31/1995 hebben werkgevers een absolute plicht om werknemers te beschermen tegen voorzienbare risico's, waaronder thermische gevaren. Dit omvat het uitvoeren van risico-inventarisaties (Art. 16), het verstrekken van informatie en opleiding (Art. 18-19), gezondheidstoezicht (Art. 22) en overleg met werknemersvertegenwoordigers. Werknemers hebben het recht om werk te weigeren bij ernstig en dreigend gevaar (Art. 21) en mogen hiervoor niet worden gedisciplineerd."
+        }
+      ]
+    },
+    {
+      "heading": "2. Hittestress in keukenomgevingen",
+      "content": "Keukens zijn het hoogste risicogebied voor hittestress in elke horecaonderneming. Omgevingstemperaturen nabij kookstations kunnen tijdens de piekservice 40°C overschrijden, wat de metabole warmte versterkt die wordt gegenereerd door intensieve fysieke activiteit. Een goede beoordeling en beheersing van hittestress vereist inzicht in zowel omgevings- als persoonlijke factoren.",
+      "subsections": [
+        {
+          "heading": "2.1 WBGT-indexbeoordeling",
+          "content": "De Wet Bulb Globe Temperature (WBGT)-index is de standaardmethode voor het beoordelen van hittestressblootstelling op werkplekken, zoals aanbevolen door het INSST (Instituto Nacional de Seguridad y Salud en el Trabajo) in hun technische richtlijn NTP 322. De WBGT combineert luchttemperatuur, vochtigheid, stralingstemperatuur en luchtbeweging in één enkele index. Voor matige werkintensiteit, kenmerkend voor keukenwerkzaamheden, is de referentie-WBGT-limiet 26°C. Metingen moeten op werkstationniveau worden uitgevoerd tijdens piekkookmomenten. Wanneer WBGT-waarden de referentielimieten overschrijden, moeten werkgevers beheersmaatregelen implementeren of de blootstellingstijd beperken door middel van werk-rustcycli."
+        },
+        {
+          "heading": "2.2 Technische beheersmaatregelen voor keukenhitte",
+          "content": "De hiërarchie van beheersmaatregelen vereist dat technische oplossingen prioriteit krijgen. Effectieve maatregelen omvatten: installatie van afzuigkappen met hoog vermogen en toevoerluchtsystemen die gekoelde verse lucht aanvoeren; plaatsing van luchtgordijnen tussen keuken en servicezones; gebruik van stralingsschermen bij grills en ovens; selectie van energiezuinige apparatuur die minder restwarmte genereert; handhaving van voldoende ruimte tussen warmtegenererende apparaten; en installatie van puntkoelsystemen gericht op werkstations. Airconditioning in keukenomgevingen moet zo worden ontworpen dat oncomfortabele tocht wordt vermeden en tegelijkertijd effectieve koeling wordt gehandhaafd."
+        },
+        {
+          "heading": "2.3 Werkorganisatie en hydratatie",
+          "content": "Organisatorische maatregelen zijn essentiële aanvullingen op technische maatregelen. Deze omvatten het implementeren van rotatieschema's zodat geen enkele werknemer continu aan de heetste stations wordt blootgesteld; het plannen van de meest hitte-intensieve voorbereidingstaken (zoals grootschalig koken) tijdens koelere perioden; het instellen van verplichte rustpauzes in koele ruimten tijdens verlengde serviceperioden; het bieden van onbeperkte toegang tot koel drinkwater (werkgevers moeten tijdens warme omstandigheden minimaal 250 ml per werknemer per uur verstrekken); en het toestaan van zelfgereguleerd werktempo waar mogelijk. Nieuwe werknemers moeten een hitteacclimatisatieprogramma van 7-14 dagen doorlopen met geleidelijk toenemende blootstelling."
+        }
+      ]
+    },
+    {
+      "heading": "3. Koudestress in opslag- en buitenruimten",
+      "content": "Koudestress treft horecawerknemers die regelmatig koelcellen, vriesruimten betreden of op buitenterrassen werken tijdens wintermaanden. Hoewel minder gebruikelijk dan hittestress in de horeca, kan blootstelling aan koude even gevaarlijk zijn en vereist specifieke preventieve maatregelen.",
+      "subsections": [
+        {
+          "heading": "3.1 Werken in koelcellen en vriesruimten",
+          "content": "Inloopkoelcellen (doorgaans 0-5°C) en vriesruimten (-18°C of lager) brengen aanzienlijke koudestressrisico's met zich mee. De Spaanse regelgeving vereist dat werknemers die deze ruimten betreden over geschikte geïsoleerde kleding beschikken, inclusief thermische handschoenen, en dat de blootstellingstijden worden beperkt. Voor werk in vriesruimten bij -18°C mag de ononderbroken blootstelling niet langer dan 60 minuten duren zonder opwarmpauze. Koelcellen moeten beschikken over interne deurontgrendelingsmechanismen en alarmsystemen als veiligheidsvereiste. Werknemers mogen nooit alleen koelruimten betreden en er moet een buddysysteem of een regelmatig check-inprotocol worden ingesteld."
+        },
+        {
+          "heading": "3.2 Buitenterraswerk bij extreme temperaturen",
+          "content": "Terraspersoneel wordt afhankelijk van het seizoen blootgesteld aan zowel hitte- als koude-extremen. Tijdens zomerse hittegolven, wanneer de omgevingstemperatuur hoger is dan 35°C, moeten werkgevers zonweringsconstructies, extra hydratatie en aangepaste roosters bieden. Tijdens de winter hebben buitenwerknemers geschikte koudeweerkleding en toegang tot verwarmde pauzeruimten nodig. Gemeentelijke regelgeving in veel Spaanse steden vereist nu terrasverwarming of -koeling voor klantcomfort, maar werkgevers moeten ervoor zorgen dat deze ook werknemers ten goede komen. De risico-inventarisatie van de werkgever moet specifiek ingaan op seizoensgebonden buitenwerkomstandigheden."
+        },
+        {
+          "heading": "3.3 Overgang tussen temperatuurzones",
+          "content": "Horecawerknemers verplaatsen zich regelmatig tussen dramatisch verschillende thermische omgevingen, zoals van een hete keuken naar een koelcel of van een geklimatiseerde eetzaal naar een zonbeschenen terras. Deze snelle overgangen kunnen thermische schok veroorzaken en het risico op cardiovasculaire incidenten verhogen. Preventieve maatregelen omvatten het creëren van overgangszones met tussentemperaturen, het toestaan van korte acclimatisatiepauzes bij het verplaatsen tussen extreme omgevingen, en het zorgen dat werkkleding gemakkelijk gelaagd kan worden voor thermische aanpasbaarheid."
+        }
+      ]
+    },
+    {
+      "heading": "4. Gezondheidstoezicht en monitoring",
+      "content": "Effectieve preventie van thermische belasting vereist zowel omgevingsmonitoring als programma's voor gezondheidstoezicht van werknemers. De Spaanse wet schrijft specifieke verplichtingen voor gezondheidstoezicht voor bij werknemers die worden blootgesteld aan thermische gevaren.",
+      "subsections": [
+        {
+          "heading": "4.1 Omgevingsmonitoringprogramma's",
+          "content": "Werkgevers moeten continue of periodieke omgevingsmonitoring van temperatuur, vochtigheid en luchtsnelheid in alle werkgebieden implementeren. In keukens moet monitoring worden uitgevoerd tijdens piekservicemomenten wanneer de thermische belasting het hoogst is. Meetapparatuur moet zijn gekalibreerd en registraties moeten worden bijgehouden. Digitale temperatuur- en vochtigheidsloggers geplaatst bij belangrijke werkstations bieden doorlopende gegevens voor risicobeoordeling. Resultaten moeten maandelijks worden beoordeeld en na eventuele wijzigingen in apparatuurindeling, ventilatiesystemen of werkprocessen."
+        },
+        {
+          "heading": "4.2 Gezondheidsbeoordelingen van werknemers",
+          "content": "Op grond van Artikel 22 van Wet 31/1995 moeten werkgevers specifiek gezondheidstoezicht aanbieden aan werknemers die aan thermische risico's worden blootgesteld. Dit omvat medische keuringen vóór indiensttreding om werknemers te identificeren met aandoeningen die de kwetsbaarheid voor thermische belasting verhogen (hart- en vaatziekten, diabetes, obesitas, bepaalde medicijnen), periodieke gezondheidscontroles tijdens het dienstverband, en terugkeer-naar-werkbeoordelingen na hittegerelateerde ziekte. Gezondheidstoezicht moet worden uitgevoerd door de preventiedienstverlenende instantie en resultaten zijn vertrouwelijk. Werknemers kunnen niet worden verplicht om gezondheidstoezicht te ondergaan, behalve waar dit wettelijk verplicht is voor de openbare veiligheid."
+        }
+      ]
+    },
+    {
+      "heading": "5. Noodresponsprocedures",
+      "content": "Ondanks preventieve maatregelen kunnen thermische noodsituaties optreden. Elk horecabedrijf moet beschikken over gedocumenteerde noodprocedures voor zonnesteek, hitte-uitputting en onderkoeling, met getrainde EHBO'ers beschikbaar gedurende alle bedrijfsuren.",
+      "subsections": [
+        {
+          "heading": "5.1 Reactie op zonnesteek en hitte-uitputting",
+          "content": "Zonnesteek is een medisch noodgeval dat onmiddellijk handelen vereist. Het noodprotocol moet omvatten: herkennen van symptomen (verwarring, bewustzijnsverlies, hete/droge huid, kerntemperatuur boven 40°C); onmiddellijk bellen van hulpdiensten (112); de werknemer naar een koele ruimte verplaatsen; beginnen met actieve koeling met koud water, ijspakkingen op nek/oksels/lies en waaieren; en vitale functies monitoren totdat paramedici arriveren. Hitte-uitputting, hoewel minder acuut gevaarlijk, vereist nog steeds verwijdering uit de hete omgeving, rehydratatie met elektrolytenoplossingen, rust in een koele ruimte en medische beoordeling voordat het werk wordt hervat."
+        },
+        {
+          "heading": "5.2 Reactie op onderkoeling",
+          "content": "Onderkoeling door blootstelling aan koude opslag vereist: herkennen van symptomen (rillen, verwarring, slaperigheid, onduidelijke spraak); de werknemer naar een warme omgeving verplaatsen; natte kleding uittrekken; inwikkelen in warme dekens, te beginnen bij de romp; warme (niet hete) zoete dranken geven als de werknemer bij bewustzijn is; hulpdiensten bellen bij matige tot ernstige gevallen (kerntemperatuur onder 32°C); en snelle opwarming van ledematen vermijden, wat hartcomplicaties kan veroorzaken."
+        },
+        {
+          "heading": "5.3 Documentatie en rapportage",
+          "content": "Alle incidenten met thermische belasting moeten worden gedocumenteerd, inclusief bijna-ongelukken. Op grond van de Spaanse wet moeten arbeidsongevallen en beroepsziekten worden gemeld via het elektronische Delt@-systeem. Het incidentrapport moet de omgevingscondities op dat moment bevatten, de activiteiten en blootstellingsduur van de werknemer, waargenomen symptomen, verleende eerste hulp en ontvangen medische behandeling. Na elk incident moet de risico-inventarisatie worden herzien en moeten preventieve maatregelen worden bijgewerkt. Het Comité voor Veiligheid en Gezondheid (indien van toepassing) moet van alle incidenten op de hoogte worden gesteld."
+        }
+      ]
+    },
+    {
+      "heading": "6. Opleiding en bewustwording",
+      "content": "Effectieve preventie van thermische belasting is afhankelijk van het feit dat alle werknemers de risico's begrijpen en weten hoe ze zichzelf en hun collega's kunnen beschermen. Opleiding is een wettelijke vereiste op grond van Artikelen 18 en 19 van Wet 31/1995.",
+      "subsections": [
+        {
+          "heading": "6.1 Initiële en doorlopende opleidingsvereisten",
+          "content": "Alle horecawerknemers moeten een bewustwordingstraining over thermische belasting ontvangen bij indiensttreding, bij verandering van functie of bij introductie van nieuwe apparatuur of processen. De opleiding moet het volgende behandelen: herkennen van de tekenen en symptomen van zonnesteek, hitte-uitputting en onderkoeling; begrip van persoonlijke risicofactoren; correct gebruik van koelapparatuur en PBM's; hydratatie-eisen; werk-rustschema's; wanneer en hoe noodprocedures te activeren; en meldingsverplichtingen. De opleiding moet praktisch zijn, een hands-on demonstratie van koel- en EHBO-apparatuur bevatten en worden gegeven in een taal die de werknemer begrijpt."
+        },
+        {
+          "heading": "6.2 Verantwoordelijkheden van leidinggevenden",
+          "content": "Keukenmanagers, hoofdkoks en ploegleiders hebben aanvullende verantwoordelijkheden voor het beheer van thermische belasting. Zij moeten de omgevingsomstandigheden tijdens de service monitoren, werknemers observeren op vroege tekenen van hitteziekten, hydratatie- en rustpauzeplanningen handhaven, ervoor zorgen dat ventilatiesystemen naar behoren functioneren, werkbelasting aanpassen tijdens extreme hitteperioden en de paraatheid voor noodrespons handhaven. Opleidingen voor leidinggevenden moeten WBGT-beoordelingsinterpretatie omvatten en de bevoegdheid om werkzaamheden aan te passen wanneer de thermische omstandigheden gevaarlijk worden."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Dagelijkse checklist thermische veiligheid in de keuken",
+      "items": [
+        "Controleer of alle ventilatie- en afzuigsystemen operationeel zijn vóór de service",
+        "Verifieer temperatuur- en vochtigheidsmetingen bij belangrijke werkstations",
+        "Zorg ervoor dat voldoende drinkwatervoorziening beschikbaar en toegankelijk is",
+        "Bevestig dat alle koelventilatoren en puntkoelsystemen functioneren",
+        "Beoordeel de personeelsbezetting om rotatie bij hitte-intensieve stations mogelijk te maken",
+        "Controleer of de temperatuuralarmen van koelcellen en vriesruimten werken",
+        "Verifieer of de noodontgrendelingsmechanismen van koelcellen naar behoren functioneren",
+        "Informeer het personeel over de huidige weersomstandigheden en eventuele speciale voorzorgsmaatregelen"
+      ]
+    },
+    {
+      "title": "Checklist risico-inventarisatie thermische belasting",
+      "items": [
+        "Meet de omgevingstemperatuur bij alle werkstations tijdens piekperioden",
+        "Bereken de WBGT-index voor keukenzones nabij warmtebronnen",
+        "Beoordeel de vochtigheidsniveaus in alle gesloten werkruimten",
+        "Evalueer de effectiviteit van ventilatie- en afzuigsystemen",
+        "Beoordeel werk-rustschema's aan de hand van thermische blootstellingsgegevens",
+        "Identificeer werknemers met medische aandoeningen die de thermische kwetsbaarheid verhogen",
+        "Controleer de PBM-voorziening voor koelopslagmedewerkers",
+        "Documenteer bevindingen en werk het preventieplan dienovereenkomstig bij",
+        "Beoordeel en actualiseer noodresponsprocedures",
+        "Verifieer of EHBO-voorraden thermische nooduitrusting bevatten"
+      ]
+    },
+    {
+      "title": "Checklist seizoensparaatheid",
+      "items": [
+        "Onderhoud en test alle airconditioningsystemen vóór de zomer",
+        "Beoordeel de beschermingsmaatregelen voor buitenterrasmedewerkers voor het komende seizoen",
+        "Werk het hittegolfresponsprotocol bij met actuele noodcontactgegevens",
+        "Controleer de voorraad geïsoleerde kleding voor werkzaamheden bij koud weer",
+        "Plan HVAC-onderhoud en filtervervanging in",
+        "Beoordeel en werk de thermische risico-inventarisatie bij voor seizoensomstandigheden"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Installeer realtime digitale temperatuur- en vochtigheidsdisplays in keukenzones die voor al het personeel zichtbaar zijn",
+    "Verstrek elektrolytvervangende dranken naast water tijdens hitte-intensieve serviceperioden",
+    "Implementeer een buddysysteem waarbij werknemers elkaar monitoren op tekenen van hitteziekten",
+    "Plan intensief voorbereidingswerk (zoals bouillon trekken en grootschalig koken) in de ochtenduren voordat de omgevingshitte piekt",
+    "Handhaaf waar mogelijk een minimale afstand van 2 meter tussen werknemers en apparatuur met hoge temperaturen",
+    "Gebruik geïsoleerde warmhoudapparatuur om de noodzaak van continu koken op hoge temperatuur te verminderen",
+    "Creëer een aangewezen afkoelruimte binnen handbereik van de keuken met zitgelegenheid en koud water",
+    "Voer pre-shiftbriefings uit over thermische omstandigheden tijdens extreme weersperioden"
+  ],
+  "glossary": {
+    "WBGT (Wet Bulb Globe Temperature)": "Een samengestelde index die luchttemperatuur, vochtigheid, windsnelheid en stralingstemperatuur combineert om het risico op hittestressblootstelling bij werknemers te beoordelen.",
+    "Zonnesteek": "Een levensbedreigende aandoening waarbij de temperatuurregulatie van het lichaam faalt, de kerntemperatuur hoger is dan 40°C en het centrale zenuwstelsel is aangetast. Vereist onmiddellijke spoedeisende behandeling.",
+    "Hitte-uitputting": "Een aandoening veroorzaakt door overmatig verlies van water en zout door transpiratie, gekenmerkt door hevig zweten, zwakte, misselijkheid en duizeligheid. Gaat vooraf aan zonnesteek indien onbehandeld.",
+    "Onderkoeling": "Een gevaarlijke daling van de kernlichaamstemperatuur onder 35°C, doorgaans veroorzaakt door langdurige blootstelling aan koude, leidend tot rillen, verwarring en mogelijk hartstilstand.",
+    "Hitteacclimatisatie": "Het fysiologische aanpassingsproces gedurende 7-14 dagen waarbij het lichaam van een werknemer beter in staat wordt om de temperatuur te reguleren door verbeterd zweten en cardiovasculaire efficiëntie.",
+    "Metabole warmte": "Interne lichaamswarmte gegenereerd door fysieke activiteit en metabole processen, die zich optelt bij de omgevingswarmtebelasting en het risico op thermische belasting verhoogt.",
+    "Preventiedienstverlenende instantie": "De arbopreventierdienst (intern of extern) die elke werkgever moet inschakelen voor het uitvoeren van risico-inventarisaties, gezondheidstoezicht en het verstrekken van technisch advies.",
+    "NTP (Nota Técnica de Prevención)": "Technische preventienota's gepubliceerd door het INSST die gedetailleerde richtlijnen bieden over arbeidsgezondheidsen veiligheidsonderwerpen, waaronder methoden voor beoordeling van thermische belasting.",
+    "PBM (Persoonlijke Beschermingsmiddelen)": "Uitrusting gedragen door werknemers om blootstelling aan gevaren te minimaliseren, waaronder geïsoleerde handschoenen, thermische kleding en hittebestendige schorten in de context van thermische bescherming.",
+    "Delt@-systeem": "Het Spaanse elektronische systeem voor het melden van arbeidsongevallen en beroepsziekten aan de arbeidsautoriteiten, verplicht voor alle incidenten op de werkplek."
+  }
+}

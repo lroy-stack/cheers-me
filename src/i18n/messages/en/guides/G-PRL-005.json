@@ -1,0 +1,198 @@
+{
+  "title": "Evacuation Protocol",
+  "legalBasis": "Spanish Royal Decree 393/2007 on self-protection standards; Spanish Technical Building Code DB-SI (Fire Safety Document); RD 314/2006 establishing the Technical Building Code; Law 31/1995 on Occupational Risk Prevention",
+  "summary": "Evacuation protocol defines the specific procedures that all staff and customers must follow when the emergency alarm sounds or evacuation is ordered. Unlike the broader emergency plan that addresses multiple scenarios and organizational structure, the evacuation protocol focuses specifically on the critical task of getting everyone out of the building safely and efficiently when danger threatens. In hospitality establishments where many occupants are unfamiliar with the building layout and may include vulnerable populations, a well-designed and practiced evacuation protocol can prevent panic and save lives.\n\nThe protocol must address several key elements: recognition of the evacuation signal (alarm sound, verbal announcement, other warning means), immediate actions upon hearing the signal (stop work, prepare to leave, do not ignore the alarm), safe movement along designated evacuation routes to exits, specific responsibilities of staff members during evacuation (sweeping areas, assisting customers, closing doors), assembly at designated points outside the building, and accountability procedures to verify that everyone has evacuated safely.\n\nEffective evacuation requires that the protocol be clearly communicated to all staff, regularly practiced through drills, visibly posted and reinforced through signage, and consistently enforced. One of the most dangerous habits in workplaces is alarm desensitization — when alarms sound frequently for testing or minor issues, people begin to ignore them, creating a 'cry wolf' effect. The protocol must emphasize that every alarm must be taken seriously and evacuation must begin immediately, even if staff suspect it is a false alarm or drill. Only when safely outside and accountability is confirmed can the situation be assessed.",
+  "keyPoints": [
+    "Evacuate immediately when the alarm sounds — never ignore an alarm even if you suspect it is a drill or false alarm",
+    "Know at least two evacuation routes from every area where you work — primary route and alternative if primary is blocked",
+    "Staff must assist customers to evacuate safely, especially those with mobility difficulties or who do not speak Spanish",
+    "Close doors and windows as you leave if time and safety permit — this limits smoke and fire spread",
+    "Never use elevators during evacuation — always use stairs",
+    "Do not stop to collect personal belongings — leave immediately with nothing more than what you are carrying",
+    "Do not re-enter the building for any reason until the all-clear is given by fire services or emergency coordinator",
+    "Report immediately to the assembly point and remain there until accountability is complete"
+  ],
+  "sections": [
+    {
+      "heading": "1. Building Code Requirements for Evacuation",
+      "content": "The Spanish Technical Building Code (Código Técnico de la Edificación) Document DB-SI on Fire Safety establishes detailed requirements for building evacuation capability. These requirements are mandatory for all buildings and form the physical basis upon which evacuation protocols must be built. Understanding these requirements helps staff appreciate why certain routes must be kept clear and why specific procedures exist.\n\nKey building code requirements include: minimum number of exits based on occupancy and use (generally at least two independent exits for occupancies above specified thresholds), maximum travel distance from any point to an exit (varies by use and fire resistance of the building, typically 25-50 meters), minimum width of exits and evacuation routes based on the number of occupants they must serve (typically 80-100 cm per unit of passage), fire resistance of evacuation routes (protected corridors and stairways must resist fire spread for the required evacuation time), emergency lighting to minimum specified illumination levels, and clear signage marking all exits and routes.\n\nThese requirements are designed based on human behavior research and fire dynamics to ensure that all occupants can reach a safe exit before fire or smoke makes evacuation impossible. The protocol must work within these physical parameters — you cannot evacuate more people faster than the physical evacuation capacity allows. This is why maximum occupancy limits must be respected and why evacuation routes must never be obstructed.",
+      "subsections": [
+        {
+          "heading": "1.1 Occupancy and Capacity Limits",
+          "content": "Every establishment has a maximum approved occupancy based on the evacuation capacity of its exits and routes. This occupancy appears on the activity license and must not be exceeded. Exceeding approved occupancy creates dangerous overcrowding that can slow or prevent safe evacuation. In fire safety terms, occupancy is not just about comfort or service quality — it is a critical safety parameter directly linked to survival in emergency evacuation.\n\nCapacity calculation methods vary by space type. For seated restaurants, it is typically one person per seat plus staff. For standing areas (bars, cocktail areas), it is based on usable floor area, typically 0.5 to 1.5 square meters per person depending on specific use. Mixed-use spaces combine these calculations. Understanding how your capacity limit was determined helps in managing adherence to it during busy periods."
+        },
+        {
+          "heading": "1.2 Exit and Route Maintenance",
+          "content": "Evacuation routes and exits must be kept permanently clear and available during all times the building is occupied. This is not just good practice — it is a legal requirement enforceable by fire authorities and labor inspection. Common violations in hospitality settings include: blocking fire exits with storage, deliveries, or furniture during quiet periods; locking or chaining emergency exits to prevent unauthorized use (exits may have alarmed panic hardware, but must never be locked during occupancy); allowing evacuation corridors to be narrowed by furniture, equipment, or decorations; and obstructing or covering exit signage.\n\nFire doors in evacuation routes must be kept closed (if they are designated fire doors that compartmentalize the building) or held open only by automatic release mechanisms linked to the fire alarm system. Wedging fire doors open with doorstops or other means defeats their purpose and is a serious fire safety violation. All doors on evacuation routes must open in the direction of travel and must not require keys or tools to open from the inside."
+        },
+        {
+          "heading": "1.3 Emergency Lighting and Signage",
+          "content": "Emergency lighting must illuminate all evacuation routes automatically when mains power fails, providing minimum illumination levels (typically 1 lux on the center line of evacuation routes) for a minimum duration (typically 1 hour). Monthly testing of emergency lighting is required to verify functionality. Exit signs must be illuminated (either internally lit or externally illuminated) and meet ISO 7010 standards using the green running person symbol.\n\nSignage must be positioned so that from any point on an evacuation route, the direction to the nearest exit is clearly indicated. Additional directional signs are needed at all decision points (intersections, changes of direction, stairway entrances). In hospitality settings with international clientele, symbol-based signage is preferable to text-based signs. Photoluminescent (glow-in-dark) directional markings at floor level can provide additional guidance if smoke reduces visibility."
+        }
+      ]
+    },
+    {
+      "heading": "2. Evacuation Signals and Immediate Actions",
+      "content": "The evacuation protocol begins with recognition of the evacuation signal. All staff must be trained to recognize the evacuation signal(s) used in their establishment and understand that any alarm or evacuation announcement requires immediate action. The most common signal is the automatic fire alarm system (distinctive continuous or pulsing sound different from any other building alarms or sounds). In some establishments, a verbal announcement system may be used either independently or in conjunction with sounders. Some larger venues use phased evacuation procedures where different areas evacuate in sequence based on proximity to the hazard.\n\nUpon hearing the evacuation signal, staff must immediately stop work, alert others in the immediate vicinity who may not have heard the alarm, prepare to leave by shutting down equipment if this can be done in seconds (turn off stoves, close gas valves, save computer work), and begin moving toward the designated evacuation route. Do not waste time investigating the cause of the alarm, gathering personal belongings, or finishing tasks. The protocol is clear: alarm sounds, you evacuate. Assessment of whether the alarm was justified happens after everyone is safely outside.",
+      "subsections": [
+        {
+          "heading": "2.1 Kitchen Shutdown Procedures",
+          "content": "Kitchen staff must know the rapid shutdown procedures for gas and electrical equipment. If time permits (typically only a few seconds), turn off all cooking equipment, close gas shut-off valves, and switch off electrical equipment at wall switches or panels. However, personal safety always takes priority — if conditions are immediately dangerous (visible fire, heavy smoke, blocked routes), leave immediately without attempting shutdown. Do not spend time covering or moving food or equipment.\n\nSome modern kitchens have emergency shutdown panels that cut gas and high-power electrical circuits with a single action — if your kitchen has this, all kitchen staff must know its location and how to activate it. Activation should be one of the last actions taken before leaving the kitchen, as it will disable all equipment including ventilation that may be helping to control smoke."
+        },
+        {
+          "heading": "2.2 Customer Alerting and Guidance",
+          "content": "Front-of-house staff have a critical responsibility to alert customers to the evacuation and guide them to exits. Many customers' first instinct when an alarm sounds is to continue their meal or wait for information — staff must overcome this inertia by clearly and calmly communicating that evacuation is required immediately. Use clear, simple language: 'The fire alarm has sounded. We must evacuate the building immediately. Please leave your belongings and follow me to the nearest exit.'\n\nStaff must project calm authority — if staff appear panicked, customers will panic; if staff appear casual as though the alarm is unimportant, customers will be slow to respond. The tone should be firm and urgent but not frantic. Staff should move toward exits while speaking, demonstrating through action that evacuation is happening now. In establishments with international clientele, staff should be trained in basic emergency phrases in common languages: English, French, German, Chinese as appropriate to your customer base."
+        },
+        {
+          "heading": "2.3 Handling Reluctant Evacuees",
+          "content": "Some customers may be reluctant to evacuate, wanting to finish their meal, pay their bill, collect belongings from coat check, or use the bathroom. Staff must be empathetic but firm: these activities can resume after the all-clear is given, but right now everyone must leave. Explain that fire regulations require complete evacuation and that the customer can return once it is confirmed safe to do so. In most cases, calm explanation is sufficient.\n\nIf a customer absolutely refuses to evacuate, do not physically force them or waste time arguing — note their location and report it immediately to the fire warden or emergency coordinator so that this information can be provided to emergency services. Your priority must be evacuating the majority who are complying, not spending precious minutes arguing with one recalcitrant individual. Fire services have authority and capability to compel evacuation if necessary."
+        }
+      ]
+    },
+    {
+      "heading": "3. Evacuation Route Selection and Movement",
+      "content": "Effective evacuation requires that all staff know multiple routes from every area where they work. The primary evacuation route is the normal, shortest route to an exit. However, fire, smoke, or other hazards may block the primary route, making an alternative route necessary. Staff must know at least one alternative route from each area and understand the decision criteria for when to use it: if you encounter smoke, heat, or obstacles on the primary route, turn back and use an alternative route.\n\nMovement along evacuation routes should be purposeful but not running — running creates risks of falls and collisions, especially in crowded conditions. Keep to the right (or left, depending on established convention) to allow faster movers to pass. Remain aware of others around you, particularly those who may need assistance. If you encounter someone who has fallen or is in distress, assist them if it is safe to do so, or alert others to help, but do not create a secondary incident by endangering yourself.",
+      "subsections": [
+        {
+          "heading": "3.1 Smoke and Heat Considerations",
+          "content": "Smoke is often more immediately dangerous than fire itself, as toxic smoke can cause incapacitation or death within minutes. If you encounter smoke in an evacuation route, stay low (smoke and heat rise, so the clearest air is near the floor), cover your mouth and nose with cloth if available, and move quickly through the smoke if the route is short. However, if the smoke is thick (visibility less than a few meters) or you are uncertain of the route, do not proceed — turn back and use an alternative route or seek refuge.\n\nTest doors before opening them during evacuation: touch the door with the back of your hand (more sensitive to heat than palm) — if it is hot, do not open it as there may be fire on the other side. Open doors slowly and be prepared to close them immediately if smoke or fire enters. When proceeding through doors, close them behind you if you are the last person through — closed doors significantly slow fire and smoke spread, providing more time for others to evacuate."
+        },
+        {
+          "heading": "3.2 Using Stairways Safely",
+          "content": "Never use elevators during evacuation — elevators may fail during fire, stop at the fire floor, or expose occupants to smoke. Always use stairs. In crowded stairway evacuation, do not push or run. Keep one hand on the handrail for stability. If you are carrying someone or assisting someone with mobility difficulties, stay to one side to allow others to pass. If stairways are congested, be patient — attempting to force through creates dangerous crowding.\n\nIn buildings with multiple stairways, the evacuation plan should designate which stairway serves which areas to distribute the evacuation load. However, if your designated stairway is blocked or congested, use an alternative. The goal is to get everyone out, not to rigidly follow a plan that is not working in practice. Stairway doors are typically fire doors that should be kept closed — opening them to enter the stairway is fine, but ensure they close behind you."
+        },
+        {
+          "heading": "3.3 Assisting Others During Evacuation",
+          "content": "Staff have a responsibility to assist customers and colleagues who need help evacuating. This may include: guiding people who are disoriented or unfamiliar with the building, assisting elderly or mobility-impaired persons (offering an arm for support, helping steady them on stairs), carrying young children if parents are struggling, alerting others to hazards (wet floors, obstacles), and checking that toilets, changing rooms, and other ancillary spaces are evacuated (people in these spaces may not hear the alarm clearly).\n\nHowever, staff must balance helping others with their own safety — do not endanger yourself to the point where you become a casualty requiring rescue. If someone cannot evacuate independently and you cannot safely assist them (for example, a wheelchair user on an upper floor where you cannot safely carry them down stairs), help them to a refuge area if available, ensure they have a phone to communicate with emergency services, and inform the fire warden or emergency coordinator immediately so professional assistance can be requested."
+        }
+      ]
+    },
+    {
+      "heading": "4. Assembly Points and Accountability",
+      "content": "The evacuation is not complete when you exit the building — staff and customers must proceed to the designated assembly point and remain there until accountability is confirmed and the all-clear is given. Assembly points serve two critical functions: they ensure evacuees are at a safe distance from the building, and they provide a controlled location for conducting headcounts and identifying anyone who may still be inside.\n\nAssembly points must be clearly designated, communicated to all staff, and marked if possible (signage, flags, or other visible markers). The location must be far enough from the building to be safe from fire, smoke, falling debris, or building collapse, but not so far that people will not go there or that headcount is impractical. In urban locations, assembly points are often at specific street corners, plazas, or parking areas. Multiple assembly points may be designated if building layout or site conditions make a single point impractical.",
+      "subsections": [
+        {
+          "heading": "4.1 Staff Accountability",
+          "content": "Accountability for staff is conducted through roll call using the current shift roster or sign-in sheet. The emergency coordinator or designated person calls each staff member's name and verifies their presence. Any staff member who does not respond must be investigated — they may have been off-site at the time of evacuation (delivery, errand), may have evacuated to a different location, or may still be inside the building. Do not assume — verify.\n\nFire wardens play a critical role in accountability by reporting that their designated areas have been swept and are clear of people. This area-clearance information, combined with staff roll call, provides strong confidence that the building is empty even though a precise headcount of all occupants may not be possible. If anyone is confirmed or suspected to still be inside, this information must be provided immediately to emergency services upon their arrival — do not re-enter to search yourself."
+        },
+        {
+          "heading": "4.2 Customer and Visitor Accountability",
+          "content": "Complete accountability for customers and visitors is more challenging than for staff, as you may not have a definitive list of all persons present. For restaurants with reservations, the reservation list provides a starting point, but it does not account for walk-in customers, parties larger or smaller than reserved, early departures, or late arrivals. For bars and open venues, there is typically no occupant list at all.\n\nPractical approaches to customer accountability include: asking front-of-house staff who evacuated with customers to estimate numbers and identify any known customers or parties who are not present; checking for any abandoned possessions (coats, bags, phones) that might indicate someone did not evacuate; asking assembled customers if anyone is aware of family members or companions who are not present. This information is necessarily imperfect, which is why area-sweeping by fire wardens is so important — visual confirmation that areas are clear is more reliable than attempted headcounts of unknown populations."
+        },
+        {
+          "heading": "4.3 Maintaining Control at Assembly Point",
+          "content": "Once assembled, evacuees must remain at the assembly point until the all-clear is given. This is often the most challenging part of the evacuation protocol because adrenaline fades, cold or weather becomes uncomfortable, and people want to leave or re-enter to collect belongings. Staff must maintain control of the assembly area, politely but firmly preventing people from leaving until accountability is complete and emergency services have given the all-clear.\n\nProvide information to assembled evacuees: explain that accountability is being conducted, that emergency services are en route or have arrived, and that everyone will be able to re-enter or collect belongings as soon as it is confirmed safe. For customers, provide reassurance that their belongings will be secure and that the establishment will assist with any immediate needs (calling taxis, contacting hotels, rescheduling reservations) once the emergency is resolved. In cold or wet weather, consider whether any nearby indoor location can be used for temporary shelter while maintaining the ability to account for everyone."
+        }
+      ]
+    },
+    {
+      "heading": "5. Special Considerations and Scenarios",
+      "content": "The basic evacuation protocol must be adapted for various special scenarios that may occur in hospitality operations. These include evacuations during peak service periods with high occupancy, night evacuations when visibility is reduced and people may be impaired by alcohol consumption, evacuations affecting areas with limited mobility such as basement dining rooms or upper-floor venues, and partial evacuations where only part of the building is affected but the scope is not immediately clear. Each scenario presents unique challenges requiring specific procedural adaptations.\n\nPlanning and practicing for these scenarios through tabletop exercises or targeted drills helps staff develop the judgment and flexibility to apply the protocol effectively under varying conditions. The fundamental principle remains constant — when evacuation is required, get everyone out safely and efficiently — but the specific tactics may need to adapt to circumstances.",
+      "subsections": [
+        {
+          "heading": "5.1 High-Occupancy Evacuations",
+          "content": "Evacuating a full dining room or a crowded bar presents crowd management challenges. High occupancy increases evacuation time, creates potential for congestion at exits, and makes individual assistance more difficult. Staff must work together to manage flow: position staff at key decision points (top of stairs, corridor intersections) to direct people to less-congested routes, prevent bottlenecks by directing people to use all available exits not just the most obvious one, and maintain calm by projecting authority and control.\n\nIn very high-occupancy scenarios, phased evacuation may be preferable to simultaneous evacuation of all areas, but this requires careful coordination and clear communication. Areas closest to the hazard evacuate first, followed by adjacent areas, then the remainder of the building. This approach is typically only used in very large buildings with comprehensive alarm systems allowing different zones to be alerted separately. Most hospitality establishments use simultaneous evacuation of all areas."
+        },
+        {
+          "heading": "5.2 Basement and Upper-Floor Evacuations",
+          "content": "Basement venues present special challenges as evacuation is upward against the natural flow of escape. Basement dining rooms or function spaces must have clearly marked exits, typically leading to ground level via protected stairways. Staff must be particularly vigilant about keeping these evacuation routes clear. In smoke conditions, basement areas may fill rapidly as smoke descends stairways, making rapid evacuation critical.\n\nUpper-floor venues in multi-story buildings require evacuation via stairways. If the establishment occupies one floor of a multi-use building, the evacuation protocol must address whether to evacuate down and out of the building (preferred in most scenarios) or to a refuge area on the same floor if the stairway is compromised. Coordination with building management and other tenants is essential to ensure compatible evacuation procedures."
+        },
+        {
+          "heading": "5.3 Outdoor Areas and Terraces",
+          "content": "Hospitality establishments with outdoor dining areas, terraces, or patios must include these in the evacuation protocol. Outdoor areas are often perceived as inherently safe, but they may still need evacuation if they are accessed through the building, if they are above ground level, or if they present other hazards. The evacuation signal must be audible in all outdoor areas (outdoor alarm sounders or staff notification), and clear evacuation routes from outdoor areas to assembly points must be designated.\n\nIf outdoor areas have independent access separate from the building (e.g., ground-level terrace with direct access to the street), these may serve as refuge areas for the building evacuation. However, this requires careful coordination to ensure that people evacuating to the terrace do not then attempt to enter the building through terrace doors."
+        }
+      ]
+    },
+    {
+      "heading": "6. Post-Evacuation Procedures",
+      "content": "The evacuation protocol does not end when everyone is assembled outside — the final phase addresses post-evacuation activities including liaison with emergency services, decision-making about re-entry, care for evacuees who may need assistance, and documentation of the event. These post-evacuation procedures bridge from the emergency response phase to recovery and return to normal operations.\n\nPost-evacuation is also when stress reactions may emerge — adrenaline fades and people may experience delayed shock, anxiety, or physiological reactions. Staff should watch for anyone showing signs of distress and provide appropriate support including medical attention if needed. Particularly after evacuations involving actual fire, injury, or prolonged displacement, staff should be offered support and debriefing.",
+      "subsections": [
+        {
+          "heading": "6.1 Emergency Services Liaison",
+          "content": "When emergency services arrive, the emergency coordinator should immediately provide a briefing on the situation: nature and location of the emergency, actions taken so far, results of accountability (are all persons accounted for, is anyone suspected to be inside), any special hazards or risks (gas bottles, chemical storage, structural concerns), and any injuries or medical situations requiring attention. Provide building plans and access to keyholders or building management.\n\nOnce emergency services take command, the establishment's role shifts to support. Maintain control of evacuees at the assembly point to prevent people from interfering with emergency operations or attempting unauthorized re-entry. Designate a staff member to remain with the incident commander to provide information or building access as needed. The decision to allow re-entry will be made by emergency services, not by establishment management."
+        },
+        {
+          "heading": "6.2 All-Clear and Re-Entry",
+          "content": "Re-entry to the building is only permitted when emergency services give the all-clear. Even if the alarm was false or the incident was minor, do not allow re-entry until properly authorized. When re-entry is authorized, it should be controlled: staff should re-enter before customers to assess conditions, verify that evacuation routes are clear and safe, check for any damage or hazards created by the incident or response, and prepare to resume operations or make alternative arrangements if resumption is not possible.\n\nIf re-entry is not possible (building unsafe, fire services conducting investigation, utilities disconnected), the establishment must provide for customer needs including arranging alternative transportation, retrieving belongings under fire service supervision if permitted, providing contact information for claims or inquiries, and communicating when normal operations will resume. Staff welfare must also be addressed — providing information about when they should return to work, whether they will be paid for the disruption, and arranging safe transportation if needed."
+        },
+        {
+          "heading": "6.3 Documentation and Review",
+          "content": "After every evacuation — whether drill or actual incident — document the event including date and time, nature of the incident or drill scenario, evacuation time (from alarm to all-clear), number of persons evacuated, any injuries or medical incidents, any problems encountered (blocked routes, inaudible alarms, slow areas, accountability difficulties), actions taken and by whom, emergency services response (arrival time, actions taken, findings), and damage or loss if any.\n\nConduct a debrief with all staff involved while the event is fresh in memory. What worked well? What problems emerged? What should be changed? Evacuations, whether drills or actual events, are invaluable learning opportunities. Use the findings to update procedures, improve training, address facility deficiencies, or recognize staff who performed well. This continuous improvement cycle ensures that each evacuation makes the organization better prepared for the next one."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Personal Evacuation Readiness Checklist",
+      "items": [
+        "I know the sound of the evacuation alarm in this building",
+        "I know the location of at least two exits from every area where I work",
+        "I can describe the evacuation route from my primary workstation to the nearest exit",
+        "I know the alternative evacuation route if the primary route is blocked",
+        "I know the location of the assembly point and can direct others there",
+        "I know my specific role during evacuation (fire warden, first aider, general staff)",
+        "I know how to perform rapid shutdown of equipment in my area if time permits",
+        "I understand that I must evacuate immediately when the alarm sounds, not investigate or delay",
+        "I know never to use elevators during evacuation, always stairs",
+        "I know to stay at the assembly point until accountability is complete and all-clear is given"
+      ]
+    },
+    {
+      "title": "Staff Evacuation Duties Checklist",
+      "items": [
+        "On hearing alarm: stop work immediately, alert others nearby",
+        "Perform rapid equipment shutdown if safe and possible (seconds only)",
+        "Alert and guide customers: 'We must evacuate immediately. Follow me to the exit.'",
+        "Do not allow customers to stop for belongings — 'You can collect them after the all-clear'",
+        "Check immediate area including toilets and alcoves for stragglers",
+        "Assist elderly, mobility-impaired, or disoriented persons",
+        "Close doors and windows as you leave if time permits",
+        "Proceed via designated evacuation route to assembly point",
+        "If route is blocked by smoke or fire, use alternative route",
+        "Report to assembly point, participate in staff roll call",
+        "Fire wardens: report to emergency coordinator that your area is clear",
+        "Help maintain order at assembly point, prevent unauthorized re-entry",
+        "Remain at assembly point until all-clear is given"
+      ]
+    },
+    {
+      "title": "Monthly Evacuation Preparedness Check",
+      "items": [
+        "All evacuation routes clear of obstructions and stored items",
+        "All exit doors unlocked and opening freely during business hours",
+        "All exit and directional signage visible and properly illuminated",
+        "Emergency lighting tested and functional (monthly test required)",
+        "Current shift roster or staff sign-in sheet available for accountability",
+        "Emergency coordinator and alternates designated and present on shift",
+        "Fire warden assignments current for all areas and all shifts",
+        "Assembly point locations clearly designated and communicated",
+        "Customer evacuation information displayed where visible",
+        "All staff aware of evacuation signal and basic procedures",
+        "Any changes to layout, exits, or routes reflected in evacuation plan"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Practice evacuation routes during orientation — walk new staff through the routes, don't just point at a floor plan",
+    "Conduct announced and unannounced drills — both serve different training purposes",
+    "Time your drills and track improvement over time — set a target evacuation time and work toward it",
+    "Rotate fire warden assignments periodically so that more staff gain experience in these critical roles",
+    "Use high-visibility vests or other identifiers for fire wardens during drills and emergencies so people know who to ask for direction",
+    "Post simple visual evacuation instructions in multiple languages in customer areas",
+    "Never treat evacuation alarms casually or make jokes about them — this undermines the seriousness that ensures compliance",
+    "After drills, publicly recognize staff who performed well and use examples to teach others",
+    "Investigate and correct any recurring problems (slow areas, missed alarms, confusion) systematically rather than accepting them as normal"
+  ],
+  "glossary": {
+    "Evacuation Route": "Designated path from any point in the building to a safe exit, meeting building code requirements",
+    "Assembly Point": "Designated safe location away from the building where evacuees gather for accountability",
+    "Fire Warden": "Staff member responsible for sweeping and evacuating a specific area during emergency",
+    "Accountability": "Process of verifying that all persons have evacuated safely through headcounts and area clearances",
+    "All-Clear": "Official notification by emergency services that it is safe to re-enter the building",
+    "Refuge Area": "Protected area where persons who cannot evacuate via stairs can await assistance from fire services",
+    "Phased Evacuation": "Evacuation procedure where different areas evacuate in sequence rather than simultaneously",
+    "Protected Route": "Evacuation route constructed with fire-resistant materials to provide safe passage even during fire",
+    "Evacuation Capacity": "Maximum number of persons who can safely evacuate via available routes in the required time"
+  }
+}

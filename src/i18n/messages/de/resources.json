@@ -1,0 +1,547 @@
+{
+  "title": "Ressourcen & Leitfaeden",
+  "subtitle": "Compliance-Leitfaeden, Sicherheitsprotokolle und Schulungsmaterial fuer alle Mitarbeiter",
+  "searchPlaceholder": "Leitfaeden nach Name oder Code suchen...",
+  "guidesCount": "Leitfaeden",
+  "noGuidesInCategory": "Keine Leitfaeden in dieser Kategorie gefunden, die Ihren Kriterien entsprechen.",
+  "noResults": "Keine Leitfaeden gefunden, die Ihrer Suche entsprechen",
+  "allRoles": "Alle Rollen",
+  "legalBasis": "Rechtsgrundlage",
+  "summary": "Zusammenfassung",
+  "keyPointsLabel": "Kernpunkte",
+  "applicableRoles": "Zutreffende Rollen",
+  "relatedGuides": "Verwandte Leitfaeden",
+  "print": "Drucken",
+  "printGuide": "Leitfaden drucken",
+  "allCategories": "Alle",
+  "categories": {
+    "foodSafety": "Lebensmittelsicherheit",
+    "occupationalHealth": "Arbeitsschutz",
+    "laborRegulations": "Arbeitsrecht",
+    "roleSpecific": "Rollenspezifisch",
+    "requiredDocs": "Dokumentation",
+    "environmental": "Umwelt"
+  },
+  "training": {
+    "downloadPdf": "PDF Herunterladen",
+    "takeTest": "Test Ablegen",
+    "shareGuide": "Leitfaden Teilen",
+    "testScore": "Ergebnis",
+    "testPassed": "Test Bestanden!",
+    "testFailed": "Test Nicht Bestanden",
+    "retakeTest": "Test Wiederholen",
+    "assignTraining": "Schulung Zuweisen",
+    "complianceOverview": "Compliance",
+    "totalMandatory": "Pflichtleitfaeden",
+    "completedTraining": "Abgeschlossen",
+    "pendingTraining": "Ausstehend",
+    "overdueTraining": "Ueberfaellig",
+    "passRate": "Abschlussrate",
+    "fullyCompliant": "Konform",
+    "employeeStatus": "Mitarbeiter",
+    "lastActivity": "Letzte Aktivitaet",
+    "submitTest": "Test Einreichen",
+    "question": "Frage",
+    "correctAnswer": "Richtige Antwort",
+    "explanation": "Erklaerung",
+    "statusViewed": "Angesehen",
+    "statusNotViewed": "Nicht Angesehen",
+    "statusPassed": "Bestanden",
+    "statusFailed": "Nicht Bestanden",
+    "statusOverdue": "Ueberfaellig",
+    "statusPending": "Ausstehend",
+    "exportReport": "Bericht Exportieren",
+    "myTraining": "Meine Schulung",
+    "testInstructions": "Beantworten Sie alle Fragen und klicken Sie auf Einreichen. Sie benoetigen mindestens 70% zum Bestehen.",
+    "noTestsAvailable": "Fuer diesen Leitfaden sind noch keine Testfragen verfuegbar.",
+    "assignToEmployee": "An Mitarbeiter Zuweisen",
+    "assignToRole": "An Rolle Zuweisen",
+    "dueDate": "Faelligkeitsdatum",
+    "cancel": "Abbrechen",
+    "myCertificates": "Meine Zertifikate",
+    "noCertificates": "Noch keine Zertifikate",
+    "noCertificatesDesc": "Schliessen Sie Schulungen ab und bestehen Sie die Tests, um Zertifikate zu erhalten.",
+    "certifiedOn": "Zertifiziert am",
+    "score": "Ergebnis",
+    "downloadCertificate": "Zertifikat Herunterladen",
+    "employeeCertifications": "Mitarbeiter-Zertifizierungen",
+    "noCertificatesForEmployee": "Dieser Mitarbeiter hat noch keine Zertifizierungen."
+  },
+  "course": {
+    "noPending": "Keine ausstehende Schulung",
+    "allComplete": "Alle zugewiesenen Schulungen wurden abgeschlossen.",
+    "startCourse": "Kurs Starten",
+    "continueCourse": "Fortfahren",
+    "progress": "Fortschritt",
+    "sections": "Abschnitte",
+    "studyMaterial": "Lernmaterial",
+    "certification": "Zertifizierung",
+    "estimatedTime": "Geschaetzte Zeit",
+    "courseOverview": "Kursuebersicht",
+    "sectionOf": "Abschnitt {current} von {total}",
+    "readSection": "Abschnitt Lesen",
+    "sectionCompleted": "Abschnitt Abgeschlossen",
+    "allSectionsRead": "Alle Abschnitte gelesen. Bereit fuer den Test!",
+    "downloadCertificate": "Zertifikat Herunterladen",
+    "noEmployeesMatch": "Keine Mitarbeiter entsprechen den aktuellen Filtern.",
+    "roleFilter": "Nach Rolle filtern",
+    "statusFilter": "Nach Status filtern",
+    "allRoles": "Alle Rollen",
+    "allStatuses": "Alle Status",
+    "notStarted": "Nicht Gestartet",
+    "inProgress": "In Bearbeitung",
+    "studyComplete": "Studium Abgeschlossen",
+    "testPassed": "Test Bestanden",
+    "timeRemaining": "verbleibend",
+    "dueDate": "Faellig",
+    "questionsOf": "Frage {current} von {total}",
+    "reviewSections": "Ueberpruefen Sie die Abschnitte {sections} und versuchen Sie es erneut.",
+    "congratulations": "Herzlichen Glueckwunsch!",
+    "certificateReady": "Ihr Zertifikat steht zum Download bereit.",
+    "legalBasisTitle": "Rechtsgrundlage",
+    "bestPractices": "Beste Praktiken",
+    "glossary": "Glossar",
+    "checklist": "Checkliste",
+    "minutes": "Min"
+  },
+  "guides": {
+    "GFS001": {
+      "title": "HACCP/APPCC-System",
+      "legalBasis": "EU-Verordnung 852/2004 ueber Lebensmittelhygiene",
+      "summary": "Das HACCP-System (Gefahrenanalyse und kritische Kontrollpunkte) ist das grundlegende Rahmenwerk fuer die Lebensmittelsicherheit in der Gastronomie. In Spanien ist es als APPCC bekannt. Jeder Lebensmittelbetrieb muss einen dokumentierten APPCC-Plan umsetzen und pflegen, der biologische, chemische und physikalische Gefahren in jeder Phase der Lebensmittelhandhabung identifiziert. Der Plan muss kritische Kontrollpunkte, kritische Grenzwerte, Ueberwachungsverfahren, Korrekturmassnahmen und Verifizierungsverfahren enthalten.",
+      "keyPoints": ["Identifizieren Sie alle Lebensmittelsicherheitsgefahren in Ihrem Betrieb", "Definieren Sie kritische Kontrollpunkte (CCPs) fuer jeden Prozess", "Legen Sie kritische Grenzwerte und Ueberwachungsverfahren fest", "Dokumentieren Sie Korrekturmassnahmen fuer jeden CCP", "Fuehren Sie Aufzeichnungen und ueberpruefen Sie den Plan jaehrlich", "Schulen Sie alle Lebensmittelverarbeiter in APPCC-Grundsaetzen", "Haengen Sie den APPCC-Plan an zugaenglichen Stellen aus"]
+    },
+    "GFS002": {
+      "title": "Lebensmittelhygiene-Zertifikat",
+      "legalBasis": "RD 109/2010 ueber Schulungsanforderungen fuer Lebensmittelverarbeiter",
+      "summary": "Alle Mitarbeiter, die mit Lebensmitteln umgehen, muessen ein gueltiges Lebensmittelhygiene-Zertifikat (Carnet de Manipulador de Alimentos) besitzen. Die Schulung muss Lebensmittelhygiene, Kontaminationsverhuetung, Allergenbewusstsein und persoenliche Hygiene abdecken. Zertifikate muessen gemaess den regionalen Vorschriften erneuert werden. Der Betrieb muss Kopien aller Zertifikate aufbewahren und sicherstellen, dass die Schulung abgeschlossen ist, bevor Mitarbeiter mit Lebensmitteln umgehen.",
+      "keyPoints": ["Alle Lebensmittelverarbeiter muessen eine zertifizierte Schulung absolvieren", "Bewahren Sie Kopien aller Zertifikate auf", "Erneuern Sie Zertifikate gemaess den regionalen Anforderungen", "Neue Mitarbeiter muessen vor dem Umgang mit Lebensmitteln geschult werden", "Die Schulung umfasst Hygiene, Allergene und Kontamination"]
+    },
+    "GFS003": {
+      "title": "Temperaturkontrolle — Kuehlkette",
+      "legalBasis": "RD 3484/2000 ueber Hygienestandards fuer die Lebensmittelzubereitung",
+      "summary": "Die Aufrechterhaltung der Kuehlkette ist entscheidend fuer die Lebensmittelsicherheit. Gekuehlte Produkte muessen bei 0-4°C und tiefgefrorene Produkte bei -18°C oder darunter gelagert werden. Temperaturprotokolle muessen mindestens zweimal taeglich aufgezeichnet werden. Jede Unterbrechung der Kuehlkette erfordert eine sofortige Bewertung und moegliche Entsorgung betroffener Produkte.",
+      "keyPoints": ["Kuehlschraenke: 0-4°C, Tiefkuehler: -18°C oder darunter", "Temperaturen mindestens zweimal taeglich aufzeichnen", "Lieferungen bei Ankunft mit Einstichthermometer pruefen", "Aufgetaute Produkte niemals wieder einfrieren", "FIFO: First In, First Out Rotation", "Geraetestoerungen sofort melden"]
+    },
+    "GFS004": {
+      "title": "Temperaturkontrolle — Warmhaltung",
+      "legalBasis": "RD 3484/2000 ueber Hygienestandards",
+      "summary": "Warme Speisen muessen bei 65°C oder darueber gehalten werden, um Bakterienwachstum zu verhindern. Speisen, die laenger als 2 Stunden unter diese Temperatur fallen, muessen entsorgt werden. Beim Aufwaermen muss eine Kerntemperatur von 75°C erreicht werden. Temperaturprotokolle fuer die Warmhaltung muessen gefuehrt werden.",
+      "keyPoints": ["Warme Speisen muessen bei 65°C oder darueber gehalten werden", "Speisen unter 65°C fuer mehr als 2 Stunden entsorgen", "Speisen auf eine Kerntemperatur von 75°C aufwaermen", "Kalibrierte Thermometer fuer Kontrollen verwenden", "Warmhaltetemperaturen regelmaessig aufzeichnen"]
+    },
+    "GFS005": {
+      "title": "Reinigungs- und Desinfektionsplan",
+      "legalBasis": "EU-Verordnung 852/2004, Anhang II",
+      "summary": "Jeder Betrieb muss einen dokumentierten R+D (Limpieza y Desinfeccion) Plan haben, der alle Bereiche, Geraete und Oberflaechen abdeckt. Der Plan legt Reinigungshaeufigkeit, Produkte, Verduennungsraten, Einwirkzeiten und verantwortliches Personal fest. Aufzeichnungen ueber Reinigungsaktivitaeten muessen gefuehrt werden.",
+      "keyPoints": ["Reinigungsverfahren fuer jeden Bereich dokumentieren", "Produkte, Verduennungen und Einwirkzeiten festlegen", "Reinigungsverantwortlichkeiten namentlich zuweisen", "Taegliche Reinigungsprotokolle fuehren", "Lebensmittelsichere Reinigungsprodukte verwenden", "Reinigungsgeraete nach Zonen trennen (Farbkodierung)", "Grundreinigungsplan fuer Geraete und schwer zugaengliche Bereiche"]
+    },
+    "GFS006": {
+      "title": "Allergenmanagement",
+      "legalBasis": "EU-Verordnung 1169/2011 ueber Lebensmittelinformation fuer Verbraucher",
+      "summary": "Das EU-Recht verlangt eine klare Kommunikation der 14 Hauptallergene in allen servierten Speisen. Das Personal muss geschult sein, Allergene in Menuepunkten zu identifizieren und den Gaesten korrekt mitzuteilen. Allergeninformationen muessen schriftlich verfuegbar sein und das Personal muss Verfahren zur Verhuetung von Kreuzkontamination kennen.",
+      "keyPoints": ["Kennen Sie die 14 EU-regulierten Allergene", "Allergeninformationen fuer alle Menuepunkte anzeigen", "Alle Servicekraefte in Allergenkommunikation schulen", "Kreuzkontamination bei der Zubereitung verhindern", "Protokoll fuer Notfaelle bei allergischen Reaktionen bereithalten", "Allergeninformationen bei Rezeptaenderungen aktualisieren"]
+    },
+    "GFS007": {
+      "title": "Vermeidung von Lebensmittelverschwendung",
+      "legalBasis": "Ley 1/2025 de prevencion de las perdidas y el desperdicio alimentario",
+      "summary": "Spaniens Gesetz zur Lebensmittelverschwendung verpflichtet Gastronomiebetriebe, Praeventionsplaene umzusetzen, Mitnahmeoptionen fuer nicht aufgegessene Mahlzeiten anzubieten und Abfallaufzeichnungen zu fuehren. Betriebe muessen die Spende ueberschuessiger Lebensmittel an autorisierte Organisationen vor der Entsorgung priorisieren.",
+      "keyPoints": ["Einen Plan zur Vermeidung von Lebensmittelverschwendung umsetzen", "Mitnahmebehaelter fuer nicht aufgegessene Mahlzeiten anbieten", "Lebensmittelspende vor Entsorgung priorisieren", "Aufzeichnungen ueber Lebensmittelabfallmengen fuehren", "Personal in Portionskontrolle schulen", "Ueberproduktion ueberwachen und reduzieren", "Mit Tafeln oder Spendenplattformen zusammenarbeiten"]
+    },
+    "GFS008": {
+      "title": "Rueckverfolgbarkeitssystem",
+      "legalBasis": "EU-Verordnung 178/2002 ueber Rueckverfolgbarkeit",
+      "summary": "Alle Lebensmittelbetriebe muessen ein Rueckverfolgbarkeitssystem fuehren, das die Identifizierung von Lieferanten und Produkten in jeder Phase ermoeglicht. Dies umfasst die Erfassung von Chargennummern, Lieferdaten, Lieferantendetails und die Aufbewahrung von Aufzeichnungen fuer mindestens 5 Jahre.",
+      "keyPoints": ["Lieferantendetails fuer alle Produkte erfassen", "Lieferscheine mit Chargennummern und Daten aufbewahren", "Aufzeichnungen mindestens 5 Jahre aufbewahren", "Ein-Schritt-zurueck, Ein-Schritt-vorwaerts Rueckverfolgbarkeit umsetzen", "Ein schnelles Rueckrufverfahren bereithalten"]
+    },
+    "GFS009": {
+      "title": "Lieferantenkontrolle",
+      "legalBasis": "EU-Verordnung 852/2004 ueber Lieferantenzulassung",
+      "summary": "Betriebe muessen ueberpruefen, dass alle Lebensmittellieferanten registriert sind und die Lebensmittelsicherheitsvorschriften einhalten. Ein Lieferantenzulassungsverfahren muss vorhanden sein, einschliesslich der Ueberpruefung von Gesundheitsregistrierungen, Lieferbedingungen und Produktqualitaet.",
+      "keyPoints": ["Gesundheitsregistrierungsnummern der Lieferanten ueberpruefen", "Temperaturen der Lieferfahrzeuge kontrollieren", "Produkte bei Ankunft auf Qualitaet pruefen", "Liste zugelassener Lieferanten fuehren", "Lieferantenleistung regelmaessig ueberpruefen"]
+    },
+    "GFS010": {
+      "title": "Warenannahme",
+      "legalBasis": "RD 3484/2000 ueber Standards fuer die Lebensmittelannahme",
+      "summary": "Alle Lieferungen muessen bei Ankunft auf Temperatureinhaltung, Verpackungsintegritaet, Verfallsdaten und organoleptische Qualitaet geprueft werden. Abgelehnte Produkte muessen dokumentiert werden. Lieferungen sollten umgehend unter geeigneten Bedingungen gelagert werden.",
+      "keyPoints": ["Temperatur von gekuehlten/tiefgefrorenen Lieferungen pruefen", "Verpackungsintegritaet und Kennzeichnung ueberpruefen", "Verfallsdaten aller Produkte kontrollieren", "Nicht konforme Produkte dokumentieren und zuruecksenden", "Lieferungen nach der Inspektion sofort einlagern"]
+    },
+    "GFS011": {
+      "title": "Lagerverfahren",
+      "legalBasis": "RD 3484/2000, EU-Verordnung 852/2004",
+      "summary": "Korrekte Lagerung verhindert Kontamination und Verderb. Rohe und gekochte Produkte muessen getrennt werden. Die FIFO-Rotation muss strikt eingehalten werden. Alle Behaelter muessen abgedeckt und mit Inhalt und Datum beschriftet sein. Lagerbereiche muessen sauber und bei korrekten Temperaturen gehalten werden.",
+      "keyPoints": ["Rohe und gekochte Produkte trennen", "FIFO-Rotation strikt einhalten", "Alle Behaelter mit Inhalt und Datum beschriften", "Lagerbereiche sauber und geordnet halten", "Lebensmittel niemals auf dem Boden lagern", "Temperaturen taeglich kontrollieren"]
+    },
+    "GFS012": {
+      "title": "Verhuetung von Kreuzkontamination",
+      "legalBasis": "EU-Verordnung 852/2004",
+      "summary": "Kreuzkontamination ist eine erhebliche Gefahr fuer die Lebensmittelsicherheit. Praevention erfordert die Trennung von rohen und verzehrfertigen Lebensmitteln, die Verwendung farbcodierter Schneidebretter, gruendliches Haendewaschen zwischen Arbeitsschritten und spezielle Geraete fuer die allergenfreie Zubereitung.",
+      "keyPoints": ["Farbcodierte Schneidebretter und Utensilien verwenden", "Rohe und verzehrfertige Lebensmittel jederzeit trennen", "Haende zwischen der Handhabung verschiedener Lebensmittelarten waschen", "Arbeitsflaechen zwischen Arbeitsschritten reinigen und desinfizieren", "Rohe Produkte unter gekochten Produkten lagern"]
+    },
+    "GFS013": {
+      "title": "Schaedlingsbekaempfung",
+      "legalBasis": "RD 830/2010 ueber Biozidprodukte, EU 852/2004",
+      "summary": "Ein Schaedlingsbekaempfungsprogramm muss von einem autorisierten Unternehmen durchgefuehrt werden. Der Betrieb muss physische Barrieren, gute Haushaltsordnung und regelmaessige Inspektionen aufrechterhalten. Aufzeichnungen ueber Schaedlingsbekaempfungsbesuche und Vorfaelle muessen aufbewahrt werden.",
+      "keyPoints": ["Ein autorisiertes Schaedlingsbekaempfungsunternehmen beauftragen", "Physische Barrieren aufrechterhalten (Fliegengitter, Tuerschliesser)", "Alle Bereiche sauber und frei von Lebensmittelresten halten", "Luecken und Eintrittspunkte abdichten", "Schaedlingssichtungen sofort melden", "Schaedlingsbekaempfungsprotokolle aufbewahren"]
+    },
+    "GFS014": {
+      "title": "Wasserqualitaet",
+      "legalBasis": "RD 140/2003 ueber Trinkwasserqualitaet",
+      "summary": "Wasser, das in der Lebensmittelzubereitung verwendet wird, muss den Trinkwasserstandards entsprechen. Bei Verwendung einer privaten Wasserversorgung sind regelmaessige Tests erforderlich. Eismaschinen muessen gemaess den Herstelleranweisungen gewartet und gereinigt werden.",
+      "keyPoints": ["Einhaltung der oeffentlichen Wasserversorgung ueberpruefen", "Private Wasserversorgung regelmaessig testen", "Eismaschinen monatlich reinigen und warten", "Trinkwasser fuer alle Lebensmittelzubereitungen verwenden", "Wasseranalyseprotokolle aufbewahren"]
+    },
+    "GFS015": {
+      "title": "Persoenliche Hygiene fuer Lebensmittelverarbeiter",
+      "legalBasis": "EU-Verordnung 852/2004 Anhang II",
+      "summary": "Lebensmittelverarbeiter muessen hohe Standards der persoenlichen Hygiene einhalten, einschliesslich Haendewaschen, Tragen sauberer Dienstkleidung, Haarschutz, kein Schmuck und Meldung jeder Erkrankung, die die Lebensmittelsicherheit beeintraechtigen koennte.",
+      "keyPoints": ["Haende haeufig und korrekt waschen", "Saubere Dienstkleidung und Haarschutz tragen", "Schmuck und Uhren vor dem Umgang mit Lebensmitteln ablegen", "Schnittwunden mit blauen wasserfesten Pflastern abdecken", "Krankheit, Erbrechen oder Durchfall dem Vorgesetzten melden", "Bei Krankheit keine Lebensmittel verarbeiten"]
+    },
+    "GFS016": {
+      "title": "Probenrueckstellung",
+      "legalBasis": "RD 3484/2000 ueber Lebensmittelprobenrueckstellung",
+      "summary": "Betriebe, die mehr als eine bestimmte Anzahl von Mahlzeiten servieren, muessen repraesentative Proben jedes servierten Gerichts aufbewahren. Proben muessen in beschrifteten Behaeltern bei geeigneten Temperaturen fuer mindestens 72 Stunden gelagert werden.",
+      "keyPoints": ["Proben aller servierten Gerichte aufbewahren", "Mit Gerichtname, Datum und Uhrzeit beschriften", "Bei 0-4°C fuer mindestens 72 Stunden lagern", "Saubere, verschlossene Behaelter verwenden", "Proben nach der Aufbewahrungsfrist entsorgen"]
+    },
+    "GFS017": {
+      "title": "Auftauverfahren",
+      "legalBasis": "RD 3484/2000",
+      "summary": "Tiefgefrorene Produkte muessen sicher im Kuehlschrank aufgetaut werden, niemals bei Raumtemperatur. Die Auftauzeit muss im Voraus geplant werden. Einmal aufgetaute Produkte muessen innerhalb von 24 Stunden verbraucht und duerfen niemals wieder eingefroren werden.",
+      "keyPoints": ["Im Kuehlschrank bei 0-4°C auftauen", "Niemals bei Raumtemperatur auftauen", "Auftauzeit im Voraus planen", "Aufgetaute Produkte innerhalb von 24 Stunden verbrauchen", "Zuvor aufgetaute Produkte niemals wieder einfrieren"]
+    },
+    "GFS018": {
+      "title": "Speiseoelqualitaetskontrolle",
+      "legalBasis": "RD 2207/1995 ueber die Regelung von Frittieroelen",
+      "summary": "Frittieroele muessen mittels Polarstofftests auf Degradation ueberwacht werden. Oel mit mehr als 25% Polarstoffen muss ausgetauscht werden. Die Oeltemperatur darf 180°C nicht ueberschreiten. Aufzeichnungen ueber Oelwechsel und Testergebnisse muessen gefuehrt werden.",
+      "keyPoints": ["Oelqualitaet mit Polarstoffmessgeraet testen", "Oel austauschen, wenn Polarstoffe 25% ueberschreiten", "Frittiertemperatur von 180°C niemals ueberschreiten", "Oel taeglich und zwischen verschiedenen Produkten filtern", "Oelwechsel und Testergebnisse dokumentieren"]
+    },
+    "GFS019": {
+      "title": "Buffet- und Auslagen-Lebensmittelsicherheit",
+      "legalBasis": "RD 3484/2000",
+      "summary": "In Buffets ausgestellte Speisen muessen bei sicheren Temperaturen gehalten werden. Warme Speisen bei 65°C+, kalte Speisen bei 8°C oder darunter. Die Auslagenzeit muss begrenzt und ueberwacht werden. Spuckschutzvorrichtungen muessen vorhanden sein.",
+      "keyPoints": ["Warme Speisen bei 65°C+, kalte Speisen bei 8°C oder darunter", "Auslagenzeit auf maximal 4 Stunden begrenzen", "Spuckschutz und abgedeckte Behaelter verwenden", "Auslagenartikel ersetzen statt nachfuellen", "Auslagentemperaturen ueberwachen und aufzeichnen"]
+    },
+    "GFS020": {
+      "title": "Lebensmittelsicherheit bei Lieferungen",
+      "legalBasis": "RD 3484/2000, EU 852/2004",
+      "summary": "An Kunden gelieferte Speisen muessen waehrend des Transports die Temperaturkontrolle einhalten. Isolierbehaelter muessen verwendet werden. Lieferzeiten muessen minimiert werden. Verpackungen muessen die Speisen vor Kontamination schuetzen.",
+      "keyPoints": ["Isolierbehaelter fuer Lieferungen verwenden", "Temperatur waehrend des Transports aufrechterhalten", "Lieferzeit minimieren", "Verpackung versiegeln, um Kontamination zu verhindern", "Liefertemperaturen bei Bedarf aufzeichnen"]
+    },
+    "GFS021": {
+      "title": "Mikrobiologische Kontrolle",
+      "legalBasis": "EU-Verordnung 2073/2005 ueber mikrobiologische Kriterien",
+      "summary": "Regelmaessige mikrobiologische Untersuchungen von Lebensmitteln, Oberflaechen und Geraeten helfen, die Wirksamkeit des APPCC-Systems zu ueberpruefen. Pruefhaeufigkeit und Parameter muessen im Lebensmittelsicherheitsplan festgelegt werden.",
+      "keyPoints": ["Regelmaessige Oberflaechen- und Lebensmittelproben planen", "Akkreditiertes Labor fuer Analysen beauftragen", "Akzeptanzkriterien auf Basis der EU-Standards festlegen", "Korrekturmassnahmen bei nicht konformen Ergebnissen ergreifen", "Alle Analyseprotokolle aufbewahren"]
+    },
+    "GFS022": {
+      "title": "Abweichungsmanagement",
+      "legalBasis": "EU-Verordnung 852/2004",
+      "summary": "Wenn Lebensmittelsicherheitsstandards nicht eingehalten werden, muss ein Abweichungsmanagementprozess befolgt werden. Dies umfasst die Identifizierung des Problems, die Isolierung betroffener Produkte, die Untersuchung der Grundursache, die Umsetzung von Korrekturmassnahmen und die Verhinderung eines erneuten Auftretens.",
+      "keyPoints": ["Abweichungen identifizieren und dokumentieren", "Betroffene Produkte sofort isolieren", "Grundursache untersuchen", "Korrekturmassnahmen umsetzen", "Wirksamkeit der Korrekturen ueberpruefen", "Verfahren aktualisieren, um Wiederholung zu verhindern"]
+    },
+    "GPRL001": {
+      "title": "PRL-Praeventionsplan",
+      "legalBasis": "Ley 31/1995 de Prevencion de Riesgos Laborales",
+      "summary": "Jeder Arbeitgeber muss einen dokumentierten Arbeitsschutz-Praeventionsplan (Plan de PRL) haben. Dieses umfassende Dokument identifiziert alle Gefahren am Arbeitsplatz, legt praeventive Massnahmen fest, definiert Verantwortlichkeiten und beschreibt Notfallverfahren. Es muss jaehrlich und bei wesentlichen Aenderungen ueberprueft werden.",
+      "keyPoints": ["Alle identifizierten Arbeitsplatzrisiken dokumentieren", "Praeventive Massnahmen fuer jedes Risiko definieren", "Praeventionsverantwortlichkeiten zuweisen", "Jaehrlich ueberpruefen und aktualisieren", "Allen Mitarbeitern zugaenglich machen", "Mit externem Praeventionsdienst koordinieren"]
+    },
+    "GPRL002": {
+      "title": "Gefaehrdungsbeurteilung",
+      "legalBasis": "RD 39/1997 Reglamento de los Servicios de Prevencion",
+      "summary": "Eine formelle Gefaehrdungsbeurteilung muss alle gastronomie-spezifischen Arbeitsplatzgefahren bewerten: Verbrennungen, Schnittverletzungen, Stuerze, manuelle Handhabung, Chemikalienexposition und ergonomische Risiken. Jeder Arbeitsplatz und jede Rolle muss bewertet werden. Die Ergebnisse fliessen in den Praeventionsplan und die Schutzmassnahmen ein.",
+      "keyPoints": ["Risiken fuer jeden Arbeitsplatz und jede Rolle bewerten", "Wahrscheinlichkeit und Schwere jeder Gefahr einschaetzen", "Kontrollmassnahmen fuer jedes identifizierte Risiko festlegen", "Bei Aenderung der Bedingungen neu bewerten", "Alle Bewertungen und Ueberpruefungen dokumentieren", "Arbeitnehmer in den Bewertungsprozess einbeziehen"]
+    },
+    "GPRL003": {
+      "title": "PSA nach Position",
+      "legalBasis": "RD 773/1997 ueber persoenliche Schutzausruestung",
+      "summary": "Die Anforderungen an persoenliche Schutzausruestung (PSA) variieren je nach Rolle. Kuechenpersonal benoetigt schnittfeste Handschuhe, rutschfeste Schuhe und Hitzeschutz. Barpersonal benoetigt rutschfestes Schuhwerk und Augenschutz fuer bestimmte Aufgaben. Alle Mitarbeiter benoetigen geeignetes Schuhwerk fuer nasse Oberflaechen.",
+      "keyPoints": ["Kueche: rutschfeste Schuhe, Hitzehandschuhe, schnittfeste Handschuhe", "Bar: rutschfeste Schuhe, Augenschutz fuer Chemikalien", "Alle: geeignetes geschlossenes Schuhwerk", "PSA kostenlos bereitstellen", "Personal in korrekter Verwendung und Pflege schulen", "Beschaedigte PSA sofort ersetzen"]
+    },
+    "GPRL004": {
+      "title": "Notfallplan",
+      "legalBasis": "RD 393/2007 ueber Selbstschutzanforderungen",
+      "summary": "Ein Notfallplan muss Braende, medizinische Notfaelle, Gaslecks, Stromausfaelle und Naturkatastrophen abdecken. Er muss Evakuierungswege, Sammelplaetze, Notfallkontakte sowie Rollen und Verantwortlichkeiten enthalten. Regelmaessige Uebungen muessen durchgefuehrt werden.",
+      "keyPoints": ["Verfahren fuer alle Notfallarten festlegen", "Evakuierungswege deutlich anzeigen", "Sammelplaetze bestimmen", "Notfallrollen zuweisen (Brandschutzwart, Ersthelfer)", "Evakuierungsuebungen zweimal jaehrlich durchfuehren", "Notfallkontaktliste aktuell halten"]
+    },
+    "GPRL005": {
+      "title": "Evakuierungsprotokoll",
+      "legalBasis": "RD 393/2007, CTE DB-SI (Bauvorschriften)",
+      "summary": "Klare Evakuierungsverfahren muessen festgelegt und geubt werden. Notausgaenge muessen deutlich gekennzeichnet und frei zugaenglich sein. Die maximale Belegung muss eingehalten werden. Das Personal muss seine Aufgaben bei der Evakuierung kennen, einschliesslich der Begleitung von Gaesten und der Zaehlung.",
+      "keyPoints": ["Notausgaenge jederzeit freihalten", "Ausgaenge mit beleuchteten Schildern kennzeichnen", "Den Evakuierungsweg von Ihrem Arbeitsplatz kennen", "Gaesten bei der ruhigen Evakuierung helfen", "Zaehlung am Sammelplatz durchfuehren", "Im Notfall niemals Aufzuege benutzen"]
+    },
+    "GPRL006": {
+      "title": "Erste Hilfe",
+      "legalBasis": "RD 39/1997, Ley 31/1995 Art. 20",
+      "summary": "Erste-Hilfe-Kaesten muessen gewartet und zugaenglich sein. Mindestens ein ausgebildeter Ersthelfer muss pro Schicht anwesend sein. Der Kasteninhalt muss regelmaessig ueberprueft und aufgefuellt werden. Haeufige Gastronomieverletzungen umfassen Verbrennungen, Schnittwunden, Stuerze und allergische Reaktionen.",
+      "keyPoints": ["Bestuckten Erste-Hilfe-Kasten an zugaenglichem Ort bereithalten", "Mindestens ein ausgebildeter Ersthelfer pro Schicht", "Kasten monatlich ueberpruefen und auffuellen", "Alle Erste-Hilfe-Vorfaelle dokumentieren", "Standort des naechsten Krankenhauses und Notrufnummer (112) kennen", "Erste-Hilfe-Verfahren sichtbar aushangen"]
+    },
+    "GPRL007": {
+      "title": "Kuechenergonomie",
+      "legalBasis": "RD 487/1997 ueber manuelle Handhabung, Ley 31/1995",
+      "summary": "Kuechenarbeit beinhaltet langes Stehen, sich wiederholende Bewegungen und schweres Heben. Ergonomische Massnahmen umfassen Anti-Ermuedungsmatten, hoehenverstellbare Arbeitsflaechen, korrekte Hebetechniken und regelmaessige Pausen. Die Arbeitsorganisation sollte Belastungen durch Wiederholung minimieren.",
+      "keyPoints": ["Anti-Ermuedungsmatten an Arbeitsplaetzen verwenden", "Arbeitsflaehenhoehen wo moeglich anpassen", "Aufgaben rotieren, um Wiederholungsbelastung zu reduzieren", "Regelmaessige kurze Pausen einlegen", "Korrekte Hebetechniken anwenden", "Muskel-Skelett-Beschwerden frueh melden"]
+    },
+    "GPRL008": {
+      "title": "Manuelle Handhabung",
+      "legalBasis": "RD 487/1997 ueber die manuelle Handhabung von Lasten",
+      "summary": "Die manuelle Handhabung schwerer Gegenstaende (Lieferungen, Faesser, Geraete) ist eine Hauptursache fuer Arbeitsunfaelle. Das empfohlene Hoechstgewicht betraegt 25 kg. Das Personal muss in sicheren Hebetechniken geschult werden. Mechanische Hilfsmittel sollten wo moeglich bereitgestellt werden.",
+      "keyPoints": ["Empfohlenes Hoechstgewicht: 25 kg", "Korrekte Hebetechnik anwenden: Knie beugen, Ruecken gerade", "Transportwagen und mechanische Hilfsmittel verwenden, wenn verfuegbar", "Bei schweren oder sperrigen Lasten um Hilfe bitten", "Schwere Gegenstaende auf Huefthoehe lagern", "Rueckenschmerzen oder Verletzungen sofort melden"]
+    },
+    "GPRL009": {
+      "title": "Umgang mit chemischen Produkten",
+      "legalBasis": "RD 374/2001 ueber die Exposition gegenueber chemischen Stoffen",
+      "summary": "Reinigungschemikalien, Entfetter und Desinfektionsmittel muessen sicher gehandhabt werden. Sicherheitsdatenblaetter muessen fuer alle Produkte verfuegbar sein. Das Personal muss geeignete PSA tragen. Chemikalien muessen getrennt von Lebensmitteln in beschrifteten Behaeltern gelagert werden. Niemals verschiedene Chemikalien mischen.",
+      "keyPoints": ["Sicherheitsdatenblaetter vor der Verwendung jedes Produkts lesen", "Geeignete PSA tragen (Handschuhe, Augenschutz)", "Niemals verschiedene chemische Produkte mischen", "Chemikalien getrennt von Lebensmitteln lagern", "Chemikalien in Originalbehaeltern mit Beschriftung aufbewahren", "Standort der Augenspuelstation kennen"]
+    },
+    "GPRL010": {
+      "title": "Praevention von thermischem Stress",
+      "legalBasis": "RD 486/1997 ueber Arbeitsplatzbedingungen",
+      "summary": "Kuechenumgebungen koennen extreme Temperaturen erreichen. Praeventionsmassnahmen umfassen ausreichende Belueftung, Zugang zu Wasser, Rotation zwischen heissen und kuehlen Bereichen, angemessene Kleidung und Ueberwachung auf Hitzestress-Symptome.",
+      "keyPoints": ["Ausreichende Belueftung in Kuechenbereichen sicherstellen", "Freien Zugang zu Trinkwasser bereitstellen", "Zwischen heissen und kuehlen Stationen rotieren", "Atmungsaktive, angemessene Kleidung tragen", "Personal auf Hitzestress-Symptome ueberwachen", "Bei extremer Hitze zusaetzliche Pausen erlauben"]
+    },
+    "GPRL011": {
+      "title": "Laermbelastung",
+      "legalBasis": "RD 286/2006 ueber Laermschutz",
+      "summary": "Bar- und Veranstaltungsumgebungen koennen sichere Laermpegel (85 dB) ueberschreiten. Laermbewertungen muessen durchgefuehrt werden. Gehoerschutz muss dem Personal in lauten Umgebungen bereitgestellt werden. Musiklautstaerkegrenzen koennen je nach lokaler Verordnung gelten.",
+      "keyPoints": ["Laermpegelbewertungen durchfuehren", "Gehoerschutz ueber 85 dB bereitstellen", "Dauerhafte Einwirkung lauter Musik begrenzen", "Personal wo moeglich von Lautsprechern entfernt positionieren", "Gehoerbezogene Beschwerden ueberwachen", "Lokale Laermschutzverordnungen einhalten"]
+    },
+    "GPRL012": {
+      "title": "Elektrische Sicherheit",
+      "legalBasis": "RD 614/2001 ueber den Schutz vor elektrischen Risiken",
+      "summary": "Alle elektrischen Geraete muessen ordnungsgemaess gewartet und inspiziert werden. Das Personal darf keine beschaedigten Kabel oder Geraete verwenden. Wasser- und Strombereiche muessen ordnungsgemaess getrennt sein. Nur qualifizierte Techniker duerfen elektrische Reparaturen durchfuehren.",
+      "keyPoints": ["Niemals beschaedigte elektrische Geraete verwenden", "Wasser von elektrischen Geraeten fernhalten", "Defekte Geraete sofort melden", "Nur qualifizierte Elektriker fuer Reparaturen einsetzen", "Stecker und Kabel regelmaessig pruefen", "Standort des elektrischen Hauptschalters kennen"]
+    },
+    "GPRL013": {
+      "title": "Brandschutz",
+      "legalBasis": "RD 513/2017 Reglamento de Instalaciones de Proteccion contra Incendios",
+      "summary": "Brandschutz in der Gastronomie erfordert die ordnungsgemaesse Wartung von Feuerloeschsystemen, freien Zugang zu Feuerloeschern, regelmaessige Personalschulungen und strenge Kuechenprotokolle fuer Fettbraende und Gasgeraete.",
+      "keyPoints": ["Standort und Verwendung der Feuerloescher kennen", "Feuerloeschanlage der Kuechenabzugshaube warten", "Notausgaenge frei und zugaenglich halten", "Niemals Wasser auf Fettbraende schuetten", "Brandschutzausruestung monatlich pruefen", "Branduebungen alle 6 Monate durchfuehren"]
+    },
+    "GPRL014": {
+      "title": "Gassicherheit",
+      "legalBasis": "RD 919/2006 ueber Gasinstallationsvorschriften",
+      "summary": "Gasinstallationen muessen regelmaessig von autorisierten Technikern inspiziert werden. Das Personal muss wissen, wie man Gaslecks erkennt (Geruch, Zischen), die Gaszufuhr abstellt und evakuiert. Gasgeraete muessen gemaess den Herstellerangaben gewartet werden.",
+      "keyPoints": ["Wissen, wie man ein Gasleck erkennt", "Standort des Gasabsperrventils kennen", "Bei Verdacht auf Gasleck sofort evakuieren", "Niemals offene Flammen zur Lecksuche verwenden", "Regelmaessige Inspektionen der Gasinstallation planen", "Bereich belueften, bevor Geraete erneut gezuendet werden"]
+    },
+    "GPRL015": {
+      "title": "Schutz bei Schwangerschaft und Stillzeit",
+      "legalBasis": "Ley 31/1995 Art. 26, RD 298/2009",
+      "summary": "Schwangere und stillende Arbeitnehmerinnen haben Anspruch auf eine Gefaehrdungsbeurteilung ihrer spezifischen Taetigkeit, Anpassung der Arbeitsbedingungen und Befreiung von Nachtschichten und gefaehrlichen Taetigkeiten. Wenn eine Anpassung nicht moeglich ist, muss eine voruebergehende Umsetzung angeboten werden.",
+      "keyPoints": ["Spezifische Gefaehrdungsbeurteilung fuer schwangere Arbeitnehmerinnen durchfuehren", "Arbeitsbedingungen zur Beseitigung von Risiken anpassen", "Von Nachtschichten befreien, wenn aerztlich empfohlen", "Exposition gegenueber Chemikalien, schweres Heben, laenges Stehen vermeiden", "Stillpause bereitstellen: 1 Stunde taeglich", "Voruebergehende Umsetzung anbieten, wenn Risiken nicht beseitigt werden koennen"]
+    },
+    "GPRL016": {
+      "title": "Schutz jugendlicher Arbeitnehmer",
+      "legalBasis": "Ley 31/1995, RD 1/1995 Estatuto de los Trabajadores",
+      "summary": "Arbeitnehmer unter 18 Jahren haben zusaetzlichen Schutz: keine Nachtarbeit, begrenzte Arbeitszeiten, spezifische Gefaehrdungsbeurteilung und Verbot gefaehrlicher Taetigkeiten. Die Arbeitszeit darf 8 Stunden pro Tag einschliesslich Ausbildungszeit nicht ueberschreiten.",
+      "keyPoints": ["Keine Nachtarbeit fuer unter 18-Jaehrige", "Maximal 8 Stunden/Tag einschliesslich Ausbildung", "Spezifische Gefaehrdungsbeurteilung erforderlich", "Verbot der Bedienung bestimmter Geraete", "Zusaetzliche Ruhepausen erforderlich", "Elterliche Einwilligung fuer unter 16-Jaehrige erforderlich"]
+    },
+    "GPRL017": {
+      "title": "Gesundheitsueberwachung bei Nachtarbeit",
+      "legalBasis": "ET Art. 36, Ley 31/1995",
+      "summary": "Nachtarbeiter (22:00-06:00) haben Anspruch auf regelmaessige Gesundheitsueberwachung. Der Arbeitgeber muss die spezifischen Gesundheitsrisiken der Nachtarbeit bewerten und kostenlose aerztliche Untersuchungen anbieten. Bei gesundheitlichen Problemen muss ein Wechsel zur Tagarbeit angeboten werden.",
+      "keyPoints": ["Regelmaessige Gesundheitsuntersuchungen fuer Nachtarbeiter anbieten", "Spezifische Risiken der Nachtarbeit bewerten", "Bei gesundheitlichen Problemen Wechsel zur Tagarbeit ermoeglichen", "Maximal 8 Stunden Durchschnitt in jedem 15-Tage-Zeitraum", "Ausreichende Ruhezeiten zwischen den Schichten sicherstellen", "Auf schlafbezogene Gesundheitsprobleme achten"]
+    },
+    "GPRL018": {
+      "title": "Praevention psychosozialer Risiken",
+      "legalBasis": "Ley 31/1995, EU-Rahmenrichtlinie 89/391/EWG",
+      "summary": "Psychosoziale Risiken umfassen arbeitsbedingten Stress, Burnout, Belaestigung und mangelnde Work-Life-Balance. Praeventionsmassnahmen umfassen angemessene Arbeitsbelastung, klare Kommunikation, Anti-Belaestigungsprotokolle und Unterstuetzungssysteme. Diese Risiken muessen in die Gefaehrdungsbeurteilung aufgenommen werden.",
+      "keyPoints": ["Psychosoziale Risiken in die Gefaehrdungsbeurteilung einbeziehen", "Angemessene Arbeitsbelastung und Zeitplaene foerdern", "Anti-Belaestigungs- und Anti-Mobbing-Richtlinien umsetzen", "Kanaele zur Meldung von Bedenken bereitstellen", "Work-Life-Balance unterstuetzen", "Fuehrungskraefte in der Erkennung von Stresssymptomen schulen"]
+    },
+    "GLAB001": {
+      "title": "Tarifvertrag (Convenio Colectivo)",
+      "legalBasis": "ET Art. 82-92, anwendbarer Gastronomie-Convenio",
+      "summary": "Der Convenio Colectivo de Hosteleria legt Mindestbedingungen fuer die Branche fest, einschliesslich Gehaltstabellen, Arbeitszeiten, Ueberstunden, Urlaub und Berufskategorien. Der anwendbare Vertrag haengt von der Provinz ab. Alle Beschaeftigungsbedingungen muessen die Mindestanforderungen des Convenio erfuellen oder uebertreffen.",
+      "keyPoints": ["Ihren anwendbaren Provinz-Convenio kennen", "Mindestbedingungen koennen nicht durch Vertrag unterschritten werden", "Gehaltstabellen nach Berufskategorie gelten", "Arbeitszeitgrenzen sind rechtsverbindlich", "Convenio wird regelmaessig aktualisiert — auf dem Laufenden bleiben", "Convenio-Referenz am Arbeitsplatz aushangen"]
+    },
+    "GLAB002": {
+      "title": "Arbeitszeiten und Ruhezeiten",
+      "legalBasis": "ET Art. 34-37, RD 1561/1995",
+      "summary": "Die maximale Arbeitswoche betraegt 40 Stunden im Jahresdurchschnitt. Die maximale Tagesschicht betraegt 9 Stunden. Die Mindestruhezeit zwischen Schichten betraegt 12 Stunden. Eine Mindestpause von 15 Minuten ist fuer Schichten ueber 6 Stunden erforderlich. Die woechentliche Mindestruhezeit betraegt 1,5 aufeinanderfolgende Tage.",
+      "keyPoints": ["Maximal 40 Stunden/Woche (Jahresdurchschnitt)", "Maximal 9 Stunden pro Tag (sofern Convenio nicht mehr erlaubt)", "Mindestens 12 Stunden zwischen den Schichten", "15 Minuten Pause bei Schichten ueber 6 Stunden", "1,5 Tage woechentliche Ruhezeit (kann angesammelt werden)", "Maximal 80 Ueberstunden pro Jahr"]
+    },
+    "GLAB003": {
+      "title": "Ueberstundenregelungen",
+      "legalBasis": "ET Art. 35, anwendbarer Convenio",
+      "summary": "Ueberstunden muessen freiwillig sein (ausser bei hoeherer Gewalt). Maximal 80 Ueberstunden pro Jahr. Ueberstunden muessen entweder mit Bezahlung (mindestens 175% laut Convenio) oder gleichwertigem Freizeitausgleich innerhalb von 4 Monaten verguetet werden. Alle Ueberstunden muessen aufgezeichnet werden.",
+      "keyPoints": ["Ueberstunden sind freiwillig (koennen nicht erzwungen werden)", "Maximal 80 Ueberstunden pro Jahr", "Verguetung mit 175% oder Freizeitausgleich", "Freizeitausgleich muss innerhalb von 4 Monaten genommen werden", "Alle Ueberstunden aufzeichnen", "Teilzeitbeschaeftigte: Ueberstunden haben besondere Regeln"]
+    },
+    "GLAB004": {
+      "title": "Urlaubsanspruch",
+      "legalBasis": "ET Art. 38, anwendbarer Convenio",
+      "summary": "Alle Arbeitnehmer haben Anspruch auf mindestens 30 Kalendertage (22 Arbeitstage) bezahlten Urlaub pro Jahr. Urlaubstermine muessen zwischen Arbeitgeber und Arbeitnehmer vereinbart werden. Mindestens ein Zeitraum muss 2 aufeinanderfolgende Wochen betragen. Urlaub darf sich nicht mit Krankenstand ueberschneiden.",
+      "keyPoints": ["Mindestens 30 Kalendertage pro Jahr", "Mindestens 2 aufeinanderfolgende Wochen in einem Zeitraum", "Urlaubsplan von beiden Parteien vereinbart", "Urlaub 2 Monate im Voraus veroeffentlicht", "Darf sich nicht mit Krankenstand ueberschneiden", "Anteilig bei Teiljaehresbeschaeftigung"]
+    },
+    "GLAB005": {
+      "title": "Arbeitszeiterfassung (Registro de Jornada)",
+      "legalBasis": "RD-ley 8/2019 ueber die Arbeitszeiterfassung",
+      "summary": "Seit 2019 muessen alle Arbeitgeber die taegliche Anfangs- und Endzeit jedes Arbeitnehmers erfassen. Aufzeichnungen muessen 4 Jahre aufbewahrt werden. Das System muss zuverlaessig und fuer Arbeitnehmer und Arbeitsinspektoren zugaenglich sein. Nichteinhaltung kann zu Bussgeldern von 626-6.250 Euro fuehren.",
+      "keyPoints": ["Taegliche Anfangs- und Endzeiten fuer alle Mitarbeiter erfassen", "Aufzeichnungen 4 Jahre aufbewahren", "System muss zuverlaessig und ueberpruefbar sein", "Arbeitnehmer muessen Zugang zu ihren Aufzeichnungen haben", "Jederzeit fuer Arbeitsinspektionen verfuegbar", "Bussgelder bei Nichteinhaltung: 626-6.250 Euro"]
+    },
+    "GLAB006": {
+      "title": "Vertragsarten in der Gastronomie",
+      "legalBasis": "ET Art. 8-16, RD-ley 32/2021 Arbeitsreform",
+      "summary": "Die Arbeitsreform 2021 hat die Vertragsarten erheblich veraendert. Unbefristete Vertraege sind nun der Standard. Befristete Vertraege sind auf bestimmte Umstaende beschraenkt (Produktionsspitzen, Vertretung). Diskontinuierliche Festvertraege (fijo discontinuo) sind in der saisonalen Gastronomie ueblich.",
+      "keyPoints": ["Unbefristeter Vertrag ist der Standard", "Befristung nur aus bestimmten gesetzlichen Gruenden", "Fijo discontinuo fuer saisonal wiederkehrende Arbeit", "Ausbildungsvertraege fuer junge Arbeitnehmer", "Teilzeitvertraege muessen genaue Stunden angeben", "Probezeit: 6 Monate (Absolventen), 2 Monate (andere)"]
+    },
+    "GLAB007": {
+      "title": "Rechte und Pflichten der Arbeitnehmer",
+      "legalBasis": "ET Art. 4-5, Spanische Verfassung Art. 35",
+      "summary": "Arbeitnehmer haben grundlegende Rechte, darunter gerechte Bezahlung, Nichtdiskriminierung, Wuerde am Arbeitsplatz, Gesundheit und Sicherheit, Gewerkschaftsmitgliedschaft sowie Information und Konsultation. Pflichten umfassen Treu und Glauben, Sorgfalt, Einhaltung der Sicherheitsvorschriften und Vertraulichkeit.",
+      "keyPoints": ["Recht auf gerechte und puenktliche Bezahlung", "Recht auf Nichtdiskriminierung und Gleichbehandlung", "Recht auf Arbeitsschutz", "Recht auf Privatsphaere und Wuerde", "Pflicht zur Einhaltung von Sicherheitsanweisungen", "Pflicht zum Handeln nach Treu und Glauben"]
+    },
+    "GLAB008": {
+      "title": "Ihre Gehaltsabrechnung verstehen",
+      "legalBasis": "ET Art. 29, anwendbarer Convenio",
+      "summary": "Das Verstaendnis Ihrer Nomina (Gehaltsabrechnung) ist wichtig. Sie zeigt Grundgehalt, Complementos (Zulagen), Ueberstunden, Abzuege (IRPF, Sozialversicherung) und Nettogehalt. Die Gehaltsabrechnung muss monatlich bereitgestellt werden. Abweichungen sollten umgehend gemeldet werden.",
+      "keyPoints": ["Grundgehalt nach Convenio-Kategorie", "Complementos: Dienstalter, Nachtzuschlag, Trinkgelder", "Unterschied zwischen Brutto- und Nettogehalt", "IRPF-Einbehaltung haengt von der persoenlichen Situation ab", "Sozialversicherungsbeitrag (circa 6,35%)", "Zwei Sonderzahlungen (pagas extra) pro Jahr"]
+    },
+    "GLAB009": {
+      "title": "Sozialversicherung",
+      "legalBasis": "Ley General de la Seguridad Social (RD Legislativo 8/2015)",
+      "summary": "Alle beschaeftigten Arbeitnehmer muessen bei der Sozialversicherung angemeldet sein. Beitraege decken Gesundheitsversorgung, Renten, Arbeitslosigkeit und Krankengeld ab. Der Arbeitgeber ist fuer die Anmeldung und Beitragszahlungen verantwortlich. Arbeitnehmer sollten ihren Bericht zur Erwerbsbiografie (Informe de Vida Laboral) regelmaessig ueberpruefen.",
+      "keyPoints": ["Anmeldung ist ab dem ersten Tag verpflichtend", "Arbeitgeber uebernimmt Anmeldung und Beitraege", "Deckt Gesundheitsversorgung, Rente, Arbeitslosigkeit ab", "Vida Laboral-Bericht regelmaessig ueberpruefen", "Unregelmaessigkeiten der Sozialversicherung melden", "Sozialversicherungsnummer sicher aufbewahren"]
+    },
+    "GROL001": {
+      "title": "Brandschutz in der Kueche",
+      "legalBasis": "RD 513/2017, CTE DB-SI",
+      "summary": "Kuechenbraende sind die haeufigste Art in der Gastronomie. Fettbraende erfordern spezielle Loeschmethoden — niemals Wasser verwenden. Kuechenabzugshauben muessen ueber automatische Feuerloeschung verfuegen. Loeschdecken muessen zugaenglich sein. Gasabsperrverfahren muessen allem Kuechenpersonal bekannt sein.",
+      "keyPoints": ["Niemals Wasser auf Fettbraende schuetten", "Standort und Verwendung der Loeschdecke kennen", "Feuerloeschanlage der Kuechenhaube muss gewartet werden", "Standort des Gasabsperrventils kennen", "Feuerloescher zugaenglich halten (Klasse F fuer Fett)", "Haubenfilter regelmaessig reinigen, um Fettansammlungen zu verhindern"]
+    },
+    "GROL002": {
+      "title": "Messersicherheit in der Kueche",
+      "legalBasis": "Ley 31/1995, RD 773/1997",
+      "summary": "Messerschnitte gehoeren zu den haeufigsten Kuechenverletzungen. Praevention erfordert angemessene Schulung, Verwendung scharfer Messer (stumpfe Messer sind gefaehrlicher), korrekte Schneidetechniken, schnittfeste Handschuhe fuer bestimmte Aufgaben und ordnungsgemaesse Aufbewahrung.",
+      "keyPoints": ["Scharfe Messer verwenden — stumpfe Messer rutschen leichter ab", "Korrekte Schneidetechnik anwenden", "Vom Koerper weg schneiden", "Schnittfeste Handschuhe beim Ausloesenund aehnlichem verwenden", "Messer in vorgesehenen Haltern oder Bloecken aufbewahren", "Messer niemals in Spuelbecken oder unter Wasser liegen lassen", "Messer mit der Spitze nach unten an der Seite tragen"]
+    },
+    "GROL003": {
+      "title": "Verbrennungspraevention in der Kueche",
+      "legalBasis": "Ley 31/1995, RD 486/1997",
+      "summary": "Verbrennungen durch heisse Oberflaechen, Fluessigkeiten, Dampf und Oel sind haeufige Kuechengefahren. Praevention umfasst geeignete PSA (hitzebestaendige Handschuhe, lange Aermel), Bewusstsein fuer heisse Oberflaechen, korrekte Topfhandhabung und sofortige Erste Hilfe bei Verbrennungen.",
+      "keyPoints": ["Hitzebestaendige Handschuhe beim Umgang mit heissen Gegenstaenden verwenden", "Beim Tragen heisser Gegenstaende ankuendigen: 'Achtung!' 'Heiss!'", "Topfgriffe nach innen auf dem Herd drehen", "Deckel von sich weg oeffnen, um Dampfverbrennungen zu vermeiden", "Verbrennungs-Erste-Hilfe-Set in der Kueche zugaenglich halten", "Erste Hilfe: Kuehles Wasser 10+ Minuten, kein Eis verwenden"]
+    },
+    "GROL004": {
+      "title": "Kuechenbelueftung",
+      "legalBasis": "RD 486/1997, RITE (RD 1027/2007)",
+      "summary": "Ausreichende Belueftung ist wesentlich fuer Kuechensicherheit und Komfort. Abzugshauben muessen richtig dimensioniert und gewartet werden. Die Luftzufuhr muss die Absaugung ausgleichen. Filter muessen regelmaessig gereinigt werden, um Fettansammlungen und Brandrisiko zu verhindern.",
+      "keyPoints": ["Sicherstellen, dass Abzugshauben funktionieren", "Haubenfilter woechentlich reinigen", "Wartungsplan des Belueftungssystems ueberpruefen", "Schlechte Belueftung sofort melden", "Belueftungsoeffnungen niemals blockieren", "CO-Werte in Gaskuechen ueberwachen"]
+    },
+    "GROL005": {
+      "title": "Kuechengeraetesicherheit",
+      "legalBasis": "RD 1215/1997 ueber die Sicherheit von Arbeitsmitteln",
+      "summary": "Kuechengeraete (Aufschnittmaschinen, Mixer, Fritteusen, Oefen) muessen gemaess den Herstelleranweisungen verwendet werden. Das Personal muss an jedem Geraet geschult sein. Sicherheitsvorrichtungen duerfen niemals entfernt werden. Geraete muessen ordnungsgemaess gewartet und inspiziert werden.",
+      "keyPoints": ["Herstelleranweisungen lesen und befolgen", "Schulung vor der Verwendung von Geraeten abschliessen", "Sicherheitsvorrichtungen niemals entfernen", "Vor dem Reinigen ausschalten und vom Strom trennen", "Stoerungen sofort melden", "Haende von beweglichen Teilen fernhalten"]
+    },
+    "GROL006": {
+      "title": "Verantwortungsvoller Alkoholausschank",
+      "legalBasis": "Ley 5/2018 (variiert nach Region), Ley 26/2015 Kinderschutz",
+      "summary": "Barpersonal muss Alkohol verantwortungsvoll ausschenken. Dies umfasst die Verweigerung des Ausschanks an Minderjaehrige (unter 18), das Erkennen von Anzeichen einer Alkoholvergiftung und Protokolle fuer die Verweigerung des Ausschanks. Das Personal muss die rechtliche Haftung beim Ausschank an betrunkene Personen kennen.",
+      "keyPoints": ["Niemals Alkohol an Minderjaehrige (unter 18) ausschenken", "Ausweis pruefen, wenn das Alter unklar ist", "Anzeichen einer Alkoholvergiftung erkennen", "Wissen, wie man den Ausschank diplomatisch verweigert", "Betrunkenen Gaesten Wasser und Essen anbieten", "Ihre rechtliche Haftung kennen"]
+    },
+    "GROL007": {
+      "title": "Umgang mit Glaswaren an der Bar",
+      "legalBasis": "Ley 31/1995, allgemeine Sicherheit",
+      "summary": "Zerbrochenes Glas ist eine erhebliche Gefahr im Barbereich. Korrekter Umgang, Lagerung und Reinigungsverfahren minimieren das Risiko. Zerbrochenes Glas niemals mit blossen Haenden aufheben. Verwenden Sie vorgesehene Behaelter fuer Glasbruch.",
+      "keyPoints": ["Glaeser vor Verwendung auf Risse und Absplitterungen pruefen", "Beschaedigte Glaswaren sofort entsorgen", "Zerbrochenes Glas niemals mit blossen Haenden aufheben", "Besen und Kehrschaufel oder feuchtes Tuch verwenden", "Separaten Behaelter fuer Glasbruch verwenden", "Niemals ein Glas zum Eisschaufeln verwenden"]
+    },
+    "GROL008": {
+      "title": "Tablett-Handhabung im Gastraum",
+      "legalBasis": "Ley 31/1995, RD 487/1997",
+      "summary": "Korrekte Tablett-Handhabung verhindert Verletzungen und Verschuetten. Schulung in korrekter Tragetechnik, Lastverteilung und Wegebewusstsein ist unerlaesslich. Schwere Tabletts sollten mit beiden Haenden gestueetzt werden.",
+      "keyPoints": ["Gewicht gleichmaessig auf dem Tablett verteilen", "Schwere Tabletts mit beiden Haenden stuetzen", "Auf Route und Hindernisse achten", "Tablettstaender fuer schwere Lasten verwenden", "Auf nasse Boeden und unebene Oberflaechen achten", "Ueberladungssituationen melden"]
+    },
+    "GROL009": {
+      "title": "Rutschpraevention im Gastraum",
+      "legalBasis": "RD 486/1997, Ley 31/1995",
+      "summary": "Ausrutsch- und Sturzunfaelle sind in der Gastronomie haeufig. Praevention erfordert rutschfestes Schuhwerk, sofortige Reinigung von Verschuettetem, ordnungsgemaesse Bodenpflege und deutliche Beschilderung nasser Bereiche.",
+      "keyPoints": ["Jederzeit rutschfeste Schuhe tragen", "Verschuettetes sofort reinigen", "Warnschilder fuer nassen Boden beim Reinigen aufstellen", "Laufwege frei von Hindernissen halten", "Beschaedigte oder unebene Bodenbelaege melden", "Besondere Vorsicht beim Uebergang Kueche-Gastraum"]
+    },
+    "GROL010": {
+      "title": "Anti-Belaestigungsprotokoll",
+      "legalBasis": "LO 3/2007 zur Gleichstellung, ET Art. 4.2.e",
+      "summary": "Jedes Unternehmen muss ein Anti-Belaestigungsprotokoll haben, das sexuelle Belaestigung, geschlechtsbezogene Belaestigung und Mobbing am Arbeitsplatz abdeckt. Das Protokoll muss Praeventionsmassnahmen, Beschwerdeverfahren, Untersuchungsprozesse und Sanktionen umfassen. Alle Mitarbeiter muessen informiert werden.",
+      "keyPoints": ["Null-Toleranz fuer alle Formen der Belaestigung", "Beschwerdeverfahren kennen", "Alle Beschwerden werden vertraulich untersucht", "Vergeltung gegen Beschwerdefuehrer ist verboten", "Schulung zur Praevention ist verpflichtend", "Sanktionen reichen von Abmahnung bis Kuendigung"]
+    },
+    "GROL011": {
+      "title": "Gleichstellungsplan",
+      "legalBasis": "LO 3/2007, RD 901/2020 ueber Gleichstellungsplaene",
+      "summary": "Unternehmen mit 50+ Mitarbeitern muessen einen Gleichstellungsplan haben. Auch kleinere Unternehmen muessen die Grundsaetze der Gleichbehandlung respektieren. Der Plan behandelt gleiche Bezahlung, Einstellung, Befoerderung, Work-Life-Balance und Praevention sexueller Belaestigung.",
+      "keyPoints": ["Gleicher Lohn fuer gleiche Arbeit", "Nichtdiskriminierende Einstellungsverfahren", "Gleicher Zugang zu Schulung und Befoerderung", "Massnahmen zur Work-Life-Balance", "Massnahmen zur Praevention sexueller Belaestigung", "Regelmaessige Ueberwachung und Ueberpruefung der Gleichstellungsindikatoren"]
+    },
+    "GROL012": {
+      "title": "Recht auf digitale Abschaltung",
+      "legalBasis": "LO 3/2018 LOPDGDD Art. 88, ET Art. 20 bis",
+      "summary": "Arbeitnehmer haben das Recht auf digitale Abschaltung ausserhalb der Arbeitszeiten. Arbeitgeber duerfen nicht verlangen, dass Mitarbeiter in Ruhezeiten E-Mails, Nachrichten oder Anrufe beantworten. Eine interne Richtlinie muss die Bedingungen dieses Rechts festlegen.",
+      "keyPoints": ["Keine Verpflichtung, ausserhalb der Arbeitszeit auf Arbeitsnachrichten zu antworten", "Ruhezeiten und Urlaubszeit respektieren", "Fuehrungskraefte muessen mit gutem Beispiel vorangehen", "Ausnahmen nur bei echten Notfaellen", "Richtlinie muss allen Mitarbeitern mitgeteilt werden", "Arbeitnehmer duerfen nicht fuer das Abschalten bestraft werden"]
+    },
+    "GROL013": {
+      "title": "Praevention von Mobbing am Arbeitsplatz",
+      "legalBasis": "Ley 31/1995, ET Art. 4.2.e, CC Art. 173.1",
+      "summary": "Mobbing am Arbeitsplatz (acoso laboral) umfasst wiederholtes feindseliges Verhalten, das ein einschuechterndes oder erniedringendes Arbeitsumfeld schafft. Praevention erfordert klare Richtlinien, Meldekanaele, Untersuchungsverfahren und eine unterstuetzende Arbeitskultur.",
+      "keyPoints": ["Anzeichen von Mobbing am Arbeitsplatz erkennen", "Vorfaelle ueber offizielle Kanaele melden", "Vertrauliche Untersuchung aller Beschwerden", "Unterstuetzung fuer betroffene Arbeitnehmer", "Sanktionen fuer Taeter", "Eine respektvolle Arbeitskultur foerdern"]
+    },
+    "GROL014": {
+      "title": "Datenschutz (DSGVO/LOPDGDD)",
+      "legalBasis": "EU-DSGVO 2016/679, LO 3/2018 LOPDGDD",
+      "summary": "Mitarbeiter verarbeiten personenbezogene Daten von Gaesten und Kollegen. Die DSGVO-Konformitaet erfordert das Verstaendnis von Datenminimierung, Einwilligung, sicherer Speicherung und Betroffenenrechten. Mitarbeiterdaten (Dienstplaene, Gehaltsabrechnung, Gesundheit) muessen geschuetzt werden.",
+      "keyPoints": ["Nur notwendige personenbezogene Daten erheben", "Einwilligung einholen, wo erforderlich", "Daten sicher speichern (physisch und digital)", "Rechte der Gaeste kennen (Auskunft, Loeschung)", "Datenschutzverletzungen innerhalb von 72 Stunden melden", "Personenbezogene Daten niemals ohne Genehmigung weitergeben"]
+    },
+    "GDOC001": {
+      "title": "Checkliste der Pflichtdokumentation",
+      "legalBasis": "Mehrere Verordnungen — Zusammenstellung",
+      "summary": "Diese Checkliste umfasst alle gesetzlich vorgeschriebenen Dokumente fuer einen Gastronomiebetrieb: Lebensmittelsicherheitsaufzeichnungen, PRL-Dokumentation, Beschaeftigungsunterlagen, Gesundheitsregistrierungen, Lizenzen, Versicherungen und behoerdliche Zertifizierungen.",
+      "keyPoints": ["APPCC-Plan und Aufzeichnungen", "PRL-Praeventionsplan", "Notfall-/Evakuierungsplan", "Arbeitsvertraege und Anmeldungen", "Lebensmittelhygiene-Zertifikate", "Gesundheitsregistrierung (RGSEAA)", "Gewerbeerlaubnis und Betriebsgenehmigung", "Versicherungsunterlagen", "Brandschutzzeugnis", "Aufzeichnungen des Zeiterfassungssystems"]
+    },
+    "GDOC002": {
+      "title": "Schulungsaufzeichnungen",
+      "legalBasis": "Ley 31/1995, EU 852/2004",
+      "summary": "Alle an das Personal erteilten Schulungen muessen dokumentiert werden. Aufzeichnungen muessen Schulungsthema, Datum, Dauer, Trainer, Teilnehmer und Inhalt umfassen. Sowohl Lebensmittelsicherheits- als auch Arbeitsschutzschulungsaufzeichnungen muessen gefuehrt und fuer Inspektionen verfuegbar sein.",
+      "keyPoints": ["Alle Schulungen mit Datum und Inhalt dokumentieren", "Anwesenheitslisten von Teilnehmern unterzeichnen lassen", "Zertifikate und Qualifikationen aufbewahren", "Einarbeitungsschulungen fuer neue Mitarbeiter dokumentieren", "Auffrischungsschulungstermine aufzeichnen", "Aufzeichnungen fuer Inspektionen verfuegbar machen"]
+    },
+    "GDOC003": {
+      "title": "Jaehrlicher Schulungsplan",
+      "legalBasis": "Ley 31/1995 Art. 19, ET Art. 4.2.b",
+      "summary": "Ein jaehrlicher Schulungsplan stellt sicher, dass alle Mitarbeiter die notwendigen Schulungen in Lebensmittelsicherheit, Arbeitsschutz und Fachkompetenz erhalten. Der Plan sollte Schulungsbedarf identifizieren, Termine planen, Budget bereitstellen und den Abschluss nachverfolgen.",
+      "keyPoints": ["Schulungsbedarf fuer jede Rolle ermitteln", "Schulungen ueber das Jahr verteilt planen", "Auffrischungsschulungen zur Lebensmittelsicherheit einbeziehen", "PRL-spezifische Schulungen einbeziehen", "Abschlussquoten nachverfolgen", "Schulungswirksamkeit bewerten"]
+    },
+    "GDOC004": {
+      "title": "Vorbereitung auf Gesundheitsinspektionen",
+      "legalBasis": "EU 882/2004 ueber amtliche Kontrollen",
+      "summary": "Gesundheitsinspektionen koennen ohne Vorankuendigung stattfinden. Die Vorbereitung erfordert die Aktualisierung aller Lebensmittelsicherheitsdokumente, die Sicherstellung der Hygienestandards der Raeumlichkeiten und die Bereitstellung von benanntem Personal zur Begleitung der Inspektoren.",
+      "keyPoints": ["Alle Lebensmittelsicherheitsdokumente aktuell halten", "Sicherstellen, dass APPCC-Aufzeichnungen aktuell sind", "Temperaturprotokolle muessen vollstaendig sein", "Reinigungsprotokolle muessen aktuell sein", "Lebensmittelhygiene-Zertifikate griffbereit haben", "Wissen, wer fuer die Begleitung der Inspektoren zustaendig ist"]
+    },
+    "GDOC005": {
+      "title": "Vorbereitung auf Arbeitsinspektionen",
+      "legalBasis": "Ley 23/2015 de la Inspeccion de Trabajo",
+      "summary": "Arbeitsinspektionen ueberpruefen die Einhaltung des Arbeitsrechts, des Arbeitsschutzes und der Sozialversicherung. Inspektoren koennen unangekuendigt erscheinen. Wichtige Dokumente, die verfuegbar sein muessen, umfassen Vertraege, Zeitaufzeichnungen, Gehaltsabrechnungen, PRL-Plan und Sozialversicherungsanmeldungen.",
+      "keyPoints": ["Alle Arbeitsvertraege zugaenglich aufbewahren", "Zeiterfassungssystem muss funktionsfaehig sein", "Gehaltsabrechnungen fuer das laufende Jahr verfuegbar", "PRL-Dokumentation auf dem neuesten Stand", "Sozialversicherungsanmeldungen ueberprueft", "Wissen, wer berechtigt ist, mit Inspektoren zu sprechen"]
+    },
+    "GENV001": {
+      "title": "Abfallwirtschaft",
+      "legalBasis": "Ley 7/2022 de residuos y suelos contaminados",
+      "summary": "Spaniens Abfallgesetz verpflichtet Unternehmen, Abfall zu minimieren, zu trennen und ordnungsgemaess zu entsorgen. Gastronomiebetriebe muessen mindestens folgende Fraktionen trennen: organisch, Verpackungen, Glas, Papier/Karton und Altoeel. Abfallaufzeichnungen muessen gefuehrt werden.",
+      "keyPoints": ["Abfall in die vorgeschriebenen Kategorien trennen", "Autorisierte Abfallentsorgungsdienste beauftragen", "Abfallmengenaufzeichnungen fuehren", "Einwegplastik minimieren", "Alle Mitarbeiter in Abfalltrennung schulen", "Abfalltrennungsanweisungen deutlich anzeigen"]
+    },
+    "GENV002": {
+      "title": "Abfalltrennungsprotokoll",
+      "legalBasis": "Ley 7/2022, lokale kommunale Verordnungen",
+      "summary": "Korrekte Abfalltrennung ist sowohl eine gesetzliche Verpflichtung als auch eine Umweltverantwortung. Jede Abfallart hat zugewiesene Behaelter und Abholplaene. Das Personal muss in korrekter Trennung geschult werden. Verunreinigte Abfallfraktionen verringern die Recyclingeffizienz.",
+      "keyPoints": ["Bioabfall: brauner/gruener Behaelter", "Verpackungen: gelber Behaelter", "Glas: gruener Behaelter", "Papier/Karton: blauer Behaelter", "Altspeiseoel: autorisierter Sammler", "Restmuell: grauer Behaelter", "Alle Abfallbehaelter deutlich beschriften"]
+    },
+    "GENV003": {
+      "title": "Altoelentsorgung",
+      "legalBasis": "Ley 7/2022, RD 679/2006",
+      "summary": "Gebrauchtes Speiseoel darf niemals in den Abfluss geschuettet werden. Es muss in vorgesehenen Behaeltern gesammelt und von autorisierten Recyclingunternehmen abgeholt werden. Aufzeichnungen ueber die Oelentsorgung muessen gefuehrt werden. Ein Liter Oel kann 1.000 Liter Wasser verunreinigen.",
+      "keyPoints": ["Oel niemals in den Abfluss schuetten", "Gebrauchtes Oel in vorgesehenen Behaeltern sammeln", "Autorisierten Oelsammeldienst beauftragen", "Abholbelege und Aufzeichnungen aufbewahren", "Oelbehaelter in einem gesicherten Bereich lagern", "Frittieroel vor der Degradation wechseln"]
+    },
+    "GENV004": {
+      "title": "Energieeffizienz",
+      "legalBasis": "RD 390/2021 ueber Energieeffizienz, EU 2012/27",
+      "summary": "Energieeffizienz senkt Kosten und Umweltauswirkungen. Wichtige Massnahmen umfassen LED-Beleuchtung, effiziente Geraete, Temperaturmanagement, vorbeugende Wartung und Sensibilisierung des Personals fuer energiesparende Praktiken.",
+      "keyPoints": ["LED-Beleuchtung durchgehend verwenden", "Geraete bei Nichtgebrauch ausschalten", "Optimale Temperatureinstellungen beibehalten", "Kuehltschranktueren geschlossen halten", "Regelmaessige Geraetewartung einplanen", "Energieverbrauch monatlich ueberwachen"]
+    },
+    "GENV005": {
+      "title": "Programm zur Reduzierung von Lebensmittelabfall",
+      "legalBasis": "Ley 1/2025, EU-Strategie Vom Hof auf den Tisch",
+      "summary": "Ueber die gesetzliche Einhaltung hinaus zeigt ein Programm zur Reduzierung von Lebensmittelabfall Umweltverantwortung. Es umfasst Abfallaudit, Menueplanung zur Abfallminimierung, Personalschulung zu Portionen, Kompostierung wo moeglich und Partnerschaften mit Lebensmittelspendenorganisationen.",
+      "keyPoints": ["Lebensmittelabfall auditieren, um Hauptquellen zu identifizieren", "Menues planen, um Zutaten effizient zu verwenden", "Personal in korrekten Portionsgroessen schulen", "Kompostierung umsetzen, wo machbar", "Mit Lebensmittelspendenorganisationen zusammenarbeiten", "Abfallreduktionsziele setzen und Fortschritte ueberwachen"]
+    }
+  }
+}

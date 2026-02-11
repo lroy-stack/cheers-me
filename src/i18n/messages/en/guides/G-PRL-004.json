@@ -1,0 +1,198 @@
+{
+  "title": "Emergency Plan",
+  "legalBasis": "Spanish Royal Decree 393/2007 on basic self-protection standards; Law 31/1995 on Occupational Risk Prevention; RD 2267/2004 on fire protection regulation; Spanish Technical Building Code (CTE DB-SI) on fire safety",
+  "summary": "An emergency plan is a comprehensive document that establishes the organization, resources, and procedures necessary to respond effectively to emergency situations that could affect a hospitality establishment. Under RD 393/2007, establishments above certain capacity thresholds or with specific risk characteristics must prepare a formal self-protection plan (Plan de Autoprotección), while all workplaces must have at least basic emergency procedures under occupational safety law.\n\nThe emergency plan must address foreseeable scenarios including fire, medical emergencies, gas leaks, electrical failures, flooding, earthquakes (depending on seismic zone), bomb threats, violent incidents, and other situations that could threaten the safety of workers and customers. For each scenario, the plan defines detection and alarm procedures, notification and communication protocols, evacuation routes and assembly points, specific roles and responsibilities (fire wardens, first aiders, evacuation coordinators), and coordination with external emergency services.\n\nAn effective emergency plan is not just a compliance document filed away in a manager's office — it is a practical operational tool that is communicated to all staff, practiced through regular drills, and continuously updated based on experience and changes to the premises. When an actual emergency occurs, staff familiarity with their roles and procedures can mean the difference between an orderly, safe response and panic. The plan provides structure and clear guidance at precisely the moment when stress and time pressure are highest, enabling staff to protect themselves, their colleagues, and their customers effectively.",
+  "keyPoints": [
+    "All hospitality establishments must have emergency procedures; larger venues require formal self-protection plans under RD 393/2007",
+    "The plan must cover all foreseeable emergencies: fire, medical, gas leak, power failure, natural disasters, and security incidents",
+    "Clear roles must be assigned: fire wardens, first aiders, evacuation coordinators, and communication coordinators",
+    "Evacuation routes and assembly points must be clearly marked, communicated to all staff, and kept permanently clear of obstructions",
+    "Emergency drills must be conducted at least twice annually to ensure all staff know their roles and procedures",
+    "The plan must be coordinated with external emergency services (bomberos, police, medical services)",
+    "All changes to premises layout, capacity, or use must trigger review and update of the emergency plan",
+    "Customers must receive basic emergency information: exit locations, assembly points, and what to do if the alarm sounds"
+  ],
+  "sections": [
+    {
+      "heading": "1. Legal Requirements and Self-Protection Plans",
+      "content": "Spain's regulatory framework for emergency planning distinguishes between basic emergency procedures required for all workplaces under occupational safety law (Law 31/1995) and formal self-protection plans required for higher-risk or higher-capacity establishments under RD 393/2007. Understanding which requirements apply to your specific establishment is the first step in compliance.\n\nRoyal Decree 393/2007 requires a formal self-protection plan for hospitality establishments with capacity for 500 or more persons (in buildings with multiple uses, capacity is cumulative), establishments classified as public assembly venues, establishments located in buildings with special evacuation difficulty (basement venues, high-rise buildings), and establishments storing significant quantities of hazardous materials. The plan must be registered with the competent autonomous community authority, which varies by region but is typically the fire prevention or civil protection service.\n\nEven establishments below these thresholds must have emergency procedures under Law 31/1995, which requires all employers to analyze foreseeable emergency situations, adopt necessary measures for first aid, firefighting, and evacuation, and designate and train sufficient personnel to implement these measures. The distinction is primarily one of formality and detail rather than fundamental approach — both require systematic planning, designated roles, training, and periodic review.",
+      "subsections": [
+        {
+          "heading": "1.1 Content Requirements for Self-Protection Plans",
+          "content": "A formal self-protection plan under RD 393/2007 must include: identification and location of the establishment and its activities; description of the building and facilities; risk analysis and evaluation of foreseeable emergencies; inventory of means and resources for self-protection (fire extinguishers, hoses, alarms, emergency lighting); zoning plan showing evacuation routes, fire protection equipment, alarm points, and assembly areas; organizational structure for emergencies with specific roles and responsibilities; operational procedures for each emergency type; programs for maintenance of emergency equipment and training/drilling of personnel; and documentation of plan implementation and review.\n\nThe plan must be accompanied by graphical documentation including general location plans, detailed floor plans showing evacuation routes and fire protection equipment, and signage diagrams. All documentation must be kept current — plans based on outdated premises layouts or missing recent modifications provide false assurance and can create confusion during actual emergencies."
+        },
+        {
+          "heading": "1.2 Capacity Calculation",
+          "content": "Determining whether your establishment requires a formal self-protection plan depends on accurate capacity calculation. For restaurants, capacity is typically calculated based on seating: one person per seat plus staff. For bars and standing venues, calculation is based on usable floor area: typically 0.5 to 1.5 square meters per person depending on the type of venue and local regulations. For mixed venues (restaurant with bar area), capacities are cumulative.\n\nIn buildings with multiple uses (e.g., restaurant on ground floor, offices above), all uses contribute to total building capacity for determining self-protection plan requirements. Even if your restaurant only seats 200, if the total building capacity exceeds 500 persons, you may fall within the scope of RD 393/2007. In such cases, the building owner typically prepares an overall self-protection plan with annexes for each activity."
+        },
+        {
+          "heading": "1.3 Registration and Approval",
+          "content": "Where a formal self-protection plan is required, it must be registered with the competent authority in the autonomous community. The registration process varies by region but typically involves submitting the plan for technical review, which may result in requests for modifications or additional information. Once approved and registered, the plan must be reviewed and re-registered whenever significant changes occur (capacity increase, layout changes, change of use) or according to the periodic review schedule established by the autonomous community (typically every three to five years).\n\nFailure to prepare, register, or implement a required self-protection plan is a serious infringement under Law 2/1985 on Civil Protection, enforceable through administrative sanctions and, potentially, closure orders if the deficiency creates serious risk to public safety."
+        }
+      ]
+    },
+    {
+      "heading": "2. Emergency Scenarios and Response Procedures",
+      "content": "The emergency plan must address all reasonably foreseeable emergency scenarios that could affect the establishment. For hospitality venues, the most common and significant risks are fire, medical emergencies, and gas leaks, but a comprehensive plan also considers less frequent but potentially serious scenarios including electrical failures, water system failures or flooding, natural disasters (earthquakes, severe weather), security incidents (violence, bomb threats), and hazardous material incidents.\n\nFor each scenario, the plan must define detection and alarm procedures (how the emergency will be detected and how the alarm will be raised), notification procedures (who must be notified and by what means), immediate response actions (what staff should do in the first moments), evacuation decision criteria (when to evacuate, when to shelter in place), coordination with emergency services, and recovery and return to normal operations. Detailed, scenario-specific procedures provide much clearer guidance than generic 'in case of emergency' instructions.",
+      "subsections": [
+        {
+          "heading": "2.1 Fire Emergency Procedures",
+          "content": "Fire is the emergency scenario requiring the most detailed planning in hospitality establishments due to the combination of ignition sources (cooking equipment, electrical systems), combustible materials (furniture, decorations, food products), and high occupancy levels. Fire emergency procedures must address discovery and alarm (any person discovering fire must activate the nearest alarm point and notify the designated fire coordinator), initial response (trained staff may attempt to control small fires with appropriate extinguishers if safe to do so, without exposing themselves to danger), evacuation decision (the fire coordinator or senior staff member must decide whether to evacuate based on fire size, location, and spread rate), and coordination with fire services (ensuring clear access for fire vehicles, providing building information).\n\nCritical elements include ensuring that all staff know the locations of fire extinguishers, fire alarm activation points, and evacuation routes from every area where they work; understanding which type of extinguisher to use for which type of fire (Class F for cooking oil fires, never water; CO2 or dry powder for electrical fires; water or foam for ordinary combustibles); and knowing the evacuation signal and their specific role in evacuation. Kitchen staff must understand specific procedures for gas and electrical equipment shutdown during evacuation if time and safety permit."
+        },
+        {
+          "heading": "2.2 Medical Emergency Procedures",
+          "content": "Medical emergencies in hospitality settings may involve workers (kitchen injuries, heat stress, cardiac events) or customers (choking, allergic reactions, heart attacks, falls, alcohol-related incidents). The emergency plan must designate trained first aiders (at least one per shift in larger establishments), specify the location of first aid kits and automated external defibrillators (AEDs) if provided, and establish clear procedures for summoning emergency medical services (112 in Spain).\n\nSpecific protocols should address common scenarios: for choking, trained staff should know the Heimlich maneuver and when to apply it; for severe allergic reactions (anaphylaxis), staff should know how to recognize the signs, summon emergency services immediately, and assist the person with their auto-injector (EpiPen) if they have one; for suspected cardiac events, staff should know how to use the AED if available, perform CPR if trained, and summon emergency services; for serious kitchen injuries (deep cuts, severe burns), staff should know how to control bleeding, treat burns appropriately, and when immediate hospital transport is necessary."
+        },
+        {
+          "heading": "2.3 Gas Leak and Chemical Emergency Procedures",
+          "content": "Establishments using natural gas or LPG for cooking must have specific procedures for suspected gas leaks: immediate evacuation of the area, prohibition of any ignition sources (no light switches, no mobile phones in the leak area as these can create sparks), ventilation of the area if safe to do so, closing the main gas supply valve, and calling the gas emergency service and fire service. Staff must know how to detect gas leaks (distinctive odor, hissing sound) and the location of the main gas shut-off valve.\n\nChemical emergencies (large spills of cleaning chemicals, mixing of incompatible chemicals creating toxic fumes) require immediate evacuation of the affected area, ventilation, use of appropriate PPE by trained personnel only, and reference to Safety Data Sheets for specific chemical hazard information. Any chemical incident creating vapor, fumes, or uncertain hazard should be treated as requiring professional emergency response rather than attempting cleanup with untrained staff."
+        }
+      ]
+    },
+    {
+      "heading": "3. Emergency Organization and Roles",
+      "content": "An effective emergency response requires clear assignment of roles and responsibilities so that everyone knows what they should do and who is responsible for each critical function. The organizational structure should be proportionate to the size and complexity of the establishment: a small restaurant may have just two or three designated roles, while a large hotel or event venue will have a complete emergency team with multiple personnel in each role.\n\nKey roles typically include: emergency coordinator or chief fire warden (overall responsibility for emergency response, decision to evacuate, coordination with emergency services); floor or area fire wardens (responsible for specific areas, checking that evacuation is complete); first aiders (providing medical assistance); communications coordinator (managing internal and external communications, calling emergency services); and evacuation assistants (helping customers evacuate, particularly assisting those with mobility difficulties). All roles must have designated alternates to ensure coverage across all shifts and when primary role-holders are absent.",
+      "subsections": [
+        {
+          "heading": "3.1 Emergency Coordinator Responsibilities",
+          "content": "The emergency coordinator is the person in charge of emergency response until emergency services arrive and take command. This role is typically held by the general manager, duty manager, or head chef depending on shift patterns. Responsibilities include assessing the situation and determining the appropriate response, deciding whether to evacuate or shelter in place, ensuring that emergency services have been summoned and provided with necessary information, coordinating the response activities of fire wardens and other emergency team members, ensuring that all areas have been checked and evacuated if necessary, accounting for all staff and customers at the assembly point, and liaising with emergency services upon their arrival.\n\nThis role requires someone with sufficient authority to make decisions, familiarity with the entire premises, ability to remain calm under pressure, and training in emergency response procedures. The coordinator must be identifiable during an emergency (high-visibility vest, designation in briefings) and have access to critical information including building plans, emergency contact numbers, and customer booking information that may help with headcounts."
+        },
+        {
+          "heading": "3.2 Fire Warden Duties",
+          "content": "Fire wardens (also called floor wardens or area marshals in larger establishments) are responsible for specific zones of the building. Their duties include knowing all evacuation routes and assembly points for their area, checking their area regularly for fire hazards and obstructions to evacuation routes, on hearing the alarm, sweeping their designated area to ensure complete evacuation including checking toilets, storerooms, and other spaces where people might not hear the alarm, closing doors and windows if time and safety permit to limit fire and smoke spread (but never locking doors), directing people to the appropriate evacuation route, and reporting to the emergency coordinator at the assembly point that their area is clear.\n\nThe number of fire wardens required depends on building size and complexity. As a rough guide, one warden per floor or per 100 persons occupancy is typical, but complex layouts may require more. Fire wardens must receive specific training in their duties and should participate in evacuation drills to practice their role."
+        },
+        {
+          "heading": "3.3 First Aider Roles",
+          "content": "Designated first aiders provide initial medical assistance pending arrival of professional medical services. Spanish regulation requires at least one person trained in basic first aid in establishments with 50 or more workers, with additional trained persons required for higher-risk activities or larger workforces. For hospitality, best practice is to have at least one trained first aider on duty at all times the establishment is operating.\n\nFirst aider responsibilities include responding immediately to any medical emergency, assessing the casualty and providing appropriate first aid within the scope of their training, calling for emergency medical services when necessary and providing dispatch with accurate information about the casualty's condition, remaining with the casualty until professional medical help arrives, and maintaining the first aid kit in good condition with all necessary supplies. First aiders must understand the limits of their training and role — they provide initial care, not diagnosis or definitive treatment."
+        }
+      ]
+    },
+    {
+      "heading": "4. Evacuation Procedures",
+      "content": "Evacuation is the most critical emergency procedure, requiring careful planning, clear communication, and regular practice. The evacuation plan must identify all exit routes from every part of the building, specify primary and alternative routes (in case primary routes are blocked by fire or smoke), designate assembly points where evacuees will gather and be accounted for, and establish clear signals for evacuation and all-clear.\n\nEvacuation routes must meet building code requirements: sufficient number and width of exits for the occupancy, maximum travel distance to an exit, exits opening in the direction of travel, emergency lighting and exit signage, and fire-resistant construction providing protected escape routes. The emergency plan must work with the physical building characteristics — the best procedures cannot compensate for inadequate or obstructed exits.",
+      "subsections": [
+        {
+          "heading": "4.1 Evacuation Routes and Signage",
+          "content": "All evacuation routes must be clearly marked with illuminated emergency exit signs conforming to ISO 7010 and Spanish UNE standards (green running person symbol). Exit signage must be visible from any point on the escape route, with additional directional signs at all decision points (intersections, stairways). Emergency lighting must illuminate all escape routes and operate automatically on mains power failure, providing minimum specified illumination levels for the duration required by building code (typically minimum 1 hour).\n\nEvacuation routes must be kept permanently clear of obstructions — a common compliance failure in hospitality is blocking fire exits with delivery boxes, storage items, or furniture during quiet periods or preparation. Exit doors must never be locked or obstructed when the premises are occupied. Panic bars or other emergency exit hardware must be maintained in working order. Regular inspections should verify that all routes are clear and all signage and emergency lighting is functional."
+        },
+        {
+          "heading": "4.2 Assembly Points and Accountability",
+          "content": "Assembly points must be located at a safe distance from the building, away from fire service vehicle access routes, in an area that can accommodate all building occupants, and clearly designated and known to all staff. In urban locations, finding suitable assembly points can be challenging — street corners, plazas, or designated areas in adjacent parking areas may be used. The key is that the location is far enough from the building to be safe from fire, smoke, or building collapse, but organized enough to allow accountability checks.\n\nAccountability procedures must answer the question: is everyone out? For staff, this can be achieved through roll call using the duty roster or sign-in sheet. For customers, accountability is more complex — reservation lists provide a starting point for restaurants, but walk-in customers, delivery drivers, contractors, and visitors complicate the picture. Fire wardens reporting that their areas are clear provides confidence even when a precise headcount of customers is not possible."
+        },
+        {
+          "heading": "4.3 Assisting Vulnerable Persons",
+          "content": "Evacuation procedures must address the needs of persons with mobility impairments, visual or hearing impairments, cognitive disabilities, or temporary conditions (injuries, advanced pregnancy, intoxication) that may limit their ability to evacuate independently. Personal Emergency Evacuation Plans (PEEPs) should be developed for workers with known disabilities or limitations. For customers, staff must be trained to identify those who may need assistance and provide appropriate help.\n\nFor multi-story buildings, refuge areas (protected stairway landings or specifically designed areas with fire resistance and communication to emergency services) may be designated for temporary shelter of persons who cannot descend stairs independently pending assistance from fire services. However, using refuge areas requires specific training and coordination — the tendency in an emergency is to keep moving down and out, so using refuge areas must be reinforced through drills and procedures."
+        }
+      ]
+    },
+    {
+      "heading": "5. Training, Drills, and Exercises",
+      "content": "An emergency plan only becomes effective when all staff are familiar with their roles and have practiced the procedures. Training and drilling transform a theoretical document into practical capability. Spanish occupational safety law requires that emergency training be provided to all workers, and RD 393/2007 requires periodic drills for establishments with formal self-protection plans. Best practice is at least two evacuation drills per year, with additional training for personnel with specific emergency roles.\n\nDrills serve multiple purposes: they verify that procedures work in practice, they identify problems with evacuation routes or signage, they familiarize staff with their roles, they provide an opportunity to test communication systems and coordination with emergency services, and they send a clear message about the organization's commitment to safety. Drills should be taken seriously — treating them as a pointless disruption undermines their value and creates cynicism that can carry over into actual emergencies.",
+      "subsections": [
+        {
+          "heading": "5.1 Types of Training and Drills",
+          "content": "Emergency training ranges from tabletop exercises (discussion-based scenarios that work through decision-making without physical evacuation) to full-scale evacuation drills (complete evacuation of the building with all procedures activated). Tabletop exercises are valuable for training the emergency coordinator and key personnel in decision-making and coordination, while full drills test the entire system and train all staff in evacuation procedures.\n\nPractical skills training is essential for key roles: fire wardens should practice using fire extinguishers on actual fires (many fire services offer training with controlled fire simulators), first aiders should maintain their certification through regular refresher courses and practice scenarios, and communication coordinators should practice using the specific phone systems and contact procedures. Practical skills decay over time without practice, so training must be periodic, not just initial."
+        },
+        {
+          "heading": "5.2 Conducting Effective Drills",
+          "content": "Evacuation drills should be planned to achieve specific learning objectives while minimizing disruption to operations. Unannounced drills are most realistic but may not be practical in hospitality settings with customers present — many establishments conduct drills during closed periods or quiet service times. However, at least some drills should test realistic conditions including peak occupancy if possible.\n\nThe drill should activate the actual alarm system (or, if using the real alarm would cause unacceptable disruption, a clearly announced drill scenario), evacuate the building via designated routes, assemble at assembly points, conduct accountability checks, and time the entire process. Observers should note any problems: obstructed routes, inaudible alarms in certain areas, confusion about procedures, slow or incomplete evacuation. A post-drill debrief should identify lessons learned and necessary improvements to procedures, signage, training, or facilities."
+        },
+        {
+          "heading": "5.3 Documentation and Continuous Improvement",
+          "content": "All training and drills must be documented including date, participants, scenarios exercised, observations and findings, and corrective actions required. This documentation demonstrates compliance with training requirements and provides a record of continuous improvement. Patterns in drill findings — for example, if the kitchen area is consistently slow to evacuate — indicate where additional training or procedural changes are needed.\n\nThe emergency plan should be reviewed and updated after each drill based on lessons learned. Procedures that proved confusing or unworkable in practice should be revised. Equipment deficiencies (burned-out emergency lights, inaudible alarm sounders) identified during drills should be corrected promptly. This cycle of drill, debrief, improve, and drill again is the essence of emergency preparedness."
+        }
+      ]
+    },
+    {
+      "heading": "6. Coordination with External Emergency Services",
+      "content": "Your emergency plan is only part of the overall emergency response system — when a serious emergency occurs, professional emergency services (fire service, medical emergency services, police) will take command. Your plan must be designed to support their operations and ensure smooth handover of command. This requires understanding their needs and expectations, establishing communication protocols, and providing them with necessary information about your premises.\n\nEffective coordination begins before any emergency occurs: many fire services offer pre-planning visits to significant premises, conducting familiarization tours and reviewing emergency plans. These visits allow fire commanders to understand the building layout, construction, occupancy, and specific hazards before they arrive at an actual emergency. Taking advantage of such programs is highly beneficial.",
+      "subsections": [
+        {
+          "heading": "6.1 Information for Emergency Services",
+          "content": "Emergency responders need specific information about your premises to mount an effective response. This should be compiled in a readily accessible 'emergency information box' or digital format available to the emergency coordinator. Key information includes: building layout plans showing all floors, exits, stairways, and fire protection equipment; location of utility shut-offs (gas, electricity, water); maximum occupancy and typical occupancy patterns; location of any hazardous materials (LPG storage, chemical stores); location of vulnerable persons or areas requiring special attention; contact information for building owner, facilities manager, and keyholder; and any specific hazards or access difficulties.\n\nSome jurisdictions use standardized emergency information boxes (similar to the UK's premises information box) mounted in a designated location accessible to fire services. Digital systems that allow fire services to access building information via mobile devices during response are increasingly common. Regardless of format, the information must be current and accessible 24/7."
+        },
+        {
+          "heading": "6.2 Handover and Support",
+          "content": "When emergency services arrive, the emergency coordinator should immediately make contact with the incident commander, provide a briefing on the situation (nature of emergency, actions taken so far, whether anyone is unaccounted for, location of hazards), provide building plans and emergency information, designate a member of staff to accompany and advise emergency services as they enter the building, and then step back and allow emergency services to take command while remaining available for further information or assistance.\n\nYour role shifts from directing the response to supporting professional services. Do not re-enter the building or interfere with emergency operations. Maintain control of the assembly area to ensure that evacuated persons do not drift away or attempt to re-enter. Preserve any information that may be needed for investigation (customer lists, CCTV footage, witness observations)."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Emergency Plan Development Checklist",
+      "items": [
+        "Determine whether formal self-protection plan is required based on RD 393/2007 thresholds",
+        "Conduct comprehensive risk assessment identifying all foreseeable emergency scenarios",
+        "Develop specific procedures for each scenario: fire, medical, gas leak, power failure, flood, earthquake, security incidents",
+        "Identify and map all evacuation routes, exits, assembly points",
+        "Designate emergency roles: coordinator, fire wardens, first aiders, communications coordinator",
+        "Ensure adequate coverage of all roles across all shifts including alternates",
+        "Provide required training for all staff and specific training for designated role-holders",
+        "Develop and install signage: evacuation routes, assembly points, emergency equipment locations",
+        "Verify that all emergency equipment is in place and functional: extinguishers, alarms, emergency lighting",
+        "Prepare emergency information for emergency services: building plans, hazard information, contact details",
+        "Schedule and conduct evacuation drills at least twice annually",
+        "Establish review and update procedures triggered by drills, incidents, or premises changes",
+        "Register plan with competent authority if required by RD 393/2007"
+      ]
+    },
+    {
+      "title": "Fire Emergency Response Checklist",
+      "items": [
+        "Discover fire: activate nearest alarm point immediately",
+        "Alert staff and emergency coordinator",
+        "If fire is small and it is safe to do so, attempt to control with appropriate extinguisher (trained staff only)",
+        "If fire cannot be controlled or is spreading, evacuate immediately — do not endanger yourself",
+        "Call emergency services (112): provide address, nature of emergency, any persons trapped",
+        "Emergency coordinator decides whether to evacuate (if in doubt, evacuate)",
+        "Fire wardens sweep assigned areas, direct occupants to exits, close doors and windows if safe",
+        "Kitchen staff shut down gas and electrical equipment if time and safety permit",
+        "All persons evacuate via designated routes to assembly points — do not use elevators",
+        "Fire wardens report to emergency coordinator that areas are clear",
+        "Conduct accountability: roll call for staff, confirmation from fire wardens that all areas checked",
+        "Emergency coordinator meets fire services, provides building information and briefing",
+        "Do not re-enter building until fire services give all-clear"
+      ]
+    },
+    {
+      "title": "Monthly Emergency Preparedness Inspection",
+      "items": [
+        "All evacuation routes and exits clear of obstructions",
+        "Exit doors unlocked and operating freely during occupied hours",
+        "Emergency exit signage visible and illuminated (test emergency lighting monthly)",
+        "Fire extinguishers in designated locations, accessible, within inspection date, pressure gauge in green zone",
+        "First aid kits accessible, stocked with required supplies, unexpired items",
+        "AED (if provided) accessible, showing ready status, within inspection date",
+        "Alarm system functional — test call points on rotation",
+        "Emergency contact lists current and accessible",
+        "Designated emergency role-holders available on current shift (if not, ensure alternates are designated)",
+        "Building plans and emergency information for fire services current and accessible",
+        "Any deficiencies or near-misses from previous month addressed",
+        "Next evacuation drill scheduled"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Involve staff in emergency plan development — those who work in an area daily know the practical challenges and opportunities",
+    "Keep procedures simple and clear — in an emergency, complex multi-step procedures will not be followed reliably",
+    "Use visual aids: floor plans with marked evacuation routes posted in each area, photos of assembly points, flowcharts for decision-making",
+    "Conduct drills at varying times including peak service periods to test procedures under realistic conditions",
+    "Debrief thoroughly after every drill and every actual incident — learning from experience is critical to improvement",
+    "Integrate emergency procedures into new employee orientation — emergency response should be covered on day one, not in abstract safety training weeks later",
+    "Establish a culture where reporting hazards and raising safety concerns is expected and valued, not seen as troublemaking",
+    "Recognize staff who perform well in drills or actual emergencies — positive reinforcement builds a strong safety culture",
+    "Review and update the plan immediately after any changes to premises, capacity, or operations — outdated plans create dangerous false confidence"
+  ],
+  "glossary": {
+    "Self-Protection Plan": "Plan de Autoprotección — formal emergency plan required for larger or higher-risk establishments under RD 393/2007",
+    "Emergency Coordinator": "Person with overall responsibility for emergency response until emergency services take command, typically the duty manager",
+    "Fire Warden": "Person responsible for evacuating a specific area or floor of the building and ensuring complete evacuation",
+    "Assembly Point": "Designated safe location away from the building where evacuees gather and accountability is conducted",
+    "Refuge Area": "Protected area in multi-story buildings where persons who cannot evacuate via stairs can await assistance from fire services",
+    "PEEP": "Personal Emergency Evacuation Plan — individualized evacuation plan for workers with disabilities or other limitations",
+    "Evacuation Route": "Designated path from any point in the building to a safe exit, meeting building code requirements for width, travel distance, and fire resistance",
+    "Emergency Lighting": "Battery-powered lighting that activates automatically on mains power failure to illuminate evacuation routes",
+    "Fire Extinguisher Classes": "A (ordinary combustibles), B (flammable liquids), C (electrical), D (metals), F (cooking oils) — different extinguishers for different fire types"
+  }
+}

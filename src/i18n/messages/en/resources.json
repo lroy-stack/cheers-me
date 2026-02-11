@@ -1,0 +1,547 @@
+{
+  "title": "Resources & Guides",
+  "subtitle": "Regulatory compliance guides, safety protocols, and training materials for all staff",
+  "searchPlaceholder": "Search guides by name or code...",
+  "guidesCount": "guides",
+  "noGuidesInCategory": "No guides found in this category matching your criteria.",
+  "noResults": "No guides found matching your search",
+  "allRoles": "All Roles",
+  "legalBasis": "Legal Basis",
+  "summary": "Summary",
+  "keyPointsLabel": "Key Points",
+  "applicableRoles": "Applicable Roles",
+  "relatedGuides": "Related Guides",
+  "print": "Print",
+  "printGuide": "Print Guide",
+  "allCategories": "All",
+  "categories": {
+    "foodSafety": "Food Safety",
+    "occupationalHealth": "Occupational Health",
+    "laborRegulations": "Labor Regulations",
+    "roleSpecific": "Role Specific",
+    "requiredDocs": "Documentation",
+    "environmental": "Environmental"
+  },
+  "training": {
+    "downloadPdf": "Download PDF",
+    "takeTest": "Take Test",
+    "shareGuide": "Share Guide",
+    "testScore": "Score",
+    "testPassed": "Test Passed!",
+    "testFailed": "Test Failed",
+    "retakeTest": "Retake Test",
+    "assignTraining": "Assign Training",
+    "complianceOverview": "Compliance",
+    "totalMandatory": "Mandatory Guides",
+    "completedTraining": "Completed",
+    "pendingTraining": "Pending",
+    "overdueTraining": "Overdue",
+    "passRate": "Completion Rate",
+    "fullyCompliant": "Compliant",
+    "employeeStatus": "Employee",
+    "lastActivity": "Last Activity",
+    "submitTest": "Submit Test",
+    "question": "Question",
+    "correctAnswer": "Correct Answer",
+    "explanation": "Explanation",
+    "statusViewed": "Viewed",
+    "statusNotViewed": "Not Viewed",
+    "statusPassed": "Passed",
+    "statusFailed": "Failed",
+    "statusOverdue": "Overdue",
+    "statusPending": "Pending",
+    "exportReport": "Export Report",
+    "myTraining": "My Training",
+    "testInstructions": "Answer all questions below and click Submit when ready. You need to score at least 70% to pass.",
+    "noTestsAvailable": "No test questions available for this guide yet.",
+    "assignToEmployee": "Assign to Employee",
+    "assignToRole": "Assign to Role",
+    "dueDate": "Due Date",
+    "cancel": "Cancel",
+    "myCertificates": "My Certificates",
+    "noCertificates": "No certificates yet",
+    "noCertificatesDesc": "Complete training courses and pass the tests to earn certificates.",
+    "certifiedOn": "Certified on",
+    "score": "Score",
+    "downloadCertificate": "Download Certificate",
+    "employeeCertifications": "Employee Certifications",
+    "noCertificatesForEmployee": "This employee has no certifications yet."
+  },
+  "course": {
+    "noPending": "No pending training",
+    "allComplete": "All assigned training has been completed.",
+    "startCourse": "Start Course",
+    "continueCourse": "Continue",
+    "progress": "Progress",
+    "sections": "Sections",
+    "studyMaterial": "Study Material",
+    "certification": "Certification",
+    "estimatedTime": "Estimated Time",
+    "courseOverview": "Course Overview",
+    "sectionOf": "Section {current} of {total}",
+    "readSection": "Read Section",
+    "sectionCompleted": "Section Completed",
+    "allSectionsRead": "All sections read. Ready for the test!",
+    "downloadCertificate": "Download Certificate",
+    "noEmployeesMatch": "No employees match the current filters.",
+    "roleFilter": "Filter by role",
+    "statusFilter": "Filter by status",
+    "allRoles": "All Roles",
+    "allStatuses": "All Status",
+    "notStarted": "Not Started",
+    "inProgress": "In Progress",
+    "studyComplete": "Study Complete",
+    "testPassed": "Test Passed",
+    "timeRemaining": "remaining",
+    "dueDate": "Due",
+    "questionsOf": "Question {current} of {total}",
+    "reviewSections": "Review sections {sections} and try again.",
+    "congratulations": "Congratulations!",
+    "certificateReady": "Your certificate is ready to download.",
+    "legalBasisTitle": "Legal Basis",
+    "bestPractices": "Best Practices",
+    "glossary": "Glossary",
+    "checklist": "Checklist",
+    "minutes": "min"
+  },
+  "guides": {
+    "GFS001": {
+      "title": "HACCP/APPCC System",
+      "legalBasis": "EU Regulation 852/2004 on food hygiene",
+      "summary": "The HACCP (Hazard Analysis and Critical Control Points) system is the fundamental framework for food safety in hospitality. In Spain it's known as APPCC. Every food establishment must implement and maintain a documented APPCC plan identifying biological, chemical, and physical hazards at each stage of food handling. The plan must include critical control points, critical limits, monitoring procedures, corrective actions, and verification procedures.",
+      "keyPoints": ["Identify all food safety hazards in your establishment", "Define critical control points (CCPs) for each process", "Establish critical limits and monitoring procedures", "Document corrective actions for each CCP", "Maintain records and review the plan annually", "Train all food handlers on APPCC principles", "Display the APPCC plan in accessible locations"]
+    },
+    "GFS002": {
+      "title": "Food Handler Certificate",
+      "legalBasis": "RD 109/2010 on food handler training requirements",
+      "summary": "All employees who handle food must hold a valid Food Handler Certificate (Carnet de Manipulador de Alimentos). Training must cover food hygiene, contamination prevention, allergen awareness, and personal hygiene. Certificates must be renewed as per regional regulations. The establishment must maintain copies of all certificates and ensure training is completed before staff begin handling food.",
+      "keyPoints": ["All food handlers must complete certified training", "Keep copies of all certificates on file", "Renew certificates as per regional requirements", "New staff must be trained before handling food", "Training covers hygiene, allergens, and contamination"]
+    },
+    "GFS003": {
+      "title": "Temperature Control — Cold Chain",
+      "legalBasis": "RD 3484/2000 on hygiene standards for food preparation",
+      "summary": "Maintaining the cold chain is critical for food safety. Refrigerated products must be kept at 0-4°C and frozen products at -18°C or below. Temperature logs must be recorded at least twice daily. Any break in the cold chain requires immediate assessment and potential disposal of affected products.",
+      "keyPoints": ["Refrigerators: 0-4°C, freezers: -18°C or below", "Record temperatures at least twice daily", "Check deliveries with probe thermometer on arrival", "Never refreeze thawed products", "FIFO: First In, First Out rotation", "Report any equipment malfunction immediately"]
+    },
+    "GFS004": {
+      "title": "Temperature Control — Hot Holding",
+      "legalBasis": "RD 3484/2000 on hygiene standards",
+      "summary": "Hot food must be maintained at 65°C or above to prevent bacterial growth. Food that falls below this temperature for more than 2 hours must be discarded. Reheating must reach a core temperature of 75°C. Temperature logs for hot holding must be maintained.",
+      "keyPoints": ["Hot food must be held at 65°C or above", "Discard food below 65°C for more than 2 hours", "Reheat food to core temperature of 75°C", "Use calibrated thermometers for checks", "Record hot holding temperatures regularly"]
+    },
+    "GFS005": {
+      "title": "Cleaning & Disinfection Plan",
+      "legalBasis": "EU Regulation 852/2004, Annex II",
+      "summary": "Every establishment must have a documented L+D (Limpieza y Desinfeccion) plan covering all areas, equipment, and surfaces. The plan specifies cleaning frequency, products, dilution rates, contact times, and responsible staff. Records of cleaning activities must be maintained.",
+      "keyPoints": ["Document cleaning procedures for every area", "Specify products, dilutions, and contact times", "Assign cleaning responsibilities to named staff", "Maintain daily cleaning records", "Use food-safe cleaning products", "Separate cleaning equipment by zone (color coding)", "Deep clean schedule for equipment and hard-to-reach areas"]
+    },
+    "GFS006": {
+      "title": "Allergen Management",
+      "legalBasis": "EU Regulation 1169/2011 on food information to consumers",
+      "summary": "EU law requires clear communication of 14 major allergens in all food served. Staff must be trained to identify allergens in menu items and communicate them accurately to customers. Allergen information must be available in writing and staff must know cross-contamination prevention procedures.",
+      "keyPoints": ["Know the 14 EU-regulated allergens", "Display allergen information for all menu items", "Train all service staff on allergen communication", "Prevent cross-contamination in preparation", "Have a protocol for allergic reaction emergencies", "Update allergen info when recipes change"]
+    },
+    "GFS007": {
+      "title": "Food Waste Prevention",
+      "legalBasis": "Ley 1/2025 de prevencion de las perdidas y el desperdicio alimentario",
+      "summary": "Spain's food waste law requires hospitality establishments to implement prevention plans, offer take-away options for unfinished meals, and maintain waste records. Establishments must prioritize donation of surplus food to authorized organizations before disposal.",
+      "keyPoints": ["Implement a food waste prevention plan", "Offer take-away containers for unfinished meals", "Prioritize food donation over disposal", "Maintain records of food waste quantities", "Train staff on portion control", "Monitor and reduce overproduction", "Partner with food banks or donation platforms"]
+    },
+    "GFS008": {
+      "title": "Traceability System",
+      "legalBasis": "EU Regulation 178/2002 on traceability",
+      "summary": "All food establishments must maintain a traceability system allowing identification of suppliers and products at every stage. This includes recording lot numbers, delivery dates, supplier details, and maintaining records for at least 5 years.",
+      "keyPoints": ["Record supplier details for all products", "Maintain delivery notes with lot numbers and dates", "Keep records for minimum 5 years", "Implement one-step-back, one-step-forward traceability", "Have a rapid recall procedure in place"]
+    },
+    "GFS009": {
+      "title": "Supplier Control",
+      "legalBasis": "EU Regulation 852/2004 on supplier approval",
+      "summary": "Establishments must verify that all food suppliers are registered and comply with food safety regulations. A supplier approval process must be in place, including verification of health registrations, delivery conditions, and product quality.",
+      "keyPoints": ["Verify supplier health registration numbers", "Check delivery vehicle temperatures", "Inspect products on arrival for quality", "Maintain approved supplier list", "Review supplier performance periodically"]
+    },
+    "GFS010": {
+      "title": "Raw Material Reception",
+      "legalBasis": "RD 3484/2000 on food reception standards",
+      "summary": "All deliveries must be inspected upon arrival for temperature compliance, packaging integrity, expiry dates, and organoleptic quality. Rejected products must be documented. Deliveries should be stored immediately in appropriate conditions.",
+      "keyPoints": ["Check temperature of chilled/frozen deliveries", "Verify packaging integrity and labeling", "Check expiry dates on all products", "Document and return non-conforming products", "Store deliveries immediately after inspection"]
+    },
+    "GFS011": {
+      "title": "Storage Procedures",
+      "legalBasis": "RD 3484/2000, EU Regulation 852/2004",
+      "summary": "Proper storage prevents contamination and spoilage. Raw and cooked products must be separated. FIFO rotation must be strictly followed. All containers must be covered and labeled with content and date. Storage areas must be clean and at correct temperatures.",
+      "keyPoints": ["Separate raw and cooked products", "Follow FIFO rotation strictly", "Label all containers with content and date", "Keep storage areas clean and organized", "Never store food on the floor", "Check temperatures daily"]
+    },
+    "GFS012": {
+      "title": "Cross-Contamination Prevention",
+      "legalBasis": "EU Regulation 852/2004",
+      "summary": "Cross-contamination is a major food safety hazard. Prevention requires separation of raw and ready-to-eat foods, use of color-coded cutting boards, proper handwashing between tasks, and dedicated equipment for allergen-free preparation.",
+      "keyPoints": ["Use color-coded cutting boards and utensils", "Separate raw and ready-to-eat foods at all times", "Wash hands between handling different food types", "Clean and sanitize work surfaces between tasks", "Store raw products below cooked products"]
+    },
+    "GFS013": {
+      "title": "Pest Control",
+      "legalBasis": "RD 830/2010 on biocide products, EU 852/2004",
+      "summary": "A pest control program must be implemented by an authorized company. The establishment must maintain physical barriers, good housekeeping, and regular inspections. Records of pest control visits and any incidents must be kept.",
+      "keyPoints": ["Contract an authorized pest control company", "Maintain physical barriers (screens, door closers)", "Keep all areas clean and free of food debris", "Seal gaps and entry points", "Report any pest sightings immediately", "Keep pest control records on file"]
+    },
+    "GFS014": {
+      "title": "Water Quality",
+      "legalBasis": "RD 140/2003 on drinking water quality",
+      "summary": "Water used in food preparation must meet drinking water standards. If using a private water supply, regular testing is required. Ice machines must be maintained and cleaned according to manufacturer instructions.",
+      "keyPoints": ["Verify mains water supply compliance", "Test private water supplies regularly", "Clean and maintain ice machines monthly", "Use potable water for all food preparation", "Keep water analysis records"]
+    },
+    "GFS015": {
+      "title": "Personal Hygiene for Food Handlers",
+      "legalBasis": "EU Regulation 852/2004 Annex II",
+      "summary": "Food handlers must maintain high standards of personal hygiene including handwashing, wearing clean uniforms, hair restraints, no jewelry, and reporting any illness that could affect food safety.",
+      "keyPoints": ["Wash hands frequently and correctly", "Wear clean uniform and hair restraint", "Remove jewelry and watches before handling food", "Cover cuts with blue waterproof plasters", "Report illness, vomiting, or diarrhea to manager", "Do not handle food when ill"]
+    },
+    "GFS016": {
+      "title": "Sample Retention",
+      "legalBasis": "RD 3484/2000 on food sample retention",
+      "summary": "Establishments serving more than a certain number of meals must retain representative samples of each dish served. Samples must be stored in labeled containers at appropriate temperatures for at least 72 hours.",
+      "keyPoints": ["Retain samples of all dishes served", "Label with dish name, date, and time", "Store at 0-4°C for minimum 72 hours", "Use clean, sealed containers", "Dispose of samples after retention period"]
+    },
+    "GFS017": {
+      "title": "Defrost Procedures",
+      "legalBasis": "RD 3484/2000",
+      "summary": "Frozen products must be defrosted safely in the refrigerator, never at room temperature. Defrost time must be planned in advance. Once thawed, products must be used within 24 hours and never refrozen.",
+      "keyPoints": ["Defrost in refrigerator at 0-4°C", "Never defrost at room temperature", "Plan defrosting time in advance", "Use thawed products within 24 hours", "Never refreeze previously thawed products"]
+    },
+    "GFS018": {
+      "title": "Oil Quality Control",
+      "legalBasis": "RD 2207/1995 on frying oils regulation",
+      "summary": "Frying oils must be monitored for degradation using polar compound tests. Oil exceeding 25% polar compounds must be replaced. Oil temperature must not exceed 180°C. Records of oil changes and test results must be maintained.",
+      "keyPoints": ["Test oil quality with polar compound meter", "Replace oil when polar compounds exceed 25%", "Never exceed 180°C frying temperature", "Filter oil daily and between different products", "Record oil changes and test results"]
+    },
+    "GFS019": {
+      "title": "Buffet & Display Food Safety",
+      "legalBasis": "RD 3484/2000",
+      "summary": "Food displayed in buffets must be maintained at safe temperatures. Hot food at 65°C+, cold food at 8°C or below. Display time must be limited and monitored. Sneeze guards must be in place.",
+      "keyPoints": ["Hot food at 65°C+, cold food at 8°C or below", "Limit display time to maximum 4 hours", "Use sneeze guards and covered containers", "Replace rather than refill display items", "Monitor and record display temperatures"]
+    },
+    "GFS020": {
+      "title": "Delivery Food Safety",
+      "legalBasis": "RD 3484/2000, EU 852/2004",
+      "summary": "Food delivered to customers must maintain temperature control during transport. Insulated containers must be used. Delivery times must be minimized. Packaging must protect food from contamination.",
+      "keyPoints": ["Use insulated containers for delivery", "Maintain temperature during transport", "Minimize delivery time", "Seal packaging to prevent contamination", "Record delivery temperatures if required"]
+    },
+    "GFS021": {
+      "title": "Microbiological Control",
+      "legalBasis": "EU Regulation 2073/2005 on microbiological criteria",
+      "summary": "Regular microbiological testing of food, surfaces, and equipment helps verify the effectiveness of the APPCC system. Testing frequency and parameters must be defined in the food safety plan.",
+      "keyPoints": ["Schedule regular surface and food sampling", "Use accredited laboratory for analysis", "Define acceptance criteria based on EU standards", "Take corrective action on non-compliant results", "Keep all analysis records"]
+    },
+    "GFS022": {
+      "title": "Non-Conformity Management",
+      "legalBasis": "EU Regulation 852/2004",
+      "summary": "When food safety standards are not met, a non-conformity management process must be followed. This includes identifying the issue, isolating affected products, investigating root cause, implementing corrective actions, and preventing recurrence.",
+      "keyPoints": ["Identify and record non-conformities", "Isolate affected products immediately", "Investigate root cause", "Implement corrective actions", "Verify effectiveness of corrections", "Update procedures to prevent recurrence"]
+    },
+    "GPRL001": {
+      "title": "PRL Prevention Plan",
+      "legalBasis": "Ley 31/1995 de Prevencion de Riesgos Laborales",
+      "summary": "Every employer must have a documented Occupational Risk Prevention Plan (Plan de PRL). This comprehensive document identifies all workplace hazards, establishes preventive measures, defines responsibilities, and outlines emergency procedures. It must be reviewed annually and whenever significant changes occur.",
+      "keyPoints": ["Document all identified workplace risks", "Define preventive measures for each risk", "Assign prevention responsibilities", "Review and update annually", "Make accessible to all employees", "Coordinate with external prevention service"]
+    },
+    "GPRL002": {
+      "title": "Risk Assessment",
+      "legalBasis": "RD 39/1997 Reglamento de los Servicios de Prevencion",
+      "summary": "A formal risk assessment must evaluate all workplace hazards specific to hospitality: burns, cuts, falls, manual handling, chemical exposure, and ergonomic risks. Each workstation and role must be assessed. Results inform the prevention plan and protective measures.",
+      "keyPoints": ["Assess risks for each workstation and role", "Evaluate likelihood and severity of each hazard", "Define control measures for each identified risk", "Reassess when conditions change", "Document all assessments and reviews", "Involve workers in the assessment process"]
+    },
+    "GPRL003": {
+      "title": "PPE by Position",
+      "legalBasis": "RD 773/1997 on personal protective equipment",
+      "summary": "Personal Protective Equipment requirements vary by role. Kitchen staff need cut-resistant gloves, non-slip shoes, and heat protection. Bar staff need non-slip footwear and eye protection for certain tasks. All staff need appropriate footwear for wet surfaces.",
+      "keyPoints": ["Kitchen: non-slip shoes, heat gloves, cut-resistant gloves", "Bar: non-slip shoes, eye protection for chemicals", "All: appropriate closed-toe footwear", "Provide PPE free of charge", "Train staff on correct use and maintenance", "Replace damaged PPE immediately"]
+    },
+    "GPRL004": {
+      "title": "Emergency Plan",
+      "legalBasis": "RD 393/2007 on self-protection requirements",
+      "summary": "An emergency plan must cover fire, medical emergencies, gas leaks, power failures, and natural disasters. It must include evacuation routes, assembly points, emergency contacts, and roles and responsibilities. Regular drills must be conducted.",
+      "keyPoints": ["Define procedures for all emergency types", "Display evacuation routes clearly", "Designate assembly points", "Assign emergency roles (fire warden, first aider)", "Conduct evacuation drills twice yearly", "Maintain emergency contact list"]
+    },
+    "GPRL005": {
+      "title": "Evacuation Protocol",
+      "legalBasis": "RD 393/2007, CTE DB-SI (Building Code)",
+      "summary": "Clear evacuation procedures must be established and practiced. Emergency exits must be clearly marked and unobstructed. Maximum occupancy must be respected. Staff must know their roles during evacuation including customer guidance and headcount.",
+      "keyPoints": ["Keep emergency exits clear at all times", "Mark exits with illuminated signs", "Know the evacuation route from your workstation", "Help customers evacuate calmly", "Conduct headcount at assembly point", "Never use elevators during emergency"]
+    },
+    "GPRL006": {
+      "title": "First Aid",
+      "legalBasis": "RD 39/1997, Ley 31/1995 Art. 20",
+      "summary": "First aid kits must be maintained and accessible. At least one trained first aider must be present per shift. The kit contents must be checked and replenished regularly. Common hospitality injuries include burns, cuts, falls, and allergic reactions.",
+      "keyPoints": ["Maintain stocked first aid kit in accessible location", "At least one trained first aider per shift", "Check and replenish kit monthly", "Record all first aid incidents", "Know location of nearest hospital and emergency number (112)", "Display first aid procedures visibly"]
+    },
+    "GPRL007": {
+      "title": "Kitchen Ergonomics",
+      "legalBasis": "RD 487/1997 on manual handling, Ley 31/1995",
+      "summary": "Kitchen work involves prolonged standing, repetitive movements, and heavy lifting. Ergonomic measures include anti-fatigue mats, adjustable work surfaces, proper lifting techniques, and regular breaks. Work organization should minimize repetitive strain.",
+      "keyPoints": ["Use anti-fatigue mats at workstations", "Adjust work surface heights where possible", "Rotate tasks to reduce repetitive strain", "Take regular short breaks", "Use proper lifting techniques", "Report any musculoskeletal discomfort early"]
+    },
+    "GPRL008": {
+      "title": "Manual Handling",
+      "legalBasis": "RD 487/1997 on manual handling of loads",
+      "summary": "Manual handling of heavy items (deliveries, kegs, equipment) is a major cause of workplace injury. Maximum recommended weight is 25kg. Staff must be trained in safe lifting techniques. Mechanical aids should be provided where possible.",
+      "keyPoints": ["Maximum recommended weight: 25kg", "Use correct lifting technique: bend knees, straight back", "Use trolleys and mechanical aids when available", "Ask for help with heavy or awkward loads", "Store heavy items at waist height", "Report any back pain or injury immediately"]
+    },
+    "GPRL009": {
+      "title": "Chemical Products Handling",
+      "legalBasis": "RD 374/2001 on chemical agent exposure",
+      "summary": "Cleaning chemicals, degreasers, and sanitizers must be handled safely. Safety Data Sheets must be available for all products. Staff must wear appropriate PPE. Chemicals must be stored separately from food in labeled containers. Never mix different chemicals.",
+      "keyPoints": ["Read Safety Data Sheets before using any product", "Wear appropriate PPE (gloves, eye protection)", "Never mix different chemical products", "Store chemicals separately from food", "Keep chemicals in original labeled containers", "Know the location of eye wash station"]
+    },
+    "GPRL010": {
+      "title": "Thermal Stress Prevention",
+      "legalBasis": "RD 486/1997 on workplace conditions",
+      "summary": "Kitchen environments can reach extreme temperatures. Prevention measures include adequate ventilation, access to water, rotation between hot and cool areas, appropriate clothing, and monitoring for heat stress symptoms.",
+      "keyPoints": ["Ensure adequate ventilation in kitchen areas", "Provide free access to drinking water", "Rotate between hot and cool stations", "Wear breathable, appropriate clothing", "Monitor staff for heat stress symptoms", "Allow additional breaks in extreme heat"]
+    },
+    "GPRL011": {
+      "title": "Noise Exposure",
+      "legalBasis": "RD 286/2006 on noise protection",
+      "summary": "Bar and event environments can exceed safe noise levels (85 dB). Noise assessments must be conducted. Hearing protection must be provided for staff in loud environments. Music volume limits may apply per local ordinance.",
+      "keyPoints": ["Conduct noise level assessments", "Provide hearing protection above 85 dB", "Limit continuous exposure to loud music", "Position staff away from speakers where possible", "Monitor for hearing-related complaints", "Comply with local noise ordinances"]
+    },
+    "GPRL012": {
+      "title": "Electrical Safety",
+      "legalBasis": "RD 614/2001 on electrical risk protection",
+      "summary": "All electrical equipment must be properly maintained and inspected. Staff must not use damaged cables or equipment. Water and electricity areas must be properly separated. Only qualified technicians may perform electrical repairs.",
+      "keyPoints": ["Never use damaged electrical equipment", "Keep water away from electrical equipment", "Report faulty equipment immediately", "Use only qualified electricians for repairs", "Check plugs and cables regularly", "Know location of main electrical switch"]
+    },
+    "GPRL013": {
+      "title": "Fire Prevention",
+      "legalBasis": "RD 513/2017 Reglamento de Instalaciones de Proteccion contra Incendios",
+      "summary": "Fire prevention in hospitality requires proper maintenance of fire suppression systems, clear access to extinguishers, regular staff training, and strict kitchen protocols for grease fires and gas equipment.",
+      "keyPoints": ["Know location and use of fire extinguishers", "Maintain fire suppression hood systems in kitchen", "Keep fire exits clear and accessible", "Never throw water on grease fires", "Check fire equipment monthly", "Conduct fire drills every 6 months"]
+    },
+    "GPRL014": {
+      "title": "Gas Safety",
+      "legalBasis": "RD 919/2006 on gas installation regulations",
+      "summary": "Gas installations must be inspected regularly by authorized technicians. Staff must know how to detect gas leaks (smell, hissing), shut off gas supply, and evacuate. Gas equipment must be maintained according to manufacturer specifications.",
+      "keyPoints": ["Know how to detect a gas leak", "Know location of gas shut-off valve", "Evacuate immediately if gas leak suspected", "Never use open flame to check for leaks", "Schedule regular gas installation inspections", "Ventilate area before relighting equipment"]
+    },
+    "GPRL015": {
+      "title": "Pregnancy & Lactation Protection",
+      "legalBasis": "Ley 31/1995 Art. 26, RD 298/2009",
+      "summary": "Pregnant and breastfeeding workers are entitled to risk assessment of their specific role, adaptation of working conditions, and exemption from night shifts and hazardous tasks. If adaptation is not possible, temporary reassignment must be offered.",
+      "keyPoints": ["Conduct specific risk assessment for pregnant workers", "Adapt working conditions to eliminate risks", "Exempt from night shifts if medically advised", "Avoid exposure to chemicals, heavy lifting, prolonged standing", "Provide breastfeeding break: 1 hour daily", "Offer temporary reassignment if risks cannot be eliminated"]
+    },
+    "GPRL016": {
+      "title": "Young Worker Protection",
+      "legalBasis": "Ley 31/1995, RD 1/1995 Estatuto de los Trabajadores",
+      "summary": "Workers under 18 have additional protections: no night work, limited working hours, specific risk assessment, and prohibition from dangerous tasks. Working hours must not exceed 8 hours per day including training time.",
+      "keyPoints": ["No night work for under-18s", "Maximum 8 hours/day including training", "Specific risk assessment required", "Prohibited from handling certain equipment", "Additional rest breaks required", "Parental consent required for under-16s"]
+    },
+    "GPRL017": {
+      "title": "Night Work Health Surveillance",
+      "legalBasis": "ET Art. 36, Ley 31/1995",
+      "summary": "Night workers (22:00-06:00) are entitled to periodic health surveillance. The employer must assess specific health risks of night work and offer free medical examinations. Transfer to day work must be offered if health issues arise.",
+      "keyPoints": ["Offer periodic health checks to night workers", "Assess specific risks of night work", "Transfer to day work if health issues arise", "Maximum 8 hours average in any 15-day period", "Ensure adequate rest between shifts", "Monitor for sleep-related health issues"]
+    },
+    "GPRL018": {
+      "title": "Psychosocial Risk Prevention",
+      "legalBasis": "Ley 31/1995, EU Framework Directive 89/391/EEC",
+      "summary": "Psychosocial risks include work-related stress, burnout, harassment, and work-life imbalance. Prevention measures include reasonable workloads, clear communication, anti-harassment protocols, and support systems. These risks must be included in the risk assessment.",
+      "keyPoints": ["Include psychosocial risks in risk assessment", "Promote reasonable workloads and schedules", "Implement anti-harassment and anti-bullying policies", "Provide channels for reporting concerns", "Support work-life balance", "Train managers to recognize stress signs"]
+    },
+    "GLAB001": {
+      "title": "Collective Agreement (Convenio Colectivo)",
+      "legalBasis": "ET Art. 82-92, applicable hospitality convenio",
+      "summary": "The Convenio Colectivo de Hosteleria sets minimum conditions for the sector including pay scales, working hours, overtime, holidays, and professional categories. The applicable agreement depends on the province. All employment conditions must meet or exceed the convenio minimums.",
+      "keyPoints": ["Know your applicable provincial convenio", "Minimum conditions cannot be reduced by contract", "Pay scales by professional category apply", "Working time limits are legally binding", "Convenio updates periodically — stay current", "Display the convenio reference in the workplace"]
+    },
+    "GLAB002": {
+      "title": "Working Hours & Rest Periods",
+      "legalBasis": "ET Art. 34-37, RD 1561/1995",
+      "summary": "Maximum working week is 40 hours averaged annually. Maximum daily shift is 9 hours. Minimum rest between shifts is 12 hours. A minimum 15-minute break is required for shifts over 6 hours. Weekly rest minimum is 1.5 consecutive days.",
+      "keyPoints": ["Maximum 40 hours/week (annual average)", "Maximum 9 hours per day (unless convenio allows more)", "Minimum 12 hours between shifts", "15-minute break for shifts over 6 hours", "1.5 days weekly rest (can be accumulated)", "Maximum 80 overtime hours per year"]
+    },
+    "GLAB003": {
+      "title": "Overtime Regulations",
+      "legalBasis": "ET Art. 35, applicable convenio",
+      "summary": "Overtime hours must be voluntary (except force majeure). Maximum 80 overtime hours per year. Overtime must be compensated with either pay (minimum 175% per convenio) or equivalent time off within 4 months. All overtime must be recorded.",
+      "keyPoints": ["Overtime is voluntary (cannot be forced)", "Maximum 80 hours overtime per year", "Compensate at 175% or with time off", "Time off must be taken within 4 months", "Record all overtime hours", "Part-time workers: overtime has specific rules"]
+    },
+    "GLAB004": {
+      "title": "Vacation Rights",
+      "legalBasis": "ET Art. 38, applicable convenio",
+      "summary": "All workers are entitled to a minimum of 30 natural days (22 working days) of paid vacation per year. Vacation dates must be agreed between employer and employee. At least one period must be 2 consecutive weeks. Vacation cannot overlap with sick leave.",
+      "keyPoints": ["Minimum 30 natural days per year", "At least 2 consecutive weeks in one period", "Vacation schedule agreed by both parties", "Vacation published 2 months in advance", "Cannot overlap with sick leave", "Pro-rated for partial year employment"]
+    },
+    "GLAB005": {
+      "title": "Time Recording (Registro de Jornada)",
+      "legalBasis": "RD-ley 8/2019 on working time recording",
+      "summary": "Since 2019, all employers must record the daily start and end time of each worker. Records must be kept for 4 years. The system must be reliable and accessible to workers and labor inspectors. Failure to comply can result in fines of 626-6,250 euros.",
+      "keyPoints": ["Record daily start and end times for all staff", "Keep records for 4 years", "System must be reliable and verifiable", "Workers must have access to their records", "Available for labor inspection at any time", "Fines for non-compliance: 626-6,250 euros"]
+    },
+    "GLAB006": {
+      "title": "Contract Types in Hospitality",
+      "legalBasis": "ET Art. 8-16, RD-ley 32/2021 labor reform",
+      "summary": "The 2021 labor reform significantly changed contract types. Indefinite contracts are now the default. Fixed-term contracts are limited to specific circumstances (production peaks, substitution). Discontinuous fixed contracts (fijo discontinuo) are common in seasonal hospitality.",
+      "keyPoints": ["Indefinite contract is the default", "Fixed-term only for specific legal causes", "Fijo discontinuo for seasonal recurring work", "Training contracts for young workers", "Part-time contracts must specify exact hours", "Probation period: 6 months (graduates), 2 months (others)"]
+    },
+    "GLAB007": {
+      "title": "Worker Rights & Duties",
+      "legalBasis": "ET Art. 4-5, Spanish Constitution Art. 35",
+      "summary": "Workers have fundamental rights including fair pay, non-discrimination, dignity at work, health and safety, trade union membership, and information/consultation. Duties include good faith, diligence, compliance with safety rules, and confidentiality.",
+      "keyPoints": ["Right to fair and timely pay", "Right to non-discrimination and equal treatment", "Right to occupational health and safety", "Right to privacy and dignity", "Duty to comply with safety instructions", "Duty to act in good faith"]
+    },
+    "GLAB008": {
+      "title": "Understanding Your Payroll",
+      "legalBasis": "ET Art. 29, applicable convenio",
+      "summary": "Understanding your nomina (payroll) is important. It shows base salary, complementos (supplements), overtime, deductions (IRPF, Social Security), and net pay. The payroll must be provided monthly. Any discrepancies should be reported promptly.",
+      "keyPoints": ["Base salary per convenio category", "Complementos: seniority, night work, tips", "Gross vs. net pay difference", "IRPF withholding depends on personal situation", "Social Security contribution (approximately 6.35%)", "Two extra payments (pagas extra) per year"]
+    },
+    "GLAB009": {
+      "title": "Social Security",
+      "legalBasis": "Ley General de la Seguridad Social (RD Legislativo 8/2015)",
+      "summary": "All employed workers must be registered with Social Security. Contributions cover healthcare, pensions, unemployment, and sick leave. The employer is responsible for registration and contribution payments. Workers should verify their working life report (Informe de Vida Laboral) periodically.",
+      "keyPoints": ["Registration is mandatory from day one", "Employer handles registration and contributions", "Covers healthcare, pension, unemployment", "Check your Vida Laboral report periodically", "Report any irregularities to Social Security", "Keep your Social Security number safe"]
+    },
+    "GROL001": {
+      "title": "Kitchen Fire Safety",
+      "legalBasis": "RD 513/2017, CTE DB-SI",
+      "summary": "Kitchen fires are the most common type in hospitality. Grease fires require special extinguishing methods — never use water. Kitchen hoods must have automatic fire suppression. Fire blankets must be accessible. Gas shut-off procedures must be known by all kitchen staff.",
+      "keyPoints": ["Never use water on grease fires", "Know location and use of fire blanket", "Kitchen hood fire suppression must be maintained", "Know gas shut-off valve location", "Keep extinguisher accessible (Class F for grease)", "Clean hood filters regularly to prevent grease buildup"]
+    },
+    "GROL002": {
+      "title": "Kitchen Knife Safety",
+      "legalBasis": "Ley 31/1995, RD 773/1997",
+      "summary": "Knife injuries are among the most common in kitchens. Prevention requires proper training, use of sharp knives (dull knives are more dangerous), appropriate cutting techniques, cut-resistant gloves for certain tasks, and proper storage.",
+      "keyPoints": ["Use sharp knives — dull knives slip more", "Use correct cutting technique", "Cut away from your body", "Use cut-resistant gloves for deboning and similar", "Store knives in designated racks or blocks", "Never leave knives in sinks or submerged in water", "Carry knives point-down at your side"]
+    },
+    "GROL003": {
+      "title": "Kitchen Burns Prevention",
+      "legalBasis": "Ley 31/1995, RD 486/1997",
+      "summary": "Burns from hot surfaces, liquids, steam, and oil are frequent kitchen hazards. Prevention includes proper PPE (heat-resistant gloves, long sleeves), awareness of hot surfaces, proper pot handling techniques, and immediate first aid for burns.",
+      "keyPoints": ["Use heat-resistant gloves when handling hot items", "Announce when carrying hot items: 'behind!' 'hot!'", "Turn pot handles inward on the stove", "Open lids away from you to avoid steam burns", "Keep a burns kit accessible in kitchen", "First aid: cool water 10+ minutes, do not use ice"]
+    },
+    "GROL004": {
+      "title": "Kitchen Ventilation",
+      "legalBasis": "RD 486/1997, RITE (RD 1027/2007)",
+      "summary": "Adequate ventilation is essential for kitchen safety and comfort. Extraction hoods must be properly sized and maintained. Air supply must balance extraction. Filters must be cleaned regularly to prevent grease buildup and fire risk.",
+      "keyPoints": ["Ensure extraction hoods are functioning", "Clean hood filters weekly", "Check ventilation system maintenance schedule", "Report poor ventilation immediately", "Never block ventilation openings", "Monitor CO levels in gas kitchens"]
+    },
+    "GROL005": {
+      "title": "Kitchen Equipment Safety",
+      "legalBasis": "RD 1215/1997 on work equipment safety",
+      "summary": "Kitchen equipment (slicers, mixers, fryers, ovens) must be used according to manufacturer instructions. Staff must be trained on each piece of equipment. Safety guards must never be removed. Equipment must be properly maintained and inspected.",
+      "keyPoints": ["Read and follow manufacturer instructions", "Complete training before using equipment", "Never remove safety guards", "Turn off and unplug before cleaning", "Report any malfunction immediately", "Keep hands clear of moving parts"]
+    },
+    "GROL006": {
+      "title": "Responsible Alcohol Service",
+      "legalBasis": "Ley 5/2018 (varies by region), Ley 26/2015 child protection",
+      "summary": "Bar staff must serve alcohol responsibly. This includes refusing service to minors (under 18), recognizing signs of intoxication, and having protocols for refusing service. Staff must know the legal liability of serving intoxicated persons.",
+      "keyPoints": ["Never serve alcohol to minors (under 18)", "Check ID if age is uncertain", "Recognize signs of intoxication", "Know how to refuse service diplomatically", "Offer water and food to intoxicated customers", "Know your legal liability"]
+    },
+    "GROL007": {
+      "title": "Bar Glassware Handling",
+      "legalBasis": "Ley 31/1995, general safety",
+      "summary": "Broken glass is a significant hazard in bar environments. Proper handling, storage, and cleanup procedures minimize risk. Never pick up broken glass with bare hands. Use designated containers for broken glass.",
+      "keyPoints": ["Inspect glasses for chips and cracks before use", "Discard damaged glassware immediately", "Never pick up broken glass with bare hands", "Use brush and dustpan or damp cloth", "Use separate bin for broken glass", "Never use glass to scoop ice"]
+    },
+    "GROL008": {
+      "title": "Dining Room Tray Handling",
+      "legalBasis": "Ley 31/1995, RD 487/1997",
+      "summary": "Proper tray handling prevents injuries and spillage. Training in correct carrying technique, load distribution, and route awareness is essential. Heavy trays should be supported by both hands.",
+      "keyPoints": ["Distribute weight evenly on the tray", "Support heavy trays with both hands", "Be aware of your route and obstacles", "Use tray stands for heavy loads", "Watch for wet floors and uneven surfaces", "Report any overloading situations"]
+    },
+    "GROL009": {
+      "title": "Dining Room Slip Prevention",
+      "legalBasis": "RD 486/1997, Ley 31/1995",
+      "summary": "Slip and fall accidents are common in hospitality. Prevention requires non-slip footwear, immediate cleanup of spills, proper floor maintenance, and clear signage for wet areas.",
+      "keyPoints": ["Wear non-slip shoes at all times", "Clean spills immediately", "Place wet floor signs when cleaning", "Keep walkways clear of obstacles", "Report damaged or uneven flooring", "Be extra cautious in kitchen-to-dining transitions"]
+    },
+    "GROL010": {
+      "title": "Anti-Harassment Protocol",
+      "legalBasis": "LO 3/2007 for equality, ET Art. 4.2.e",
+      "summary": "Every company must have an anti-harassment protocol covering sexual harassment, harassment based on sex, and workplace bullying. The protocol must include prevention measures, complaint procedures, investigation process, and sanctions. All staff must be informed.",
+      "keyPoints": ["Zero tolerance for all forms of harassment", "Know the complaint procedure", "All complaints will be investigated confidentially", "Retaliation against complainants is prohibited", "Training on prevention is mandatory", "Sanctions range from warning to dismissal"]
+    },
+    "GROL011": {
+      "title": "Equality Plan",
+      "legalBasis": "LO 3/2007, RD 901/2020 on equality plans",
+      "summary": "Companies with 50+ employees must have an Equality Plan. Even smaller companies must respect equal treatment principles. The plan addresses equal pay, recruitment, promotion, work-life balance, and sexual harassment prevention.",
+      "keyPoints": ["Equal pay for equal work", "Non-discriminatory recruitment processes", "Equal access to training and promotion", "Work-life balance measures", "Sexual harassment prevention measures", "Regular monitoring and review of equality indicators"]
+    },
+    "GROL012": {
+      "title": "Digital Disconnection Right",
+      "legalBasis": "LO 3/2018 LOPDGDD Art. 88, ET Art. 20 bis",
+      "summary": "Workers have the right to digital disconnection outside working hours. Employers cannot require staff to answer emails, messages, or calls during rest periods. An internal policy must be established defining the terms of this right.",
+      "keyPoints": ["No obligation to respond to work messages outside hours", "Respect rest periods and vacation time", "Managers must lead by example", "Exceptions only for genuine emergencies", "Policy must be communicated to all staff", "Cannot penalize workers for disconnecting"]
+    },
+    "GROL013": {
+      "title": "Workplace Bullying Prevention",
+      "legalBasis": "Ley 31/1995, ET Art. 4.2.e, CC Art. 173.1",
+      "summary": "Workplace bullying (acoso laboral) includes repeated hostile behavior that creates an intimidating or degrading work environment. Prevention requires clear policies, reporting channels, investigation procedures, and a supportive work culture.",
+      "keyPoints": ["Recognize signs of workplace bullying", "Report any incidents through official channels", "Confidential investigation of all complaints", "Support for affected workers", "Sanctions for perpetrators", "Foster a respectful work culture"]
+    },
+    "GROL014": {
+      "title": "Data Protection (GDPR/LOPDGDD)",
+      "legalBasis": "EU GDPR 2016/679, LO 3/2018 LOPDGDD",
+      "summary": "Staff handle personal data of customers and colleagues. GDPR compliance requires understanding data minimization, consent, secure storage, and individuals' rights. Employee data (schedules, payroll, health) must be protected.",
+      "keyPoints": ["Collect only necessary personal data", "Obtain consent where required", "Store data securely (physical and digital)", "Know customers' rights (access, erasure)", "Report data breaches within 72 hours", "Never share personal data without authorization"]
+    },
+    "GDOC001": {
+      "title": "Mandatory Documentation Checklist",
+      "legalBasis": "Multiple regulations — compilation",
+      "summary": "This checklist covers all documentation legally required for a hospitality establishment: food safety records, PRL documentation, employment records, health registrations, licenses, insurance, and regulatory certifications.",
+      "keyPoints": ["APPCC plan and records", "PRL Prevention Plan", "Emergency/evacuation plan", "Employee contracts and registrations", "Food handler certificates", "Health registration (RGSEAA)", "Activity license and opening permit", "Insurance documentation", "Fire safety certificate", "Time recording system records"]
+    },
+    "GDOC002": {
+      "title": "Training Records",
+      "legalBasis": "Ley 31/1995, EU 852/2004",
+      "summary": "All training provided to staff must be documented. Records must include training topic, date, duration, trainer, attendees, and content. Both food safety and occupational health training records must be maintained and available for inspection.",
+      "keyPoints": ["Record all training sessions with dates and content", "Maintain attendance records signed by participants", "Keep certificates and qualifications on file", "Document induction training for new staff", "Record refresher training dates", "Make records available for inspection"]
+    },
+    "GDOC003": {
+      "title": "Annual Training Plan",
+      "legalBasis": "Ley 31/1995 Art. 19, ET Art. 4.2.b",
+      "summary": "An annual training plan ensures all staff receive necessary food safety, health and safety, and skills training. The plan should identify training needs, schedule sessions, allocate budget, and track completion.",
+      "keyPoints": ["Assess training needs for each role", "Schedule training sessions throughout the year", "Include food safety refresher training", "Include PRL-specific training", "Track completion rates", "Evaluate training effectiveness"]
+    },
+    "GDOC004": {
+      "title": "Health Inspection Preparation",
+      "legalBasis": "EU 882/2004 on official controls",
+      "summary": "Health inspections can occur without notice. Preparation requires maintaining all food safety documentation up to date, ensuring the premises meet hygiene standards, and having designated staff who can assist inspectors.",
+      "keyPoints": ["Keep all food safety documentation current", "Ensure APPCC records are up to date", "Temperature logs must be complete", "Cleaning records must be current", "Food handler certificates readily accessible", "Know who is responsible for accompanying inspectors"]
+    },
+    "GDOC005": {
+      "title": "Labor Inspection Preparation",
+      "legalBasis": "Ley 23/2015 de la Inspeccion de Trabajo",
+      "summary": "Labor inspections verify compliance with employment law, health and safety, and social security. Inspectors can arrive unannounced. Key documents that must be available include contracts, time records, payroll, PRL plan, and social security registrations.",
+      "keyPoints": ["Keep all employment contracts accessible", "Time recording system must be operational", "Payroll records available for current year", "PRL documentation up to date", "Social security registrations verified", "Know who is authorized to liaise with inspectors"]
+    },
+    "GENV001": {
+      "title": "Waste Management",
+      "legalBasis": "Ley 7/2022 de residuos y suelos contaminados",
+      "summary": "Spain's waste law requires businesses to minimize, separate, and properly dispose of waste. Hospitality establishments must separate at minimum: organic, packaging, glass, paper/cardboard, and used oil. Waste records must be maintained.",
+      "keyPoints": ["Separate waste into required categories", "Contract authorized waste collection services", "Maintain waste generation records", "Minimize single-use plastics", "Train all staff on waste separation", "Display waste separation instructions clearly"]
+    },
+    "GENV002": {
+      "title": "Waste Separation Protocol",
+      "legalBasis": "Ley 7/2022, local municipal ordinances",
+      "summary": "Proper waste separation is both a legal obligation and environmental responsibility. Each waste type has designated containers and collection schedules. Staff must be trained to separate correctly. Contaminated waste fractions reduce recycling effectiveness.",
+      "keyPoints": ["Organic waste: brown/green container", "Packaging: yellow container", "Glass: green container", "Paper/cardboard: blue container", "Used cooking oil: authorized collector", "General waste: grey container", "Label all waste containers clearly"]
+    },
+    "GENV003": {
+      "title": "Used Oil Management",
+      "legalBasis": "Ley 7/2022, RD 679/2006",
+      "summary": "Used cooking oil must never be poured down drains. It must be collected in designated containers and picked up by authorized recycling companies. Records of oil disposal must be maintained. One liter of oil can contaminate 1,000 liters of water.",
+      "keyPoints": ["Never pour oil down the drain", "Collect used oil in designated containers", "Contract authorized oil collection service", "Keep collection receipts and records", "Store oil containers in a secure area", "Change frying oil before degradation"]
+    },
+    "GENV004": {
+      "title": "Energy Efficiency",
+      "legalBasis": "RD 390/2021 on energy efficiency, EU 2012/27",
+      "summary": "Energy efficiency reduces costs and environmental impact. Key measures include LED lighting, efficient equipment, temperature management, preventive maintenance, and staff awareness of energy-saving practices.",
+      "keyPoints": ["Use LED lighting throughout", "Turn off equipment when not in use", "Maintain optimal temperature settings", "Keep refrigerator doors closed", "Schedule regular equipment maintenance", "Monitor energy consumption monthly"]
+    },
+    "GENV005": {
+      "title": "Food Waste Reduction Program",
+      "legalBasis": "Ley 1/2025, EU farm-to-fork strategy",
+      "summary": "Beyond legal compliance, a food waste reduction program demonstrates environmental responsibility. It includes waste auditing, menu planning to minimize waste, staff training on portions, composting where possible, and partnerships with food donation organizations.",
+      "keyPoints": ["Audit food waste to identify main sources", "Plan menus to use ingredients efficiently", "Train staff on correct portion sizes", "Implement composting where feasible", "Partner with food donation organizations", "Set waste reduction targets and monitor progress"]
+    }
+  }
+}

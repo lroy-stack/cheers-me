@@ -1,0 +1,194 @@
+{
+  "title": "Storage Procedures",
+  "legalBasis": "Royal Decree 3484/2000 on food hygiene standards; EU Regulation (EC) No 852/2004, Annex II, Chapter IX on requirements for foodstuffs; General food safety and hygiene principles under EU law",
+  "summary": "Proper storage is essential for maintaining food safety and quality from the time of delivery until use. Storage protects food from contamination, prevents spoilage and deterioration, controls bacterial growth through temperature management, maintains ingredient quality for optimal final dishes, and supports efficient inventory management and waste reduction. Poor storage practices undermine even the best purchasing and preparation procedures, leading to food waste, compromised quality, and food safety risks.\n\nStorage encompasses both the physical facilities (refrigerators, freezers, dry storage areas) and the operational procedures (organization, temperature control, rotation, hygiene, segregation). Proper storage requires: adequate capacity appropriately sized for your operations, equipment maintained at correct temperatures, organized systems enabling stock rotation and inventory management, hygiene preventing contamination and pest infestation, and segregation preventing cross-contamination between raw and ready-to-eat foods. These elements work together — excellent equipment poorly used is ineffective, and excellent procedures cannot compensate for inadequate or malfunctioning facilities.\n\nRegulatory requirements for storage are specified in EU Regulation 852/2004 Annex II, which mandates that food premises and equipment must be kept clean and maintained in good repair, food must be stored at temperatures preventing health risks, and raw materials must be stored in appropriate conditions preventing harmful contamination. Health inspectors assess storage facilities and practices during inspections. Common non-conformities include inadequate temperature control, poor organization and hygiene, failure to separate raw and ready-to-eat foods, and inadequate stock rotation leading to expired products in storage.",
+  "keyPoints": [
+    "Separate raw and cooked products strictly to prevent cross-contamination",
+    "Follow FIFO (First In, First Out) rotation religiously to prevent spoilage",
+    "Label all containers with content and date of opening or preparation",
+    "Keep storage areas clean, organized, and free from clutter",
+    "Never store food directly on the floor — use shelving and pallets",
+    "Check and record storage temperatures daily (refrigerators, freezers, dry storage)",
+    "Cover or seal all stored food to prevent contamination and moisture loss",
+    "Conduct regular stock audits to identify items approaching expiry"
+  ],
+  "sections": [
+    {
+      "heading": "1. Storage Facility Requirements",
+      "content": "Storage facilities must meet regulatory requirements and be appropriate for the volume and type of food stored. Refrigerated storage capacity should accommodate peak inventory levels without overloading — overcrowded refrigerators cannot maintain even cooling, creating warm spots where bacteria multiply. As a rule of thumb, refrigerators should not be loaded beyond 70-80% capacity to allow adequate air circulation. Freezer capacity should similarly accommodate normal inventory plus reasonable buffer for unexpected deliveries or storage needs. Dry storage should provide adequate space for ambient products with appropriate environmental conditions: cool, dry, well-ventilated, and protected from pests.\n\nStorage facilities must be maintained in good repair and condition. Regular maintenance prevents failures that can cause massive food loss and safety issues. Refrigeration systems require professional servicing at least quarterly, more frequently for heavily used equipment. Door seals and gaskets deteriorate over time and must be replaced when damaged. Thermometers and controls must be calibrated and functioning. Lighting must be adequate, using food-safe enclosed fixtures or shatterproof bulbs. Floors, walls, and ceilings must be in good repair, cleanable, and pest-proof. Any signs of structural damage, leaks, or pest entry points must be addressed immediately.",
+      "subsections": [
+        {
+          "heading": "1.1 Refrigeration Requirements",
+          "content": "Refrigerators for food storage must maintain temperatures at 4°C or below consistently. Commercial refrigeration differs from domestic equipment in capacity, cooling power, and reliability. Select commercial-grade equipment appropriate for your needs. Walk-in refrigerators provide highest capacity for large operations; reach-in units are suitable for smaller operations or specific sections. Position refrigerators away from heat sources (ovens, direct sunlight) and ensure adequate ventilation around condensers. Refrigerators should have visible thermometers, ideally with digital displays and data logging capability. Internal fans and air circulation systems distribute cold air evenly; avoid blocking vents. Separate refrigeration by product type if space allows: raw meat/poultry, fish, dairy, vegetables, prepared foods. This segregation reduces cross-contamination risk and allows different temperature optimums (fish ideally colder than vegetables, for example)."
+        },
+        {
+          "heading": "1.2 Freezer Requirements",
+          "content": "Freezers must maintain temperatures at -18°C or colder continuously. As with refrigerators, commercial equipment is essential for food service operations. Chest freezers provide efficient freezing and good temperature stability but are harder to organize and access deep items. Upright freezers are easier to organize with shelving but may be less energy-efficient. Walk-in freezers suit high-volume operations. Manual-defrost freezers require regular defrosting when ice buildup exceeds 6mm — ice reduces cooling efficiency and storage capacity. Self-defrosting freezers are more convenient but may have more temperature fluctuation during defrost cycles. Freezers should be positioned where they won't be opened frequently (minimizing temperature loss) and where adequate ventilation allows efficient operation. Never overload freezers beyond their freezing capacity — adding too much unfrozen food at once raises internal temperature and may compromise already-frozen items."
+        },
+        {
+          "heading": "1.3 Dry Storage Requirements",
+          "content": "Dry storage for ambient products should be: cool (ideally 10-15°C, certainly below 25°C); dry with low humidity (high humidity promotes mold and degradation); well-ventilated to prevent moisture and odor accumulation; clean and pest-proof with sealed doors and no gaps or cracks allowing pest entry; and organized with shelving systems allowing off-floor storage and FIFO rotation. Dry storage should be separate from chemical storage, cleaning equipment storage, and waste areas. Lighting should be adequate for reading labels and identifying products. Consider temperature and humidity monitoring in dry storage, particularly in warm climates or during summer. Some products have specific storage requirements beyond these general principles: chocolate requires cool temperatures but not refrigeration; oils should be protected from light and heat; and flour and grains benefit from airtight containers preventing pest infestation."
+        }
+      ]
+    },
+    {
+      "heading": "2. Storage Organization and Segregation",
+      "content": "Organization is fundamental to safe, efficient storage. Well-organized storage facilitates FIFO rotation, prevents cross-contamination, enables staff to find items quickly during busy periods, supports accurate inventory management, and presents professionally during inspections. Organization requires both initial setup (logical arrangement, shelving systems, labeling) and ongoing maintenance (putting items in assigned locations, keeping systems tidy). Without discipline, even well-designed storage systems deteriorate into chaotic accumulation.\n\nThe primary organizational principle in food storage is segregation by food safety risk: raw products that will be cooked must be stored separately from ready-to-eat products to prevent cross-contamination. Within these categories, further organization by product type, usage frequency, and rotation requirements improves efficiency and prevents errors. Color-coding, signage, and clearly defined storage zones help staff maintain organization even during high-pressure periods.",
+      "subsections": [
+        {
+          "heading": "2.1 Vertical Separation in Refrigerators",
+          "content": "Refrigerators must be organized vertically to prevent drip contamination from raw to ready-to-eat foods. The golden rule: raw products below, cooked and ready-to-eat above. A typical organization scheme from bottom to top: Bottom shelf: raw meat and poultry (highest contamination risk). Second shelf: raw fish and seafood. Third shelf: cooked meats, dairy products, prepared dishes. Top shelf: ready-to-eat foods including salads, desserts, cut fruits, and vegetables for raw consumption. This arrangement ensures that if any dripping occurs from packaging or during removal/replacement, it contacts only food that will receive subsequent cooking rather than food that will be consumed raw. Never store raw meat above ready-to-eat foods regardless of how well packaged — packaging can leak or be damaged unknowingly. Dedicate specific shelves for specific categories and train all staff on this system."
+        },
+        {
+          "heading": "2.2 Horizontal Organization",
+          "content": "Within each shelf or refrigerator, organize horizontally for efficiency and rotation. Group similar items together: all milk products in one area, all vegetables in another. This grouping helps with inventory checking and rotation. Within each group, arrange by date with older stock in front (FIFO). Use transparent containers or remove cardboard packaging so you can see products and their condition easily. Position frequently used items in easily accessible locations; rarely used items can be in less convenient spots. Leave space between items for air circulation — tightly packed refrigerators have warm spots. Label shelves or zones if helpful: signs saying 'Dairy,' 'Vegetables,' 'Meat' help maintain organization and are particularly useful for new staff."
+        },
+        {
+          "heading": "2.3 Container and Packaging Management",
+          "content": "All stored food should be properly covered or sealed. Benefits of proper containment include: preventing contamination from dust, pests, splashes, or airborne bacteria; preventing moisture loss and quality deterioration; preventing absorption of odors from other foods; preventing drips or spills from one product affecting others; and enabling clear labeling of contents and dates. Use food-grade containers appropriate for the product: transparent containers for visibility, airtight containers for moisture-sensitive products, stackable containers for efficient space use, and containers of appropriate size (avoid half-full large containers). Cover open cans or packages that cannot be resealed: transfer contents to containers, cover with plastic wrap or lids, and label with content, original date, and date opened. Never store food in open cans — once opened, cans oxidize and can leach metals into food."
+        }
+      ]
+    },
+    {
+      "heading": "3. FIFO Rotation and Date Management",
+      "content": "FIFO (First In, First Out) is the stock rotation principle ensuring older stock is used before newer stock, preventing items from expiring in storage. FIFO applies to all storage: refrigerated, frozen, and dry. While the concept is simple, implementation requires consistent discipline. Without systematic FIFO, older stock accumulates in less visible locations while newer stock at the front is used, resulting in spoilage waste, potential food safety issues if expired products are inadvertently used, and financial loss from discarding unused food.\n\nEffective FIFO requires: physical organization so older stock is at front/top and newer stock behind/below; clear date labeling on all products showing use-by dates or dates opened; regular rotation during receiving (moving existing stock forward when new deliveries arrive); regular stock audits to identify items approaching expiry; and staff training and accountability ensuring everyone understands and follows FIFO principles. In operations with high turnover, FIFO may occur naturally as stock doesn't remain long enough to accumulate. In operations with slower turnover or seasonal variations, deliberate attention to FIFO is critical.",
+      "subsections": [
+        {
+          "heading": "3.1 Date Labeling Systems",
+          "content": "All stored food must be clearly labeled with date information. For purchased packaged products, use-by or best-before dates are on manufacturer labeling — ensure these dates remain visible. For opened packages, immediately label with: product name (if not obvious), date opened, and use-by date if different from package (some products have shorter shelf life once opened). For prepared foods, label with: dish name, date prepared, and use-by date (based on your HACCP plan — typically 3 days for refrigerated prepared foods). For transferred bulk items, label containers with: content, delivery or transfer date, and use-by date. Use durable labels that won't fall off in refrigeration or freezer conditions. Use waterproof markers. Color-code by day-of-week if helpful (e.g., Monday=red, Tuesday=blue) to make date identification quicker. Make label dispensers and markers readily available at workstations so labeling is convenient, not burdensome."
+        },
+        {
+          "heading": "3.2 Stock Rotation Procedures",
+          "content": "Implement systematic rotation: When receiving deliveries, move existing stock forward/up before placing new stock behind/below. This physical rotation makes FIFO intuitive — staff naturally take items from the front. When preparing dishes, check dates and consciously select older stock. During scheduled stock rotation sessions (weekly minimum), review all storage areas, identify items approaching expiry, move them to prominent positions for priority use, and remove expired items immediately. For slow-moving items, be particularly vigilant about rotation — these are most at risk of expiring in storage. Consider adjusting purchasing if items regularly reach expiry before use. Document stock rotation checks: date of check, items identified as needing priority use, items discarded as expired. This documentation demonstrates systematic food safety management."
+        },
+        {
+          "heading": "3.3 Managing Short-Dated Stock",
+          "content": "When stock audits identify items approaching expiry (typically within 2-3 days of use-by date), proactive management prevents waste. Strategies include: communicate to kitchen staff about short-dated items requiring priority use; incorporate short-dated items into daily specials or menu planning; move short-dated items to highly visible locations so staff naturally select them; transfer appropriate items to freezer if permitted and if sufficient time before expiry (note: some products are marked 'do not freeze'); offer short-dated items to staff at reduced cost; or donate to food banks if donation agreements allow and if sufficient time remains. Items that reach or pass use-by date must be discarded. Mark expired items clearly ('EXPIRED — DO NOT USE'), remove from food storage immediately, and dispose of in a way preventing accidental use. Document discarded expired items as part of food waste tracking."
+        }
+      ]
+    },
+    {
+      "heading": "4. Temperature Monitoring and Control",
+      "content": "Temperature control is the single most important factor in preventing bacterial growth in stored food. Even short periods at incorrect temperatures can allow rapid bacterial multiplication. Temperature monitoring is therefore a Critical Control Point in virtually all HACCP plans. Monitoring must be systematic, documented, and responded to when deviations occur. Casual glances at refrigerator thermometers without recording or action are inadequate for regulatory compliance and food safety.\n\nEffective temperature control requires: equipment capable of maintaining required temperatures, thermometers visible and accurate, regular checking and recording (minimum twice daily, more frequently in warm weather), immediate corrective action when temperatures deviate from limits, maintenance schedules preventing equipment failure, and backup plans for equipment failures. Many hospitality operations have experienced catastrophic losses from refrigeration failures overnight or during weekends when problems were not detected until extensive damage occurred. Investment in temperature monitoring and alarm systems is sound risk management.",
+      "subsections": [
+        {
+          "heading": "4.1 Temperature Limits and Monitoring Frequency",
+          "content": "Regulatory temperature limits: refrigerated storage must be maintained at 4°C or below (some operations use 0-2°C for enhanced safety and shelf life); frozen storage must be -18°C or below; dry storage should be cool (ideally below 20°C, certainly below 25°C). Temperature must be checked and recorded at least twice daily: opening check (morning before service begins) and closing check (end of day). Additional checks during the day are advisable in hot weather or high-use periods when doors are opened frequently. Check both air temperature (equipment's built-in thermometer) and product temperature (use probe thermometer in a container of water or checking actual food temperature) as air temperature may not reflect product temperature in overloaded or poorly circulating equipment. Record all checks in temperature logs with date, time, temperature, and staff initials."
+        },
+        {
+          "heading": "4.2 Responding to Temperature Deviations",
+          "content": "When monitoring reveals temperatures outside limits, immediate action is required. If refrigerator temperature is above 4°C: check if the door was left open or has a faulty seal; avoid opening the door further; increase temperature setting; transfer food to another functioning refrigerator if available; and assess food safety based on how long temperature was elevated. If only briefly elevated (under 2 hours) and food still feels cold, it may be salvageable. If elevated for extended periods or food feels warm, potentially hazardous food should be discarded. If freezer temperature is above -18°C or food shows signs of thawing: assess whether freezer malfunction or power failure occurred; transfer food to functioning freezer if available; and evaluate food. If food is still frozen solid and temperature deviation was brief, it is likely salvageable. If food has begun thawing, particularly meat, fish, or prepared foods, safety is compromised. Document all corrective actions: what was the temperature, what action was taken, what was the outcome, and who made decisions."
+        },
+        {
+          "heading": "4.3 Equipment Maintenance and Calibration",
+          "content": "Preventive maintenance prevents temperature control failures. Establish maintenance schedules: clean refrigerator and freezer interiors weekly (or more frequently if needed); clean condenser coils monthly (dust accumulation reduces efficiency); defrost manual-defrost freezers when ice exceeds 6mm; check door seals monthly (close a piece of paper in the door — if it pulls out easily, seals are compromised); inspect and clear drainage holes; and schedule professional servicing quarterly for commercial equipment. Calibrate thermometers regularly using ice-water method (should read 0°C) or boiling water method (should read 100°C at sea level). Replace thermometers that cannot be calibrated within ±1°C tolerance. Keep maintenance logs documenting all service, repairs, and calibration. Have a relationship with a refrigeration contractor for emergency repairs — waiting days for service during equipment failure causes massive food loss."
+        }
+      ]
+    },
+    {
+      "heading": "5. Hygiene and Cleaning",
+      "content": "Storage areas must be kept scrupulously clean. Spills, leaks, and food residues in storage create bacterial growth environments, attract pests, and result in cross-contamination. Regular cleaning prevents accumulation of dirt and maintains professional, safe conditions. Cleaning frequency depends on area and use intensity: high-use refrigerators may require cleaning every few days; others weekly. Freezers typically require less frequent cleaning (monthly) unless spills occur. Dry storage should be cleaned weekly and audited for pests.\n\nCleaning procedures for storage vary by area but follow general principles: remove all food items from the area (maintaining them in appropriate temporary storage), clean with appropriate detergent using hot water and mechanical action, rinse thoroughly to remove detergent residues, disinfect with food-safe sanitizer, allow to air dry or wipe with clean cloth, and return food to storage with rotation. Refrigerators and freezers should not be cleaned with harsh chemicals or excessive water that might affect food or equipment. Removable shelves, drawers, and gaskets should be cleaned separately. Document cleaning activities in cleaning logs.",
+      "subsections": [
+        {
+          "heading": "5.1 Preventing Cross-Contamination in Storage",
+          "content": "Beyond organizational segregation, several practices prevent cross-contamination: use separate refrigerators or clearly divided zones for raw and ready-to-eat foods if possible; cover all stored food to prevent drips or splashes; use leak-proof containers for liquids or foods with high moisture content; store food in containers appropriate for the product (shallow containers for large quantities of hot food being cooled, airtight containers for odor-sensitive foods); clean and disinfect shelves and surfaces regularly, particularly after spills; clean the outsides of containers and packaging before storage if they became soiled during delivery; never store raw meat above any other food products; and if a spill occurs, clean and disinfect affected areas immediately before contamination spreads or dries."
+        },
+        {
+          "heading": "5.2 Off-Floor Storage",
+          "content": "Never store food directly on the floor. Floors are the most contaminated surfaces in any facility, subject to foot traffic, splashes, and pest contact. Storing food on floors exposes it to contamination and makes cleaning difficult. All food must be stored on shelving, pallets, or racks at least 15-20cm above floor level. This elevation protects food from floor contamination, facilitates floor cleaning, enables inspection for pests, and prevents water damage if floor gets wet from spills or cleaning. Shelving should be constructed of food-safe materials (stainless steel, heavy-duty plastic, or epoxy-coated wire) that are cleanable and corrosion-resistant. Adjust shelving height to accommodate products efficiently without wasted space. In walk-in refrigerators and dry storage, use mobile shelving or racks that can be moved for cleaning access."
+        },
+        {
+          "heading": "5.3 Pest Prevention in Storage",
+          "content": "Storage areas are attractive to pests due to food availability. Pest prevention in storage includes: seal gaps, cracks, and entry points around doors, windows, and utility penetrations; install door sweeps and weatherstripping on external doors; use fly screens on windows if they can be opened; maintain strict housekeeping with no food residues or spills; store food in sealed containers, not open bags or boxes; remove cardboard packaging where feasible (pests hide in corrugations); inspect deliveries for signs of pest activity before storage; rotate and audit stock regularly to detect pest activity early; place pest monitoring stations around storage areas; report any pest signs immediately; and contract professional pest control services. If pest infestation occurs, identify the extent, isolate and discard contaminated food, deep clean affected areas, and address entry points or conditions allowing infestation."
+        }
+      ]
+    },
+    {
+      "heading": "6. Special Storage Considerations",
+      "content": "Certain products have specific storage requirements beyond general principles. Understanding these requirements ensures product quality and safety. Eggs in Spain should be stored refrigerated once delivered (though some operations receive ambient eggs and refrigerate on arrival). Eggs absorb odors, so store separately from strong-smelling foods. Store pointed end down in original packaging or with broad end up if removed. Fresh fish and seafood are highly perishable and should ideally be stored at 0-2°C on ice in perforated containers allowing meltwater drainage. Use within 1-2 days for optimal quality. Soft cheeses and dairy require refrigeration at 4°C or below; hard cheeses can tolerate slightly warmer temperatures but refrigeration extends shelf life. Fresh herbs are delicate; wrap loosely in damp paper towels and refrigerate in open containers or perforated bags.\n\nBread and baked goods are best stored at room temperature in the short term (1-2 days); refrigeration causes staling. For longer storage, freeze and thaw as needed. Oils should be stored in cool, dark locations as heat and light cause rancidity; refrigeration is unnecessary unless opened bottles will not be used for extended periods. Wine should be stored horizontally in cool (10-15°C), dark, vibration-free locations; once opened, refrigerate and use within a few days. Flour and dry goods benefit from airtight containers preventing moisture absorption and pest infestation.",
+      "subsections": [
+        {
+          "heading": "6.1 Cooling Hot Food for Storage",
+          "content": "Never place hot food directly into refrigerators. Large quantities of hot food raise internal refrigerator temperature, endangering other stored food. Hot food must be cooled rapidly before refrigeration. Rapid cooling methods include: divide into shallow containers (depth 5cm or less) increasing surface area for faster cooling; use ice baths (place container of hot food in larger container filled with ice and water, stirring occasionally); use blast chillers if available (cool from 63°C to 10°C rapidly, then refrigerate); stir foods occasionally during cooling to distribute heat and speed cooling; and once cooled to below 10°C (typically within 1-2 hours), transfer to refrigerator. During cooling, food passes through the danger zone where bacteria multiply rapidly. Minimize this time: the goal is cooling from 63°C to 10°C within 90-120 minutes maximum. Cover food during cooling to prevent contamination but allow steam to escape."
+        },
+        {
+          "heading": "6.2 Storing Opened Packages and Leftovers",
+          "content": "Opened packages require special handling. Once opened, products are exposed to air, moisture, and potential contamination, affecting shelf life. Transfer opened products to clean, sealed containers when original packaging cannot be resealed. Label containers with content, date opened, and use-by date (often shorter than the product's original use-by date once opened). For canned goods, never store in the opened can — transfer to non-metallic containers as oxidation of the can may affect food quality and safety. For liquid products (milk, cream, sauces), ensure containers seal tightly to prevent spillage and contamination. For dry goods (flour, sugar, grains), use airtight containers preventing moisture and pests. Leftovers from service are high-risk: cool rapidly, refrigerate immediately, label with date, and use within 24-48 hours. Never mix new batches of food with leftover food from previous days."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Daily Storage Checks",
+      "items": [
+        "Check and record all refrigerator temperatures — must be ≤4°C (morning and evening)",
+        "Check and record all freezer temperatures — must be ≤-18°C (morning and evening)",
+        "Verify all stored food is properly covered or sealed",
+        "Check that raw products are stored below ready-to-eat products (no cross-contamination risk)",
+        "Verify FIFO rotation: older stock in front, newer stock behind",
+        "Check for any spills or leaks and clean immediately",
+        "Identify any items approaching expiry requiring priority use",
+        "Remove any expired items and document disposal",
+        "Verify storage areas are organized and tidy",
+        "Check for any signs of pests (droppings, gnaw marks, packaging damage)"
+      ]
+    },
+    {
+      "title": "Weekly Storage Deep Check",
+      "items": [
+        "Conduct thorough stock audit of all storage areas",
+        "Identify all items within 2-3 days of expiry and plan usage",
+        "Remove and discard any expired items; document waste",
+        "Clean one refrigerator/freezer thoroughly (rotate through all units weekly)",
+        "Check door seals and gaskets for wear or damage",
+        "Clean and organize dry storage area",
+        "Verify all items are properly labeled with dates",
+        "Check pest monitoring stations and document findings",
+        "Review temperature logs for trends or recurring issues",
+        "Inspect for any equipment issues requiring maintenance",
+        "Reorganize and rotate stock as needed to maintain FIFO",
+        "Update inventory records if maintained"
+      ]
+    },
+    {
+      "title": "Monthly Storage Maintenance",
+      "items": [
+        "Deep clean all refrigerators and freezers: empty, clean interior, shelves, door seals",
+        "Clean condenser coils on all refrigeration equipment",
+        "Defrost manual-defrost freezers if ice exceeds 6mm",
+        "Deep clean dry storage: remove all items, clean shelves and floor, reorganize",
+        "Inspect all storage areas for structural issues, damage, or pest entry points",
+        "Test and calibrate all thermometers",
+        "Review and update storage labels and signage if needed",
+        "Assess storage capacity and organization; make improvements if needed",
+        "Schedule professional refrigeration maintenance if due",
+        "Review storage-related food waste data and identify improvement opportunities",
+        "Train or re-train staff on storage procedures if issues identified",
+        "Document monthly maintenance activities"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Organize storage vertically with raw products below and ready-to-eat above as an absolute rule — this single practice prevents most cross-contamination in storage",
+    "Label everything immediately when opened or prepared — labeling later leads to unlabeled items and confusion about dates",
+    "Implement color-coded containers or labels to visually distinguish raw from ready-to-eat or different product categories at a glance",
+    "Never overload refrigerators beyond 70-80% capacity — air circulation is essential for even cooling",
+    "Conduct stock rotation as a scheduled task, not something done if time permits — weekly rotation prevents expiry waste",
+    "Invest in temperature monitoring technology if feasible — automated alerts prevent catastrophic losses from undetected equipment failures",
+    "Train all staff on storage principles, not just those who primarily work with storage — everyone needs to put things away correctly",
+    "Make storage organization and cleanliness everyone's responsibility, not just designated staff — create a culture of pride in maintaining excellent storage conditions"
+  ],
+  "glossary": {
+    "FIFO": "First In, First Out — stock rotation principle ensuring older stock is used before newer stock",
+    "Cross-Contamination": "Transfer of harmful bacteria or contaminants from one food to another via contact, drips, or splashes",
+    "Use-By Date": "Date after which highly perishable food should not be consumed as it may be unsafe",
+    "Best-Before Date": "Date until which food maintains optimal quality; food past this date may have reduced quality but is not necessarily unsafe",
+    "Temperature Abuse": "Allowing food to be stored at unsafe temperatures creating conditions for bacterial growth",
+    "Danger Zone": "Temperature range (5-63°C) where bacteria multiply most rapidly",
+    "Critical Control Point (CCP)": "Step in food handling where control is essential to prevent, eliminate, or reduce food safety hazards",
+    "Stock Rotation": "Systematic organization ensuring older stock is used before newer stock, preventing spoilage",
+    "Off-Floor Storage": "Storing food on shelving or pallets elevated above floor level to prevent contamination and facilitate cleaning",
+    "Blast Chiller": "Refrigeration equipment designed to rapidly cool hot food to safe storage temperature"
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "title": "Supplier Control",
+  "legalBasis": "EU Regulation (EC) No 852/2004, Article 4 on food business operator responsibilities; EU Regulation (EC) No 178/2002 on food safety requirements; Royal Decree 191/2011 on the National Food Chain Control Plan",
+  "summary": "Supplier control is a fundamental component of food safety management in hospitality. EU Regulation 852/2004 requires food business operators to ensure that food safety is maintained at all stages of the food chain under their control. While hospitality establishments are not responsible for their suppliers' production processes, they are responsible for sourcing food from legitimate, compliant suppliers and verifying that delivered products meet safety and quality standards. Supplier control is both a prerequisite programme supporting HACCP and an independent legal requirement.\n\nAn effective supplier control system includes several interconnected elements: supplier approval procedures verifying that potential suppliers are legally registered and capable of supplying safe food, delivery verification procedures checking that received products meet specifications and are in safe condition, ongoing supplier performance monitoring identifying issues early and driving continuous improvement, documentation and traceability supporting rapid response to food safety incidents, and supplier communication maintaining relationships and ensuring expectations are clear. Together, these elements ensure that food entering your establishment meets safety and quality standards.\n\nCompetent authorities expect establishments to demonstrate active supplier control, not passive acceptance of whatever is delivered. During inspections, auditors review supplier approval documentation, delivery verification records, and evidence of action taken when non-conforming products are received. Failure to implement adequate supplier control constitutes a serious food safety system weakness that may result in enforcement action.",
+  "keyPoints": [
+    "Verify supplier health registration numbers (RGSEAA in Spain) before approval",
+    "Check delivery vehicle temperatures and condition during each delivery",
+    "Inspect products on arrival for temperature compliance, quality, packaging integrity, and expiry dates",
+    "Maintain an approved supplier list reviewed and updated regularly",
+    "Review supplier performance periodically and address recurring issues",
+    "Reject non-conforming deliveries and document reasons for rejection",
+    "Have contracts or agreements with suppliers specifying quality and safety requirements",
+    "Conduct supplier audits for critical or high-risk products if feasible"
+  ],
+  "sections": [
+    {
+      "heading": "1. Supplier Approval Process",
+      "content": "Supplier approval is the systematic evaluation of potential suppliers to ensure they can reliably provide safe, quality food that meets your specifications. Approval should occur before the first order is placed, though in practice many hospitality relationships begin informally and are formalized retrospectively. The approval process balances thoroughness with practicality: major suppliers providing high-risk or high-volume products warrant detailed evaluation, while small local suppliers of low-risk products may require simpler verification.\n\nThe approval process typically includes: requesting key documentation from potential suppliers (business registration, food safety certifications, insurance, product specifications), verifying the legal registration status, evaluating the supplier's food safety systems through questionnaires or audits, checking references from other customers, conducting trial orders to assess product quality and delivery reliability, and documenting the approval decision and any conditions. Once approved, suppliers are added to the approved supplier list. The decision to approve should be made by management, not left to individual staff members making purchasing decisions.",
+      "subsections": [
+        {
+          "heading": "1.1 Registration and Legal Compliance",
+          "content": "All food businesses operating in Spain must be registered with the competent authority and assigned a registration number. For establishments handling animal-origin products, this is typically an RGSEAA (Registro General Sanitario de Empresas Alimentarias) number formatted as: two-digit country code (ES for Spain), two-digit province code, six-digit establishment number, and two-letter product code. For plant-origin food businesses, registration is with the autonomous community. Before approving a supplier, verify their registration status. Request a copy of their registration certificate or RGSEAA number. You can verify registration status through the Spanish Agency for Food Safety and Nutrition (AESAN) online database or by contacting your local health authority. Suppliers operating illegally without registration cannot be approved — doing so exposes you to legal liability and food safety risks."
+        },
+        {
+          "heading": "1.2 Food Safety Certifications",
+          "content": "Larger suppliers often hold food safety certifications demonstrating compliance with recognized standards. Common certifications include: ISO 22000 (international food safety management standard), BRC Global Standard for Food Safety (British Retail Consortium standard widely recognized in Europe), IFS Food (International Featured Standards, particularly common in German markets), FSSC 22000 (Food Safety System Certification combining ISO 22000 with additional requirements), and organic certifications (EU organic regulation compliance) for organic products. While certifications are not legally required for suppliers, they provide independent verification that suppliers have implemented effective food safety systems. For high-risk products (meat, fish, ready-to-eat foods), preference should be given to certified suppliers. For uncertified suppliers, more detailed approval evaluation is warranted."
+        },
+        {
+          "heading": "1.3 Product Specifications",
+          "content": "Establish clear specifications for products you purchase, documenting exactly what you expect to receive. Specifications should include: product description (variety, grade, size), quality standards (appearance, freshness indicators, defect tolerances), packaging requirements (type, size, labeling), temperature requirements (delivery and storage temperatures), shelf life expectations (minimum remaining shelf life on delivery), and allergen information. Share specifications with suppliers and incorporate them into purchasing agreements. Specifications provide the basis for delivery verification: you can objectively assess whether received products meet your requirements. Regularly review specifications to ensure they remain appropriate as your menu and operations evolve."
+        }
+      ]
+    },
+    {
+      "heading": "2. Delivery Verification Procedures",
+      "content": "Delivery verification is the most frequent supplier control activity and a Critical Control Point in many HACCP plans. Every delivery must be inspected before acceptance to verify that products meet specifications and are in safe condition. Delivery verification should be systematic and documented, not cursory or inconsistent. The receiving staff member conducting verification must be trained on what to check and empowered to reject deliveries that do not meet standards.\n\nDelivery verification typically includes: checking delivery vehicle condition (clean, appropriate for food transport, refrigerated if required), verifying delivery documentation against the order (correct products, quantities), checking product temperatures using calibrated probe thermometers, inspecting packaging integrity (no damage, leaks, contamination), checking product quality (appearance, smell, freshness indicators), verifying labeling (product name, batch numbers, use-by dates), and checking expiry dates (sufficient remaining shelf life). Any deviations from specifications or signs of temperature abuse, damage, or poor quality should trigger corrective action, typically rejection of the affected products or entire delivery.",
+      "subsections": [
+        {
+          "heading": "2.1 Temperature Verification",
+          "content": "Temperature checking is critical for chilled and frozen deliveries. Use clean, calibrated probe thermometers to measure product temperature, not air temperature inside the delivery vehicle. For chilled products, insert the thermometer probe between packages or, for accessible products, into the product itself in the thickest part. Chilled products should be at 4°C or below; many establishments use 5°C as an acceptance threshold. For frozen products, verify they are frozen solid with no signs of thawing (soft spots, ice crystal accumulation inside packaging, leaking). Frozen product temperature should be -18°C or below. Record temperatures on delivery documentation. If temperatures are borderline or above limits, professional judgment is required: recent loading into a warm truck may temporarily raise surface temperature without compromising safety, but product that has been temperature-abused during extended transport should be rejected."
+        },
+        {
+          "heading": "2.2 Quality and Freshness Inspection",
+          "content": "Beyond temperature, assess product quality and freshness. Quality indicators vary by product type. For meat: color appropriate to the type (bright red for beef, pale pink for pork, no grayish or greenish discoloration), firm texture (not slimy or sticky), fresh smell (no off odors), packaging intact with no leaks, and acceptable fat distribution. For fish: clear, bright eyes (not cloudy or sunken), red or pink gills (not brown or gray), firm flesh that springs back when pressed, shiny skin with intact scales, fresh sea smell (not ammonia or strong fishy odor), and no brown discoloration. For produce: appropriate color and appearance for type and maturity, firm texture without soft spots or bruising, no mold or decay, no insect damage, and appropriate smell. Reject products that fail quality standards even if temperature is acceptable — quality issues may indicate age, poor handling, or storage problems."
+        },
+        {
+          "heading": "2.3 Packaging and Labeling Verification",
+          "content": "Inspect packaging for integrity: no tears, punctures, or damage that could compromise product safety or allow contamination. For vacuum-packed products, verify the vacuum seal is intact (package is tight, no air pockets). For modified atmosphere packaging, check that packaging is not bloated (which may indicate bacterial gas production). Verify labeling includes required information: product name and description, producer or packer identification, batch or lot number, use-by or best-before date, storage instructions, and allergen information where applicable. Products with damaged packaging or missing labeling should be rejected. For products you will serve or sell directly to consumers, ensure labeling allows you to comply with traceability requirements and consumer information obligations including allergen declarations."
+        },
+        {
+          "heading": "2.4 Documentation and Recording",
+          "content": "Document every delivery verification. Many establishments use receiving checklists covering: date and time of delivery, supplier name, delivery vehicle condition, products received (with quantities and batch numbers), temperature readings, quality assessment (pass/satisfactory/fail for each product or category), any deviations noted, and staff member who conducted verification (signature or initials). Filing delivery documentation supports traceability (linking products to suppliers and dates) and HACCP monitoring (temperature control verification). Documentation also provides evidence of due diligence if questions arise about delivered products. For digital inventory systems, data entry at receiving automatically creates delivery records, but physical inspection still requires trained staff checking products against specifications."
+        }
+      ]
+    },
+    {
+      "heading": "3. Rejection Procedures",
+      "content": "When delivered products do not meet acceptance criteria, they must be rejected. Rejection protects your establishment from unsafe or substandard food but can create tension with suppliers, particularly when drivers are under pressure to complete deliveries. Clear procedures and staff training ensure rejections are handled professionally and consistently. Staff must understand that they have authority to reject deliveries and that management supports them in doing so when standards are not met.\n\nRejection procedures should specify: who has authority to reject deliveries (typically trained receiving staff and management), criteria for rejection (temperature limits, quality standards, packaging requirements), how to document rejections (rejection forms or notes on delivery documentation), how to handle rejected products (returned to supplier immediately, left separately for collection, or destroyed if contamination risk), how to communicate with suppliers (inform driver, follow up with supplier management), and how rejected deliveries are followed up (ensure supplier understands the issue, request corrective action, assess whether the issue affects supplier approval status).",
+      "subsections": [
+        {
+          "heading": "3.1 Common Rejection Scenarios",
+          "content": "Typical reasons for delivery rejection include: temperature abuse (chilled products above 5-7°C, frozen products thawed or soft), expired or short-dated products (already past use-by date or insufficient remaining shelf life for your needs), packaging damage (torn, punctured, leaking, or unsealed packages), quality defects (off odors, discoloration, visible spoilage, excessive bruising or damage), incorrect products (wrong items delivered, different specifications than ordered), and inadequate documentation (missing batch numbers, no temperature records, missing certificates). Minor issues might be resolved by partial rejection (rejecting affected items while accepting the rest) or conditional acceptance with price adjustment, but significant issues warrant full delivery rejection."
+        },
+        {
+          "heading": "3.2 Documentation of Rejections",
+          "content": "Document all rejections thoroughly: date and time, supplier and driver, products rejected (description, quantities, batch numbers if available), specific reason for rejection (temperature reading, description of quality issue, photographs if helpful), how rejected products were handled (returned with driver, left for collection, destroyed), who made the rejection decision and communicated it, and follow-up planned with supplier management. This documentation serves multiple purposes: provides evidence supporting your rejection decision if the supplier disputes it, creates a record of supplier performance issues for evaluation, demonstrates to inspectors that you actively enforce standards, and protects against liability if rejected products are later linked to safety incidents. In disputes, contemporaneous documentation is much more credible than retrospective recollection."
+        },
+        {
+          "heading": "3.3 Supplier Communication and Resolution",
+          "content": "After rejecting a delivery, communicate promptly with supplier management (not just the driver) to: explain the rejection reason clearly and factually, request investigation and corrective action to prevent recurrence, and confirm arrangements for replacing rejected products or crediting your account. Professional communication focused on facts rather than blame is most effective. Document supplier responses and any agreed corrective actions. If rejections from a supplier become frequent, escalate: request a meeting to discuss systematic issues, consider requiring the supplier to conduct their own investigation and provide a written corrective action plan, and evaluate whether continued use of the supplier is appropriate. Frequent quality or safety issues suggest unreliable suppliers who pose ongoing risks."
+        }
+      ]
+    },
+    {
+      "heading": "4. Ongoing Supplier Performance Monitoring",
+      "content": "Supplier approval is not a one-time decision but an ongoing relationship requiring continuous monitoring. Supplier performance can change over time due to production issues, management changes, capacity constraints, or financial problems. Regular performance evaluation identifies issues early, enables proactive intervention, and informs decisions about continuing supplier relationships. Performance monitoring should be systematic and documented, not based solely on informal impressions.\n\nEstablish a supplier evaluation system covering: delivery reliability (on-time delivery percentage, complete orders vs. short-shipped orders), product quality (rejection rates, customer complaints related to specific suppliers' products, consistency of quality), food safety compliance (temperature conformance, documentation completeness, response to safety issues), communication and responsiveness (how promptly and effectively suppliers respond to inquiries or problems), and commercial terms (competitive pricing, payment terms, flexibility). Evaluate suppliers at least annually, more frequently for critical suppliers or when issues are identified.",
+      "subsections": [
+        {
+          "heading": "4.1 Performance Metrics and Scoring",
+          "content": "Develop simple metrics to quantify supplier performance objectively. Examples include: delivery acceptance rate (percentage of deliveries accepted vs. rejected or partially rejected), temperature conformance rate (percentage of temperature checks within specifications), on-time delivery rate (percentage delivered within agreed time windows), order accuracy rate (percentage of orders complete and correct), and complaint rate (number of quality issues or complaints per delivery or per order value). Score suppliers on each metric and combine into an overall performance rating (e.g., A/B/C rating or numerical score). Use performance data to identify top-performing suppliers who might warrant increased business and problematic suppliers requiring intervention or replacement. Share performance data with suppliers — transparency about how they are evaluated motivates improvement and facilitates productive discussions about issues."
+        },
+        {
+          "heading": "4.2 Supplier Meetings and Relationship Management",
+          "content": "For important suppliers, conduct periodic supplier meetings (annually or quarterly). Meeting agendas typically include: review of performance data and trends, discussion of any quality or service issues, feedback from both parties about the relationship, changes to products, specifications, or procedures, market conditions and pricing, opportunities for improvement or innovation, and confirmation of food safety and traceability expectations. Meetings strengthen relationships, surface issues that might not be raised in day-to-day operations, and demonstrate that you are an engaged professional customer. Document meeting outcomes and agreed actions. Strong supplier relationships built on mutual respect and clear communication lead to better service, more flexibility during supply challenges, and proactive notification of potential issues."
+        },
+        {
+          "heading": "4.3 Supplier Development and Corrective Action",
+          "content": "When performance issues are identified, work with suppliers to drive improvement rather than immediately switching suppliers. Supplier development benefits both parties: suppliers improve their operations, and you maintain supply continuity with familiar partners. Supplier development approaches include: clearly communicating the issue and your expectations, requesting the supplier to investigate root causes and propose corrective actions, providing feedback and monitoring improvement, offering assistance if appropriate (e.g., sharing best practices, adjusting specifications if they were unrealistic), and setting timelines for improvement with consequences for continued non-performance. Document all corrective action requests and supplier responses. If suppliers are unwilling or unable to improve after reasonable opportunities, replacement becomes necessary."
+        }
+      ]
+    },
+    {
+      "heading": "5. Supplier Audits and Visits",
+      "content": "For high-risk or high-value products, consider conducting supplier audits or site visits. An audit is a systematic evaluation of the supplier's facilities, processes, and food safety systems. Audits provide much deeper insight than documentation review alone. They allow you to see how products are actually produced, handled, and stored, verify that suppliers' food safety systems are genuinely implemented rather than just documented, assess hygiene and process control directly, and build relationships with supplier personnel. Audits are resource-intensive and are typically reserved for critical suppliers, new suppliers of high-risk products, or suppliers with persistent performance issues.\n\nAudits can be conducted by your own staff (if you have appropriate expertise), by food safety consultants, or by independent certification bodies. DIY audits are most cost-effective but require food safety knowledge and objectivity. Third-party audits provide independent credibility but cost more. The audit approach should be proportionate to the risk and importance of the supplier relationship.",
+      "subsections": [
+        {
+          "heading": "5.1 Audit Planning and Conduct",
+          "content": "Plan audits systematically: define audit scope (which areas and systems will be evaluated), develop an audit checklist covering key areas (premises and equipment, HACCP system, cleaning and sanitation, pest control, personnel hygiene, traceability, allergen management), notify the supplier in advance and arrange a convenient date, select auditors with appropriate expertise and objectivity, conduct the audit including facility tour, document review, staff interviews, and observation of operations, document findings including positive observations (good practices), minor non-conformities (issues requiring attention but not critical), and major non-conformities (serious food safety issues), and discuss findings with supplier management at a closing meeting. Provide a written audit report summarizing findings and requesting corrective action for non-conformities."
+        },
+        {
+          "heading": "5.2 Audit Follow-Up",
+          "content": "Audit value comes from acting on findings, not just documenting them. After the audit: agree on timelines for addressing each non-conformity, request the supplier to provide evidence of corrective actions (photographs, updated procedures, training records), verify that corrective actions are effective (desk review of evidence, follow-up visit for major issues), and document the complete audit process including findings, corrective actions, and verification. For major non-conformities, immediate action may be necessary: suspension of deliveries until the issue is resolved, partial restriction (e.g., only allowing certain products that are not affected by the issue), or increased delivery inspection for a period. Audits should result in tangible improvements to supplier performance and food safety."
+        }
+      ]
+    },
+    {
+      "heading": "6. Special Considerations",
+      "content": "Certain supplier types or product categories require special attention in supplier control systems. Local small-scale suppliers (farmers, artisan producers, small processors) may not have sophisticated food safety documentation but can provide excellent products. Evaluate these suppliers based on observation, trial orders, and appropriate questioning rather than expecting certification. Imported products require verification that suppliers comply with EU import requirements and that products have passed border controls. Organic products require suppliers to be certified by recognized organic certification bodies. Allergen-free products require absolute assurance that allergen contamination has not occurred during production — supplier certification or detailed evaluation is essential.\n\nFor convenience products and prepared foods (pre-cooked meals, sauces, desserts) where you have limited ability to verify quality through inspection, supplier reliability and certification become more important. For high-risk products (raw minced meat, unpasteurized dairy, ready-to-eat seafood), consider requirements for suppliers to provide microbiological testing results demonstrating safety.",
+      "subsections": [
+        {
+          "heading": "6.1 Managing Multiple Suppliers",
+          "content": "Many establishments use multiple suppliers for the same product category to ensure supply continuity, competitive pricing, and access to seasonal or specialized products. Managing multiple suppliers requires: maintaining clear specifications consistent across suppliers so products are comparable, evaluating each supplier independently according to the same criteria, ensuring traceability systems distinguish which supplier provided which products, and being cautious about playing suppliers against each other excessively, which can damage relationships. Having backup suppliers for critical products protects against supply disruptions but adds complexity to supplier management. Focus resources on managing your most critical suppliers effectively rather than spreading effort too thinly across many low-value relationships."
+        },
+        {
+          "heading": "6.2 Supplier Changes and Transitions",
+          "content": "Changing suppliers should be a deliberate decision, not an impulsive reaction to a single issue. Before changing suppliers: assess whether issues with the current supplier can be resolved through corrective action and communication, evaluate potential replacement suppliers through the full approval process, conduct trial orders with new suppliers before fully transitioning, manage the transition carefully to avoid supply gaps or quality inconsistencies, notify staff about supplier changes so they are aware that products may differ slightly, and document reasons for supplier changes for future reference. After transitioning to a new supplier, monitor performance closely during the initial period (first 3-6 months) to verify that the change has been successful. Be prepared to revert to the previous supplier or try another alternative if the new supplier proves unsatisfactory."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Supplier Approval Checklist",
+      "items": [
+        "Request supplier business registration number (RGSEAA or regional registration)",
+        "Verify registration status with competent authority or online database",
+        "Request copies of food safety certifications if applicable (ISO 22000, BRC, IFS, organic)",
+        "Review supplier food safety system documentation or questionnaire responses",
+        "Check supplier insurance and liability coverage",
+        "Request product specifications and technical data sheets",
+        "Check references from other customers if feasible",
+        "Conduct trial orders to assess product quality and delivery service",
+        "Evaluate trial order results: product quality, packaging, temperature, documentation",
+        "Document approval decision with date and any conditions or limitations",
+        "Add approved supplier to supplier list with contact information and registration number",
+        "Establish purchasing agreement or letter specifying requirements and expectations"
+      ]
+    },
+    {
+      "title": "Delivery Verification Checklist",
+      "items": [
+        "Check delivery vehicle condition: clean, appropriate for food, refrigerated if required",
+        "Verify delivery documentation against purchase order: correct supplier, products, quantities",
+        "Check product temperatures with calibrated probe thermometer: chilled ≤4°C, frozen ≤-18°C",
+        "Record all temperature readings on delivery documentation",
+        "Inspect packaging integrity: no damage, tears, leaks, or contamination",
+        "Check product quality: appearance, smell, texture appropriate for product type",
+        "Verify labeling: product name, batch numbers, use-by dates present and legible",
+        "Check expiry dates: sufficient remaining shelf life for your needs",
+        "Verify correct products and quantities match order",
+        "Document any deviations, rejections, or issues on delivery notes",
+        "Sign and date delivery documentation only after verification is complete",
+        "File delivery documentation immediately in traceability system"
+      ]
+    },
+    {
+      "title": "Annual Supplier Performance Review",
+      "items": [
+        "Compile performance data for each supplier: delivery acceptance rate, temperature conformance, rejections, complaints",
+        "Calculate performance metrics and overall score or rating for each supplier",
+        "Review supplier documentation: ensure registration certificates are current, certifications have not expired",
+        "Assess supplier communication and responsiveness to issues",
+        "Evaluate commercial terms: pricing competitiveness, payment terms, contract compliance",
+        "Identify top-performing suppliers and opportunities to increase business",
+        "Identify underperforming suppliers requiring corrective action or replacement",
+        "Schedule supplier meetings for critical suppliers to discuss performance",
+        "Update approved supplier list: add new suppliers, remove suppliers no longer used or no longer meeting standards",
+        "Plan any supplier audits for the coming year",
+        "Document annual review and decisions made",
+        "Communicate performance feedback to suppliers as appropriate"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Train all receiving staff thoroughly on delivery verification procedures and empower them to reject deliveries that do not meet standards",
+    "Maintain an approved supplier list and prohibit purchasing from unapproved suppliers to ensure all suppliers have been vetted",
+    "Develop clear product specifications and share them with suppliers so expectations are mutually understood",
+    "Document everything — delivery checks, rejections, supplier communication — contemporaneous records are your best protection",
+    "Treat suppliers as partners rather than adversaries — professional, respectful communication about issues is more effective than aggressive confrontation",
+    "Diversify suppliers for critical products to avoid dependency on a single source that could leave you vulnerable to supply disruptions",
+    "Focus resources on managing high-risk and high-value suppliers effectively rather than trying to audit every supplier equally",
+    "Conduct periodic supplier visits or audits for critical suppliers to understand their operations and build relationships beyond transactional interactions"
+  ],
+  "glossary": {
+    "Supplier Approval": "Systematic evaluation of potential suppliers to verify they can provide safe, quality products meeting specifications",
+    "RGSEAA": "Registro General Sanitario de Empresas Alimentarias y Alimentos — Spain's General Health Register of Food Companies and Foods",
+    "Delivery Verification": "Inspection of delivered products to confirm they meet temperature, quality, packaging, and specification requirements",
+    "Rejection": "Refusal to accept delivered products that do not meet acceptance criteria, returning them to the supplier",
+    "Product Specification": "Documented description of product requirements including quality standards, packaging, temperature, and shelf life",
+    "Performance Monitoring": "Ongoing evaluation of supplier performance using metrics such as rejection rates, on-time delivery, and quality consistency",
+    "Supplier Audit": "Systematic evaluation of a supplier's facilities, processes, and food safety systems through site visits and documentation review",
+    "Non-Conformity": "Deviation from requirements or standards identified during audit or inspection",
+    "Due Diligence": "Reasonable steps taken to ensure suppliers are compliant and products are safe, demonstrating responsible management",
+    "Approved Supplier List": "Maintained list of suppliers who have been evaluated and approved for use based on defined criteria"
+  }
+}

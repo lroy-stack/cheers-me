@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="192" height="192" fill="#0f172a"/>
+
+  <!-- Cheers glass icon with amber accent -->
+  <g transform="translate(48, 48) scale(0.375)">
+    <!-- Glass body -->
+    <path d="M 180 80 L 170 240 Q 170 280 200 290 L 260 290 Q 290 280 290 240 L 280 80 Z"
+          fill="none" stroke="#f59e0b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Bubbles for drinks -->
+    <circle cx="200" cy="140" r="12" fill="#f59e0b" opacity="0.7"/>
+    <circle cx="240" cy="160" r="10" fill="#f59e0b" opacity="0.6"/>
+    <circle cx="220" cy="200" r="14" fill="#f59e0b" opacity="0.5"/>
+    <circle cx="255" cy="220" r="9" fill="#f59e0b" opacity="0.4"/>
+
+    <!-- Handle -->
+    <path d="M 290 140 Q 340 140 340 190 Q 340 240 290 240"
+          fill="none" stroke="#f59e0b" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <!-- App title -->
+  <text x="96" y="152"
+        font-family="system-ui, -apple-system, sans-serif"
+        font-size="32"
+        font-weight="bold"
+        fill="#f59e0b"
+        text-anchor="middle">CHEERS</text>
+</svg>

@@ -1,0 +1,52 @@
+{
+  "categories": {
+    "Breakfast & Lunch": {
+      "default": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800&h=600&fit=crop",
+      "items": {}
+    },
+    "Burgers & Schnitzel": {
+      "default": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&h=600&fit=crop",
+      "items": {}
+    },
+    "Pasta": {
+      "default": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800&h=600&fit=crop",
+      "items": {}
+    },
+    "Salads": {
+      "default": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&h=600&fit=crop",
+      "items": {}
+    },
+    "Desserts": {
+      "default": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&h=600&fit=crop",
+      "items": {}
+    },
+    "Sauces & Sides": {
+      "default": "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=800&h=600&fit=crop",
+      "items": {}
+    },
+    "Classic Cocktails": {
+      "default": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&h=600&fit=crop",
+      "items": {}
+    },
+    "Coffee Cocktails": {
+      "default": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&h=600&fit=crop",
+      "items": {}
+    },
+    "Spritz & Sangria": {
+      "default": "https://images.unsplash.com/photo-1560512823-829485b8bf24?w=800&h=600&fit=crop",
+      "items": {}
+    },
+    "Beers": {
+      "default": "https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=800&h=600&fit=crop",
+      "items": {}
+    },
+    "Wines & Champagne": {
+      "default": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&h=600&fit=crop",
+      "items": {}
+    },
+    "Soft Drinks": {
+      "default": "https://images.unsplash.com/photo-1527960471264-932f39eb5846?w=800&h=600&fit=crop",
+      "items": {}
+    }
+  }
+}

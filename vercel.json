@@ -1,0 +1,102 @@
+{
+  "version": 2,
+  "buildCommand": "pnpm run build",
+  "devCommand": "pnpm run dev",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": {
+      "description": "Supabase project URL"
+    },
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": {
+      "description": "Supabase anonymous key for client-side access"
+    },
+    "SUPABASE_SERVICE_ROLE_KEY": {
+      "description": "Supabase service role key for server-side operations"
+    },
+    "ANTHROPIC_API_KEY": {
+      "description": "Anthropic API key for Claude AI integration"
+    },
+    "RESEND_API_KEY": {
+      "description": "Resend API key for email sending"
+    },
+    "EMAIL_FROM": {
+      "description": "From email address for transactional emails"
+    },
+    "META_ACCESS_TOKEN": {
+      "description": "Meta Graph API access token for Instagram/Facebook"
+    },
+    "META_PAGE_ID": {
+      "description": "Facebook page ID for posting"
+    },
+    "META_IG_USER_ID": {
+      "description": "Instagram user ID for posting"
+    },
+    "NEXT_PUBLIC_APP_URL": {
+      "description": "Production app URL"
+    },
+    "TIMEZONE": {
+      "description": "App timezone (Europe/Madrid)"
+    },
+    "DEFAULT_LOCALE": {
+      "description": "Default language locale (en)"
+    },
+    "NEXT_PUBLIC_VAPID_PUBLIC_KEY": {
+      "description": "Web Push API public VAPID key"
+    },
+    "VAPID_PRIVATE_KEY": {
+      "description": "Web Push API private VAPID key"
+    }
+  },
+  "buildOutputDirectory": ".next",
+  "outputDirectory": ".next",
+  "rewrites": [
+    {
+      "source": "/service-worker.js",
+      "destination": "/sw.js"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/sw.js",
+      "headers": [
+        {
+          "key": "Service-Worker-Allowed",
+          "value": "/"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "title": "Advertenties",
+  "subtitle": "Beheer advertenties voor digitaal menu en boekingspagina's",
+  "createAd": "Advertentie maken",
+  "editAd": "Advertentie bewerken",
+  "allAds": "Alle advertenties",
+  "noAds": "Nog geen advertenties",
+  "noAdsDescription": "Maak je eerste advertentie om specials te promoten op het digitale menu en boekingspagina's.",
+  "status": {
+    "draft": "Concept",
+    "active": "Actief",
+    "paused": "Gepauzeerd",
+    "expired": "Verlopen",
+    "archived": "Gearchiveerd"
+  },
+  "template": {
+    "label": "Sjabloon",
+    "football_match": "Voetbalwedstrijd",
+    "special_menu": "Speciaal Menu",
+    "happy_hour": "Happy Hour",
+    "cocktail_presentation": "Cocktailpresentatie",
+    "custom": "Aangepast"
+  },
+  "placement": {
+    "label": "Plaatsing",
+    "banner_top": "Bovenste Banner",
+    "between_categories": "Tussen Categorieën",
+    "fullscreen_overlay": "Volledig Scherm Overlay"
+  },
+  "displayPages": {
+    "label": "Weergeven op",
+    "digital_menu": "Digitaal Menu",
+    "booking": "Boekingspagina"
+  },
+  "form": {
+    "content": "Inhoud",
+    "visuals": "Visueel",
+    "scheduling": "Planning",
+    "titleLabel": "Titel",
+    "descriptionLabel": "Beschrijving",
+    "ctaText": "Call to Action Tekst",
+    "ctaUrl": "CTA Link URL",
+    "backgroundColor": "Achtergrondkleur",
+    "textColor": "Tekstkleur",
+    "image": "Afbeelding",
+    "uploadImage": "Afbeelding uploaden",
+    "removeImage": "Afbeelding verwijderen",
+    "startDate": "Startdatum",
+    "endDate": "Einddatum",
+    "startTime": "Starttijd",
+    "endTime": "Eindtijd",
+    "daysOfWeek": "Dagen van de week",
+    "priority": "Prioriteit",
+    "priorityHelp": "Advertenties met hogere prioriteit worden eerst getoond",
+    "save": "Advertentie opslaan",
+    "saving": "Opslaan...",
+    "publish": "Publiceren",
+    "saveDraft": "Opslaan als concept"
+  },
+  "tabs": {
+    "en": "Engels",
+    "nl": "Nederlands",
+    "es": "Spaans",
+    "de": "Duits"
+  },
+  "analytics": {
+    "impressions": "Weergaven",
+    "clicks": "Klikken",
+    "ctr": "Klikfrequentie"
+  },
+  "actions": {
+    "activate": "Activeren",
+    "pause": "Pauzeren",
+    "archive": "Archiveren",
+    "duplicate": "Dupliceren",
+    "delete": "Verwijderen",
+    "confirmDelete": "Weet je zeker dat je deze advertentie wilt verwijderen?"
+  },
+  "filters": {
+    "allStatuses": "Alle Statussen",
+    "allTemplates": "Alle Sjablonen",
+    "allPlacements": "Alle Plaatsingen"
+  },
+  "pageTabs": {
+    "overview": "Overzicht",
+    "createAd": "Advertentie maken"
+  }
+}

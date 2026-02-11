@@ -1,0 +1,88 @@
+{
+  "title": "Publicidad",
+  "subtitle": "Gestiona anuncios para el menú digital y páginas de reservas",
+  "createAd": "Crear anuncio",
+  "editAd": "Editar anuncio",
+  "allAds": "Todos los anuncios",
+  "noAds": "Aún no hay anuncios",
+  "noAdsDescription": "Crea tu primer anuncio para promocionar ofertas en el menú digital y páginas de reservas.",
+  "status": {
+    "draft": "Borrador",
+    "active": "Activo",
+    "paused": "Pausado",
+    "expired": "Expirado",
+    "archived": "Archivado"
+  },
+  "template": {
+    "label": "Plantilla",
+    "football_match": "Partido de Fútbol",
+    "special_menu": "Menú Especial",
+    "happy_hour": "Happy Hour",
+    "cocktail_presentation": "Presentación de Cocktail",
+    "custom": "Personalizado"
+  },
+  "placement": {
+    "label": "Ubicación",
+    "banner_top": "Banner Superior",
+    "between_categories": "Entre Categorías",
+    "fullscreen_overlay": "Overlay Pantalla Completa"
+  },
+  "displayPages": {
+    "label": "Mostrar en",
+    "digital_menu": "Menú Digital",
+    "booking": "Página de Reservas"
+  },
+  "form": {
+    "content": "Contenido",
+    "visuals": "Visual",
+    "scheduling": "Programación",
+    "titleLabel": "Título",
+    "descriptionLabel": "Descripción",
+    "ctaText": "Texto del botón",
+    "ctaUrl": "URL del enlace",
+    "backgroundColor": "Color de fondo",
+    "textColor": "Color de texto",
+    "image": "Imagen",
+    "uploadImage": "Subir imagen",
+    "removeImage": "Eliminar imagen",
+    "startDate": "Fecha de inicio",
+    "endDate": "Fecha de fin",
+    "startTime": "Hora de inicio",
+    "endTime": "Hora de fin",
+    "daysOfWeek": "Días de la semana",
+    "priority": "Prioridad",
+    "priorityHelp": "Los anuncios con mayor prioridad se muestran primero",
+    "save": "Guardar anuncio",
+    "saving": "Guardando...",
+    "publish": "Publicar",
+    "saveDraft": "Guardar como borrador"
+  },
+  "tabs": {
+    "en": "Inglés",
+    "nl": "Holandés",
+    "es": "Español",
+    "de": "Alemán"
+  },
+  "analytics": {
+    "impressions": "Impresiones",
+    "clicks": "Clics",
+    "ctr": "Tasa de clics"
+  },
+  "actions": {
+    "activate": "Activar",
+    "pause": "Pausar",
+    "archive": "Archivar",
+    "duplicate": "Duplicar",
+    "delete": "Eliminar",
+    "confirmDelete": "¿Estás seguro de que quieres eliminar este anuncio?"
+  },
+  "filters": {
+    "allStatuses": "Todos los estados",
+    "allTemplates": "Todas las plantillas",
+    "allPlacements": "Todas las ubicaciones"
+  },
+  "pageTabs": {
+    "overview": "Vista general",
+    "createAd": "Crear anuncio"
+  }
+}

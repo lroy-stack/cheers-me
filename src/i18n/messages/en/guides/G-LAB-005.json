@@ -1,0 +1,197 @@
+{
+  "title": "Time Recording (Registro de Jornada)",
+  "legalBasis": "Royal Decree-Law 8/2019 on urgent measures for social protection and fight against employment insecurity in the working day; Workers' Statute (Real Decreto Legislativo 2/2015) Article 34.9; European Court of Justice ruling C-55/18 (CCOO v. Deutsche Bank)",
+  "summary": "Since May 12, 2019, all employers in Spain are legally obligated to implement and maintain a daily time recording system (registro de jornada) for every employee, regardless of company size, sector, or contract type. This mandatory requirement emerged from Royal Decree-Law 8/2019 and is enforced through the Workers' Statute. The system must accurately record the specific start and end time of each employee's working day, not simply contracted hours or presence in the workplace.\n\nThe time recording obligation was introduced to combat widespread irregular working patterns, unpaid overtime, and to ensure transparency in working hours. Employers must guarantee that the recording system is reliable, accessible to employees for verification, and readily available for inspection by labor authorities. The system may be paper-based, digital, biometric, or any other format, provided it meets legal requirements for accuracy, accessibility, and retention.\n\nNon-compliance carries serious consequences: labor inspectors can impose administrative fines ranging from €626 to €6,250 per infraction. Beyond financial penalties, failure to maintain adequate time records creates presumptions against the employer in labor disputes concerning working hours, overtime, and rest periods. In hospitality, where shift patterns are often irregular and split shifts common, robust time recording is particularly important.\n\nThe time recording system must be established through consultation with employee representatives or, in their absence, directly with employees. Records must be retained for four years and include detailed information about the beginning and end of each working day for each employee.",
+  "keyPoints": [
+    "All employers must record daily start and end times for every employee, with no exceptions for company size or sector",
+    "Records must be specific to each day — contracted hours or general schedules do not satisfy the legal requirement",
+    "The recording system must be reliable, verifiable, and resistant to manipulation or retrospective alteration",
+    "Employees must have access to their time records and be able to verify their accuracy at any time",
+    "Records must be preserved for a minimum of four years from the date they were created",
+    "Labor inspectors can request time records during inspections and must be provided immediate access",
+    "Fines for non-compliance range from €626 to €6,250 per infraction (minimum to serious category)",
+    "In disputes over working hours or overtime, lack of time records creates a legal presumption favoring the employee's claims",
+    "The system must be agreed with employee representatives or, where none exist, with the employees themselves",
+    "Time records must be signed or validated by both the employee and the employer (or authorized representative)"
+  ],
+  "sections": [
+    {
+      "heading": "1. Legal Framework and Obligations",
+      "content": "The time recording requirement was introduced through Royal Decree-Law 8/2019, which amended Article 34.9 of the Workers' Statute. The regulation mandates that companies must guarantee the daily registration of the working day for each employee, which must include the specific start and end time of the working day. This obligation applies universally across all sectors, company sizes, and types of employment contracts — whether permanent, temporary, full-time, part-time, or even internships.\n\nThe European Court of Justice ruling in CCOO v. Deutsche Bank (C-55/18) established that EU member states must ensure employers have systems in place to measure daily working time for each worker. Spain's implementation goes beyond mere compliance, establishing specific requirements for accessibility, retention, and verification. The Spanish labor inspectorate has issued interpretative guidance clarifying that the obligation extends to all workers, including senior management, remote workers, and employees with flexible schedules.\n\nEmployers bear full responsibility for implementing and maintaining the system. While employees must cooperate by recording their hours, the legal obligation and liability rest with the employer. This means employers must establish clear procedures, provide necessary tools (clocking systems, apps, forms), train employees on proper use, and monitor compliance. Simply instructing employees to keep records is insufficient; the employer must actively guarantee that recording takes place.",
+      "subsections": [
+        {
+          "heading": "1.1 Who Must Comply",
+          "content": "Every employer operating in Spain, regardless of sector, size, or number of employees, must implement time recording. This includes sole proprietors with a single employee, hospitality establishments of any size, franchises, non-profits, and public sector employers. The obligation applies equally to Spanish companies and foreign companies operating in Spanish territory.\n\nAll categories of employees must be included in the time recording system: full-time and part-time workers, permanent and temporary staff, interns, workers on trial periods, senior management, and employees working remotely. The only exclusions are genuinely self-employed individuals (autónomos) who are not in a relationship of employment subordination. However, employers must be cautious: labor authorities scrutinize false self-employment arrangements, and claiming workers are self-employed to avoid time recording obligations can result in severe penalties."
+        },
+        {
+          "heading": "1.2 What Must Be Recorded",
+          "content": "The law requires recording of the specific start time and end time of each employee's working day. This means the exact time when work begins and when it ends, not simply contracted hours or scheduled shifts. If an employee is contracted for 8:00-16:00 but actually works 7:45-16:30, the time record must reflect 7:45-16:30.\n\nBreaks and rest periods present some complexity. The law does not explicitly require recording of meal breaks and rest periods that are not considered working time. However, many employers choose to record these to avoid disputes about whether breaks were actually taken. For hospitality workers with split shifts, both the morning and afternoon/evening periods must be recorded with their specific start and end times. Overtime, night work, and weekend work should be clearly identifiable from the time records."
+        },
+        {
+          "heading": "1.3 Consultation and Agreement",
+          "content": "The recording system must be established through negotiation with employee representatives (union delegates, works council members) where they exist. In smaller establishments without formal representation, the employer must consult directly with the workforce. This consultation requirement means employers cannot unilaterally impose a system without employee input.\n\nThe consultation should address the type of recording system (paper, digital, biometric), how employees will access their records, correction procedures for errors, privacy considerations (particularly for biometric systems), and how disputes will be resolved. While employers have the final decision-making authority, a system developed through genuine consultation is more likely to be effective and accepted by employees."
+        }
+      ]
+    },
+    {
+      "heading": "2. Recording Systems and Methods",
+      "content": "Spanish law does not mandate a specific format or technology for time recording, allowing employers flexibility to choose systems appropriate to their operational needs. The regulation requires only that the system be reliable, provide accurate daily records of start and end times for each employee, be accessible to workers and inspectors, and preserve records for four years. This flexibility means hospitality businesses can select from a range of options, from simple paper logs to sophisticated biometric systems.\n\nWhen selecting a time recording system, employers should consider reliability (resistant to errors and manipulation), ease of use (employees can record quickly without disrupting operations), accessibility (employees can view their own records), integration with payroll systems, compliance with data protection laws, and cost-effectiveness. In hospitality, where multiple employees may need to clock in or out simultaneously during shift changes, the system must handle high-volume usage without creating bottlenecks.",
+      "subsections": [
+        {
+          "heading": "2.1 Paper-Based Systems",
+          "content": "Paper time sheets remain legally valid and may be appropriate for very small hospitality businesses with few employees and simple shift patterns. A paper system typically consists of daily or weekly sheets where employees manually record their start and end times, then sign to confirm accuracy. The employer or manager also signs to validate the record.\n\nPaper systems are low-cost and require no technological infrastructure, but they have significant drawbacks: high risk of errors, easy to manipulate or falsify, difficult to store and retrieve for the required four-year retention period, time-consuming to compile for payroll purposes, and labor-intensive to produce during inspections. If using a paper system, implement controls such as pre-numbered forms, immediate manager review and signature, secure storage in chronological order, and regular transcription to a digital archive for long-term retention."
+        },
+        {
+          "heading": "2.2 Digital and Biometric Systems",
+          "content": "Digital time recording systems — including software applications, cloud-based platforms, biometric scanners (fingerprint, facial recognition), and integrated point-of-sale or workforce management systems — offer significant advantages over paper. They provide automatic timestamping (eliminating errors), tamper-resistant records, easy integration with payroll, instant accessibility for employees and managers, searchable records for inspection purposes, and automatic long-term archiving.\n\nBiometric systems, while increasingly common in hospitality, raise data protection considerations under the GDPR (EU Regulation 2016/679) and Spanish Organic Law 3/2018 (LOPDGDD). Biometric data is classified as a special category of personal data requiring heightened protection. Employers must conduct a Data Protection Impact Assessment, obtain explicit consent from employees or demonstrate legitimate interest, implement strong security measures, and provide an alternative non-biometric option. The Spanish Data Protection Agency (AEPD) has issued guidance stating that biometric time recording may be lawful when justified by operational needs and appropriate safeguards are in place."
+        },
+        {
+          "heading": "2.3 Mobile and Remote Worker Recording",
+          "content": "For employees working remotely, on delivery routes, or at variable locations (common in catering and event hospitality), mobile app-based recording systems may be appropriate. These apps allow employees to clock in and out from their smartphones, often with GPS geolocation to verify work location. Such systems must still meet all legal requirements: specific time recording, employee access to records, reliability, and data protection compliance.\n\nFor remote workers with flexible schedules, the time recording obligation remains, but employers must be realistic about what can be monitored. The obligation is to record working time, not to surveil every moment. Mutual trust and employee cooperation are essential. Some employers use employee self-declaration systems for remote workers, where the employee records their own hours in a company-provided digital format, subject to periodic verification and audit."
+        }
+      ]
+    },
+    {
+      "heading": "3. Implementation in Hospitality Operations",
+      "content": "Implementing time recording in restaurants, bars, hotels, and catering operations presents specific challenges. Hospitality work often involves split shifts, irregular hours, last-minute schedule changes, and high employee turnover. Service periods require all staff to be attending to customers, not queuing to clock in or out. Kitchen staff may have difficulty accessing recording systems without leaving their stations. These operational realities require practical, thoughtfully designed recording procedures.\n\nSuccessful implementation requires clear procedures integrated into daily operations, staff training on the importance and method of time recording, designated responsibility for monitoring compliance (typically shift managers), technical systems that accommodate peak usage (shift change times), and a culture that treats time recording as a routine requirement, not an administrative burden. Resistance from employees or managers often indicates poor system design or inadequate explanation of the legal requirement.",
+      "subsections": [
+        {
+          "heading": "3.1 Shift Change Procedures",
+          "content": "Shift changes in hospitality can involve many employees arriving or leaving within a short window. The time recording system must handle this volume without causing delays. If using a single biometric terminal or sign-in sheet, queues will form. Solutions include multiple recording stations, staggered shift start times where operationally feasible, mobile app options allowing employees to clock in before entering the workplace, and designated staff (shift managers) to assist and verify during peak periods.\n\nEmployees should be instructed to record their time immediately upon arrival and immediately before departure. Recording times should reflect actual work start and end, not arrival in the building or departure from the premises. For example, if an employee arrives at 14:50 for a 15:00 shift and spends 10 minutes changing and preparing, the recorded start time should be 15:00 (or when actual work begins). However, if an employee is required to arrive early for briefing or preparation, that time is working time and must be recorded."
+        },
+        {
+          "heading": "3.2 Split Shifts and Multiple Locations",
+          "content": "Split shifts, common in hospitality (e.g., 11:00-16:00 and 19:00-23:00), require recording both periods. Each start and end time must be recorded separately. Some digital systems allow a single employee to have multiple clock-in/clock-out events per day, automatically calculating total working time. Paper systems require clear formatting to record multiple periods for each employee.\n\nEmployees working across multiple locations (for example, a chef who works at two different restaurants owned by the same employer, or catering staff working at various event sites) must record time at each location. Mobile apps with geolocation or location-specific recording stations may be necessary. The records should clearly identify which location the employee worked at for each period."
+        },
+        {
+          "heading": "3.3 Manager and Supervisor Recording",
+          "content": "A common misconception is that managers or supervisors are exempt from time recording. They are not. All employees, including senior management, must have their working hours recorded. The only partial exception is for the specially qualified senior staff with power of attorney or equivalent authority (alto cargo), whose working time is exempt from certain working time limits under the Workers' Statute. Even these individuals should have their time recorded as a good practice, though the legal obligation is less clear.\n\nManagers responsible for supervising time recording must also be subject to it, which can create practical challenges. In small establishments, the owner-manager may record their own time through self-declaration. In larger operations, senior managers may record to the general manager or HR. The key principle is that the recording obligation applies throughout the organizational hierarchy."
+        }
+      ]
+    },
+    {
+      "heading": "4. Employee Rights and Employer Obligations",
+      "content": "The time recording law is fundamentally a worker protection measure. Employees have specific rights regarding access to their records, correction of errors, privacy protection, and use of records in disputes. Employers must respect these rights while fulfilling their broader obligations to maintain accurate, accessible records and make them available for inspection.\n\nTransparency is essential. Employees should understand what is being recorded, why it is a legal requirement, how they can access their records, what happens if they forget to record time, and how the records will be used. Many disputes arise from misunderstanding or mistrust, which can be prevented through clear communication and consistent procedures.",
+      "subsections": [
+        {
+          "heading": "4.1 Employee Access to Records",
+          "content": "Employees have the right to access and verify their own time records at any time. This does not mean employers must provide access to the entire company's records (that would violate other employees' privacy), but each employee must be able to see their own. Access methods vary by system: paper logs may be kept in a location where employees can review them, digital systems should provide employee login portals, and mobile apps typically allow employees to view their recorded history.\n\nAccess must be reasonably easy and timely. Requiring employees to make a formal written request to access their own time records, or imposing delays of several days, likely violates the spirit of the regulation. Best practice is to provide real-time or near-real-time access through the recording system itself. If an employee identifies an error in their records, the employer must have a clear procedure for correction, ideally involving verification by both parties and documentation of the reason for the change."
+        },
+        {
+          "heading": "4.2 Data Protection and Privacy",
+          "content": "Time recording data constitutes personal data under GDPR and LOPDGDD, requiring compliance with data protection principles: lawfulness (legal obligation provides the lawful basis), purpose limitation (data used only for time recording, payroll, and compliance purposes), data minimization (record only what is legally required), accuracy (systems must be reliable and errors correctable), storage limitation (retain for four years, then securely delete), integrity and confidentiality (protect against unauthorized access), and accountability (document compliance measures).\n\nEmployers must inform employees about the time recording system through privacy notices explaining what data is collected, the legal basis (compliance with labor law), how long it is retained, who has access, and employee rights. Biometric data requires additional safeguards as previously discussed. Time records should not be shared beyond those with legitimate need: typically HR, payroll, direct managers, and (when requested) labor inspectors. Using time records for purposes unrelated to working time management (e.g., general surveillance) would violate data protection principles."
+        },
+        {
+          "heading": "4.3 Use of Records in Labor Disputes",
+          "content": "Time records serve as evidence in disputes concerning working hours, overtime pay, rest periods, and contract compliance. When such disputes reach labor courts or administrative proceedings, the records are critical. The Spanish Supreme Court has ruled that when an employer fails to maintain adequate time records, the employee's claim about working hours is presumed to be true unless the employer provides other evidence to the contrary. This presumption significantly strengthens employee claims and exposes employers to liability.\n\nEven partial or incomplete time records can create problems. If records show systematic patterns of working beyond contracted hours but no overtime pay, the employer may face claims for unpaid overtime. If records are inconsistent, missing periods, or appear manipulated, courts and inspectors will view them with suspicion. The best protection for employers is complete, accurate, contemporaneous records maintained consistently throughout the employment relationship."
+        }
+      ]
+    },
+    {
+      "heading": "5. Inspections and Enforcement",
+      "content": "The Spanish Labor and Social Security Inspectorate (Inspección de Trabajo y Seguridad Social) enforces time recording requirements through workplace inspections. Inspectors have broad powers to enter workplaces, examine documents, interview employees, and impose sanctions for non-compliance. Time recording is a priority area for enforcement, with national inspection campaigns focused specifically on this obligation.\n\nInspections may be scheduled or unannounced. Inspectors typically request time records for all employees, often for the preceding three to twelve months. They verify that records exist for all employees, include specific daily start and end times, are accessible to employees, are signed or validated by both parties, and are consistent with payroll, Social Security records, and employee testimony. Discrepancies or gaps in records lead to further investigation and likely sanctions.",
+      "subsections": [
+        {
+          "heading": "5.1 Inspection Process",
+          "content": "When a labor inspector arrives, the employer or designated representative should immediately cooperate. Obstruction or refusal to provide records constitutes a separate serious infraction. The inspector will typically request employee lists and time records, interview employees about recording practices, observe the recording system in operation, and cross-check time records against other documentation such as payroll and Social Security registrations.\n\nIf the inspector identifies deficiencies — missing records, incomplete data, inaccessible system, lack of employee signatures, inconsistencies with payroll — they will document findings in an inspection report (acta de infracción). The employer will be notified and given an opportunity to respond before sanctions are imposed. Minor deficiencies may result in a warning and requirement to correct within a deadline. Serious non-compliance results in fines and may trigger follow-up inspections."
+        },
+        {
+          "heading": "5.2 Penalties and Sanctions",
+          "content": "Failure to implement time recording, or maintaining inadequate records, is classified as a serious infraction under Article 7.5 of Law on Infractions and Sanctions in the Social Order (LISOS). Fines range from €626 to €6,250 per infraction. The amount depends on factors including the seriousness of the breach, number of affected employees, employer's prior compliance history, and company size.\n\nEach affected employee can constitute a separate infraction, potentially multiplying penalties. For example, a restaurant with 20 employees and no time recording system could theoretically face 20 separate fines. In practice, inspectors often issue a single fine for systemic failure, but repeat offenses or egregious cases can result in maximum penalties. Beyond financial sanctions, non-compliance creates legal presumptions favoring employees in disputes, as previously discussed, and may trigger additional scrutiny from tax and Social Security authorities."
+        },
+        {
+          "heading": "5.3 Corrective Action and Compliance",
+          "content": "Employers who receive inspection findings should immediately implement corrective actions: establish or repair the time recording system, train all employees on proper recording procedures, conduct a historical review to ensure records are complete and accurate, implement monitoring procedures to ensure ongoing compliance, and document all corrective measures taken. Prompt, comprehensive response demonstrates good faith and may mitigate penalties.\n\nOngoing compliance requires regular internal audits of time recording practices, periodic training refreshers for employees and managers, system maintenance and updates (for digital systems), secure long-term archiving of records, and designated responsibility for time recording oversight. Treating time recording as an integrated part of HR and payroll processes, rather than a separate administrative burden, improves consistency and reduces compliance risk."
+        }
+      ]
+    },
+    {
+      "heading": "6. Special Considerations for Hospitality",
+      "content": "The hospitality sector faces unique challenges in implementing time recording due to its operational characteristics: high employee turnover requiring continuous onboarding and training, irregular and variable schedules making prediction difficult, split shifts creating multiple daily recording events, peak service periods when employees cannot easily access recording systems, casual and seasonal workers who may work infrequently, and diverse workforce including young workers, foreign workers, and students who may be less familiar with their rights and obligations.\n\nDespite these challenges, hospitality employers must comply fully with the time recording requirement. Labor inspectorate campaigns have specifically targeted restaurants, bars, and hotels due to historically high rates of irregular working hours and unpaid overtime in the sector. Hospitality businesses cannot claim operational difficulty as an excuse for non-compliance; rather, they must design systems and procedures that accommodate their operational realities while meeting legal requirements.",
+      "subsections": [
+        {
+          "heading": "6.1 Casual and Seasonal Workers",
+          "content": "All employees, regardless of contract duration or work frequency, must be included in time recording. This includes workers on very short-term contracts (contratos de duración determinada), seasonal workers (fijos discontinuos), and workers called in occasionally to cover busy periods or staff absences. Even an employee who works only a single day must have their time recorded for that day.\n\nFor workers with irregular schedules, maintaining records can be administratively challenging but remains mandatory. Digital systems can help by allowing these workers to access the recording system only when they are actually scheduled to work. The employer must ensure that every worker, including those who work infrequently, knows how to use the recording system and has the means to access it when needed."
+        },
+        {
+          "heading": "6.2 Tips and Service Charges",
+          "content": "Time recording intersects with other hospitality-specific issues such as tips and service charges (propinas). While time recording does not directly address tip income, accurate working hour records are necessary to correctly calculate whether tips should be considered as part of remuneration for purposes such as holiday pay, overtime calculations, and Social Security contributions. Some collective agreements in hospitality specify minimum hourly rates excluding tips, making accurate time recording essential for compliance.\n\nEmployers should ensure that payroll systems integrate time recording data with tip income reporting to provide complete, accurate remuneration records. This integration supports compliance with tax and Social Security obligations and provides transparency for employees about their total compensation."
+        },
+        {
+          "heading": "6.3 Training and Culture",
+          "content": "Given high turnover in hospitality, ongoing training is essential. Every new employee must be instructed on the time recording system during induction: why time recording is legally required, how to use the specific system employed, when to record (immediately at start and end of work), what to do if they forget or make an error, and who to contact with questions. This training should be documented.\n\nCreating a culture of compliance requires leadership from management. If managers are casual about time recording, employees will be too. If managers themselves fail to record their hours, employees will perceive the requirement as unimportant. Conversely, when managers consistently emphasize time recording, promptly address errors, and ensure systems are functioning properly, employees understand it as a routine, non-negotiable requirement. Regular reminders, visible signage at recording stations, and recognition of consistent compliance help reinforce the culture."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Time Recording System Implementation Checklist",
+      "items": [
+        "Select a recording system appropriate for your business size and operations (paper, digital, biometric, mobile app)",
+        "Consult with employee representatives or, if none exist, with employees about the system design and implementation",
+        "Ensure the system records specific daily start and end times for each employee, not just contracted hours",
+        "Verify that employees can easily access their own time records to check accuracy",
+        "Implement procedures for employees to report and correct errors in their time records",
+        "Establish secure storage for time records with retention for at least four years",
+        "Conduct Data Protection Impact Assessment if using biometric or geolocation tracking",
+        "Provide employee privacy notices explaining what time data is collected, why, and how it is protected",
+        "Train all employees on how to use the system and the legal importance of accurate time recording",
+        "Designate responsibility for monitoring compliance and maintaining the system",
+        "Integrate time recording data with payroll systems to ensure consistency",
+        "Create documentation showing employee and employer signatures/validation of records"
+      ]
+    },
+    {
+      "title": "Daily Time Recording Compliance Checklist",
+      "items": [
+        "Verify that all employees have recorded their start time for today's shift",
+        "Ensure that employees departing record their end time before leaving",
+        "Check that employees working split shifts have recorded both periods",
+        "Review time records for obvious errors (e.g., implausible times, missing entries, duplicates)",
+        "Assist any employees who forgot to record or had technical difficulties, ensuring accurate retroactive recording",
+        "Verify that manager or supervisor signatures/validations have been completed for the day's records",
+        "Ensure that any overtime or exceptional hours worked are clearly reflected in the records",
+        "File completed daily records securely in chronological order (paper) or verify digital backup (electronic systems)"
+      ]
+    },
+    {
+      "title": "Labor Inspection Preparation Checklist",
+      "items": [
+        "Verify that time records exist for all current employees for at least the past 12 months",
+        "Check that records include specific daily start and end times, not just summary hours",
+        "Ensure records are signed or validated by both employees and employer representatives",
+        "Confirm that employees have had access to their own records and opportunity to verify accuracy",
+        "Cross-check time records against payroll records for consistency",
+        "Verify that overtime shown in time records matches overtime paid in payroll",
+        "Review records for any gaps, inconsistencies, or suspicious patterns that could trigger inspector concerns",
+        "Ensure records are organized and readily accessible for presentation to inspector",
+        "Identify designated spokesperson to accompany inspector and answer questions",
+        "Prepare list of all current employees with their roles and contract types",
+        "Review documentation of the time recording system implementation (consultation records, training records, system specifications)"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Choose a digital time recording system with automatic timestamping and cloud backup to eliminate manual errors and ensure long-term record retention",
+    "Integrate time recording directly into your payroll system to automatically detect discrepancies between recorded hours and paid hours",
+    "Provide multiple recording options for employees (e.g., fixed terminals, mobile app, web portal) to accommodate different roles and working patterns",
+    "Make time recording the first and last task of every shift through clear procedures and visible reminders at entry/exit points",
+    "Designate a specific person (HR manager, assistant manager) responsible for daily review of time records and prompt correction of errors",
+    "Conduct monthly audits comparing time records to payroll, identifying any patterns of unrecorded overtime or systematic discrepancies",
+    "Keep a dedicated log of any time recording system malfunctions and how they were resolved to demonstrate good-faith compliance during technical failures",
+    "Provide annual refresher training on time recording for all staff, emphasizing both the legal requirement and employee benefits of accurate records"
+  ],
+  "glossary": {
+    "Registro de Jornada": "Time recording or working day registration — the legally required system for recording daily start and end times of each employee's work",
+    "Hora de Inicio": "Start time — the specific time when an employee begins work each day, which must be recorded",
+    "Hora de Fin": "End time — the specific time when an employee finishes work each day, which must be recorded",
+    "Jornada Laboral": "Working day or working hours — the period during which an employee performs work duties",
+    "Horas Extraordinarias": "Overtime hours — work performed beyond the ordinary working hours, which must be identifiable from time records",
+    "Inspección de Trabajo": "Labor Inspectorate — the Spanish authority responsible for enforcing labor law compliance, including time recording requirements",
+    "LISOS": "Ley sobre Infracciones y Sanciones en el Orden Social — Law on Infractions and Sanctions in the Social Order, which establishes penalties for labor law violations including time recording failures",
+    "Convenio Colectivo": "Collective agreement — sector or company-specific agreement that may establish additional time recording requirements beyond legal minimums",
+    "Tiempo de Trabajo Efectivo": "Effective working time — the time during which an employee is actually performing work duties, which must be recorded (as opposed to breaks or rest periods)",
+    "Sistema de Fichaje": "Clocking system — the mechanism (paper, digital, biometric) used to record employee working time"
+  }
+}

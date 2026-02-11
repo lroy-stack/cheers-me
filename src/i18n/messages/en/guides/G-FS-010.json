@@ -1,0 +1,182 @@
+{
+  "title": "Raw Material Reception",
+  "legalBasis": "Royal Decree 3484/2000 on food hygiene standards for preparation and sale; EU Regulation (EC) No 852/2004, Annex II on food hygiene requirements; General food safety principles under EU food law",
+  "summary": "Raw material reception — the process of receiving, inspecting, and accepting food deliveries — is the first critical control point where food safety can be verified and protected. Once food enters your establishment, all subsequent efforts at proper storage, handling, and preparation cannot compensate for receiving products that were already compromised. Reception is where traceability begins, supplier quality is verified, and the foundation for safe food service is established or undermined.\n\nEffective reception procedures require trained staff who understand what to inspect and why, clear acceptance criteria defining what is acceptable and what must be rejected, appropriate tools (calibrated thermometers, scales, documentation), adequate time allocated for thorough inspection without pressure to rush during busy periods, and authority to reject deliveries that do not meet standards. Reception is not merely checking off boxes but making informed professional judgments about whether products are safe and suitable for your intended use.\n\nReception documentation serves multiple critical functions: it provides traceability records linking products to suppliers and dates, generates HACCP monitoring data demonstrating that temperature control has been verified, creates evidence of due diligence if food safety incidents occur, and provides performance data for evaluating suppliers. Health inspectors routinely review reception records during official controls. Complete, accurate reception documentation demonstrates systematic food safety management and professional operation.",
+  "keyPoints": [
+    "Check temperature of all chilled and frozen deliveries immediately upon arrival with calibrated probe thermometers",
+    "Verify packaging integrity — reject damaged, leaking, or improperly sealed packages",
+    "Check all use-by and best-before dates — ensure sufficient remaining shelf life",
+    "Inspect product quality using organoleptic assessment (appearance, smell, texture)",
+    "Document every delivery with temperatures, observations, and acceptance decisions",
+    "Reject non-conforming products immediately and document reasons for rejection",
+    "Store accepted products immediately under appropriate conditions",
+    "Maintain reception records for traceability and HACCP verification"
+  ],
+  "sections": [
+    {
+      "heading": "1. Preparation for Reception",
+      "content": "Effective reception begins before deliveries arrive. Preparation includes: scheduling deliveries at times when trained staff are available and operations are not at peak pressure (receiving during the middle of lunch service is problematic), ensuring the receiving area is clean, organized, and equipped with necessary tools (thermometers, scales, delivery logs, inspection forms, pens), verifying that storage areas have capacity for incoming deliveries (receiving large deliveries when refrigerators are already full creates temperature control problems), reviewing the expected delivery against the purchase order so staff know what to expect, and briefing reception staff on any special requirements or concerns for particular deliveries.\n\nThe receiving area should be designed for efficient, hygienic reception: adequate space for inspecting deliveries without congestion, clean surfaces for placing products during inspection, protection from weather and pests, access to water for cleaning if needed, and proximity to storage areas to minimize transport time and temperature abuse. In establishments without dedicated receiving areas, temporarily designate and prepare a suitable space when deliveries are expected.",
+      "subsections": [
+        {
+          "heading": "1.1 Tools and Equipment",
+          "content": "Essential reception equipment includes: calibrated digital probe thermometers (at least two — one for chilled products, one for frozen), temperature log sheets or digital recording devices, delivery inspection checklists, copies of product specifications for reference, labels and markers for date-marking received products, scales for verifying quantities if weight-sold products are received, appropriate containers or carts for transporting products to storage, and cleaning supplies for addressing any spillage during delivery. All equipment should be maintained in good condition, stored hygienically, and readily accessible. Thermometers must be calibrated regularly (weekly recommended) using ice-water bath method. Uncalibrated thermometers provide unreliable data and undermine the entire reception verification process."
+        },
+        {
+          "heading": "1.2 Staff Training and Responsibility",
+          "content": "Reception staff require specific training covering: what to inspect (temperature, quality, packaging, labeling, quantities), how to conduct inspections (proper thermometer use, quality assessment criteria), when to reject products (acceptance criteria and thresholds), how to document inspections (completing forms accurately and completely), how to handle rejected deliveries (communication with drivers, documentation), and proper storage of accepted products (location, temperature, FIFO rotation). Training should be practical with hands-on demonstrations and supervised practice. Designate specific individuals responsible for receiving deliveries rather than having anyone available conduct reception without proper training. During holidays or staff absences, ensure trained backup staff are available or schedule deliveries accordingly."
+        }
+      ]
+    },
+    {
+      "heading": "2. Temperature Verification",
+      "content": "Temperature is the most critical parameter verified during reception. Bacterial growth in food is highly temperature-dependent: every degree above safe cold storage exponentially increases bacterial multiplication. Temperature abuse during transport or storage before delivery can compromise food safety even if products appear normal. Temperature verification at reception is both a HACCP critical control point and a legal requirement under food hygiene regulations.\n\nProper temperature measurement requires technique and judgment. Use clean, calibrated probe thermometers. For packaged chilled products, insert the probe between packages in the center of the load where temperature is typically highest, or for accessible products like meat, insert into the product through packaging. For frozen products, assess whether products are frozen solid by feel and appearance, and verify temperature by inserting probe into products or between packages. Record both the measurement method and temperature value. If temperature is marginal, consider duration of transport, ambient temperature, and product type in your acceptance decision.",
+      "subsections": [
+        {
+          "heading": "2.1 Chilled Product Temperature Limits",
+          "content": "Chilled products should be delivered at 4°C or below. Many establishments use 5°C as a maximum acceptance threshold, recognizing that brief exposure to marginally higher temperatures during loading or transport may not compromise safety if products were properly refrigerated before and will be refrigerated immediately after. Professional judgment is required: products at 6-7°C that were loaded in a refrigerated warehouse minutes before arrival may be acceptable; products at the same temperature after long transport are probably not. Consider product type: highly perishable products like minced meat or ready-to-eat foods warrant stricter limits than whole vegetables. If in doubt, reject. Document your decision-making rationale: 'Temperature 6°C but delivery took 5 minutes from nearby supplier warehouse; accepted with immediate refrigeration.' This documentation demonstrates thoughtful professional judgment rather than arbitrary acceptance."
+        },
+        {
+          "heading": "2.2 Frozen Product Requirements",
+          "content": "Frozen products must be delivered frozen solid at -18°C or below. Visual and tactile indicators of thawing include: soft spots or areas when squeezed, ice crystals inside transparent packaging (indicates thawing and refreezing), frozen liquid accumulated at bottom of packaging (thawed and refrozen), packaging sticking together in unusual ways, and any movement or flexibility when frozen products should be rigid. Check temperature by inserting probe thermometer into products or between packages — temperature should be -18°C or colder. Any signs of thawing require rejection. Partially thawed products cannot be safely refrozen as bacterial growth occurs during thawing. Do not accept supplier claims that products have only just started to thaw and are still safe — you cannot verify how long thawing has been occurring or what temperature abuse preceded visible thawing."
+        },
+        {
+          "heading": "2.3 Ambient Product Considerations",
+          "content": "Ambient (room temperature) products do not require temperature monitoring but do require other verification. Check that delivery vehicles for ambient products are clean, dry, and appropriate for food transport. Products should not be delivered in vehicles also carrying hazardous non-food items, strong-smelling products, or waste. Verify that ambient products have not been exposed to temperature extremes (very hot or cold vehicles) that might affect quality. Some ambient products have specific temperature requirements: chocolate should not have been exposed to high temperatures causing melting or bloom; canned goods should not have been frozen causing can damage. Inspect ambient products for signs of pest infestation (holes in packaging, pest droppings, webbing in dry goods) that may have occurred during storage before delivery."
+        }
+      ]
+    },
+    {
+      "heading": "3. Quality and Organoleptic Assessment",
+      "content": "Beyond temperature, assess product quality using sensory evaluation — sight, smell, and touch. This organoleptic assessment identifies products that, while at proper temperature, show signs of deterioration, contamination, or poor handling. Quality assessment requires knowledge of what constitutes acceptable quality for each product type and what indicators suggest problems. Training and experience develop this judgment. When uncertain, seek input from experienced staff or err on the side of rejection.\n\nQuality assessment is systematic, not haphazard. Develop product-specific quality criteria and train staff accordingly. For large deliveries, implement statistical sampling: inspect a representative sample rather than every unit (e.g., open and inspect 5-10% of cases). For high-risk products, more intensive inspection is warranted. Quality assessment should be balanced with practicality — excessively slow inspection delays storage and may contribute to temperature abuse.",
+      "subsections": [
+        {
+          "heading": "3.1 Meat and Poultry Quality Indicators",
+          "content": "Fresh meat quality assessment includes: Color — beef should be bright cherry red (darker when vacuum-packed initially, brightening after exposure to air), pork pale pink, lamb/mutton darker red. Avoid meat with brown, gray, or greenish discoloration. Texture — meat should be firm and elastic, not soft, slimy, or sticky. Press meat gently; it should spring back. Smell — fresh meat has a mild, fresh smell. Reject any meat with sour, ammonia, or putrid odors. Packaging — vacuum packaging should be tight; modified atmosphere packaging should not be bloated or leaking. Drip — some moisture is normal, but excessive blood or liquid suggests poor quality or long storage. Fat — fat should be white to cream-colored, not yellow or gray. Discolored fat suggests aged or poorly stored meat. Poultry should be pale pink to white, never gray or greenish; skin should be smooth and moist, not slimy; and odor should be minimal and fresh."
+        },
+        {
+          "heading": "3.2 Fish and Seafood Quality Indicators",
+          "content": "Fish is highly perishable and quality assessment is critical. Whole fish: Eyes should be clear, bright, and slightly bulging, not cloudy, sunken, or dry. Gills should be bright red to pink, not brown, gray, or slimy. Skin should be shiny with intact scales, not dull or damaged. Flesh should be firm and elastic, springing back when pressed, not soft or leaving an indentation. Smell should be fresh and oceanic, not fishy, ammonia-like, or sour. Fish fillets: color appropriate to species (white fish truly white, not yellowing; salmon bright pink/orange), flesh firm and moist, not soft or mushy, no brown discoloration at edges, no excessive liquid in packaging, and fresh smell. Shellfish: live shellfish (mussels, clams, oysters) should have closed shells or close when tapped; reject any with broken shells or those that remain open. Crustaceans (shrimp, lobster, crab) should have firm flesh, bright color, and fresh smell. Cooked crustaceans should be red/pink; avoid grayish or black-spotted specimens."
+        },
+        {
+          "heading": "3.3 Produce Quality Indicators",
+          "content": "Fresh produce quality varies by type but general principles apply. Color — appropriate for the product and ripeness stage; avoid discoloration, browning, or yellowing indicating age or damage. Texture — firm without being hard, no soft spots, bruising, or wilting. Leafy vegetables should be crisp, not limp. Skin/surface — smooth and intact without cuts, breaks, or blemishes indicating damage or pest activity. Smell — fresh, characteristic smell for the product; reject any with fermentation, mold, or off-odors. Absence of pests — no insects, larvae, eggs, or pest damage. For root vegetables and tubers, check for sprouting, soft spots, or rot. For tomatoes and soft fruits, gentle pressure test: should have appropriate firmness for ripeness, not rock-hard or mushy. Accept minor cosmetic imperfections that don't affect safety or usability, but reject products with quality issues affecting food preparation or service."
+        },
+        {
+          "heading": "3.4 Dairy and Eggs Quality Indicators",
+          "content": "Dairy products: packaging intact and sealed, not bloated or leaking; dates providing sufficient shelf life (minimum 50% of shelf life remaining for most products); products cold to touch indicating proper temperature; no separation or curdling visible through transparent packaging; and smell fresh when opened (inspect sample if very large delivery). For cheese, check that no mold is present unless it's intended mold cheese; surface should not be slimy or excessively dry. Eggs: shells clean and intact, not cracked or dirty; check freshness by date or, if uncertain, float test (fresh eggs sink in water, old eggs float); refrigerated if required by regulation or supplier recommendation; and no unusual smell. Reject any eggs with cracks even if small — bacteria can enter through cracks. For bulk liquid eggs or egg products, verify pasteurization and temperature control."
+        }
+      ]
+    },
+    {
+      "heading": "4. Packaging and Labeling Verification",
+      "content": "Packaging serves critical functions: protecting food from contamination, maintaining quality during transport and storage, providing containment for liquids and loose products, enabling information communication through labeling, and for some packaging types (modified atmosphere, vacuum), actively preserving product by controlling the environment around the food. Damaged packaging compromises these functions and may indicate problems with the product or with handling and transport conditions.\n\nInspect all packaging systematically during reception. External packaging (boxes, crates) should be clean, dry, intact, and free from contamination or pest signs. Primary packaging in direct contact with food requires particular attention: no tears, punctures, or breaks; seals intact (for sealed packaging); no leakage; and no contamination on the outside. For specialized packaging (vacuum, modified atmosphere), verify packaging is performing its function: vacuum packs should be tight, MAP should not be bloated or deflated.",
+      "subsections": [
+        {
+          "heading": "4.1 Labeling Requirements and Verification",
+          "content": "Verify that all products are properly labeled with required information: Product name and description allowing clear identification. Producer or packer name and address for traceability. Batch or lot number enabling precise traceability and recall if necessary. Date marking: use-by date for highly perishable products or best-before date for longer shelf-life products. Storage instructions (e.g., 'keep refrigerated,' 'store in a cool, dry place'). Weight or volume for pre-packed products. Allergen information, particularly emphasized in ingredient list for pre-packed foods. For products you will serve directly to consumers, labeling must enable you to fulfill your consumer information obligations including allergen declaration. Products lacking required labeling should be rejected or, if this would cause significant disruption, conditionally accepted with immediate follow-up to supplier demanding compliant labeling on future deliveries."
+        },
+        {
+          "heading": "4.2 Date Verification and Shelf Life",
+          "content": "Check that all date-marked products have sufficient remaining shelf life for your needs. General guideline: accept products with at least 50% of their total shelf life remaining, though specific requirements vary by product and your usage patterns. For example, milk with 5-day shelf life should have at least 2-3 days remaining. Products with only 1 day remaining may be unsellable before expiry. Very short-dated products might be acceptable if you have immediate use planned and can communicate this to kitchen staff. Negotiate with suppliers regarding minimum acceptable shelf life on delivery and reject deliveries not meeting agreed standards. Never accept products that are already past their use-by date — these are unsafe and must be rejected. Products past best-before date may be safe but are likely to have compromised quality and should generally be rejected."
+        }
+      ]
+    },
+    {
+      "heading": "5. Documentation and Record-Keeping",
+      "content": "Document every delivery reception thoroughly. Reception records serve as traceability documentation, HACCP monitoring records, and evidence of due diligence. Minimum documentation includes: date and time of delivery, supplier name and identification, delivery note or invoice reference, products received with descriptions and quantities, batch or lot numbers for all products, temperatures recorded for chilled and frozen products, quality assessment results (pass/satisfactory, or specific issues noted), packaging condition, date marking verification, any deviations from specifications or standards, rejection of any products with reasons, staff member who conducted reception (signature or initials). Many operations use pre-printed receiving forms or checklists covering these elements systematically.\n\nReception records must be retained as part of traceability documentation (minimum 5 years) and HACCP monitoring records (typically 1-2 years or as specified in HACCP plan). File records systematically, organized by date or by supplier, enabling rapid retrieval during traceability exercises or inspections. For operations using digital inventory systems, data entry during reception automatically creates electronic records, but ensure backup and accessibility requirements are met.",
+      "subsections": [
+        {
+          "heading": "5.1 Rejection Documentation",
+          "content": "When products are rejected, documentation is particularly important. Record: specific products rejected (description, quantity, batch numbers if available), precise reason for rejection (temperature reading, description of quality defect, packaging damage, missing information), how rejection was communicated to driver, disposition of rejected products (returned with driver, left for supplier collection, photographed for evidence), date and time of rejection, and staff member who made rejection decision. Photograph products being rejected if feasible, particularly for quality issues where visual documentation supports your decision. This detailed documentation protects against supplier disputes, demonstrates to inspectors that you actively enforce standards, and provides data for supplier performance evaluation. In disputes, contemporaneous detailed documentation is far more credible than vague recollection."
+        },
+        {
+          "heading": "5.2 Exception and Corrective Action Records",
+          "content": "When deviations from standard procedures occur during reception, document them and any corrective actions taken. Examples: Products received at marginally elevated temperature — document temperature, assessment of risk, decision made (accepted with immediate use, accepted with enhanced monitoring, rejected), and rationale. Emergency acceptance of products without full reception verification due to circumstances — document what verification was omitted, why, and any compensatory measures. Acceptance of short-dated products for immediate use — document agreement with kitchen, expected use date. These exception records demonstrate that deviations are deliberate, risk-assessed decisions, not carelessness. They also provide learning opportunities: frequent exceptions suggest a need for procedural or operational changes."
+        }
+      ]
+    },
+    {
+      "heading": "6. Post-Reception Procedures",
+      "content": "Reception does not end when documentation is signed. Accepted products must be moved immediately into appropriate storage to prevent temperature abuse, contamination, or quality deterioration. Speed is essential: chilled and frozen products should be in storage within 15-30 minutes of delivery, not left at ambient temperature while other tasks are completed. Organize post-reception workflow to prioritize food safety: frozen products to freezer first (most sensitive to temperature abuse), chilled products to refrigerators, then ambient products to dry storage.\n\nAs products are transferred to storage, implement FIFO rotation: place new deliveries behind or below existing stock so older stock is used first. Label products if needed: opened packages, bulk items transferred to containers, or products without clear date marking should be labeled with content, delivery date, and use-by date. Check storage conditions: verify that refrigerators and freezers are at proper temperature before adding new products, ensure adequate space without overloading, and organize logically with raw products below ready-to-eat foods. Clean any packaging before storage if it became soiled during transport or handling.",
+      "subsections": [
+        {
+          "heading": "6.1 Communication with Kitchen",
+          "content": "Inform kitchen staff about deliveries, particularly: new products or product changes, short-dated products requiring priority use, any quality concerns about accepted products (e.g., 'bananas are very ripe — use today'), special handling requirements, and seasonal or promotional products. For operations with daily specials or flexible menus, reception staff communicating what has arrived enables chefs to plan menus around available ingredients. This communication should be systematic: daily briefings, delivery summaries posted in kitchen, or digital systems notifying relevant staff. Good communication between reception and kitchen optimizes ingredient use, reduces waste, and prevents misunderstandings."
+        },
+        {
+          "heading": "6.2 Supplier Feedback",
+          "content": "Reception generates valuable feedback for supplier management. Compile reception data regularly (weekly or monthly) and communicate with suppliers: acknowledge consistently good performance, raise concerns about recurring issues (temperature problems, quality inconsistencies, packaging damage, late deliveries, documentation errors), and request corrective action for significant problems. Timely, specific feedback enables suppliers to improve. Many issues can be resolved through communication: a supplier unaware that deliveries consistently arrive warm cannot address the problem. Professional, factual feedback focused on continuous improvement strengthens supplier relationships. Document supplier communication and responses for supplier performance evaluation and approval review processes."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Daily Reception Preparation",
+      "items": [
+        "Review expected deliveries: check orders to know what is arriving",
+        "Ensure receiving area is clean and organized",
+        "Verify tools are available and functional: calibrated thermometers, scales, forms, pens",
+        "Check storage capacity: ensure refrigerators and freezers have space for deliveries",
+        "Assign trained staff to receive deliveries",
+        "Prepare any special labeling or documentation for particular deliveries",
+        "Brief staff on any special considerations or concerns for expected deliveries"
+      ]
+    },
+    {
+      "title": "Delivery Inspection Checklist",
+      "items": [
+        "Check delivery vehicle: clean, appropriate for food, refrigerated if required",
+        "Verify delivery documentation: supplier, products, quantities match order",
+        "Check chilled product temperatures: use probe thermometer, record temperatures, must be ≤4-5°C",
+        "Check frozen products: frozen solid, temperature ≤-18°C, no signs of thawing",
+        "Inspect packaging: intact, clean, no damage, leaks, or contamination",
+        "Assess product quality: appearance, smell, texture appropriate for each product type",
+        "Verify labeling: product name, batch numbers, use-by dates present and legible",
+        "Check dates: sufficient remaining shelf life for intended use",
+        "Verify quantities: count or weigh as appropriate",
+        "Document all observations: temperatures, quality notes, any issues",
+        "Accept conforming products: sign delivery note only after complete verification",
+        "Reject non-conforming products: document reason, return to driver or isolate for collection",
+        "Store accepted products immediately: frozen first, then chilled, then ambient with FIFO rotation"
+      ]
+    },
+    {
+      "title": "Monthly Reception Performance Review",
+      "items": [
+        "Compile reception data for the month: number of deliveries, products received, temperatures",
+        "Calculate key metrics: average temperatures, rejection rate, supplier conformance",
+        "Review all rejections: identify patterns, recurring issues, or supplier-specific problems",
+        "Assess temperature conformance: percentage of deliveries meeting temperature limits",
+        "Evaluate documentation completeness: are all reception records complete and filed?",
+        "Identify any procedural issues or training needs based on reception data",
+        "Provide feedback to suppliers about performance",
+        "Update reception procedures if improvements are identified",
+        "Train staff on any issues or procedure changes",
+        "Document the monthly review and retain for quality system verification"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Schedule deliveries during quiet operational periods when staff have time for thorough inspection without pressure",
+    "Invest in high-quality digital probe thermometers and calibrate them religiously — accurate temperature measurement is fundamental to safe reception",
+    "Train reception staff thoroughly and empower them to reject deliveries — never create pressure to accept questionable products to avoid confrontation or delay",
+    "Photograph products being rejected to create visual records supporting your decision and protecting against supplier disputes",
+    "Create product-specific quality criteria as visual references for staff (photos of acceptable vs. unacceptable quality) to standardize assessment",
+    "Move accepted products into proper storage immediately — do not leave temperature-sensitive products at ambient conditions while completing paperwork",
+    "Use reception data for supplier performance evaluation — objective metrics are more powerful than subjective impressions",
+    "Communicate regularly with suppliers about reception performance — timely feedback enables improvement and strengthens relationships"
+  ],
+  "glossary": {
+    "Raw Material Reception": "The process of receiving, inspecting, and accepting food deliveries, verifying they meet safety and quality standards",
+    "Organoleptic Assessment": "Sensory evaluation of food using sight, smell, touch (and sometimes taste) to assess quality",
+    "Probe Thermometer": "Temperature measuring device with metal probe inserted into food to measure core or internal temperature",
+    "Temperature Abuse": "Allowing food to be stored or held at unsafe temperatures, creating conditions for bacterial growth",
+    "Use-By Date": "Date after which highly perishable food should not be consumed as it may be unsafe",
+    "Best-Before Date": "Date until which food maintains optimal quality; food past this date may have reduced quality but is not necessarily unsafe",
+    "FIFO": "First In, First Out — stock rotation principle ensuring older stock is used before newer stock",
+    "Rejection": "Refusal to accept delivered products that do not meet acceptance criteria",
+    "Delivery Note": "Document accompanying deliveries showing supplier, products, quantities, dates, and batch numbers for traceability",
+    "Modified Atmosphere Packaging (MAP)": "Packaging where air inside is replaced with specific gas mixtures to extend shelf life"
+  }
+}

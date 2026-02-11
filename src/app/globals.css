@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0.9832 0.0055 3.3355;
+    --foreground: 0.2410 0.0786 22.3674;
+    --card: 1.0000 0 0;
+    --card-foreground: 0.2410 0.0786 22.3674;
+    --popover: 1.0000 0 0;
+    --popover-foreground: 0.2410 0.0786 22.3674;
+    --primary: 0.3800 0.1523 18.6219;
+    --primary-foreground: 1.0000 0 0;
+    --secondary: 0.9391 0.0146 1.5616;
+    --secondary-foreground: 0.3800 0.1523 18.6219;
+    --muted: 0.9391 0.0146 1.5616;
+    --muted-foreground: 0.5087 0.0422 12.4061;
+    --accent: 0.4490 0.1606 17.6053;
+    --accent-foreground: 1.0000 0 0;
+    --destructive: 0.5143 0.1978 16.9350;
+    --destructive-foreground: 1.0000 0 0;
+    --border: 0.8779 0.0226 7.2393;
+    --input: 0.8779 0.0226 7.2393;
+    --ring: 0.3800 0.1523 18.6219;
+    --chart-1: 0.3800 0.1523 18.6219;
+    --chart-2: 0.4490 0.1606 17.6053;
+    --chart-3: 0.5143 0.1978 16.9350;
+    --chart-4: 0.6047 0.1733 13.2349;
+    --chart-5: 0.7328 0.1237 7.7472;
+    --sidebar-background: 0.2410 0.0786 22.3674;
+    --sidebar-foreground: 0.9832 0.0055 3.3355;
+    --sidebar-primary: 0.7000 0.1600 18.0000;
+    --sidebar-primary-foreground: 1.0000 0 0;
+    --sidebar-accent: 0.3200 0.0900 20.0000;
+    --sidebar-accent-foreground: 0.9832 0.0055 3.3355;
+    --sidebar-border: 0.3800 0.0700 18.0000;
+    --sidebar-ring: 0.7000 0.1600 18.0000;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 0.1188 0.0318 15.2849;
+    --foreground: 0.9607 0.0154 7.4853;
+    --card: 0.1558 0.0393 15.4394;
+    --card-foreground: 0.9607 0.0154 7.4853;
+    --popover: 0.1558 0.0393 15.4394;
+    --popover-foreground: 0.9607 0.0154 7.4853;
+    --primary: 0.6122 0.2082 22.2410;
+    --primary-foreground: 1.0000 0 0;
+    --secondary: 0.2410 0.0786 22.3674;
+    --secondary-foreground: 0.9247 0.0392 10.0700;
+    --muted: 0.2013 0.0533 17.7133;
+    --muted-foreground: 0.7578 0.0609 12.0570;
+    --accent: 0.6477 0.2384 22.5888;
+    --accent-foreground: 1.0000 0 0;
+    --destructive: 0.6785 0.2131 14.7192;
+    --destructive-foreground: 1.0000 0 0;
+    --border: 0.2846 0.0803 17.2477;
+    --input: 0.2846 0.0803 17.2477;
+    --ring: 0.6477 0.2384 22.5888;
+    --chart-1: 0.6122 0.2082 22.2410;
+    --chart-2: 0.7752 0.1362 9.3358;
+    --chart-3: 0.3800 0.1523 18.6219;
+    --chart-4: 0.8422 0.0900 7.0366;
+    --chart-5: 0.3083 0.1034 22.2807;
+    --sidebar-background: 0.1005 0.0291 11.6980;
+    --sidebar-foreground: 0.9607 0.0154 7.4853;
+    --sidebar-primary: 0.6122 0.2082 22.2410;
+    --sidebar-primary-foreground: 1.0000 0 0;
+    --sidebar-accent: 0.2000 0.0500 14.0000;
+    --sidebar-accent-foreground: 0.9607 0.0154 7.4853;
+    --sidebar-border: 0.2500 0.0600 16.0000;
+    --sidebar-ring: 0.6122 0.2082 22.2410;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    transition: color-scheme 0.3s ease;
+  }
+  body {
+    @apply bg-background text-foreground;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    letter-spacing: -0.015em;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Fix Radix ScrollArea viewport forcing display:table on inner div, breaking truncation */
+.sidebar-scroll [data-radix-scroll-area-viewport] > div {
+  display: block !important;
+}
+
+/* Print styles for schedule */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .print-view {
+    display: block !important;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .md\:pl-60 {
+    padding-left: 0 !important;
+  }
+}

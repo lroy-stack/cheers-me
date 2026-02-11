@@ -1,0 +1,185 @@
+{
+  "title": "Seguridad contra Incendios en la Cocina",
+  "legalBasis": "Real Decreto 513/2017 de 22 de mayo (Reglamento Técnico de Instalaciones de Protección contra Incendios); Ley 31/1995 de Prevención de Riesgos Laborales; Real Decreto 2267/2004 (Reglamento de Seguridad contra Incendios en Establecimientos Industriales); UNE 23510 sobre extintores portátiles",
+  "summary": "La seguridad contra incendios en la cocina es una de las áreas de riesgo más críticas en los establecimientos de hostelería. Las cocinas comerciales combinan llamas abiertas, aceites calentados, equipos eléctricos y materiales combustibles en espacios confinados, lo que convierte la prevención de incendios en una prioridad operativa absoluta. El Real Decreto 513/2017 establece los requisitos técnicos para las instalaciones de protección contra incendios, incluyendo los tipos, la ubicación y el mantenimiento de los sistemas de extinción que deben estar presentes en las cocinas comerciales.\n\nEsta guía cubre el espectro completo de la seguridad contra incendios en la cocina: desde la comprensión de las clases de fuego relevantes para los entornos de cocción (fuegos de Clase F/K que involucran aceites y grasas de cocina), hasta la correcta selección y uso de los sistemas de extinción de incendios, los procedimientos de evacuación y las obligaciones legales de los empleadores según la legislación española de salud laboral. Cada trabajador de cocina debe comprender el triángulo del fuego, conocer la ubicación y el funcionamiento de todos los equipos de extinción, y estar formado en los protocolos de evacuación de emergencia.\n\nEl cumplimiento del RD 513/2017 requiere no solo la instalación de sistemas de protección contra incendios adecuados, sino también su inspección periódica, el mantenimiento por empresas autorizadas y la documentación apropiada. El incumplimiento puede resultar en sanciones administrativas, responsabilidad penal en caso de lesiones e invalidación de la cobertura del seguro.",
+  "keyPoints": [
+    "Las cocinas comerciales deben disponer de extintores de Clase F (aceite/grasa de cocina) a un máximo de 15 metros de cualquier estación de cocción",
+    "Los sistemas automáticos de extinción de incendios son obligatorios para freidoras y cocinas que superen los 1,2 metros de longitud",
+    "Los extintores deben ser inspeccionados trimestralmente por personal formado y anualmente por una empresa de mantenimiento autorizada",
+    "Todo el personal de cocina debe recibir formación en seguridad contra incendios durante la primera semana de empleo y formación de reciclaje anualmente",
+    "Las rutas de evacuación de emergencia deben estar claramente señalizadas, sin obstrucciones, y practicarse en simulacros al menos dos veces al año",
+    "Las mantas ignífugas deben estar disponibles a menos de 2 metros de cualquier estación de fritura por inmersión",
+    "Las trampas de grasa y las campanas extractoras deben limpiarse como mínimo trimestralmente para prevenir incendios por acumulación de grasa",
+    "Las instalaciones de gas deben disponer de válvulas de corte automático y ser inspeccionadas cada 5 años por un instalador autorizado"
+  ],
+  "sections": [
+    {
+      "heading": "1. Comprensión de los Riesgos de Incendio en la Cocina",
+      "content": "Las cocinas comerciales presentan riesgos de incendio únicos debido a la convergencia de altas temperaturas, materiales combustibles y uso intensivo de equipos. Comprender las clases de fuego específicas y las fuentes de ignición en un entorno de cocina es la base de cualquier programa de prevención eficaz. La normativa española de seguridad contra incendios clasifica los fuegos en clases, siendo la Clase F (aceites y grasas de cocina) la más común y peligrosa en entornos de cocina debido a las temperaturas de autoignición extremadamente altas y la reacción violenta del aceite en combustión con el agua.",
+      "subsections": [
+        {
+          "heading": "1.1 Clases de Fuego en Entornos de Cocina",
+          "content": "Los fuegos de cocina se clasifican según la fuente de combustible: los fuegos de Clase A involucran combustibles sólidos como madera, papel y textiles (comunes en áreas de almacenamiento y cerca de mostradores de servicio). Los fuegos de Clase B involucran líquidos inflamables como salsas a base de alcohol o disolventes de limpieza. Los fuegos de Clase C involucran gases, particularmente gas natural o propano utilizados en las cocinas. Los fuegos de Clase F (designados Clase K en las normas americanas) involucran aceites y grasas de cocina y son el tipo de fuego de cocina más prevalente. Cada clase requiere agentes de extinción específicos; usar el agente incorrecto (particularmente agua en un fuego de Clase F) puede causar salpicaduras explosivas que propagan el fuego y provocan quemaduras graves. El personal de cocina debe estar formado para identificar la clase de fuego antes de seleccionar un método de extinción."
+        },
+        {
+          "heading": "1.2 Fuentes Comunes de Ignición",
+          "content": "Las principales fuentes de ignición en cocinas comerciales incluyen: operaciones de cocción desatendidas (la causa principal de incendios en cocina), aceites de cocina sobrecalentados que superan su punto de humo (típicamente 230-260 grados Celsius para aceites de cocina comunes), acumulación de grasa en campanas extractoras y conductos, equipos eléctricos defectuosos o dañados y cableado, almacenamiento inadecuado de materiales combustibles cerca de fuentes de calor, fugas de gas por conexiones deterioradas o equipos mal mantenidos, y combustión espontánea de trapos impregnados de aceite o materiales de limpieza. Cada fuente de ignición requiere medidas preventivas específicas que deben incorporarse a las operaciones diarias de cocina y a los protocolos de seguridad."
+        },
+        {
+          "heading": "1.3 Marco Legal y Obligaciones del Empleador",
+          "content": "Según el Real Decreto 513/2017, los empleadores deben asegurar que todas las instalaciones de protección contra incendios cumplan las especificaciones técnicas establecidas en el reglamento. Esto incluye la correcta selección, instalación y mantenimiento de los sistemas de detección y extinción de incendios. La Ley 31/1995 de Prevención de Riesgos Laborales impone un deber general a los empleadores de garantizar la seguridad y salud de los trabajadores, incluyendo la evaluación del riesgo de incendio como parte del Plan de Prevención obligatorio. El empleador debe designar personal de respuesta ante emergencias formado (equipos de emergencia), desarrollar un Plan de Emergencia (Plan de Emergencia) y asegurar que todos los trabajadores reciban formación adecuada en seguridad contra incendios. El incumplimiento puede resultar en multas que oscilan entre 2.046 y 819.780 euros dependiendo de la clasificación de gravedad según la Ley de Infracciones y Sanciones en el Orden Social (LISOS)."
+        }
+      ]
+    },
+    {
+      "heading": "2. Medidas de Prevención de Incendios",
+      "content": "La prevención es la estrategia de seguridad contra incendios más eficaz. Un programa de prevención integral en la cocina aborda el mantenimiento de equipos, las prácticas de limpieza y orden, los procedimientos de cocción seguros y el almacenamiento adecuado de materiales combustibles. Estas medidas deben documentarse en la Evaluación de Riesgos y el Plan de Prevención del establecimiento según lo exigido por la Ley 31/1995.",
+      "subsections": [
+        {
+          "heading": "2.1 Mantenimiento e Inspección de Equipos",
+          "content": "Todos los equipos de cocina deben mantenerse según las especificaciones del fabricante e inspeccionarse regularmente. Los equipos alimentados por gas requieren especial atención: las conexiones deben comprobarse en busca de fugas utilizando métodos de detección aprobados (nunca con llama abierta), las mangueras flexibles deben sustituirse antes de su fecha de caducidad y las válvulas de corte automático de gas deben probarse mensualmente. Los equipos eléctricos deben inspeccionarse en busca de cables deshilachados, enchufes dañados y toma de tierra adecuada. Las freidoras deben tener termostatos en funcionamiento e interruptores de límite de alta temperatura. Las campanas extractoras y los filtros de grasa deben limpiarse semanalmente, con una limpieza profunda de todo el sistema de conductos realizada trimestralmente por empresas especializadas. La documentación de todo el mantenimiento e inspecciones debe conservarse durante al menos 5 años."
+        },
+        {
+          "heading": "2.2 Prácticas Diarias de Seguridad contra Incendios en la Cocina",
+          "content": "Cada turno debe comenzar con una comprobación de seguridad contra incendios: verificar que todos los extintores están en su lugar y los manómetros están en la zona verde, asegurar que las salidas de emergencia no están obstruidas, confirmar que los sistemas de extracción funcionan y comprobar que no hay materiales combustibles almacenados cerca de fuentes de calor. Durante las operaciones de cocción, las temperaturas del aceite deben monitorizarse y nunca superar el punto de humo del aceite en uso. Las estaciones de cocción nunca deben dejarse desatendidas cuando se están calentando activamente aceites o grasas. Al final de cada turno, todos los suministros de gas deben cerrarse en la válvula principal, los equipos eléctricos deben apagarse (excepto la refrigeración) y una inspección final debe verificar que no quedan fuentes de calor activas y que ninguna superficie caliente está en contacto con materiales combustibles."
+        },
+        {
+          "heading": "2.3 Almacenamiento y Limpieza",
+          "content": "El almacenamiento adecuado es fundamental para la prevención de incendios. Los líquidos inflamables (disolventes de limpieza, alcohol) deben almacenarse en recipientes aprobados en áreas ventiladas alejadas de fuentes de calor. Los aceites de cocina deben almacenarse a temperatura ambiente lejos del calor directo. Los productos de papel, embalajes de cartón y artículos textiles deben mantenerse a al menos 1 metro de cualquier aparato de cocina. El aceite de cocina usado debe recogerse en recipientes metálicos sellados y retirarse regularmente por empresas de gestión de residuos autorizadas. Los trapos de limpieza, especialmente los contaminados con aceite o grasa, deben almacenarse en contenedores metálicos de cierre automático y lavarse o desecharse diariamente para prevenir la combustión espontánea. Las trampas de grasa deben vaciarse según el calendario establecido y nunca permitir que se desborden."
+        }
+      ]
+    },
+    {
+      "heading": "3. Sistemas de Detección y Extinción de Incendios",
+      "content": "El Real Decreto 513/2017 establece los requisitos para las instalaciones de detección y extinción de incendios en establecimientos comerciales. Las áreas de cocina tienen requisitos específicos debido a la naturaleza de los riesgos de incendio por cocción y la presencia de altas temperaturas ambientales que pueden afectar a los sistemas de detección convencionales.",
+      "subsections": [
+        {
+          "heading": "3.1 Sistemas de Detección",
+          "content": "Los detectores de humo estándar generalmente no son adecuados para las áreas de cocina debido a los humos de cocción y el vapor que causan falsas alarmas. En su lugar, las cocinas deben utilizar detectores de calor de tasa de aumento o detectores de calor de temperatura fija calibrados por encima de las temperaturas normales de cocción (típicamente configurados a 90-100 grados Celsius). Los cables de detección de calor lineal pueden instalarse a lo largo de los conductos de extracción para detectar incendios de grasa dentro del sistema de ventilación. Los sistemas de detección de gas son obligatorios donde se utiliza gas natural o propano, con sensores colocados tanto cerca del suelo (para el propano, que es más pesado que el aire) como cerca del techo (para el gas natural). Todos los sistemas de detección deben estar conectados a una alarma audible y, cuando proceda, a sistemas de extinción automática y válvulas de corte de gas."
+        },
+        {
+          "heading": "3.2 Sistemas de Extinción Fijos",
+          "content": "Los sistemas automáticos de extinción de incendios para equipos de cocina comercial utilizan típicamente agentes químicos húmedos (soluciones de acetato de potasio o carbonato de potasio) diseñados específicamente para fuegos de Clase F. Estos sistemas constan de boquillas posicionadas sobre las superficies de cocción y dentro de las campanas extractoras, conectadas a tanques de agente presurizados. Cuando se activan (ya sea automáticamente por eslabones fusibles o manualmente por estaciones de tiro), el sistema descarga el agente químico húmedo que enfría el aceite en combustión y crea una capa de espuma que previene la reignición. El sistema también debe cortar automáticamente los suministros de gas y electricidad a los equipos de cocina y activar el sistema de extracción para eliminar el humo. La instalación y el mantenimiento deben ser realizados por empresas autorizadas según el RD 513/2017, y el sistema debe inspeccionarse semestralmente."
+        },
+        {
+          "heading": "3.3 Extintores Portátiles y Mantas Ignífugas",
+          "content": "Los extintores portátiles en las áreas de cocina deben incluir unidades con clasificación de Clase F (tipo químico húmedo, típicamente de 6 litros de capacidad) posicionados a menos de 15 metros de cualquier estación de cocción. Deben estar disponibles extintores adicionales de polvo ABC o CO2 para fuegos eléctricos y generales. Los extintores deben montarse en la pared a una altura donde la parte superior de la unidad no supere los 1,20 metros desde el suelo, claramente señalizados con carteles visibles a distancia y sin obstrucciones en todo momento. Las mantas ignífugas (que cumplan las normas EN 1869, mínimo 1,2m x 1,2m) deben colocarse a menos de 2 metros de las estaciones de fritura por inmersión y otras áreas de cocción de alto riesgo. Todo el personal debe estar formado en la técnica PASS (Tirar, Apuntar, Apretar, Barrer) para el uso de extintores y en el despliegue correcto de las mantas ignífugas."
+        }
+      ]
+    },
+    {
+      "heading": "4. Procedimientos de Respuesta ante Emergencias",
+      "content": "A pesar de los mejores esfuerzos de prevención, los incendios pueden seguir ocurriendo. Un plan de respuesta ante emergencias bien ensayado puede significar la diferencia entre un incidente menor y una catástrofe. La ley española requiere que cada lugar de trabajo disponga de un Plan de Emergencia (Plan de Emergencia y Evacuación) que se comunique a todos los trabajadores y se practique regularmente.",
+      "subsections": [
+        {
+          "heading": "4.1 Protocolo de Respuesta Inmediata",
+          "content": "Cuando se detecta un incendio en la cocina, la respuesta depende de su tamaño y naturaleza. Para fuegos pequeños y contenidos (como un fuego en una sartén): alertar a los compañeros cercanos, apagar la fuente de calor si es posible hacerlo de forma segura, cubrir el fuego con una tapa o manta ignífuga (nunca mover la sartén en llamas) y, si es necesario, utilizar el extintor portátil apropiado. Para fuegos más grandes o fuegos que involucren el sistema de extracción: activar la estación de tiro manual del sistema de extinción fijo, alertar a todo el personal de cocina para que evacúe, cerrar las puertas de la cocina para contener el fuego, llamar al 112 (servicios de emergencia) y proceder con el plan de evacuación del establecimiento. Bajo ninguna circunstancia nadie debe intentar combatir un fuego que se haya propagado más allá de la superficie de cocción inicial o que bloquee su ruta de evacuación."
+        },
+        {
+          "heading": "4.2 Procedimientos de Evacuación",
+          "content": "El plan de evacuación debe identificar las rutas de evacuación primarias y secundarias desde la cocina, los puntos de reunión fuera del edificio y el personal responsable de verificar la evacuación completa. Las rutas de evacuación deben estar señalizadas con señalización fotoluminiscente conforme a la norma UNE 23034, mantenerse libres de obstáculos en todo momento y equiparse con iluminación de emergencia que se active automáticamente en caso de fallo eléctrico. Durante la evacuación, el coordinador de emergencias designado debe asegurar que todos los suministros de gas estén cortados (usando la válvula de corte de emergencia), verificar que todo el personal haya evacuado mediante un recuento en el punto de reunión e informar a los servicios de emergencia que lleguen sobre la ubicación del fuego, su tipo y cualquier material peligroso presente. Los simulacros de evacuación deben realizarse al menos dos veces al año, manteniendo registros documentados."
+        },
+        {
+          "heading": "4.3 Procedimientos Post-Incidente",
+          "content": "Después de cualquier incidente de incendio, por menor que sea, debe realizarse una investigación formal para determinar la causa y prevenir la recurrencia. La investigación debe documentar el origen y la causa del incendio, la eficacia de los sistemas de detección y extinción, la respuesta del personal, cualquier lesión sufrida y los daños causados. Los hallazgos deben comunicarse al Servicio de Prevención y las acciones correctivas deben implementarse y documentarse. Si el incendio resultó en lesiones que requieran más que primeros auxilios, debe notificarse a la autoridad laboral como accidente de trabajo. Los sistemas de extinción de incendios y los extintores utilizados deben recargarse o sustituirse por una empresa autorizada antes de que la cocina pueda reanudar las operaciones."
+        }
+      ]
+    },
+    {
+      "heading": "5. Requisitos de Formación",
+      "content": "La formación en seguridad contra incendios es una obligación legal según la Ley 31/1995. Todos los trabajadores de cocina deben recibir formación específica y práctica sobre prevención de incendios y respuesta ante emergencias, adaptada a los riesgos presentes en su lugar de trabajo específico.",
+      "subsections": [
+        {
+          "heading": "5.1 Contenido de la Formación Inicial",
+          "content": "Los nuevos empleados de cocina deben recibir formación en seguridad contra incendios antes de comenzar a trabajar sin supervisión. Esta formación debe cubrir: los riesgos específicos de incendio en la cocina y su prevención, la ubicación y el funcionamiento de todos los sistemas de detección y extinción de incendios, el uso correcto de extintores portátiles (con práctica presencial utilizando extintores de formación), el despliegue correcto de mantas ignífugas, el plan de emergencia y evacuación del establecimiento incluyendo rutas y puntos de reunión, el procedimiento para llamar a los servicios de emergencia (112), primeros auxilios para quemaduras y el papel específico del empleado en el plan de respuesta ante emergencias. La formación debe documentarse con la fecha, duración, contenido cubierto, cualificaciones del formador y la firma de reconocimiento del empleado."
+        },
+        {
+          "heading": "5.2 Formación Continua y Simulacros",
+          "content": "La formación de reciclaje anual debe proporcionarse a todo el personal de cocina, cubriendo cualquier cambio en equipos, procedimientos o en el plan de emergencia. Los ejercicios prácticos deben incluir el uso presencial de extintores, el despliegue de mantas ignífugas y la evacuación simulada. Al menos dos simulacros de evacuación al año deben involucrar a todo el personal presente durante el simulacro, y los resultados deben documentarse incluyendo el tiempo para completar la evacuación, cualquier obstáculo encontrado y las áreas de mejora. Los miembros designados del equipo de respuesta ante emergencias (miembros del equipo de emergencia) deben recibir formación especializada adicional, incluyendo técnicas avanzadas de lucha contra incendios, certificación en primeros auxilios y coordinación con los servicios de emergencia externos."
+        },
+        {
+          "heading": "5.3 Formación Especial para Operaciones de Alto Riesgo",
+          "content": "El personal que realiza operaciones de alto riesgo como cocción flambé, fritura por inmersión u operación de hornos de leña debe recibir formación especializada adicional. Las operaciones de flambé requieren protocolos específicos que incluyan cantidades máximas de alcohol, técnicas de ignición seguras y disponer de equipos de extinción inmediatamente a mano. Los operadores de freidoras deben comprender la gestión de la temperatura del aceite, los peligros del contacto del agua con aceite caliente y los protocolos específicos para incendios en freidoras. Los operadores de hornos de leña necesitan formación sobre tipos de combustible adecuados, procedimientos de eliminación de cenizas y mantenimiento de chimeneas. Cada uno de estos módulos de formación especializada debe documentarse por separado y renovarse anualmente."
+        }
+      ]
+    },
+    {
+      "heading": "6. Documentación y Cumplimiento",
+      "content": "Mantener una documentación completa es esencial para el cumplimiento legal y para demostrar la debida diligencia en caso de incidente o inspección. El RD 513/2017 y la Ley 31/1995 imponen requisitos de documentación específicos.",
+      "subsections": [
+        {
+          "heading": "6.1 Documentación Requerida",
+          "content": "Los siguientes documentos de seguridad contra incendios deben mantenerse y estar disponibles para inspección: la Evaluación del Riesgo de Incendio (como parte de la Evaluación de Riesgos general según la Ley 31/1995), el Plan de Emergencia y Evacuación, los certificados de instalación de todos los sistemas de protección contra incendios (emitidos por instaladores autorizados registrados en la Comunidad Autónoma correspondiente), los registros de mantenimiento de todas las instalaciones de protección contra incendios (inspecciones trimestrales por personal formado, inspecciones anuales y quinquenales por empresas de mantenimiento autorizadas), los registros de formación de todo el personal incluyendo fechas, contenido y acuses de recibo firmados, los registros de simulacros de evacuación y cualquier informe de incidentes y hallazgos de investigación. Todos los certificados y registros de mantenimiento deben cumplir con los formatos establecidos en el Anexo II del RD 513/2017."
+        },
+        {
+          "heading": "6.2 Preparación para Inspecciones",
+          "content": "Las inspecciones de seguridad contra incendios pueden ser realizadas por el servicio de bomberos, inspectores de trabajo (Inspección de Trabajo) o representantes de compañías de seguros. Para garantizar la preparación: mantener una carpeta de seguridad contra incendios que contenga toda la documentación requerida en orden cronológico, asegurar que todos los equipos de protección contra incendios estén visiblemente etiquetados con las fechas de inspección actuales, mantener los planos de evacuación publicados en los lugares requeridos, verificar que la iluminación de emergencia y la señalización sean funcionales, y confirmar que todo el personal pueda articular su función en el plan de emergencia. Las auditorías internas regulares (al menos trimestralmente) deben verificar el cumplimiento de todos los requisitos de seguridad contra incendios e identificar cualquier deficiencia antes de una inspección externa."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Lista de Comprobación Diaria de Seguridad contra Incendios en la Cocina",
+      "items": [
+        "Todos los extintores están en su lugar y los manómetros muestran la zona verde",
+        "Las mantas ignífugas están accesibles y en buen estado",
+        "Las salidas de emergencia están despejadas y sin obstrucciones",
+        "La campana extractora y el sistema de ventilación funcionan correctamente",
+        "No hay materiales combustibles almacenados cerca de fuentes de calor",
+        "Las conexiones de gas no muestran signos de fugas (olor, silbido)",
+        "Los cables eléctricos y enchufes no están dañados",
+        "Los termostatos de las freidoras funcionan correctamente",
+        "La estación de tiro manual del sistema de extinción está accesible",
+        "La iluminación de emergencia es funcional"
+      ]
+    },
+    {
+      "title": "Lista de Comprobación Semanal de Prevención de Incendios",
+      "items": [
+        "Los filtros de grasa de las campanas extractoras han sido limpiados",
+        "Los contenedores de aceite de cocina están correctamente sellados y almacenados",
+        "Los contenedores de recogida de aceite usado no están excesivamente llenos",
+        "Los trapos de limpieza se almacenan en contenedores metálicos de cierre automático",
+        "Las mangueras flexibles de gas se comprueban en busca de desgaste y fechas de caducidad",
+        "Las señales de las rutas de evacuación de emergencia son visibles y están iluminadas",
+        "La señalización de los equipos de seguridad contra incendios está limpia y visible"
+      ]
+    },
+    {
+      "title": "Lista de Comprobación de Auditoría Trimestral de Seguridad contra Incendios",
+      "items": [
+        "Todos los extintores han sido inspeccionados y documentados",
+        "Los conductos de extracción han sido limpiados en profundidad por una empresa especializada",
+        "Las trampas de grasa han sido vaciadas y limpiadas",
+        "El plan de emergencia y evacuación ha sido revisado y actualizado si es necesario",
+        "Se ha realizado una comprobación de la integridad de la instalación de gas",
+        "Se ha completado la inspección visual del sistema de extinción fijo",
+        "Se han revisado los registros de formación para verificar su completitud",
+        "Se ha realizado y documentado una auditoría interna de seguridad contra incendios"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Nunca deje aceites o grasas de cocina desatendidos sobre fuentes de calor activas; asigne un monitor dedicado para las operaciones de fritura por inmersión",
+    "Instale un gráfico de temperaturas del aceite claramente visible cerca de cada freidora mostrando los puntos de humo de todos los aceites utilizados en la cocina",
+    "Mantenga un libro de registro de seguridad contra incendios dedicado en la cocina para registrar las comprobaciones diarias, incidentes y actividades de mantenimiento",
+    "Realice mini-simulacros sorpresa durante el servicio para probar la preparación del personal en condiciones realistas",
+    "Establezca un sistema de parejas donde el personal de cocina se empareje para garantizar la conciencia mutua durante la evacuación de emergencia",
+    "Coloque tarjetas de referencia rápida plastificadas de respuesta ante incendios en cada estación de cocción con pasos dimensionados para leer de un vistazo",
+    "Sustituya el aceite de las freidoras según el calendario establecido en lugar de esperar a la degradación visual, ya que el aceite degradado tiene un punto de inflamación más bajo",
+    "Mantenga una zona de separación mínima de 1 metro alrededor de todos los extintores y estaciones de tiro del sistema de extinción en todo momento"
+  ],
+  "glossary": {
+    "Fuego de Clase F": "Un fuego que involucra aceites y grasas de cocina, caracterizado por temperaturas extremadamente altas y el riesgo de reignición explosiva; requiere agentes de extinción químicos húmedos",
+    "Triángulo del Fuego": "Los tres elementos necesarios para la combustión: combustible, oxígeno y calor; eliminar cualquiera de ellos extingue el fuego",
+    "Agente Químico Húmedo": "Un agente extintor (típicamente solución de acetato o carbonato de potasio) diseñado específicamente para fuegos de Clase F que enfría el combustible y crea una capa de saponificación para prevenir la reignición",
+    "Técnica PASS": "El método de cuatro pasos para usar un extintor portátil: Tirar de la anilla, Apuntar a la base, Apretar la palanca, Barrer de lado a lado",
+    "Eslabón Fusible": "Un dispositivo sensible al calor que se funde a una temperatura predeterminada para activar automáticamente un sistema de extinción de incendios",
+    "Punto de Inflamación": "La temperatura más baja a la que un líquido produce suficiente vapor para encenderse cuando se expone a una fuente de ignición; crítico para la seguridad del aceite de cocina",
+    "Temperatura de Autoignición": "La temperatura a la que una sustancia se enciende espontáneamente sin una fuente de ignición externa; para aceites de cocina típicamente entre 300-370 grados Celsius",
+    "Equipo de Emergencia": "Equipo de respuesta ante emergencias designado según la ley española de seguridad laboral, compuesto por personal formado responsable de la respuesta ante incendios y la coordinación de la evacuación",
+    "Plan de Emergencia": "El Plan de Emergencia obligatorio requerido para los lugares de trabajo según la ley española, que detalla los procedimientos de detección, alerta, evacuación y respuesta",
+    "RD 513/2017": "Real Decreto 513/2017 por el que se aprueba el Reglamento Técnico de Instalaciones de Protección contra Incendios (Reglamento de Instalaciones de Protección contra Incendios)"
+  }
+}

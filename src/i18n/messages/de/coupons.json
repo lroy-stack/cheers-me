@@ -1,0 +1,123 @@
+{
+  "title": "Geschenkgutscheine",
+  "subtitle": "Verwalte Geschenkgutscheine und Einlösungen",
+  "noCoupons": "Noch keine Gutscheine",
+  "noCouponsDescription": "Geschenkgutscheine erscheinen hier, sobald Kunden sie kaufen.",
+  "status": {
+    "pending_payment": "Zahlung ausstehend",
+    "active": "Aktiv",
+    "partially_used": "Teilweise eingelöst",
+    "fully_used": "Vollständig eingelöst",
+    "expired": "Abgelaufen",
+    "cancelled": "Storniert"
+  },
+  "theme": {
+    "elegant": "Elegant",
+    "tropical": "Tropisch",
+    "celebration": "Feierlich",
+    "seasonal": "Saisonal"
+  },
+  "stats": {
+    "totalSold": "Gesamt verkauft",
+    "totalRevenue": "Gesamteinnahmen",
+    "activeCoupons": "Aktive Gutscheine",
+    "redeemed": "Eingelöst"
+  },
+  "detail": {
+    "couponCode": "Gutscheincode",
+    "amount": "Originalbetrag",
+    "remaining": "Restguthaben",
+    "purchaser": "Gekauft von",
+    "recipient": "Empfänger",
+    "message": "Persönliche Nachricht",
+    "purchasedAt": "Gekauft am",
+    "expiresAt": "Läuft ab am",
+    "redemptionHistory": "Einlösungsverlauf",
+    "noRedemptions": "Noch keine Einlösungen",
+    "downloadPdf": "PDF herunterladen"
+  },
+  "validate": {
+    "title": "Gutschein validieren",
+    "subtitle": "QR-Code scannen oder Gutscheincode manuell eingeben",
+    "scanQr": "QR-Code scannen",
+    "enterCode": "Code eingeben",
+    "codePlaceholder": "GC-XXXXXX",
+    "lookup": "Nachschlagen",
+    "looking": "Suche...",
+    "invalidFormat": "Ungültiges Gutscheincode-Format",
+    "notFound": "Gutschein nicht gefunden",
+    "expired": "Dieser Gutschein ist abgelaufen",
+    "fullyUsed": "Dieser Gutschein wurde vollständig eingelöst",
+    "cancelled": "Dieser Gutschein wurde storniert",
+    "cameraPermission": "Kameraberechtigung wird zum Scannen von QR-Codes benötigt",
+    "scannerReady": "Kamera auf QR-Code richten"
+  },
+  "redeem": {
+    "title": "Gutschein einlösen",
+    "amountLabel": "Einlösungsbetrag",
+    "amountHelp": "Gib den abzuziehenden Betrag ein (max: {max})",
+    "fullAmount": "Vollbetrag",
+    "customAmount": "Benutzerdefinierter Betrag",
+    "notes": "Notizen (optional)",
+    "confirm": "Einlösung bestätigen",
+    "confirming": "Verarbeitung...",
+    "success": "Gutschein erfolgreich eingelöst!",
+    "error": "Einlösung fehlgeschlagen"
+  },
+  "purchase": {
+    "heroTitle": "Schenke das Cheers-Erlebnis",
+    "heroSubtitle": "Das perfekte Geschenk — ein Gutschein für GrandCafe Cheers, Mallorcas Strandrestaurant & Bar.",
+    "step1": "Betrag wählen",
+    "step2": "Personalisieren",
+    "step3": "Deine Daten",
+    "step4": "Zahlung",
+    "selectAmount": "Wähle einen Betrag",
+    "customAmount": "Benutzerdefinierter Betrag",
+    "minAmount": "Minimum €{min}",
+    "maxAmount": "Maximum €{max}",
+    "recipientName": "Name des Empfängers",
+    "recipientNamePlaceholder": "Für wen ist dieses Geschenk?",
+    "personalMessage": "Persönliche Nachricht",
+    "personalMessagePlaceholder": "Füge eine herzliche Nachricht hinzu...",
+    "optional": "Optional",
+    "yourName": "Dein Name",
+    "yourEmail": "Deine E-Mail",
+    "emailHelp": "Wir senden den Gutschein an diese E-Mail",
+    "gdprConsent": "Ich stimme zu, dass meine Daten für diesen Gutscheinkauf verarbeitet werden",
+    "gdprRequired": "Zustimmung ist erforderlich um fortzufahren",
+    "payNow": "Jetzt bezahlen — {amount}",
+    "processing": "Weiterleitung zur Zahlung...",
+    "chooseTheme": "Wähle einen Stil",
+    "preview": "Vorschau"
+  },
+  "success": {
+    "title": "Zahlung erfolgreich!",
+    "subtitle": "Dein Geschenkgutschein ist bereit",
+    "description": "Der Gutschein wurde erstellt und kann heruntergeladen werden. Teile ihn mit deinen Liebsten!",
+    "viewVoucher": "Gutschein ansehen",
+    "downloadPdf": "PDF herunterladen",
+    "buyAnother": "Weiteren kaufen"
+  },
+  "cancelled": {
+    "title": "Zahlung abgebrochen",
+    "subtitle": "Deine Zahlung wurde nicht abgeschlossen",
+    "description": "Es wurden keine Gebühren erhoben. Du kannst es jederzeit erneut versuchen.",
+    "tryAgain": "Erneut versuchen"
+  },
+  "publicView": {
+    "giftVoucher": "Geschenkgutschein",
+    "balance": "Aktuelles Guthaben",
+    "validUntil": "Gültig bis",
+    "from": "Von",
+    "downloadPdf": "PDF herunterladen",
+    "redeemInStore": "Zeige diesen Gutschein bei GrandCafe Cheers vor, um ihn einzulösen"
+  },
+  "filters": {
+    "allStatuses": "Alle Status",
+    "search": "Suche nach Code oder Name..."
+  },
+  "pageTabs": {
+    "overview": "Übersicht",
+    "validate": "Gutschein validieren"
+  }
+}

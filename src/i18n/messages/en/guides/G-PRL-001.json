@@ -1,0 +1,176 @@
+{
+  "title": "Occupational Risk Prevention Plan",
+  "legalBasis": "Ley 31/1995 de Prevención de Riesgos Laborales (Articles 14-16), Real Decreto 39/1997 Reglamento de los Servicios de Prevención (Articles 1-9)",
+  "summary": "The Occupational Risk Prevention Plan is the foundational document that structures and organizes all preventive activities within a hospitality business. As mandated by Article 16 of Ley 31/1995, every employer must integrate risk prevention into the general management system of the company through the implementation of a comprehensive prevention plan. This plan must cover all activities, hierarchical levels, and processes within the establishment, from kitchen operations to front-of-house service.\n\nFor hospitality businesses such as restaurants, bars, and cafes, the prevention plan serves as the master framework that coordinates risk assessments, training programs, health surveillance, and emergency procedures. It must be approved by senior management and communicated to all employees, including temporary and seasonal workers who are common in the sector. The plan must be a living document, reviewed and updated whenever there are significant changes in working conditions, equipment, or organizational structure.\n\nThe prevention plan is not merely an administrative requirement but a strategic tool that reduces workplace accidents, minimizes absenteeism, improves employee morale, and protects the business from legal liability. Non-compliance can result in administrative sanctions ranging from EUR 2,046 to EUR 819,780 depending on the severity of the infraction, as established in the Ley sobre Infracciones y Sanciones en el Orden Social (LISOS).",
+  "keyPoints": [
+    "Every hospitality business must have a written Prevention Plan regardless of size",
+    "The plan must be integrated into the company's general management system, not treated as a separate activity",
+    "Senior management bears ultimate responsibility for prevention and must allocate adequate resources",
+    "All workers, including temporary and seasonal staff, must be informed of and covered by the plan",
+    "The plan must be reviewed whenever working conditions, processes, or equipment change significantly",
+    "Prevention modality must be chosen: own resources, designated workers, external prevention service, or combined",
+    "Worker participation through safety delegates and prevention committees is legally required in companies with 50+ employees",
+    "Documentation must be maintained and made available to the labor authority upon request"
+  ],
+  "sections": [
+    {
+      "heading": "1. Legal Framework and Obligations",
+      "content": "The Spanish occupational health and safety legal framework is built upon Ley 31/1995 de Prevención de Riesgos Laborales (LPRL), which transposes European Directive 89/391/EEC into national law. This law establishes the fundamental duty of the employer to protect workers against occupational risks and to ensure their safety and health in all aspects related to work. Article 14 establishes the employer's general duty of protection, while Article 16 specifically mandates the creation and implementation of a prevention plan.\n\nThe prevention plan must be developed in accordance with Real Decreto 39/1997, which regulates the Services of Prevention and details the organizational requirements for preventive activities. For hospitality businesses, compliance also involves sector-specific regulations including food safety standards (Reglamento CE 852/2004), fire safety (CTE DB-SI), and workplace conditions (RD 486/1997). The plan must address how these overlapping regulatory requirements are coordinated within the establishment.",
+      "subsections": [
+        {
+          "heading": "1.1 Employer Obligations Under Ley 31/1995",
+          "content": "The employer's obligations under the LPRL are extensive and non-delegable. Article 14.2 establishes that the employer must guarantee worker safety and health through the adoption of all necessary measures, including risk prevention activities, information and training for workers, and the establishment of an organization and means proportionate to the risks. The duty of protection is continuous and dynamic, requiring ongoing adaptation to changing circumstances.\n\nIn hospitality specifically, employers must account for the sector's particular characteristics: high turnover of staff, use of temporary contracts, diverse workforce backgrounds, extended operating hours, and the presence of customers on the premises. The employer cannot transfer these obligations to workers, though workers do have a correlative duty to cooperate with prevention measures under Article 29."
+        },
+        {
+          "heading": "1.2 Prevention Modality Options",
+          "content": "Article 10 of RD 39/1997 establishes four modalities for organizing preventive activities. For small hospitality businesses (up to 25 workers) with low-risk activities, the employer may personally assume prevention functions, provided they have adequate training and remain regularly present at the workplace. This is a common option for small restaurants and cafes.\n\nFor larger establishments, the options include designating one or more prevention workers (who must have the necessary training and time to carry out their functions), establishing an internal prevention service (mandatory for companies with over 500 workers, or over 250 in certain high-risk activities), or contracting an external prevention service (Servicio de Prevención Ajeno, or SPA). Most hospitality businesses with 10-250 employees opt for a combination of designated workers and an external SPA that covers the four preventive disciplines: occupational safety, industrial hygiene, ergonomics and applied psychosociology, and occupational medicine."
+        },
+        {
+          "heading": "1.3 Worker Rights and Participation",
+          "content": "Workers have fundamental rights under the LPRL including the right to effective protection, the right to information about risks and preventive measures, the right to training, the right to health surveillance, and critically, the right to participate in prevention matters. In companies with six or more workers, prevention delegates (Delegados de Prevención) must be elected from among staff representatives.\n\nIn establishments with 50 or more workers, a Health and Safety Committee (Comité de Seguridad y Salud) must be constituted, composed equally of prevention delegates and employer representatives. This committee must meet quarterly and has the right to be consulted before any decision that could substantially modify working conditions or affect worker safety. For hospitality chains and large establishments, these participatory structures are essential for effective prevention."
+        }
+      ]
+    },
+    {
+      "heading": "2. Structure and Content of the Prevention Plan",
+      "content": "Article 2 of RD 39/1997 specifies the minimum content of the prevention plan. The plan must identify the company, its productive activity, number and characteristics of workstations, number of workers and their distribution, and the organizational structure of the preventive activity. It must also include the company's prevention policy, objectives, and the resources allocated to achieve them. For hospitality businesses, this means documenting every role from kitchen porter to head chef, from server to manager.\n\nThe plan serves as the umbrella document under which all other prevention documents are organized: risk assessments, preventive activity planning, training records, health surveillance protocols, and emergency plans. It must establish clear lines of responsibility and reporting mechanisms, ensuring that prevention is not siloed but integrated across all operational areas of the business.",
+      "subsections": [
+        {
+          "heading": "2.1 Company Identification and Activity Description",
+          "content": "The plan must begin with a thorough description of the business: legal name, tax identification (CIF), registered address, and all workplace locations. For hospitality businesses operating multiple venues, each location must be individually documented. The productive activity must be described in detail, including the type of establishment (restaurant, bar, cafe, hotel), seating capacity, operating hours, and peak service periods.\n\nA complete inventory of work areas must be included: kitchen, cold storage rooms, dining areas, bar stations, offices, storage facilities, changing rooms, loading docks, and exterior terraces. Each area's specific characteristics should be noted, including dimensions, ventilation systems, lighting conditions, and any particular hazards. The plan should also describe the equipment and substances used in each area, from commercial ovens and deep fryers to cleaning chemicals and gas installations."
+        },
+        {
+          "heading": "2.2 Organizational Structure for Prevention",
+          "content": "The plan must clearly define who does what in terms of prevention. This includes identifying the prevention modality chosen, the names and qualifications of designated prevention workers or the contracted external prevention service, and the specific responsibilities assigned to each level of the organizational hierarchy. In a typical restaurant, the general manager holds ultimate responsibility, the kitchen head chef is responsible for kitchen safety, and the floor manager oversees front-of-house safety.\n\nA functional organizational chart for prevention should be included, showing reporting lines, communication channels, and escalation procedures. The plan should specify how often the prevention organization meets, how decisions are documented, and how preventive actions are tracked to completion. Roles of worker representatives in prevention must also be defined, including how consultations are conducted and how worker feedback is incorporated into preventive decisions."
+        },
+        {
+          "heading": "2.3 Prevention Policy and Objectives",
+          "content": "The prevention policy is a formal declaration by senior management of its commitment to worker safety and health. It must be signed by the highest-ranking person in the organization and communicated to all employees. The policy should express the company's commitment to going beyond mere legal compliance and to fostering a genuine culture of prevention. In hospitality, where pace is fast and shortcuts tempting, this cultural commitment is particularly important.\n\nObjective-setting should follow the SMART methodology: specific, measurable, achievable, relevant, and time-bound. Examples for hospitality include reducing kitchen burn incidents by 30% within one year, achieving 100% completion of safety training for new hires within their first week, or implementing monthly safety walks across all work areas. Each objective must have an assigned responsible person, a timeline, allocated resources, and a method for measuring achievement."
+        }
+      ]
+    },
+    {
+      "heading": "3. Risk Assessment Integration",
+      "content": "The prevention plan must incorporate or reference the initial risk assessment (Evaluación de Riesgos) as its core analytical component. Article 16.2 of the LPRL requires that the risk assessment be conducted at the outset and reviewed when working conditions change, when damage to worker health occurs, or when preventive measures prove inadequate. For hospitality businesses, this means assessing risks in every work area and for every job role.\n\nThe risk assessment process involves identifying hazards, evaluating the probability and severity of potential harm, and determining the necessary preventive and protective measures. The plan must establish the methodology to be used (INSST's simplified method is most common for hospitality), the schedule for assessments and reviews, and the process for translating assessment findings into concrete preventive actions with assigned responsibilities and deadlines.",
+      "subsections": [
+        {
+          "heading": "3.1 Hazard Identification in Hospitality",
+          "content": "Hospitality workplaces present a wide range of hazards that must be systematically identified. Physical hazards include slippery floors, hot surfaces, sharp equipment, electrical installations, noise from kitchen equipment, and thermal stress from hot kitchens or cold storage areas. Chemical hazards arise from cleaning products, degreasers, pest control substances, and cooking gases. Biological hazards include foodborne pathogens and exposure risks during waste handling.\n\nErgonomic hazards are particularly prevalent: prolonged standing, repetitive motions during food preparation, manual handling of heavy supplies, awkward postures in cramped kitchen spaces, and sustained work at speed during service peaks. Psychosocial hazards include high-pressure service periods, irregular working hours, customer-facing stress, and hierarchical workplace cultures. Each of these categories must be thoroughly evaluated for every position in the establishment."
+        },
+        {
+          "heading": "3.2 Preventive Activity Planning",
+          "content": "Once risks are assessed and prioritized, the plan must establish a Preventive Activity Plan (Planificación de la Actividad Preventiva) under Article 9 of RD 39/1997. This plan translates risk assessment findings into specific actions: elimination of hazards where possible, substitution of less dangerous alternatives, engineering controls (such as non-slip flooring or extraction ventilation), administrative controls (such as job rotation or scheduled rest breaks), and personal protective equipment as a last resort.\n\nEach preventive action must include: the specific measure to be implemented, the person responsible for implementation, the budget allocated, the implementation deadline, and the method for verifying effectiveness. For hospitality businesses, this planning must account for seasonal variations in activity, temporary staffing peaks, and the need to maintain service continuity while implementing safety improvements."
+        }
+      ]
+    },
+    {
+      "heading": "4. Training and Information Programs",
+      "content": "Articles 18 and 19 of the LPRL establish the employer's obligations regarding worker information and training. Workers must receive adequate and sufficient information about risks specific to their position, the preventive measures adopted, and the emergency procedures in place. Training must be provided at the time of hiring, when there are changes in job functions, and when new technologies or equipment are introduced. All training must be provided during working hours or compensated as such.\n\nFor hospitality businesses with high staff turnover, a robust onboarding training program is essential. New employees, whether permanent or temporary, must receive a safety induction before beginning their duties. This induction must cover general workplace risks, specific risks of their position, emergency and evacuation procedures, location and use of fire extinguishing equipment, first aid provisions, and the correct use of any required personal protective equipment.",
+      "subsections": [
+        {
+          "heading": "4.1 Training by Job Role",
+          "content": "Kitchen staff require training on burns prevention, knife safety, safe use of commercial kitchen equipment (slicers, mixers, fryers), manual handling techniques for heavy pots and supply deliveries, chemical safety for cleaning products, and fire prevention. They must understand the specific risks of their station, whether it is the grill, the cold line, pastry, or dishwashing.\n\nFront-of-house staff need training on slip and trip prevention, safe carrying techniques for trays and plates, ergonomic practices for prolonged standing and walking, customer emergency response, and responsible alcohol service. Bar staff additionally require training on repetitive strain prevention, safe glass handling, and safe use of bar equipment. Management staff must receive training on their legal responsibilities, incident investigation, safety leadership, and how to conduct workplace safety inspections."
+        },
+        {
+          "heading": "4.2 Training Documentation and Records",
+          "content": "All training activities must be documented and records maintained. For each training session, records must include: the date, duration, and location of training; the topics covered; the names and qualifications of trainers; the names and signatures of attendees; and any assessment or evaluation results. These records must be preserved for the entire duration of the employment relationship and for the legally required period thereafter.\n\nThe prevention plan should include an annual training calendar that schedules regular refresher training, specialized courses, and emergency drills. It should also establish minimum training standards for each job role and a process for verifying that all workers, including those returning from extended leave, are current with their training requirements. Digital training management systems can be particularly valuable for hospitality businesses with multiple locations and high turnover."
+        },
+        {
+          "heading": "4.3 Safety Communication and Awareness",
+          "content": "Beyond formal training, the prevention plan should establish mechanisms for ongoing safety communication. This includes safety signage in appropriate languages (particularly important given the diverse workforce in hospitality), regular safety briefings during pre-shift meetings, visible posting of emergency procedures in all work areas, and channels for workers to report hazards or suggest safety improvements without fear of retaliation.\n\nA safety suggestion system, whether a physical suggestion box or a digital reporting tool, encourages worker participation and can identify risks before they cause incidents. Regular safety newsletters or bulletins, recognition programs for safe behavior, and open discussion of near-miss incidents in team meetings all contribute to building the safety culture that the prevention plan aims to establish."
+        }
+      ]
+    },
+    {
+      "heading": "5. Health Surveillance",
+      "content": "Article 22 of the LPRL requires employers to ensure periodic health surveillance for workers, appropriate to the risks inherent in their work. Health surveillance must be carried out by qualified medical professionals and must respect worker privacy and dignity. As a general rule, health surveillance is voluntary for the worker, but it becomes mandatory in specific circumstances: when the assessment of risk effects requires it, when it is essential to verify that the worker's health condition is not a danger to others, or when a legal provision requires specific health checks.\n\nIn hospitality, mandatory health surveillance applies to food handlers under Real Decreto 202/2000 and RD 109/2010, which require that workers who handle food do not suffer from or carry diseases transmissible through food. The prevention plan must specify the health surveillance protocols for each job role, the frequency of examinations, and the procedures for managing the results while respecting medical confidentiality.",
+      "subsections": [
+        {
+          "heading": "5.1 Health Surveillance Protocols for Hospitality Workers",
+          "content": "Health surveillance protocols must be specific to the risks identified in the risk assessment. For kitchen workers, protocols should include assessments of musculoskeletal health (given manual handling and repetitive tasks), respiratory function (given exposure to cooking fumes and cleaning chemicals), dermatological evaluation (given frequent wet work and chemical contact), and thermal stress indicators. For workers exposed to noise from kitchen equipment, audiometric testing should be included.\n\nFor all food handlers, protocols must include screening for communicable diseases as required by food safety regulations. For workers on rotating or night shifts, protocols should address the specific health impacts of irregular work schedules, including sleep quality assessment and cardiovascular risk screening. The plan should establish clear procedures for pre-employment health assessments, periodic examinations (typically annual), and return-to-work assessments following illness or injury."
+        },
+        {
+          "heading": "5.2 Confidentiality and Data Management",
+          "content": "Health surveillance results are strictly confidential medical data protected under both the LPRL and the General Data Protection Regulation (GDPR/RGPD). Only the medical service has access to the complete health data. The employer receives only a certificate of fitness or unfitness for the specific job, without diagnostic details. Workers have the right to access their own health records and to be informed of the results of any health surveillance conducted.\n\nThe prevention plan must establish clear procedures for handling health data: who has access, how data is stored and secured, how long records are retained (minimum five years after the end of exposure, per Article 22.3 LPRL), and how worker rights to access and correction are facilitated. In practice, this typically means that the contracted external prevention service (SPA) manages all health surveillance data through its medical department."
+        }
+      ]
+    },
+    {
+      "heading": "6. Monitoring, Review, and Continuous Improvement",
+      "content": "A prevention plan is not a static document but must be subject to continuous monitoring, periodic review, and systematic improvement. Article 16 of the LPRL requires that the plan be reviewed when it is inadequate, when working conditions change, when new risks emerge, or when damage to health occurs despite preventive measures. The plan should establish a formal review cycle, typically annual, with additional ad hoc reviews triggered by specific events.\n\nMonitoring involves tracking leading indicators (training completion rates, inspection findings, hazard reports) and lagging indicators (accident rates, sick leave, insurance claims). Hospitality businesses should benchmark their performance against sector averages published by the Instituto Nacional de Seguridad y Salud en el Trabajo (INSST). Continuous improvement follows the Plan-Do-Check-Act cycle, with each review identifying areas for improvement and generating new objectives and actions.",
+      "subsections": [
+        {
+          "heading": "6.1 Incident Investigation and Reporting",
+          "content": "The prevention plan must establish clear procedures for reporting and investigating all workplace incidents, including accidents causing injury, dangerous occurrences (near misses), and occupational diseases. All accidents resulting in absence from work must be reported to the labor authority through the Delt@ electronic system within five working days, or within 24 hours in cases of death, serious injury, or incidents affecting four or more workers.\n\nIncident investigation should follow a structured methodology (such as the tree-of-causes method recommended by INSST) that seeks root causes rather than assigning blame. Investigation findings must be translated into corrective and preventive actions, tracked to completion, and their effectiveness verified. The prevention plan should also establish a process for analyzing incident trends over time to identify systemic issues that individual investigations might miss."
+        },
+        {
+          "heading": "6.2 Internal Audits and Inspections",
+          "content": "Regular internal inspections and audits are essential for verifying that the prevention plan is being effectively implemented. The plan should establish a schedule for workplace safety inspections, typically monthly or quarterly, covering all work areas and focusing on conditions such as housekeeping, equipment maintenance, PPE availability and use, emergency equipment readiness, and compliance with safe work procedures.\n\nAdditionally, companies not covered by an external prevention service for all four disciplines must undergo a prevention audit every two years (or annually for companies with higher-risk activities), as required by Article 29 of RD 39/1997. Even when an external SPA is used, voluntary internal audits using tools such as the INSST's PYME prevention evaluation tool help identify areas for improvement and demonstrate management commitment to prevention."
+        },
+        {
+          "heading": "6.3 Annual Report and Plan Update",
+          "content": "The prevention plan should mandate the preparation of an annual prevention report that summarizes: the preventive activities carried out during the year, the status of planned actions, training activities completed, health surveillance results (aggregated and anonymized), incident statistics and trend analysis, inspection and audit findings, and recommendations for the following year.\n\nThis report should be presented to the Health and Safety Committee (where one exists) and to senior management. It forms the basis for updating the prevention plan's objectives and preventive activity planning for the next cycle. The report should be transparent about both achievements and shortcomings, fostering a culture of honest assessment and continuous improvement rather than one of concealment and compliance-only mentality."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Prevention Plan Completeness Checklist",
+      "items": [
+        "Company identification data is complete and current (name, CIF, address, all locations)",
+        "Productive activity and all work areas are thoroughly described",
+        "Number and characteristics of workers and workstations are documented",
+        "Prevention modality is chosen and formally constituted (own resources, designated workers, SPA, or combined)",
+        "Prevention policy is signed by senior management and communicated to all workers",
+        "Organizational structure for prevention is defined with clear responsibilities",
+        "Initial risk assessment is completed for all positions and work areas",
+        "Preventive activity plan is documented with actions, deadlines, and responsible persons",
+        "Training plan is established with role-specific content and annual calendar",
+        "Health surveillance protocols are defined for each job role",
+        "Emergency plan is integrated or referenced",
+        "Worker consultation and participation mechanisms are established",
+        "Documentation management procedures are defined",
+        "Review and update procedures are established with defined triggers",
+        "Budget allocation for prevention activities is documented"
+      ]
+    },
+    {
+      "title": "Annual Review Checklist",
+      "items": [
+        "All planned preventive actions from the previous year have been reviewed for completion",
+        "Incident statistics have been analyzed for trends and root causes",
+        "Risk assessments have been reviewed and updated where necessary",
+        "Training records are current and all workers have received required training",
+        "Health surveillance is up to date for all applicable workers",
+        "Emergency equipment has been inspected and maintained",
+        "Emergency drills have been conducted and evaluated",
+        "Worker consultation has taken place and feedback has been incorporated",
+        "New objectives and preventive actions have been established for the coming year",
+        "Budget for the coming year's prevention activities has been approved"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Treat the prevention plan as a living management tool, not a shelf document — review it quarterly and update it whenever conditions change",
+    "Involve workers at all levels in developing and reviewing the plan, as they have the most direct knowledge of workplace hazards",
+    "Integrate prevention objectives into general business objectives and management meetings to ensure prevention is not treated as an afterthought",
+    "Use the prevention plan as the basis for new employee induction, ensuring everyone understands the company's safety commitment from day one",
+    "Maintain a simple, accessible summary version of the plan in addition to the full document, so all workers can quickly reference key information",
+    "Establish a safety champion or prevention coordinator for each shift who can provide day-to-day guidance and monitoring",
+    "Benchmark your accident and absence rates against sector averages published by INSST to identify areas needing improvement",
+    "Leverage digital tools for tracking training, inspections, incidents, and corrective actions to reduce administrative burden and improve visibility"
+  ],
+  "glossary": {
+    "LPRL": "Ley 31/1995 de Prevención de Riesgos Laborales — the foundational Spanish occupational health and safety law",
+    "SPA (Servicio de Prevención Ajeno)": "External prevention service contracted by the company to carry out preventive activities across one or more disciplines",
+    "Prevention Delegate (Delegado de Prevención)": "Worker representative with specific functions in occupational risk prevention, elected from among staff representatives",
+    "Health and Safety Committee (Comité de Seguridad y Salud)": "Joint employer-worker body for consultation on prevention matters, mandatory in companies with 50+ workers",
+    "Risk Assessment (Evaluación de Riesgos)": "Systematic process of identifying hazards, evaluating risks, and determining necessary preventive measures",
+    "Preventive Activity Planning": "The process of defining specific actions, responsible persons, deadlines, and resources to control identified risks",
+    "Health Surveillance (Vigilancia de la Salud)": "Periodic medical examinations and health monitoring specific to the occupational risks of each worker's position",
+    "INSST": "Instituto Nacional de Seguridad y Salud en el Trabajo — Spain's national institute for occupational safety and health, providing technical guidance and sector statistics",
+    "LISOS": "Ley sobre Infracciones y Sanciones en el Orden Social — the law establishing penalties for violations of occupational safety regulations",
+    "Delt@": "The electronic system used in Spain for reporting workplace accidents and occupational diseases to the labor authority"
+  }
+}

@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo 111 - Retenciones e ingresos a cuenta del IRPF - 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Section */
+        .header {
+            border-bottom: 3px solid #003366;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .logo-section {
+            text-align: left;
+        }
+
+        .logo-section .ministry {
+            font-size: 11px;
+            font-weight: bold;
+            color: #004080;
+            letter-spacing: 1px;
+            margin-bottom: 3px;
+        }
+
+        .logo-section .agency {
+            font-size: 16px;
+            font-weight: bold;
+            color: #003366;
+            letter-spacing: 2px;
+        }
+
+        .ejercicio-section {
+            text-align: right;
+        }
+
+        .ejercicio-section label {
+            font-weight: bold;
+            color: #003366;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+
+        .ejercicio-section .value {
+            font-size: 20px;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        .form-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #003366;
+            text-align: center;
+            margin: 15px 0 10px 0;
+        }
+
+        .form-subtitle {
+            font-size: 11px;
+            color: #666;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .periodo-row {
+            text-align: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
+        }
+
+        .periodo-row label {
+            font-weight: bold;
+            color: #003366;
+            margin-right: 10px;
+            font-size: 12px;
+        }
+
+        .periodo-row select {
+            padding: 6px 10px;
+            border: 1px solid #999;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+            min-width: 120px;
+        }
+
+        /* Section Headers */
+        .section-header {
+            background-color: #003366;
+            color: white;
+            padding: 12px 15px;
+            font-weight: bold;
+            font-size: 13px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .subsection-header {
+            background-color: #e8f0f7;
+            color: #003366;
+            padding: 10px 12px;
+            font-weight: bold;
+            font-size: 12px;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            border-left: 4px solid #004080;
+        }
+
+        /* Identification Section */
+        .identification-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: #003366;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="number"],
+        .form-group input[type="checkbox"] {
+            padding: 8px;
+            border: 1px solid #999;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="number"] {
+            font-family: 'Courier New', monospace;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .checkbox-group label {
+            margin: 0;
+            cursor: pointer;
+            font-weight: normal;
+        }
+
+        /* Tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+            border: 1px solid #999;
+        }
+
+        .data-table thead {
+            background-color: #e8f0f7;
+            border-bottom: 2px solid #004080;
+        }
+
+        .data-table th {
+            padding: 10px;
+            text-align: left;
+            font-weight: bold;
+            color: #003366;
+            font-size: 11px;
+            border-right: 1px solid #999;
+        }
+
+        .data-table th:last-child {
+            border-right: none;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            text-align: right;
+        }
+
+        .data-table td:first-child {
+            text-align: center;
+            background-color: #f9f9f9;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        .data-table input[type="number"] {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            text-align: right;
+            font-size: 12px;
+        }
+
+        .data-table input[type="number"]:focus {
+            outline: none;
+            border: 2px solid #004080;
+            background-color: #ffffcc;
+        }
+
+        /* Casilla number display */
+        .casilla-number {
+            font-size: 9px;
+            color: #999;
+            font-weight: bold;
+            margin-top: 2px;
+        }
+
+        /* Liquidación Section */
+        .liquidation-section {
+            margin-top: 30px;
+        }
+
+        .liquidation-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            align-items: center;
+        }
+
+        .liquidation-row:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .liquidation-row.total {
+            background-color: #003366;
+            color: white;
+            font-weight: bold;
+            border-bottom: 2px solid #004080;
+            padding: 15px 12px;
+        }
+
+        .liquidation-row.total label {
+            color: white;
+        }
+
+        .liquidation-row label {
+            font-weight: bold;
+            color: #003366;
+            font-size: 12px;
+        }
+
+        .liquidation-row input[type="number"] {
+            padding: 8px;
+            border: 1px solid #999;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            text-align: right;
+            font-size: 12px;
+            background-color: white;
+        }
+
+        .liquidation-row.total input[type="number"] {
+            background-color: white;
+            color: #003366;
+            font-weight: bold;
+        }
+
+        .hidden-field {
+            display: none;
+        }
+
+        /* Result Section */
+        .result-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f0f7;
+            border: 2px solid #003366;
+            border-radius: 3px;
+        }
+
+        .result-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .result-row label {
+            font-weight: bold;
+            color: #003366;
+            font-size: 13px;
+        }
+
+        .result-value {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px;
+            border-radius: 3px;
+            text-align: right;
+            font-family: 'Courier New', monospace;
+        }
+
+        .result-value.positive {
+            background-color: #ffcccc;
+            color: #990000;
+            border: 1px solid #990000;
+        }
+
+        .result-value.zero {
+            background-color: #ccffcc;
+            color: #009900;
+            border: 1px solid #009900;
+        }
+
+        .result-value.negative {
+            background-color: #ffddaa;
+            color: #cc6600;
+            border: 1px solid #cc6600;
+        }
+
+        .iban-group {
+            display: none;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .iban-group.show {
+            display: grid;
+        }
+
+        .iban-group label {
+            font-weight: bold;
+            color: #003366;
+            font-size: 12px;
+        }
+
+        .iban-group input[type="text"],
+        .iban-group input[type="checkbox"] {
+            padding: 8px;
+            border: 1px solid #999;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+
+        .iban-group input[type="text"] {
+            font-family: 'Courier New', monospace;
+            text-transform: uppercase;
+        }
+
+        /* Negative Declaration Section */
+        .negative-declaration {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            background-color: #ccffcc;
+            border: 2px solid #009900;
+            border-radius: 3px;
+            margin-top: 15px;
+        }
+
+        .negative-declaration.show {
+            display: block;
+        }
+
+        .negative-declaration p {
+            font-weight: bold;
+            color: #009900;
+            font-size: 14px;
+        }
+
+        /* Footer Section */
+        .footer-section {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #003366;
+        }
+
+        .signature-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .signature-box {
+            text-align: center;
+            border-top: 1px solid #999;
+            padding-top: 20px;
+            min-height: 60px;
+        }
+
+        .signature-label {
+            font-size: 11px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Buttons */
+        .button-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 12px 30px;
+            font-size: 13px;
+            font-weight: bold;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-print {
+            background-color: #003366;
+            color: white;
+            border: 2px solid #003366;
+        }
+
+        .btn-print:hover {
+            background-color: #004080;
+            border-color: #004080;
+        }
+
+        .btn-clear {
+            background-color: #e8f0f7;
+            color: #003366;
+            border: 2px solid #003366;
+        }
+
+        .btn-clear:hover {
+            background-color: #d0dfe8;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 20px;
+                box-shadow: none;
+                margin: 0;
+            }
+
+            .button-group {
+                display: none;
+            }
+
+            @page {
+                size: A4;
+                margin: 15mm;
+            }
+
+            input[type="number"]:focus,
+            input[type="text"]:focus,
+            select:focus {
+                outline: none;
+            }
+
+            .data-table input[type="number"],
+            .form-group input[type="text"],
+            .form-group input[type="number"],
+            .liquidation-row input[type="number"],
+            .iban-group input[type="text"] {
+                background-color: white !important;
+                border: 1px solid #999 !important;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .identification-section {
+                grid-template-columns: 1fr;
+            }
+
+            .signature-row {
+                grid-template-columns: 1fr;
+            }
+
+            .liquidation-row {
+                grid-template-columns: 1fr;
+            }
+
+            .result-row {
+                grid-template-columns: 1fr;
+            }
+
+            .data-table {
+                font-size: 11px;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-top">
+                <div class="logo-section">
+                    <div class="ministry">MINISTERIO DE HACIENDA</div>
+                    <div class="agency">AGENCIA TRIBUTARIA</div>
+                </div>
+                <div class="ejercicio-section">
+                    <label>EJERCICIO:</label>
+                    <span class="value">2026</span>
+                </div>
+            </div>
+
+            <div class="form-title">
+                MODELO 111<br>
+                Retenciones e ingresos a cuenta del IRPF
+            </div>
+
+            <div class="form-subtitle">
+                Rendimientos del trabajo y de actividades económicas, premios y determinadas<br>
+                ganancias patrimoniales e imputaciones de renta
+            </div>
+
+            <div class="periodo-row">
+                <label>PERÍODO:</label>
+                <select id="periodo" name="periodo">
+                    <option value="">Seleccionar período</option>
+                    <option value="1T">1º Trimestre (Enero - Marzo)</option>
+                    <option value="2T">2º Trimestre (Abril - Junio)</option>
+                    <option value="3T">3º Trimestre (Julio - Septiembre)</option>
+                    <option value="4T">4º Trimestre (Octubre - Diciembre)</option>
+                    <option value="01-12">Anualidad Completa</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Identification Section -->
+        <div class="section-header">Identificación del Declarante</div>
+
+        <div class="identification-section">
+            <div class="form-group">
+                <label for="nif">NIF / NIE</label>
+                <input type="text" id="nif" name="nif" placeholder="Ej: 12345678A" maxlength="9">
+            </div>
+
+            <div class="form-group">
+                <label for="nombre">Apellidos y nombre o Razón social</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo o razón social">
+            </div>
+
+            <div class="form-group" style="grid-column: 1 / -1;">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="complementaria" name="complementaria">
+                    <label for="complementaria">Autoliquidación complementaria</label>
+                </div>
+            </div>
+
+            <div class="form-group hidden-field" id="justificante-field">
+                <label for="justificante">Nº de justificante anterior</label>
+                <input type="text" id="justificante" name="justificante" placeholder="Nº de justificante">
+            </div>
+        </div>
+
+        <!-- Liquidation Section -->
+        <div class="liquidation-section">
+            <!-- I. Rendimientos del trabajo -->
+            <div class="section-header">I. Rendimientos del Trabajo</div>
+
+            <div class="subsection-header">Rendimientos dinerarios</div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nº de perceptores</th>
+                        <th>Importe de las percepciones (€)</th>
+                        <th>Importe de las retenciones (€)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="casilla-number">[01]</span></td>
+                        <td><input type="number" id="campo_01" name="campo_01" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_02" name="campo_02" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_03" name="campo_03" min="0" step="0.01" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="subsection-header">Rendimientos en especie</div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nº de perceptores</th>
+                        <th>Valor percepciones en especie (€)</th>
+                        <th>Importe de los ingresos a cuenta (€)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="casilla-number">[04]</span></td>
+                        <td><input type="number" id="campo_04" name="campo_04" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_05" name="campo_05" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_06" name="campo_06" min="0" step="0.01" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- II. Rendimientos de actividades económicas -->
+            <div class="section-header">II. Rendimientos de Actividades Económicas</div>
+
+            <div class="subsection-header">Rendimientos dinerarios</div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nº de perceptores</th>
+                        <th>Importe de las percepciones (€)</th>
+                        <th>Importe de las retenciones (€)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="casilla-number">[07]</span></td>
+                        <td><input type="number" id="campo_07" name="campo_07" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_08" name="campo_08" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_09" name="campo_09" min="0" step="0.01" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="subsection-header">Rendimientos en especie</div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nº de perceptores</th>
+                        <th>Valor percepciones en especie (€)</th>
+                        <th>Importe de los ingresos a cuenta (€)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="casilla-number">[10]</span></td>
+                        <td><input type="number" id="campo_10" name="campo_10" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_11" name="campo_11" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_12" name="campo_12" min="0" step="0.01" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- III. Premios por participación en juegos -->
+            <div class="section-header">III. Premios por Participación en Juegos, Concursos, Rifas o Combinaciones Aleatorias</div>
+
+            <div class="subsection-header">Premios dinerarios</div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nº de perceptores</th>
+                        <th>Importe de las percepciones (€)</th>
+                        <th>Importe de las retenciones (€)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="casilla-number">[13]</span></td>
+                        <td><input type="number" id="campo_13" name="campo_13" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_14" name="campo_14" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_15" name="campo_15" min="0" step="0.01" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="subsection-header">Premios en especie</div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nº de perceptores</th>
+                        <th>Valor percepciones en especie (€)</th>
+                        <th>Importe de los ingresos a cuenta (€)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="casilla-number">[16]</span></td>
+                        <td><input type="number" id="campo_16" name="campo_16" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_17" name="campo_17" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_18" name="campo_18" min="0" step="0.01" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- IV. Ganancias patrimoniales -->
+            <div class="section-header">IV. Ganancias Patrimoniales Derivadas de los Aprovechamientos Forestales de los Vecinos en Montes Públicos</div>
+
+            <div class="subsection-header">Percepciones dinerarias</div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nº de perceptores</th>
+                        <th>Importe de las percepciones (€)</th>
+                        <th>Importe de las retenciones (€)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="casilla-number">[19]</span></td>
+                        <td><input type="number" id="campo_19" name="campo_19" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_20" name="campo_20" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_21" name="campo_21" min="0" step="0.01" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="subsection-header">Percepciones en especie</div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nº de perceptores</th>
+                        <th>Valor percepciones en especie (€)</th>
+                        <th>Importe de los ingresos a cuenta (€)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="casilla-number">[22]</span></td>
+                        <td><input type="number" id="campo_22" name="campo_22" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_23" name="campo_23" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_24" name="campo_24" min="0" step="0.01" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- V. Contraprestaciones por cesión de derechos de imagen -->
+            <div class="section-header">V. Contraprestaciones por la Cesión de Derechos de Imagen</div>
+            <div class="subsection-header">Ingresos a cuenta previstos en el artículo 92.8 de la Ley del Impuesto</div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nº de perceptores</th>
+                        <th>Importe de las contraprestaciones (€)</th>
+                        <th>Importe de los ingresos a cuenta (€)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="casilla-number">[25]</span></td>
+                        <td><input type="number" id="campo_25" name="campo_25" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_26" name="campo_26" min="0" step="0.01" value="0"></td>
+                        <td><input type="number" id="campo_27" name="campo_27" min="0" step="0.01" value="0"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Totals Section -->
+        <div class="section-header">Total de la Liquidación</div>
+
+        <div class="liquidation-section" style="border: 1px solid #999; border-radius: 3px;">
+            <div class="liquidation-row total">
+                <label for="campo_28">Suma de retenciones e ingresos a cuenta [28]</label>
+                <input type="number" id="campo_28" name="campo_28" min="0" step="0.01" value="0" readonly>
+            </div>
+
+            <div class="liquidation-row hidden-field" id="campo_29_row">
+                <label for="campo_29">Resultado a ingresar de la anterior o anteriores declaraciones del mismo concepto, ejercicio y período [29]</label>
+                <input type="number" id="campo_29" name="campo_29" min="0" step="0.01" value="0">
+            </div>
+
+            <div class="liquidation-row total">
+                <label for="campo_30">Resultado de la autoliquidación [30]</label>
+                <input type="number" id="campo_30" name="campo_30" min="0" step="0.01" value="0" readonly>
+            </div>
+        </div>
+
+        <!-- Result Section -->
+        <div class="result-section">
+            <div class="result-row">
+                <label>RESULTADO DE LA AUTOLIQUIDACIÓN:</label>
+                <div class="result-value" id="resultado-display">0,00 €</div>
+            </div>
+
+            <div id="resultado-tipo">
+                <div id="ingreso-section" style="display: none;">
+                    <div class="result-row">
+                        <label>CONCEPTO: Ingreso</label>
+                    </div>
+                    <div class="iban-group" id="iban-group">
+                        <div>
+                            <label for="iban">IBAN para domiciliación (opcional)</label>
+                            <input type="text" id="iban" name="iban" placeholder="ES00 0000 0000 0000 0000 0000">
+                        </div>
+                        <div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="domiciliacion" name="domiciliacion">
+                                <label for="domiciliacion">Solicitar domiciliación del ingreso</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="negativa-section" style="display: none;">
+                    <div class="negative-declaration" id="negative-display">
+                        <p>DECLARACIÓN NEGATIVA</p>
+                        <p style="font-size: 12px; margin-top: 10px; font-weight: normal;">
+                            No se deben realizar ingresos en este período
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button Group -->
+        <div class="button-group">
+            <button type="button" class="btn-clear" onclick="limpiarFormulario()">Limpiar formulario</button>
+            <button type="button" class="btn-print" onclick="imprimirFormulario()">Imprimir formulario</button>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer-section">
+            <div style="text-align: center; margin-bottom: 30px; font-size: 12px; color: #666;">
+                <p><strong>FIRMA, LUGAR Y FECHA</strong></p>
+            </div>
+
+            <div class="signature-row">
+                <div class="signature-box">
+                    <div class="signature-label">Firma del declarante</div>
+                </div>
+                <div class="signature-box">
+                    <div class="signature-label">Lugar</div>
+                </div>
+                <div class="signature-box">
+                    <div class="signature-label">Fecha</div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ccc;">
+                <p style="font-size: 10px; color: #999;">
+                    Modelo 111 - Agencia Tributaria - Ejercicio 2026
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // List of retención fields that should be summed for casilla 28
+        const retenciones = ['campo_03', 'campo_06', 'campo_09', 'campo_12', 'campo_15', 'campo_18', 'campo_21', 'campo_24', 'campo_27'];
+
+        // Initialize form
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add event listeners for all input fields
+            document.querySelectorAll('input[type="number"]').forEach(field => {
+                field.addEventListener('input', function() {
+                    validarYCalcular();
+                });
+            });
+
+            // Handle complementaria checkbox
+            document.getElementById('complementaria').addEventListener('change', function() {
+                toggleComplementaria();
+            });
+
+            // Initialize calculations
+            validarYCalcular();
+        });
+
+        function validarYCalcular() {
+            // Validate perceptores (must be integers)
+            document.querySelectorAll('input[type="number"]').forEach(field => {
+                const id = field.id;
+                if (id.match(/campo_(01|04|07|10|13|16|19|22|25)$/)) {
+                    // These are perceptores fields
+                    if (field.value && field.value % 1 !== 0) {
+                        field.value = Math.floor(field.value);
+                    }
+                }
+            });
+
+            // Calculate casilla 28 (sum of all retenciones)
+            calcularCasilla28();
+
+            // Calculate casilla 30
+            calcularCasilla30();
+
+            // Update result display
+            actualizarResultado();
+        }
+
+        function calcularCasilla28() {
+            let suma = 0;
+            retenciones.forEach(id => {
+                const campo = document.getElementById(id);
+                if (campo && campo.value) {
+                    suma += parseFloat(campo.value) || 0;
+                }
+            });
+            document.getElementById('campo_28').value = suma.toFixed(2);
+        }
+
+        function calcularCasilla30() {
+            const casilla28 = parseFloat(document.getElementById('campo_28').value) || 0;
+            const casilla29 = parseFloat(document.getElementById('campo_29').value) || 0;
+            const resultado = casilla28 - casilla29;
+            document.getElementById('campo_30').value = resultado.toFixed(2);
+        }
+
+        function actualizarResultado() {
+            const resultado = parseFloat(document.getElementById('campo_30').value) || 0;
+            const display = document.getElementById('resultado-display');
+            const ingresoSection = document.getElementById('ingreso-section');
+            const negativaSection = document.getElementById('negativa-section');
+
+            // Format number
+            const formatted = new Intl.NumberFormat('es-ES', {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            }).format(Math.abs(resultado));
+
+            if (resultado > 0) {
+                display.textContent = formatted + ' €';
+                display.className = 'result-value positive';
+                ingresoSection.style.display = 'block';
+                negativaSection.style.display = 'none';
+                document.getElementById('iban-group').classList.add('show');
+            } else if (resultado === 0) {
+                display.textContent = '0,00 €';
+                display.className = 'result-value zero';
+                ingresoSection.style.display = 'none';
+                negativaSection.style.display = 'block';
+                document.getElementById('iban-group').classList.remove('show');
+            } else {
+                display.textContent = formatted + ' €';
+                display.className = 'result-value negative';
+                ingresoSection.style.display = 'none';
+                negativaSection.style.display = 'block';
+                document.getElementById('iban-group').classList.remove('show');
+            }
+        }
+
+        function toggleComplementaria() {
+            const isComplementaria = document.getElementById('complementaria').checked;
+            const justificanteField = document.getElementById('justificante-field');
+            const campo29Row = document.getElementById('campo_29_row');
+
+            if (isComplementaria) {
+                justificanteField.classList.remove('hidden-field');
+                campo29Row.classList.remove('hidden-field');
+            } else {
+                justificanteField.classList.add('hidden-field');
+                campo29Row.classList.add('hidden-field');
+                document.getElementById('justificante').value = '';
+                document.getElementById('campo_29').value = '0.00';
+                validarYCalcular();
+            }
+        }
+
+        function limpiarFormulario() {
+            if (confirm('¿Desea limpiar todos los datos del formulario?')) {
+                // Clear identification
+                document.getElementById('nif').value = '';
+                document.getElementById('nombre').value = '';
+                document.getElementById('complementaria').checked = false;
+                document.getElementById('justificante').value = '';
+
+                // Clear all input fields
+                document.querySelectorAll('input[type="number"]').forEach(field => {
+                    field.value = '0';
+                });
+
+                // Clear IBAN
+                document.getElementById('iban').value = '';
+                document.getElementById('domiciliacion').checked = false;
+
+                // Reset periodo
+                document.getElementById('periodo').value = '';
+
+                // Recalculate
+                validarYCalcular();
+                toggleComplementaria();
+            }
+        }
+
+        function imprimirFormulario() {
+            window.print();
+        }
+
+        // Format number input on blur
+        document.querySelectorAll('input[type="number"]').forEach(field => {
+            field.addEventListener('blur', function() {
+                if (this.value) {
+                    const num = parseFloat(this.value);
+                    if (!isNaN(num)) {
+                        this.value = num.toFixed(2);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

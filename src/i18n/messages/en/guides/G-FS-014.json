@@ -1,0 +1,194 @@
+{
+  "title": "Water Quality",
+  "legalBasis": "Royal Decree 140/2003 establishing health criteria for the quality of water for human consumption; EU Directive 98/83/EC on the quality of water intended for human consumption; Royal Decree 865/2003 on common hygiene criteria for swimming pools and water installations at risk of proliferation of Legionella",
+  "summary": "Water quality is fundamental to food safety in hospitality establishments. All water used in food preparation, as an ingredient, for cleaning food-contact surfaces, or for ice production must meet the legal standards for drinking water (agua potable) established by Royal Decree 140/2003. This regulation implements EU Directive 98/83/EC and sets comprehensive microbiological and chemical parameters that water must satisfy to be considered safe for human consumption.\n\nMost hospitality establishments are connected to the municipal mains water supply (abastecimiento público), which is managed and monitored by the water supply company under the supervision of health authorities. In these cases, the water supply company is responsible for ensuring water quality meets legal standards. However, the establishment still has responsibilities for maintaining the internal water distribution system, managing water storage tanks if present, and ensuring that equipment such as ice machines does not compromise water quality.\n\nEstablishments using a private water supply (abastecimiento privado) — such as those in rural areas using wells or springs — bear full responsibility for water quality and must implement a comprehensive monitoring program. Regardless of the water source, food business operators must be able to demonstrate that the water used in their operations is safe and complies with legal requirements. Poor water quality can lead to serious foodborne illness outbreaks and immediate closure by health authorities.",
+  "keyPoints": [
+    "All water used in food preparation and as an ingredient must meet drinking water standards set by RD 140/2003",
+    "Establishments on mains water supply must maintain internal distribution systems to prevent contamination",
+    "Private water supplies require regular laboratory testing to verify compliance with microbiological and chemical parameters",
+    "Ice machines must be maintained and cleaned according to manufacturer specifications to prevent bacterial growth",
+    "Water storage tanks, if present, must be inspected, cleaned, and disinfected annually",
+    "Hot water systems must be managed to prevent Legionella proliferation",
+    "Water quality records and analysis reports must be maintained and available for inspection",
+    "Any change in water taste, odor, or appearance should be investigated immediately"
+  ],
+  "sections": [
+    {
+      "heading": "1. Legal Standards for Water Quality",
+      "content": "Royal Decree 140/2003 establishes the health criteria that water for human consumption must meet. The regulation defines water for human consumption as all water used in food businesses for drinking, food preparation, cleaning of food-contact surfaces, and ice production. The standards include microbiological parameters (bacteria, viruses, parasites), chemical parameters (heavy metals, pesticides, nitrates, organic compounds), and indicator parameters (turbidity, color, taste, odor).\n\nKey microbiological parameters include zero tolerance for Escherichia coli and Enterococci in any 100ml sample, which indicates fecal contamination. Colony counts at 22°C and 37°C must be within acceptable limits. Chemical parameters include maximum concentrations for substances such as lead (10 μg/L), nitrate (50 mg/L), and arsenic (10 μg/L). Indicator parameters such as turbidity, color, and odor must be acceptable to consumers and not indicate contamination.\n\nThe regulation assigns responsibilities to different actors: the water supply company for mains water quality, the establishment owner for internal distribution systems and private supplies, and health authorities for monitoring and enforcement. Failure to comply with water quality standards can result in immediate prohibition orders closing the establishment until the problem is resolved.",
+      "subsections": [
+        {
+          "heading": "1.1 Mains Water Supply Responsibilities",
+          "content": "Establishments connected to municipal mains water can generally assume that the water entering the property meets legal standards, as the supply company is required to monitor and maintain water quality throughout the public distribution network. However, this assumption should be verified periodically. The establishment can request water quality reports from the supply company, which must provide information about the water source, treatment processes, and monitoring results.\n\nThe establishment's responsibility begins at the point of supply (typically the water meter). The internal distribution system — pipes, storage tanks, fittings, and outlets — must be maintained to prevent contamination of the water as it travels from the meter to the point of use. This includes using appropriate materials for pipes and fittings (avoiding materials that can leach harmful substances), preventing backflow contamination through appropriate air gaps and backflow prevention devices, and maintaining water systems to prevent stagnation and biofilm formation."
+        },
+        {
+          "heading": "1.2 Private Water Supply Requirements",
+          "content": "Establishments using private water supplies — from wells, boreholes, springs, or rainwater collection systems — have comprehensive responsibilities for ensuring water quality. Private supplies must be registered with the health authority of the autonomous community. A risk assessment must be conducted to identify potential contamination sources (agricultural activities, septic systems, animal wastes, industrial discharges) and implement protective measures.\n\nRegular laboratory analysis is mandatory for private supplies. The frequency depends on the volume of water used, but as a minimum, microbiological testing (E. coli, Enterococci, colony counts) should be conducted quarterly, and comprehensive chemical analysis annually. Testing must be performed by an accredited laboratory. If analysis reveals non-compliance, immediate corrective action is required, which may include treatment system installation or upgrade, wellhead protection measures, or in serious cases, connection to mains supply if available."
+        },
+        {
+          "heading": "1.3 Water Treatment Requirements",
+          "content": "Private water supplies typically require treatment to ensure consistent compliance with drinking water standards. Common treatments include filtration to remove particles and turbidity, disinfection (usually chlorination or UV treatment) to control microbiological contamination, and depending on the raw water quality, additional treatments for pH adjustment, iron/manganese removal, or nitrate reduction.\n\nWater treatment systems must be designed by qualified professionals, installed correctly, and maintained according to manufacturer specifications. Disinfection systems require regular monitoring — chlorine residual should be checked daily to ensure the system is functioning. UV lamps must be replaced at recommended intervals. Filters must be changed when flow rates decrease or at maximum intervals specified by the manufacturer. Maintenance records must be kept and treatment system performance verified through regular water quality testing."
+        }
+      ]
+    },
+    {
+      "heading": "2. Internal Water Distribution Systems",
+      "content": "The internal water distribution system — the network of pipes, tanks, and fittings that deliver water from the point of supply to taps and equipment — must be designed, installed, and maintained to prevent water contamination. Even if water enters the property at high quality, poor internal systems can introduce contamination through backflow, leaching of pipe materials, stagnation, or biofilm growth.\n\nBackflow prevention is a critical concern. Backflow occurs when water flows backward through the system, potentially drawing contaminated water from equipment or drains into the potable water supply. This can happen due to back-pressure (when a downstream system has higher pressure) or back-siphonage (when the mains supply pressure drops). Appropriate backflow prevention devices or air gaps must be installed at points where backflow risk exists, particularly at dishwashers, chemical dispensers, hoses, and equipment with water connections.",
+      "subsections": [
+        {
+          "heading": "2.1 Materials and Installation Standards",
+          "content": "All materials used in contact with drinking water must comply with standards that prevent contamination. Pipes, fittings, tanks, and seals must be manufactured from food-grade materials that do not leach harmful substances into water. In Spain, materials in contact with drinking water must comply with RD 140/2003 requirements and hold appropriate certification.\n\nInstallation must follow good plumbing practice: hot and cold water pipes should be adequately separated or insulated to prevent temperature transfer, pipework should be properly supported to prevent sagging and dead-legs where water can stagnate, and the system should be designed to minimize the length of pipe runs and the number of connections where biofilm can develop. Maintenance access should be provided to all parts of the system. Any modifications to the water system should be performed by qualified plumbers using approved materials."
+        },
+        {
+          "heading": "2.2 Water Storage Tanks",
+          "content": "If the establishment has water storage tanks (depósitos de agua), strict management is required. Storage tanks can be a significant source of contamination if not properly maintained. Tanks must be constructed of suitable materials (typically food-grade plastic, fiberglass, or lined concrete), have secure covers to prevent entry of insects, birds, or debris, and have overflow pipes fitted with screens to prevent pest entry.\n\nTanks must be inspected and cleaned at least annually, or more frequently if water quality issues arise. Cleaning should be performed by a specialist company or trained staff following a documented procedure. The tank is drained, physically cleaned to remove sediment and biofilm, disinfected with an appropriate concentration of chlorine solution, thoroughly rinsed, and refilled. A water sample should be taken after cleaning and analyzed to verify microbiological quality. Records of all tank inspections, cleaning, and testing must be maintained."
+        },
+        {
+          "heading": "2.3 Cross-Connection Prevention",
+          "content": "Cross-connections — physical links between potable water systems and potential sources of contamination — are a serious hazard. Common cross-connection risks in hospitality include hoses with ends submerged in sinks or buckets, direct connections between potable water and equipment that may contain chemicals or contaminated water, and improperly installed aspirators or mixing valves.\n\nCross-connections must be identified and eliminated. Where a connection to equipment is necessary, an appropriate backflow prevention device must be installed, or an air gap maintained. An air gap — a physical vertical separation between the water outlet and the flood level of the receiving vessel — is the most reliable form of backflow prevention. The air gap must be at least twice the diameter of the inlet pipe and minimum 20mm. Any hoses should have vacuum breakers installed to prevent back-siphonage."
+        }
+      ]
+    },
+    {
+      "heading": "3. Ice Production and Management",
+      "content": "Ice is considered a food product and is subject to the same food safety requirements as any other food. Ice machines must produce ice from drinking-quality water, and the ice must be protected from contamination during production, storage, and service. Ice contamination can occur from poor machine hygiene, contaminated water, improper handling, or use of the ice bin for storage of bottles or other items.\n\nIce machines require regular cleaning and sanitization according to manufacturer instructions, typically every 3-6 months depending on water quality and usage levels. Many ice machines have internal surfaces and components that can harbor biofilm and mold if not properly maintained. Professional servicing by qualified technicians is recommended to ensure thorough cleaning of all internal components and verification of correct operation.",
+      "subsections": [
+        {
+          "heading": "3.1 Ice Machine Maintenance",
+          "content": "Manufacturers provide specific maintenance schedules and procedures for their ice machines. Typical maintenance includes regular inspection and cleaning of water filters, descaling to remove mineral deposits, sanitization of ice-contact surfaces using food-grade sanitizers, and replacement of worn components such as seals and filters. The frequency depends on water hardness, usage levels, and ambient conditions — machines in dusty or greasy environments require more frequent cleaning.\n\nExternal cleaning should be performed regularly to prevent dust and grease accumulation. The condenser coils should be cleaned periodically to maintain efficient operation. The ice bin interior should be emptied and cleaned monthly with food-safe sanitizer. Any components that contact ice must be thoroughly rinsed after cleaning to remove all traces of cleaning chemicals. A maintenance log should record all cleaning, servicing, and component replacement."
+        },
+        {
+          "heading": "3.2 Ice Handling Procedures",
+          "content": "Ice must be handled with the same care as any ready-to-eat food. Staff should wash hands before handling ice. A dedicated ice scoop should be used — never use glasses or hands to scoop ice. The ice scoop must be stored in a clean, designated location, not left in the ice bin where it can become contaminated. Ice bins must never be used to chill bottles or store other items, as this introduces contamination risk.\n\nIce for customer consumption and ice used for food preparation must come from machines producing ice from drinking water. Ice used solely for cooling purposes (such as display ice for seafood) can be produced from non-potable water if clearly separated and labeled, though in practice most establishments use drinking-quality water for all ice. Any ice that has been contaminated — for example, by a spillage or introduction of non-food items into the bin — must be completely discarded, the bin cleaned and sanitized, and fresh ice produced."
+        },
+        {
+          "heading": "3.3 Common Ice Contamination Issues",
+          "content": "Microbiological contamination of ice is more common than many operators realize. Studies routinely find ice from hospitality establishments contaminated with indicator bacteria suggesting poor hygiene. Common sources of contamination include infrequent machine cleaning allowing biofilm growth, contaminated water supply, poor hand hygiene by staff handling ice, use of contaminated scoops or glasses, and storage of bottles or other items in ice bins.\n\nPrevention requires a combination of regular machine maintenance, staff training on hygienic ice handling, use of dedicated scoops stored properly, and enforcement of the rule that only ice should be stored in ice bins. Periodic microbiological testing of ice can verify that hygiene measures are effective. If contamination is detected, immediate actions include discarding all ice, thoroughly cleaning and sanitizing the machine and bin, reviewing and reinforcing hygiene procedures, and retesting to verify the problem is resolved."
+        }
+      ]
+    },
+    {
+      "heading": "4. Legionella Risk Management",
+      "content": "Legionella bacteria can proliferate in water systems and cause Legionnaires' disease, a serious and potentially fatal form of pneumonia. Hospitality establishments with certain water systems are required to implement Legionella control measures under Royal Decree 865/2003. High-risk installations include cooling towers, evaporative condensers, hot tubs, decorative fountains, and hot water systems with storage tanks and extensive pipework.\n\nLegionella bacteria grow in water at temperatures between 20°C and 45°C, particularly in stagnant water where biofilm and sediment provide nutrients. The bacteria become a health hazard when they are aerosolized — dispersed in small water droplets that can be inhaled. Control measures focus on preventing bacterial growth through temperature management, maintaining system cleanliness, and minimizing stagnation and biofilm formation.",
+      "subsections": [
+        {
+          "heading": "4.1 Hot Water System Management",
+          "content": "Hot water systems should be designed and operated to prevent Legionella growth. Hot water should be stored at a minimum of 60°C and distributed at a minimum of 50°C at all outlets. This temperature regime kills Legionella bacteria and prevents growth. However, these temperatures also present a scalding risk, which must be managed through staff training and, in customer-accessible areas, possibly thermostatic mixing valves that reduce water temperature to safe levels (typically 40-43°C).\n\nStorage cylinders and calorifiers should be designed to prevent stratification (formation of temperature layers with cooler water at the bottom). Regular flushing of outlets, particularly infrequently used ones, prevents stagnation. Dead-legs (lengths of pipe that do not circulate) should be eliminated or kept as short as possible (maximum 2 meters). Temperature monitoring at sentinel outlets — the first and last outlets on each circuit, and those at greatest distance from the heat source — verifies that the system is maintaining target temperatures."
+        },
+        {
+          "heading": "4.2 Legionella Risk Assessment and Control Plan",
+          "content": "Establishments with installations identified as potential Legionella risks must conduct a risk assessment and implement a documented control plan. The risk assessment identifies all water systems, evaluates the conditions that could permit Legionella growth (water temperature, stagnation, biofilm, scale), and determines the risk level. High-risk systems require comprehensive control measures and regular monitoring.\n\nThe control plan documents the preventive measures to be implemented: temperature management protocols, water treatment (if applicable), cleaning and disinfection schedules, and monitoring procedures. Responsibilities must be assigned to named individuals. Records must be maintained of all monitoring activities, cleaning and disinfection, and any corrective actions. Many establishments contract with specialized companies to conduct the risk assessment, develop the control plan, and perform periodic monitoring and treatment."
+        },
+        {
+          "heading": "4.3 Monitoring and Maintenance",
+          "content": "Legionella control requires ongoing monitoring and maintenance. Temperature monitoring should be conducted monthly at sentinel outlets, recording both hot and cold water temperatures. Hot water should be ≥50°C and cold water <20°C. Any deviations require investigation and corrective action. Infrequently used outlets should be flushed weekly to prevent stagnation.\n\nCleaning and disinfection frequencies depend on the risk assessment. Storage tanks require annual inspection and cleaning. Shower heads and tap aerators should be descaled and disinfected quarterly in high-risk systems. Systems should be disinfected following any period of prolonged shutdown (such as seasonal closure) before bringing them back into service. Microbiological testing for Legionella is not routinely required but may be specified in high-risk situations or following an incident."
+        }
+      ]
+    },
+    {
+      "heading": "5. Monitoring and Testing",
+      "content": "Water quality monitoring and testing requirements vary depending on whether the establishment uses mains or private water supply, and on the specific systems and equipment in use. For establishments on mains water, routine testing is not legally required (as the supply company is responsible for monitoring), but periodic testing can provide assurance and is recommended, particularly if there have been any concerns about taste, odor, or appearance of the water.\n\nFor private water supplies, comprehensive testing is mandatory. A testing schedule should be established based on risk assessment, regulatory requirements, and any specific concerns identified. Testing must be performed by laboratories accredited for water analysis. Results must be evaluated against the standards in RD 140/2003, and any non-compliance must trigger immediate corrective action.",
+      "subsections": [
+        {
+          "heading": "5.1 Sampling Procedures",
+          "content": "Proper sampling technique is essential for reliable results. Samples should be collected in sterile bottles provided by the laboratory, following the laboratory's specific instructions. For microbiological analysis, the sample must be collected aseptically without contamination. The tap or outlet should be disinfected externally (typically with a flame or alcohol), allowed to run for a suitable period to flush the pipe, and the sample collected directly into the sterile bottle without touching the bottle rim to the outlet.\n\nSamples should be transported to the laboratory in a cool box (but not frozen) and must arrive at the laboratory within the specified time window (typically 24 hours for microbiological analysis). Sample bottles should be labeled with the sample location, date, time, and collector's name. For private supplies, samples should be collected from representative points including the source (well or spring), storage tanks if present, and distribution outlets in the establishment."
+        },
+        {
+          "heading": "5.2 Interpreting Test Results",
+          "content": "Water analysis reports provide results for the parameters tested, along with the regulatory limits from RD 140/2003. For microbiological parameters, the key indicators are E. coli and Enterococci, which should be absent in any 100ml sample — any detection indicates fecal contamination and requires immediate action. Colony counts at 22°C and 37°C should be within acceptable limits; elevated counts may indicate biofilm growth or stagnation in the distribution system.\n\nChemical parameters should all be below maximum limits. Common issues include elevated nitrate (indicating agricultural contamination), high iron or manganese (causing discoloration and taste issues), and occasionally lead (from old pipes). Indicator parameters such as turbidity, color, and odor should be acceptable — any adverse findings indicate investigation is needed even if microbiological and chemical parameters are compliant."
+        },
+        {
+          "heading": "5.3 Corrective Actions for Non-Compliance",
+          "content": "If water testing reveals non-compliance, immediate action is required. For microbiological contamination, the first step is to verify the result with a resample — contamination can sometimes result from poor sampling technique. If the resample confirms contamination, investigate the cause: source contamination, treatment system failure, or internal distribution system issues. Implement corrective measures (disinfection, treatment system repair or upgrade, pipe cleaning or replacement) and retest to verify effectiveness.\n\nFor chemical parameter exceedances, investigate whether the source is the water supply itself or leaching from internal systems. Source contamination may require alternative water sources, wellhead protection measures, or specific treatment processes (e.g., nitrate removal, pH adjustment). Leaching from pipes (e.g., lead from old plumbing) requires pipe replacement with appropriate materials. Until the problem is resolved, alternative water sources may be required (e.g., bottled water for drinking and food preparation), and the health authority must be notified."
+        }
+      ]
+    },
+    {
+      "heading": "6. Practical Water Safety Measures",
+      "content": "Beyond regulatory compliance, practical daily measures help ensure water safety in hospitality operations. Staff should be trained to recognize signs of water quality problems — changes in taste, odor, color, or turbidity — and to report them immediately. Even if microbiological contamination is not visible, changes in organoleptic properties may indicate problems developing.\n\nOperational practices such as regular flushing of infrequently used outlets, prompt repair of leaks and drips, and proper maintenance of water-using equipment contribute to water safety. Integration of water quality management into the HACCP system ensures systematic attention to this often-overlooked aspect of food safety.",
+      "subsections": [
+        {
+          "heading": "6.1 Daily Operational Practices",
+          "content": "Simple daily practices help maintain water quality in the internal distribution system. The first water drawn each morning should be flushed (run the tap for a short period) before using water for food preparation, as water that has been standing overnight in pipes may have elevated metal concentrations or bacterial counts. Outlets that are infrequently used should be identified and flushed weekly to prevent stagnation.\n\nAny changes in water characteristics should be investigated. Discoloration may indicate iron or manganese, or corrosion in the distribution system. Cloudiness or turbidity can result from air entrainment, particulate matter, or increased microbial activity. Unusual taste or odor should always be investigated. If water quality concerns arise, immediately switch to bottled water for drinking and food preparation until the problem is identified and resolved."
+        },
+        {
+          "heading": "6.2 Equipment and System Maintenance",
+          "content": "All water-using equipment should be maintained according to manufacturer recommendations. This includes dishwashers, water softeners, filtration systems, ice machines, and coffee machines. Filters should be changed at recommended intervals — clogged filters can become sites of bacterial growth. Water treatment equipment such as softeners must be regenerated and sanitized according to schedules.\n\nPipe work should be inspected periodically for leaks, corrosion, or damage. Leaks should be repaired promptly — they waste water, can cause property damage, and may allow contamination entry. Taps with dripping or leaking seals should be repaired. External hose connections should be fitted with backflow preventers and hoses stored off the ground when not in use. Any modification to the water system should be performed by qualified plumbers using approved materials."
+        },
+        {
+          "heading": "6.3 Integration with HACCP",
+          "content": "Water quality should be addressed in the HACCP system. The hazard analysis should identify water as a potential source of microbiological and chemical contamination. For establishments on mains water with well-maintained internal systems, water quality may be managed through prerequisite programs rather than identified as a CCP — periodic verification of supplier water quality reports, maintenance of the internal distribution system, and monitoring for changes in water characteristics.\n\nFor establishments with private water supplies or complex internal systems, water quality may be identified as a CCP, with critical limits based on RD 140/2003 parameters, monitoring through regular testing, and corrective actions defined for any non-compliance. Records of water quality testing, equipment maintenance, and any corrective actions should be maintained as part of HACCP documentation and available for verification during official inspections."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Daily Water Quality Checks",
+      "items": [
+        "Flush taps before first use of the day in food preparation areas",
+        "Check ice machine operation and ice quality (appearance, odor)",
+        "Verify no changes in water taste, odor, or appearance from normal",
+        "Check for any leaks or drips from taps, pipes, or equipment",
+        "Ensure dedicated ice scoop is in proper storage, not in ice bin",
+        "Clean external surfaces of ice machine if visibly soiled",
+        "Flush any infrequently used outlets identified on weekly schedule",
+        "Check hot water temperature at sentinel outlets if scheduled",
+        "Report any water quality concerns to management immediately"
+      ]
+    },
+    {
+      "title": "Monthly Water System Maintenance",
+      "items": [
+        "Clean ice machine bin interior with food-safe sanitizer",
+        "Check and replace water filters for ice machines, coffee machines, dishwashers as needed",
+        "Monitor hot and cold water temperatures at sentinel outlets (Legionella control)",
+        "Flush all infrequently used outlets to prevent stagnation",
+        "Inspect visible pipework for leaks, corrosion, or damage",
+        "Check backflow prevention devices are functioning correctly",
+        "Clean tap aerators and shower heads (remove scale and biofilm)",
+        "Review water quality records for any trends or concerns",
+        "Verify water softener regeneration is occurring as programmed (if applicable)",
+        "Record all maintenance activities in water system log"
+      ]
+    },
+    {
+      "title": "Annual Water System Review",
+      "items": [
+        "Schedule professional ice machine servicing and deep cleaning",
+        "Inspect and clean water storage tanks if present (by specialist company)",
+        "Conduct water quality testing (microbiological minimum) — more comprehensive for private supplies",
+        "Review Legionella risk assessment and update if system changes have occurred",
+        "Check calibration and function of temperature monitoring equipment",
+        "Inspect all backflow prevention devices and air gaps",
+        "Review water quality records from supply company (mains water) or private supply testing",
+        "Update water quality procedures in HACCP documentation if needed",
+        "Verify staff training on water safety procedures is current",
+        "Schedule any required repairs or upgrades to water systems",
+        "Document annual review and file with HACCP verification records"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Treat water quality as a fundamental prerequisite for food safety, not an afterthought — establish robust monitoring and maintenance systems",
+    "Develop a positive relationship with your water supply company or private supply specialist to ensure prompt response to any concerns",
+    "Train all staff to recognize and report changes in water characteristics immediately — early detection prevents food safety incidents",
+    "Maintain ice machines as food production equipment with rigorous cleaning schedules, not as passive appliances",
+    "For private water supplies, establish testing schedules that exceed minimum legal requirements to provide early warning of developing problems",
+    "Keep comprehensive records of all water system maintenance, testing, and corrective actions as part of HACCP documentation",
+    "After any period of closure or infrequent use, flush all water systems thoroughly before resuming food operations",
+    "Consider installing additional treatment or monitoring equipment (e.g., UV disinfection, automated temperature monitoring) for enhanced safety assurance"
+  ],
+  "glossary": {
+    "Agua Potable": "Drinking water — water meeting the health quality criteria established in RD 140/2003 and suitable for human consumption",
+    "Air Gap": "A physical vertical separation between the water outlet and the flood level of a receiving vessel, preventing backflow contamination",
+    "Backflow": "Reverse flow of water in a distribution system, potentially allowing contaminated water to enter the potable water supply",
+    "Biofilm": "A layer of microorganisms and extracellular material that forms on surfaces in contact with water, providing protection and nutrients for bacterial growth",
+    "Colony Count": "The number of bacterial colonies that grow from a water sample under specified conditions, used as an indicator of overall bacterial content",
+    "E. coli (Escherichia coli)": "A bacterial species used as an indicator of fecal contamination; presence in water indicates serious contamination and health risk",
+    "Legionella": "Bacteria that can cause Legionnaires' disease; grows in water systems at 20-45°C and becomes hazardous when aerosolized and inhaled",
+    "Sentinel Outlet": "A water outlet selected for monitoring because its location makes it representative of system conditions (e.g., furthest from heat source, end of circulation loop)",
+    "Stagnation": "Water remaining stationary in pipes or tanks for extended periods, allowing bacterial growth and accumulation of leached substances",
+    "Turbidity": "The cloudiness of water caused by suspended particles; high turbidity can indicate contamination and interfere with disinfection processes"
+  }
+}

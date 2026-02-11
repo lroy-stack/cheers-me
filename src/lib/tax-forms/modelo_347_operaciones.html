@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo 347 - Declaración anual de operaciones con terceras personas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            border-bottom: 4px solid #004080;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #004080;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo-subtext {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        .header-title {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .header-title h1 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .header-title p {
+            font-size: 14px;
+            opacity: 0.95;
+        }
+
+        .ejercicio {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: right;
+            padding: 10px 20px;
+            background-color: #004080;
+            border-radius: 4px;
+        }
+
+        /* Section Styles */
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #003366;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            background-color: #003366;
+            color: white;
+            padding: 12px 15px;
+            margin: -20px -20px 15px -20px;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* Form Grid */
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: #003366;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group input[type="number"],
+        .form-group select {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 13px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .form-group input[type="text"]:focus,
+        .form-group input[type="email"]:focus,
+        .form-group input[type="tel"]:focus,
+        .form-group input[type="number"]:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #003366;
+            box-shadow: 0 0 5px rgba(0, 51, 102, 0.3);
+            background-color: #f0f5ff;
+        }
+
+        .form-group input[type="checkbox"] {
+            margin-right: 8px;
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .checkbox-group label {
+            margin: 0;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        /* Checkbox with inline field */
+        .checkbox-with-field {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 10px;
+            align-items: end;
+        }
+
+        .checkbox-with-field .checkbox-group {
+            margin-bottom: 0;
+        }
+
+        .checkbox-with-field .form-group {
+            margin-bottom: 0;
+        }
+
+        /* Summary Section */
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .summary-item {
+            background-color: white;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            border-left: 4px solid #004080;
+        }
+
+        .summary-item-label {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        .summary-item-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        /* Table Styles */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        table thead {
+            background-color: #003366;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        table thead th {
+            padding: 12px 8px;
+            text-align: left;
+            font-weight: 600;
+            border-right: 1px solid #004080;
+            white-space: nowrap;
+            font-size: 12px;
+        }
+
+        table thead th:last-child {
+            border-right: none;
+        }
+
+        table tbody tr {
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        table tbody tr:hover {
+            background-color: #f0f5ff;
+        }
+
+        table tbody td {
+            padding: 10px 8px;
+            border-right: 1px solid #e0e0e0;
+        }
+
+        table tbody td:last-child {
+            border-right: none;
+        }
+
+        table tbody tr.summary-row {
+            background-color: #f0f0f0;
+            font-weight: 600;
+            border-top: 2px solid #003366;
+        }
+
+        table tbody tr.summary-row td {
+            padding: 12px 8px;
+            border-right: 1px solid #ccc;
+        }
+
+        .row-number {
+            background-color: #f0f0f0;
+            text-align: center;
+            font-weight: 600;
+            color: #003366;
+        }
+
+        /* Input in Table */
+        table input[type="text"],
+        table input[type="number"],
+        table select,
+        table input[type="checkbox"] {
+            width: 100%;
+            padding: 6px 4px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 12px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        table input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        table input[type="text"]:focus,
+        table input[type="number"]:focus,
+        table select:focus {
+            outline: none;
+            border-color: #003366;
+            box-shadow: 0 0 4px rgba(0, 51, 102, 0.3);
+            background-color: #fffef0;
+        }
+
+        /* Buttons */
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background-color: #003366;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #004080;
+            box-shadow: 0 4px 8px rgba(0, 51, 102, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: #666;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #555;
+        }
+
+        .btn-danger {
+            background-color: #c41e3a;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: #a01830;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
+
+        /* Warning and Error Messages */
+        .alert {
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            border-left: 4px solid;
+        }
+
+        .alert-warning {
+            background-color: #fff3cd;
+            color: #856404;
+            border-color: #ffc107;
+        }
+
+        .alert-danger {
+            background-color: #f8d7da;
+            color: #721c24;
+            border-color: #f5c6cb;
+        }
+
+        .alert-info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border-color: #bee5eb;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+
+            .button-group {
+                display: none;
+            }
+
+            .section {
+                page-break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+
+            .table-wrapper {
+                page-break-inside: avoid;
+            }
+
+            table {
+                font-size: 11px;
+            }
+
+            table thead th {
+                padding: 8px 4px;
+                font-size: 10px;
+            }
+
+            table tbody td {
+                padding: 6px 4px;
+            }
+
+            input, select {
+                border: none;
+                background-color: transparent;
+            }
+
+            .header {
+                page-break-after: avoid;
+            }
+
+            .section::before {
+                content: '';
+                display: block;
+                height: 0;
+                page-break-before: always;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-group-row {
+                grid-template-columns: 1fr;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header-top {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+
+        /* Help Text */
+        .help-text {
+            font-size: 11px;
+            color: #666;
+            margin-top: 3px;
+            font-style: italic;
+        }
+
+        /* Validation Classes */
+        .error {
+            border-color: #c41e3a !important;
+            background-color: #ffe8e8 !important;
+        }
+
+        .success {
+            border-color: #28a745 !important;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #f0f0f0;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #ccc;
+        }
+
+        .footer-text {
+            margin: 5px 0;
+        }
+
+        /* Modal for warnings */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .modal-content h2 {
+            color: #003366;
+            margin-bottom: 15px;
+        }
+
+        .modal-content p {
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        /* Input formatting */
+        .currency {
+            text-align: right;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-top">
+                <div class="logo-section">
+                    <div>
+                        <div class="logo-text">Agencia Tributaria</div>
+                        <div class="logo-subtext">MINISTERIO DE HACIENDA</div>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <h1>Modelo 347</h1>
+                    <p>Declaración anual de operaciones con terceras personas</p>
+                </div>
+                <div class="ejercicio">Ejercicio 2026</div>
+            </div>
+        </div>
+
+        <!-- Sección: Datos del Declarante -->
+        <div class="section">
+            <div class="section-title">Datos del Declarante</div>
+            
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="nif_declarante">NIF del Declarante *</label>
+                    <input type="text" id="nif_declarante" placeholder="12345678X" maxlength="9" class="required-field">
+                    <div class="help-text">Formato: 8 dígitos + 1 letra</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="razon_social">Apellidos y nombre / Razón social *</label>
+                    <input type="text" id="razon_social" class="required-field">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono de contacto</label>
+                    <input type="tel" id="telefono" placeholder="+34 xxx xxx xxx">
+                </div>
+
+                <div class="form-group">
+                    <label for="persona_contacto">Persona de contacto</label>
+                    <input type="text" id="persona_contacto">
+                </div>
+
+                <div class="form-group">
+                    <label for="nif_representante">NIF del Representante</label>
+                    <input type="text" id="nif_representante" placeholder="12345678X" maxlength="9">
+                    <div class="help-text">Si es aplicable</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre_representante">Nombre del Representante</label>
+                    <input type="text" id="nombre_representante">
+                </div>
+            </div>
+
+            <!-- Complementaria y Sustitutiva -->
+            <div class="form-grid" style="margin-top: 20px;">
+                <div class="checkbox-with-field">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="declaracion_complementaria">
+                        <label for="declaracion_complementaria">Declaración Complementaria</label>
+                    </div>
+                    <div class="form-group" style="margin: 0;">
+                        <input type="text" id="justificante_complementaria" placeholder="Nº justificante" disabled>
+                    </div>
+                </div>
+
+                <div class="checkbox-with-field">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="declaracion_sustitutiva">
+                        <label for="declaracion_sustitutiva">Declaración Sustitutiva</label>
+                    </div>
+                    <div class="form-group" style="margin: 0;">
+                        <input type="text" id="justificante_sustitutiva" placeholder="Nº justificante" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección: Resumen de Datos -->
+        <div class="section">
+            <div class="section-title">Resumen de Datos Incluidos en la Declaración</div>
+            
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <div class="summary-item-label">Número Total de Declarados</div>
+                    <div class="summary-item-value" id="total_declarados">0</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-item-label">Importe Total Anual (€)</div>
+                    <div class="summary-item-value" id="importe_total">0,00 €</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección: Relación de Declarados -->
+        <div class="section">
+            <div class="section-title">Relación de Personas o Entidades Declaradas</div>
+            
+            <div id="warnings-container"></div>
+
+            <div class="table-wrapper">
+                <table id="tabla-declarados">
+                    <thead>
+                        <tr>
+                            <th style="width: 30px;">#</th>
+                            <th>NIF Declarado</th>
+                            <th>NIF Rep.</th>
+                            <th>Apellidos / Razón Social</th>
+                            <th>Prov.</th>
+                            <th>País</th>
+                            <th>Clave Op.</th>
+                            <th>Importe Anual</th>
+                            <th>Seg.</th>
+                            <th>Arrend.</th>
+                            <th>Metálico</th>
+                            <th>Imp. Metálico</th>
+                            <th>Imp. Trans. Inmuebles</th>
+                            <th>Conv. BDNS</th>
+                            <th>1T</th>
+                            <th>2T</th>
+                            <th>3T</th>
+                            <th>4T</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-declarados">
+                        <!-- Rows will be generated here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="button-group" style="margin-top: 15px; justify-content: flex-start;">
+                <button type="button" class="btn-primary" onclick="addDeclarado()">+ Añadir Declarado</button>
+                <button type="button" class="btn-danger" onclick="removeSelectedDeclarados()">Eliminar Seleccionados</button>
+            </div>
+        </div>
+
+        <!-- Sección: Resumen por Clave de Operación -->
+        <div class="section">
+            <div class="section-title">Resumen por Clave de Operación</div>
+            
+            <div class="table-wrapper">
+                <table id="tabla-resumen">
+                    <thead>
+                        <tr>
+                            <th>Clave</th>
+                            <th>Descripción</th>
+                            <th>Nº Operaciones</th>
+                            <th>Importe Total (€)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-resumen">
+                        <tr>
+                            <td>A</td>
+                            <td>Compras</td>
+                            <td class="text-center">0</td>
+                            <td class="text-right">0,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>Ventas</td>
+                            <td class="text-center">0</td>
+                            <td class="text-right">0,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>Cobros mayor a 300,51€</td>
+                            <td class="text-center">0</td>
+                            <td class="text-right">0,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>D</td>
+                            <td>Adquisiciones entes públicos</td>
+                            <td class="text-center">0</td>
+                            <td class="text-right">0,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>E</td>
+                            <td>Subvenciones</td>
+                            <td class="text-center">0</td>
+                            <td class="text-right">0,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>Ventas agencias viajes</td>
+                            <td class="text-center">0</td>
+                            <td class="text-right">0,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>G</td>
+                            <td>Compras agencias viajes</td>
+                            <td class="text-center">0</td>
+                            <td class="text-right">0,00 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="button-group">
+            <button type="button" class="btn-primary" onclick="printForm()">Imprimir</button>
+            <button type="button" class="btn-success" onclick="exportToCSV()">Exportar a CSV</button>
+            <button type="button" class="btn-secondary" onclick="clearForm()">Limpiar Formulario</button>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-text">Formulario Modelo 347 - Ejercicio 2026</div>
+            <div class="footer-text">Generado con validación automática de cálculos y formatos</div>
+        </div>
+    </div>
+
+    <!-- Modal de confirmación -->
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <h2>Confirmación</h2>
+            <p id="modalMessage"></p>
+            <div class="modal-buttons">
+                <button type="button" class="btn-secondary" onclick="closeModal()">Cancelar</button>
+                <button type="button" class="btn-primary" onclick="confirmAction()">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ====== CONSTANTES Y DATOS ======
+        const PROVINCIAS = {
+            '01': 'Álava', '02': 'Albacete', '03': 'Alicante', '04': 'Almería',
+            '05': 'Ávila', '06': 'Badajoz', '07': 'Baleares', '08': 'Barcelona',
+            '09': 'Burgos', '10': 'Cáceres', '11': 'Cádiz', '12': 'Castellón',
+            '13': 'Ciudad Real', '14': 'Córdoba', '15': 'A Coruña', '16': 'Cuenca',
+            '17': 'Girona', '18': 'Granada', '19': 'Guadalajara', '20': 'Gipuzkoa',
+            '21': 'Huelva', '22': 'Huesca', '23': 'Jaén', '24': 'León',
+            '25': 'Lleida', '26': 'La Rioja', '27': 'Lugo', '28': 'Madrid',
+            '29': 'Málaga', '30': 'Murcia', '31': 'Navarra', '32': 'Ourense',
+            '33': 'Asturias', '34': 'Palencia', '35': 'Las Palmas', '36': 'Pontevedra',
+            '37': 'Salamanca', '38': 'S.C.Tenerife', '39': 'Cantabria', '40': 'Segovia',
+            '41': 'Sevilla', '42': 'Soria', '43': 'Tarragona', '44': 'Teruel',
+            '45': 'Toledo', '46': 'Valencia', '47': 'Valladolid', '48': 'Bizkaia',
+            '49': 'Zamora', '50': 'Zaragoza', '51': 'Ceuta', '52': 'Melilla'
+        };
+
+        const CLAVES_OPERACION = {
+            'A': 'Compras',
+            'B': 'Ventas',
+            'C': 'Cobros >300,51€',
+            'D': 'Adquisiciones entes públicos',
+            'E': 'Subvenciones',
+            'F': 'Ventas agencias viajes',
+            'G': 'Compras agencias viajes'
+        };
+
+        const IMPORTE_MINIMO = 3005.06;
+
+        let declaradosData = [];
+        let nextId = 1;
+        let pendingAction = null;
+
+        // ====== INICIALIZACIÓN ======
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeForm();
+            addDeclarado();
+            setupEventListeners();
+        });
+
+        function initializeForm() {
+            // Event listeners para declaración complementaria/sustitutiva
+            document.getElementById('declaracion_complementaria').addEventListener('change', function() {
+                document.getElementById('justificante_complementaria').disabled = !this.checked;
+            });
+
+            document.getElementById('declaracion_sustitutiva').addEventListener('change', function() {
+                document.getElementById('justificante_sustitutiva').disabled = !this.checked;
+            });
+        }
+
+        function setupEventListeners() {
+            // Los eventos para cálculos se asignan dinámicamente en addDeclarado()
+        }
+
+        // ====== FUNCIONES DE TABLA ======
+        function addDeclarado() {
+            const tbody = document.getElementById('tbody-declarados');
+            const rowIndex = declaradosData.length;
+            const id = nextId++;
+
+            const declarado = {
+                id: id,
+                nif: '',
+                nif_rep: '',
+                razon_social: '',
+                provincia: '28',
+                pais: 'ES',
+                clave_op: 'A',
+                importe_anual: 0,
+                operacion_seguro: false,
+                arrendamiento: false,
+                operacion_metalico: false,
+                importe_metalico: 0,
+                importe_transmision_inmuebles: 0,
+                convocatoria_bdns: '',
+                trimestre_1: 0,
+                trimestre_2: 0,
+                trimestre_3: 0,
+                trimestre_4: 0
+            };
+
+            declaradosData.push(declarado);
+
+            const row = createDeclaradoRow(rowIndex, id);
+            tbody.appendChild(row);
+
+            updateSummary();
+        }
+
+        function createDeclaradoRow(rowIndex, id) {
+            const row = document.createElement('tr');
+            row.id = `row-${id}`;
+            row.innerHTML = `
+                <td class="row-number" style="text-align: center;">
+                    <input type="checkbox" class="row-checkbox" data-id="${id}">
+                </td>
+                <td>
+                    <input type="text" class="nif-declarado" placeholder="12345678X" maxlength="9" data-id="${id}">
+                </td>
+                <td>
+                    <input type="text" class="nif-rep" placeholder="Opt." maxlength="9" data-id="${id}">
+                </td>
+                <td>
+                    <input type="text" class="razon-social" data-id="${id}">
+                </td>
+                <td>
+                    <select class="provincia" data-id="${id}">
+                        ${Object.entries(PROVINCIAS).map(([code, name]) => 
+                            `<option value="${code}" ${code === '28' ? 'selected' : ''}>${code}</option>`
+                        ).join('')}
+                    </select>
+                </td>
+                <td>
+                    <input type="text" class="pais" maxlength="2" placeholder="ES" value="ES" data-id="${id}">
+                </td>
+                <td>
+                    <select class="clave-operacion" data-id="${id}">
+                        ${Object.entries(CLAVES_OPERACION).map(([code, desc]) => 
+                            `<option value="${code}" ${code === 'A' ? 'selected' : ''}>${code}</option>`
+                        ).join('')}
+                    </select>
+                </td>
+                <td class="currency">
+                    <input type="number" class="importe-anual" step="0.01" min="0" value="0" data-id="${id}" readonly style="background-color: #f0f0f0;">
+                </td>
+                <td style="text-align: center;">
+                    <input type="checkbox" class="operacion-seguro" data-id="${id}">
+                </td>
+                <td style="text-align: center;">
+                    <input type="checkbox" class="arrendamiento" data-id="${id}">
+                </td>
+                <td style="text-align: center;">
+                    <input type="checkbox" class="operacion-metalico" data-id="${id}">
+                </td>
+                <td class="currency">
+                    <input type="number" class="importe-metalico" step="0.01" min="0" value="0" data-id="${id}">
+                </td>
+                <td class="currency">
+                    <input type="number" class="importe-transmision" step="0.01" min="0" value="0" data-id="${id}">
+                </td>
+                <td>
+                    <input type="text" class="convocatoria-bdns" data-id="${id}">
+                </td>
+                <td class="currency">
+                    <input type="number" class="trimestre-1" step="0.01" min="0" value="0" data-id="${id}">
+                </td>
+                <td class="currency">
+                    <input type="number" class="trimestre-2" step="0.01" min="0" value="0" data-id="${id}">
+                </td>
+                <td class="currency">
+                    <input type="number" class="trimestre-3" step="0.01" min="0" value="0" data-id="${id}">
+                </td>
+                <td class="currency">
+                    <input type="number" class="trimestre-4" step="0.01" min="0" value="0" data-id="${id}">
+                </td>
+                <td style="text-align: center;">
+                    <button type="button" class="btn-danger" style="padding: 5px 10px; font-size: 12px;" onclick="removeDeclarado(${id})">×</button>
+                </td>
+            `;
+
+            // Attach event listeners
+            const inputs = row.querySelectorAll('input[type="number"], input[type="text"]');
+            inputs.forEach(input => {
+                if (input.classList.contains('trimestre-1') || 
+                    input.classList.contains('trimestre-2') ||
+                    input.classList.contains('trimestre-3') ||
+                    input.classList.contains('trimestre-4')) {
+                    input.addEventListener('change', () => calculateDeclaradoImporte(id));
+                    input.addEventListener('input', () => calculateDeclaradoImporte(id));
+                }
+            });
+
+            const selects = row.querySelectorAll('select');
+            selects.forEach(select => {
+                select.addEventListener('change', () => updateFormData(id));
+            });
+
+            const checkboxes = row.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                if (!checkbox.classList.contains('row-checkbox')) {
+                    checkbox.addEventListener('change', () => updateFormData(id));
+                }
+            });
+
+            inputs.forEach(input => {
+                input.addEventListener('change', () => updateFormData(id));
+            });
+
+            return row;
+        }
+
+        function calculateDeclaradoImporte(id) {
+            const t1 = parseFloat(document.querySelector(`.trimestre-1[data-id="${id}"]`).value) || 0;
+            const t2 = parseFloat(document.querySelector(`.trimestre-2[data-id="${id}"]`).value) || 0;
+            const t3 = parseFloat(document.querySelector(`.trimestre-3[data-id="${id}"]`).value) || 0;
+            const t4 = parseFloat(document.querySelector(`.trimestre-4[data-id="${id}"]`).value) || 0;
+
+            const total = t1 + t2 + t3 + t4;
+            const importeInput = document.querySelector(`.importe-anual[data-id="${id}"]`);
+            importeInput.value = total.toFixed(2);
+
+            updateFormData(id);
+            updateSummary();
+
+            // Validar importe mínimo
+            if (total > 0 && total < IMPORTE_MINIMO) {
+                showWarning(`Declarado ${id}: Importe anual (${formatCurrency(total)}) es menor a ${formatCurrency(IMPORTE_MINIMO)}`);
+            }
+        }
+
+        function updateFormData(id) {
+            const index = declaradosData.findIndex(d => d.id === id);
+            if (index === -1) return;
+
+            const row = document.getElementById(`row-${id}`);
+            declaradosData[index] = {
+                id: id,
+                nif: row.querySelector('.nif-declarado').value,
+                nif_rep: row.querySelector('.nif-rep').value,
+                razon_social: row.querySelector('.razon-social').value,
+                provincia: row.querySelector('.provincia').value,
+                pais: row.querySelector('.pais').value,
+                clave_op: row.querySelector('.clave-operacion').value,
+                importe_anual: parseFloat(row.querySelector('.importe-anual').value) || 0,
+                operacion_seguro: row.querySelector('.operacion-seguro').checked,
+                arrendamiento: row.querySelector('.arrendamiento').checked,
+                operacion_metalico: row.querySelector('.operacion-metalico').checked,
+                importe_metalico: parseFloat(row.querySelector('.importe-metalico').value) || 0,
+                importe_transmision_inmuebles: parseFloat(row.querySelector('.importe-transmision').value) || 0,
+                convocatoria_bdns: row.querySelector('.convocatoria-bdns').value,
+                trimestre_1: parseFloat(row.querySelector('.trimestre-1').value) || 0,
+                trimestre_2: parseFloat(row.querySelector('.trimestre-2').value) || 0,
+                trimestre_3: parseFloat(row.querySelector('.trimestre-3').value) || 0,
+                trimestre_4: parseFloat(row.querySelector('.trimestre-4').value) || 0
+            };
+        }
+
+        function removeDeclarado(id) {
+            const row = document.getElementById(`row-${id}`);
+            if (row) {
+                row.remove();
+                declaradosData = declaradosData.filter(d => d.id !== id);
+                updateSummary();
+            }
+        }
+
+        function removeSelectedDeclarados() {
+            const checkboxes = document.querySelectorAll('.row-checkbox:checked');
+            if (checkboxes.length === 0) {
+                alert('Selecciona al menos un declarado para eliminar');
+                return;
+            }
+
+            pendingAction = () => {
+                checkboxes.forEach(checkbox => {
+                    const id = parseInt(checkbox.getAttribute('data-id'));
+                    removeDeclarado(id);
+                });
+            };
+
+            showConfirmModal(`¿Estás seguro de que deseas eliminar ${checkboxes.length} declarado(s)?`);
+        }
+
+        // ====== FUNCIONES DE ACTUALIZACIÓN ======
+        function updateSummary() {
+            // Actualizar contador total
+            const totalDeclarados = declaradosData.length;
+            document.getElementById('total_declarados').textContent = totalDeclarados;
+
+            // Actualizar importe total
+            const importeTotal = declaradosData.reduce((sum, d) => sum + d.importe_anual, 0);
+            document.getElementById('importe_total').textContent = formatCurrency(importeTotal);
+
+            // Actualizar resumen por clave de operación
+            updateResumenPorClave();
+        }
+
+        function updateResumenPorClave() {
+            const resumen = {};
+            Object.keys(CLAVES_OPERACION).forEach(clave => {
+                resumen[clave] = { cantidad: 0, importe: 0 };
+            });
+
+            declaradosData.forEach(declarado => {
+                if (resumen[declarado.clave_op]) {
+                    resumen[declarado.clave_op].cantidad++;
+                    resumen[declarado.clave_op].importe += declarado.importe_anual;
+                }
+            });
+
+            const tbody = document.getElementById('tbody-resumen');
+            const rows = tbody.querySelectorAll('tr');
+
+            rows.forEach((row, index) => {
+                const clave = row.querySelector('td').textContent;
+                if (resumen[clave]) {
+                    const cells = row.querySelectorAll('td');
+                    cells[2].textContent = resumen[clave].cantidad;
+                    cells[3].textContent = formatCurrency(resumen[clave].importe);
+                }
+            });
+        }
+
+        // ====== FUNCIONES DE VALIDACIÓN ======
+        function validateNIF(nif) {
+            const nifPattern = /^[0-9]{8}[A-Z]$/i;
+            return nifPattern.test(nif);
+        }
+
+        function validateForm() {
+            const warnings = [];
+
+            // Validar declarante
+            const nifDeclarante = document.getElementById('nif_declarante').value;
+            const razonSocial = document.getElementById('razon_social').value;
+
+            if (!nifDeclarante) {
+                warnings.push('NIF del declarante es obligatorio');
+            } else if (!validateNIF(nifDeclarante)) {
+                warnings.push('Formato de NIF del declarante inválido');
+            }
+
+            if (!razonSocial) {
+                warnings.push('Razón social del declarante es obligatoria');
+            }
+
+            // Validar declarados
+            declaradosData.forEach((declarado, index) => {
+                if (declarado.nif && !validateNIF(declarado.nif)) {
+                    warnings.push(`Declarado ${index + 1}: Formato de NIF inválido`);
+                }
+
+                if (declarado.importe_anual > 0 && declarado.importe_anual < IMPORTE_MINIMO) {
+                    warnings.push(`Declarado ${index + 1}: Importe (${formatCurrency(declarado.importe_anual)}) es menor a ${formatCurrency(IMPORTE_MINIMO)}`);
+                }
+            });
+
+            return warnings;
+        }
+
+        function showWarning(message) {
+            const container = document.getElementById('warnings-container');
+            const alert = document.createElement('div');
+            alert.className = 'alert alert-warning';
+            alert.textContent = message;
+            container.appendChild(alert);
+
+            setTimeout(() => alert.remove(), 5000);
+        }
+
+        // ====== FUNCIONES DE UTILIDAD ======
+        function formatCurrency(value) {
+            return new Intl.NumberFormat('es-ES', {
+                style: 'currency',
+                currency: 'EUR'
+            }).format(value);
+        }
+
+        function formatDecimal(value) {
+            return parseFloat(value).toFixed(2);
+        }
+
+        // ====== FUNCIONES DE ACCIONES ======
+        function clearForm() {
+            pendingAction = () => {
+                // Clear declarant data
+                document.getElementById('nif_declarante').value = '';
+                document.getElementById('razon_social').value = '';
+                document.getElementById('telefono').value = '';
+                document.getElementById('persona_contacto').value = '';
+                document.getElementById('nif_representante').value = '';
+                document.getElementById('nombre_representante').value = '';
+                document.getElementById('declaracion_complementaria').checked = false;
+                document.getElementById('justificante_complementaria').value = '';
+                document.getElementById('declaracion_sustitutiva').checked = false;
+                document.getElementById('justificante_sustitutiva').value = '';
+
+                // Clear all declarados
+                const tbody = document.getElementById('tbody-declarados');
+                tbody.innerHTML = '';
+                declaradosData = [];
+                nextId = 1;
+
+                // Add first empty row
+                addDeclarado();
+                updateSummary();
+
+                document.getElementById('warnings-container').innerHTML = '';
+            };
+
+            showConfirmModal('¿Deseas borrar todos los datos del formulario?');
+        }
+
+        function printForm() {
+            // Validate before printing
+            const warnings = validateForm();
+            if (warnings.length > 0) {
+                alert('Advertencias encontradas:\n\n' + warnings.join('\n') + '\n\nPuedes continuar con la impresión');
+            }
+
+            window.print();
+        }
+
+        function exportToCSV() {
+            if (declaradosData.length === 0) {
+                alert('No hay declarados para exportar');
+                return;
+            }
+
+            let csv = 'NIF,NIF Representante,Razón Social,Provincia,País,Clave,Importe Anual,Seguro,Arrendamiento,Metálico,Importe Metálico,Transmisión Inmuebles,Conv. BDNS,1T,2T,3T,4T\n';
+
+            declaradosData.forEach(declarado => {
+                csv += `"${declarado.nif}","${declarado.nif_rep}","${declarado.razon_social}","${declarado.provincia}","${declarado.pais}","${declarado.clave_op}",${declarado.importe_anual.toFixed(2)},"${declarado.operacion_seguro ? 'Sí' : 'No'}","${declarado.arrendamiento ? 'Sí' : 'No'}","${declarado.operacion_metalico ? 'Sí' : 'No'}",${declarado.importe_metalico.toFixed(2)},${declarado.importe_transmision_inmuebles.toFixed(2)},"${declarado.convocatoria_bdns}",${declarado.trimestre_1.toFixed(2)},${declarado.trimestre_2.toFixed(2)},${declarado.trimestre_3.toFixed(2)},${declarado.trimestre_4.toFixed(2)}\n`;
+            });
+
+            const element = document.createElement('a');
+            element.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv));
+            element.setAttribute('download', 'modelo_347_declarados.csv');
+            element.style.display = 'none';
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        }
+
+        // ====== MODAL FUNCTIONS ======
+        function showConfirmModal(message) {
+            document.getElementById('modalMessage').textContent = message;
+            document.getElementById('confirmModal').classList.add('show');
+        }
+
+        function closeModal() {
+            document.getElementById('confirmModal').classList.remove('show');
+            pendingAction = null;
+        }
+
+        function confirmAction() {
+            if (pendingAction) {
+                pendingAction();
+            }
+            closeModal();
+        }
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('confirmModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

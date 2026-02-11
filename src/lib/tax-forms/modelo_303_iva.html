@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo 303 - Impuesto sobre el Valor Añadido - Autoliquidación</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            color: #333;
+        }
+
+        .form-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* HEADER */
+        .form-header {
+            background: linear-gradient(135deg, #003366 0%, #004080 100%);
+            color: white;
+            padding: 20px;
+            border-bottom: 3px solid #004080;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .logo-section {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .logo-text {
+            font-size: 11px;
+            font-weight: normal;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
+        .logo-main {
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        .form-number {
+            text-align: right;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .form-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .form-subtitle {
+            font-size: 13px;
+            text-align: center;
+            opacity: 0.95;
+        }
+
+        .header-controls {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .header-control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .header-control-label {
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .header-control-input {
+            padding: 8px 10px;
+            font-size: 13px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 3px;
+            background-color: rgba(255, 255, 255, 0.15);
+            color: white;
+            font-weight: 500;
+        }
+
+        .header-control-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .header-control-input option {
+            color: #333;
+            background-color: white;
+        }
+
+        /* MAIN CONTENT */
+        .form-content {
+            padding: 20px;
+        }
+
+        /* SECTION HEADERS */
+        .section-header {
+            background-color: #003366;
+            color: white;
+            padding: 12px 15px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            border-left: 4px solid #004080;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .section-header.first {
+            margin-top: 0;
+        }
+
+        /* IDENTIFICATION SECTION */
+        .identification-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-label {
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .form-input {
+            padding: 10px 12px;
+            border: none;
+            border-bottom: 1px dotted #999;
+            font-size: 13px;
+            background-color: transparent;
+            font-family: 'Courier New', monospace;
+            color: #333;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-bottom-color: #004080;
+            background-color: rgba(0, 64, 128, 0.05);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #004080;
+        }
+
+        .checkbox-label {
+            font-size: 12px;
+            color: #333;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .casilla-label {
+            font-size: 10px;
+            color: #666;
+            margin-top: -5px;
+            font-weight: normal;
+        }
+
+        /* TABLES */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border: 1px solid #999;
+        }
+
+        .data-table thead {
+            background-color: #004080;
+            color: white;
+        }
+
+        .data-table thead th {
+            padding: 12px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            border: 1px solid #666;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .data-table tbody td {
+            padding: 12px;
+            border: 1px solid #999;
+            font-size: 12px;
+            background-color: white;
+        }
+
+        .data-table tbody tr:nth-child(odd) td {
+            background-color: #f0f0f0;
+        }
+
+        .data-table tbody tr:hover td {
+            background-color: #e8f0f8;
+        }
+
+        .table-label {
+            text-align: left;
+            font-weight: 500;
+            color: #333;
+            width: 40%;
+        }
+
+        .table-input {
+            padding: 8px 10px;
+            border: none;
+            border-bottom: 1px dotted #999;
+            font-size: 12px;
+            background-color: transparent;
+            font-family: 'Courier New', monospace;
+            text-align: right;
+            width: 100%;
+        }
+
+        .table-input:focus {
+            outline: none;
+            border-bottom-color: #004080;
+            background-color: rgba(0, 64, 128, 0.05);
+        }
+
+        .table-input-center {
+            text-align: center;
+        }
+
+        .table-label-small {
+            font-size: 10px;
+            color: #666;
+            margin-top: 2px;
+        }
+
+        .table-cell-number {
+            font-size: 10px;
+            color: #999;
+            padding: 2px 5px;
+            background-color: #f8f8f8;
+            border-radius: 2px;
+            display: inline-block;
+            margin-top: 3px;
+        }
+
+        .subtotal-row td {
+            background-color: #e8e8e8;
+            font-weight: bold;
+            padding: 10px 12px;
+        }
+
+        .total-row td {
+            background-color: #004080;
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+        }
+
+        .total-row .table-input {
+            color: white;
+            border-bottom-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .total-row .table-input:focus {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-bottom-color: white;
+        }
+
+        /* SUB-TABLES FOR RECARGO */
+        .subtable {
+            margin-left: 20px;
+            margin-right: 0;
+            margin-top: -1px;
+            border-left: 1px solid #999;
+            border-right: 1px solid #999;
+            border-bottom: 1px solid #999;
+        }
+
+        .subtable tbody tr:first-child td {
+            padding-top: 8px;
+        }
+
+        /* RESULTADO SECTION */
+        .resultado-section {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #999;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .resultado-row {
+            display: grid;
+            grid-template-columns: 1fr 200px;
+            gap: 20px;
+            margin-bottom: 15px;
+            padding: 10px 0;
+            border-bottom: 1px dotted #ccc;
+        }
+
+        .resultado-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .resultado-label {
+            font-size: 12px;
+            font-weight: 500;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+
+        .resultado-value {
+            position: relative;
+        }
+
+        .resultado-value input {
+            width: 100%;
+            padding: 8px 10px;
+            border: none;
+            border-bottom: 1px dotted #999;
+            font-size: 12px;
+            background-color: white;
+            font-family: 'Courier New', monospace;
+            text-align: right;
+            color: #333;
+        }
+
+        .resultado-value input:focus {
+            outline: none;
+            border-bottom-color: #004080;
+            background-color: rgba(0, 64, 128, 0.05);
+        }
+
+        /* RADIO BUTTONS FOR RESULT */
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 15px;
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #999;
+            border-radius: 4px;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .radio-option input[type="radio"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #004080;
+            margin-top: 2px;
+        }
+
+        .radio-label {
+            font-size: 12px;
+            color: #333;
+            cursor: pointer;
+            user-select: none;
+            flex: 1;
+        }
+
+        .radio-input-field {
+            padding: 8px 10px;
+            border: none;
+            border-bottom: 1px dotted #999;
+            font-size: 12px;
+            background-color: white;
+            font-family: 'Courier New', monospace;
+            width: 200px;
+        }
+
+        .radio-input-field:focus {
+            outline: none;
+            border-bottom-color: #004080;
+            background-color: rgba(0, 64, 128, 0.05);
+        }
+
+        /* BUTTONS */
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 2px solid #003366;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            font-size: 13px;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            min-width: 150px;
+        }
+
+        .btn-print {
+            background-color: #004080;
+            color: white;
+        }
+
+        .btn-print:hover {
+            background-color: #003366;
+            box-shadow: 0 2px 6px rgba(0, 51, 102, 0.3);
+        }
+
+        .btn-clear {
+            background-color: #ccc;
+            color: #333;
+        }
+
+        .btn-clear:hover {
+            background-color: #999;
+            color: white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* FOOTER */
+        .form-footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-top: 2px solid #003366;
+            font-size: 11px;
+            color: #666;
+            text-align: center;
+        }
+
+        .footer-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .footer-item {
+            padding: 15px;
+            border: 1px solid #999;
+            background-color: white;
+        }
+
+        .footer-item-label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .footer-item-input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #999;
+            font-size: 12px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .barcode-placeholder {
+            width: 100%;
+            height: 60px;
+            background-color: #f0f0f0;
+            border: 2px dashed #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        /* PRINT STYLES */
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+                margin: 0;
+            }
+
+            .form-container {
+                box-shadow: none;
+                max-width: 100%;
+                margin: 0;
+            }
+
+            .button-group {
+                display: none;
+            }
+
+            .form-container {
+                page-break-inside: avoid;
+            }
+
+            .section-header {
+                page-break-after: avoid;
+            }
+
+            .data-table {
+                page-break-inside: avoid;
+            }
+
+            @page {
+                margin: 10mm;
+                size: A4;
+            }
+
+            .form-input,
+            .table-input,
+            .resultado-value input,
+            .radio-input-field {
+                border-bottom-color: #333;
+            }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .identification-section {
+                grid-template-columns: 1fr;
+            }
+
+            .header-controls {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-section {
+                grid-template-columns: 1fr;
+            }
+
+            .resultado-row {
+                grid-template-columns: 1fr;
+            }
+
+            .data-table thead th {
+                font-size: 11px;
+                padding: 8px;
+            }
+
+            .data-table tbody td {
+                padding: 8px;
+                font-size: 11px;
+            }
+        }
+
+        /* UTILITY CLASSES */
+        .text-right {
+            text-align: right;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-10 {
+            margin-top: 10px;
+        }
+
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+
+        .readonly {
+            background-color: #f0f0f0 !important;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <!-- HEADER -->
+        <div class="form-header">
+            <div class="header-top">
+                <div class="logo-section">
+                    <div class="logo-text">MINISTERIO DE HACIENDA</div>
+                    <div class="logo-main">AGENCIA TRIBUTARIA</div>
+                </div>
+                <div class="form-number">303</div>
+            </div>
+            <div class="form-title">Impuesto sobre el Valor Añadido</div>
+            <div class="form-subtitle">Autoliquidación</div>
+            <div class="header-controls">
+                <div class="header-control-group">
+                    <label class="header-control-label">Ejercicio</label>
+                    <select class="header-control-input" id="ejercicio">
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026" selected>2026</option>
+                        <option value="2027">2027</option>
+                    </select>
+                </div>
+                <div class="header-control-group">
+                    <label class="header-control-label">Período</label>
+                    <select class="header-control-input" id="periodo">
+                        <option value="1T">1.er Trimestre</option>
+                        <option value="2T">2.º Trimestre</option>
+                        <option value="3T">3.er Trimestre</option>
+                        <option value="4T">4.º Trimestre</option>
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero</option>
+                        <option value="03">Marzo</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Mayo</option>
+                        <option value="06">Junio</option>
+                        <option value="07">Julio</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-content">
+            <!-- SECCIÓN: IDENTIFICACIÓN -->
+            <div class="section-header first">Identificación del Sujeto Pasivo</div>
+
+            <div class="identification-section">
+                <div class="form-group">
+                    <label class="form-label">NIF / NIE</label>
+                    <input type="text" class="form-input" id="nif" placeholder="12345678A" maxlength="9">
+                    <div class="casilla-label">Casilla de identificación</div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Apellidos y Nombre o Razón Social</label>
+                    <input type="text" class="form-input" id="apellidos" placeholder="García López, Antonio">
+                    <div class="casilla-label">Denominación de la empresa</div>
+                </div>
+            </div>
+
+            <div class="identification-section">
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="tribForal" class="check-input">
+                        <label for="tribForal" class="checkbox-label">¿Tributación exclusivamente foral?</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="autoLiqConjunta" class="check-input">
+                        <label for="autoLiqConjunta" class="checkbox-label">¿Autoliquidación conjunta?</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="registroDevolMensual" class="check-input">
+                        <label for="registroDevolMensual" class="checkbox-label">¿Inscrito en el Registro de devolución mensual?</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="regimenSimplificado" class="check-input">
+                        <label for="regimenSimplificado" class="checkbox-label">¿Régimen simplificado?</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="autoLiqRectificativa" class="check-input">
+                        <label for="autoLiqRectificativa" class="checkbox-label">¿Autoliquidación rectificativa?</label>
+                    </div>
+                    <input type="text" class="form-input" id="numJustificante" placeholder="Nº justificante" maxlength="20" style="margin-top: 5px;">
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="declaracionConcursal" class="check-input">
+                        <label for="declaracionConcursal" class="checkbox-label">¿Es declaración concursal?</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN: IVA DEVENGADO - RÉGIMEN GENERAL -->
+            <div class="section-header">IVA Devengado - Régimen General</div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Base Imponible</th>
+                        <th>Tipo %</th>
+                        <th>Cuota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Tipo 0% -->
+                    <tr>
+                        <td class="table-label">
+                            Entregas de bienes y/o servicios tipo 0%
+                            <div class="table-label-small">Casillas [150] [151] [152]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c150" placeholder="0" data-casilla="150" step="0.01"></td>
+                        <td><input type="number" class="table-input table-input-center" id="c151" placeholder="0" value="0" step="0.01" readonly></td>
+                        <td><input type="number" class="table-input" id="c152" placeholder="0" data-casilla="152" step="0.01" readonly></td>
+                    </tr>
+
+                    <!-- Tipo Superreducido 4% -->
+                    <tr>
+                        <td class="table-label">
+                            Entregas de bienes y/o servicios tipo superreducido
+                            <div class="table-label-small">Casillas [01] [02] [03]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c01" placeholder="0" data-casilla="01" step="0.01"></td>
+                        <td><input type="number" class="table-input table-input-center" id="c02" placeholder="4" value="4" step="0.01" readonly></td>
+                        <td><input type="number" class="table-input" id="c03" placeholder="0" data-casilla="03" step="0.01" readonly></td>
+                    </tr>
+
+                    <!-- Tipo Reducido 5% -->
+                    <tr>
+                        <td class="table-label">
+                            Entregas de bienes y/o servicios tipo reducido 5%
+                            <div class="table-label-small">Casillas [153] [154] [155]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c153" placeholder="0" data-casilla="153" step="0.01"></td>
+                        <td><input type="number" class="table-input table-input-center" id="c154" placeholder="5" value="5" step="0.01" readonly></td>
+                        <td><input type="number" class="table-input" id="c155" placeholder="0" data-casilla="155" step="0.01" readonly></td>
+                    </tr>
+
+                    <!-- Tipo Reducido 10% -->
+                    <tr>
+                        <td class="table-label">
+                            Entregas de bienes y/o servicios tipo reducido 10%
+                            <div class="table-label-small">Casillas [04] [05] [06]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c04" placeholder="0" data-casilla="04" step="0.01"></td>
+                        <td><input type="number" class="table-input table-input-center" id="c05" placeholder="10" value="10" step="0.01" readonly></td>
+                        <td><input type="number" class="table-input" id="c06" placeholder="0" data-casilla="06" step="0.01" readonly></td>
+                    </tr>
+
+                    <!-- Tipo General 21% -->
+                    <tr>
+                        <td class="table-label">
+                            Entregas de bienes y/o servicios tipo general
+                            <div class="table-label-small">Casillas [07] [08] [09]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c07" placeholder="0" data-casilla="07" step="0.01"></td>
+                        <td><input type="number" class="table-input table-input-center" id="c08" placeholder="21" value="21" step="0.01" readonly></td>
+                        <td><input type="number" class="table-input" id="c09" placeholder="0" data-casilla="09" step="0.01" readonly></td>
+                    </tr>
+
+                    <!-- Adquisiciones Intracomunitarias -->
+                    <tr>
+                        <td class="table-label">
+                            Adquisiciones intracomunitarias de bienes y servicios
+                            <div class="table-label-small">Casillas [10] [11]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c10" placeholder="0" data-casilla="10" step="0.01"></td>
+                        <td colspan="2"><input type="number" class="table-input" id="c11" placeholder="0" data-casilla="11" step="0.01"></td>
+                    </tr>
+
+                    <!-- Otras operaciones con inversión -->
+                    <tr>
+                        <td class="table-label">
+                            Otras operaciones con inversión del sujeto pasivo (art. 84.Uno.2º y 4º)
+                            <div class="table-label-small">Casillas [12] [13]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c12" placeholder="0" data-casilla="12" step="0.01"></td>
+                        <td colspan="2"><input type="number" class="table-input" id="c13" placeholder="0" data-casilla="13" step="0.01"></td>
+                    </tr>
+
+                    <!-- Modificación bases y cuotas -->
+                    <tr>
+                        <td class="table-label">
+                            Modificación bases y cuotas
+                            <div class="table-label-small">Casillas [14] [15]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c14" placeholder="0" data-casilla="14" step="0.01"></td>
+                        <td colspan="2"><input type="number" class="table-input" id="c15" placeholder="0" data-casilla="15" step="0.01"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- RECARGO DE EQUIVALENCIA -->
+            <div class="section-header">Recargo de Equivalencia</div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Base Imponible</th>
+                        <th>Tipo %</th>
+                        <th>Cuota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Recargo 0,5% -->
+                    <tr>
+                        <td class="table-label">
+                            Recargo 0,5%
+                            <div class="table-label-small">Casillas [16] [17] [18]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c16" placeholder="0" data-casilla="16" step="0.01"></td>
+                        <td><input type="number" class="table-input table-input-center" id="c17" placeholder="0,5" value="0.5" step="0.01" readonly></td>
+                        <td><input type="number" class="table-input" id="c18" placeholder="0" data-casilla="18" step="0.01" readonly></td>
+                    </tr>
+
+                    <!-- Recargo 1,4% -->
+                    <tr>
+                        <td class="table-label">
+                            Recargo 1,4%
+                            <div class="table-label-small">Casillas [19] [20] [21]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c19" placeholder="0" data-casilla="19" step="0.01"></td>
+                        <td><input type="number" class="table-input table-input-center" id="c20" placeholder="1,4" value="1.4" step="0.01" readonly></td>
+                        <td><input type="number" class="table-input" id="c21" placeholder="0" data-casilla="21" step="0.01" readonly></td>
+                    </tr>
+
+                    <!-- Recargo 1,75% -->
+                    <tr>
+                        <td class="table-label">
+                            Recargo 1,75%
+                            <div class="table-label-small">Casillas [156] [157] [158]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c156" placeholder="0" data-casilla="156" step="0.01"></td>
+                        <td><input type="number" class="table-input table-input-center" id="c157" placeholder="1,75" value="1.75" step="0.01" readonly></td>
+                        <td><input type="number" class="table-input" id="c158" placeholder="0" data-casilla="158" step="0.01" readonly></td>
+                    </tr>
+
+                    <!-- Recargo 5,2% -->
+                    <tr>
+                        <td class="table-label">
+                            Recargo 5,2%
+                            <div class="table-label-small">Casillas [22] [23] [24]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c22" placeholder="0" data-casilla="22" step="0.01"></td>
+                        <td><input type="number" class="table-input table-input-center" id="c23" placeholder="5,2" value="5.2" step="0.01" readonly></td>
+                        <td><input type="number" class="table-input" id="c24" placeholder="0" data-casilla="24" step="0.01" readonly></td>
+                    </tr>
+
+                    <!-- Modificación recargo -->
+                    <tr>
+                        <td class="table-label">
+                            Modificación bases y cuotas recargo
+                            <div class="table-label-small">Casillas [25] [26]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c25" placeholder="0" data-casilla="25" step="0.01"></td>
+                        <td colspan="2"><input type="number" class="table-input" id="c26" placeholder="0" data-casilla="26" step="0.01"></td>
+                    </tr>
+
+                    <!-- Total Cuota Devengada -->
+                    <tr class="total-row">
+                        <td class="table-label">
+                            Total Cuota Devengada (Régimen General + Recargo)
+                            <div class="table-label-small">Casilla [27]</div>
+                        </td>
+                        <td colspan="3"><input type="number" class="table-input" id="c27" placeholder="0" data-casilla="27" step="0.01" readonly></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- SECCIÓN: IVA DEDUCIBLE -->
+            <div class="section-header">IVA Deducible</div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Cuota Deducible</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table-label">
+                            Cuotas soportadas en operaciones interiores corrientes
+                            <div class="table-label-small">Casillas [28] [29]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c29" placeholder="0" data-casilla="29" step="0.01"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-label">
+                            Cuotas soportadas en operaciones interiores bienes de inversión
+                            <div class="table-label-small">Casillas [30] [31]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c31" placeholder="0" data-casilla="31" step="0.01"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-label">
+                            Cuotas soportadas en importaciones bienes corrientes
+                            <div class="table-label-small">Casillas [32] [33]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c33" placeholder="0" data-casilla="33" step="0.01"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-label">
+                            Cuotas soportadas en importaciones bienes de inversión
+                            <div class="table-label-small">Casillas [34] [35]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c35" placeholder="0" data-casilla="35" step="0.01"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-label">
+                            Cuotas en adquisiciones intracomunitarias bienes y servicios corrientes
+                            <div class="table-label-small">Casillas [36] [37]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c37" placeholder="0" data-casilla="37" step="0.01"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-label">
+                            Cuotas en adquisiciones intracomunitarias bienes de inversión
+                            <div class="table-label-small">Casillas [38] [39]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c39" placeholder="0" data-casilla="39" step="0.01"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-label">
+                            Rectificación de deducciones
+                            <div class="table-label-small">Casillas [40] [41]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c41" placeholder="0" data-casilla="41" step="0.01"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-label">
+                            Compensaciones Régimen Especial A.G. y P.
+                            <div class="table-label-small">Casilla [42]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c42" placeholder="0" data-casilla="42" step="0.01"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-label">
+                            Regularización bienes de inversión
+                            <div class="table-label-small">Casilla [43]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c43" placeholder="0" data-casilla="43" step="0.01"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-label">
+                            Regularización por aplicación del porcentaje definitivo de prorrata
+                            <div class="table-label-small">Casilla [44]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c44" placeholder="0" data-casilla="44" step="0.01"></td>
+                    </tr>
+
+                    <tr class="total-row">
+                        <td class="table-label">
+                            Total a Deducir
+                            <div class="table-label-small">Casilla [45]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c45" placeholder="0" data-casilla="45" step="0.01" readonly></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- RESULTADO RÉGIMEN GENERAL -->
+            <div class="resultado-section">
+                <div class="resultado-row">
+                    <div class="resultado-label">
+                        Resultado del Régimen General (Devengado - Deducible)
+                        <span style="font-size: 10px; color: #999; margin-left: 10px;">[46] = [27] - [45]</span>
+                    </div>
+                    <div class="resultado-value">
+                        <input type="number" id="c46" placeholder="0" data-casilla="46" step="0.01" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN: INFORMACIÓN ADICIONAL -->
+            <div class="section-header">Información Adicional - Volúmenes de Operaciones</div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Importe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table-label">
+                            Entregas intracomunitarias de bienes y servicios
+                            <div class="table-label-small">Casilla [59]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c59" placeholder="0" data-casilla="59" step="0.01"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-label">
+                            Exportaciones y operaciones asimiladas
+                            <div class="table-label-small">Casilla [60]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c60" placeholder="0" data-casilla="60" step="0.01"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-label">
+                            Operaciones no sujetas o con inversión del sujeto pasivo
+                            <div class="table-label-small">Casilla [61]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c61" placeholder="0" data-casilla="61" step="0.01"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-label">
+                            Operaciones sujetas — criterio caja (Base imponible)
+                            <div class="table-label-small">Casilla [62]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c62" placeholder="0" data-casilla="62" step="0.01"></td>
+                    </tr>
+                    <tr>
+                        <td class="table-label">
+                            Operaciones sujetas — criterio caja (Cuota devengada)
+                            <div class="table-label-small">Casilla [63]</div>
+                        </td>
+                        <td><input type="number" class="table-input" id="c63" placeholder="0" data-casilla="63" step="0.01"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- SECCIÓN: RESULTADO DE LA LIQUIDACIÓN -->
+            <div class="section-header">Resultado de la Liquidación</div>
+
+            <div class="resultado-section">
+                <div class="resultado-row">
+                    <div class="resultado-label">
+                        Suma de resultados (régimen general + simplificado)
+                        <span style="font-size: 10px; color: #999; margin-left: 10px;">[64]</span>
+                    </div>
+                    <div class="resultado-value">
+                        <input type="number" id="c64" placeholder="0" data-casilla="64" step="0.01" readonly>
+                    </div>
+                </div>
+
+                <div class="resultado-row">
+                    <div class="resultado-label">
+                        % Atribuible Administración del Estado
+                        <span style="font-size: 10px; color: #999; margin-left: 10px;">[65]</span>
+                    </div>
+                    <div class="resultado-value">
+                        <input type="number" id="c65" placeholder="100" value="100" data-casilla="65" step="0.01">
+                    </div>
+                </div>
+
+                <div class="resultado-row">
+                    <div class="resultado-label">
+                        Resultado atribuido Administración del Estado
+                        <span style="font-size: 10px; color: #999; margin-left: 10px;">[66] = [64] x [65]/100</span>
+                    </div>
+                    <div class="resultado-value">
+                        <input type="number" id="c66" placeholder="0" data-casilla="66" step="0.01" readonly>
+                    </div>
+                </div>
+
+                <div class="resultado-row">
+                    <div class="resultado-label">
+                        Cuotas a compensar de períodos anteriores
+                        <span style="font-size: 10px; color: #999; margin-left: 10px;">[110]</span>
+                    </div>
+                    <div class="resultado-value">
+                        <input type="number" id="c110" placeholder="0" data-casilla="110" step="0.01">
+                    </div>
+                </div>
+
+                <div class="resultado-row">
+                    <div class="resultado-label">
+                        Cuotas a compensar aplicadas en este período
+                        <span style="font-size: 10px; color: #999; margin-left: 10px;">[78]</span>
+                    </div>
+                    <div class="resultado-value">
+                        <input type="number" id="c78" placeholder="0" data-casilla="78" step="0.01">
+                    </div>
+                </div>
+
+                <div class="resultado-row">
+                    <div class="resultado-label">
+                        Regularización de cuotas art. 80.5.5ª LIVA
+                        <span style="font-size: 10px; color: #999; margin-left: 10px;">[68]</span>
+                    </div>
+                    <div class="resultado-value">
+                        <input type="number" id="c68" placeholder="0" data-casilla="68" step="0.01">
+                    </div>
+                </div>
+
+                <div class="resultado-row">
+                    <div class="resultado-label">
+                        Resultado (suma anterior)
+                        <span style="font-size: 10px; color: #999; margin-left: 10px;">[69] = [66] + [110] - [78] + [68]</span>
+                    </div>
+                    <div class="resultado-value">
+                        <input type="number" id="c69" placeholder="0" data-casilla="69" step="0.01" readonly>
+                    </div>
+                </div>
+
+                <div class="resultado-row">
+                    <div class="resultado-label">
+                        A deducir (declaración complementaria)
+                        <span style="font-size: 10px; color: #999; margin-left: 10px;">[70]</span>
+                    </div>
+                    <div class="resultado-value">
+                        <input type="number" id="c70" placeholder="0" data-casilla="70" step="0.01">
+                    </div>
+                </div>
+
+                <div class="resultado-row" style="background-color: #e8e8e8; padding: 15px; margin: 0 -20px -20px -20px; border-top: 2px solid #004080;">
+                    <div class="resultado-label" style="font-weight: bold; font-size: 13px; color: #003366;">
+                        Resultado de la Autoliquidación
+                        <span style="font-size: 10px; color: #999; margin-left: 10px;">[71] = [69] - [70]</span>
+                    </div>
+                    <div class="resultado-value">
+                        <input type="number" id="c71" placeholder="0" data-casilla="71" step="0.01" readonly style="font-weight: bold; font-size: 14px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN: TIPO DE RESULTADO -->
+            <div class="section-header">Naturaleza de la Autoliquidación</div>
+
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="resultIngreso" name="tipoResultado" value="ingreso">
+                    <label for="resultIngreso" class="radio-label">Resultado: INGRESO (Deuda con Hacienda)</label>
+                    <input type="text" class="radio-input-field" placeholder="IBAN (opcional)">
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="resultCompensacion" name="tipoResultado" value="compensacion">
+                    <label for="resultCompensacion" class="radio-label">Resultado: A COMPENSAR (con períodos posteriores)</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="resultSinActividad" name="tipoResultado" value="sinActividad">
+                    <label for="resultSinActividad" class="radio-label">Resultado: SIN ACTIVIDAD (No hay obligación de pago)</label>
+                </div>
+
+                <div class="radio-option">
+                    <input type="radio" id="resultDevolver" name="tipoResultado" value="devolver">
+                    <label for="resultDevolver" class="radio-label">Resultado: A DEVOLVER (Solo último período, con IBAN)</label>
+                    <input type="text" class="radio-input-field" placeholder="IBAN (obligatorio si selecciona)">
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="form-footer">
+                <div class="footer-section">
+                    <div class="footer-item">
+                        <div class="footer-item-label">Lugar</div>
+                        <input type="text" class="footer-item-input" placeholder="Madrid">
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-item-label">Fecha</div>
+                        <input type="date" class="footer-item-input">
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-item-label">Firma Digital</div>
+                        <div style="padding: 10px; color: #999; text-align: center;">Usar certificado digital</div>
+                    </div>
+                </div>
+
+                <div class="barcode-placeholder">
+                    Código de barras (Generado por AEAT)
+                </div>
+            </div>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="button-group">
+            <button class="btn btn-print" onclick="window.print()">Imprimir Formulario</button>
+            <button class="btn btn-clear" onclick="limpiarFormulario()">Limpiar Formulario</button>
+        </div>
+    </div>
+
+    <script>
+        // Función para obtener valor numérico de un input
+        function getNumericValue(elementId) {
+            const element = document.getElementById(elementId);
+            if (!element) return 0;
+            const value = element.value;
+            return isNaN(value) || value === '' ? 0 : parseFloat(value);
+        }
+
+        // Función para establecer valor en un input
+        function setNumericValue(elementId, value) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.value = value.toFixed(2);
+            }
+        }
+
+        // Auto-calcular cuotas (base * tipo / 100)
+        function calcularCuota(baseId, tipoId, cuotaId) {
+            const base = getNumericValue(baseId);
+            const tipo = getNumericValue(tipoId);
+            const cuota = (base * tipo / 100).toFixed(2);
+            setNumericValue(cuotaId, cuota);
+        }
+
+        // Evento para calcular cuotas automáticamente
+        document.addEventListener('DOMContentLoaded', function() {
+            // Configurar listeners para cálculos automáticos
+            const baseInputs = document.querySelectorAll('input[data-casilla]');
+            
+            baseInputs.forEach(input => {
+                input.addEventListener('input', realizarCalculos);
+            });
+
+            // Listeners para campos de entrada manual
+            document.getElementById('c65').addEventListener('input', realizarCalculos);
+            document.getElementById('c110').addEventListener('input', realizarCalculos);
+            document.getElementById('c78').addEventListener('input', realizarCalculos);
+            document.getElementById('c68').addEventListener('input', realizarCalculos);
+            document.getElementById('c70').addEventListener('input', realizarCalculos);
+
+            // Realizar cálculos iniciales
+            realizarCalculos();
+
+            // Permitir introducir "," como separador decimal
+            document.querySelectorAll('input[type="number"]').forEach(input => {
+                input.addEventListener('keydown', function(e) {
+                    if (e.key === ',') {
+                        e.preventDefault();
+                        this.value += '.';
+                    }
+                });
+            });
+        });
+
+        // Función principal de cálculos
+        function realizarCalculos() {
+            // 1. Calcular cuotas para cada línea con tipo
+            calcularCuota('c150', 'c151', 'c152');
+            calcularCuota('c01', 'c02', 'c03');
+            calcularCuota('c153', 'c154', 'c155');
+            calcularCuota('c04', 'c05', 'c06');
+            calcularCuota('c07', 'c08', 'c09');
+            calcularCuota('c16', 'c17', 'c18');
+            calcularCuota('c19', 'c20', 'c21');
+            calcularCuota('c156', 'c157', 'c158');
+            calcularCuota('c22', 'c23', 'c24');
+
+            // 2. Calcular casilla 27 (Total Devengado)
+            const c27 = getNumericValue('c03') +
+                        getNumericValue('c06') +
+                        getNumericValue('c09') +
+                        getNumericValue('c11') +
+                        getNumericValue('c13') +
+                        getNumericValue('c15') +
+                        getNumericValue('c18') +
+                        getNumericValue('c21') +
+                        getNumericValue('c24') +
+                        getNumericValue('c26') +
+                        getNumericValue('c152') +
+                        getNumericValue('c155') +
+                        getNumericValue('c158');
+            setNumericValue('c27', c27);
+
+            // 3. Calcular casilla 45 (Total Deducible)
+            const c45 = getNumericValue('c29') +
+                        getNumericValue('c31') +
+                        getNumericValue('c33') +
+                        getNumericValue('c35') +
+                        getNumericValue('c37') +
+                        getNumericValue('c39') +
+                        getNumericValue('c41') +
+                        getNumericValue('c42') +
+                        getNumericValue('c43') +
+                        getNumericValue('c44');
+            setNumericValue('c45', c45);
+
+            // 4. Calcular casilla 46 (Resultado Régimen General = 27 - 45)
+            const c46 = c27 - c45;
+            setNumericValue('c46', c46);
+
+            // 5. Casilla 64 = Casilla 46 (suma de resultados)
+            setNumericValue('c64', c46);
+
+            // 6. Calcular casilla 66 (Resultado atribuido = 64 * 65 / 100)
+            const c64 = getNumericValue('c64');
+            const c65 = getNumericValue('c65');
+            const c66 = (c64 * c65 / 100);
+            setNumericValue('c66', c66);
+
+            // 7. Calcular casilla 69 (Resultado = 66 + 110 - 78 + 68)
+            const c110 = getNumericValue('c110');
+            const c78 = getNumericValue('c78');
+            const c68 = getNumericValue('c68');
+            const c69 = c66 + c110 - c78 + c68;
+            setNumericValue('c69', c69);
+
+            // 8. Calcular casilla 71 (Resultado final = 69 - 70)
+            const c70 = getNumericValue('c70');
+            const c71 = c69 - c70;
+            setNumericValue('c71', c71);
+
+            // Actualizar color del resultado final según positivo/negativo
+            const c71Element = document.getElementById('c71');
+            if (c71 > 0) {
+                c71Element.style.color = '#d32f2f'; // Rojo para deuda
+            } else if (c71 < 0) {
+                c71Element.style.color = '#388e3c'; // Verde para devolución
+            } else {
+                c71Element.style.color = '#333';
+            }
+        }
+
+        // Función para limpiar el formulario
+        function limpiarFormulario() {
+            if (confirm('¿Está seguro de que desea limpiar todos los datos del formulario? Esta acción no se puede deshacer.')) {
+                // Limpiar inputs de texto
+                document.querySelectorAll('input[type="text"], input[type="date"]').forEach(input => {
+                    input.value = '';
+                });
+
+                // Limpiar inputs de número
+                document.querySelectorAll('input[type="number"]').forEach(input => {
+                    if (!input.hasAttribute('readonly')) {
+                        input.value = '';
+                    }
+                });
+
+                // Limpiar checkboxes
+                document.querySelectorAll('input[type="checkbox"]').forEach(input => {
+                    input.checked = false;
+                });
+
+                // Limpiar radio buttons
+                document.querySelectorAll('input[type="radio"]').forEach(input => {
+                    input.checked = false;
+                });
+
+                // Restaurar valores por defecto en readonly
+                document.getElementById('c02').value = '4';
+                document.getElementById('c05').value = '10';
+                document.getElementById('c08').value = '21';
+                document.getElementById('c17').value = '0.5';
+                document.getElementById('c20').value = '1.4';
+                document.getElementById('c157').value = '1.75';
+                document.getElementById('c23').value = '5.2';
+                document.getElementById('c65').value = '100';
+
+                // Realizar cálculos finales
+                realizarCalculos();
+
+                alert('Formulario limpiado correctamente.');
+            }
+        }
+
+        // Realizar cálculos cuando se carga la página
+        window.addEventListener('load', realizarCalculos);
+    </script>
+</body>
+</html>

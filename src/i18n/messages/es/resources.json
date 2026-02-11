@@ -1,0 +1,547 @@
+{
+  "title": "Recursos y Guias",
+  "subtitle": "Guias de cumplimiento normativo, protocolos de seguridad y materiales de formacion para todo el personal",
+  "searchPlaceholder": "Buscar guias por nombre o codigo...",
+  "guidesCount": "guias",
+  "noGuidesInCategory": "No se encontraron guias en esta categoria que coincidan con sus criterios.",
+  "noResults": "No se encontraron guias que coincidan con tu busqueda",
+  "allRoles": "Todos los Puestos",
+  "legalBasis": "Base Legal",
+  "summary": "Resumen",
+  "keyPointsLabel": "Puntos Clave",
+  "applicableRoles": "Puestos Aplicables",
+  "relatedGuides": "Guias Relacionadas",
+  "print": "Imprimir",
+  "printGuide": "Imprimir Guia",
+  "allCategories": "Todas",
+  "categories": {
+    "foodSafety": "Seguridad Alimentaria",
+    "occupationalHealth": "Prevencion de Riesgos Laborales",
+    "laborRegulations": "Normativa Laboral",
+    "roleSpecific": "Especifico por Puesto",
+    "requiredDocs": "Documentacion",
+    "environmental": "Medioambiental"
+  },
+  "training": {
+    "downloadPdf": "Descargar PDF",
+    "takeTest": "Realizar Test",
+    "shareGuide": "Compartir Guia",
+    "testScore": "Puntuacion",
+    "testPassed": "Test Aprobado!",
+    "testFailed": "Test Suspendido",
+    "retakeTest": "Repetir Test",
+    "assignTraining": "Asignar Formacion",
+    "complianceOverview": "Compliance",
+    "totalMandatory": "Guias Obligatorias",
+    "completedTraining": "Completadas",
+    "pendingTraining": "Pendientes",
+    "overdueTraining": "Vencidas",
+    "passRate": "Tasa de Finalizacion",
+    "fullyCompliant": "Cumple",
+    "employeeStatus": "Empleado",
+    "lastActivity": "Ultima Actividad",
+    "submitTest": "Enviar Test",
+    "question": "Pregunta",
+    "correctAnswer": "Respuesta Correcta",
+    "explanation": "Explicacion",
+    "statusViewed": "Visto",
+    "statusNotViewed": "No Visto",
+    "statusPassed": "Aprobado",
+    "statusFailed": "Suspendido",
+    "statusOverdue": "Vencido",
+    "statusPending": "Pendiente",
+    "exportReport": "Exportar Informe",
+    "myTraining": "Mi Formacion",
+    "testInstructions": "Responde todas las preguntas y pulsa Enviar. Necesitas al menos un 70% para aprobar.",
+    "noTestsAvailable": "Aun no hay preguntas de test disponibles para esta guia.",
+    "assignToEmployee": "Asignar a Empleado",
+    "assignToRole": "Asignar a Rol",
+    "dueDate": "Fecha Limite",
+    "cancel": "Cancelar",
+    "myCertificates": "Mis Certificados",
+    "noCertificates": "Sin certificados aun",
+    "noCertificatesDesc": "Completa los cursos de formacion y aprueba los tests para obtener certificados.",
+    "certifiedOn": "Certificado el",
+    "score": "Puntuacion",
+    "downloadCertificate": "Descargar Certificado",
+    "employeeCertifications": "Certificaciones del Empleado",
+    "noCertificatesForEmployee": "Este empleado aun no tiene certificaciones."
+  },
+  "course": {
+    "noPending": "Sin formacion pendiente",
+    "allComplete": "Toda la formacion asignada ha sido completada.",
+    "startCourse": "Iniciar Curso",
+    "continueCourse": "Continuar",
+    "progress": "Progreso",
+    "sections": "Secciones",
+    "studyMaterial": "Material de Estudio",
+    "certification": "Certificacion",
+    "estimatedTime": "Tiempo Estimado",
+    "courseOverview": "Resumen del Curso",
+    "sectionOf": "Seccion {current} de {total}",
+    "readSection": "Leer Seccion",
+    "sectionCompleted": "Seccion Completada",
+    "allSectionsRead": "Todas las secciones leidas. Listo para el test!",
+    "downloadCertificate": "Descargar Certificado",
+    "noEmployeesMatch": "Ningun empleado coincide con los filtros actuales.",
+    "roleFilter": "Filtrar por puesto",
+    "statusFilter": "Filtrar por estado",
+    "allRoles": "Todos los Puestos",
+    "allStatuses": "Todos los Estados",
+    "notStarted": "Sin Empezar",
+    "inProgress": "En Progreso",
+    "studyComplete": "Estudio Completo",
+    "testPassed": "Test Aprobado",
+    "timeRemaining": "restante",
+    "dueDate": "Fecha Limite",
+    "questionsOf": "Pregunta {current} de {total}",
+    "reviewSections": "Repasa las secciones {sections} e intentalo de nuevo.",
+    "congratulations": "Felicidades!",
+    "certificateReady": "Tu certificado esta listo para descargar.",
+    "legalBasisTitle": "Base Legal",
+    "bestPractices": "Mejores Practicas",
+    "glossary": "Glosario",
+    "checklist": "Lista de Verificacion",
+    "minutes": "min"
+  },
+  "guides": {
+    "GFS001": {
+      "title": "Sistema APPCC/HACCP",
+      "legalBasis": "Reglamento UE 852/2004 sobre higiene de los alimentos",
+      "summary": "El sistema APPCC (Analisis de Peligros y Puntos de Control Critico), conocido internacionalmente como HACCP, es el marco fundamental de seguridad alimentaria en hosteleria. Todo establecimiento alimentario debe implantar y mantener un plan APPCC documentado que identifique los peligros biologicos, quimicos y fisicos en cada etapa de la manipulacion de alimentos. El plan debe incluir puntos de control critico, limites criticos, procedimientos de vigilancia, acciones correctoras y procedimientos de verificacion.",
+      "keyPoints": ["Identificar todos los peligros de seguridad alimentaria en tu establecimiento", "Definir los puntos de control critico (PCC) de cada proceso", "Establecer limites criticos y procedimientos de vigilancia", "Documentar las acciones correctoras para cada PCC", "Mantener registros y revisar el plan anualmente", "Formar a todos los manipuladores de alimentos en los principios del APPCC", "Exponer el plan APPCC en lugares accesibles"]
+    },
+    "GFS002": {
+      "title": "Carnet de Manipulador de Alimentos",
+      "legalBasis": "RD 109/2010 sobre requisitos de formacion de manipuladores de alimentos",
+      "summary": "Todo empleado que manipule alimentos debe disponer de un Carnet de Manipulador de Alimentos en vigor. La formacion debe abarcar higiene alimentaria, prevencion de contaminaciones, concienciacion sobre alergenos e higiene personal. Los certificados deben renovarse segun la normativa autonomica. El establecimiento debe conservar copias de todos los certificados y asegurar que la formacion se complete antes de que el personal comience a manipular alimentos.",
+      "keyPoints": ["Todos los manipuladores de alimentos deben completar la formacion certificada", "Conservar copias de todos los certificados en archivo", "Renovar los certificados segun los requisitos autonomicos", "El personal nuevo debe formarse antes de manipular alimentos", "La formacion abarca higiene, alergenos y contaminacion"]
+    },
+    "GFS003": {
+      "title": "Control de Temperaturas — Cadena de Frio",
+      "legalBasis": "RD 3484/2000 sobre normas de higiene para la elaboracion de alimentos",
+      "summary": "Mantener la cadena de frio es fundamental para la seguridad alimentaria. Los productos refrigerados deben conservarse entre 0-4 °C y los congelados a -18 °C o inferior. Los registros de temperatura deben anotarse al menos dos veces al dia. Cualquier rotura de la cadena de frio requiere una evaluacion inmediata y la posible eliminacion de los productos afectados.",
+      "keyPoints": ["Camaras frigorificas: 0-4 °C, congeladores: -18 °C o inferior", "Registrar temperaturas al menos dos veces al dia", "Comprobar las entregas con termometro de sonda a la recepcion", "Nunca recongelar productos descongelados", "FIFO: lo primero que entra, lo primero que sale", "Comunicar cualquier averia del equipo de inmediato"]
+    },
+    "GFS004": {
+      "title": "Control de Temperaturas — Mantenimiento en Caliente",
+      "legalBasis": "RD 3484/2000 sobre normas de higiene",
+      "summary": "Los alimentos calientes deben mantenerse a 65 °C o mas para evitar la proliferacion bacteriana. Los alimentos que desciendan por debajo de esta temperatura durante mas de 2 horas deben desecharse. El recalentamiento debe alcanzar una temperatura interna de 75 °C. Deben mantenerse registros de temperatura del mantenimiento en caliente.",
+      "keyPoints": ["Los alimentos calientes deben mantenerse a 65 °C o mas", "Desechar alimentos por debajo de 65 °C durante mas de 2 horas", "Recalentar hasta una temperatura interna de 75 °C", "Utilizar termometros calibrados para las comprobaciones", "Registrar las temperaturas de mantenimiento en caliente periodicamente"]
+    },
+    "GFS005": {
+      "title": "Plan de Limpieza y Desinfeccion",
+      "legalBasis": "Reglamento UE 852/2004, Anexo II",
+      "summary": "Todo establecimiento debe disponer de un plan documentado de L+D (Limpieza y Desinfeccion) que cubra todas las zonas, equipos y superficies. El plan especifica la frecuencia de limpieza, los productos, las dosis de dilucion, los tiempos de contacto y el personal responsable. Deben conservarse registros de las actividades de limpieza.",
+      "keyPoints": ["Documentar los procedimientos de limpieza de cada zona", "Especificar productos, diluciones y tiempos de contacto", "Asignar responsabilidades de limpieza a personal concreto", "Mantener registros diarios de limpieza", "Utilizar productos de limpieza aptos para uso alimentario", "Separar el material de limpieza por zonas (codificacion por colores)", "Programar limpieza a fondo de equipos y zonas de dificil acceso"]
+    },
+    "GFS006": {
+      "title": "Gestion de Alergenos",
+      "legalBasis": "Reglamento UE 1169/2011 sobre informacion alimentaria facilitada al consumidor",
+      "summary": "La legislacion europea exige la comunicacion clara de los 14 alergenos principales en todos los alimentos servidos. El personal debe estar formado para identificar los alergenos en los platos de la carta y comunicarlos con precision a los clientes. La informacion sobre alergenos debe estar disponible por escrito y el personal debe conocer los procedimientos de prevencion de contaminacion cruzada.",
+      "keyPoints": ["Conocer los 14 alergenos regulados por la UE", "Mostrar la informacion de alergenos de todos los platos de la carta", "Formar a todo el personal de sala en la comunicacion de alergenos", "Prevenir la contaminacion cruzada en la elaboracion", "Disponer de un protocolo para emergencias por reaccion alergica", "Actualizar la informacion de alergenos cuando cambien las recetas"]
+    },
+    "GFS007": {
+      "title": "Prevencion del Desperdicio Alimentario",
+      "legalBasis": "Ley 1/2025 de prevencion de las perdidas y el desperdicio alimentario",
+      "summary": "La ley de desperdicio alimentario de Espana exige a los establecimientos de hosteleria implantar planes de prevencion, ofrecer opciones para llevar la comida no consumida y mantener registros de residuos. Los establecimientos deben priorizar la donacion de excedentes alimentarios a organizaciones autorizadas antes de su eliminacion.",
+      "keyPoints": ["Implantar un plan de prevencion del desperdicio alimentario", "Ofrecer recipientes para llevar la comida no consumida", "Priorizar la donacion de alimentos frente a su eliminacion", "Mantener registros de las cantidades de desperdicio alimentario", "Formar al personal en control de raciones", "Supervisar y reducir la sobreproduccion", "Colaborar con bancos de alimentos o plataformas de donacion"]
+    },
+    "GFS008": {
+      "title": "Sistema de Trazabilidad",
+      "legalBasis": "Reglamento UE 178/2002 sobre trazabilidad",
+      "summary": "Todos los establecimientos alimentarios deben mantener un sistema de trazabilidad que permita identificar a los proveedores y los productos en cada etapa. Esto incluye el registro de numeros de lote, fechas de entrega, datos del proveedor y la conservacion de registros durante al menos 5 anos.",
+      "keyPoints": ["Registrar los datos de los proveedores de todos los productos", "Conservar los albaranes con numeros de lote y fechas", "Mantener registros durante un minimo de 5 anos", "Implantar trazabilidad un paso atras, un paso adelante", "Disponer de un procedimiento de retirada rapida"]
+    },
+    "GFS009": {
+      "title": "Control de Proveedores",
+      "legalBasis": "Reglamento UE 852/2004 sobre homologacion de proveedores",
+      "summary": "Los establecimientos deben verificar que todos los proveedores de alimentos estan registrados y cumplen la normativa de seguridad alimentaria. Debe existir un proceso de homologacion de proveedores que incluya la verificacion de registros sanitarios, condiciones de entrega y calidad del producto.",
+      "keyPoints": ["Verificar los numeros de registro sanitario del proveedor", "Comprobar las temperaturas del vehiculo de entrega", "Inspeccionar los productos a su llegada para verificar la calidad", "Mantener una lista de proveedores homologados", "Revisar el rendimiento de los proveedores periodicamente"]
+    },
+    "GFS010": {
+      "title": "Recepcion de Materias Primas",
+      "legalBasis": "RD 3484/2000 sobre normas de recepcion de alimentos",
+      "summary": "Todas las entregas deben inspeccionarse a su llegada para verificar el cumplimiento de temperaturas, la integridad del embalaje, las fechas de caducidad y la calidad organoleptica. Los productos rechazados deben documentarse. Las entregas deben almacenarse inmediatamente en las condiciones adecuadas.",
+      "keyPoints": ["Comprobar la temperatura de las entregas refrigeradas/congeladas", "Verificar la integridad del embalaje y el etiquetado", "Comprobar las fechas de caducidad de todos los productos", "Documentar y devolver los productos no conformes", "Almacenar las entregas inmediatamente tras la inspeccion"]
+    },
+    "GFS011": {
+      "title": "Procedimientos de Almacenamiento",
+      "legalBasis": "RD 3484/2000, Reglamento UE 852/2004",
+      "summary": "Un almacenamiento correcto previene la contaminacion y el deterioro. Los productos crudos y cocinados deben estar separados. La rotacion FIFO debe seguirse estrictamente. Todos los recipientes deben estar cubiertos y etiquetados con el contenido y la fecha. Las zonas de almacenamiento deben estar limpias y a las temperaturas correctas.",
+      "keyPoints": ["Separar productos crudos y cocinados", "Seguir estrictamente la rotacion FIFO", "Etiquetar todos los recipientes con contenido y fecha", "Mantener las zonas de almacenamiento limpias y ordenadas", "Nunca almacenar alimentos en el suelo", "Comprobar las temperaturas diariamente"]
+    },
+    "GFS012": {
+      "title": "Prevencion de la Contaminacion Cruzada",
+      "legalBasis": "Reglamento UE 852/2004",
+      "summary": "La contaminacion cruzada es un peligro importante para la seguridad alimentaria. Su prevencion requiere la separacion de alimentos crudos y listos para consumir, el uso de tablas de corte codificadas por colores, el lavado de manos adecuado entre tareas y equipos exclusivos para la preparacion libre de alergenos.",
+      "keyPoints": ["Utilizar tablas de corte y utensilios codificados por colores", "Separar los alimentos crudos y los listos para consumir en todo momento", "Lavarse las manos entre la manipulacion de diferentes tipos de alimentos", "Limpiar y desinfectar las superficies de trabajo entre tareas", "Almacenar los productos crudos por debajo de los cocinados"]
+    },
+    "GFS013": {
+      "title": "Control de Plagas",
+      "legalBasis": "RD 830/2010 sobre productos biocidas, UE 852/2004",
+      "summary": "Debe implantarse un programa de control de plagas a cargo de una empresa autorizada. El establecimiento debe mantener barreras fisicas, buenas practicas de limpieza e inspecciones periodicas. Deben conservarse los registros de las visitas de control de plagas y cualquier incidencia.",
+      "keyPoints": ["Contratar una empresa de control de plagas autorizada", "Mantener barreras fisicas (mosquiteras, cierrapuertas)", "Mantener todas las zonas limpias y libres de restos de alimentos", "Sellar huecos y puntos de entrada", "Comunicar cualquier avistamiento de plagas de inmediato", "Conservar los registros de control de plagas en archivo"]
+    },
+    "GFS014": {
+      "title": "Calidad del Agua",
+      "legalBasis": "RD 140/2003 sobre calidad del agua de consumo humano",
+      "summary": "El agua utilizada en la elaboracion de alimentos debe cumplir los estandares de agua potable. Si se utiliza un suministro privado de agua, se requieren analisis periodicos. Las maquinas de hielo deben mantenerse y limpiarse segun las instrucciones del fabricante.",
+      "keyPoints": ["Verificar el cumplimiento del suministro de agua de red", "Analizar los suministros privados de agua periodicamente", "Limpiar y mantener las maquinas de hielo mensualmente", "Utilizar agua potable para toda la elaboracion de alimentos", "Conservar los registros de analisis de agua"]
+    },
+    "GFS015": {
+      "title": "Higiene Personal de los Manipuladores de Alimentos",
+      "legalBasis": "Reglamento UE 852/2004 Anexo II",
+      "summary": "Los manipuladores de alimentos deben mantener altos estandares de higiene personal incluyendo lavado de manos, uso de uniformes limpios, recogido del cabello, ausencia de joyas y comunicacion de cualquier enfermedad que pueda afectar a la seguridad alimentaria.",
+      "keyPoints": ["Lavarse las manos frecuente y correctamente", "Llevar uniforme limpio y recogido del cabello", "Retirar joyas y relojes antes de manipular alimentos", "Cubrir heridas con tiritas azules impermeables", "Comunicar al responsable cualquier enfermedad, vomitos o diarrea", "No manipular alimentos estando enfermo"]
+    },
+    "GFS016": {
+      "title": "Conservacion de Muestras Testigo",
+      "legalBasis": "RD 3484/2000 sobre conservacion de muestras de alimentos",
+      "summary": "Los establecimientos que sirvan mas de un determinado numero de comidas deben conservar muestras representativas de cada plato servido. Las muestras deben almacenarse en recipientes etiquetados a temperaturas adecuadas durante al menos 72 horas.",
+      "keyPoints": ["Conservar muestras de todos los platos servidos", "Etiquetar con nombre del plato, fecha y hora", "Almacenar a 0-4 °C durante un minimo de 72 horas", "Utilizar recipientes limpios y cerrados", "Desechar las muestras tras el periodo de conservacion"]
+    },
+    "GFS017": {
+      "title": "Procedimientos de Descongelacion",
+      "legalBasis": "RD 3484/2000",
+      "summary": "Los productos congelados deben descongelarse de forma segura en la camara frigorifica, nunca a temperatura ambiente. El tiempo de descongelacion debe planificarse con antelacion. Una vez descongelados, los productos deben utilizarse en un plazo de 24 horas y nunca volver a congelarse.",
+      "keyPoints": ["Descongelar en la camara frigorifica a 0-4 °C", "Nunca descongelar a temperatura ambiente", "Planificar el tiempo de descongelacion con antelacion", "Utilizar los productos descongelados en un plazo de 24 horas", "Nunca recongelar productos previamente descongelados"]
+    },
+    "GFS018": {
+      "title": "Control de Calidad del Aceite de Fritura",
+      "legalBasis": "RD 2207/1995 sobre regulacion de aceites de fritura",
+      "summary": "Los aceites de fritura deben controlarse para detectar su degradacion mediante pruebas de compuestos polares. El aceite que supere el 25 % de compuestos polares debe sustituirse. La temperatura del aceite no debe superar los 180 °C. Deben mantenerse registros de los cambios de aceite y los resultados de las pruebas.",
+      "keyPoints": ["Comprobar la calidad del aceite con medidor de compuestos polares", "Sustituir el aceite cuando los compuestos polares superen el 25 %", "Nunca superar los 180 °C de temperatura de fritura", "Filtrar el aceite diariamente y entre diferentes productos", "Registrar los cambios de aceite y los resultados de las pruebas"]
+    },
+    "GFS019": {
+      "title": "Seguridad Alimentaria en Buffets y Vitrinas",
+      "legalBasis": "RD 3484/2000",
+      "summary": "Los alimentos expuestos en buffets deben mantenerse a temperaturas seguras. Los alimentos calientes a 65 °C o mas, los frios a 8 °C o menos. El tiempo de exposicion debe ser limitado y controlado. Deben instalarse mamparas protectoras.",
+      "keyPoints": ["Alimentos calientes a 65 °C o mas, frios a 8 °C o menos", "Limitar el tiempo de exposicion a un maximo de 4 horas", "Utilizar mamparas protectoras y recipientes con tapa", "Sustituir en lugar de rellenar los productos expuestos", "Controlar y registrar las temperaturas de exposicion"]
+    },
+    "GFS020": {
+      "title": "Seguridad Alimentaria en Reparto a Domicilio",
+      "legalBasis": "RD 3484/2000, UE 852/2004",
+      "summary": "Los alimentos repartidos a los clientes deben mantener el control de temperatura durante el transporte. Deben utilizarse recipientes isotermicos. Los tiempos de entrega deben minimizarse. El embalaje debe proteger los alimentos de la contaminacion.",
+      "keyPoints": ["Utilizar recipientes isotermicos para el reparto", "Mantener la temperatura durante el transporte", "Minimizar el tiempo de entrega", "Sellar el embalaje para evitar la contaminacion", "Registrar las temperaturas de entrega si es necesario"]
+    },
+    "GFS021": {
+      "title": "Control Microbiologico",
+      "legalBasis": "Reglamento UE 2073/2005 sobre criterios microbiologicos",
+      "summary": "Los analisis microbiologicos periodicos de alimentos, superficies y equipos ayudan a verificar la eficacia del sistema APPCC. La frecuencia de los analisis y los parametros deben definirse en el plan de seguridad alimentaria.",
+      "keyPoints": ["Programar muestreos periodicos de superficies y alimentos", "Utilizar un laboratorio acreditado para los analisis", "Definir criterios de aceptacion segun los estandares de la UE", "Aplicar acciones correctoras ante resultados no conformes", "Conservar todos los registros de analisis"]
+    },
+    "GFS022": {
+      "title": "Gestion de No Conformidades",
+      "legalBasis": "Reglamento UE 852/2004",
+      "summary": "Cuando no se cumplen los estandares de seguridad alimentaria, debe seguirse un proceso de gestion de no conformidades. Esto incluye identificar la incidencia, aislar los productos afectados, investigar la causa raiz, implantar acciones correctoras y prevenir la recurrencia.",
+      "keyPoints": ["Identificar y registrar las no conformidades", "Aislar los productos afectados de inmediato", "Investigar la causa raiz", "Implantar acciones correctoras", "Verificar la eficacia de las correcciones", "Actualizar los procedimientos para prevenir la recurrencia"]
+    },
+    "GPRL001": {
+      "title": "Plan de PRL (Prevencion de Riesgos Laborales)",
+      "legalBasis": "Ley 31/1995 de Prevencion de Riesgos Laborales",
+      "summary": "Todo empresario debe disponer de un Plan de Prevencion de Riesgos Laborales documentado. Este documento integral identifica todos los peligros del lugar de trabajo, establece medidas preventivas, define responsabilidades y describe los procedimientos de emergencia. Debe revisarse anualmente y siempre que se produzcan cambios significativos.",
+      "keyPoints": ["Documentar todos los riesgos laborales identificados", "Definir medidas preventivas para cada riesgo", "Asignar responsabilidades en materia de prevencion", "Revisar y actualizar anualmente", "Poner a disposicion de todos los empleados", "Coordinar con el servicio de prevencion ajeno"]
+    },
+    "GPRL002": {
+      "title": "Evaluacion de Riesgos",
+      "legalBasis": "RD 39/1997 Reglamento de los Servicios de Prevencion",
+      "summary": "Una evaluacion formal de riesgos debe analizar todos los peligros del lugar de trabajo especificos de la hosteleria: quemaduras, cortes, caidas, manipulacion manual de cargas, exposicion a productos quimicos y riesgos ergonomicos. Cada puesto de trabajo y funcion debe ser evaluado. Los resultados alimentan el plan de prevencion y las medidas de proteccion.",
+      "keyPoints": ["Evaluar los riesgos de cada puesto de trabajo y funcion", "Valorar la probabilidad y gravedad de cada peligro", "Definir medidas de control para cada riesgo identificado", "Reevaluar cuando cambien las condiciones", "Documentar todas las evaluaciones y revisiones", "Involucrar a los trabajadores en el proceso de evaluacion"]
+    },
+    "GPRL003": {
+      "title": "EPI por Puesto de Trabajo",
+      "legalBasis": "RD 773/1997 sobre equipos de proteccion individual",
+      "summary": "Los requisitos de Equipos de Proteccion Individual varian segun el puesto. El personal de cocina necesita guantes anticorte, calzado antideslizante y proteccion termica. El personal de barra necesita calzado antideslizante y proteccion ocular para determinadas tareas. Todo el personal necesita calzado adecuado para superficies mojadas.",
+      "keyPoints": ["Cocina: calzado antideslizante, guantes termicos, guantes anticorte", "Barra: calzado antideslizante, proteccion ocular para productos quimicos", "Todos: calzado cerrado adecuado", "Proporcionar los EPI de forma gratuita", "Formar al personal en el uso y mantenimiento correcto", "Sustituir los EPI danados de inmediato"]
+    },
+    "GPRL004": {
+      "title": "Plan de Emergencias",
+      "legalBasis": "RD 393/2007 sobre requisitos de autoproteccion",
+      "summary": "Un plan de emergencias debe cubrir incendios, emergencias medicas, fugas de gas, cortes de electricidad y desastres naturales. Debe incluir rutas de evacuacion, puntos de reunion, contactos de emergencia y funciones y responsabilidades. Deben realizarse simulacros periodicos.",
+      "keyPoints": ["Definir procedimientos para todos los tipos de emergencia", "Senalizar las rutas de evacuacion de forma visible", "Designar puntos de reunion", "Asignar funciones de emergencia (responsable de incendios, socorrista)", "Realizar simulacros de evacuacion dos veces al ano", "Mantener actualizada la lista de contactos de emergencia"]
+    },
+    "GPRL005": {
+      "title": "Protocolo de Evacuacion",
+      "legalBasis": "RD 393/2007, CTE DB-SI (Codigo Tecnico de la Edificacion)",
+      "summary": "Deben establecerse y practicarse procedimientos claros de evacuacion. Las salidas de emergencia deben estar claramente senalizadas y sin obstaculos. Debe respetarse el aforo maximo. El personal debe conocer su funcion durante la evacuacion, incluyendo la guia de clientes y el recuento de personas.",
+      "keyPoints": ["Mantener las salidas de emergencia despejadas en todo momento", "Senalizar las salidas con carteles luminosos", "Conocer la ruta de evacuacion desde tu puesto de trabajo", "Ayudar a los clientes a evacuar con calma", "Realizar un recuento en el punto de reunion", "Nunca utilizar ascensores durante una emergencia"]
+    },
+    "GPRL006": {
+      "title": "Primeros Auxilios",
+      "legalBasis": "RD 39/1997, Ley 31/1995 Art. 20",
+      "summary": "Los botiquines de primeros auxilios deben mantenerse y estar accesibles. Debe haber al menos una persona formada en primeros auxilios por turno. El contenido del botiquin debe revisarse y reponerse con regularidad. Las lesiones mas habituales en hosteleria incluyen quemaduras, cortes, caidas y reacciones alergicas.",
+      "keyPoints": ["Mantener un botiquin equipado en un lugar accesible", "Al menos una persona formada en primeros auxilios por turno", "Revisar y reponer el botiquin mensualmente", "Registrar todos los incidentes de primeros auxilios", "Conocer la ubicacion del hospital mas cercano y el numero de emergencias (112)", "Mostrar los procedimientos de primeros auxilios de forma visible"]
+    },
+    "GPRL007": {
+      "title": "Ergonomia en Cocina",
+      "legalBasis": "RD 487/1997 sobre manipulacion manual de cargas, Ley 31/1995",
+      "summary": "El trabajo en cocina implica estar de pie durante periodos prolongados, movimientos repetitivos y levantamiento de cargas pesadas. Las medidas ergonomicas incluyen alfombrillas antifatiga, superficies de trabajo regulables, tecnicas correctas de levantamiento y descansos periodicos. La organizacion del trabajo debe minimizar la carga repetitiva.",
+      "keyPoints": ["Utilizar alfombrillas antifatiga en los puestos de trabajo", "Ajustar la altura de las superficies de trabajo cuando sea posible", "Rotar tareas para reducir la carga repetitiva", "Realizar descansos breves con regularidad", "Utilizar tecnicas correctas de levantamiento", "Comunicar cualquier molestia musculoesqueletica de forma temprana"]
+    },
+    "GPRL008": {
+      "title": "Manipulacion Manual de Cargas",
+      "legalBasis": "RD 487/1997 sobre manipulacion manual de cargas",
+      "summary": "La manipulacion manual de objetos pesados (entregas, barriles, equipamiento) es una causa importante de lesiones laborales. El peso maximo recomendado es de 25 kg. El personal debe estar formado en tecnicas seguras de levantamiento. Deben proporcionarse ayudas mecanicas cuando sea posible.",
+      "keyPoints": ["Peso maximo recomendado: 25 kg", "Utilizar la tecnica correcta de levantamiento: flexionar rodillas, espalda recta", "Usar carretillas y ayudas mecanicas cuando esten disponibles", "Pedir ayuda para cargas pesadas o de manejo dificil", "Almacenar los objetos pesados a la altura de la cintura", "Comunicar cualquier dolor de espalda o lesion de inmediato"]
+    },
+    "GPRL009": {
+      "title": "Manipulacion de Productos Quimicos",
+      "legalBasis": "RD 374/2001 sobre exposicion a agentes quimicos",
+      "summary": "Los productos de limpieza, desengrasantes y desinfectantes deben manipularse de forma segura. Las Fichas de Datos de Seguridad deben estar disponibles para todos los productos. El personal debe utilizar los EPI adecuados. Los productos quimicos deben almacenarse separados de los alimentos en recipientes etiquetados. Nunca mezclar diferentes productos quimicos.",
+      "keyPoints": ["Leer las Fichas de Datos de Seguridad antes de utilizar cualquier producto", "Utilizar los EPI adecuados (guantes, proteccion ocular)", "Nunca mezclar diferentes productos quimicos", "Almacenar los productos quimicos separados de los alimentos", "Mantener los productos quimicos en sus envases originales etiquetados", "Conocer la ubicacion del lavaojos"]
+    },
+    "GPRL010": {
+      "title": "Prevencion del Estres Termico",
+      "legalBasis": "RD 486/1997 sobre condiciones de los lugares de trabajo",
+      "summary": "Los entornos de cocina pueden alcanzar temperaturas extremas. Las medidas preventivas incluyen ventilacion adecuada, acceso al agua, rotacion entre zonas calientes y frescas, ropa apropiada y vigilancia de los sintomas de estres termico.",
+      "keyPoints": ["Garantizar una ventilacion adecuada en las zonas de cocina", "Proporcionar acceso libre a agua potable", "Rotar entre puestos calientes y frescos", "Llevar ropa transpirable y adecuada", "Vigilar los sintomas de estres termico en el personal", "Permitir descansos adicionales en condiciones de calor extremo"]
+    },
+    "GPRL011": {
+      "title": "Exposicion al Ruido",
+      "legalBasis": "RD 286/2006 sobre proteccion frente al ruido",
+      "summary": "Los ambientes de barra y eventos pueden superar los niveles seguros de ruido (85 dB). Deben realizarse evaluaciones del nivel de ruido. Debe proporcionarse proteccion auditiva al personal en entornos ruidosos. Los limites de volumen musical pueden aplicarse segun la ordenanza local.",
+      "keyPoints": ["Realizar evaluaciones de nivel de ruido", "Proporcionar proteccion auditiva por encima de 85 dB", "Limitar la exposicion continua a musica alta", "Ubicar al personal lejos de los altavoces cuando sea posible", "Vigilar las quejas relacionadas con la audicion", "Cumplir las ordenanzas municipales de ruido"]
+    },
+    "GPRL012": {
+      "title": "Seguridad Electrica",
+      "legalBasis": "RD 614/2001 sobre proteccion frente al riesgo electrico",
+      "summary": "Todos los equipos electricos deben mantenerse e inspeccionarse adecuadamente. El personal no debe utilizar cables ni equipos danados. Las zonas de agua y electricidad deben estar correctamente separadas. Solo tecnicos cualificados pueden realizar reparaciones electricas.",
+      "keyPoints": ["Nunca utilizar equipos electricos danados", "Mantener el agua alejada de los equipos electricos", "Comunicar los equipos averiados de inmediato", "Recurrir solo a electricistas cualificados para las reparaciones", "Revisar enchufes y cables con regularidad", "Conocer la ubicacion del interruptor general"]
+    },
+    "GPRL013": {
+      "title": "Prevencion de Incendios",
+      "legalBasis": "RD 513/2017 Reglamento de Instalaciones de Proteccion contra Incendios",
+      "summary": "La prevencion de incendios en hosteleria requiere el mantenimiento adecuado de los sistemas de extincion, el acceso despejado a los extintores, la formacion periodica del personal y protocolos estrictos en cocina para incendios de grasa y equipos de gas.",
+      "keyPoints": ["Conocer la ubicacion y el uso de los extintores", "Mantener los sistemas de extincion de las campanas de cocina", "Mantener las salidas de emergencia despejadas y accesibles", "Nunca arrojar agua sobre incendios de grasa", "Revisar los equipos contra incendios mensualmente", "Realizar simulacros de incendio cada 6 meses"]
+    },
+    "GPRL014": {
+      "title": "Seguridad del Gas",
+      "legalBasis": "RD 919/2006 sobre regulacion de instalaciones de gas",
+      "summary": "Las instalaciones de gas deben ser inspeccionadas periodicamente por tecnicos autorizados. El personal debe saber detectar fugas de gas (olor, silbido), cerrar el suministro de gas y evacuar. Los equipos de gas deben mantenerse segun las especificaciones del fabricante.",
+      "keyPoints": ["Saber como detectar una fuga de gas", "Conocer la ubicacion de la llave de corte del gas", "Evacuar inmediatamente si se sospecha una fuga de gas", "Nunca utilizar llama abierta para comprobar fugas", "Programar inspecciones periodicas de la instalacion de gas", "Ventilar la zona antes de volver a encender los equipos"]
+    },
+    "GPRL015": {
+      "title": "Proteccion durante el Embarazo y la Lactancia",
+      "legalBasis": "Ley 31/1995 Art. 26, RD 298/2009",
+      "summary": "Las trabajadoras embarazadas y en periodo de lactancia tienen derecho a una evaluacion de riesgos especifica de su puesto, a la adaptacion de las condiciones de trabajo y a la exencion del trabajo nocturno y de tareas peligrosas. Si la adaptacion no es posible, debe ofrecerse un cambio temporal de puesto.",
+      "keyPoints": ["Realizar una evaluacion de riesgos especifica para trabajadoras embarazadas", "Adaptar las condiciones de trabajo para eliminar riesgos", "Eximir del trabajo nocturno si asi lo aconseja el medico", "Evitar la exposicion a productos quimicos, cargas pesadas y bipedestacion prolongada", "Conceder permiso de lactancia: 1 hora diaria", "Ofrecer un cambio temporal de puesto si los riesgos no pueden eliminarse"]
+    },
+    "GPRL016": {
+      "title": "Proteccion de Trabajadores Jovenes",
+      "legalBasis": "Ley 31/1995, RD 1/1995 Estatuto de los Trabajadores",
+      "summary": "Los trabajadores menores de 18 anos cuentan con protecciones adicionales: prohibicion del trabajo nocturno, limitacion de la jornada laboral, evaluacion especifica de riesgos y prohibicion de tareas peligrosas. La jornada laboral no debe superar las 8 horas diarias incluyendo el tiempo de formacion.",
+      "keyPoints": ["Prohibido el trabajo nocturno para menores de 18 anos", "Maximo 8 horas/dia incluyendo formacion", "Evaluacion de riesgos especifica obligatoria", "Prohibido el manejo de determinados equipos", "Descansos adicionales obligatorios", "Consentimiento de los padres obligatorio para menores de 16 anos"]
+    },
+    "GPRL017": {
+      "title": "Vigilancia de la Salud en Trabajo Nocturno",
+      "legalBasis": "ET Art. 36, Ley 31/1995",
+      "summary": "Los trabajadores nocturnos (22:00-06:00) tienen derecho a vigilancia periodica de la salud. El empresario debe evaluar los riesgos especificos del trabajo nocturno y ofrecer examenes medicos gratuitos. Si surgen problemas de salud, debe ofrecerse el traslado al turno de dia.",
+      "keyPoints": ["Ofrecer reconocimientos medicos periodicos a los trabajadores nocturnos", "Evaluar los riesgos especificos del trabajo nocturno", "Trasladar al turno de dia si surgen problemas de salud", "Maximo 8 horas de media en cualquier periodo de 15 dias", "Garantizar un descanso adecuado entre turnos", "Vigilar los problemas de salud relacionados con el sueno"]
+    },
+    "GPRL018": {
+      "title": "Prevencion de Riesgos Psicosociales",
+      "legalBasis": "Ley 31/1995, Directiva Marco UE 89/391/CEE",
+      "summary": "Los riesgos psicosociales incluyen el estres laboral, el agotamiento profesional (burnout), el acoso y el desequilibrio entre vida laboral y personal. Las medidas preventivas incluyen cargas de trabajo razonables, comunicacion clara, protocolos contra el acoso y sistemas de apoyo. Estos riesgos deben incluirse en la evaluacion de riesgos.",
+      "keyPoints": ["Incluir los riesgos psicosociales en la evaluacion de riesgos", "Promover cargas de trabajo y horarios razonables", "Implantar politicas contra el acoso y la intimidacion", "Facilitar canales para comunicar preocupaciones", "Apoyar la conciliacion de la vida laboral y personal", "Formar a los responsables para reconocer los signos de estres"]
+    },
+    "GLAB001": {
+      "title": "Convenio Colectivo",
+      "legalBasis": "ET Art. 82-92, convenio de hosteleria aplicable",
+      "summary": "El Convenio Colectivo de Hosteleria establece las condiciones minimas del sector, incluyendo tablas salariales, jornada laboral, horas extraordinarias, vacaciones y categorias profesionales. El convenio aplicable depende de la provincia. Todas las condiciones de empleo deben cumplir o superar los minimos del convenio.",
+      "keyPoints": ["Conocer el convenio provincial aplicable", "Las condiciones minimas no pueden reducirse por contrato", "Se aplican las tablas salariales por categoria profesional", "Los limites de jornada son de obligado cumplimiento", "El convenio se actualiza periodicamente — mantenerse al dia", "Exponer la referencia del convenio en el centro de trabajo"]
+    },
+    "GLAB002": {
+      "title": "Jornada Laboral y Descansos",
+      "legalBasis": "ET Art. 34-37, RD 1561/1995",
+      "summary": "La jornada maxima semanal es de 40 horas de media anual. La jornada diaria maxima es de 9 horas. El descanso minimo entre jornadas es de 12 horas. Se exige un descanso minimo de 15 minutos en jornadas superiores a 6 horas. El descanso semanal minimo es de 1,5 dias consecutivos.",
+      "keyPoints": ["Maximo 40 horas/semana (media anual)", "Maximo 9 horas diarias (salvo que el convenio permita mas)", "Minimo 12 horas entre jornadas", "15 minutos de descanso en jornadas superiores a 6 horas", "1,5 dias de descanso semanal (acumulable)", "Maximo 80 horas extraordinarias al ano"]
+    },
+    "GLAB003": {
+      "title": "Regulacion de Horas Extraordinarias",
+      "legalBasis": "ET Art. 35, convenio aplicable",
+      "summary": "Las horas extraordinarias deben ser voluntarias (salvo fuerza mayor). Maximo 80 horas extraordinarias al ano. Deben compensarse con retribucion (minimo 175 % segun convenio) o con descanso equivalente dentro de los 4 meses siguientes. Todas las horas extraordinarias deben registrarse.",
+      "keyPoints": ["Las horas extraordinarias son voluntarias (no pueden imponerse)", "Maximo 80 horas extraordinarias al ano", "Compensar al 175 % o con descanso equivalente", "El descanso compensatorio debe disfrutarse en un plazo de 4 meses", "Registrar todas las horas extraordinarias", "Trabajadores a tiempo parcial: las horas extraordinarias tienen normas especificas"]
+    },
+    "GLAB004": {
+      "title": "Derecho a Vacaciones",
+      "legalBasis": "ET Art. 38, convenio aplicable",
+      "summary": "Todos los trabajadores tienen derecho a un minimo de 30 dias naturales (22 dias habiles) de vacaciones retribuidas al ano. Las fechas de vacaciones deben acordarse entre empresa y trabajador. Al menos un periodo debe ser de 2 semanas consecutivas. Las vacaciones no pueden solaparse con la baja por enfermedad.",
+      "keyPoints": ["Minimo 30 dias naturales al ano", "Al menos 2 semanas consecutivas en un periodo", "Calendario vacacional acordado por ambas partes", "Publicar las vacaciones con 2 meses de antelacion", "No pueden solaparse con la baja por enfermedad", "Prorrateadas en caso de empleo por periodo parcial del ano"]
+    },
+    "GLAB005": {
+      "title": "Registro de Jornada",
+      "legalBasis": "RD-ley 8/2019 sobre registro de jornada laboral",
+      "summary": "Desde 2019, todos los empresarios deben registrar la hora de inicio y finalizacion de la jornada diaria de cada trabajador. Los registros deben conservarse durante 4 anos. El sistema debe ser fiable y accesible para los trabajadores y la inspeccion de trabajo. El incumplimiento puede acarrear multas de 626 a 6.250 euros.",
+      "keyPoints": ["Registrar la hora de inicio y finalizacion diaria de todo el personal", "Conservar los registros durante 4 anos", "El sistema debe ser fiable y verificable", "Los trabajadores deben tener acceso a sus registros", "Disponible para la inspeccion de trabajo en cualquier momento", "Multas por incumplimiento: de 626 a 6.250 euros"]
+    },
+    "GLAB006": {
+      "title": "Tipos de Contrato en Hosteleria",
+      "legalBasis": "ET Art. 8-16, RD-ley 32/2021 reforma laboral",
+      "summary": "La reforma laboral de 2021 cambio significativamente los tipos de contrato. El contrato indefinido es ahora el modelo por defecto. Los contratos temporales se limitan a circunstancias especificas (picos de produccion, sustitucion). Los contratos fijos discontinuos son habituales en la hosteleria estacional.",
+      "keyPoints": ["El contrato indefinido es el modelo por defecto", "Contrato temporal solo por causas legales especificas", "Fijo discontinuo para trabajo estacional recurrente", "Contratos formativos para trabajadores jovenes", "Los contratos a tiempo parcial deben especificar las horas exactas", "Periodo de prueba: 6 meses (titulados), 2 meses (resto)"]
+    },
+    "GLAB007": {
+      "title": "Derechos y Deberes del Trabajador",
+      "legalBasis": "ET Art. 4-5, Constitucion Espanola Art. 35",
+      "summary": "Los trabajadores tienen derechos fundamentales que incluyen remuneracion justa, no discriminacion, dignidad en el trabajo, salud y seguridad, afiliacion sindical e informacion/consulta. Los deberes incluyen buena fe, diligencia, cumplimiento de las normas de seguridad y confidencialidad.",
+      "keyPoints": ["Derecho a una remuneracion justa y puntual", "Derecho a la no discriminacion y la igualdad de trato", "Derecho a la salud y seguridad en el trabajo", "Derecho a la intimidad y la dignidad", "Deber de cumplir las instrucciones de seguridad", "Deber de actuar de buena fe"]
+    },
+    "GLAB008": {
+      "title": "Comprender tu Nomina",
+      "legalBasis": "ET Art. 29, convenio aplicable",
+      "summary": "Comprender tu nomina es importante. Muestra el salario base, los complementos, las horas extraordinarias, las deducciones (IRPF, Seguridad Social) y el salario neto. La nomina debe entregarse mensualmente. Cualquier discrepancia debe comunicarse con prontitud.",
+      "keyPoints": ["Salario base segun categoria del convenio", "Complementos: antiguedad, nocturnidad, propinas", "Diferencia entre salario bruto y neto", "La retencion del IRPF depende de la situacion personal", "Cotizacion a la Seguridad Social (aproximadamente el 6,35 %)", "Dos pagas extraordinarias al ano"]
+    },
+    "GLAB009": {
+      "title": "Seguridad Social",
+      "legalBasis": "Ley General de la Seguridad Social (RD Legislativo 8/2015)",
+      "summary": "Todos los trabajadores por cuenta ajena deben estar dados de alta en la Seguridad Social. Las cotizaciones cubren asistencia sanitaria, pensiones, prestaciones por desempleo e incapacidad temporal. El empresario es responsable del alta y del pago de las cotizaciones. Los trabajadores deben verificar periodicamente su Informe de Vida Laboral.",
+      "keyPoints": ["El alta es obligatoria desde el primer dia", "El empresario gestiona el alta y las cotizaciones", "Cubre asistencia sanitaria, pension y desempleo", "Consultar periodicamente el Informe de Vida Laboral", "Comunicar cualquier irregularidad a la Seguridad Social", "Conservar el numero de la Seguridad Social de forma segura"]
+    },
+    "GROL001": {
+      "title": "Seguridad contra Incendios en Cocina",
+      "legalBasis": "RD 513/2017, CTE DB-SI",
+      "summary": "Los incendios en cocina son los mas frecuentes en hosteleria. Los incendios de grasa requieren metodos especiales de extincion — nunca usar agua. Las campanas de cocina deben disponer de extincion automatica. Las mantas ignifugas deben estar accesibles. Todo el personal de cocina debe conocer los procedimientos de corte de gas.",
+      "keyPoints": ["Nunca usar agua en incendios de grasa", "Conocer la ubicacion y el uso de la manta ignifuga", "Mantener la extincion automatica de la campana de cocina", "Conocer la ubicacion de la llave de corte del gas", "Mantener el extintor accesible (Clase F para grasas)", "Limpiar los filtros de la campana regularmente para evitar la acumulacion de grasa"]
+    },
+    "GROL002": {
+      "title": "Seguridad con Cuchillos en Cocina",
+      "legalBasis": "Ley 31/1995, RD 773/1997",
+      "summary": "Los cortes con cuchillo son una de las lesiones mas habituales en cocina. La prevencion requiere formacion adecuada, uso de cuchillos afilados (los cuchillos desafilados son mas peligrosos), tecnicas de corte apropiadas, guantes anticorte para determinadas tareas y almacenamiento correcto.",
+      "keyPoints": ["Utilizar cuchillos afilados — los desafilados resbalan mas", "Utilizar la tecnica de corte correcta", "Cortar en direccion contraria al cuerpo", "Usar guantes anticorte para deshuesar y tareas similares", "Guardar los cuchillos en soportes o bloques especificos", "Nunca dejar cuchillos en fregaderos o sumergidos en agua", "Transportar los cuchillos con la punta hacia abajo pegados al cuerpo"]
+    },
+    "GROL003": {
+      "title": "Prevencion de Quemaduras en Cocina",
+      "legalBasis": "Ley 31/1995, RD 486/1997",
+      "summary": "Las quemaduras por superficies calientes, liquidos, vapor y aceite son peligros frecuentes en cocina. La prevencion incluye el uso de EPI adecuado (guantes termicos, manga larga), atencion a las superficies calientes, tecnicas correctas de manejo de ollas y primeros auxilios inmediatos para quemaduras.",
+      "keyPoints": ["Utilizar guantes termicos al manipular objetos calientes", "Avisar al transportar objetos calientes: 'atras!', 'caliente!'", "Girar los mangos de las ollas hacia el interior del fogon", "Abrir las tapas en direccion contraria para evitar quemaduras de vapor", "Tener un botiquin de quemaduras accesible en cocina", "Primeros auxilios: agua fria 10+ minutos, no aplicar hielo"]
+    },
+    "GROL004": {
+      "title": "Ventilacion en Cocina",
+      "legalBasis": "RD 486/1997, RITE (RD 1027/2007)",
+      "summary": "Una ventilacion adecuada es esencial para la seguridad y el confort en cocina. Las campanas extractoras deben estar dimensionadas y mantenidas correctamente. El suministro de aire debe equilibrar la extraccion. Los filtros deben limpiarse regularmente para prevenir la acumulacion de grasa y el riesgo de incendio.",
+      "keyPoints": ["Asegurar que las campanas extractoras funcionan correctamente", "Limpiar los filtros de la campana semanalmente", "Comprobar el calendario de mantenimiento del sistema de ventilacion", "Comunicar cualquier deficiencia de ventilacion de inmediato", "Nunca obstruir las aberturas de ventilacion", "Vigilar los niveles de CO en cocinas de gas"]
+    },
+    "GROL005": {
+      "title": "Seguridad de Equipos de Cocina",
+      "legalBasis": "RD 1215/1997 sobre seguridad de los equipos de trabajo",
+      "summary": "Los equipos de cocina (cortadoras, batidoras, freidoras, hornos) deben utilizarse segun las instrucciones del fabricante. El personal debe recibir formacion sobre cada equipo. Las protecciones de seguridad nunca deben retirarse. Los equipos deben mantenerse e inspeccionarse adecuadamente.",
+      "keyPoints": ["Leer y seguir las instrucciones del fabricante", "Completar la formacion antes de utilizar los equipos", "Nunca retirar las protecciones de seguridad", "Apagar y desenchufar antes de limpiar", "Comunicar cualquier averia de inmediato", "Mantener las manos alejadas de las partes moviles"]
+    },
+    "GROL006": {
+      "title": "Servicio Responsable de Alcohol",
+      "legalBasis": "Ley 5/2018 (varia por comunidad autonoma), Ley 26/2015 proteccion de menores",
+      "summary": "El personal de barra debe servir alcohol de forma responsable. Esto incluye denegar el servicio a menores de 18 anos, reconocer los signos de intoxicacion y disponer de protocolos para denegar el servicio. El personal debe conocer la responsabilidad legal de servir a personas intoxicadas.",
+      "keyPoints": ["Nunca servir alcohol a menores de 18 anos", "Pedir el DNI si se duda sobre la edad", "Reconocer los signos de intoxicacion", "Saber denegar el servicio de forma diplomatica", "Ofrecer agua y comida a los clientes intoxicados", "Conocer tu responsabilidad legal"]
+    },
+    "GROL007": {
+      "title": "Manipulacion de Cristaleria en Barra",
+      "legalBasis": "Ley 31/1995, seguridad general",
+      "summary": "Los cristales rotos suponen un peligro significativo en el entorno de barra. Los procedimientos correctos de manipulacion, almacenamiento y limpieza minimizan el riesgo. Nunca recoger cristales rotos con las manos desnudas. Utilizar contenedores especificos para cristales rotos.",
+      "keyPoints": ["Inspeccionar los vasos en busca de mellas y grietas antes de usarlos", "Desechar la cristaleria danada de inmediato", "Nunca recoger cristales rotos con las manos desnudas", "Utilizar escoba y recogedor o pano humedo", "Usar un contenedor separado para cristales rotos", "Nunca utilizar un vaso para recoger hielo"]
+    },
+    "GROL008": {
+      "title": "Manejo de Bandejas en Sala",
+      "legalBasis": "Ley 31/1995, RD 487/1997",
+      "summary": "El manejo correcto de bandejas previene lesiones y derrames. La formacion en la tecnica correcta de transporte, la distribucion de la carga y la conciencia del recorrido es esencial. Las bandejas pesadas deben sujetarse con ambas manos.",
+      "keyPoints": ["Distribuir el peso de manera uniforme en la bandeja", "Sujetar las bandejas pesadas con ambas manos", "Ser consciente del recorrido y los obstaculos", "Utilizar soportes de bandeja para cargas pesadas", "Prestar atencion a los suelos mojados y las superficies irregulares", "Comunicar cualquier situacion de sobrecarga"]
+    },
+    "GROL009": {
+      "title": "Prevencion de Resbalones en Sala",
+      "legalBasis": "RD 486/1997, Ley 31/1995",
+      "summary": "Los accidentes por resbalones y caidas son frecuentes en hosteleria. La prevencion requiere calzado antideslizante, limpieza inmediata de derrames, mantenimiento adecuado del suelo y senalizacion clara de las zonas mojadas.",
+      "keyPoints": ["Llevar calzado antideslizante en todo momento", "Limpiar los derrames de inmediato", "Colocar senales de suelo mojado al limpiar", "Mantener los pasillos libres de obstaculos", "Comunicar suelos danados o irregulares", "Extremar la precaucion en las transiciones cocina-sala"]
+    },
+    "GROL010": {
+      "title": "Protocolo contra el Acoso",
+      "legalBasis": "LO 3/2007 para la igualdad, ET Art. 4.2.e",
+      "summary": "Toda empresa debe disponer de un protocolo contra el acoso que cubra el acoso sexual, el acoso por razon de sexo y el acoso laboral. El protocolo debe incluir medidas preventivas, procedimiento de denuncia, proceso de investigacion y sanciones. Todo el personal debe ser informado.",
+      "keyPoints": ["Tolerancia cero con todas las formas de acoso", "Conocer el procedimiento de denuncia", "Todas las denuncias seran investigadas de forma confidencial", "Se prohiben las represalias contra los denunciantes", "La formacion en prevencion es obligatoria", "Las sanciones van desde la amonestacion hasta el despido"]
+    },
+    "GROL011": {
+      "title": "Plan de Igualdad",
+      "legalBasis": "LO 3/2007, RD 901/2020 sobre planes de igualdad",
+      "summary": "Las empresas con 50 o mas empleados deben disponer de un Plan de Igualdad. Incluso las empresas mas pequenas deben respetar los principios de igualdad de trato. El plan aborda la igualdad retributiva, la seleccion de personal, la promocion, la conciliacion de la vida laboral y personal y la prevencion del acoso sexual.",
+      "keyPoints": ["Igual retribucion por trabajo de igual valor", "Procesos de seleccion no discriminatorios", "Igualdad de acceso a la formacion y la promocion", "Medidas de conciliacion de la vida laboral y personal", "Medidas de prevencion del acoso sexual", "Seguimiento y revision periodica de los indicadores de igualdad"]
+    },
+    "GROL012": {
+      "title": "Derecho a la Desconexion Digital",
+      "legalBasis": "LO 3/2018 LOPDGDD Art. 88, ET Art. 20 bis",
+      "summary": "Los trabajadores tienen derecho a la desconexion digital fuera del horario laboral. Los empresarios no pueden exigir al personal que responda correos electronicos, mensajes o llamadas durante los periodos de descanso. Debe establecerse una politica interna que defina los terminos de este derecho.",
+      "keyPoints": ["Sin obligacion de responder a mensajes de trabajo fuera del horario", "Respetar los periodos de descanso y las vacaciones", "Los responsables deben predicar con el ejemplo", "Excepciones solo para emergencias genuinas", "La politica debe comunicarse a todo el personal", "No se puede penalizar a los trabajadores por desconectar"]
+    },
+    "GROL013": {
+      "title": "Prevencion del Acoso Laboral",
+      "legalBasis": "Ley 31/1995, ET Art. 4.2.e, CC Art. 173.1",
+      "summary": "El acoso laboral (mobbing) incluye conductas hostiles repetidas que crean un entorno de trabajo intimidatorio o degradante. La prevencion requiere politicas claras, canales de denuncia, procedimientos de investigacion y una cultura de trabajo respetuosa.",
+      "keyPoints": ["Reconocer los signos de acoso laboral", "Denunciar cualquier incidente a traves de los canales oficiales", "Investigacion confidencial de todas las denuncias", "Apoyo a los trabajadores afectados", "Sanciones para los acosadores", "Fomentar una cultura de trabajo respetuosa"]
+    },
+    "GROL014": {
+      "title": "Proteccion de Datos (RGPD/LOPDGDD)",
+      "legalBasis": "RGPD UE 2016/679, LO 3/2018 LOPDGDD",
+      "summary": "El personal maneja datos personales de clientes y companeros. El cumplimiento del RGPD requiere comprender la minimizacion de datos, el consentimiento, el almacenamiento seguro y los derechos de las personas. Los datos de los empleados (horarios, nominas, salud) deben estar protegidos.",
+      "keyPoints": ["Recoger solo los datos personales necesarios", "Obtener el consentimiento cuando sea necesario", "Almacenar los datos de forma segura (fisica y digitalmente)", "Conocer los derechos de los clientes (acceso, supresion)", "Comunicar las brechas de seguridad en un plazo de 72 horas", "Nunca compartir datos personales sin autorizacion"]
+    },
+    "GDOC001": {
+      "title": "Lista de Verificacion de Documentacion Obligatoria",
+      "legalBasis": "Multiples normativas — recopilacion",
+      "summary": "Esta lista de verificacion abarca toda la documentacion legalmente exigida para un establecimiento de hosteleria: registros de seguridad alimentaria, documentacion de PRL, registros de empleo, registros sanitarios, licencias, seguros y certificaciones normativas.",
+      "keyPoints": ["Plan APPCC y registros", "Plan de Prevencion de Riesgos Laborales", "Plan de emergencias/evacuacion", "Contratos y altas de empleados", "Carnets de manipulador de alimentos", "Registro sanitario (RGSEAA)", "Licencia de actividad y permiso de apertura", "Documentacion de seguros", "Certificado de proteccion contra incendios", "Registros del sistema de registro de jornada"]
+    },
+    "GDOC002": {
+      "title": "Registros de Formacion",
+      "legalBasis": "Ley 31/1995, UE 852/2004",
+      "summary": "Toda la formacion impartida al personal debe documentarse. Los registros deben incluir el tema de la formacion, la fecha, la duracion, el formador, los asistentes y el contenido. Deben mantenerse registros de formacion tanto en seguridad alimentaria como en prevencion de riesgos laborales y estar disponibles para inspeccion.",
+      "keyPoints": ["Registrar todas las sesiones de formacion con fechas y contenidos", "Mantener registros de asistencia firmados por los participantes", "Conservar certificados y cualificaciones en archivo", "Documentar la formacion de acogida del personal nuevo", "Registrar las fechas de formacion de reciclaje", "Tener los registros disponibles para inspeccion"]
+    },
+    "GDOC003": {
+      "title": "Plan Anual de Formacion",
+      "legalBasis": "Ley 31/1995 Art. 19, ET Art. 4.2.b",
+      "summary": "Un plan anual de formacion asegura que todo el personal recibe la formacion necesaria en seguridad alimentaria, prevencion de riesgos laborales y competencias profesionales. El plan debe identificar las necesidades formativas, programar las sesiones, asignar presupuesto y hacer seguimiento del cumplimiento.",
+      "keyPoints": ["Evaluar las necesidades formativas de cada puesto", "Programar sesiones de formacion a lo largo del ano", "Incluir formacion de reciclaje en seguridad alimentaria", "Incluir formacion especifica en PRL", "Hacer seguimiento de las tasas de cumplimiento", "Evaluar la eficacia de la formacion"]
+    },
+    "GDOC004": {
+      "title": "Preparacion para Inspecciones Sanitarias",
+      "legalBasis": "UE 882/2004 sobre controles oficiales",
+      "summary": "Las inspecciones sanitarias pueden producirse sin previo aviso. La preparacion requiere mantener toda la documentacion de seguridad alimentaria al dia, asegurar que las instalaciones cumplen los estandares de higiene y disponer de personal designado que pueda asistir a los inspectores.",
+      "keyPoints": ["Mantener toda la documentacion de seguridad alimentaria actualizada", "Asegurar que los registros del APPCC estan al dia", "Los registros de temperatura deben estar completos", "Los registros de limpieza deben estar al dia", "Los carnets de manipulador de alimentos deben estar facilmente accesibles", "Saber quien es el responsable de acompanar a los inspectores"]
+    },
+    "GDOC005": {
+      "title": "Preparacion para Inspecciones de Trabajo",
+      "legalBasis": "Ley 23/2015 de la Inspeccion de Trabajo",
+      "summary": "Las inspecciones de trabajo verifican el cumplimiento de la legislacion laboral, la prevencion de riesgos laborales y la Seguridad Social. Los inspectores pueden presentarse sin previo aviso. Los documentos clave que deben estar disponibles incluyen contratos, registros de jornada, nominas, plan de PRL y altas en la Seguridad Social.",
+      "keyPoints": ["Mantener todos los contratos de trabajo accesibles", "El sistema de registro de jornada debe estar operativo", "Nominas disponibles del ano en curso", "Documentacion de PRL actualizada", "Altas en la Seguridad Social verificadas", "Saber quien esta autorizado para atender a los inspectores"]
+    },
+    "GENV001": {
+      "title": "Gestion de Residuos",
+      "legalBasis": "Ley 7/2022 de residuos y suelos contaminados",
+      "summary": "La ley de residuos de Espana exige a las empresas minimizar, separar y eliminar correctamente los residuos. Los establecimientos de hosteleria deben separar como minimo: organico, envases, vidrio, papel/carton y aceite usado. Deben mantenerse registros de residuos.",
+      "keyPoints": ["Separar los residuos en las categorias exigidas", "Contratar servicios de recogida de residuos autorizados", "Mantener registros de generacion de residuos", "Minimizar los plasticos de un solo uso", "Formar a todo el personal en separacion de residuos", "Exponer las instrucciones de separacion de residuos de forma visible"]
+    },
+    "GENV002": {
+      "title": "Protocolo de Separacion de Residuos",
+      "legalBasis": "Ley 7/2022, ordenanzas municipales locales",
+      "summary": "La separacion correcta de residuos es tanto una obligacion legal como una responsabilidad medioambiental. Cada tipo de residuo tiene contenedores y horarios de recogida designados. El personal debe estar formado para separar correctamente. Las fracciones de residuos contaminadas reducen la eficacia del reciclaje.",
+      "keyPoints": ["Residuos organicos: contenedor marron/verde", "Envases: contenedor amarillo", "Vidrio: contenedor verde", "Papel/carton: contenedor azul", "Aceite de cocina usado: gestor autorizado", "Residuos generales: contenedor gris", "Etiquetar claramente todos los contenedores de residuos"]
+    },
+    "GENV003": {
+      "title": "Gestion de Aceite Usado",
+      "legalBasis": "Ley 7/2022, RD 679/2006",
+      "summary": "El aceite de cocina usado nunca debe verterse por el desague. Debe recogerse en recipientes especificos y ser retirado por empresas de reciclaje autorizadas. Deben mantenerse registros de la eliminacion de aceite. Un litro de aceite puede contaminar 1.000 litros de agua.",
+      "keyPoints": ["Nunca verter aceite por el desague", "Recoger el aceite usado en recipientes especificos", "Contratar un servicio de recogida de aceite autorizado", "Conservar los justificantes y registros de recogida", "Almacenar los recipientes de aceite en una zona segura", "Cambiar el aceite de fritura antes de su degradacion"]
+    },
+    "GENV004": {
+      "title": "Eficiencia Energetica",
+      "legalBasis": "RD 390/2021 sobre eficiencia energetica, UE 2012/27",
+      "summary": "La eficiencia energetica reduce costes e impacto ambiental. Las medidas clave incluyen iluminacion LED, equipos eficientes, gestion de la temperatura, mantenimiento preventivo y concienciacion del personal en practicas de ahorro energetico.",
+      "keyPoints": ["Utilizar iluminacion LED en todo el establecimiento", "Apagar los equipos cuando no se utilicen", "Mantener una regulacion optima de la temperatura", "Mantener las puertas de las camaras frigorificas cerradas", "Programar el mantenimiento periodico de los equipos", "Controlar el consumo energetico mensualmente"]
+    },
+    "GENV005": {
+      "title": "Programa de Reduccion del Desperdicio Alimentario",
+      "legalBasis": "Ley 1/2025, estrategia de la granja a la mesa de la UE",
+      "summary": "Mas alla del cumplimiento legal, un programa de reduccion del desperdicio alimentario demuestra responsabilidad medioambiental. Incluye la auditoria de residuos, la planificacion de menus para minimizar mermas, la formacion del personal en raciones, el compostaje cuando sea posible y las alianzas con organizaciones de donacion de alimentos.",
+      "keyPoints": ["Auditar el desperdicio alimentario para identificar las fuentes principales", "Planificar los menus para aprovechar los ingredientes de forma eficiente", "Formar al personal en el tamano correcto de las raciones", "Implantar el compostaje cuando sea viable", "Colaborar con organizaciones de donacion de alimentos", "Establecer objetivos de reduccion de residuos y hacer seguimiento del progreso"]
+    }
+  }
+}

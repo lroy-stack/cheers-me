@@ -1,0 +1,180 @@
+{
+  "title": "Vermeidung von thermischem Stress am Arbeitsplatz in der Gastronomie",
+  "legalBasis": "Königliches Dekret 486/1997 über Mindestanforderungen an Gesundheit und Sicherheit am Arbeitsplatz; Gesetz 31/1995 zur Verhütung von Arbeitsrisiken (Ley 31/1995 de Prevención de Riesgos Laborales); NTP 322 (INSST) zur Bewertung des thermischen Umfelds",
+  "summary": "Thermischer Stress gehört zu den bedeutendsten Arbeitsgefahren in der Gastronomie, insbesondere in Küchen, wo Beschäftigte routinemäßig extremer Hitze durch Öfen, Grills, Fritteusen und Kochfelder ausgesetzt sind. Das Königliche Dekret 486/1997 legt die Mindestbedingungen für Temperatur, Luftfeuchtigkeit und Belüftung am Arbeitsplatz fest, die Arbeitgeber zum Schutz der Gesundheit und Sicherheit der Beschäftigten einhalten müssen.\n\nDieser Leitfaden behandelt sowohl Hitzestress als auch Kältestress in gastronomischen Betrieben, einschließlich Hitzeexposition in Küchen, Arbeit in Kühlräumen und Terrassenservice bei extremen Wetterbedingungen. Er bietet praxisnahe Strategien zur Bewertung, Prävention und Notfallreaktion im Einklang mit den spanischen Arbeitsschutzvorschriften.\n\nDas Verständnis der Prävention von thermischem Stress ist sowohl für Führungskräfte als auch für Beschäftigte in der Gastronomie unerlässlich, da eine längere Exposition gegenüber thermischen Extremen zu Hitzschlag, Hitzeerschöpfung, Hypothermie und chronischen Gesundheitsproblemen führen kann. Das spanische Recht verpflichtet Arbeitgeber, spezifische Gefährdungsbeurteilungen für thermische Gefahren durchzuführen und geeignete Schutzmaßnahmen umzusetzen.",
+  "keyPoints": [
+    "RD 486/1997 legt Temperaturgrenzen für Arbeitsplätze fest: 17–27 °C für sitzende Tätigkeit, 14–25 °C für leichte körperliche Arbeit",
+    "Küchenumgebungen überschreiten häufig sichere Temperaturschwellen und erfordern spezifische Schutzmaßnahmen",
+    "Arbeitgeber müssen für angemessene Belüftung sorgen, mit Mindestluftwechselraten je nach Art des Arbeitsbereichs",
+    "Die relative Luftfeuchtigkeit muss in allen Arbeitsbereichen zwischen 30 % und 70 % gehalten werden",
+    "Beschäftigte in Kühllagerbereichen müssen geeignete PSA erhalten und die Expositionszeiten müssen begrenzt werden",
+    "Für neue Küchenmitarbeitende werden Hitzeakklimatisierungszeiträume von 7–14 Tagen empfohlen",
+    "Gefährdungsbeurteilungen für thermischen Stress müssen dokumentiert und jährlich überprüft werden",
+    "Notfallprotokolle für Hitzschlag und Hypothermie müssen erstellt und geschult werden"
+  ],
+  "sections": [
+    {
+      "heading": "1. Rechtlicher Rahmen und Pflichten",
+      "content": "Die spanische Gesetzgebung schafft einen umfassenden Rahmen zum Schutz der Beschäftigten vor thermischen Stressgefahren. Die wichtigste Vorschrift ist das Königliche Dekret 486/1997, das spezifische Umgebungsparameter für Arbeitsplätze festlegt, ergänzt durch die allgemeine Sorgfaltspflicht gemäß Gesetz 31/1995 zur Verhütung von Arbeitsrisiken.",
+      "subsections": [
+        {
+          "heading": "1.1 Temperaturanforderungen gemäß RD 486/1997",
+          "content": "Artikel 7 und Anhang III des RD 486/1997 legen spezifische Temperaturbereiche für verschiedene Arbeitstypen fest. Für sitzende Tätigkeit (wie Büroverwaltung in einem Restaurant) müssen Temperaturen zwischen 17 °C und 27 °C gehalten werden. Für leichte körperliche Arbeit (wie Tischservice) liegt der Bereich bei 14 °C bis 25 °C. Diese Grenzen gelten für geschlossene Arbeitsbereiche, in denen die Umgebungsbedingungen kontrolliert werden können. Die Vorschrift verlangt außerdem, dass Temperaturunterschiede zwischen angrenzenden Arbeitsbereichen bestimmte Schwellenwerte nicht überschreiten, um einen Thermoschock beim Wechsel der Beschäftigten zwischen Bereichen zu vermeiden."
+        },
+        {
+          "heading": "1.2 Belüftungs- und Feuchtigkeitsstandards",
+          "content": "Dieselbe Vorschrift schreibt Mindestlüftungsraten von 30 m³/Stunde pro Beschäftigtem in schadstofffreien Umgebungen und 50 m³/Stunde bei vorhandenen Schadstoffen (wie Küchendämpfen) vor. Die relative Luftfeuchtigkeit muss zwischen 30 % und 70 % gehalten werden, außer bei Gefahr statischer Elektrizität — in diesem Fall steigt der Mindestwert auf 50 %. Küchen erfordern verstärkte mechanische Lüftungssysteme einschließlich Absaughauben über allen wärmeerzeugenden Geräten."
+        },
+        {
+          "heading": "1.3 Arbeitgeberpflichten und Arbeitnehmerrechte",
+          "content": "Gemäß Gesetz 31/1995 haben Arbeitgeber eine absolute Pflicht, Beschäftigte vor vorhersehbaren Risiken zu schützen, einschließlich thermischer Gefahren. Dies umfasst die Durchführung von Gefährdungsbeurteilungen (Art. 16), die Bereitstellung von Informationen und Schulungen (Art. 18–19), die Gesundheitsüberwachung (Art. 22) und die Konsultation mit Arbeitnehmervertretern. Beschäftigte haben das Recht, die Arbeit bei ernsthafter und unmittelbarer Gefahr zu verweigern (Art. 21) und dürfen dafür nicht disziplinarisch belangt werden."
+        }
+      ]
+    },
+    {
+      "heading": "2. Hitzestress in Küchenumgebungen",
+      "content": "Küchen sind der Bereich mit dem höchsten Hitzestressrisiko in jedem Gastronomiebetrieb. Umgebungstemperaturen in der Nähe von Kochstationen können während des Spitzenbetriebs 40 °C überschreiten, was durch die Stoffwechselwärme bei intensiver körperlicher Tätigkeit noch verstärkt wird. Eine korrekte Bewertung und Kontrolle von Hitzestress erfordert das Verständnis sowohl umgebungsbedingter als auch persönlicher Faktoren.",
+      "subsections": [
+        {
+          "heading": "2.1 WBGT-Index-Bewertung",
+          "content": "Der Feuchtkugeltemperatur-Index (Wet Bulb Globe Temperature, WBGT) ist die Standardmethode zur Bewertung der Hitzestressbelastung am Arbeitsplatz, wie vom INSST (Instituto Nacional de Seguridad y Salud en el Trabajo) in seiner technischen Anleitung NTP 322 empfohlen. Der WBGT kombiniert Lufttemperatur, Luftfeuchtigkeit, Strahlungswärme und Luftbewegung zu einem einzigen Index. Für mittlere Arbeitsintensität, wie sie typisch für Küchenbetrieb ist, beträgt der WBGT-Referenzgrenzwert 26 °C. Messungen sollten auf Arbeitsplatzniveau während der Spitzenkochzeiten erfolgen. Wenn WBGT-Werte die Referenzgrenzen überschreiten, müssen Arbeitgeber Schutzmaßnahmen umsetzen oder die Expositionszeit durch Arbeits-Ruhe-Zyklen begrenzen."
+        },
+        {
+          "heading": "2.2 Technische Maßnahmen gegen Küchenhitze",
+          "content": "Die Maßnahmenhierarchie verlangt die Priorisierung technischer Lösungen. Wirksame Maßnahmen umfassen: Installation leistungsstarker Absaughauben mit Zuluftanlagen, die gekühlte Frischluft zuführen; Positionierung von Luftschleiern zwischen Küche und Servicebereich; Einsatz von Strahlungswärmeschutzschildern in der Nähe von Grills und Öfen; Auswahl energieeffizienter Geräte mit geringerer Abwärme; Einhaltung ausreichender Abstände zwischen wärmeerzeugenden Geräten; sowie Installation von Punktkühlsystemen, die auf Arbeitsplätze der Beschäftigten gerichtet sind. Klimaanlagen in Küchenumgebungen müssen so ausgelegt sein, dass sie unangenehme Zugluft vermeiden und gleichzeitig eine wirksame Kühlung gewährleisten."
+        },
+        {
+          "heading": "2.3 Arbeitsorganisation und Flüssigkeitszufuhr",
+          "content": "Administrative Maßnahmen sind wesentliche Ergänzungen zu technischen Maßnahmen. Dazu gehören die Einführung von Rotationsplänen, damit kein einzelner Beschäftigter kontinuierlich den heißesten Stationen ausgesetzt ist; die Planung der hitzeintensivsten Vorbereitungsarbeiten (wie Großchargenkochen) in kühleren Zeiträumen; die Einrichtung obligatorischer Ruhepausen in kühlen Bereichen während längerer Servicezeiten; die Bereitstellung unbegrenzten Zugangs zu kühlem Trinkwasser (Arbeitgeber müssen unter heißen Bedingungen mindestens 250 ml pro Beschäftigtem pro Stunde bereitstellen); sowie die Ermöglichung einer eigenständigen Arbeitsrhythmisierung, wo möglich. Neue Mitarbeitende sollten ein Hitzeakklimatisierungsprogramm von 7–14 Tagen mit schrittweise zunehmender Exposition durchlaufen."
+        }
+      ]
+    },
+    {
+      "heading": "3. Kältestress in Lager- und Außenbereichen",
+      "content": "Kältestress betrifft Beschäftigte in der Gastronomie, die regelmäßig Kühlräume, Tiefkühlräume betreten oder in den Wintermonaten auf Außenterrassen arbeiten. Obwohl weniger häufig als Hitzestress in der Gastronomie, kann Kälteexposition ebenso gefährlich sein und erfordert spezifische Präventionsmaßnahmen.",
+      "subsections": [
+        {
+          "heading": "3.1 Arbeit in Kühlräumen und Tiefkühlzellen",
+          "content": "Begehbare Kühlräume (typischerweise 0–5 °C) und Tiefkühlzellen (-18 °C oder darunter) bergen erhebliche Kältestressrisiken. Spanische Vorschriften verlangen, dass Beschäftigte, die diese Räume betreten, geeignete Isolierkleidung einschließlich Thermohandschuhen tragen und die Expositionszeiten begrenzt werden. Bei Tiefkühlarbeit bei -18 °C sollte die ununterbrochene Exposition 60 Minuten ohne Aufwärmpause nicht überschreiten. Kühlräume müssen mit Innentüröffnungsmechanismen und Alarmsystemen als Sicherheitsanforderung ausgestattet sein. Beschäftigte sollten niemals allein in Kühlräume gehen, und ein Buddy-System oder regelmäßiges Eincheckprotokoll muss eingerichtet werden."
+        },
+        {
+          "heading": "3.2 Terrassenarbeit bei extremen Temperaturen",
+          "content": "Terrassenpersonal ist je nach Jahreszeit sowohl Hitze- als auch Kälteextremen ausgesetzt. Während sommerlicher Hitzewellen, wenn die Umgebungstemperaturen 35 °C überschreiten, müssen Arbeitgeber Schattenkonstruktionen, zusätzliche Flüssigkeitszufuhr und angepasste Dienstpläne bereitstellen. Im Winter benötigen Beschäftigte im Freien geeignete Kälteschutzkleidung und Zugang zu beheizten Pausenbereichen. Kommunale Vorschriften in vielen spanischen Städten verlangen inzwischen Terrassen-Heiz- oder -Kühlsysteme für den Kundenkomfort, aber Arbeitgeber müssen sicherstellen, dass diese auch den Beschäftigten zugutekommen. Die Gefährdungsbeurteilung des Arbeitgebers muss ausdrücklich saisonale Arbeitsbedingungen im Freien berücksichtigen."
+        },
+        {
+          "heading": "3.3 Wechsel zwischen Temperaturzonen",
+          "content": "Beschäftigte in der Gastronomie wechseln häufig zwischen dramatisch unterschiedlichen thermischen Umgebungen, beispielsweise von einer heißen Küche in einen Kühlraum oder von einem klimatisierten Speisesaal auf eine sonnenexponierte Terrasse. Diese schnellen Übergänge können einen Thermoschock verursachen und das Risiko kardiovaskulärer Ereignisse erhöhen. Präventionsmaßnahmen umfassen die Einrichtung von Übergangszonen mit mittleren Temperaturen, die Ermöglichung kurzer Akklimatisierungspausen beim Wechsel zwischen extremen Umgebungen und die Sicherstellung, dass Arbeitskleidung zur thermischen Anpassung leicht geschichtet werden kann."
+        }
+      ]
+    },
+    {
+      "heading": "4. Gesundheitsüberwachung und Monitoring",
+      "content": "Eine wirksame Prävention von thermischem Stress erfordert sowohl Umgebungsüberwachung als auch Programme zur Gesundheitsüberwachung der Beschäftigten. Das spanische Recht schreibt spezifische Gesundheitsüberwachungspflichten für Beschäftigte vor, die thermischen Gefahren ausgesetzt sind.",
+      "subsections": [
+        {
+          "heading": "4.1 Umgebungsüberwachungsprogramme",
+          "content": "Arbeitgeber müssen eine kontinuierliche oder regelmäßige Umgebungsüberwachung von Temperatur, Luftfeuchtigkeit und Luftgeschwindigkeit in allen Arbeitsbereichen einführen. In Küchen sollte die Überwachung während der Spitzenbetriebszeiten durchgeführt werden, wenn die thermischen Belastungen am höchsten sind. Messgeräte müssen kalibriert und Aufzeichnungen geführt werden. Digitale Temperatur- und Feuchtigkeitslogger, die an wichtigen Arbeitsplätzen platziert werden, liefern fortlaufende Daten für die Gefährdungsbeurteilung. Die Ergebnisse sollten monatlich und nach jeder Änderung der Geräteaufstellung, der Lüftungssysteme oder der Arbeitsprozesse überprüft werden."
+        },
+        {
+          "heading": "4.2 Gesundheitsbewertungen der Beschäftigten",
+          "content": "Gemäß Artikel 22 des Gesetzes 31/1995 müssen Arbeitgeber Beschäftigten, die thermischen Risiken ausgesetzt sind, eine spezifische Gesundheitsüberwachung anbieten. Diese umfasst arbeitsmedizinische Voruntersuchungen zur Identifizierung von Beschäftigten mit Erkrankungen, die die Anfälligkeit für thermischen Stress erhöhen (Herz-Kreislauf-Erkrankungen, Diabetes, Adipositas, bestimmte Medikamente), regelmäßige Gesundheitsuntersuchungen während der Beschäftigung sowie Wiedereingliederungsuntersuchungen nach hitzebedingten Erkrankungen. Die Gesundheitsüberwachung muss durch den Arbeitsschutzdienst (Servicio de Prevención) durchgeführt werden, und die Ergebnisse sind vertraulich. Beschäftigte können nur dann zur Gesundheitsüberwachung verpflichtet werden, wenn dies gesetzlich aus Gründen der öffentlichen Sicherheit vorgeschrieben ist."
+        }
+      ]
+    },
+    {
+      "heading": "5. Notfallmaßnahmen",
+      "content": "Trotz Präventionsmaßnahmen können thermische Notfälle auftreten. Jeder Gastronomiebetrieb muss dokumentierte Notfallverfahren für Hitzschlag, Hitzeerschöpfung und Hypothermie haben, wobei geschulte Ersthelfer während aller Betriebszeiten verfügbar sein müssen.",
+      "subsections": [
+        {
+          "heading": "5.1 Reaktion bei Hitzschlag und Hitzeerschöpfung",
+          "content": "Hitzschlag ist ein medizinischer Notfall, der sofortiges Handeln erfordert. Das Notfallprotokoll muss umfassen: Erkennen der Symptome (Verwirrtheit, Bewusstlosigkeit, heiße/trockene Haut, Körperkerntemperatur über 40 °C); sofortiges Rufen des Rettungsdienstes (112); Verbringen des Beschäftigten in einen kühlen Bereich; Beginn der aktiven Kühlung mit kaltem Wasser, Eisbeuteln an Hals/Achseln/Leiste und Fächeln; sowie Überwachung der Vitalzeichen bis zum Eintreffen des Rettungsdienstes. Hitzeerschöpfung erfordert, obwohl weniger unmittelbar gefährlich, dennoch die Entfernung aus der heißen Umgebung, Rehydrierung mit Elektrolytlösungen, Ruhe in einem kühlen Bereich und eine ärztliche Untersuchung vor der Rückkehr an den Arbeitsplatz."
+        },
+        {
+          "heading": "5.2 Reaktion bei Hypothermie",
+          "content": "Hypothermie durch Kälteexposition in Kühlräumen erfordert: Erkennen der Symptome (Schüttelfrost, Verwirrtheit, Schläfrigkeit, undeutliches Sprechen); Verbringen des Beschäftigten in eine warme Umgebung; Entfernen nasser Kleidung; Einwickeln in warme Decken beginnend mit dem Oberkörper; Verabreichen warmer (nicht heißer) gesüßter Getränke, wenn der Beschäftigte bei Bewusstsein ist; Rufen des Rettungsdienstes bei mittelschweren bis schweren Fällen (Kerntemperatur unter 32 °C); sowie Vermeidung einer schnellen Wiedererwärmung der Extremitäten, die zu Herzkomplikationen führen kann."
+        },
+        {
+          "heading": "5.3 Dokumentation und Meldung",
+          "content": "Alle Vorfälle mit thermischem Stress müssen dokumentiert werden, einschließlich Beinaheunfällen. Gemäß spanischem Recht müssen Arbeitsunfälle und Berufskrankheiten über das elektronische Delt@-System gemeldet werden. Der Unfallbericht sollte die Umgebungsbedingungen zum Zeitpunkt des Vorfalls, die Tätigkeiten und Expositionsdauer des Beschäftigten, beobachtete Symptome, geleistete Erste Hilfe und erhaltene medizinische Behandlung umfassen. Nach jedem Vorfall muss die Gefährdungsbeurteilung überprüft und die Präventionsmaßnahmen aktualisiert werden. Der Ausschuss für Sicherheit und Gesundheit am Arbeitsplatz (Comité de Seguridad y Salud, sofern zutreffend) muss über alle Vorfälle informiert werden."
+        }
+      ]
+    },
+    {
+      "heading": "6. Schulung und Sensibilisierung",
+      "content": "Eine wirksame Prävention von thermischem Stress hängt davon ab, dass alle Beschäftigten die Risiken verstehen und wissen, wie sie sich selbst und ihre Kollegen schützen können. Schulungen sind gemäß Artikeln 18 und 19 des Gesetzes 31/1995 gesetzlich vorgeschrieben.",
+      "subsections": [
+        {
+          "heading": "6.1 Erst- und Fortbildungsanforderungen",
+          "content": "Alle Beschäftigten in der Gastronomie müssen eine Schulung zur Sensibilisierung für thermischen Stress bei Einstellung erhalten, wenn sich ihre Tätigkeit ändert oder wenn neue Geräte oder Verfahren eingeführt werden. Die Schulung muss Folgendes umfassen: Erkennen der Anzeichen und Symptome von Hitzschlag, Hitzeerschöpfung und Hypothermie; Verständnis persönlicher Risikofaktoren; sachgemäßen Umgang mit Kühlgeräten und PSA; Anforderungen an die Flüssigkeitszufuhr; Arbeits-Ruhe-Pläne; wann und wie Notfallverfahren aktiviert werden; sowie Meldepflichten. Die Schulung sollte praxisnah sein, eine praktische Demonstration von Kühl- und Erste-Hilfe-Ausrüstung beinhalten und in einer für die Beschäftigten verständlichen Sprache durchgeführt werden."
+        },
+        {
+          "heading": "6.2 Verantwortlichkeiten der Vorgesetzten",
+          "content": "Küchenleiter, Küchenchefs und Schichtleiter tragen zusätzliche Verantwortung für das Management von thermischem Stress. Sie müssen die Umgebungsbedingungen während des Service überwachen, Beschäftigte auf frühe Anzeichen von Hitzeerkrankungen beobachten, Flüssigkeitszufuhr- und Ruhepausenpläne durchsetzen, sicherstellen, dass Lüftungssysteme ordnungsgemäß funktionieren, die Arbeitsbelastung bei extremer Hitze anpassen und die Notfallbereitschaft aufrechterhalten. Die Schulung für Vorgesetzte sollte die Interpretation der WBGT-Bewertung und die Befugnis zur Anpassung des Betriebs bei gefährlichen thermischen Bedingungen umfassen."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Tägliche Checkliste zur thermischen Sicherheit in der Küche",
+      "items": [
+        "Alle Lüftungs- und Absaugsysteme vor dem Service auf Funktionsfähigkeit prüfen",
+        "Temperatur- und Feuchtigkeitswerte an wichtigen Arbeitsplätzen überprüfen",
+        "Sicherstellen, dass ausreichend Trinkwasser verfügbar und zugänglich ist",
+        "Bestätigen, dass alle Kühlventilatoren und Punktkühlsysteme funktionsfähig sind",
+        "Personalstärke überprüfen, um Rotation an Hitzearbeitsplätzen zu ermöglichen",
+        "Temperaturalarme von Kühlräumen und Tiefkühlzellen auf Funktion prüfen",
+        "Notöffnungsmechanismen der Kühlräume auf ordnungsgemäße Funktion überprüfen",
+        "Personal über aktuelle Wetterbedingungen und besondere Vorsichtsmaßnahmen informieren"
+      ]
+    },
+    {
+      "title": "Checkliste zur Gefährdungsbeurteilung für thermischen Stress",
+      "items": [
+        "Umgebungstemperatur an allen Arbeitsplätzen während der Spitzenzeiten messen",
+        "WBGT-Index für Küchenbereiche in der Nähe von Wärmequellen berechnen",
+        "Feuchtigkeitswerte in allen geschlossenen Arbeitsbereichen bewerten",
+        "Wirksamkeit der Lüftungs- und Absaugsysteme bewerten",
+        "Arbeits-Ruhe-Pläne gegen Daten zur thermischen Exposition überprüfen",
+        "Beschäftigte mit Erkrankungen identifizieren, die die thermische Anfälligkeit erhöhen",
+        "PSA-Bereitstellung für Kühllagerbeschäftigte überprüfen",
+        "Ergebnisse dokumentieren und Präventionsplan entsprechend aktualisieren",
+        "Notfallmaßnahmen überprüfen und aktualisieren",
+        "Erste-Hilfe-Ausstattung auf Vorhandensein von Ausrüstung für thermische Notfälle prüfen"
+      ]
+    },
+    {
+      "title": "Checkliste zur saisonalen Vorbereitung",
+      "items": [
+        "Alle Klimaanlagen vor dem Sommer warten und testen",
+        "Schutzmaßnahmen für Terrassenbeschäftigte für die kommende Saison überprüfen",
+        "Hitzewellen-Reaktionsprotokoll mit aktuellen Notfallkontakten aktualisieren",
+        "Bestand an Isolierkleidung für den Kältebetrieb prüfen",
+        "HLK-Wartung und Filterwechsel einplanen",
+        "Thermische Gefährdungsbeurteilung für saisonale Bedingungen überprüfen und aktualisieren"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Digitale Echtzeit-Temperatur- und Feuchtigkeitsanzeigen in Küchenbereichen installieren, die für alle Beschäftigten sichtbar sind",
+    "Während hitzeintensiver Servicezeiten zusätzlich zu Wasser Elektrolyt-Ersatzgetränke bereitstellen",
+    "Ein Buddy-System einführen, bei dem Beschäftigte sich gegenseitig auf Anzeichen von Hitzeerkrankungen beobachten",
+    "Intensive Vorbereitungsarbeiten (wie Fond- und Chargenkochen) in den Morgenstunden planen, bevor die Umgebungstemperatur ihren Höhepunkt erreicht",
+    "Wo möglich einen Mindestabstand von 2 Metern zwischen Beschäftigten und Hochtemperaturgeräten einhalten",
+    "Isolierte Warmhalteausrüstung verwenden, um den Bedarf an kontinuierlichem Hochtemperaturkochen zu reduzieren",
+    "Einen ausgewiesenen Abkühlbereich in leichter Erreichbarkeit der Küche mit Sitzmöglichkeiten und kaltem Wasser einrichten",
+    "Vor Schichtbeginn bei extremen Wetterbedingungen Briefings zu den thermischen Bedingungen durchführen"
+  ],
+  "glossary": {
+    "WBGT (Feuchtkugeltemperatur)": "Ein zusammengesetzter Index, der Lufttemperatur, Luftfeuchtigkeit, Windgeschwindigkeit und Strahlungswärme kombiniert, um das Hitzestress-Expositionsrisiko für Beschäftigte zu bewerten.",
+    "Hitzschlag": "Ein lebensbedrohlicher Zustand, bei dem die Temperaturregulation des Körpers versagt, die Kerntemperatur 40 °C übersteigt und das zentrale Nervensystem betroffen ist. Erfordert sofortige Notfallbehandlung.",
+    "Hitzeerschöpfung": "Ein Zustand, der durch übermäßigen Verlust von Wasser und Salz durch Schwitzen verursacht wird, gekennzeichnet durch starkes Schwitzen, Schwäche, Übelkeit und Schwindel. Geht unbehandelt einem Hitzschlag voraus.",
+    "Hypothermie": "Ein gefährlicher Abfall der Körperkerntemperatur unter 35 °C, typischerweise durch längere Kälteexposition verursacht, der zu Schüttelfrost, Verwirrtheit und potenziell Herzstillstand führt.",
+    "Hitzeakklimatisierung": "Der physiologische Anpassungsprozess über 7–14 Tage, während dessen der Körper eines Beschäftigten seine Fähigkeit zur Temperaturregulation durch verbesserte Schweißproduktion und kardiovaskuläre Effizienz steigert.",
+    "Stoffwechselwärme": "Vom Körper durch körperliche Aktivität und Stoffwechselprozesse erzeugte innere Wärme, die zur Umgebungswärmebelastung hinzukommt und das Risiko von thermischem Stress erhöht.",
+    "Servicio de Prevención (Arbeitsschutzdienst)": "Der betriebliche Dienst zur Verhütung von Arbeitsrisiken (intern oder extern), den jeder Arbeitgeber beauftragen muss, um Gefährdungsbeurteilungen, Gesundheitsüberwachung und fachliche Beratung durchzuführen.",
+    "NTP (Nota Técnica de Prevención)": "Technische Präventionsleitfäden, die vom INSST veröffentlicht werden und detaillierte Anleitungen zu Arbeitsschutzthemen bieten, einschließlich Methoden zur Bewertung von thermischem Stress.",
+    "PSA (Persönliche Schutzausrüstung)": "Von Beschäftigten getragene Ausrüstung zur Minimierung der Exposition gegenüber Gefahren, einschließlich Isolierhandschuhen, Thermokleidung und hitzebeständigen Schürzen im Kontext des Wärmeschutzes.",
+    "Delt@-System": "Das spanische elektronische System zur Meldung von Arbeitsunfällen und Berufskrankheiten an die Arbeitsbehörden, verpflichtend für alle Arbeitsplatzvorfälle."
+  }
+}
