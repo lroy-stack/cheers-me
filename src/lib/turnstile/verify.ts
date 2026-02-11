@@ -95,10 +95,13 @@ export async function verifyTurnstileToken(
   }
 
   try {
+    console.log('[Turnstile] Verifying token with Cloudflare API...')
+
     // Call Cloudflare Turnstile verification endpoint with timeout
     const controller = new AbortController()
-    const timeoutId = setTimeout(() => controller.abort(), 10000) // 10s timeout
+    const timeoutId = setTimeout(() => controller.abort(), 15000) // 15s timeout
 
+    const startTime = Date.now()
     const response = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
       method: 'POST',
       headers: {
@@ -109,6 +112,8 @@ export async function verifyTurnstileToken(
     })
 
     clearTimeout(timeoutId)
+    const duration = Date.now() - startTime
+    console.log(`[Turnstile] API response received in ${duration}ms, status: ${response.status}`)
 
     // Handle non-200 responses
     if (!response.ok) {
@@ -122,6 +127,8 @@ export async function verifyTurnstileToken(
 
     // Parse and validate response
     const data: unknown = await response.json()
+    console.log('[Turnstile] API response:', JSON.stringify(data))
+
     const parsed = TurnstileResponseSchema.safeParse(data)
 
     if (!parsed.success) {
@@ -138,7 +145,7 @@ export async function verifyTurnstileToken(
     // Handle verification failure
     if (!result.success) {
       const errorCodes = result['error-codes'] || []
-      console.warn('[Turnstile] Verification failed:', errorCodes)
+      console.error('[Turnstile] Verification FAILED. Error codes:', errorCodes)
 
       // Determine error type
       if (errorCodes.includes('timeout-or-duplicate')) {
@@ -165,6 +172,7 @@ export async function verifyTurnstileToken(
     }
 
     // Success
+    console.log('[Turnstile] Verification SUCCESS')
     return {
       success: true,
       hostname: result.hostname,
