@@ -227,24 +227,37 @@ export const ChatMessageRich = memo(function ChatMessageRich({
       <div className={cn('flex flex-col gap-1 flex-1 min-w-0 group', !isAssistant && 'items-end')}>
         {isAssistant && segments ? (
           <div className="max-w-full space-y-1">
-            {segments.map((segment, idx) =>
-              segment.type === 'artifact' ? (
-                <div
-                  key={idx}
-                  className="cursor-pointer hover:ring-2 hover:ring-primary/20 rounded-lg transition-all"
-                  onClick={() => onOpenArtifact?.({
-                    id: `${message.timestamp.getTime()}-${idx}`,
-                    type: (segment.artifactType || 'html') as ArtifactType,
-                    title: segment.artifactTitle,
-                    content: segment.content,
-                  })}
-                >
-                  <ArtifactRenderer
-                    type={segment.artifactType || 'html'}
-                    content={segment.content}
-                  />
-                </div>
-              ) : (
+            {segments.map((segment, idx) => {
+              if (segment.type === 'artifact') {
+                // Generate stable ID based on message ID and content hash
+                const contentHash = segment.content.substring(0, 50).replace(/\s/g, '')
+                const artifactId = messageId
+                  ? `${messageId}-artifact-${idx}-${contentHash.substring(0, 8)}`
+                  : `${message.timestamp.getTime()}-artifact-${idx}`
+
+                return (
+                  <div
+                    key={idx}
+                    className="cursor-pointer hover:ring-2 hover:ring-primary/20 rounded-lg transition-all"
+                    onClick={(e) => {
+                      e.preventDefault()
+                      e.stopPropagation()
+                      onOpenArtifact?.({
+                        id: artifactId,
+                        type: (segment.artifactType || 'html') as ArtifactType,
+                        title: segment.artifactTitle,
+                        content: segment.content,
+                      })
+                    }}
+                  >
+                    <ArtifactRenderer
+                      type={segment.artifactType || 'html'}
+                      content={segment.content}
+                    />
+                  </div>
+                )
+              }
+              return (
                 <div key={idx} className="rounded-lg px-3 py-2 bg-muted max-w-full overflow-hidden">
                   <ReactMarkdown
                     remarkPlugins={remarkPlugins}
@@ -254,7 +267,7 @@ export const ChatMessageRich = memo(function ChatMessageRich({
                   </ReactMarkdown>
                 </div>
               )
-            )}
+            })}
           </div>
         ) : (
           <div

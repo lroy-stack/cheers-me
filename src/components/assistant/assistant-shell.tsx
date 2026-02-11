@@ -100,6 +100,13 @@ export function AssistantShell() {
     }
   }, [chat.detectedArtifacts, handleOpenArtifact])
 
+  // Clear artifacts when switching conversations
+  useEffect(() => {
+    setArtifacts([])
+    setActiveArtifactId(null)
+    setArtifactPanelOpen(false)
+  }, [chat.conversationId])
+
   // Close mobile artifact panel on Escape
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -229,10 +236,11 @@ export function AssistantShell() {
       {/* Artifact panel */}
       <div
         className={cn(
-          'fixed inset-y-0 right-0 z-50 w-full sm:w-[420px]',
-          'transition-transform duration-300 ease-in-out',
+          'fixed inset-y-0 right-0 z-50 w-full sm:w-[min(90vw,420px)] max-w-full',
+          'transition-transform duration-300 ease-in-out bg-background',
           'lg:relative lg:inset-auto lg:z-auto lg:transition-none',
           'lg:border-l lg:border-border lg:flex-shrink-0',
+          'safe-area-inset-right',
           showArtifacts
             ? 'translate-x-0'
             : 'translate-x-full lg:translate-x-0',
@@ -240,7 +248,7 @@ export function AssistantShell() {
             ? 'lg:flex'
             : 'lg:w-0 lg:hidden',
         )}
-        style={showArtifacts ? { width: `${artifactWidth}px` } : undefined}
+        style={showArtifacts && typeof window !== 'undefined' && window.innerWidth >= 1024 ? { width: `${artifactWidth}px` } : undefined}
       >
         {showArtifacts && (
           <AssistantArtifacts
