@@ -5,14 +5,27 @@
 
 import Stripe from 'stripe'
 
-if (!process.env.STRIPE_SECRET_KEY) {
-  console.warn('STRIPE_SECRET_KEY is not set — Stripe features will not work')
+let _stripe: Stripe | null = null
+
+export function getStripe(): Stripe {
+  if (!_stripe) {
+    if (!process.env.STRIPE_SECRET_KEY) {
+      throw new Error('STRIPE_SECRET_KEY is not set — Stripe features will not work')
+    }
+    _stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+      // @ts-expect-error -- Stripe SDK types may lag behind the latest API version
+      apiVersion: '2025-01-27.acacia',
+      typescript: true,
+    })
+  }
+  return _stripe
 }
 
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', {
-  // @ts-expect-error -- Stripe SDK types may lag behind the latest API version
-  apiVersion: '2025-01-27.acacia',
-  typescript: true,
+/** @deprecated Use getStripe() instead */
+export const stripe = new Proxy({} as Stripe, {
+  get(_, prop) {
+    return (getStripe() as Record<string | symbol, unknown>)[prop]
+  },
 })
 
 export const STRIPE_CONFIG = {
