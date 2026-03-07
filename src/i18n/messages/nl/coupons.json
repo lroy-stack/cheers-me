@@ -99,7 +99,10 @@
     "withdrawalTitle": "14 dagen herroepingsrecht",
     "withdrawalText": "Op grond van Spaans KB 1/2007 Art. 102 heeft u 14 dagen om van deze aankoop af te zien. Het herroepingsrecht is NIET van toepassing zodra de voucher is ingewisseld. Neem contact op via info@cheersmallorca.com.",
     "forLabel": "Voor",
-    "fromLabel": "Van"
+    "fromLabel": "Van",
+    "backToHome": "Terug naar Home",
+    "forRecipient": "voor {name}",
+    "validUntilDate": "Geldig tot {date}"
   },
   "success": {
     "title": "Betaling gelukt!",
@@ -107,13 +110,16 @@
     "description": "De bon is aangemaakt en klaar om te downloaden. Deel het met je geliefde!",
     "viewVoucher": "Bon bekijken",
     "downloadPdf": "PDF downloaden",
-    "buyAnother": "Nog een kopen"
+    "downloadImage": "Afbeelding downloaden (PNG)",
+    "buyAnother": "Nog een kopen",
+    "backToHome": "Terug naar Home"
   },
   "cancelled": {
     "title": "Betaling geannuleerd",
     "subtitle": "Je betaling is niet voltooid",
     "description": "Er zijn geen kosten in rekening gebracht. Je kunt het op elk moment opnieuw proberen.",
-    "tryAgain": "Opnieuw proberen"
+    "tryAgain": "Opnieuw proberen",
+    "backToHome": "Terug naar Home"
   },
   "publicView": {
     "giftVoucher": "Cadeaubon",
@@ -121,6 +127,9 @@
     "validUntil": "Geldig tot",
     "from": "Van",
     "downloadPdf": "PDF downloaden",
+    "downloadImage": "Afbeelding downloaden (PNG)",
+    "printVoucher": "Bon afdrukken",
+    "notFound": "Bon niet gevonden",
     "redeemInStore": "Presenteer deze bon bij GrandCafe Cheers om in te wisselen"
   },
   "filters": {

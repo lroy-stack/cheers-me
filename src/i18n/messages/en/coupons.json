@@ -99,7 +99,10 @@
     "withdrawalTitle": "14-Day Withdrawal Right",
     "withdrawalText": "Under Spanish Royal Decree 1/2007 Art. 102, you have 14 days to withdraw from this purchase. Withdrawal is NOT applicable once the voucher has been redeemed. Contact info@cheersmallorca.com to exercise this right.",
     "forLabel": "For",
-    "fromLabel": "From"
+    "fromLabel": "From",
+    "backToHome": "Back to Home",
+    "forRecipient": "for {name}",
+    "validUntilDate": "Valid until {date}"
   },
   "success": {
     "title": "Payment Successful!",
@@ -107,13 +110,16 @@
     "description": "The voucher has been created and is ready to download. Share it with your loved one!",
     "viewVoucher": "View Voucher",
     "downloadPdf": "Download PDF",
-    "buyAnother": "Buy Another"
+    "downloadImage": "Download Image (PNG)",
+    "buyAnother": "Buy Another",
+    "backToHome": "Back to Home"
   },
   "cancelled": {
     "title": "Payment Cancelled",
     "subtitle": "Your payment was not completed",
     "description": "No charges were made. You can try again anytime.",
-    "tryAgain": "Try Again"
+    "tryAgain": "Try Again",
+    "backToHome": "Back to Home"
   },
   "publicView": {
     "giftVoucher": "Gift Voucher",
@@ -121,6 +127,9 @@
     "validUntil": "Valid Until",
     "from": "From",
     "downloadPdf": "Download PDF",
+    "downloadImage": "Download Image (PNG)",
+    "printVoucher": "Print Voucher",
+    "notFound": "Coupon not found",
     "redeemInStore": "Present this voucher at GrandCafe Cheers to redeem"
   },
   "filters": {

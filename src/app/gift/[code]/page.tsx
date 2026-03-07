@@ -21,9 +21,9 @@ export default async function GiftCodePage({ params }: { params: Promise<{ code:
       `}</style>
 
       {/* Header */}
-      <div className="bg-gradient-to-br from-[#1a1a2e] to-[#2d2d4e] text-white py-6 px-4 print:hidden">
+      <div className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground py-6 px-4 print:hidden">
         <div className="max-w-lg mx-auto text-center">
-          <p className="text-[#c9a84c] text-sm font-semibold tracking-wider">GRANDCAFE CHEERS</p>
+          <p className="text-primary-foreground text-sm font-semibold tracking-wider">GRANDCAFE CHEERS</p>
         </div>
       </div>
 

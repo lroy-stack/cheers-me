@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
-import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 // Client-side constants (mirror STRIPE_CONFIG to avoid importing server module)
 const MIN_AMOUNT_CENTS = 1000
 const MAX_AMOUNT_CENTS = 50000
@@ -43,30 +43,32 @@ export default function CouponAmountSelector({ value, onChange }: CouponAmountSe
       </div>
       <div className="grid grid-cols-2 gap-2">
         {PRESETS.map(cents => (
-          <Button
+          <button
             key={cents}
             type="button"
             onClick={() => handlePreset(cents)}
-            className={`py-3 rounded-lg text-lg font-bold transition-all ${
+            className={cn(
+              'py-3 rounded-lg text-lg font-bold transition-all',
               !isCustom && value === cents
                 ? 'bg-primary text-primary-foreground ring-2 ring-primary/30'
                 : 'bg-muted text-foreground hover:bg-muted/80'
-            }`}
+            )}
           >
             €{cents / 100}
-          </Button>
+          </button>
         ))}
       </div>
       <div>
-        <Button
+        <button
           type="button"
           onClick={() => setIsCustom(true)}
-          className={`w-full text-sm py-1.5 rounded-md transition-colors ${
+          className={cn(
+            'w-full text-sm py-1.5 rounded-md transition-colors',
             isCustom ? 'text-primary font-medium' : 'text-muted-foreground hover:text-foreground'
-          }`}
+          )}
         >
           {t('customAmount')}
-        </Button>
+        </button>
         {isCustom && (
           <div className="mt-2 relative">
             <span className="absolute left-3 top-1/2 -translate-y-1/2 text-lg font-medium text-muted-foreground">€</span>

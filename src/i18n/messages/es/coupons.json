@@ -99,7 +99,10 @@
     "withdrawalTitle": "Derecho de desistimiento (14 días)",
     "withdrawalText": "Según el RDL 1/2007 Art. 102, dispone de 14 días para desistir de esta compra. El derecho de desistimiento NO es aplicable una vez canjeado el vale. Contacte info@cheersmallorca.com.",
     "forLabel": "Para",
-    "fromLabel": "De"
+    "fromLabel": "De",
+    "backToHome": "Volver al inicio",
+    "forRecipient": "para {name}",
+    "validUntilDate": "Válido hasta {date}"
   },
   "success": {
     "title": "¡Pago exitoso!",
@@ -107,13 +110,16 @@
     "description": "El cupón ha sido creado y está listo para descargar. ¡Compártelo con esa persona especial!",
     "viewVoucher": "Ver cupón",
     "downloadPdf": "Descargar PDF",
-    "buyAnother": "Comprar otro"
+    "downloadImage": "Descargar imagen (PNG)",
+    "buyAnother": "Comprar otro",
+    "backToHome": "Volver al inicio"
   },
   "cancelled": {
     "title": "Pago cancelado",
     "subtitle": "Tu pago no se completó",
     "description": "No se realizó ningún cargo. Puedes intentarlo de nuevo en cualquier momento.",
-    "tryAgain": "Intentar de nuevo"
+    "tryAgain": "Intentar de nuevo",
+    "backToHome": "Volver al inicio"
   },
   "publicView": {
     "giftVoucher": "Cupón Regalo",
@@ -121,6 +127,9 @@
     "validUntil": "Válido hasta",
     "from": "De",
     "downloadPdf": "Descargar PDF",
+    "downloadImage": "Descargar imagen (PNG)",
+    "printVoucher": "Imprimir cupón",
+    "notFound": "Cupón no encontrado",
     "redeemInStore": "Presenta este cupón en GrandCafe Cheers para canjearlo"
   },
   "filters": {

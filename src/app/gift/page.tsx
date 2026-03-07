@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server'
+import Link from 'next/link'
 import CouponPurchaseForm from '@/components/coupons/coupon-purchase-form'
-import { Gift } from 'lucide-react'
+import { Gift, ArrowLeft } from 'lucide-react'
 
 export async function generateMetadata() {
   const t = await getTranslations('coupons.purchase')
@@ -20,14 +21,22 @@ export default async function GiftPage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero */}
-      <div className="bg-gradient-to-br from-[#1a1a2e] to-[#2d2d4e] text-white py-12 px-4">
+      <div className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground py-12 px-4">
         <div className="max-w-lg mx-auto text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#c9a84c]/20 mb-4">
-            <Gift className="h-8 w-8 text-[#c9a84c]" />
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary-foreground/20 mb-4">
+            <Gift className="h-8 w-8 text-primary-foreground" />
           </div>
           <h1 className="text-3xl font-bold mb-3">{t('heroTitle')}</h1>
-          <p className="text-white/80 text-sm">{t('heroSubtitle')}</p>
+          <p className="text-primary-foreground/80 text-sm">{t('heroSubtitle')}</p>
         </div>
+      </div>
+
+      {/* Back link */}
+      <div className="max-w-lg mx-auto px-4 pt-4">
+        <Link href="/" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <ArrowLeft className="h-4 w-4" />
+          {t('backToHome')}
+        </Link>
       </div>
 
       {/* Purchase form */}

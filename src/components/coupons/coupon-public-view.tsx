@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState, useCallback } from 'react'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import type { GiftCouponPublic } from '@/types'
 import { formatCouponAmount } from '@/lib/utils/coupon-code'
 import CouponPreviewCard from './coupon-preview-card'
@@ -14,6 +14,7 @@ interface CouponPublicViewProps {
 
 export default function CouponPublicView({ code }: CouponPublicViewProps) {
   const t = useTranslations('coupons.publicView')
+  const locale = useLocale()
   const [coupon, setCoupon] = useState<GiftCouponPublic | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -25,7 +26,7 @@ export default function CouponPublicView({ code }: CouponPublicViewProps) {
         return res.json()
       })
       .then(setCoupon)
-      .catch(() => setError('Coupon not found'))
+      .catch(() => setError('not_found'))
       .finally(() => setLoading(false))
   }, [code])
 
@@ -64,7 +65,7 @@ export default function CouponPublicView({ code }: CouponPublicViewProps) {
     return (
       <div className="text-center py-16">
         <Gift className="h-12 w-12 mx-auto text-muted-foreground mb-4" />
-        <p className="text-lg font-medium text-muted-foreground">Coupon not found</p>
+        <p className="text-lg font-medium text-muted-foreground">{t('notFound')}</p>
       </div>
     )
   }
@@ -92,7 +93,7 @@ export default function CouponPublicView({ code }: CouponPublicViewProps) {
         </div>
         <div className="flex justify-between items-center text-sm">
           <span className="text-muted-foreground">{t('validUntil')}</span>
-          <span>{new Date(coupon.expires_at).toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' })}</span>
+          <span>{new Date(coupon.expires_at).toLocaleDateString(locale, { day: '2-digit', month: 'long', year: 'numeric' })}</span>
         </div>
       </div>
 
@@ -113,7 +114,7 @@ export default function CouponPublicView({ code }: CouponPublicViewProps) {
           className="flex items-center justify-center gap-2 w-full py-3 rounded-lg border border-border font-medium hover:bg-muted transition-colors"
         >
           <ImageIcon className="h-5 w-5" />
-          Download Image (PNG)
+          {t('downloadImage')}
         </Button>
 
         <Button
@@ -121,7 +122,7 @@ export default function CouponPublicView({ code }: CouponPublicViewProps) {
           className="flex items-center justify-center gap-2 w-full py-3 rounded-lg border border-border font-medium hover:bg-muted transition-colors text-sm"
         >
           <Printer className="h-4 w-4" />
-          Print Voucher
+          {t('printVoucher')}
         </Button>
       </div>
 

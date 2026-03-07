@@ -99,7 +99,10 @@
     "withdrawalTitle": "14-tägiges Widerrufsrecht",
     "withdrawalText": "Gemäß Span. KD 1/2007 Art. 102 haben Sie 14 Tage Widerrufsrecht. Das Widerrufsrecht gilt NICHT, sobald der Gutschein eingelöst wurde. Kontaktieren Sie info@cheersmallorca.com.",
     "forLabel": "Für",
-    "fromLabel": "Von"
+    "fromLabel": "Von",
+    "backToHome": "Zurück zur Startseite",
+    "forRecipient": "für {name}",
+    "validUntilDate": "Gültig bis {date}"
   },
   "success": {
     "title": "Zahlung erfolgreich!",
@@ -107,13 +110,16 @@
     "description": "Der Gutschein wurde erstellt und kann heruntergeladen werden. Teile ihn mit deinen Liebsten!",
     "viewVoucher": "Gutschein ansehen",
     "downloadPdf": "PDF herunterladen",
-    "buyAnother": "Weiteren kaufen"
+    "downloadImage": "Bild herunterladen (PNG)",
+    "buyAnother": "Weiteren kaufen",
+    "backToHome": "Zurück zur Startseite"
   },
   "cancelled": {
     "title": "Zahlung abgebrochen",
     "subtitle": "Deine Zahlung wurde nicht abgeschlossen",
     "description": "Es wurden keine Gebühren erhoben. Du kannst es jederzeit erneut versuchen.",
-    "tryAgain": "Erneut versuchen"
+    "tryAgain": "Erneut versuchen",
+    "backToHome": "Zurück zur Startseite"
   },
   "publicView": {
     "giftVoucher": "Geschenkgutschein",
@@ -121,6 +127,9 @@
     "validUntil": "Gültig bis",
     "from": "Von",
     "downloadPdf": "PDF herunterladen",
+    "downloadImage": "Bild herunterladen (PNG)",
+    "printVoucher": "Gutschein drucken",
+    "notFound": "Gutschein nicht gefunden",
     "redeemInStore": "Zeige diesen Gutschein bei GrandCafe Cheers vor, um ihn einzulösen"
   },
   "filters": {

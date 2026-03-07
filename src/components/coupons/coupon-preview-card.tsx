@@ -2,6 +2,7 @@
 
 import type { CouponTheme } from '@/types'
 import Image from 'next/image'
+import { useTranslations, useLocale } from 'next-intl'
 
 interface CouponPreviewCardProps {
   amount: number // cents
@@ -21,6 +22,8 @@ const themeStyles: Record<CouponTheme, { bg: string; accent: string; pattern: st
 
 export default function CouponPreviewCard({ amount, theme, recipientName, message, code, expiresAt }: CouponPreviewCardProps) {
   const styles = themeStyles[theme] || themeStyles.elegant
+  const t = useTranslations('coupons.purchase')
+  const locale = useLocale()
 
   return (
     <div
@@ -56,7 +59,7 @@ export default function CouponPreviewCard({ amount, theme, recipientName, messag
           &euro;{amount > 0 ? (amount / 100).toFixed(0) : '\u2014'}
         </p>
         {recipientName && (
-          <p className="text-sm mt-1 opacity-90">for {recipientName}</p>
+          <p className="text-sm mt-1 opacity-90">{t('forRecipient', { name: recipientName })}</p>
         )}
       </div>
 
@@ -69,7 +72,7 @@ export default function CouponPreviewCard({ amount, theme, recipientName, messag
         )}
         {expiresAt && (
           <p className="text-[8px] opacity-40">
-            Valid until {new Date(expiresAt).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}
+            {t('validUntilDate', { date: new Date(expiresAt).toLocaleDateString(locale, { day: '2-digit', month: 'short', year: 'numeric' }) })}
           </p>
         )}
       </div>

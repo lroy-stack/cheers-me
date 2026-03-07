@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
-import { CheckCircle, Gift, Download, ShoppingBag, Image as ImageIcon } from 'lucide-react'
+import { CheckCircle, Gift, Download, ShoppingBag, Image as ImageIcon, ArrowLeft } from 'lucide-react'
 
 export async function generateMetadata() {
   const t = await getTranslations('coupons.success')
@@ -53,7 +53,7 @@ export default async function GiftSuccessPage({
                 className="flex items-center justify-center gap-2 w-full py-3 rounded-lg border border-border font-medium hover:bg-muted transition-colors"
               >
                 <ImageIcon className="h-5 w-5" />
-                Download Image (PNG)
+                {t('downloadImage')}
               </a>
             </>
           )}
@@ -64,6 +64,14 @@ export default async function GiftSuccessPage({
           >
             <ShoppingBag className="h-4 w-4" />
             {t('buyAnother')}
+          </Link>
+
+          <Link
+            href="/"
+            className="inline-flex items-center justify-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            {t('backToHome')}
           </Link>
         </div>
       </div>

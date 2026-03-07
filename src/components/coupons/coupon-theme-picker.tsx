@@ -2,7 +2,7 @@
 
 import type { CouponTheme } from '@/types'
 import { useTranslations } from 'next-intl'
-import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 interface CouponThemePickerProps {
   selected: CouponTheme
@@ -22,21 +22,22 @@ export default function CouponThemePicker({ selected, onChange }: CouponThemePic
   return (
     <div className="grid grid-cols-2 gap-3">
       {themes.map(({ value, gradient }) => (
-        <Button
+        <button
           key={value}
           type="button"
           onClick={() => onChange(value)}
-          className={`relative flex flex-col items-center gap-2 p-3 rounded-lg border-2 transition-all ${
+          className={cn(
+            'relative flex flex-col items-center gap-2 p-3 rounded-lg border-2 transition-all bg-card',
             selected === value
               ? 'border-primary ring-2 ring-primary/20'
               : 'border-border hover:border-primary/40'
-          }`}
+          )}
         >
           <div className={`w-full h-16 rounded-md bg-gradient-to-br ${gradient} flex items-center justify-center`}>
             <span className="text-white text-xs font-bold tracking-wider">GIFT VOUCHER</span>
           </div>
           <span className="text-xs font-medium">{t(value)}</span>
-        </Button>
+        </button>
       ))}
     </div>
   )

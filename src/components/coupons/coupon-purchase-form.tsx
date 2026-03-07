@@ -2,17 +2,23 @@
 
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
+import { motion, AnimatePresence } from 'framer-motion'
 import type { CouponTheme } from '@/types'
 import CouponAmountSelector from './coupon-amount-selector'
 import CouponThemePicker from './coupon-theme-picker'
 import CouponPreviewCard from './coupon-preview-card'
 import { Loader2, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
+import { Checkbox } from '@/components/ui/checkbox'
+import { Label } from '@/components/ui/label'
 
 const STEPS = ['step1', 'step2', 'step3', 'step4'] as const
 
 export default function CouponPurchaseForm() {
   const t = useTranslations('coupons.purchase')
+  const tCommon = useTranslations('common.buttons')
   const [step, setStep] = useState(0)
   const [processing, setProcessing] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -73,17 +79,17 @@ export default function CouponPurchaseForm() {
       {/* Step indicator */}
       <div className="flex items-center justify-between mb-8">
         {STEPS.map((s, i) => (
-          <div key={s} className="flex items-center">
-            <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
+          <div key={s} className="flex items-center gap-1.5">
+            <div className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center text-sm font-bold ${
               i <= step ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground'
             }`}>
               {i + 1}
             </div>
-            <span className={`hidden sm:block ml-2 text-xs ${i <= step ? 'text-foreground font-medium' : 'text-muted-foreground'}`}>
+            <span className={`hidden sm:block text-xs whitespace-nowrap ${i <= step ? 'text-foreground font-medium' : 'text-muted-foreground'}`}>
               {t(s)}
             </span>
             {i < STEPS.length - 1 && (
-              <div className={`w-8 sm:w-16 h-0.5 mx-2 ${i < step ? 'bg-primary' : 'bg-border'}`} />
+              <div className={`flex-1 min-w-4 sm:min-w-8 h-0.5 ${i < step ? 'bg-primary' : 'bg-border'}`} />
             )}
           </div>
         ))}
@@ -91,7 +97,15 @@ export default function CouponPurchaseForm() {
 
       {/* Step content */}
       <div className="min-h-[300px]">
+        <AnimatePresence mode="wait">
         {step === 0 && (
+          <motion.div
+            key="step-0"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.2 }}
+          >
           <div className="space-y-6">
             <CouponAmountSelector value={amount} onChange={setAmount} />
             <div>
@@ -99,78 +113,101 @@ export default function CouponPurchaseForm() {
               <CouponThemePicker selected={theme} onChange={setTheme} />
             </div>
           </div>
+          </motion.div>
         )}
 
         {step === 1 && (
+          <motion.div
+            key="step-1"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.2 }}
+          >
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1">
+              <Label className="block text-sm font-medium mb-1">
                 {t('recipientName')} <span className="text-muted-foreground text-xs">({t('optional')})</span>
-              </label>
-              <input
+              </Label>
+              <Input
                 type="text"
                 value={recipientName}
                 onChange={e => setRecipientName(e.target.value)}
                 placeholder={t('recipientNamePlaceholder')}
-                className="w-full px-3 py-2.5 rounded-md border border-border bg-background text-sm"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1">
+              <Label className="block text-sm font-medium mb-1">
                 {t('personalMessage')} <span className="text-muted-foreground text-xs">({t('optional')})</span>
-              </label>
-              <textarea
+              </Label>
+              <Textarea
                 value={message}
                 onChange={e => setMessage(e.target.value)}
                 placeholder={t('personalMessagePlaceholder')}
                 rows={3}
                 maxLength={500}
-                className="w-full px-3 py-2.5 rounded-md border border-border bg-background text-sm resize-none"
+                className="resize-none"
               />
             </div>
             <CouponPreviewCard amount={amount} theme={theme} recipientName={recipientName} message={message} />
           </div>
+          </motion.div>
         )}
 
         {step === 2 && (
+          <motion.div
+            key="step-2"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.2 }}
+          >
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1">{t('yourName')}</label>
-              <input
+              <Label className="block text-sm font-medium mb-1">{t('yourName')}</Label>
+              <Input
                 type="text"
                 value={name}
                 onChange={e => setName(e.target.value)}
-                className="w-full px-3 py-2.5 rounded-md border border-border bg-background text-sm"
                 required
               />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1">{t('yourEmail')}</label>
-              <input
+              <Label className="block text-sm font-medium mb-1">{t('yourEmail')}</Label>
+              <Input
                 type="email"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
-                className="w-full px-3 py-2.5 rounded-md border border-border bg-background text-sm"
                 required
               />
               <p className="text-xs text-muted-foreground mt-1">{t('emailHelp')}</p>
             </div>
-            <label className="flex items-start gap-2 cursor-pointer">
-              <input
-                type="checkbox"
+            <div className="flex items-start gap-2">
+              <Checkbox
+                id="gdpr"
                 checked={gdprConsent}
-                onChange={e => setGdprConsent(e.target.checked)}
+                onCheckedChange={(checked) => setGdprConsent(checked === true)}
                 className="mt-0.5"
               />
-              <span className="text-xs text-muted-foreground">{t('gdprConsent')}</span>
-            </label>
+              <Label htmlFor="gdpr" className="text-xs text-muted-foreground font-normal cursor-pointer">
+                {t('gdprConsent')}
+              </Label>
+            </div>
             {!gdprConsent && name && email && (
               <p className="text-xs text-destructive">{t('gdprRequired')}</p>
             )}
           </div>
+          </motion.div>
         )}
 
         {step === 3 && (
+          <motion.div
+            key="step-3"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.2 }}
+          >
           <div className="space-y-6 py-2">
             <div className="flex justify-center">
               <CouponPreviewCard amount={amount} theme={theme} recipientName={recipientName} message={message} />
@@ -207,14 +244,16 @@ export default function CouponPurchaseForm() {
             })()}
 
             {/* Consumer Protection Disclosures */}
-            <div className="rounded-lg border border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/30 p-4 space-y-2 text-xs text-muted-foreground">
+            <div className="rounded-lg border border-warning/30 bg-warning/5 p-4 space-y-2 text-xs text-muted-foreground">
               <p className="font-medium text-foreground text-sm">{t('traderTitle')}</p>
               <p>{t('traderIdentity')}</p>
               <p className="mt-2 font-medium text-foreground">{t('withdrawalTitle')}</p>
               <p>{t('withdrawalText')}</p>
             </div>
           </div>
+          </motion.div>
         )}
+        </AnimatePresence>
       </div>
 
       {error && <p className="text-sm text-destructive mt-2">{error}</p>}
@@ -228,7 +267,7 @@ export default function CouponPurchaseForm() {
             className="flex items-center gap-1 px-4 py-2.5 rounded-lg border border-border text-sm font-medium hover:bg-muted transition-colors"
           >
             <ChevronLeft className="h-4 w-4" />
-            Back
+            {tCommon('back')}
           </Button>
         )}
         <div className="flex-1" />
@@ -239,7 +278,7 @@ export default function CouponPurchaseForm() {
             disabled={!canProceed()}
             className="flex items-center gap-1 px-6 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors disabled:opacity-50"
           >
-            Next
+            {tCommon('next')}
             <ChevronRight className="h-4 w-4" />
           </Button>
         ) : (

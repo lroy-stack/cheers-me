@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import Link from 'next/link'
-import { XCircle, RotateCcw } from 'lucide-react'
+import { XCircle, RotateCcw, ArrowLeft } from 'lucide-react'
 
 export async function generateMetadata() {
   const t = await getTranslations('coupons.cancelled')
@@ -13,8 +13,8 @@ export default async function GiftCancelledPage() {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center px-4">
       <div className="max-w-md w-full text-center space-y-6">
-        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-amber-100">
-          <XCircle className="h-10 w-10 text-amber-600" />
+        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-warning/15">
+          <XCircle className="h-10 w-10 text-warning" />
         </div>
 
         <div>
@@ -30,6 +30,14 @@ export default async function GiftCancelledPage() {
         >
           <RotateCcw className="h-5 w-5" />
           {t('tryAgain')}
+        </Link>
+
+        <Link
+          href="/"
+          className="inline-flex items-center justify-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors mt-2"
+        >
+          <ArrowLeft className="h-4 w-4" />
+          {t('backToHome')}
         </Link>
       </div>
     </div>
