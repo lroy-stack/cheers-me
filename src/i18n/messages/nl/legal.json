@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "privacy": "Privacybeleid",
+    "cookies": "Cookiebeleid",
+    "avisoLegal": "Wettelijke Mededeling"
+  },
+  "privacy": {
+    "title": "Privacybeleid",
+    "lastUpdated": "Laatst bijgewerkt: 7 maart 2026",
+    "intro": "GrandCafe Cheers ('wij', 'ons') is toegewijd aan de bescherming van uw persoonsgegevens in overeenstemming met de Algemene Verordening Gegevensbescherming (AVG/GDPR) en de Spaanse wetgeving inzake gegevensbescherming (LOPD-GDD).",
+    "controllerTitle": "1. Verwerkingsverantwoordelijke",
+    "controllerText": "GrandCafe Cheers S.L., NIF B12345678, Passeig Marítim 1, 07014 Palma de Mallorca, Illes Balears, Spanje. E-mail: privacy@cheersmallorca.com",
+    "dataCollectedTitle": "2. Persoonsgegevens die wij verzamelen",
+    "dataCollectedText": "Wij verzamelen de volgende categorieën persoonsgegevens:",
+    "dataItems": [
+      "Identiteitsgegevens: volledige naam",
+      "Contactgegevens: e-mailadres, telefoonnummer",
+      "Reserveringsgegevens: datum, aantal gasten, gelegenheid, speciale verzoeken",
+      "Communicatievoorkeuren: taal, nieuwsbrief opt-in status",
+      "Technische gegevens: IP-adres, browsertype, cookies (zie Cookiebeleid)",
+      "Financiële gegevens: betaalmethode (verwerkt door Stripe; wij slaan geen kaartnummers op)"
+    ],
+    "purposesTitle": "3. Doeleinden en rechtsgrondslag",
+    "purposes": [
+      { "purpose": "Verwerken van restaurantreserveringen", "basis": "Uitvoering van een overeenkomst (Art. 6(1)(b) AVG)" },
+      { "purpose": "Verzenden van bevestigingen en herinneringen", "basis": "Uitvoering van een overeenkomst (Art. 6(1)(b) AVG)" },
+      { "purpose": "Nieuwsbrief en marketingcommunicatie", "basis": "Toestemming (Art. 6(1)(a) AVG) — u kunt dit altijd intrekken" },
+      { "purpose": "Loyaliteitsprogramma en CRM", "basis": "Gerechtvaardigd belang (Art. 6(1)(f) AVG)" },
+      { "purpose": "Verwerken van cadeaubon betalingen", "basis": "Uitvoering van een overeenkomst (Art. 6(1)(b) AVG)" },
+      { "purpose": "Voldoen aan Spaanse belasting- en boekhoudverplichtingen", "basis": "Wettelijke verplichting (Art. 6(1)(c) AVG)" },
+      { "purpose": "Fraudepreventie en beveiliging", "basis": "Gerechtvaardigd belang (Art. 6(1)(f) AVG)" }
+    ],
+    "retentionTitle": "4. Bewaartermijnen",
+    "retentionText": "Wij bewaren persoonsgegevens voor de volgende perioden:",
+    "retentionItems": [
+      "Reserveringsgegevens: 3 jaar vanaf de reserveringsdatum",
+      "Klantaccounts: zolang het account actief is, plus 2 jaar",
+      "Nieuwsbriefabonnees: tot u zich uitschrijft, plus 1 jaar",
+      "Financiële gegevens/facturen: 10 jaar (Spaans belastingrecht)",
+      "Personeelsgegevens: duur van het dienstverband plus 5 jaar"
+    ],
+    "processorsTitle": "5. Verwerkers",
+    "processorsText": "Wij delen persoonsgegevens met de volgende verwerkers onder verwerkersovereenkomsten:",
+    "processors": [
+      { "name": "Supabase Inc.", "purpose": "Database hosting en authenticatie", "location": "EU (AWS Frankfurt)" },
+      { "name": "Stripe Inc.", "purpose": "Betalingsverwerking voor cadeaubonnen", "location": "EU" },
+      { "name": "Resend Inc.", "purpose": "Transactionele e-mailbezorging", "location": "VS (SCC's van toepassing)" },
+      { "name": "Anthropic PBC", "purpose": "AI-assistent (enkel geanonimiseerde vragen)", "location": "VS (SCC's van toepassing)" },
+      { "name": "Cloudflare Inc.", "purpose": "CDN, DDoS-bescherming, botdetectie (Turnstile)", "location": "EU-knooppunten" }
+    ],
+    "rightsTitle": "6. Uw rechten",
+    "rightsText": "Op grond van de AVG en LOPD-GDD heeft u het recht om:",
+    "rights": [
+      "Inzage in uw persoonsgegevens (Art. 15 AVG)",
+      "Rectificatie van onjuiste gegevens (Art. 16 AVG)",
+      "Verwijdering van uw gegevens — 'recht op vergetelheid' (Art. 17 AVG)",
+      "Beperking van de verwerking (Art. 18 AVG)",
+      "Gegevensoverdraagbaarheid (Art. 20 AVG)",
+      "Bezwaar te maken tegen verwerking op basis van gerechtvaardigd belang (Art. 21 AVG)",
+      "Uw toestemming op elk moment in te trekken (Art. 7(3) AVG)",
+      "Een klacht in te dienen bij de AEPD (aepd.es)"
+    ],
+    "rightsContact": "Neem contact op via: privacy@cheersmallorca.com",
+    "cookiesTitle": "7. Cookies",
+    "cookiesText": "Wij gebruiken cookies zoals beschreven in ons Cookiebeleid.",
+    "contactTitle": "8. Contact",
+    "contactText": "Voor vragen over privacy: privacy@cheersmallorca.com"
+  },
+  "cookies": {
+    "title": "Cookiebeleid",
+    "lastUpdated": "Laatst bijgewerkt: 7 maart 2026",
+    "intro": "Dit Cookiebeleid legt uit welke cookies wij gebruiken, waarom en hoe u deze kunt beheren.",
+    "whatTitle": "Wat zijn cookies?",
+    "whatText": "Cookies zijn kleine tekstbestanden die op uw apparaat worden geplaatst wanneer u een website bezoekt.",
+    "typesTitle": "Cookies die wij gebruiken",
+    "necessary": {
+      "title": "Strikt noodzakelijke cookies",
+      "description": "Deze cookies zijn vereist voor het functioneren van de website en kunnen niet worden uitgeschakeld.",
+      "items": [
+        { "name": "sb-*-auth-token", "purpose": "Supabase authenticatiesessie-token", "expiry": "Sessie / 1 week", "party": "Eigen" },
+        { "name": "sb-*-auth-token-code-verifier", "purpose": "PKCE code verifier voor OAuth", "expiry": "Sessie", "party": "Eigen" },
+        { "name": "NEXT_LOCALE", "purpose": "Slaat uw taalvoorkeur op (en, nl, es, de)", "expiry": "1 jaar", "party": "Eigen" }
+      ]
+    },
+    "functional": {
+      "title": "Functionele cookies",
+      "description": "Deze cookies bieden extra functionaliteit maar zijn niet strikt noodzakelijk.",
+      "items": [
+        { "name": "theme", "purpose": "Slaat uw voorkeur voor donker/licht thema op", "expiry": "1 jaar", "party": "Eigen" }
+      ]
+    },
+    "thirdParty": {
+      "title": "Cookies van derden",
+      "description": "Deze cookies worden ingesteld door diensten van derden.",
+      "items": [
+        { "name": "cf_clearance", "purpose": "Cloudflare botbescherming (Turnstile)", "expiry": "30 minuten – 24 uur", "party": "Derde (Cloudflare)" }
+      ]
+    },
+    "noAnalytics": "Wij gebruiken momenteel geen analytische cookies. Als dit verandert, zullen wij dit beleid bijwerken en uw toestemming vragen.",
+    "controlTitle": "Hoe kunt u cookies beheren?",
+    "controlText": "U kunt uw cookievoorkeuren beheren via onze toestemmingsbanner onderaan de pagina of via uw browserinstellingen.",
+    "moreInfoTitle": "Meer informatie",
+    "moreInfoText": "Bezoek allaboutcookies.org voor meer informatie over cookies."
+  },
+  "avisoLegal": {
+    "title": "Wettelijke Mededeling",
+    "subtitle": "Informatie vereist door LSSI-CE Art. 10",
+    "lastUpdated": "Laatst bijgewerkt: 7 maart 2026",
+    "identityTitle": "1. Identiteit van de dienstverlener",
+    "fields": {
+      "businessName": "Handelsnaam",
+      "nif": "NIF / BTW-identificatienummer",
+      "address": "Geregistreerd adres",
+      "email": "E-mail",
+      "phone": "Telefoon",
+      "registroMercantil": "Handelsregister"
+    },
+    "values": {
+      "businessName": "GrandCafe Cheers S.L.",
+      "nif": "B12345678",
+      "address": "Passeig Marítim 1, 07014 Palma de Mallorca, Illes Balears, Spanje",
+      "email": "info@cheersmallorca.com",
+      "phone": "+34 971 000 000",
+      "registroMercantil": "Registro Mercantil de Mallorca, Tomo 1234, Folio 56, Hoja PM-00000"
+    },
+    "activityTitle": "2. Bedrijfsactiviteit",
+    "activityText": "GrandCafe Cheers S.L. exploiteert een bar- en restaurantlocatie. Diensten omvatten tafereserveringen, eten en drinken, evenementen en gerelateerde horecadiensten.",
+    "supervisoryTitle": "3. Toezichthoudende autoriteit",
+    "supervisoryText": "Als horecabedrijf wordt GrandCafe Cheers gereguleerd door de Conselleria de Turisme i Esports del Govern de les Illes Balears.",
+    "intellectualTitle": "4. Intellectueel eigendom",
+    "intellectualText": "Alle inhoud op deze website is eigendom van GrandCafe Cheers S.L. of haar licentiegevers en wordt beschermd door intellectuele-eigendomsrechten.",
+    "liabilityTitle": "5. Aansprakelijkheidsbeperking",
+    "liabilityText": "GrandCafe Cheers S.L. is niet aansprakelijk voor schade die voortvloeit uit het gebruik van deze website.",
+    "lawTitle": "6. Toepasselijk recht",
+    "lawText": "Deze wettelijke mededeling wordt beheerst door Spaans recht. Geschillen zijn onderworpen aan de rechtbanken van Palma de Mallorca."
+  },
+  "cookieConsent": {
+    "message": "Wij gebruiken cookies voor essentiële functionaliteit en om uw ervaring te verbeteren.",
+    "learnMore": "Meer informatie",
+    "acceptAll": "Alles accepteren",
+    "rejectAll": "Alles weigeren",
+    "customize": "Aanpassen",
+    "savePreferences": "Voorkeuren opslaan",
+    "necessary": "Strikt noodzakelijk",
+    "functional": "Functioneel",
+    "marketing": "Marketing",
+    "necessaryDesc": "Vereist voor correcte werking van de website. Kan niet worden uitgeschakeld.",
+    "functionalDesc": "Onthoudt uw voorkeuren zoals thema en taal.",
+    "marketingDesc": "Wordt gebruikt voor gepersonaliseerde advertenties. Momenteel niet in gebruik."
+  },
+  "privacyCheckbox": {
+    "label": "Ik heb het",
+    "link": "Privacybeleid",
+    "required": "U moet het privacybeleid accepteren om door te gaan."
+  }
+}

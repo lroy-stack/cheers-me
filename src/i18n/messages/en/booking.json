@@ -40,7 +40,11 @@
     "successTitle": "Welcome to the Cheers family!",
     "successDescription": "Check your inbox for a special welcome offer.",
     "errorAlreadySubscribed": "You're already subscribed!",
-    "errorGeneric": "Something went wrong. Please try again."
+    "errorGeneric": "Something went wrong. Please try again.",
+    "consentLabel": "I agree to receive newsletters and accept the",
+    "consentLink": "Privacy Policy",
+    "consentRequired": "You must accept the privacy policy to subscribe.",
+    "pendingVerification": "Please check your inbox to confirm your subscription."
   },
   "wizard": {
     "occasion": "Occasion",
@@ -184,5 +188,10 @@
   "widget": {
     "title": "Book a Table | GrandCafe Cheers",
     "description": "Reserve your table at GrandCafe Cheers"
+  },
+  "guestInfoPrivacy": {
+    "label": "I have read and accept the",
+    "link": "Privacy Policy",
+    "required": "You must accept the privacy policy to continue."
   }
 }

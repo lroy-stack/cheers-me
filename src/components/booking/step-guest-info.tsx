@@ -34,6 +34,7 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
   const { t } = useBookingLanguage()
   const [errors, setErrors] = useState<Record<string, string>>({})
   const [shakeField, setShakeField] = useState<string | null>(null)
+  const [privacyConsent, setPrivacyConsent] = useState(false)
 
   const validate = (): boolean => {
     const newErrors: Record<string, string> = {}
@@ -48,6 +49,9 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
     }
     if (formData.guest_email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.guest_email)) {
       newErrors.guest_email = t('guestInfo.emailInvalid')
+    }
+    if (!privacyConsent) {
+      newErrors.privacy = t('guestInfoPrivacy.required')
     }
 
     setErrors(newErrors)
@@ -220,6 +224,35 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
           </div>
         </motion.div>
       </motion.div>
+
+      {/* Privacy Consent */}
+      <div className="max-w-md mx-auto">
+        <label className="flex items-start gap-3 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={privacyConsent}
+            onChange={(e) => {
+              setPrivacyConsent(e.target.checked)
+              if (errors.privacy) setErrors(prev => ({ ...prev, privacy: '' }))
+            }}
+            className="mt-1 h-4 w-4 rounded border-border cursor-pointer"
+          />
+          <span className="text-sm text-muted-foreground">
+            {t('guestInfoPrivacy.label')}{' '}
+            <a
+              href="/legal/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary underline hover:no-underline"
+            >
+              {t('guestInfoPrivacy.link')}
+            </a>
+          </span>
+        </label>
+        {errors.privacy && (
+          <p className="text-xs text-red-500 mt-1 ml-7">{errors.privacy}</p>
+        )}
+      </div>
 
       {/* Navigation */}
       <div className="flex justify-center gap-3 pt-2">

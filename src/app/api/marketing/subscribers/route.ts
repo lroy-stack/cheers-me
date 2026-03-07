@@ -7,7 +7,8 @@ import { z } from 'zod'
 const createSubscriberSchema = z.object({
   email: z.string().email(),
   name: z.string().min(1).max(255).optional().nullable(),
-  language: z.enum(['nl', 'en', 'es']).default('en'),
+  language: z.enum(['nl', 'en', 'es', 'de']).default('en'),
+  gdpr_consent: z.boolean().optional().default(false),
 })
 
 /**
@@ -125,15 +126,21 @@ export async function POST(request: NextRequest) {
     )
   }
 
-  // Create new subscriber
+  // Create new subscriber — is_active=false until email verified (double opt-in)
+  const verificationToken = crypto.randomUUID()
+  const now = new Date().toISOString()
+
   const { data: newSubscriber, error } = await supabase
     .from('newsletter_subscribers')
     .insert({
       email: validation.data.email,
       name: validation.data.name || null,
       language: validation.data.language,
-      is_active: true,
-      subscribed_at: new Date().toISOString(),
+      is_active: false,
+      subscribed_at: now,
+      verification_token: verificationToken,
+      gdpr_consent: validation.data.gdpr_consent ?? false,
+      gdpr_consent_at: validation.data.gdpr_consent ? now : null,
     })
     .select()
     .single()
@@ -146,11 +153,15 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       )
     }
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to create subscriber' }, { status: 500 })
   }
 
+  // TODO: Send verification email via Resend with link to /api/marketing/subscribers/verify?token={verificationToken}
+  // For now, return success — verification email sending is handled separately
+
   return NextResponse.json({
-    message: 'Successfully subscribed',
-    subscriber: newSubscriber,
+    message: 'Subscription pending — please check your email to confirm',
+    subscriber: { id: newSubscriber.id, email: newSubscriber.email },
+    requires_verification: true,
   }, { status: 201 })
 }

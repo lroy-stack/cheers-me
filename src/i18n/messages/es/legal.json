@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "privacy": "Política de Privacidad",
+    "cookies": "Política de Cookies",
+    "avisoLegal": "Aviso Legal"
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: 7 de marzo de 2026",
+    "intro": "GrandCafe Cheers S.L. ('nosotros', 'nos') está comprometida con la protección de sus datos personales de conformidad con el Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales (LOPD-GDD).",
+    "controllerTitle": "1. Responsable del Tratamiento",
+    "controllerText": "GrandCafe Cheers S.L., NIF B12345678, Passeig Marítim 1, 07014 Palma de Mallorca, Illes Balears, España. Correo electrónico: privacy@cheersmallorca.com",
+    "dataCollectedTitle": "2. Datos Personales que Recopilamos",
+    "dataCollectedText": "Recopilamos las siguientes categorías de datos personales:",
+    "dataItems": [
+      "Datos de identidad: nombre completo",
+      "Datos de contacto: dirección de correo electrónico, número de teléfono",
+      "Datos de reserva: fecha, número de comensales, ocasión, peticiones especiales",
+      "Preferencias de comunicación: idioma, estado de suscripción a boletín",
+      "Datos técnicos: dirección IP, tipo de navegador, cookies (véase Política de Cookies)",
+      "Datos financieros: método de pago (procesado por Stripe; no almacenamos números de tarjeta)"
+    ],
+    "purposesTitle": "3. Finalidades y Base Jurídica",
+    "purposes": [
+      { "purpose": "Gestión de reservas en el restaurante", "basis": "Ejecución de un contrato (Art. 6(1)(b) RGPD)" },
+      { "purpose": "Envío de confirmaciones y recordatorios de reserva", "basis": "Ejecución de un contrato (Art. 6(1)(b) RGPD)" },
+      { "purpose": "Envío de boletín informativo y comunicaciones comerciales", "basis": "Consentimiento (Art. 6(1)(a) RGPD) — puede retirarlo en cualquier momento" },
+      { "purpose": "Programa de fidelización y CRM", "basis": "Interés legítimo (Art. 6(1)(f) RGPD)" },
+      { "purpose": "Procesamiento de pagos de tarjetas regalo", "basis": "Ejecución de un contrato (Art. 6(1)(b) RGPD)" },
+      { "purpose": "Cumplimiento de obligaciones fiscales y contables españolas", "basis": "Obligación legal (Art. 6(1)(c) RGPD)" },
+      { "purpose": "Prevención del fraude y mejora de la seguridad", "basis": "Interés legítimo (Art. 6(1)(f) RGPD)" }
+    ],
+    "retentionTitle": "4. Plazos de Conservación",
+    "retentionText": "Conservamos los datos personales durante los siguientes plazos:",
+    "retentionItems": [
+      "Datos de reservas: 3 años desde la fecha de la reserva",
+      "Cuentas de clientes: mientras la cuenta esté activa, más 2 años",
+      "Datos de suscriptores del boletín: hasta que se dé de baja, más 1 año",
+      "Datos financieros/facturas: 10 años (Ley General Tributaria española)",
+      "Datos de empleados: duración del contrato laboral más 5 años"
+    ],
+    "processorsTitle": "5. Encargados del Tratamiento",
+    "processorsText": "Compartimos datos personales con los siguientes encargados bajo contratos de encargo del tratamiento:",
+    "processors": [
+      { "name": "Supabase Inc.", "purpose": "Alojamiento de base de datos y autenticación", "location": "UE (AWS Frankfurt)" },
+      { "name": "Stripe Inc.", "purpose": "Procesamiento de pagos de tarjetas regalo", "location": "UE" },
+      { "name": "Resend Inc.", "purpose": "Entrega de correos electrónicos transaccionales", "location": "EE.UU. (CCT aplicadas)" },
+      { "name": "Anthropic PBC", "purpose": "Asistente de IA (solo consultas anonimizadas)", "location": "EE.UU. (CCT aplicadas)" },
+      { "name": "Cloudflare Inc.", "purpose": "CDN, protección DDoS, detección de bots (Turnstile)", "location": "Nodos UE" }
+    ],
+    "rightsTitle": "6. Sus Derechos",
+    "rightsText": "En virtud del RGPD y la LOPD-GDD, usted tiene derecho a:",
+    "rights": [
+      "Acceder a sus datos personales (Art. 15 RGPD)",
+      "Rectificar datos inexactos (Art. 16 RGPD)",
+      "Supresión de sus datos — 'derecho al olvido' (Art. 17 RGPD)",
+      "Limitación del tratamiento (Art. 18 RGPD)",
+      "Portabilidad de los datos (Art. 20 RGPD)",
+      "Oponerse al tratamiento basado en interés legítimo (Art. 21 RGPD)",
+      "Retirar su consentimiento en cualquier momento (Art. 7(3) RGPD)",
+      "Presentar una reclamación ante la AEPD (aepd.es)"
+    ],
+    "rightsContact": "Para ejercer sus derechos, contacte con nosotros en: privacy@cheersmallorca.com",
+    "cookiesTitle": "7. Cookies",
+    "cookiesText": "Utilizamos cookies según se describe en nuestra Política de Cookies.",
+    "contactTitle": "8. Contacto",
+    "contactText": "Para cualquier consulta relacionada con la privacidad: privacy@cheersmallorca.com"
+  },
+  "cookies": {
+    "title": "Política de Cookies",
+    "lastUpdated": "Última actualización: 7 de marzo de 2026",
+    "intro": "Esta Política de Cookies explica qué cookies utilizamos en nuestro sitio web, por qué las usamos y cómo puede controlarlas. De conformidad con el Art. 22.2 de la Ley 34/2002 de Servicios de la Sociedad de la Información (LSSI-CE).",
+    "whatTitle": "¿Qué son las cookies?",
+    "whatText": "Las cookies son pequeños archivos de texto que se colocan en su dispositivo cuando visita un sitio web y permiten recordar sus acciones y preferencias.",
+    "typesTitle": "Cookies que utilizamos",
+    "necessary": {
+      "title": "Cookies estrictamente necesarias",
+      "description": "Estas cookies son imprescindibles para el funcionamiento del sitio web y no se pueden desactivar.",
+      "items": [
+        { "name": "sb-*-auth-token", "purpose": "Token de sesión de autenticación Supabase", "expiry": "Sesión / 1 semana", "party": "Propia" },
+        { "name": "sb-*-auth-token-code-verifier", "purpose": "Verificador de código PKCE para flujos OAuth", "expiry": "Sesión", "party": "Propia" },
+        { "name": "NEXT_LOCALE", "purpose": "Almacena su preferencia de idioma (en, nl, es, de)", "expiry": "1 año", "party": "Propia" }
+      ]
+    },
+    "functional": {
+      "title": "Cookies funcionales",
+      "description": "Estas cookies proporcionan funcionalidad mejorada pero no son estrictamente necesarias.",
+      "items": [
+        { "name": "theme", "purpose": "Almacena su preferencia de tema oscuro/claro", "expiry": "1 año", "party": "Propia" }
+      ]
+    },
+    "thirdParty": {
+      "title": "Cookies de terceros",
+      "description": "Estas cookies son establecidas por servicios de terceros integrados en nuestro sitio.",
+      "items": [
+        { "name": "cf_clearance", "purpose": "Protección contra bots de Cloudflare (Turnstile)", "expiry": "30 minutos – 24 horas", "party": "Tercero (Cloudflare)" }
+      ]
+    },
+    "noAnalytics": "Actualmente no utilizamos cookies analíticas (p. ej., Google Analytics). Si esto cambia, actualizaremos esta política y solicitaremos su consentimiento.",
+    "controlTitle": "Cómo controlar las cookies",
+    "controlText": "Puede gestionar sus preferencias de cookies mediante nuestro banner de consentimiento en la parte inferior de la página o a través de la configuración de su navegador.",
+    "moreInfoTitle": "Más información",
+    "moreInfoText": "Para más información sobre las cookies, visite allaboutcookies.org."
+  },
+  "avisoLegal": {
+    "title": "Aviso Legal",
+    "subtitle": "Información exigida por el Art. 10 de la Ley 34/2002, de Servicios de la Sociedad de la Información (LSSI-CE)",
+    "lastUpdated": "Última actualización: 7 de marzo de 2026",
+    "identityTitle": "1. Datos Identificativos del Titular",
+    "fields": {
+      "businessName": "Denominación social",
+      "nif": "NIF",
+      "address": "Domicilio social",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "registroMercantil": "Datos registrales"
+    },
+    "values": {
+      "businessName": "GrandCafe Cheers S.L.",
+      "nif": "B12345678",
+      "address": "Passeig Marítim 1, 07014 Palma de Mallorca, Illes Balears, España",
+      "email": "info@cheersmallorca.com",
+      "phone": "+34 971 000 000",
+      "registroMercantil": "Registro Mercantil de Mallorca, Tomo 1234, Folio 56, Hoja PM-00000"
+    },
+    "activityTitle": "2. Objeto de la Actividad",
+    "activityText": "GrandCafe Cheers S.L. explota un establecimiento de hostelería (bar y restaurante). Los servicios ofrecidos incluyen reservas de mesa, servicio de comidas y bebidas, eventos y servicios de hostelería relacionados.",
+    "supervisoryTitle": "3. Autoridad Supervisora",
+    "supervisoryText": "Como establecimiento de hostelería, GrandCafe Cheers está regulado por la Conselleria de Turisme i Esports del Govern de les Illes Balears y debe cumplir con los requisitos de licencia de hostelería balear.",
+    "intellectualTitle": "4. Propiedad Intelectual e Industrial",
+    "intellectualText": "Todos los contenidos de este sitio web, incluyendo textos, imágenes, logotipos y software, son propiedad de GrandCafe Cheers S.L. o de sus licenciantes y están protegidos por las leyes de propiedad intelectual. Se prohíbe su reproducción sin consentimiento previo por escrito.",
+    "liabilityTitle": "5. Limitación de Responsabilidad",
+    "liabilityText": "GrandCafe Cheers S.L. no se responsabiliza de los daños y perjuicios derivados del uso de este sitio web o de sus contenidos. Realizamos esfuerzos razonables para mantener la información actualizada pero no garantizamos la exactitud o integridad de todos los contenidos.",
+    "lawTitle": "6. Legislación Aplicable y Jurisdicción",
+    "lawText": "El presente Aviso Legal se rige por la legislación española. Para la resolución de cualquier controversia, las partes se someten a los Juzgados y Tribunales de Palma de Mallorca."
+  },
+  "cookieConsent": {
+    "message": "Utilizamos cookies para proporcionar funcionalidad esencial y mejorar su experiencia.",
+    "learnMore": "Más información",
+    "acceptAll": "Aceptar todas",
+    "rejectAll": "Rechazar todas",
+    "customize": "Personalizar",
+    "savePreferences": "Guardar preferencias",
+    "necessary": "Estrictamente necesarias",
+    "functional": "Funcionales",
+    "marketing": "Marketing",
+    "necessaryDesc": "Necesarias para el correcto funcionamiento del sitio. No se pueden desactivar.",
+    "functionalDesc": "Recuerdan sus preferencias como el tema y el idioma.",
+    "marketingDesc": "Se utilizan para publicidad personalizada. Actualmente no están en uso."
+  },
+  "privacyCheckbox": {
+    "label": "He leído y acepto la",
+    "link": "Política de Privacidad",
+    "required": "Debe aceptar la política de privacidad para continuar."
+  }
+}

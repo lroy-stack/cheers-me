@@ -21,6 +21,7 @@ import enResources from './messages/en/resources.json'
 import enBooking from './messages/en/booking.json'
 import enAds from './messages/en/ads.json'
 import enCoupons from './messages/en/coupons.json'
+import enLegal from './messages/en/legal.json'
 
 import nlCommon from './messages/nl/common.json'
 import nlAuth from './messages/nl/auth.json'
@@ -40,6 +41,7 @@ import nlResources from './messages/nl/resources.json'
 import nlBooking from './messages/nl/booking.json'
 import nlAds from './messages/nl/ads.json'
 import nlCoupons from './messages/nl/coupons.json'
+import nlLegal from './messages/nl/legal.json'
 
 import esCommon from './messages/es/common.json'
 import esAuth from './messages/es/auth.json'
@@ -59,6 +61,7 @@ import esResources from './messages/es/resources.json'
 import esBooking from './messages/es/booking.json'
 import esAds from './messages/es/ads.json'
 import esCoupons from './messages/es/coupons.json'
+import esLegal from './messages/es/legal.json'
 
 import deCommon from './messages/de/common.json'
 import deAuth from './messages/de/auth.json'
@@ -78,6 +81,7 @@ import deResources from './messages/de/resources.json'
 import deBooking from './messages/de/booking.json'
 import deAds from './messages/de/ads.json'
 import deCoupons from './messages/de/coupons.json'
+import deLegal from './messages/de/legal.json'
 
 const messagesByLocale = {
   en: {
@@ -99,6 +103,7 @@ const messagesByLocale = {
     booking: enBooking,
     ads: enAds,
     coupons: enCoupons,
+    legal: enLegal,
   },
   nl: {
     common: nlCommon,
@@ -119,6 +124,7 @@ const messagesByLocale = {
     booking: nlBooking,
     ads: nlAds,
     coupons: nlCoupons,
+    legal: nlLegal,
   },
   es: {
     common: esCommon,
@@ -139,6 +145,7 @@ const messagesByLocale = {
     booking: esBooking,
     ads: esAds,
     coupons: esCoupons,
+    legal: esLegal,
   },
   de: {
     common: deCommon,
@@ -159,6 +166,7 @@ const messagesByLocale = {
     booking: deBooking,
     ads: deAds,
     coupons: deCoupons,
+    legal: deLegal,
   },
 } as const
 

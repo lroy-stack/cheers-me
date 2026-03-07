@@ -40,7 +40,11 @@
     "successTitle": "Willkommen in der Cheers Familie!",
     "successDescription": "Schauen Sie in Ihr Postfach für ein spezielles Willkommensangebot.",
     "errorAlreadySubscribed": "Sie sind bereits abonniert!",
-    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "consentLabel": "Ich stimme dem Empfang von Newslettern zu und akzeptiere die",
+    "consentLink": "Datenschutzerklärung",
+    "consentRequired": "Sie müssen die Datenschutzerklärung akzeptieren, um sich anzumelden.",
+    "pendingVerification": "Bitte überprüfen Sie Ihren Posteingang, um Ihr Abonnement zu bestätigen."
   },
   "wizard": {
     "occasion": "Anlass",
@@ -184,5 +188,10 @@
   "widget": {
     "title": "Tisch Reservieren | GrandCafe Cheers",
     "description": "Reservieren Sie Ihren Tisch im GrandCafe Cheers"
+  },
+  "guestInfoPrivacy": {
+    "label": "Ich habe die",
+    "link": "Datenschutzerklärung",
+    "required": "Sie müssen die Datenschutzerklärung akzeptieren, um fortzufahren."
   }
 }

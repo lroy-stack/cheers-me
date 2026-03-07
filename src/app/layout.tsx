@@ -3,6 +3,7 @@ import { Inter, Lora, Fira_Code } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { PwaProvider } from '@/components/pwa/pwa-provider'
+import { CookieConsentBanner } from '@/components/cookie-consent-banner'
 import { SWRProvider } from '@/components/providers/swr-provider'
 import { ThemeInjector } from '@/components/providers/theme-injector'
 import { NextIntlClientProvider } from 'next-intl'
@@ -78,6 +79,7 @@ export default async function RootLayout({
               <ThemeInjector />
               <PwaProvider>
                 {children}
+                <CookieConsentBanner />
               </PwaProvider>
             </SWRProvider>
           </ThemeProvider>

@@ -40,7 +40,11 @@
     "successTitle": "Welkom bij de Cheers familie!",
     "successDescription": "Check je inbox voor een speciaal welkomstaanbod.",
     "errorAlreadySubscribed": "Je bent al geabonneerd!",
-    "errorGeneric": "Er ging iets mis. Probeer het opnieuw."
+    "errorGeneric": "Er ging iets mis. Probeer het opnieuw.",
+    "consentLabel": "Ik ga akkoord met het ontvangen van nieuwsbrieven en accepteer het",
+    "consentLink": "Privacybeleid",
+    "consentRequired": "Je moet het privacybeleid accepteren om je in te schrijven.",
+    "pendingVerification": "Controleer je inbox om je inschrijving te bevestigen."
   },
   "wizard": {
     "occasion": "Gelegenheid",
@@ -184,5 +188,10 @@
   "widget": {
     "title": "Reserveer een Tafel | GrandCafe Cheers",
     "description": "Reserveer je tafel bij GrandCafe Cheers"
+  },
+  "guestInfoPrivacy": {
+    "label": "Ik heb het",
+    "link": "Privacybeleid",
+    "required": "Je moet het privacybeleid accepteren om door te gaan."
   }
 }

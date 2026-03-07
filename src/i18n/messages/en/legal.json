@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy",
+    "avisoLegal": "Legal Notice"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: 7 March 2026",
+    "intro": "GrandCafe Cheers (\"we\", \"us\", \"our\") is committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR) and Spanish data protection law (LOPD-GDD).",
+    "controllerTitle": "1. Data Controller",
+    "controllerText": "GrandCafe Cheers S.L., NIF B12345678, Passeig Marítim 1, 07014 Palma de Mallorca, Illes Balears, Spain. Email: privacy@cheersmallorca.com",
+    "dataCollectedTitle": "2. Personal Data We Collect",
+    "dataCollectedText": "We collect the following categories of personal data:",
+    "dataItems": [
+      "Identity data: full name",
+      "Contact data: email address, phone number",
+      "Booking data: reservation date, party size, occasion, special requests",
+      "Communication preferences: language, newsletter opt-in status",
+      "Technical data: IP address, browser type, cookies (see Cookie Policy)",
+      "Financial data: payment method details (processed by Stripe; we do not store card numbers)"
+    ],
+    "purposesTitle": "3. Purposes and Legal Basis",
+    "purposes": [
+      { "purpose": "Process restaurant reservations", "basis": "Performance of a contract (Art. 6(1)(b) GDPR)" },
+      { "purpose": "Send booking confirmations and reminders", "basis": "Performance of a contract (Art. 6(1)(b) GDPR)" },
+      { "purpose": "Send newsletter and marketing communications", "basis": "Consent (Art. 6(1)(a) GDPR) — you may withdraw at any time" },
+      { "purpose": "Manage loyalty programme and CRM", "basis": "Legitimate interests (Art. 6(1)(f) GDPR)" },
+      { "purpose": "Process gift coupon payments", "basis": "Performance of a contract (Art. 6(1)(b) GDPR)" },
+      { "purpose": "Comply with Spanish tax and accounting obligations", "basis": "Legal obligation (Art. 6(1)(c) GDPR)" },
+      { "purpose": "Prevent fraud and improve security", "basis": "Legitimate interests (Art. 6(1)(f) GDPR)" }
+    ],
+    "retentionTitle": "4. Retention Periods",
+    "retentionText": "We retain personal data for the following periods:",
+    "retentionItems": [
+      "Booking data: 3 years from the date of reservation",
+      "Customer accounts: as long as the account is active, plus 2 years",
+      "Newsletter subscriber data: until you unsubscribe, plus 1 year",
+      "Financial/invoice data: 10 years (Spanish tax law — General Tributaria)",
+      "Employee data: duration of employment plus 5 years"
+    ],
+    "processorsTitle": "5. Third-Party Processors",
+    "processorsText": "We share personal data with the following processors under data processing agreements:",
+    "processors": [
+      { "name": "Supabase Inc.", "purpose": "Database hosting and authentication", "location": "EU (AWS Frankfurt)" },
+      { "name": "Stripe Inc.", "purpose": "Payment processing for gift coupons", "location": "EU" },
+      { "name": "Resend Inc.", "purpose": "Transactional email delivery", "location": "US (SCCs applied)" },
+      { "name": "Anthropic PBC", "purpose": "AI assistant (anonymised queries only)", "location": "US (SCCs applied)" },
+      { "name": "Cloudflare Inc.", "purpose": "CDN, DDoS protection, bot detection (Turnstile)", "location": "EU nodes" }
+    ],
+    "rightsTitle": "6. Your Rights",
+    "rightsText": "Under GDPR and LOPD-GDD you have the right to:",
+    "rights": [
+      "Access your personal data (Art. 15 GDPR)",
+      "Rectify inaccurate data (Art. 16 GDPR)",
+      "Erase your data — 'right to be forgotten' (Art. 17 GDPR)",
+      "Restrict processing (Art. 18 GDPR)",
+      "Data portability (Art. 20 GDPR)",
+      "Object to processing based on legitimate interests (Art. 21 GDPR)",
+      "Withdraw consent at any time (Art. 7(3) GDPR)",
+      "Lodge a complaint with the AEPD (Agencia Española de Protección de Datos) at aepd.es"
+    ],
+    "rightsContact": "To exercise your rights, contact us at: privacy@cheersmallorca.com",
+    "cookiesTitle": "7. Cookies",
+    "cookiesText": "We use cookies as described in our Cookie Policy.",
+    "contactTitle": "8. Contact",
+    "contactText": "For any privacy-related queries, contact our Data Protection contact point at privacy@cheersmallorca.com or by post at the address above."
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: 7 March 2026",
+    "intro": "This Cookie Policy explains what cookies we use on our website, why we use them, and how you can control them. This policy applies to grandcafe-cheers-app.vercel.app and any associated subdomains.",
+    "whatTitle": "What Are Cookies?",
+    "whatText": "Cookies are small text files placed on your device when you visit a website. They allow the site to remember your actions and preferences over a period of time.",
+    "typesTitle": "Cookies We Use",
+    "necessary": {
+      "title": "Strictly Necessary Cookies",
+      "description": "These cookies are required for the website to function and cannot be switched off.",
+      "items": [
+        { "name": "sb-*-auth-token", "purpose": "Supabase authentication session token", "expiry": "Session / 1 week", "party": "First-party" },
+        { "name": "sb-*-auth-token-code-verifier", "purpose": "PKCE code verifier for OAuth flows", "expiry": "Session", "party": "First-party" },
+        { "name": "NEXT_LOCALE", "purpose": "Stores your language preference (en, nl, es, de)", "expiry": "1 year", "party": "First-party" }
+      ]
+    },
+    "functional": {
+      "title": "Functional Cookies",
+      "description": "These cookies enable enhanced functionality but are not strictly required.",
+      "items": [
+        { "name": "theme", "purpose": "Stores your dark/light theme preference (next-themes)", "expiry": "1 year", "party": "First-party" }
+      ]
+    },
+    "thirdParty": {
+      "title": "Third-Party Cookies",
+      "description": "These cookies are set by third-party services embedded on our site.",
+      "items": [
+        { "name": "cf_clearance", "purpose": "Cloudflare bot protection (Turnstile verification)", "expiry": "30 minutes – 24 hours", "party": "Third-party (Cloudflare)" }
+      ]
+    },
+    "noAnalytics": "We currently do not use analytics cookies (e.g. Google Analytics). If this changes, we will update this policy and request your consent.",
+    "controlTitle": "How to Control Cookies",
+    "controlText": "You can manage your cookie preferences using our consent banner at the bottom of the page. You can also control cookies through your browser settings. Note that blocking strictly necessary cookies will affect the functionality of our website.",
+    "moreInfoTitle": "More Information",
+    "moreInfoText": "For more information about cookies and how to manage them, visit allaboutcookies.org."
+  },
+  "avisoLegal": {
+    "title": "Legal Notice (Aviso Legal)",
+    "subtitle": "Information required by LSSI-CE Art. 10",
+    "lastUpdated": "Last updated: 7 March 2026",
+    "identityTitle": "1. Identity of the Service Provider",
+    "fields": {
+      "businessName": "Business Name",
+      "nif": "NIF / Tax Identification Number",
+      "address": "Registered Address",
+      "email": "Email",
+      "phone": "Phone",
+      "registroMercantil": "Registro Mercantil"
+    },
+    "values": {
+      "businessName": "GrandCafe Cheers S.L.",
+      "nif": "B12345678",
+      "address": "Passeig Marítim 1, 07014 Palma de Mallorca, Illes Balears, Spain",
+      "email": "info@cheersmallorca.com",
+      "phone": "+34 971 000 000",
+      "registroMercantil": "Registro Mercantil de Mallorca, Tomo 1234, Folio 56, Hoja PM-00000"
+    },
+    "activityTitle": "2. Business Activity",
+    "activityText": "GrandCafe Cheers S.L. operates a bar and restaurant venue. Services offered include table reservations, food and beverage service, events, and related hospitality services.",
+    "supervisoryTitle": "3. Supervisory Authority",
+    "supervisoryText": "As a food and beverage establishment, GrandCafe Cheers is regulated by the Conselleria de Turisme i Esports del Govern de les Illes Balears and must comply with Balearic hospitality licensing requirements.",
+    "intellectualTitle": "4. Intellectual Property",
+    "intellectualText": "All content on this website, including text, images, logos, and software, is the property of GrandCafe Cheers S.L. or its licensors and is protected by intellectual property laws. Reproduction without prior written consent is prohibited.",
+    "liabilityTitle": "5. Limitation of Liability",
+    "liabilityText": "GrandCafe Cheers S.L. is not liable for any damages arising from the use of this website or its content. We make reasonable efforts to keep information accurate and up to date but cannot guarantee the completeness or accuracy of all content.",
+    "lawTitle": "6. Applicable Law",
+    "lawText": "This Legal Notice is governed by Spanish law. Any disputes shall be subject to the jurisdiction of the courts of Palma de Mallorca, Spain."
+  },
+  "cookieConsent": {
+    "message": "We use cookies to provide essential functionality and improve your experience.",
+    "learnMore": "Learn more",
+    "acceptAll": "Accept All",
+    "rejectAll": "Reject All",
+    "customize": "Customize",
+    "savePreferences": "Save Preferences",
+    "necessary": "Strictly Necessary",
+    "functional": "Functional",
+    "marketing": "Marketing",
+    "necessaryDesc": "Required for the website to function correctly. Cannot be disabled.",
+    "functionalDesc": "Remembers your preferences such as theme and language.",
+    "marketingDesc": "Used to track and personalise advertising. Currently not in use."
+  },
+  "privacyCheckbox": {
+    "label": "I have read and accept the",
+    "link": "Privacy Policy",
+    "required": "You must accept the privacy policy to continue."
+  }
+}

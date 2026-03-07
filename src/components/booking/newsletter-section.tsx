@@ -11,6 +11,8 @@ export default function NewsletterSection() {
   const { t, language } = useBookingLanguage()
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
+  const [consent, setConsent] = useState(false)
+  const [consentError, setConsentError] = useState('')
   const [status, setStatus] = useState<Status>('idle')
   const [errorMsg, setErrorMsg] = useState('')
 
@@ -18,8 +20,14 @@ export default function NewsletterSection() {
     e.preventDefault()
     if (!email) return
 
+    if (!consent) {
+      setConsentError(t('newsletter.consentRequired'))
+      return
+    }
+
     setStatus('loading')
     setErrorMsg('')
+    setConsentError('')
 
     try {
       const res = await fetch('/api/marketing/subscribers', {
@@ -29,6 +37,7 @@ export default function NewsletterSection() {
           email,
           name: name || undefined,
           language,
+          gdpr_consent: true,
         }),
       })
 
@@ -36,6 +45,7 @@ export default function NewsletterSection() {
         setStatus('success')
         setEmail('')
         setName('')
+        setConsent(false)
       } else {
         const data = await res.json()
         if (data.error?.includes('already subscribed')) {
@@ -79,7 +89,7 @@ export default function NewsletterSection() {
               {t('newsletter.successTitle')}
             </p>
             <p className="text-sm text-green-700 dark:text-green-300 mt-1">
-              {t('newsletter.successDescription')}
+              {t('newsletter.pendingVerification')}
             </p>
           </motion.div>
         ) : (
@@ -99,6 +109,34 @@ export default function NewsletterSection() {
               placeholder={t('newsletter.namePlaceholder')}
               className="w-full px-4 py-3 rounded-xl border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
             />
+            {/* GDPR Consent */}
+            <div>
+              <label className="flex items-start gap-2 cursor-pointer text-left">
+                <input
+                  type="checkbox"
+                  checked={consent}
+                  onChange={(e) => {
+                    setConsent(e.target.checked)
+                    if (consentError) setConsentError('')
+                  }}
+                  className="mt-1 h-4 w-4 rounded border-border shrink-0 cursor-pointer"
+                />
+                <span className="text-xs text-muted-foreground">
+                  {t('newsletter.consentLabel')}{' '}
+                  <a
+                    href="/legal/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline hover:no-underline"
+                  >
+                    {t('newsletter.consentLink')}
+                  </a>
+                </span>
+              </label>
+              {consentError && (
+                <p className="text-xs text-destructive mt-1 ml-6">{consentError}</p>
+              )}
+            </div>
             <button
               type="submit"
               disabled={status === 'loading' || !email}
