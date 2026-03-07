@@ -24,10 +24,20 @@ export const getCurrentUser = cache(async () => {
     return null
   }
 
-  // Fetch profile and employee in parallel instead of sequentially
+  // Fetch profile and employee in parallel — select only needed columns
+  // SECURITY: exclude salary, social_security_number, kiosk_pin, iban from getCurrentUser()
+  // Admin routes that need these fields must query employees directly via createAdminClient()
   const [profileResult, employeeResult] = await Promise.all([
-    supabase.from('profiles').select('*').eq('id', user.id).single(),
-    supabase.from('employees').select('*').eq('profile_id', user.id).single(),
+    supabase
+      .from('profiles')
+      .select('id, email, full_name, role, avatar_url, language, phone, emergency_contact, emergency_phone, active, created_at, updated_at')
+      .eq('id', user.id)
+      .single(),
+    supabase
+      .from('employees')
+      .select('id, profile_id, job_title, contract_type, employment_status, date_hired, date_terminated, weekly_hours_target, convenio_colectivo, categoria_profesional, tipo_jornada, contract_end_date, periodo_prueba_end, irpf_retention, kiosk_pin_failed_attempts, kiosk_pin_locked_until, created_at, updated_at')
+      .eq('profile_id', user.id)
+      .single(),
   ])
 
   if (profileResult.error || !profileResult.data) {

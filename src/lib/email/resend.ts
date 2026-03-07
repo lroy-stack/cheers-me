@@ -128,10 +128,25 @@ function getEmailSubject(language: string): string {
 }
 
 /**
+ * Escape HTML special characters to prevent XSS in email templates.
+ * Applied to all user-provided fields before interpolation into HTML.
+ */
+export function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+}
+
+/**
  * Generate HTML email content
  */
 function getEmailHTML(data: ReservationConfirmationEmailData): string {
   const translations = getTranslations(data.language)
+  const safeGuestName = escapeHtml(data.guest_name)
+  const safeSpecialRequests = data.special_requests ? escapeHtml(data.special_requests) : undefined
 
   return `
 <!DOCTYPE html>
@@ -247,7 +262,7 @@ function getEmailHTML(data: ReservationConfirmationEmailData): string {
     </div>
 
     <h1 style="color: #111827; font-size: 24px; margin-bottom: 10px;">
-      ${translations.greeting}, ${data.guest_name}!
+      ${translations.greeting}, ${safeGuestName}!
     </h1>
 
     <p style="font-size: 16px; color: #4b5563;">
@@ -307,11 +322,11 @@ function getEmailHTML(data: ReservationConfirmationEmailData): string {
     </div>
 
     ${
-      data.special_requests
+      safeSpecialRequests
         ? `
     <div class="special-requests">
       <strong>${translations.specialRequests}:</strong><br>
-      ${data.special_requests}
+      ${safeSpecialRequests}
     </div>
     `
         : ''

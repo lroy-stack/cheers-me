@@ -88,7 +88,17 @@
     "payNow": "Nu betalen — {amount}",
     "processing": "Doorverwijzen naar betaling...",
     "chooseTheme": "Kies een stijl",
-    "preview": "Voorbeeld"
+    "preview": "Voorbeeld",
+    "orderSummary": "Besteloverzicht",
+    "baseAmount": "Basisbedrag (excl. BTW)",
+    "ivaLabel": "BTW",
+    "totalLabel": "Totaal",
+    "traderTitle": "Handelaarsinformatie",
+    "traderIdentity": "GrandCafe Cheers S.L. · Carrer de Cartago 22, El Arenal, Mallorca 07600, Spanje · NIF: B-XXXXXXX",
+    "withdrawalTitle": "14 dagen herroepingsrecht",
+    "withdrawalText": "Op grond van Spaans KB 1/2007 Art. 102 heeft u 14 dagen om van deze aankoop af te zien. Het herroepingsrecht is NIET van toepassing zodra de voucher is ingewisseld. Neem contact op via info@cheersmallorca.com.",
+    "forLabel": "Voor",
+    "fromLabel": "Van"
   },
   "success": {
     "title": "Betaling gelukt!",

@@ -88,7 +88,17 @@
     "payNow": "Pagar ahora — {amount}",
     "processing": "Redirigiendo al pago...",
     "chooseTheme": "Elige un estilo",
-    "preview": "Vista previa"
+    "preview": "Vista previa",
+    "orderSummary": "Resumen del pedido",
+    "baseAmount": "Importe base (sin IVA)",
+    "ivaLabel": "IVA",
+    "totalLabel": "Total",
+    "traderTitle": "Datos del vendedor",
+    "traderIdentity": "GrandCafe Cheers S.L. · Carrer de Cartago 22, El Arenal, Mallorca 07600, España · NIF: B-XXXXXXX",
+    "withdrawalTitle": "Derecho de desistimiento (14 días)",
+    "withdrawalText": "Según el RDL 1/2007 Art. 102, dispone de 14 días para desistir de esta compra. El derecho de desistimiento NO es aplicable una vez canjeado el vale. Contacte info@cheersmallorca.com.",
+    "forLabel": "Para",
+    "fromLabel": "De"
   },
   "success": {
     "title": "¡Pago exitoso!",

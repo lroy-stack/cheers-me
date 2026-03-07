@@ -170,12 +170,47 @@ export default function CouponPurchaseForm() {
         )}
 
         {step === 3 && (
-          <div className="text-center space-y-6 py-4">
-            <CouponPreviewCard amount={amount} theme={theme} recipientName={recipientName} message={message} />
-            <div className="space-y-2 text-sm">
-              <p><span className="text-muted-foreground">Amount:</span> <strong>€{(amount / 100).toFixed(0)}</strong></p>
-              {recipientName && <p><span className="text-muted-foreground">For:</span> {recipientName}</p>}
-              <p><span className="text-muted-foreground">From:</span> {name} ({email})</p>
+          <div className="space-y-6 py-2">
+            <div className="flex justify-center">
+              <CouponPreviewCard amount={amount} theme={theme} recipientName={recipientName} message={message} />
+            </div>
+
+            {/* Order summary */}
+            <div className="rounded-lg border border-border bg-card p-4 space-y-1.5 text-sm">
+              {recipientName && <p><span className="text-muted-foreground">{t('forLabel')}:</span> {recipientName}</p>}
+              <p><span className="text-muted-foreground">{t('fromLabel')}:</span> {name} ({email})</p>
+            </div>
+
+            {/* IVA Breakdown */}
+            {(() => {
+              const totalEur = amount / 100
+              const baseEur = totalEur / 1.21
+              const ivaEur = totalEur - baseEur
+              return (
+                <div className="rounded-lg border border-border bg-card p-4 space-y-1 text-sm">
+                  <p className="font-medium text-foreground mb-2">{t('orderSummary')}</p>
+                  <div className="flex justify-between text-muted-foreground">
+                    <span>{t('baseAmount')}</span>
+                    <span>€{baseEur.toFixed(2)}</span>
+                  </div>
+                  <div className="flex justify-between text-muted-foreground">
+                    <span>{t('ivaLabel')} (21%)</span>
+                    <span>€{ivaEur.toFixed(2)}</span>
+                  </div>
+                  <div className="flex justify-between font-semibold text-foreground border-t border-border pt-1 mt-1">
+                    <span>{t('totalLabel')}</span>
+                    <span>€{totalEur.toFixed(2)}</span>
+                  </div>
+                </div>
+              )
+            })()}
+
+            {/* Consumer Protection Disclosures */}
+            <div className="rounded-lg border border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/30 p-4 space-y-2 text-xs text-muted-foreground">
+              <p className="font-medium text-foreground text-sm">{t('traderTitle')}</p>
+              <p>{t('traderIdentity')}</p>
+              <p className="mt-2 font-medium text-foreground">{t('withdrawalTitle')}</p>
+              <p>{t('withdrawalText')}</p>
             </div>
           </div>
         )}

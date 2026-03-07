@@ -88,7 +88,17 @@
     "payNow": "Jetzt bezahlen — {amount}",
     "processing": "Weiterleitung zur Zahlung...",
     "chooseTheme": "Wähle einen Stil",
-    "preview": "Vorschau"
+    "preview": "Vorschau",
+    "orderSummary": "Bestellübersicht",
+    "baseAmount": "Grundbetrag (ohne MwSt.)",
+    "ivaLabel": "MwSt.",
+    "totalLabel": "Gesamt",
+    "traderTitle": "Händlerinformationen",
+    "traderIdentity": "GrandCafe Cheers S.L. · Carrer de Cartago 22, El Arenal, Mallorca 07600, Spanien · NIF: B-XXXXXXX",
+    "withdrawalTitle": "14-tägiges Widerrufsrecht",
+    "withdrawalText": "Gemäß Span. KD 1/2007 Art. 102 haben Sie 14 Tage Widerrufsrecht. Das Widerrufsrecht gilt NICHT, sobald der Gutschein eingelöst wurde. Kontaktieren Sie info@cheersmallorca.com.",
+    "forLabel": "Für",
+    "fromLabel": "Von"
   },
   "success": {
     "title": "Zahlung erfolgreich!",

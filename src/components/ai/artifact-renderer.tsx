@@ -89,7 +89,7 @@ function HTMLArtifact({ content }: { content: string }) {
       <iframe
         ref={iframeRef}
         srcDoc={srcDoc}
-        sandbox="allow-scripts allow-popups"
+        sandbox="allow-popups"
         className="w-full bg-white"
         style={{ border: 'none', height: `${height}px` }}
         title="AI-generated content"

@@ -3,6 +3,7 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { Mail } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { useEffect, useState } from 'react'
 
 interface NewsletterPreviewProps {
   subject: string
@@ -12,6 +13,19 @@ interface NewsletterPreviewProps {
 
 export function NewsletterPreview({ subject, content, htmlContent }: NewsletterPreviewProps) {
   const t = useTranslations('marketing.newsletterPreview')
+  const [sanitizedHtml, setSanitizedHtml] = useState<string>('')
+
+  useEffect(() => {
+    if (!htmlContent) { setSanitizedHtml(''); return }
+    // Sanitize HTML using DOMPurify to prevent XSS in newsletter preview
+    import('dompurify').then((mod) => {
+      const DOMPurify = mod.default
+      setSanitizedHtml(DOMPurify.sanitize(htmlContent, {
+        FORBID_TAGS: ['script', 'style', 'iframe', 'object', 'embed', 'form'],
+        FORBID_ATTR: ['onerror', 'onload', 'onclick', 'onmouseover', 'javascript'],
+      }))
+    })
+  }, [htmlContent])
 
   return (
     <div className="max-w-3xl mx-auto">
@@ -31,7 +45,7 @@ export function NewsletterPreview({ subject, content, htmlContent }: NewsletterP
           {htmlContent ? (
             <div
               className="prose prose-sm max-w-none"
-              dangerouslySetInnerHTML={{ __html: htmlContent }}
+              dangerouslySetInnerHTML={{ __html: sanitizedHtml }}
             />
           ) : (
             <div className="whitespace-pre-wrap text-sm leading-relaxed">

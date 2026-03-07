@@ -53,8 +53,13 @@ export async function GET(request: NextRequest) {
   const languageFilter = searchParams.get('language')
   const searchQuery = sanitizeSearch(searchParams.get('search'))
 
-  // Sorting
-  const sortField = searchParams.get('sort') || 'created_at'
+  // Sorting — only allow known safe fields to prevent injection
+  const ALLOWED_SORT_FIELDS = ['created_at', 'updated_at', 'full_name', 'email', 'total_spent', 'visit_count', 'last_visit'] as const
+  type SortField = typeof ALLOWED_SORT_FIELDS[number]
+  const requestedSort = searchParams.get('sort') || 'created_at'
+  const sortField: SortField = (ALLOWED_SORT_FIELDS as readonly string[]).includes(requestedSort)
+    ? (requestedSort as SortField)
+    : 'created_at'
   const sortOrder = (searchParams.get('order') || 'desc') as 'asc' | 'desc'
 
   let query = supabase

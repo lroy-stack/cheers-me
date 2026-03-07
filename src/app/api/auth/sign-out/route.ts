@@ -8,7 +8,8 @@ import { NextRequest, NextResponse } from 'next/server'
 export async function POST(_request: NextRequest) {
   const supabase = await createClient()
 
-  const { error } = await supabase.auth.signOut()
+  // scope: 'global' invalidates all sessions across all devices (S3C.C2)
+  const { error } = await supabase.auth.signOut({ scope: 'global' })
 
   if (error) {
     return NextResponse.json(

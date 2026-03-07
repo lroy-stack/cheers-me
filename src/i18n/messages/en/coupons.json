@@ -88,7 +88,17 @@
     "payNow": "Pay Now — {amount}",
     "processing": "Redirecting to payment...",
     "chooseTheme": "Choose a Style",
-    "preview": "Preview"
+    "preview": "Preview",
+    "orderSummary": "Order Summary",
+    "baseAmount": "Base amount (excl. IVA)",
+    "ivaLabel": "IVA",
+    "totalLabel": "Total",
+    "traderTitle": "Trader Information",
+    "traderIdentity": "GrandCafe Cheers S.L. · Carrer de Cartago 22, El Arenal, Mallorca 07600, Spain · NIF: B-XXXXXXX",
+    "withdrawalTitle": "14-Day Withdrawal Right",
+    "withdrawalText": "Under Spanish Royal Decree 1/2007 Art. 102, you have 14 days to withdraw from this purchase. Withdrawal is NOT applicable once the voucher has been redeemed. Contact info@cheersmallorca.com to exercise this right.",
+    "forLabel": "For",
+    "fromLabel": "From"
   },
   "success": {
     "title": "Payment Successful!",
