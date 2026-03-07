@@ -3,21 +3,75 @@ import { requireRole } from '@/lib/utils/auth'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 
+// Password must be min 12 chars with uppercase, lowercase, and number
+const passwordSchema = z
+  .string()
+  .min(12, 'Password must be at least 12 characters')
+  .refine((p) => /[A-Z]/.test(p), 'Password must contain at least one uppercase letter')
+  .refine((p) => /[a-z]/.test(p), 'Password must contain at least one lowercase letter')
+  .refine((p) => /[0-9]/.test(p), 'Password must contain at least one number')
+
 const signUpSchema = z.object({
   email: z.string().email(),
-  password: z.string().min(8),
+  password: passwordSchema,
   full_name: z.string().min(1).max(255),
   role: z.enum(['admin', 'manager', 'kitchen', 'bar', 'waiter', 'dj', 'owner']).default('waiter'),
   phone: z.string().max(20).optional(),
   language: z.enum(['en', 'nl', 'es', 'de']).default('en'),
 })
 
+// In-memory rate limiter: 3 accounts per hour per IP
+const signUpRateLimitMap = new Map<string, { count: number; resetAt: number }>()
+const SIGNUP_RATE_LIMIT_MAX = 3
+const SIGNUP_RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000 // 1 hour
+
+function getClientIp(request: NextRequest): string {
+  return (
+    request.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
+    request.headers.get('x-real-ip') ||
+    'unknown'
+  )
+}
+
+function checkSignUpRateLimit(key: string): { allowed: boolean; retryAfterSeconds: number } {
+  const now = Date.now()
+  const entry = signUpRateLimitMap.get(key)
+
+  if (!entry || now > entry.resetAt) {
+    signUpRateLimitMap.set(key, { count: 1, resetAt: now + SIGNUP_RATE_LIMIT_WINDOW_MS })
+    return { allowed: true, retryAfterSeconds: 0 }
+  }
+
+  if (entry.count >= SIGNUP_RATE_LIMIT_MAX) {
+    const retryAfterSeconds = Math.ceil((entry.resetAt - now) / 1000)
+    return { allowed: false, retryAfterSeconds }
+  }
+
+  entry.count++
+  return { allowed: true, retryAfterSeconds: 0 }
+}
+
 /**
  * POST /api/auth/sign-up
  * Admin/owner only — create a new user account.
  * Self-registration is NOT supported; admins manage all credentials.
+ * Password requirements: min 12 chars, uppercase, lowercase, number.
+ * Rate limit: 3 accounts/hour per IP.
  */
 export async function POST(request: NextRequest) {
+  // Rate limit check (3 sign-ups per hour per IP)
+  const ip = getClientIp(request)
+  const rateLimit = checkSignUpRateLimit(ip)
+  if (!rateLimit.allowed) {
+    return NextResponse.json(
+      { error: 'Too many requests. Please try again later.' },
+      {
+        status: 429,
+        headers: { 'Retry-After': String(rateLimit.retryAfterSeconds) },
+      }
+    )
+  }
+
   // Only admin or owner can create accounts
   const roleResult = await requireRole(['admin', 'owner'])
   if ('error' in roleResult) {

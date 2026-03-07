@@ -11,6 +11,7 @@ const validateSchema = z.object({
 
 /**
  * POST /api/coupons/[id]/validate — Validate & redeem coupon (waiter+)
+ * Uses atomic redeem_coupon RPC with FOR UPDATE row lock to prevent race conditions.
  */
 export async function POST(
   request: NextRequest,
@@ -37,81 +38,37 @@ export async function POST(
 
   const supabase = await createClient()
 
-  // Get current coupon state
-  const { data: coupon, error: couponError } = await supabase
-    .from('gift_coupons')
-    .select('*')
-    .eq('id', id)
-    .single()
+  // Use atomic RPC with FOR UPDATE row lock to prevent race conditions (P-02/B-02 fix)
+  const { data, error } = await supabase.rpc('redeem_coupon', {
+    p_coupon_id: id,
+    p_amount_cents: parsed.data.amount_cents,
+    p_validated_by: authResult.data.user.id,
+    p_validation_method: parsed.data.validation_method,
+    p_notes: parsed.data.notes || null,
+  })
 
-  if (couponError || !coupon) {
-    return NextResponse.json({ error: 'Coupon not found' }, { status: 404 })
+  if (error) {
+    return NextResponse.json({ error: 'Failed to redeem coupon' }, { status: 500 })
   }
 
-  // Validate coupon status
-  if (coupon.status === 'expired') {
-    return NextResponse.json({ error: 'Coupon has expired' }, { status: 400 })
-  }
-  if (coupon.status === 'fully_used') {
-    return NextResponse.json({ error: 'Coupon has been fully used' }, { status: 400 })
-  }
-  if (coupon.status === 'cancelled') {
-    return NextResponse.json({ error: 'Coupon has been cancelled' }, { status: 400 })
-  }
-  if (coupon.status === 'pending_payment') {
-    return NextResponse.json({ error: 'Coupon payment is still pending' }, { status: 400 })
+  const result = data as {
+    success: boolean
+    error?: string
+    coupon_id?: string
+    redeemed_amount_cents?: number
+    remaining_cents?: number
+    new_status?: string
   }
 
-  // Check expiry date
-  if (new Date(coupon.expires_at) < new Date()) {
-    await supabase.from('gift_coupons').update({ status: 'expired' }).eq('id', id)
-    return NextResponse.json({ error: 'Coupon has expired' }, { status: 400 })
-  }
-
-  // Check sufficient balance
-  if (parsed.data.amount_cents > coupon.remaining_cents) {
-    return NextResponse.json({
-      error: `Insufficient balance. Remaining: €${(coupon.remaining_cents / 100).toFixed(2)}`,
-    }, { status: 400 })
-  }
-
-  const newRemaining = coupon.remaining_cents - parsed.data.amount_cents
-  const newStatus = newRemaining === 0 ? 'fully_used' : 'partially_used'
-
-  // Create redemption record
-  const { error: redemptionError } = await supabase
-    .from('gift_coupon_redemptions')
-    .insert({
-      coupon_id: id,
-      amount_cents: parsed.data.amount_cents,
-      validated_by: authResult.data.user.id,
-      validation_method: parsed.data.validation_method,
-      notes: parsed.data.notes || null,
-    })
-
-  if (redemptionError) {
-    return NextResponse.json({ error: redemptionError.message }, { status: 500 })
-  }
-
-  // Update coupon balance
-  const { data: updatedCoupon, error: updateError } = await supabase
-    .from('gift_coupons')
-    .update({
-      remaining_cents: newRemaining,
-      status: newStatus,
-    })
-    .eq('id', id)
-    .select()
-    .single()
-
-  if (updateError) {
-    return NextResponse.json({ error: updateError.message }, { status: 500 })
+  if (!result.success) {
+    return NextResponse.json({ error: result.error || 'Redemption failed' }, { status: 400 })
   }
 
   return NextResponse.json({
     message: 'Coupon redeemed successfully',
-    coupon: updatedCoupon,
-    redeemed_amount_cents: parsed.data.amount_cents,
-    remaining_cents: newRemaining,
+    coupon_id: result.coupon_id,
+    redeemed_amount_cents: result.redeemed_amount_cents,
+    remaining_cents: result.remaining_cents,
+    status: result.new_status,
   })
 }

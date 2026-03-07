@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { requireRole } from '@/lib/utils/auth'
+import { sanitizeSearch } from '@/lib/utils/sanitize'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -50,7 +51,7 @@ export async function GET(request: NextRequest) {
   // Filters
   const vipFilter = searchParams.get('vip')
   const languageFilter = searchParams.get('language')
-  const searchQuery = searchParams.get('search')
+  const searchQuery = sanitizeSearch(searchParams.get('search'))
 
   // Sorting
   const sortField = searchParams.get('sort') || 'created_at'
@@ -79,7 +80,7 @@ export async function GET(request: NextRequest) {
   const { data: customers, error, count } = await query
 
   if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to fetch customers' }, { status: 500 })
   }
 
   return NextResponse.json({

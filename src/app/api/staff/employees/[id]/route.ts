@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { requireRole } from '@/lib/utils/auth'
+import { encryptString, decryptString } from '@/lib/utils/encryption'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -29,6 +30,19 @@ const updateEmployeeSchema = z.object({
   }).optional(),
 })
 
+/** Decrypt SSN field in employee record */
+function decryptEmployeeSSN<T extends { social_security_number?: string | null }>(
+  employee: T
+): T {
+  if (employee.social_security_number) {
+    return {
+      ...employee,
+      social_security_number: decryptString(employee.social_security_number),
+    }
+  }
+  return employee
+}
+
 /**
  * GET /api/staff/employees/[id]
  * Get a specific employee by ID (managers/admins only)
@@ -37,7 +51,7 @@ export async function GET(
   _request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
-  const authResult = await requireRole(['admin', 'manager'])
+  const authResult = await requireRole(['admin', 'owner', 'manager'])
 
   if ('error' in authResult) {
     return NextResponse.json(
@@ -73,10 +87,11 @@ export async function GET(
     if (error.code === 'PGRST116') {
       return NextResponse.json({ error: 'Employee not found' }, { status: 404 })
     }
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to fetch employee' }, { status: 500 })
   }
 
-  return NextResponse.json(employee)
+  // Decrypt SSN before returning
+  return NextResponse.json(decryptEmployeeSSN(employee))
 }
 
 /**
@@ -87,7 +102,7 @@ export async function PATCH(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
-  const authResult = await requireRole(['admin', 'manager'])
+  const authResult = await requireRole(['admin', 'owner', 'manager'])
 
   if ('error' in authResult) {
     return NextResponse.json(
@@ -133,6 +148,13 @@ export async function PATCH(
     }
   }
 
+  // Encrypt SSN if provided
+  if ('social_security_number' in employeeData) {
+    if (employeeData.social_security_number) {
+      employeeData.social_security_number = encryptString(employeeData.social_security_number)
+    }
+  }
+
   // Update profile if provided
   if (profileData && Object.keys(profileData).length > 0) {
     // First get the employee's profile_id
@@ -152,7 +174,7 @@ export async function PATCH(
         .eq('id', emp.profile_id)
 
       if (profileError) {
-        return NextResponse.json({ error: `Profile update failed: ${profileError.message}` }, { status: 500 })
+        return NextResponse.json({ error: 'Profile update failed' }, { status: 500 })
       }
     }
   }
@@ -184,10 +206,11 @@ export async function PATCH(
     if (error.code === 'PGRST116') {
       return NextResponse.json({ error: 'Employee not found' }, { status: 404 })
     }
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to update employee' }, { status: 500 })
   }
 
-  return NextResponse.json(updatedEmployee)
+  // Decrypt SSN before returning
+  return NextResponse.json(decryptEmployeeSSN(updatedEmployee))
 }
 
 /**
@@ -217,7 +240,7 @@ export async function DELETE(
     .eq('id', id)
 
   if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to delete employee' }, { status: 500 })
   }
 
   return NextResponse.json({ success: true }, { status: 200 })

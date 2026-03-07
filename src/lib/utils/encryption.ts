@@ -62,3 +62,61 @@ export function decrypt(encryptedString: string): Record<string, unknown> {
 
   return JSON.parse(decrypted)
 }
+
+/**
+ * Encrypt a plaintext string (e.g. SSN) using AES-256-GCM.
+ * Returns a hex-encoded string in format: salt:iv:tag:encrypted
+ */
+export function encryptString(plaintext: string): string {
+  const secret = getSecret()
+  const salt = randomBytes(SALT_LENGTH)
+  const key = getKey(secret, salt)
+  const iv = randomBytes(IV_LENGTH)
+  const cipher = createCipheriv(ALGORITHM, key, iv)
+
+  let encrypted = cipher.update(plaintext, 'utf8', 'hex')
+  encrypted += cipher.final('hex')
+
+  const tag = cipher.getAuthTag()
+
+  return [
+    salt.toString('hex'),
+    iv.toString('hex'),
+    tag.toString('hex'),
+    encrypted,
+  ].join(':')
+}
+
+/**
+ * Decrypt a string encrypted with encryptString().
+ * Returns null if the value is null/empty or not in encrypted format.
+ */
+export function decryptString(encryptedString: string | null | undefined): string | null {
+  if (!encryptedString) return null
+
+  const parts = encryptedString.split(':')
+  // If not in expected format (salt:iv:tag:data = 4 parts of hex), return as-is (legacy plaintext)
+  if (parts.length !== 4) {
+    return encryptedString
+  }
+
+  try {
+    const secret = getSecret()
+    const [saltHex, ivHex, tagHex, encrypted] = parts
+    const salt = Buffer.from(saltHex, 'hex')
+    const iv = Buffer.from(ivHex, 'hex')
+    const tag = Buffer.from(tagHex, 'hex')
+    const key = getKey(secret, salt)
+
+    const decipher = createDecipheriv(ALGORITHM, key, iv)
+    decipher.setAuthTag(tag)
+
+    let decrypted = decipher.update(encrypted, 'hex', 'utf8')
+    decrypted += decipher.final('utf8')
+
+    return decrypted
+  } catch {
+    // If decryption fails (e.g. legacy plaintext that happens to have 4 colons), return as-is
+    return encryptedString
+  }
+}

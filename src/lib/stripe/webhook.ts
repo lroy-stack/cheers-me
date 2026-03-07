@@ -1,6 +1,7 @@
 /**
  * Stripe Webhook Handler
  * Processes checkout.session.completed events for gift coupons.
+ * Idempotent: uses processed_webhook_events table to prevent duplicate processing.
  */
 
 import { stripe } from './config'
@@ -26,20 +27,34 @@ export function verifyWebhookSignature(
 
 /**
  * Handle checkout.session.completed event
- * Activates the coupon after successful payment
+ * Activates the coupon after successful payment.
+ * Uses processed_webhook_events table to ensure idempotent processing.
  */
 export async function handleCheckoutCompleted(
-  session: Stripe.Checkout.Session
-): Promise<{ success: boolean; error?: string }> {
+  session: Stripe.Checkout.Session,
+  eventId: string
+): Promise<{ success: boolean; error?: string; duplicate?: boolean }> {
+  // Use service role client (webhook has no user session)
+  const supabase = createClient(supabaseUrl, supabaseServiceKey)
+
+  // Check if this event has already been processed (idempotency check)
+  const { data: existingEvent } = await supabase
+    .from('processed_webhook_events')
+    .select('id')
+    .eq('event_id', eventId)
+    .single()
+
+  if (existingEvent) {
+    // Already processed — return success without re-processing
+    return { success: true, duplicate: true }
+  }
+
   const couponId = session.metadata?.coupon_id
   const couponCode = session.metadata?.coupon_code
 
   if (!couponId || !couponCode) {
     return { success: false, error: 'Missing coupon metadata in session' }
   }
-
-  // Use service role client (webhook has no user session)
-  const supabase = createClient(supabaseUrl, supabaseServiceKey)
 
   // Activate the coupon
   const { error: updateError } = await supabase
@@ -56,11 +71,16 @@ export async function handleCheckoutCompleted(
     .eq('status', 'pending_payment')
 
   if (updateError) {
-    return { success: false, error: `Failed to activate coupon: ${updateError.message}` }
+    return { success: false, error: 'Failed to activate coupon' }
   }
 
-  // PDF generation will be triggered on first access or via a separate call
-  // to keep the webhook handler fast and reliable
+  // Record the processed event to prevent duplicate processing
+  await supabase
+    .from('processed_webhook_events')
+    .insert({
+      event_id: eventId,
+      event_type: 'checkout.session.completed',
+    })
 
   return { success: true }
 }

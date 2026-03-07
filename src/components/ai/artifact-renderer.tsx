@@ -2,6 +2,7 @@
 
 import { useMemo, useRef, useEffect, useState, useCallback } from 'react'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell } from 'recharts'
+// Note: DOMPurify loaded dynamically inside useEffect to avoid SSR issues
 
 interface ArtifactRendererProps {
   type: string
@@ -281,7 +282,13 @@ function MermaidRenderer({ content }: { content: string }) {
         const id = `mermaid-${Date.now()}-${Math.random().toString(36).slice(2, 9)}`
         const { svg: renderedSvg } = await mermaid.render(id, content)
         if (!cancelled) {
-          setSvg(renderedSvg)
+          // Sanitize SVG output to prevent XSS via injected script/event handlers
+          // Dynamic import ensures DOMPurify only runs client-side (avoids SSR issues)
+          const DOMPurify = (await import('dompurify')).default
+          const sanitized = DOMPurify.sanitize(renderedSvg, {
+            USE_PROFILES: { svg: true, svgFilters: true },
+          })
+          setSvg(sanitized)
           setError(null)
         }
       } catch (err) {

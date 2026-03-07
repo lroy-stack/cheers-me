@@ -3,7 +3,8 @@ import { verifyWebhookSignature, handleCheckoutCompleted } from '@/lib/stripe/we
 
 /**
  * POST /api/coupons/stripe-webhook — Stripe webhook handler
- * Must read raw body for signature verification
+ * Must read raw body for signature verification.
+ * Idempotent: duplicate events are detected via processed_webhook_events table.
  */
 export async function POST(request: NextRequest) {
   const signature = request.headers.get('stripe-signature')
@@ -21,18 +22,24 @@ export async function POST(request: NextRequest) {
   let event
   try {
     event = verifyWebhookSignature(rawBody, signature)
-  } catch (err) {
-    const message = err instanceof Error ? err.message : 'Signature verification failed'
-    return NextResponse.json({ error: message }, { status: 400 })
+  } catch {
+    return NextResponse.json({ error: 'Webhook signature verification failed' }, { status: 400 })
   }
 
   switch (event.type) {
     case 'checkout.session.completed': {
       const session = event.data.object
-      const result = await handleCheckoutCompleted(session)
+      const result = await handleCheckoutCompleted(session, event.id)
+
+      if (result.duplicate) {
+        // Already processed — acknowledge without re-processing
+        return NextResponse.json({ received: true })
+      }
+
       if (!result.success) {
-        console.error('Webhook handler error:', result.error)
-        return NextResponse.json({ error: result.error }, { status: 500 })
+        // Log error server-side but return 500 so Stripe retries
+        console.error('Webhook handler error for event', event.id)
+        return NextResponse.json({ error: 'Failed to process webhook' }, { status: 500 })
       }
       break
     }

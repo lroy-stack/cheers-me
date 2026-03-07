@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { requireRole, requireAuth } from '@/lib/utils/auth'
+import { sanitizeSearch } from '@/lib/utils/sanitize'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -30,7 +31,7 @@ export async function GET(request: NextRequest) {
   const supabase = await createClient()
   const { searchParams } = new URL(request.url)
 
-  const search = searchParams.get('search')
+  const search = sanitizeSearch(searchParams.get('search'))
 
   let query = supabase
     .from('suppliers')
@@ -44,7 +45,7 @@ export async function GET(request: NextRequest) {
   const { data: suppliers, error } = await query
 
   if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to fetch suppliers' }, { status: 500 })
   }
 
   return NextResponse.json(suppliers)

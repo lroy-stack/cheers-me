@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { requireRole } from '@/lib/utils/auth'
+import { encryptString, decryptString } from '@/lib/utils/encryption'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -21,12 +22,25 @@ const createEmployeeSchema = z.object({
   periodo_prueba_end: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable().optional(),
 })
 
+/** Decrypt SSN field in employee record (or array of records) */
+function decryptEmployeeSSN<T extends { social_security_number?: string | null }>(
+  employee: T
+): T {
+  if (employee.social_security_number) {
+    return {
+      ...employee,
+      social_security_number: decryptString(employee.social_security_number),
+    }
+  }
+  return employee
+}
+
 /**
  * GET /api/staff/employees
  * List all employees (managers/admins only)
  */
 export async function GET(request: NextRequest) {
-  const authResult = await requireRole(['admin', 'manager'])
+  const authResult = await requireRole(['admin', 'owner', 'manager'])
 
   if ('error' in authResult) {
     return NextResponse.json(
@@ -65,10 +79,13 @@ export async function GET(request: NextRequest) {
   const { data: employees, error } = await query
 
   if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to fetch employees' }, { status: 500 })
   }
 
-  return NextResponse.json(employees)
+  // Decrypt SSN for each employee before returning
+  const decrypted = (employees ?? []).map(decryptEmployeeSSN)
+
+  return NextResponse.json(decrypted)
 }
 
 /**
@@ -77,7 +94,7 @@ export async function GET(request: NextRequest) {
  * Note: The profile must already exist
  */
 export async function POST(request: NextRequest) {
-  const authResult = await requireRole(['admin', 'manager'])
+  const authResult = await requireRole(['admin', 'owner', 'manager'])
 
   if ('error' in authResult) {
     return NextResponse.json(
@@ -121,6 +138,11 @@ export async function POST(request: NextRequest) {
     )
   }
 
+  // Encrypt SSN before storage
+  const encryptedSSN = validation.data.social_security_number
+    ? encryptString(validation.data.social_security_number)
+    : null
+
   // Create employee record
   const { data: newEmployee, error } = await supabase
     .from('employees')
@@ -134,7 +156,7 @@ export async function POST(request: NextRequest) {
       weekly_hours_target: validation.data.weekly_hours_target ?? null,
       contract_end_date: validation.data.contract_end_date ?? null,
       irpf_retention: validation.data.irpf_retention ?? null,
-      social_security_number: validation.data.social_security_number ?? null,
+      social_security_number: encryptedSSN,
       convenio_colectivo: validation.data.convenio_colectivo ?? null,
       categoria_profesional: validation.data.categoria_profesional ?? null,
       tipo_jornada: validation.data.tipo_jornada ?? 'completa',
@@ -156,8 +178,9 @@ export async function POST(request: NextRequest) {
     .single()
 
   if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to create employee' }, { status: 500 })
   }
 
-  return NextResponse.json(newEmployee, { status: 201 })
+  // Decrypt SSN in response
+  return NextResponse.json(decryptEmployeeSSN(newEmployee), { status: 201 })
 }
