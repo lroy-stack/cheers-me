@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { useReducer, useCallback, useRef, useLayoutEffect } from 'react'
+import { useReducer, useCallback, useRef, useLayoutEffect, useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useBookingLanguage } from './booking-language-provider'
 import ProgressBar from './progress-bar'
@@ -118,6 +118,19 @@ export default function BookingWizard() {
   const [state, dispatch] = useReducer(reducer, initialState)
   const { currentStep, stepIndex, direction, formData, availability, bookingResult, isLoading } = state
 
+  // Fetch reservation settings for dynamic limits
+  const [maxPartySize, setMaxPartySize] = useState(20)
+  const [maxAdvanceDays, setMaxAdvanceDays] = useState(30)
+  useEffect(() => {
+    fetch('/api/reservations/settings')
+      .then(r => r.json())
+      .then(d => {
+        if (d?.max_party_size) setMaxPartySize(d.max_party_size)
+        if (d?.max_advance_booking_days) setMaxAdvanceDays(d.max_advance_booking_days)
+      })
+      .catch(() => { /* use defaults */ })
+  }, [])
+
   const containerRef = useRef<HTMLDivElement>(null)
   const wrapperRef = useRef<HTMLDivElement>(null)
 
@@ -196,11 +209,6 @@ export default function BookingWizard() {
   const submitBooking = useCallback(async () => {
     dispatch({ type: 'SET_LOADING', loading: true })
 
-    // Inject occasion into special_requests
-    const specialRequests = formData.occasion
-      ? `[${formData.occasion}] ${formData.special_requests}`.trim()
-      : formData.special_requests
-
     try {
       const res = await fetch('/api/public/booking', {
         method: 'POST',
@@ -212,7 +220,8 @@ export default function BookingWizard() {
           party_size: formData.party_size,
           reservation_date: formData.reservation_date,
           start_time: formData.start_time,
-          special_requests: specialRequests || undefined,
+          occasion: formData.occasion || undefined,
+          special_requests: formData.special_requests || undefined,
           language: formData.language,
           cf_turnstile_response: formData.cf_turnstile_response,
           privacy_consent: formData.privacy_consent,
@@ -306,6 +315,7 @@ export default function BookingWizard() {
             onDateChange={(d) => updateForm({ reservation_date: d })}
             onTimeChange={(t) => updateForm({ start_time: t })}
             onNext={next}
+            maxAdvanceDays={maxAdvanceDays}
           />
         )
       case 'party-size':
@@ -314,6 +324,7 @@ export default function BookingWizard() {
             partySize={formData.party_size}
             onPartySizeChange={(s) => updateForm({ party_size: s })}
             onNext={next}
+            maxPartySize={maxPartySize}
           />
         )
       case 'guest-info':

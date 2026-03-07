@@ -7,11 +7,17 @@ import { z } from 'zod'
 const updateTableSchema = z.object({
   table_number: z.string().min(1).max(50).optional(),
   capacity: z.number().int().min(1).optional(),
-  section: z.string().max(100).optional(),
+  section_id: z.string().uuid().nullable().optional(),
   x_position: z.number().optional(),
   y_position: z.number().optional(),
   status: z.enum(['available', 'occupied', 'reserved', 'cleaning']).optional(),
-  qr_code_url: z.string().url().optional(),
+  shape: z.enum(['round', 'square', 'rectangle']).optional(),
+  width: z.number().optional(),
+  height: z.number().optional(),
+  rotation: z.number().min(0).max(360).optional(),
+  is_active: z.boolean().optional(),
+  notes: z.string().max(500).nullable().optional(),
+  qr_code_url: z.string().url().nullable().optional(),
 })
 
 /**

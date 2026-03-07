@@ -253,14 +253,14 @@ export async function PATCH(
 
 /**
  * DELETE /api/staff/employees/[id]
- * Delete an employee record (admins only)
- * WARNING: This is a hard delete. Consider soft delete via date_terminated instead.
+ * Soft delete: sets employment_status='terminated' and date_terminated=today.
+ * Hard delete (physical removal) requires admin role + ?force=true query param.
  */
 export async function DELETE(
-  _request: NextRequest,
+  request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
-  const authResult = await requireRole(['admin'])
+  const authResult = await requireRole(['admin', 'owner', 'manager'])
 
   if ('error' in authResult) {
     return NextResponse.json(
@@ -270,16 +270,46 @@ export async function DELETE(
   }
 
   const { id } = await params
+  const { searchParams } = new URL(request.url)
+  const force = searchParams.get('force') === 'true'
   const supabase = await createClient()
 
+  // Hard delete requires admin/owner role
+  if (force) {
+    const callerRole = authResult.data.profile?.role
+    if (!callerRole || !['admin', 'owner'].includes(callerRole)) {
+      return NextResponse.json(
+        { error: 'Hard delete requires admin or owner role' },
+        { status: 403 }
+      )
+    }
+
+    const { error } = await supabase
+      .from('employees')
+      .delete()
+      .eq('id', id)
+
+    if (error) {
+      return NextResponse.json({ error: 'Failed to delete employee' }, { status: 500 })
+    }
+
+    return NextResponse.json({ success: true, deleted: 'hard' }, { status: 200 })
+  }
+
+  // Soft delete: set terminated status and date
+  const today = new Date().toISOString().split('T')[0]
   const { error } = await supabase
     .from('employees')
-    .delete()
+    .update({
+      employment_status: 'terminated',
+      date_terminated: today,
+      updated_at: new Date().toISOString(),
+    })
     .eq('id', id)
 
   if (error) {
-    return NextResponse.json({ error: 'Failed to delete employee' }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to terminate employee' }, { status: 500 })
   }
 
-  return NextResponse.json({ success: true }, { status: 200 })
+  return NextResponse.json({ success: true, deleted: 'soft', date_terminated: today }, { status: 200 })
 }

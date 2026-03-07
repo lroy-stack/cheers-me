@@ -44,10 +44,11 @@ function checkBookingRateLimit(key: string): { allowed: boolean; retryAfterSecon
 const publicBookingSchema = z.object({
   guest_name: z.string().min(2, 'Name must be at least 2 characters').max(255),
   guest_email: z.string().email('Valid email required').optional(),
-  guest_phone: z.string().min(6, 'Valid phone number required').max(20),
+  guest_phone: z.string().regex(/^\+[1-9]\d{1,14}$/, 'Phone must be in E.164 format (e.g. +34612345678)'),
   party_size: z.number().int().min(1).max(50),
   reservation_date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Date format must be YYYY-MM-DD'),
   start_time: z.string().regex(/^\d{2}:\d{2}$/, 'Time format must be HH:MM'),
+  occasion: z.string().max(100).optional(),
   special_requests: z.string().max(1000).optional(),
   language: z.enum(['en', 'nl', 'es', 'de']).default('en'),
   cf_turnstile_response: z.string().min(1, 'Security verification token required'),
@@ -380,6 +381,7 @@ export async function POST(request: NextRequest) {
       source: 'website' as const,
       reservation_status: 'pending' as const, // Online bookings start as pending
       estimated_duration_minutes: duration,
+      occasion: data.occasion || null,
       special_requests: data.special_requests || null,
     })
     .select(`
@@ -391,6 +393,7 @@ export async function POST(request: NextRequest) {
       reservation_date,
       start_time,
       reservation_status,
+      occasion,
       special_requests,
       tables (
         table_number,

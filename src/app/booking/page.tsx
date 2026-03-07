@@ -48,6 +48,40 @@ export async function generateMetadata() {
   }
 }
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FoodEstablishment',
+  name: 'GrandCafe Cheers',
+  description: 'World kitchen, big fiesta! Beach bar & restaurant in Mallorca with craft cocktails and live DJs.',
+  url: 'https://grandcafe-cheers-app.vercel.app/booking',
+  telephone: '+34971XXXXXX',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Carrer de Cartago 22',
+    addressLocality: 'El Arenal (Platja de Palma)',
+    postalCode: '07600',
+    addressRegion: 'Mallorca',
+    addressCountry: 'ES',
+  },
+  servesCuisine: ['World Kitchen', 'Cocktails', 'Burgers'],
+  priceRange: '€€',
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      opens: '10:30',
+      closes: '03:00',
+    },
+  ],
+  hasMap: 'https://maps.google.com/?q=Carrer+de+Cartago+22,+El+Arenal,+Mallorca',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.8',
+    bestRating: '5',
+    ratingCount: '240',
+  },
+}
+
 export default async function BookingPage() {
   const webConfig = await getWebConfig()
 
@@ -56,6 +90,10 @@ export default async function BookingPage() {
   }
   return (
     <BookingLanguageProvider messages={allMessages}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="min-h-screen bg-background">
         {/* 1. Hero — Full-screen with photo background */}
         <BookingHero />

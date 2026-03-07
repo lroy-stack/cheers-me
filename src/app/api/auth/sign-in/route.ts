@@ -119,7 +119,7 @@ export async function POST(request: NextRequest) {
   const adminClient = createAdminClient()
   const { data: profile, error: profileError } = await adminClient
     .from('profiles')
-    .select('*')
+    .select('id, email, full_name, role, avatar_url, language, theme, active')
     .eq('id', data.user.id)
     .single()
 

@@ -29,15 +29,22 @@ export async function updateSession(request: NextRequest) {
     }
   )
 
-  // Use getSession() instead of getUser() for faster proxy execution.
-  // getSession() reads from cookies locally (~5ms) vs getUser() which makes
-  // a network call to Supabase (~500ms). Token verification happens in
-  // getCurrentUser() within server components.
+  // Sensitive routes that require server-verified auth (getUser() network call).
+  // These routes access PII, financial data, or security settings.
+  const sensitiveRoutes = ['/settings/', '/customers/', '/finance/', '/api/staff/employees/', '/api/crm/']
+  const isSensitiveRoute = sensitiveRoutes.some(r => request.nextUrl.pathname.startsWith(r))
 
-  const {
-    data: { session },
-  } = await supabase.auth.getSession()
-  const user = session?.user
+  let user: import('@supabase/supabase-js').User | null = null
+
+  if (isSensitiveRoute) {
+    // getUser() makes a verified network call to Supabase — token cannot be forged
+    const { data: { user: verifiedUser } } = await supabase.auth.getUser()
+    user = verifiedUser
+  } else {
+    // getSession() reads from cookies locally — fast (~5ms) for non-sensitive routes
+    const { data: { session } } = await supabase.auth.getSession()
+    user = session?.user ?? null
+  }
 
   // Protected routes - redirect to /login if not authenticated
   if (

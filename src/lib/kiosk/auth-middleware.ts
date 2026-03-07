@@ -20,6 +20,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { extractTokenFromHeader, verifyKioskSessionToken } from './session'
 import { logSecurityEvent } from './security-logger'
+import { createAdminClient } from '@/lib/supabase/server'
 
 /**
  * Successful authentication result
@@ -60,36 +61,57 @@ export type AuthResult = AuthSuccess | AuthFailure
  * ```
  */
 export async function requireKioskSession(request: NextRequest): Promise<AuthResult> {
-  // Extract Authorization header
-  const authHeader = request.headers.get('Authorization')
-  if (!authHeader) {
+  // Extract token: prefer httpOnly cookie, fall back to Authorization header
+  let token: string | null = null
+
+  // 1. Try httpOnly cookie first (more secure)
+  const cookieToken = request.cookies.get('kiosk_session')?.value
+  if (cookieToken) {
+    token = cookieToken
+  } else {
+    // 2. Fall back to Authorization header (for backward compatibility)
+    const authHeader = request.headers.get('Authorization')
+    token = extractTokenFromHeader(authHeader)
+  }
+
+  if (!token) {
     await logSecurityEvent('invalid_session_token', {
       path: request.nextUrl.pathname,
-      error: 'missing_header',
+      error: 'missing_token',
     })
     return {
       success: false,
       response: NextResponse.json(
-        { error: 'Authorization header required', code: 'MISSING_AUTH_HEADER' },
+        { error: 'Authorization required', code: 'MISSING_AUTH' },
         { status: 401 }
       ),
     }
   }
 
-  // Extract token from "Bearer <token>" format
-  const token = extractTokenFromHeader(authHeader)
-  if (!token) {
-    await logSecurityEvent('invalid_session_token', {
-      path: request.nextUrl.pathname,
-      error: 'invalid_format',
-    })
-    return {
-      success: false,
-      response: NextResponse.json(
-        { error: 'Invalid Authorization header format', code: 'INVALID_AUTH_FORMAT' },
-        { status: 401 }
-      ),
+  // Check token blacklist before verifying
+  try {
+    const supabase = createAdminClient()
+    const { data: blacklisted } = await supabase
+      .from('kiosk_session_blacklist')
+      .select('id')
+      .eq('session_token', token)
+      .maybeSingle()
+
+    if (blacklisted) {
+      await logSecurityEvent('invalid_session_token', {
+        path: request.nextUrl.pathname,
+        error: 'blacklisted',
+      })
+      return {
+        success: false,
+        response: NextResponse.json(
+          { error: 'Session has been revoked', code: 'SESSION_REVOKED' },
+          { status: 401 }
+        ),
+      }
     }
+  } catch {
+    // Non-fatal: if blacklist check fails, continue with token verification
   }
 
   // Verify token signature and expiration

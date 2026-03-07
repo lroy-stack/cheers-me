@@ -8,9 +8,10 @@ interface StepPartySizeProps {
   partySize: number
   onPartySizeChange: (size: number) => void
   onNext: () => void
+  maxPartySize?: number
 }
 
-export default function StepPartySize({ partySize, onPartySizeChange, onNext }: StepPartySizeProps) {
+export default function StepPartySize({ partySize, onPartySizeChange, onNext, maxPartySize = 20 }: StepPartySizeProps) {
   const { t } = useBookingLanguage()
 
   const PRESETS = [
@@ -19,9 +20,10 @@ export default function StepPartySize({ partySize, onPartySizeChange, onNext }: 
     { label: t('partySize.group'), value: 4 },
     { label: t('partySize.bigGroup'), value: 8 },
     { label: t('partySize.party'), value: 12 },
-  ]
+  ].filter(p => p.value <= maxPartySize)
+
   const handleChange = (delta: number) => {
-    const next = Math.max(1, Math.min(20, partySize + delta))
+    const next = Math.max(1, Math.min(maxPartySize, partySize + delta))
     onPartySizeChange(next)
   }
 

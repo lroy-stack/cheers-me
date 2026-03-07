@@ -55,27 +55,36 @@ export async function POST(request: NextRequest) {
   const turnstileResult = await verifyTurnstileToken(turnstile_token, ip)
 
   if (!turnstileResult.success) {
-    // Fail-open strategy: Allow on timeout/internal-error but log
-    if (turnstileResult.error === 'timeout' || turnstileResult.error === 'internal-error') {
-      console.warn('[Kiosk] Turnstile verification unavailable, applying fail-open:', turnstileResult.error)
-      await logSecurityEvent('turnstile_fallback', {
-        ip,
-        error: turnstileResult.error,
-        message: turnstileResult.message,
-      })
-    } else {
-      // Fail-closed: Reject on invalid token
-      console.warn('[Kiosk] Turnstile verification failed:', turnstileResult.error)
+    // TURNSTILE_FAIL_MODE controls behavior on failure:
+    //   'block' = reject all failures (fail-closed, maximum security)
+    //   'log'   = allow on timeout/internal-error but log (fail-open, default)
+    const failMode = (process.env.TURNSTILE_FAIL_MODE || 'log').toLowerCase()
+
+    const isTransientError = turnstileResult.error === 'timeout' || turnstileResult.error === 'internal-error'
+
+    if (failMode === 'block' || !isTransientError) {
+      // Fail-closed: Reject on any failure (or always when fail_mode=block)
+      console.warn('[Kiosk] Turnstile verification failed (fail_mode=' + failMode + '):', turnstileResult.error)
       await logSecurityEvent('turnstile_failed', {
         ip,
         error: turnstileResult.error,
-        errorCodes: turnstileResult.errorCodes,
+        failMode,
+        errorCodes: (turnstileResult as { errorCodes?: string[] }).errorCodes,
       })
       return NextResponse.json(
         { error: 'Security verification failed', code: 'TURNSTILE_FAILED' },
         { status: 403 }
       )
     }
+
+    // Fail-open: Allow on timeout/internal-error but log (failMode === 'log')
+    console.warn('[Kiosk] Turnstile verification unavailable, applying fail-open:', turnstileResult.error)
+    await logSecurityEvent('turnstile_fallback', {
+      ip,
+      error: turnstileResult.error,
+      failMode,
+      message: (turnstileResult as { message?: string }).message,
+    })
   }
 
   // ============================================================================
@@ -215,8 +224,18 @@ export async function POST(request: NextRequest) {
     active_break_id: activeBreakId,
     break_start_time: breakStartTime,
     today_shift: todayShift ?? null,
-    session_token: sessionToken, // NEW: Session token for authenticated requests
+    session_token: sessionToken,
   }
 
-  return NextResponse.json(result)
+  // Set session token as httpOnly cookie (12h expiry, Secure + SameSite=Strict)
+  const response = NextResponse.json(result)
+  const isProduction = process.env.NODE_ENV === 'production'
+  response.cookies.set('kiosk_session', sessionToken, {
+    httpOnly: true,
+    secure: isProduction,
+    sameSite: 'strict',
+    maxAge: 12 * 60 * 60, // 12 hours
+    path: '/',
+  })
+  return response
 }

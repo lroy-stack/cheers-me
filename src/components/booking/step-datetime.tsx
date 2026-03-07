@@ -13,12 +13,13 @@ interface StepDateTimeProps {
   onDateChange: (date: string) => void
   onTimeChange: (time: string) => void
   onNext: () => void
+  maxAdvanceDays?: number
 }
 
-export default function StepDateTime({ date, time, onDateChange, onTimeChange, onNext }: StepDateTimeProps) {
+export default function StepDateTime({ date, time, onDateChange, onTimeChange, onNext, maxAdvanceDays = 30 }: StepDateTimeProps) {
   const { t } = useBookingLanguage()
   const today = startOfToday()
-  const maxDate = addDays(today, 30)
+  const maxDate = addDays(today, maxAdvanceDays)
 
   const [selectedDate, setSelectedDate] = useState<Date | undefined>(
     date ? new Date(date + 'T00:00:00') : undefined

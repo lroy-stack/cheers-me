@@ -44,7 +44,7 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
     }
     if (!formData.guest_phone.trim()) {
       newErrors.guest_phone = t('guestInfo.phoneRequired')
-    } else if (formData.guest_phone.trim().length < 6) {
+    } else if (!/^\+[1-9]\d{1,14}$/.test(formData.guest_phone.trim())) {
       newErrors.guest_phone = t('guestInfo.phoneInvalid')
     }
     if (formData.guest_email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.guest_email)) {
@@ -89,7 +89,7 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
       >
         {/* Name */}
         <motion.div variants={item}>
-          <label className="block text-sm font-medium text-muted-foreground mb-1">
+          <label htmlFor="guest_name" className="block text-sm font-medium text-muted-foreground mb-1">
             {t('guestInfo.fullName')} {t('guestInfo.required')}
           </label>
           <motion.div
@@ -99,7 +99,10 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
           >
             <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
             <input
+              id="guest_name"
               type="text"
+              aria-required="true"
+              aria-describedby={errors.guest_name ? 'guest_name_error' : undefined}
               value={formData.guest_name}
               onChange={(e) => {
                 onUpdate({ guest_name: e.target.value })
@@ -114,13 +117,13 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
             />
           </motion.div>
           {errors.guest_name && (
-            <p className="text-xs text-destructive mt-1">{errors.guest_name}</p>
+            <p id="guest_name_error" role="alert" className="text-xs text-destructive mt-1">{errors.guest_name}</p>
           )}
         </motion.div>
 
         {/* Phone */}
         <motion.div variants={item}>
-          <label className="block text-sm font-medium text-muted-foreground mb-1">
+          <label htmlFor="guest_phone" className="block text-sm font-medium text-muted-foreground mb-1">
             {t('guestInfo.phone')} {t('guestInfo.required')}
           </label>
           <motion.div
@@ -130,7 +133,10 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
           >
             <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
             <input
+              id="guest_phone"
               type="tel"
+              aria-required="true"
+              aria-describedby={errors.guest_phone ? 'guest_phone_error' : undefined}
               value={formData.guest_phone}
               onChange={(e) => {
                 onUpdate({ guest_phone: e.target.value })
@@ -145,13 +151,13 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
             />
           </motion.div>
           {errors.guest_phone && (
-            <p className="text-xs text-destructive mt-1">{errors.guest_phone}</p>
+            <p id="guest_phone_error" role="alert" className="text-xs text-destructive mt-1">{errors.guest_phone}</p>
           )}
         </motion.div>
 
         {/* Email */}
         <motion.div variants={item}>
-          <label className="block text-sm font-medium text-muted-foreground mb-1">
+          <label htmlFor="guest_email" className="block text-sm font-medium text-muted-foreground mb-1">
             {t('guestInfo.email')} <span className="text-muted-foreground">{t('guestInfo.optional')}</span>
           </label>
           <motion.div
@@ -161,7 +167,9 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
           >
             <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
             <input
+              id="guest_email"
               type="email"
+              aria-describedby={errors.guest_email ? 'guest_email_error' : undefined}
               value={formData.guest_email}
               onChange={(e) => {
                 onUpdate({ guest_email: e.target.value })

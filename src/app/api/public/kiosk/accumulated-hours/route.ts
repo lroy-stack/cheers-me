@@ -45,17 +45,31 @@ export async function GET(request: NextRequest) {
 
   const { data: weekRecords } = await supabase
     .from('clock_in_out')
-    .select('clock_in_time, clock_out_time')
+    .select(`
+      clock_in_time,
+      clock_out_time,
+      breaks:clock_breaks(start_time, end_time)
+    `)
     .eq('employee_id', employee_id)
     .gte('clock_in_time', monday.toISOString())
     .not('clock_out_time', 'is', null)
 
-  let weekHours = 0
+  let weekMinutes = 0
   if (weekRecords) {
     for (const record of weekRecords) {
       const start = new Date(record.clock_in_time).getTime()
-      const end = new Date(record.clock_out_time).getTime()
-      weekHours += (end - start) / (1000 * 60 * 60)
+      const end = new Date(record.clock_out_time as string).getTime()
+      let gross = (end - start) / 60000
+      // Subtract completed breaks
+      const breaks = record.breaks as { start_time: string; end_time: string | null }[] | null
+      if (breaks) {
+        for (const b of breaks) {
+          if (b.end_time) {
+            gross -= (new Date(b.end_time).getTime() - new Date(b.start_time).getTime()) / 60000
+          }
+        }
+      }
+      weekMinutes += gross
     }
   }
 
@@ -65,22 +79,35 @@ export async function GET(request: NextRequest) {
 
   const { data: monthRecords } = await supabase
     .from('clock_in_out')
-    .select('clock_in_time, clock_out_time')
+    .select(`
+      clock_in_time,
+      clock_out_time,
+      breaks:clock_breaks(start_time, end_time)
+    `)
     .eq('employee_id', employee_id)
     .gte('clock_in_time', firstOfMonth.toISOString())
     .not('clock_out_time', 'is', null)
 
-  let monthHours = 0
+  let monthMinutes = 0
   if (monthRecords) {
     for (const record of monthRecords) {
       const start = new Date(record.clock_in_time).getTime()
-      const end = new Date(record.clock_out_time).getTime()
-      monthHours += (end - start) / (1000 * 60 * 60)
+      const end = new Date(record.clock_out_time as string).getTime()
+      let gross = (end - start) / 60000
+      const breaks = record.breaks as { start_time: string; end_time: string | null }[] | null
+      if (breaks) {
+        for (const b of breaks) {
+          if (b.end_time) {
+            gross -= (new Date(b.end_time).getTime() - new Date(b.start_time).getTime()) / 60000
+          }
+        }
+      }
+      monthMinutes += gross
     }
   }
 
   return NextResponse.json({
-    weekHours: Math.round(weekHours * 10) / 10,
-    monthHours: Math.round(monthHours * 10) / 10,
+    weekHours: Math.round((weekMinutes / 60) * 10) / 10,
+    monthHours: Math.round((monthMinutes / 60) * 10) / 10,
   })
 }
