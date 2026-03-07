@@ -193,6 +193,21 @@ export async function PATCH(
     return NextResponse.json({ error: error.message }, { status: 500 })
   }
 
+  // When status changes to 'completed', record customer visit (increments visit_count + last_visit)
+  if (
+    updateData.reservation_status === 'completed' &&
+    updatedReservation.customer_id
+  ) {
+    // Fire-and-forget: don't block response
+    void Promise.resolve(
+      supabase.rpc('record_customer_visit', { p_customer_id: updatedReservation.customer_id })
+    ).then(({ error: visitError }) => {
+      if (visitError) {
+        console.error('Failed to record customer visit on reservation completion:', visitError.message)
+      }
+    })
+  }
+
   // Auto-send confirmation email when status changes to confirmed
   if (
     updateData.reservation_status === 'confirmed' &&

@@ -107,10 +107,19 @@ export async function PUT(
     }
   }
 
+  // Track cleaning start time when status changes to 'cleaning'
+  const updatePayload: Record<string, unknown> = { ...validation.data }
+  if (validation.data.status === 'cleaning') {
+    updatePayload.cleaning_started_at = new Date().toISOString()
+  } else if (validation.data.status) {
+    // Status changed to something other than 'cleaning' — clear the timer
+    updatePayload.cleaning_started_at = null
+  }
+
   // Update table
   const { data: updatedTable, error } = await supabase
     .from('tables')
-    .update(validation.data)
+    .update(updatePayload)
     .eq('id', id)
     .select()
     .single()

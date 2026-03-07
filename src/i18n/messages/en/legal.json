@@ -2,7 +2,10 @@
   "nav": {
     "privacy": "Privacy Policy",
     "cookies": "Cookie Policy",
-    "avisoLegal": "Legal Notice"
+    "avisoLegal": "Legal Notice",
+    "terms": "Terms of Service",
+    "refund": "Refund & Withdrawal",
+    "dataRequest": "Data Request"
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -152,5 +155,67 @@
     "label": "I have read and accept the",
     "link": "Privacy Policy",
     "required": "You must accept the privacy policy to continue."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: 7 March 2026",
+    "intro": "These Terms of Service govern your use of GrandCafe Cheers services, including table reservations, gift coupons, and the use of this website.",
+    "contractTitle": "1. Service Provider",
+    "contractText": "GrandCafe Cheers S.L., NIF B12345678, Passeig Marítim 1, 07014 Palma de Mallorca, Illes Balears, Spain. By using our services you agree to these terms.",
+    "reservationsTitle": "2. Reservations",
+    "reservationsText": "Reservations are confirmed subject to availability. We reserve the right to cancel or modify reservations in exceptional circumstances. No-show tables may be released after 15 minutes.",
+    "couponsTitle": "3. Gift Coupons",
+    "couponsText": "Gift coupons are valid for 12 months from the date of purchase. They are non-refundable after the 14-day withdrawal period except as required by law. Coupons may not be exchanged for cash.",
+    "conductTitle": "4. Conduct on Premises",
+    "conductText": "Guests are expected to behave respectfully toward staff and other guests. We reserve the right to refuse entry or service in accordance with applicable law.",
+    "liabilityTitle": "5. Limitation of Liability",
+    "liabilityText": "To the maximum extent permitted by Spanish law, GrandCafe Cheers S.L. is not liable for indirect or consequential losses. Our total liability for direct losses shall not exceed the value of the specific service provided.",
+    "intellectualTitle": "6. Intellectual Property",
+    "intellectualText": "All content on this website is owned by GrandCafe Cheers S.L. or its licensors. You may not reproduce, distribute, or create derivative works without our prior written consent.",
+    "governingTitle": "7. Governing Law and Dispute Resolution",
+    "governingText": "These Terms are governed by Spanish law. Disputes shall be subject to the exclusive jurisdiction of the courts of Palma de Mallorca, Spain. Consumers may also use the EU Online Dispute Resolution platform at ec.europa.eu/odr.",
+    "complaintsTitle": "8. Complaints",
+    "complaintsText": "Consumers have the right to submit complaints (Hojas de Reclamaciones). Complaint forms are available at our premises upon request. Complaints may also be submitted to the Consum – Govern de les Illes Balears: https://www.caib.es/sites/consum.",
+    "changesTitle": "9. Changes to These Terms",
+    "changesText": "We may update these Terms from time to time. Material changes will be communicated via email or prominent notice on our website at least 15 days before they take effect."
+  },
+  "refund": {
+    "title": "Refund Policy & Right of Withdrawal",
+    "lastUpdated": "Last updated: 7 March 2026",
+    "intro": "This policy explains your rights when purchasing gift coupons from GrandCafe Cheers, in accordance with Directive 2011/83/EU on consumer rights and Spanish Royal Decree-Law 1/2007 (TRLGDCU).",
+    "withdrawalTitle": "1. Right of Withdrawal — 14-Day Cooling-Off Period",
+    "withdrawalText": "If you are a consumer (not purchasing for business purposes), you have the right to withdraw from your gift coupon purchase within 14 calendar days of the purchase date, without giving any reason.",
+    "withdrawalHowTitle": "How to Exercise Your Right of Withdrawal",
+    "withdrawalHow": "Contact us at info@cheersmallorca.com within 14 days of purchase, stating your order number and your wish to withdraw. You may use the model withdrawal form below.",
+    "withdrawalFormTitle": "Model Withdrawal Form",
+    "withdrawalForm": "To: GrandCafe Cheers S.L., Passeig Marítim 1, 07014 Palma de Mallorca. Email: info@cheersmallorca.com\n\nI hereby give notice that I withdraw from my contract for the purchase of: [description of coupon]\nOrdered on: [date]\nOrder number: [order number]\nName: [your name]\nAddress: [your address]\nDate: [today's date]",
+    "refundProcessTitle": "2. Refund Processing",
+    "refundProcessText": "Once we receive a valid withdrawal request within the 14-day period, we will process your refund within 14 calendar days via the original payment method (Stripe). No fees are charged for withdrawal.",
+    "exceptionsTitle": "3. Exceptions to the Right of Withdrawal",
+    "exceptionsText": "The right of withdrawal does not apply to gift coupons that have been fully redeemed. Once a coupon has been used in full, no refund is available.",
+    "nonRefundableTitle": "4. After the 14-Day Period",
+    "nonRefundableText": "After the 14-day withdrawal period, gift coupons are non-refundable unless required by mandatory consumer protection law.",
+    "contactTitle": "5. Contact",
+    "contactText": "For refund requests or questions, contact: info@cheersmallorca.com or call +34 971 000 000."
+  },
+  "dataRequest": {
+    "title": "Data Subject Access & Erasure Request",
+    "intro": "Under GDPR (Arts. 15–22) and Spanish LOPD-GDD, you have the right to access, rectify, erase, restrict processing of, and port your personal data. Use this form to submit a request.",
+    "nameLabel": "Full Name",
+    "emailLabel": "Email Address",
+    "requestTypeLabel": "Request Type",
+    "requestTypes": {
+      "access": "Access — view data we hold",
+      "erasure": "Erasure — delete my data",
+      "rectification": "Rectification — correct my data",
+      "restriction": "Restrict processing",
+      "portability": "Portability — export my data",
+      "objection": "Objection to processing"
+    },
+    "detailsLabel": "Additional Details (optional)",
+    "submitButton": "Submit Request",
+    "successTitle": "Request Received",
+    "successText": "Your data request has been submitted. We will respond within 30 days as required by GDPR Art. 12.",
+    "privacyNote": "We will verify your identity before processing erasure or access requests."
   }
 }

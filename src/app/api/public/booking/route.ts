@@ -308,7 +308,7 @@ export async function POST(request: NextRequest) {
     )
   }
 
-  // Check if customer exists (by email or phone)
+  // Check if customer exists (by email or phone), create one if not
   let customerId = null
   if (data.guest_email) {
     const { data: existingCustomer } = await supabase
@@ -319,6 +319,23 @@ export async function POST(request: NextRequest) {
 
     if (existingCustomer) {
       customerId = existingCustomer.id
+    } else {
+      // Auto-create customer record from booking data
+      const { data: newCustomer } = await supabase
+        .from('customers')
+        .insert({
+          name: data.guest_name,
+          email: data.guest_email,
+          phone: data.guest_phone,
+          source: 'online_booking',
+          language: data.language,
+        })
+        .select('id')
+        .single()
+
+      if (newCustomer) {
+        customerId = newCustomer.id
+      }
     }
   } else if (data.guest_phone) {
     const { data: existingCustomer } = await supabase
@@ -329,6 +346,22 @@ export async function POST(request: NextRequest) {
 
     if (existingCustomer) {
       customerId = existingCustomer.id
+    } else {
+      // Auto-create customer record (phone-only)
+      const { data: newCustomer } = await supabase
+        .from('customers')
+        .insert({
+          name: data.guest_name,
+          phone: data.guest_phone,
+          source: 'online_booking',
+          language: data.language,
+        })
+        .select('id')
+        .single()
+
+      if (newCustomer) {
+        customerId = newCustomer.id
+      }
     }
   }
 

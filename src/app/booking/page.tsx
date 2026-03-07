@@ -153,6 +153,23 @@ function BookingFooter() {
           <p>Carrer de Cartago 22, El Arenal (Platja de Palma), Mallorca 07600</p>
           <p>Open April 1 - November 1 &bull; High Season Hours: 10:30 - 03:00</p>
           <p className="mt-3">&copy; 2026 GrandCafe Cheers. All rights reserved.</p>
+          <div className="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-1">
+            <a href="/legal/privacy" className="hover:text-foreground transition-colors">Privacy Policy</a>
+            <a href="/legal/terms" className="hover:text-foreground transition-colors">Terms of Service</a>
+            <a href="/legal/refund" className="hover:text-foreground transition-colors">Refund Policy</a>
+            <a href="/legal/aviso-legal" className="hover:text-foreground transition-colors">Aviso Legal</a>
+          </div>
+          <p className="mt-3 text-xs">
+            Hojas de Reclamaciones disponibles en el establecimiento &bull;{' '}
+            <a
+              href="https://www.caib.es/sites/consum"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors underline"
+            >
+              Consum – Govern de les Illes Balears
+            </a>
+          </p>
         </div>
       </footer>
     </>

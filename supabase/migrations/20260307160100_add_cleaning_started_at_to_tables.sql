@@ -1,0 +1,1 @@
+ALTER TABLE tables ADD COLUMN IF NOT EXISTS cleaning_started_at TIMESTAMPTZ;

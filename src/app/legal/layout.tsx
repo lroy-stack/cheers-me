@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
-import { Shield, Cookie, FileText } from 'lucide-react'
+import { Shield, Cookie, FileText, ScrollText, RotateCcw, UserCog } from 'lucide-react'
 
 export default async function LegalLayout({ children }: { children: React.ReactNode }) {
   const t = await getTranslations('legal')
@@ -9,6 +9,9 @@ export default async function LegalLayout({ children }: { children: React.ReactN
     { href: '/legal/privacy', label: t('nav.privacy'), icon: Shield },
     { href: '/legal/cookies', label: t('nav.cookies'), icon: Cookie },
     { href: '/legal/aviso-legal', label: t('nav.avisoLegal'), icon: FileText },
+    { href: '/legal/terms', label: t('nav.terms'), icon: ScrollText },
+    { href: '/legal/refund', label: t('nav.refund'), icon: RotateCcw },
+    { href: '/legal/data-request', label: t('nav.dataRequest'), icon: UserCog },
   ]
 
   return (

@@ -2,7 +2,10 @@
   "nav": {
     "privacy": "Datenschutzerklärung",
     "cookies": "Cookie-Richtlinie",
-    "avisoLegal": "Impressum / Aviso Legal"
+    "avisoLegal": "Impressum / Aviso Legal",
+    "terms": "Nutzungsbedingungen",
+    "refund": "Rückgabe & Widerrufsrecht",
+    "dataRequest": "Datenschutzanfrage"
   },
   "privacy": {
     "title": "Datenschutzerklärung",
@@ -152,5 +155,67 @@
     "label": "Ich habe die",
     "link": "Datenschutzerklärung",
     "required": "Sie müssen die Datenschutzerklärung akzeptieren, um fortzufahren."
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert: 7. März 2026",
+    "intro": "Diese Nutzungsbedingungen regeln die Nutzung der Dienste von GrandCafe Cheers, einschließlich Tischreservierungen, Geschenkgutscheinen und der Nutzung dieser Website.",
+    "contractTitle": "1. Dienstanbieter",
+    "contractText": "GrandCafe Cheers S.L., NIF B12345678, Passeig Marítim 1, 07014 Palma de Mallorca, Illes Balears, Spanien.",
+    "reservationsTitle": "2. Reservierungen",
+    "reservationsText": "Reservierungen werden vorbehaltlich der Verfügbarkeit bestätigt. Nicht besetzte Tische können nach 15 Minuten freigegeben werden.",
+    "couponsTitle": "3. Geschenkgutscheine",
+    "couponsText": "Geschenkgutscheine sind 12 Monate gültig. Nach der 14-tägigen Widerrufsfrist nicht erstattungsfähig.",
+    "conductTitle": "4. Verhalten im Restaurant",
+    "conductText": "Respektvolles Verhalten gegenüber Personal und anderen Gästen wird erwartet.",
+    "liabilityTitle": "5. Haftungsbeschränkung",
+    "liabilityText": "Soweit nach spanischem Recht zulässig, haftet GrandCafe Cheers S.L. nicht für indirekte oder Folgeschäden.",
+    "intellectualTitle": "6. Geistiges Eigentum",
+    "intellectualText": "Alle Inhalte dieser Website sind Eigentum von GrandCafe Cheers S.L. oder deren Lizenzgebern.",
+    "governingTitle": "7. Anwendbares Recht und Streitbeilegung",
+    "governingText": "Diese Bedingungen unterliegen spanischem Recht. Gerichte in Palma de Mallorca sind zuständig. EU ODR: ec.europa.eu/odr.",
+    "complaintsTitle": "8. Beschwerden",
+    "complaintsText": "Verbraucher haben das Recht, Beschwerden über Hojas de Reclamaciones einzureichen. Formulare sind erhältlich. Beschwerden auch an: https://www.caib.es/sites/consum.",
+    "changesTitle": "9. Änderungen",
+    "changesText": "Wesentliche Änderungen werden mindestens 15 Tage im Voraus mitgeteilt."
+  },
+  "refund": {
+    "title": "Rückgabe- und Widerrufsrecht",
+    "lastUpdated": "Zuletzt aktualisiert: 7. März 2026",
+    "intro": "Diese Richtlinie erklärt Ihre Rechte beim Kauf von Geschenkgutscheinen gemäß Richtlinie 2011/83/EU.",
+    "withdrawalTitle": "1. Widerrufsrecht — 14-tägige Bedenkzeit",
+    "withdrawalText": "Als Verbraucher haben Sie das Recht, Ihren Kauf innerhalb von 14 Kalendertagen zu widerrufen.",
+    "withdrawalHowTitle": "Ausübung des Widerrufsrechts",
+    "withdrawalHow": "Kontaktieren Sie uns innerhalb von 14 Tagen unter info@cheersmallorca.com mit Ihrer Bestellnummer.",
+    "withdrawalFormTitle": "Muster-Widerrufsformular",
+    "withdrawalForm": "An: GrandCafe Cheers S.L., Passeig Marítim 1, 07014 Palma de Mallorca. E-Mail: info@cheersmallorca.com\n\nWiderruf für Bestellung: [Nummer], Datum: [Datum], Name: [Name]",
+    "refundProcessTitle": "2. Rückerstattungsbearbeitung",
+    "refundProcessText": "Rückerstattung innerhalb von 14 Tagen über die ursprüngliche Zahlungsmethode.",
+    "exceptionsTitle": "3. Ausnahmen",
+    "exceptionsText": "Das Widerrufsrecht gilt nicht für vollständig eingelöste Gutscheine.",
+    "nonRefundableTitle": "4. Nach der 14-Tage-Frist",
+    "nonRefundableText": "Nach Ablauf der Frist sind Gutscheine nicht erstattungsfähig.",
+    "contactTitle": "5. Kontakt",
+    "contactText": "info@cheersmallorca.com oder +34 971 000 000."
+  },
+  "dataRequest": {
+    "title": "Datenschutzanfrage",
+    "intro": "Gemäß DSGVO (Art. 15–22) haben Sie das Recht auf Auskunft, Berichtigung, Löschung und Datenübertragbarkeit.",
+    "nameLabel": "Vollständiger Name",
+    "emailLabel": "E-Mail-Adresse",
+    "requestTypeLabel": "Anfrageart",
+    "requestTypes": {
+      "access": "Auskunft",
+      "erasure": "Löschung",
+      "rectification": "Berichtigung",
+      "restriction": "Einschränkung",
+      "portability": "Datenübertragbarkeit",
+      "objection": "Widerspruch"
+    },
+    "detailsLabel": "Weitere Details (optional)",
+    "submitButton": "Anfrage Einreichen",
+    "successTitle": "Anfrage Eingegangen",
+    "successText": "Ihre Anfrage wurde eingereicht. Wir antworten innerhalb von 30 Tagen.",
+    "privacyNote": "Wir überprüfen Ihre Identität vor der Bearbeitung."
   }
 }

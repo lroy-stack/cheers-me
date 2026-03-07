@@ -2,7 +2,10 @@
   "nav": {
     "privacy": "Política de Privacidad",
     "cookies": "Política de Cookies",
-    "avisoLegal": "Aviso Legal"
+    "avisoLegal": "Aviso Legal",
+    "terms": "Condiciones de Servicio",
+    "refund": "Reembolso y Desistimiento",
+    "dataRequest": "Solicitud de Datos"
   },
   "privacy": {
     "title": "Política de Privacidad",
@@ -152,5 +155,67 @@
     "label": "He leído y acepto la",
     "link": "Política de Privacidad",
     "required": "Debe aceptar la política de privacidad para continuar."
+  },
+  "terms": {
+    "title": "Condiciones de Servicio",
+    "lastUpdated": "Última actualización: 7 de marzo de 2026",
+    "intro": "Estas Condiciones de Servicio rigen el uso de los servicios de GrandCafe Cheers, incluidas las reservas de mesa, los cupones de regalo y el uso de este sitio web.",
+    "contractTitle": "1. Prestador del Servicio",
+    "contractText": "GrandCafe Cheers S.L., NIF B12345678, Passeig Marítim 1, 07014 Palma de Mallorca, Illes Balears, España. Al utilizar nuestros servicios, acepta estas condiciones.",
+    "reservationsTitle": "2. Reservas",
+    "reservationsText": "Las reservas se confirman sujetas a disponibilidad. Nos reservamos el derecho de cancelar o modificar reservas en circunstancias excepcionales. Las mesas no ocupadas podrán liberarse tras 15 minutos de espera.",
+    "couponsTitle": "3. Cupones de Regalo",
+    "couponsText": "Los cupones de regalo son válidos durante 12 meses desde la fecha de compra. No son reembolsables una vez transcurrido el período de desistimiento de 14 días, salvo lo dispuesto por la ley. Los cupones no pueden canjearse por dinero en efectivo.",
+    "conductTitle": "4. Comportamiento en el Local",
+    "conductText": "Se espera que los clientes se comporten con respeto hacia el personal y otros clientes. Nos reservamos el derecho de denegar la entrada o el servicio conforme a la legislación aplicable.",
+    "liabilityTitle": "5. Limitación de Responsabilidad",
+    "liabilityText": "En la medida máxima permitida por la ley española, GrandCafe Cheers S.L. no será responsable de pérdidas indirectas o consecuentes. La responsabilidad total por pérdidas directas no superará el valor del servicio prestado.",
+    "intellectualTitle": "6. Propiedad Intelectual",
+    "intellectualText": "Todos los contenidos de este sitio web son propiedad de GrandCafe Cheers S.L. o de sus licenciantes. No se permite su reproducción sin consentimiento previo por escrito.",
+    "governingTitle": "7. Ley Aplicable y Resolución de Disputas",
+    "governingText": "Estas Condiciones se rigen por la legislación española. Las disputas estarán sujetas a la jurisdicción exclusiva de los tribunales de Palma de Mallorca. Los consumidores también pueden utilizar la plataforma de resolución de litigios en línea de la UE en ec.europa.eu/odr.",
+    "complaintsTitle": "8. Reclamaciones",
+    "complaintsText": "Los consumidores tienen derecho a presentar reclamaciones mediante Hojas de Reclamaciones. Los formularios están disponibles en nuestro local. También pueden presentarse reclamaciones ante Consum – Govern de les Illes Balears: https://www.caib.es/sites/consum.",
+    "changesTitle": "9. Cambios en estas Condiciones",
+    "changesText": "Podemos actualizar estas Condiciones periódicamente. Los cambios materiales se comunicarán por correo electrónico o aviso destacado en nuestro sitio web con al menos 15 días de antelación."
+  },
+  "refund": {
+    "title": "Política de Reembolso y Derecho de Desistimiento",
+    "lastUpdated": "Última actualización: 7 de marzo de 2026",
+    "intro": "Esta política explica sus derechos al comprar cupones de regalo de GrandCafe Cheers, de conformidad con la Directiva 2011/83/UE sobre derechos de los consumidores y el Real Decreto Legislativo 1/2007 (TRLGDCU).",
+    "withdrawalTitle": "1. Derecho de Desistimiento — Período de 14 Días",
+    "withdrawalText": "Si usted es consumidor (y no adquiere para uso empresarial), tiene derecho a desistir de su compra de cupón de regalo en un plazo de 14 días naturales desde la fecha de compra, sin necesidad de justificación.",
+    "withdrawalHowTitle": "Cómo Ejercer el Derecho de Desistimiento",
+    "withdrawalHow": "Contáctenos en info@cheersmallorca.com en un plazo de 14 días desde la compra, indicando su número de pedido y su deseo de desistir. Puede utilizar el formulario modelo a continuación.",
+    "withdrawalFormTitle": "Formulario de Desistimiento",
+    "withdrawalForm": "A: GrandCafe Cheers S.L., Passeig Marítim 1, 07014 Palma de Mallorca. Correo: info@cheersmallorca.com\n\nPor la presente le comunico que desisto del contrato de compra de: [descripción del cupón]\nFecha del pedido: [fecha]\nNúmero de pedido: [número]\nNombre: [su nombre]\nDirección: [su dirección]\nFecha: [fecha actual]",
+    "refundProcessTitle": "2. Procesamiento del Reembolso",
+    "refundProcessText": "Una vez recibida una solicitud válida de desistimiento dentro del plazo de 14 días, procesaremos su reembolso en un plazo de 14 días naturales mediante el método de pago original (Stripe). No se aplican comisiones.",
+    "exceptionsTitle": "3. Excepciones al Derecho de Desistimiento",
+    "exceptionsText": "El derecho de desistimiento no se aplica a cupones totalmente canjeados. Una vez utilizado en su totalidad, no se admitirán reembolsos.",
+    "nonRefundableTitle": "4. Después del Período de 14 Días",
+    "nonRefundableText": "Transcurrido el período de desistimiento de 14 días, los cupones no son reembolsables salvo lo exigido por la legislación de protección al consumidor.",
+    "contactTitle": "5. Contacto",
+    "contactText": "Para solicitudes de reembolso o consultas, contacte: info@cheersmallorca.com o llame al +34 971 000 000."
+  },
+  "dataRequest": {
+    "title": "Solicitud de Acceso y Supresión de Datos",
+    "intro": "En virtud del RGPD (Arts. 15–22) y la LOPD-GDD, tiene derecho a acceder, rectificar, suprimir, restringir el tratamiento y portar sus datos personales. Utilice este formulario para enviar su solicitud.",
+    "nameLabel": "Nombre Completo",
+    "emailLabel": "Correo Electrónico",
+    "requestTypeLabel": "Tipo de Solicitud",
+    "requestTypes": {
+      "access": "Acceso — ver datos que tenemos",
+      "erasure": "Supresión — eliminar mis datos",
+      "rectification": "Rectificación — corregir mis datos",
+      "restriction": "Restricción del tratamiento",
+      "portability": "Portabilidad — exportar mis datos",
+      "objection": "Oposición al tratamiento"
+    },
+    "detailsLabel": "Detalles adicionales (opcional)",
+    "submitButton": "Enviar Solicitud",
+    "successTitle": "Solicitud Recibida",
+    "successText": "Su solicitud de datos ha sido enviada. Responderemos en un plazo de 30 días según el Art. 12 del RGPD.",
+    "privacyNote": "Verificaremos su identidad antes de procesar solicitudes de supresión o acceso."
   }
 }

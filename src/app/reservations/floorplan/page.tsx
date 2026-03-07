@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { createClient } from '@/lib/supabase/client'
+import type { RealtimeChannel } from '@supabase/supabase-js'
 import { FloorPlanCanvas } from '@/components/reservations/floor-plan-canvas'
 import { FloorSectionTabs } from '@/components/reservations/floor-section-tabs'
 import { TablePropertiesPanel } from '@/components/reservations/table-properties-panel'
@@ -26,6 +27,7 @@ export default function FloorPlanEditorPage() {
 
   const supabase = createClient()
   const { toast } = useToast()
+  const realtimeChannelRef = useRef<RealtimeChannel | null>(null)
 
   // Fetch floor sections
   const fetchSections = useCallback(async () => {
@@ -105,6 +107,96 @@ export default function FloorPlanEditorPage() {
       setSelectedTable(null) // Deselect when switching sections
     }
   }, [activeSection, fetchTables])
+
+  // Supabase Realtime subscription for live table status updates
+  useEffect(() => {
+    if (!activeSection) return
+
+    // Unsubscribe from previous channel if section changes
+    if (realtimeChannelRef.current) {
+      supabase.removeChannel(realtimeChannelRef.current)
+    }
+
+    const channel = supabase
+      .channel(`floor-plan-${activeSection}`)
+      .on(
+        'postgres_changes',
+        {
+          event: '*',
+          schema: 'public',
+          table: 'tables',
+          filter: `section_id=eq.${activeSection}`,
+        },
+        (payload) => {
+          if (payload.eventType === 'UPDATE') {
+            const updated = payload.new as Table
+            setTables((prev) =>
+              prev.map((t) =>
+                t.id === updated.id
+                  ? {
+                      ...t,
+                      status: updated.status,
+                      table_number: updated.table_number,
+                      capacity: updated.capacity,
+                      x_position: updated.x_position,
+                      y_position: updated.y_position,
+                      shape: updated.shape,
+                      width: updated.width,
+                      height: updated.height,
+                      rotation: updated.rotation,
+                      is_active: updated.is_active,
+                    }
+                  : t
+              )
+            )
+          } else if (payload.eventType === 'INSERT') {
+            const newTable = payload.new as Table
+            setTables((prev) => {
+              if (prev.some((t) => t.id === newTable.id)) return prev
+              return [...prev, newTable]
+            })
+          } else if (payload.eventType === 'DELETE') {
+            const deletedId = payload.old.id
+            setTables((prev) => prev.filter((t) => t.id !== deletedId))
+          }
+        }
+      )
+      .on(
+        'postgres_changes',
+        {
+          event: '*',
+          schema: 'public',
+          table: 'table_sessions',
+        },
+        () => {
+          // Refresh table statuses when sessions change
+          fetchTables()
+        }
+      )
+      .subscribe()
+
+    realtimeChannelRef.current = channel
+
+    return () => {
+      supabase.removeChannel(channel)
+      realtimeChannelRef.current = null
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeSection])
+
+  // Periodic cleaning-check: auto-transition tables from cleaning → available (Feature #53)
+  useEffect(() => {
+    const runCleaningCheck = () => {
+      fetch('/api/tables/cleaning-check', { method: 'POST' }).catch(() => {
+        // Silently ignore — realtime will reflect actual changes
+      })
+    }
+
+    // Run immediately, then every 30 seconds
+    runCleaningCheck()
+    const interval = setInterval(runCleaningCheck, 30_000)
+    return () => clearInterval(interval)
+  }, [])
 
   // Handle table movement
   const handleTableMove = useCallback((tableId: string, x: number, y: number) => {

@@ -44,6 +44,10 @@ export async function updateSession(request: NextRequest) {
     !user &&
     !request.nextUrl.pathname.startsWith('/login') &&
     !request.nextUrl.pathname.startsWith('/auth') &&
+    !request.nextUrl.pathname.startsWith('/api/auth/sign-in') &&
+    !request.nextUrl.pathname.startsWith('/api/auth/sign-out') &&
+    !request.nextUrl.pathname.startsWith('/api/auth/callback') &&
+    !request.nextUrl.pathname.startsWith('/api/health') &&
     !request.nextUrl.pathname.startsWith('/booking') &&
     !request.nextUrl.pathname.startsWith('/kiosk') &&
     !request.nextUrl.pathname.startsWith('/menu/digital') &&
