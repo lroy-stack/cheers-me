@@ -268,6 +268,17 @@ export default function FeaturedCarousel() {
         {food.length > 0 && (
           <CarouselRow items={food} lang={lang} language={language} />
         )}
+
+        {/* CTA to full menu */}
+        <div className="text-center pt-2">
+          <a
+            href="/digital"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-primary/30 text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
+          >
+            {language === 'nl' ? 'Bekijk de volledige kaart' : language === 'es' ? 'Ver carta completa' : language === 'de' ? 'Vollständige Karte ansehen' : 'View Full Menu'}
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
       </div>
     </section>
   )
