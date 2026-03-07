@@ -11,6 +11,7 @@ import { Toaster } from '@/components/ui/toaster'
 import { Loader2, ArrowLeft, CalendarCheck } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
+import { ReservationTimeSlotsGrid } from '@/components/reservations/reservation-time-slots-grid'
 
 interface ReservationSettings {
   id: string
@@ -155,6 +156,13 @@ export default function ReservationSettingsPage() {
               )}
             </Button>
           </div>
+        </CardContent>
+      </Card>
+
+      {/* Time Slots Grid */}
+      <Card>
+        <CardContent className="pt-6">
+          <ReservationTimeSlotsGrid />
         </CardContent>
       </Card>
 

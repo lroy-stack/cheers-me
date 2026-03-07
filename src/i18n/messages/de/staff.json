@@ -360,18 +360,81 @@
     "exportPdf": "PDF Exportieren",
     "exportExcel": "Excel Exportieren",
     "allCategories": "Alle Kategorien",
-    "filters": { "category": "Kategorie", "type": "Typ", "status": "Status", "dateFrom": "Von", "dateTo": "Bis", "recordedBy": "Erfasst Von", "allCategories": "Alle", "allTypes": "Alle", "allStatuses": "Alle", "clear": "Löschen" },
-    "categories": { "ld": "Reinigung & Desinfektion", "appcc": "HACCP/APPCC", "prl": "Arbeitsschutz", "receiving": "Wareneingang", "pest_control": "Schädlingsbekämpfung", "maintenance": "Wartung", "incident": "Vorfälle", "training": "Schulungszertifikate", "other": "Sonstiges" },
-    "status": { "completed": "Abgeschlossen", "flagged": "Markiert", "requires_review": "Überprüfung Erforderlich" },
-    "frequency": { "daily": "Täglich", "weekly": "Wöchentlich", "monthly": "Monatlich", "per_event": "Pro Ereignis", "on_demand": "Auf Anfrage" },
-    "fields": { "recordedBy": "Erfasst Von", "recordedAt": "Erfassungsdatum", "reviewedBy": "Überprüft Von", "reviewedAt": "Überprüfungsdatum", "reviewNotes": "Überprüfungsnotizen", "notes": "Notizen", "legalBasis": "Rechtsgrundlage", "fichaType": "Eintragstyp" },
-    "stats": { "totalRecords": "Gesamt Einträge", "thisWeek": "Diese Woche", "thisMonth": "Dieser Monat", "flagged": "Markiert", "pendingReview": "Ausstehende Überprüfung" },
-    "review": { "title": "Eintrag Überprüfen", "approve": "Genehmigen", "flag": "Problem Markieren", "addNotes": "Überprüfungsnotizen...", "submit": "Überprüfung Einreichen", "reviewed": "Eintrag überprüft" },
+    "filters": {
+      "category": "Kategorie",
+      "type": "Typ",
+      "status": "Status",
+      "dateFrom": "Von",
+      "dateTo": "Bis",
+      "recordedBy": "Erfasst Von",
+      "allCategories": "Alle",
+      "allTypes": "Alle",
+      "allStatuses": "Alle",
+      "clear": "Löschen"
+    },
+    "categories": {
+      "ld": "Reinigung & Desinfektion",
+      "appcc": "HACCP/APPCC",
+      "prl": "Arbeitsschutz",
+      "receiving": "Wareneingang",
+      "pest_control": "Schädlingsbekämpfung",
+      "maintenance": "Wartung",
+      "incident": "Vorfälle",
+      "training": "Schulungszertifikate",
+      "other": "Sonstiges"
+    },
+    "status": {
+      "completed": "Abgeschlossen",
+      "flagged": "Markiert",
+      "requires_review": "Überprüfung Erforderlich"
+    },
+    "frequency": {
+      "daily": "Täglich",
+      "weekly": "Wöchentlich",
+      "monthly": "Monatlich",
+      "per_event": "Pro Ereignis",
+      "on_demand": "Auf Anfrage"
+    },
+    "fields": {
+      "recordedBy": "Erfasst Von",
+      "recordedAt": "Erfassungsdatum",
+      "reviewedBy": "Überprüft Von",
+      "reviewedAt": "Überprüfungsdatum",
+      "reviewNotes": "Überprüfungsnotizen",
+      "notes": "Notizen",
+      "legalBasis": "Rechtsgrundlage",
+      "fichaType": "Eintragstyp"
+    },
+    "stats": {
+      "totalRecords": "Gesamt Einträge",
+      "thisWeek": "Diese Woche",
+      "thisMonth": "Dieser Monat",
+      "flagged": "Markiert",
+      "pendingReview": "Ausstehende Überprüfung"
+    },
+    "review": {
+      "title": "Eintrag Überprüfen",
+      "approve": "Genehmigen",
+      "flag": "Problem Markieren",
+      "addNotes": "Überprüfungsnotizen...",
+      "submit": "Überprüfung Einreichen",
+      "reviewed": "Eintrag überprüft"
+    },
     "downloadBlankPdf": "Leere PDF-Vorlage herunterladen",
     "downloadBlankExcel": "Leere Excel-Vorlage herunterladen",
     "blankTemplate": "Leere Vorlage",
     "selectLanguage": "Sprache wählen",
-    "form": { "title": "Neuer Compliance-Eintrag", "editTitle": "Eintrag Bearbeiten", "requiredField": "Pflichtfeld", "outOfRange": "Wert außerhalb des Bereichs", "submitRecord": "Eintrag Einreichen", "saving": "Speichern...", "status": "Status", "notesPlaceholder": "Bemerkungen...", "cancel": "Abbrechen" }
+    "form": {
+      "title": "Neuer Compliance-Eintrag",
+      "editTitle": "Eintrag Bearbeiten",
+      "requiredField": "Pflichtfeld",
+      "outOfRange": "Wert außerhalb des Bereichs",
+      "submitRecord": "Eintrag Einreichen",
+      "saving": "Speichern...",
+      "status": "Status",
+      "notesPlaceholder": "Bemerkungen...",
+      "cancel": "Abbrechen"
+    }
   },
   "schedule": {
     "title": "Dienstplan",
@@ -677,6 +740,28 @@
     "dayThu": "Do",
     "dayFri": "Fr",
     "daySat": "Sa",
-    "daySun": "So"
+    "daySun": "So",
+    "tabLeave": "Urlaubsanträge",
+    "leaveTitle": "Urlaubsanträge",
+    "leaveSubtitle": "Urlaubsanträge stellen und verwalten",
+    "newLeaveRequest": "Neuer Antrag",
+    "leaveType": "Abwesenheitsart",
+    "startDate": "Startdatum",
+    "endDate": "Enddatum",
+    "totalDays": "Gesamttage",
+    "reason": "Grund (optional)",
+    "submitRequest": "Antrag stellen",
+    "cancelRequest": "Abbrechen",
+    "leaveTypeVacation": "Urlaub",
+    "leaveTypeSick": "Krankheit",
+    "leaveTypePersonal": "Persönlicher Tag",
+    "leaveTypeMaternity": "Elternzeit",
+    "leaveTypeUnpaid": "Unbezahlter Urlaub",
+    "statusPending": "Ausstehend",
+    "statusApproved": "Genehmigt",
+    "statusRejected": "Abgelehnt",
+    "noLeaveRequests": "Keine Urlaubsanträge vorhanden",
+    "leaveSubmitted": "Urlaubsantrag erfolgreich gestellt",
+    "leaveError": "Fehler beim Stellen des Antrags"
   }
 }

@@ -360,18 +360,81 @@
     "exportPdf": "Exportar PDF",
     "exportExcel": "Exportar Excel",
     "allCategories": "Todas las Categorias",
-    "filters": { "category": "Categoria", "type": "Tipo", "status": "Estado", "dateFrom": "Desde", "dateTo": "Hasta", "recordedBy": "Registrado Por", "allCategories": "Todas", "allTypes": "Todos", "allStatuses": "Todos", "clear": "Limpiar" },
-    "categories": { "ld": "Limpieza y Desinfeccion", "appcc": "APPCC/HACCP", "prl": "Prevencion Riesgos Laborales", "receiving": "Recepcion Mercancias", "pest_control": "Control de Plagas", "maintenance": "Mantenimiento Equipos", "incident": "Incidentes", "training": "Certificados Formacion", "other": "Otros" },
-    "status": { "completed": "Completado", "flagged": "Marcado", "requires_review": "Requiere Revision" },
-    "frequency": { "daily": "Diario", "weekly": "Semanal", "monthly": "Mensual", "per_event": "Por Evento", "on_demand": "Bajo Demanda" },
-    "fields": { "recordedBy": "Registrado Por", "recordedAt": "Fecha Registro", "reviewedBy": "Revisado Por", "reviewedAt": "Fecha Revision", "reviewNotes": "Notas Revision", "notes": "Notas", "legalBasis": "Base Legal", "fichaType": "Tipo Ficha" },
-    "stats": { "totalRecords": "Total Registros", "thisWeek": "Esta Semana", "thisMonth": "Este Mes", "flagged": "Marcados", "pendingReview": "Pendientes Revision" },
-    "review": { "title": "Revisar Registro", "approve": "Aprobar", "flag": "Marcar Problema", "addNotes": "Notas de revision...", "submit": "Enviar Revision", "reviewed": "Registro revisado" },
+    "filters": {
+      "category": "Categoria",
+      "type": "Tipo",
+      "status": "Estado",
+      "dateFrom": "Desde",
+      "dateTo": "Hasta",
+      "recordedBy": "Registrado Por",
+      "allCategories": "Todas",
+      "allTypes": "Todos",
+      "allStatuses": "Todos",
+      "clear": "Limpiar"
+    },
+    "categories": {
+      "ld": "Limpieza y Desinfeccion",
+      "appcc": "APPCC/HACCP",
+      "prl": "Prevencion Riesgos Laborales",
+      "receiving": "Recepcion Mercancias",
+      "pest_control": "Control de Plagas",
+      "maintenance": "Mantenimiento Equipos",
+      "incident": "Incidentes",
+      "training": "Certificados Formacion",
+      "other": "Otros"
+    },
+    "status": {
+      "completed": "Completado",
+      "flagged": "Marcado",
+      "requires_review": "Requiere Revision"
+    },
+    "frequency": {
+      "daily": "Diario",
+      "weekly": "Semanal",
+      "monthly": "Mensual",
+      "per_event": "Por Evento",
+      "on_demand": "Bajo Demanda"
+    },
+    "fields": {
+      "recordedBy": "Registrado Por",
+      "recordedAt": "Fecha Registro",
+      "reviewedBy": "Revisado Por",
+      "reviewedAt": "Fecha Revision",
+      "reviewNotes": "Notas Revision",
+      "notes": "Notas",
+      "legalBasis": "Base Legal",
+      "fichaType": "Tipo Ficha"
+    },
+    "stats": {
+      "totalRecords": "Total Registros",
+      "thisWeek": "Esta Semana",
+      "thisMonth": "Este Mes",
+      "flagged": "Marcados",
+      "pendingReview": "Pendientes Revision"
+    },
+    "review": {
+      "title": "Revisar Registro",
+      "approve": "Aprobar",
+      "flag": "Marcar Problema",
+      "addNotes": "Notas de revision...",
+      "submit": "Enviar Revision",
+      "reviewed": "Registro revisado"
+    },
     "downloadBlankPdf": "Descargar plantilla PDF",
     "downloadBlankExcel": "Descargar plantilla Excel",
     "blankTemplate": "Plantilla en blanco",
     "selectLanguage": "Seleccionar idioma",
-    "form": { "title": "Nuevo Registro Compliance", "editTitle": "Editar Registro", "requiredField": "Campo obligatorio", "outOfRange": "Valor fuera de rango", "submitRecord": "Enviar Registro", "saving": "Guardando...", "status": "Estado", "notesPlaceholder": "Observaciones...", "cancel": "Cancelar" }
+    "form": {
+      "title": "Nuevo Registro Compliance",
+      "editTitle": "Editar Registro",
+      "requiredField": "Campo obligatorio",
+      "outOfRange": "Valor fuera de rango",
+      "submitRecord": "Enviar Registro",
+      "saving": "Guardando...",
+      "status": "Estado",
+      "notesPlaceholder": "Observaciones...",
+      "cancel": "Cancelar"
+    }
   },
   "schedule": {
     "title": "Horario",
@@ -677,6 +740,28 @@
     "dayThu": "Jue",
     "dayFri": "Vie",
     "daySat": "Sáb",
-    "daySun": "Dom"
+    "daySun": "Dom",
+    "tabLeave": "Solicitudes de Baja",
+    "leaveTitle": "Solicitudes de Baja",
+    "leaveSubtitle": "Envía y gestiona tus solicitudes de baja",
+    "newLeaveRequest": "Nueva solicitud",
+    "leaveType": "Tipo de baja",
+    "startDate": "Fecha inicio",
+    "endDate": "Fecha fin",
+    "totalDays": "Días totales",
+    "reason": "Motivo (opcional)",
+    "submitRequest": "Enviar solicitud",
+    "cancelRequest": "Cancelar",
+    "leaveTypeVacation": "Vacaciones",
+    "leaveTypeSick": "Baja por enfermedad",
+    "leaveTypePersonal": "Día personal",
+    "leaveTypeMaternity": "Maternidad/Paternidad",
+    "leaveTypeUnpaid": "Excedencia",
+    "statusPending": "Pendiente",
+    "statusApproved": "Aprobado",
+    "statusRejected": "Rechazado",
+    "noLeaveRequests": "No hay solicitudes de baja",
+    "leaveSubmitted": "Solicitud enviada correctamente",
+    "leaveError": "Error al enviar la solicitud"
   }
 }

@@ -11,6 +11,7 @@ import { SHIFT_TYPE_CONFIG, SHIFT_TYPE_TO_CELL_TYPE } from '@/lib/constants/sche
 import { MyWeekSchedule } from './my-week-schedule'
 import { MyWeekTasks } from './my-week-tasks'
 import { MyHoursSummary } from './my-hours-summary'
+import { MyLeaveRequests } from './my-leave-requests'
 
 interface MyScheduleDashboardProps {
   employeeId: string
@@ -118,10 +119,11 @@ export function MyScheduleDashboard({ employeeId, employeeName }: MyScheduleDash
 
       {/* Tabs */}
       <Tabs defaultValue="schedule">
-        <TabsList>
+        <TabsList className="flex-wrap">
           <TabsTrigger value="schedule">{t('tabSchedule')}</TabsTrigger>
           <TabsTrigger value="tasks">{t('tabTasks')}</TabsTrigger>
           <TabsTrigger value="hours">{t('tabHours')}</TabsTrigger>
+          <TabsTrigger value="leave">{t('tabLeave')}</TabsTrigger>
         </TabsList>
 
         <TabsContent value="schedule" className="mt-4">
@@ -140,6 +142,10 @@ export function MyScheduleDashboard({ employeeId, employeeName }: MyScheduleDash
 
         <TabsContent value="hours" className="mt-4">
           <MyHoursSummary employeeId={employeeId} />
+        </TabsContent>
+
+        <TabsContent value="leave" className="mt-4">
+          <MyLeaveRequests employeeId={employeeId} />
         </TabsContent>
       </Tabs>
     </div>

@@ -1,5 +1,6 @@
 import type { NextConfig } from 'next'
 import createNextIntlPlugin from 'next-intl/plugin'
+import { withSentryConfig } from '@sentry/nextjs'
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 
@@ -62,4 +63,25 @@ const nextConfig: NextConfig = {
   ],
 }
 
-export default withNextIntl(nextConfig)
+const withIntl = withNextIntl(nextConfig)
+
+export default withSentryConfig(withIntl, {
+  // Sentry organization and project (from SENTRY_ORG / SENTRY_PROJECT env vars)
+  silent: !process.env.CI,
+
+  // Upload source maps only in production CI/CD
+  disableServerWebpackPlugin: !process.env.SENTRY_AUTH_TOKEN,
+  disableClientWebpackPlugin: !process.env.SENTRY_AUTH_TOKEN,
+
+  // Automatically instrument Next.js data fetching
+  autoInstrumentServerFunctions: true,
+
+  // Tunnel Sentry requests through Next.js to bypass ad-blockers
+  tunnelRoute: '/monitoring-tunnel',
+
+  // Hides Sentry source maps from client bundle
+  hideSourceMaps: true,
+
+  // Reduce bundle size
+  widenClientFileUpload: false,
+})

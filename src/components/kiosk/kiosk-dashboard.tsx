@@ -126,7 +126,7 @@ export function KioskDashboard({
 
   return (
     <motion.div
-      className="w-full max-w-lg mx-auto px-6 py-8 flex flex-col items-center"
+      className="w-full max-w-sm sm:max-w-md md:max-w-lg mx-auto px-4 sm:px-6 py-6 sm:py-8 flex flex-col items-center"
       onPointerDown={resetLockTimer}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}

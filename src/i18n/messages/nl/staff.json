@@ -360,18 +360,81 @@
     "exportPdf": "Exporteer PDF",
     "exportExcel": "Exporteer Excel",
     "allCategories": "Alle Categorieën",
-    "filters": { "category": "Categorie", "type": "Type", "status": "Status", "dateFrom": "Van", "dateTo": "Tot", "recordedBy": "Geregistreerd Door", "allCategories": "Alle", "allTypes": "Alle", "allStatuses": "Alle", "clear": "Wissen" },
-    "categories": { "ld": "Reiniging & Desinfectie", "appcc": "HACCP/APPCC", "prl": "Arbeidsveiligheid", "receiving": "Goederenontvangst", "pest_control": "Ongediertebestrijding", "maintenance": "Onderhoud", "incident": "Incidenten", "training": "Opleidingscertificaten", "other": "Overig" },
-    "status": { "completed": "Voltooid", "flagged": "Gemarkeerd", "requires_review": "Beoordeling Nodig" },
-    "frequency": { "daily": "Dagelijks", "weekly": "Wekelijks", "monthly": "Maandelijks", "per_event": "Per Gebeurtenis", "on_demand": "Op Aanvraag" },
-    "fields": { "recordedBy": "Geregistreerd Door", "recordedAt": "Registratiedatum", "reviewedBy": "Beoordeeld Door", "reviewedAt": "Beoordelingsdatum", "reviewNotes": "Beoordelingsnotities", "notes": "Notities", "legalBasis": "Wettelijke Basis", "fichaType": "Recordtype" },
-    "stats": { "totalRecords": "Totaal Records", "thisWeek": "Deze Week", "thisMonth": "Deze Maand", "flagged": "Gemarkeerd", "pendingReview": "Wacht op Beoordeling" },
-    "review": { "title": "Record Beoordelen", "approve": "Goedkeuren", "flag": "Probleem Markeren", "addNotes": "Beoordelingsnotities...", "submit": "Beoordeling Indienen", "reviewed": "Record beoordeeld" },
+    "filters": {
+      "category": "Categorie",
+      "type": "Type",
+      "status": "Status",
+      "dateFrom": "Van",
+      "dateTo": "Tot",
+      "recordedBy": "Geregistreerd Door",
+      "allCategories": "Alle",
+      "allTypes": "Alle",
+      "allStatuses": "Alle",
+      "clear": "Wissen"
+    },
+    "categories": {
+      "ld": "Reiniging & Desinfectie",
+      "appcc": "HACCP/APPCC",
+      "prl": "Arbeidsveiligheid",
+      "receiving": "Goederenontvangst",
+      "pest_control": "Ongediertebestrijding",
+      "maintenance": "Onderhoud",
+      "incident": "Incidenten",
+      "training": "Opleidingscertificaten",
+      "other": "Overig"
+    },
+    "status": {
+      "completed": "Voltooid",
+      "flagged": "Gemarkeerd",
+      "requires_review": "Beoordeling Nodig"
+    },
+    "frequency": {
+      "daily": "Dagelijks",
+      "weekly": "Wekelijks",
+      "monthly": "Maandelijks",
+      "per_event": "Per Gebeurtenis",
+      "on_demand": "Op Aanvraag"
+    },
+    "fields": {
+      "recordedBy": "Geregistreerd Door",
+      "recordedAt": "Registratiedatum",
+      "reviewedBy": "Beoordeeld Door",
+      "reviewedAt": "Beoordelingsdatum",
+      "reviewNotes": "Beoordelingsnotities",
+      "notes": "Notities",
+      "legalBasis": "Wettelijke Basis",
+      "fichaType": "Recordtype"
+    },
+    "stats": {
+      "totalRecords": "Totaal Records",
+      "thisWeek": "Deze Week",
+      "thisMonth": "Deze Maand",
+      "flagged": "Gemarkeerd",
+      "pendingReview": "Wacht op Beoordeling"
+    },
+    "review": {
+      "title": "Record Beoordelen",
+      "approve": "Goedkeuren",
+      "flag": "Probleem Markeren",
+      "addNotes": "Beoordelingsnotities...",
+      "submit": "Beoordeling Indienen",
+      "reviewed": "Record beoordeeld"
+    },
     "downloadBlankPdf": "Download leeg PDF-sjabloon",
     "downloadBlankExcel": "Download leeg Excel-sjabloon",
     "blankTemplate": "Leeg sjabloon",
     "selectLanguage": "Taal selecteren",
-    "form": { "title": "Nieuw Compliance Record", "editTitle": "Record Bewerken", "requiredField": "Verplicht veld", "outOfRange": "Waarde buiten bereik", "submitRecord": "Record Indienen", "saving": "Opslaan...", "status": "Status", "notesPlaceholder": "Opmerkingen...", "cancel": "Annuleren" }
+    "form": {
+      "title": "Nieuw Compliance Record",
+      "editTitle": "Record Bewerken",
+      "requiredField": "Verplicht veld",
+      "outOfRange": "Waarde buiten bereik",
+      "submitRecord": "Record Indienen",
+      "saving": "Opslaan...",
+      "status": "Status",
+      "notesPlaceholder": "Opmerkingen...",
+      "cancel": "Annuleren"
+    }
   },
   "schedule": {
     "title": "Rooster",
@@ -677,6 +740,28 @@
     "dayThu": "Do",
     "dayFri": "Vr",
     "daySat": "Za",
-    "daySun": "Zo"
+    "daySun": "Zo",
+    "tabLeave": "Verlofaanvragen",
+    "leaveTitle": "Verlofaanvragen",
+    "leaveSubtitle": "Dien verlofaanvragen in en volg ze bij",
+    "newLeaveRequest": "Nieuwe verlofaanvraag",
+    "leaveType": "Verlofsoort",
+    "startDate": "Begindatum",
+    "endDate": "Einddatum",
+    "totalDays": "Totaal dagen",
+    "reason": "Reden (optioneel)",
+    "submitRequest": "Aanvraag indienen",
+    "cancelRequest": "Annuleren",
+    "leaveTypeVacation": "Vakantie",
+    "leaveTypeSick": "Ziekteverlof",
+    "leaveTypePersonal": "Persoonlijke dag",
+    "leaveTypeMaternity": "Ouderschapsverlof",
+    "leaveTypeUnpaid": "Onbetaald verlof",
+    "statusPending": "In behandeling",
+    "statusApproved": "Goedgekeurd",
+    "statusRejected": "Afgewezen",
+    "noLeaveRequests": "Nog geen verlofaanvragen",
+    "leaveSubmitted": "Verlofaanvraag succesvol ingediend",
+    "leaveError": "Fout bij indienen verlofaanvraag"
   }
 }

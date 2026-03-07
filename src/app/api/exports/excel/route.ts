@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
+import { requireRole } from '@/lib/utils/auth'
 import ExcelJS from 'exceljs'
 
 /**
@@ -43,13 +44,13 @@ function styleHeaderRow(sheet: ExcelJS.Worksheet, rowNum: number, colCount: numb
 type ExportType = 'schedule' | 'tasks' | 'sales' | 'expenses'
 
 export async function GET(request: NextRequest) {
-  const supabase = await createClient()
-
-  // Auth check
-  const { data: { user }, error: authError } = await supabase.auth.getUser()
-  if (authError || !user) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  // Restrict to admin, owner, and manager roles only
+  const roleResult = await requireRole(['admin', 'owner', 'manager'])
+  if ('error' in roleResult) {
+    return NextResponse.json({ error: roleResult.error }, { status: roleResult.status })
   }
+
+  const supabase = await createClient()
 
   const { searchParams } = new URL(request.url)
   const exportType = searchParams.get('type') as ExportType | null
