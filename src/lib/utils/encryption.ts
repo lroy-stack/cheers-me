@@ -9,11 +9,20 @@ function getKey(password: string, salt: Buffer): Buffer {
   return scryptSync(password, salt, KEY_LENGTH)
 }
 
-const SECRET = process.env.POS_ENCRYPTION_SECRET || process.env.NEXTAUTH_SECRET || 'cheers-mallorca-pos-default-key'
+function getSecret(): string {
+  const secret = process.env.POS_ENCRYPTION_SECRET || process.env.NEXTAUTH_SECRET
+  if (!secret) {
+    throw new Error(
+      'Encryption secret not configured. Set POS_ENCRYPTION_SECRET environment variable.'
+    )
+  }
+  return secret
+}
 
 export function encrypt(data: Record<string, unknown>): string {
+  const secret = getSecret()
   const salt = randomBytes(SALT_LENGTH)
-  const key = getKey(SECRET, salt)
+  const key = getKey(secret, salt)
   const iv = randomBytes(IV_LENGTH)
   const cipher = createCipheriv(ALGORITHM, key, iv)
 
@@ -33,6 +42,7 @@ export function encrypt(data: Record<string, unknown>): string {
 }
 
 export function decrypt(encryptedString: string): Record<string, unknown> {
+  const secret = getSecret()
   const parts = encryptedString.split(':')
   if (parts.length !== 4) {
     throw new Error('Invalid encrypted data format')
@@ -42,7 +52,7 @@ export function decrypt(encryptedString: string): Record<string, unknown> {
   const salt = Buffer.from(saltHex, 'hex')
   const iv = Buffer.from(ivHex, 'hex')
   const tag = Buffer.from(tagHex, 'hex')
-  const key = getKey(SECRET, salt)
+  const key = getKey(secret, salt)
 
   const decipher = createDecipheriv(ALGORITHM, key, iv)
   decipher.setAuthTag(tag)

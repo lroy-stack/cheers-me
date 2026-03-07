@@ -122,6 +122,17 @@ export async function PATCH(
   // Extract profile data separately
   const { profile: profileData, ...employeeData } = validation.data
 
+  // Prevent role escalation: only admin/owner can assign admin/owner roles
+  if (profileData?.role && ['admin', 'owner'].includes(profileData.role)) {
+    const callerRole = authResult.data.profile?.role
+    if (!callerRole || !['admin', 'owner'].includes(callerRole)) {
+      return NextResponse.json(
+        { error: 'Insufficient permissions to assign admin or owner role' },
+        { status: 403 }
+      )
+    }
+  }
+
   // Update profile if provided
   if (profileData && Object.keys(profileData).length > 0) {
     // First get the employee's profile_id

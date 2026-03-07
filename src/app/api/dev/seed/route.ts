@@ -1,4 +1,5 @@
 import { createAdminClient } from '@/lib/supabase/server'
+import { requireRole } from '@/lib/utils/auth'
 import { NextRequest, NextResponse } from 'next/server'
 import { seedAds } from '@/lib/utils/seed-ads'
 import { seedCoupons } from '@/lib/utils/seed-coupons'
@@ -6,15 +7,29 @@ import { seedCoupons } from '@/lib/utils/seed-coupons'
 /**
  * POST /api/dev/seed?type=ads|coupons|all&force=true
  * Development-only endpoint to insert sample data.
- * Uses admin client (service_role) to bypass RLS.
- * ?force=true will delete existing data before re-inserting.
+ * Requires: NODE_ENV=development AND admin role AND DEV_SEED_SECRET header.
  */
 export async function POST(request: NextRequest) {
   if (process.env.NODE_ENV !== 'development') {
     return NextResponse.json(
-      { error: 'This endpoint is only available in development' },
-      { status: 403 }
+      { error: 'Not found' },
+      { status: 404 }
     )
+  }
+
+  // Require admin authentication
+  const authResult = await requireRole(['admin'])
+  if ('error' in authResult) {
+    return NextResponse.json({ error: authResult.error }, { status: authResult.status })
+  }
+
+  // Require secret header for extra protection
+  const seedSecret = process.env.DEV_SEED_SECRET
+  if (seedSecret) {
+    const providedSecret = request.headers.get('x-dev-seed-secret')
+    if (providedSecret !== seedSecret) {
+      return NextResponse.json({ error: 'Invalid seed secret' }, { status: 403 })
+    }
   }
 
   const { searchParams } = new URL(request.url)
@@ -41,9 +56,9 @@ export async function POST(request: NextRequest) {
     }
 
     return NextResponse.json({ success: true, results })
-  } catch (err) {
+  } catch {
     return NextResponse.json(
-      { error: err instanceof Error ? err.message : 'Seed failed' },
+      { error: 'Seed operation failed' },
       { status: 500 }
     )
   }

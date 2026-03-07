@@ -1,10 +1,16 @@
 import { createClient } from '@/lib/supabase/server'
+import { requireRole } from '@/lib/utils/auth'
 import { NextRequest, NextResponse } from 'next/server'
 
 export async function GET(
   _request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  const authResult = await requireRole(['admin', 'owner', 'manager', 'kitchen'])
+  if ('error' in authResult) {
+    return NextResponse.json({ error: authResult.error }, { status: authResult.status })
+  }
+
   const { id } = await params
   const supabase = await createClient()
 
@@ -15,7 +21,7 @@ export async function GET(
     .order('sort_order')
 
   if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to fetch ingredients' }, { status: 500 })
   }
 
   const { data: item } = await supabase

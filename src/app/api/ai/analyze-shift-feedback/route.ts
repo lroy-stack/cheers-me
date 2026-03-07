@@ -1,4 +1,5 @@
 import { createAdminClient } from '@/lib/supabase/server'
+import { requireAuth } from '@/lib/utils/auth'
 import { chat } from '@/lib/ai/claude'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
@@ -36,6 +37,11 @@ A manager_alert should be true if there are safety concerns, harassment, serious
 Keep suggestions concise and actionable.`
 
 export async function POST(request: NextRequest) {
+  const authResult = await requireAuth()
+  if ('error' in authResult) {
+    return NextResponse.json({ error: authResult.error }, { status: authResult.status })
+  }
+
   let body
   try {
     body = await request.json()

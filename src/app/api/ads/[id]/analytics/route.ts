@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
+import { requireAuth } from '@/lib/utils/auth'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -7,12 +8,17 @@ const analyticsSchema = z.object({
 })
 
 /**
- * POST /api/ads/[id]/analytics — Record impression or click (public)
+ * POST /api/ads/[id]/analytics — Record impression or click (requires auth)
  */
 export async function POST(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  const authResult = await requireAuth()
+  if ('error' in authResult) {
+    return NextResponse.json({ error: authResult.error }, { status: authResult.status })
+  }
+
   const { id } = await params
 
   let body

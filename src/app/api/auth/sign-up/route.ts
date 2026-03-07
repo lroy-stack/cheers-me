@@ -1,22 +1,29 @@
-import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/server'
+import { requireRole } from '@/lib/utils/auth'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 
 const signUpSchema = z.object({
   email: z.string().email(),
-  password: z.string().min(6),
+  password: z.string().min(8),
   full_name: z.string().min(1).max(255),
   role: z.enum(['admin', 'manager', 'kitchen', 'bar', 'waiter', 'dj', 'owner']).default('waiter'),
   phone: z.string().max(20).optional(),
-  language: z.enum(['en', 'nl', 'es']).default('en'),
+  language: z.enum(['en', 'nl', 'es', 'de']).default('en'),
 })
 
 /**
  * POST /api/auth/sign-up
- * Register a new user with email and password
- * Note: In production, this should be restricted to admins only
+ * Admin/owner only — create a new user account.
+ * Self-registration is NOT supported; admins manage all credentials.
  */
 export async function POST(request: NextRequest) {
+  // Only admin or owner can create accounts
+  const roleResult = await requireRole(['admin', 'owner'])
+  if ('error' in roleResult) {
+    return NextResponse.json({ error: roleResult.error }, { status: roleResult.status })
+  }
+
   let body
   try {
     body = await request.json()
@@ -37,23 +44,21 @@ export async function POST(request: NextRequest) {
   }
 
   const { email, password, full_name, role, phone, language } = validation.data
-  const supabase = await createClient()
 
-  // Create auth user
-  const { data: authData, error: authError } = await supabase.auth.signUp({
+  // Use admin client to create user (bypasses email confirmation)
+  const supabase = createAdminClient()
+
+  const { data: authData, error: authError } = await supabase.auth.admin.createUser({
     email,
     password,
-    options: {
-      data: {
-        full_name,
-      },
-    },
+    email_confirm: true,
+    user_metadata: { full_name },
   })
 
   if (authError) {
     return NextResponse.json(
-      { error: authError.message },
-      { status: authError.status || 400 }
+      { error: 'Failed to create user account' },
+      { status: 400 }
     )
   }
 
@@ -64,7 +69,7 @@ export async function POST(request: NextRequest) {
     )
   }
 
-  // Create profile
+  // Create profile using admin client
   const { data: profile, error: profileError } = await supabase
     .from('profiles')
     .insert({
@@ -80,20 +85,19 @@ export async function POST(request: NextRequest) {
     .single()
 
   if (profileError) {
-    // If profile creation fails, we should ideally rollback the auth user
-    // For now, just return the error
+    // Rollback: delete the auth user if profile creation fails
+    await supabase.auth.admin.deleteUser(authData.user.id)
     return NextResponse.json(
-      { error: 'Failed to create profile: ' + profileError.message },
+      { error: 'Failed to create user profile' },
       { status: 500 }
     )
   }
 
   return NextResponse.json(
     {
-      user: authData.user,
-      session: authData.session,
+      user: { id: authData.user.id, email: authData.user.email },
       profile,
-      message: 'User registered successfully. Please check your email for verification.',
+      message: 'User account created successfully.',
     },
     { status: 201 }
   )

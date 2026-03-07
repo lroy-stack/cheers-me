@@ -7,6 +7,6 @@ export default async function Home() {
   if (userData) {
     redirect('/dashboard')
   } else {
-    redirect('/login')
+    redirect('/booking')
   }
 }

@@ -9,6 +9,37 @@ import { z } from 'zod'
  * This endpoint is designed to be embeddable on websites and Instagram
  */
 
+// Rate limit: 5 bookings per IP per hour
+const bookingRateLimitMap = new Map<string, { count: number; resetAt: number }>()
+const BOOKING_RATE_LIMIT_MAX = 5
+const BOOKING_RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000 // 1 hour
+
+function getBookingRateLimitKey(request: NextRequest): string {
+  return (
+    request.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
+    request.headers.get('x-real-ip') ||
+    'unknown'
+  )
+}
+
+function checkBookingRateLimit(key: string): { allowed: boolean; retryAfterSeconds: number } {
+  const now = Date.now()
+  const entry = bookingRateLimitMap.get(key)
+
+  if (!entry || now > entry.resetAt) {
+    bookingRateLimitMap.set(key, { count: 1, resetAt: now + BOOKING_RATE_LIMIT_WINDOW_MS })
+    return { allowed: true, retryAfterSeconds: 0 }
+  }
+
+  if (entry.count >= BOOKING_RATE_LIMIT_MAX) {
+    const retryAfterSeconds = Math.ceil((entry.resetAt - now) / 1000)
+    return { allowed: false, retryAfterSeconds }
+  }
+
+  entry.count++
+  return { allowed: true, retryAfterSeconds: 0 }
+}
+
 // Validation schema for public booking
 const publicBookingSchema = z.object({
   guest_name: z.string().min(2, 'Name must be at least 2 characters').max(255),
@@ -27,6 +58,19 @@ const publicBookingSchema = z.object({
  * No authentication required
  */
 export async function POST(request: NextRequest) {
+  // Rate limit check
+  const rateLimitKey = getBookingRateLimitKey(request)
+  const rateLimit = checkBookingRateLimit(rateLimitKey)
+  if (!rateLimit.allowed) {
+    return NextResponse.json(
+      { error: 'Too many booking attempts. Please try again later.' },
+      {
+        status: 429,
+        headers: { 'Retry-After': String(rateLimit.retryAfterSeconds) },
+      }
+    )
+  }
+
   // Parse request body
   let body
   try {

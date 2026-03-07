@@ -3,15 +3,49 @@ import { requireRole } from '@/lib/utils/auth'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import crypto from 'crypto'
+import bcrypt from 'bcryptjs'
 
 const WEAK_PINS = [
   '0000', '1111', '2222', '3333', '4444', '5555', '6666', '7777', '8888', '9999',
   '1234', '4321', '1010', '2580', '0852',
 ]
 
+const BCRYPT_ROUNDS = 10
+
 const pinSchema = z.object({
   pin: z.string().regex(/^\d{4}$/).optional(),
 })
+
+/**
+ * Check if a PIN is already in use by comparing bcrypt hashes
+ * Returns the employee ID if found, null otherwise
+ */
+async function isPinInUse(
+  supabase: ReturnType<typeof createAdminClient>,
+  pin: string,
+  excludeEmployeeId?: string
+): Promise<boolean> {
+  const query = supabase
+    .from('employees')
+    .select('id, kiosk_pin')
+    .eq('employment_status', 'active')
+    .not('kiosk_pin', 'is', null)
+
+  if (excludeEmployeeId) {
+    query.neq('id', excludeEmployeeId)
+  }
+
+  const { data: employees } = await query
+
+  if (!employees?.length) return false
+
+  for (const emp of employees) {
+    if (emp.kiosk_pin && (await bcrypt.compare(pin, emp.kiosk_pin))) {
+      return true
+    }
+  }
+  return false
+}
 
 export async function POST(
   request: NextRequest,
@@ -62,16 +96,9 @@ export async function POST(
       return NextResponse.json({ error: 'PIN too weak' }, { status: 400 })
     }
 
-    // Check uniqueness
-    const { data: existing } = await supabase
-      .from('employees')
-      .select('id')
-      .eq('kiosk_pin', pin)
-      .eq('employment_status', 'active')
-      .neq('id', id)
-      .single()
-
-    if (existing) {
+    // Check uniqueness via bcrypt compare
+    const inUse = await isPinInUse(supabase, pin, id)
+    if (inUse) {
       return NextResponse.json({ error: 'PIN already in use' }, { status: 409 })
     }
   } else {
@@ -81,15 +108,8 @@ export async function POST(
 
       if (WEAK_PINS.includes(candidate)) continue
 
-      const { data: existing } = await supabase
-        .from('employees')
-        .select('id')
-        .eq('kiosk_pin', candidate)
-        .eq('employment_status', 'active')
-        .neq('id', id)
-        .single()
-
-      if (!existing) {
+      const inUse = await isPinInUse(supabase, candidate, id)
+      if (!inUse) {
         pin = candidate
         break
       }
@@ -103,11 +123,14 @@ export async function POST(
     }
   }
 
+  // Hash the PIN before storing
+  const hashedPin = await bcrypt.hash(pin, BCRYPT_ROUNDS)
+
   // Update employee PIN
   const { error: updateError } = await supabase
     .from('employees')
     .update({
-      kiosk_pin: pin,
+      kiosk_pin: hashedPin,
       kiosk_pin_failed_attempts: 0,
       kiosk_pin_locked_until: null,
       updated_at: new Date().toISOString(),
@@ -115,9 +138,10 @@ export async function POST(
     .eq('id', id)
 
   if (updateError) {
-    return NextResponse.json({ error: updateError.message }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to update PIN' }, { status: 500 })
   }
 
+  // Return the plaintext PIN once (for admin to share with employee)
   return NextResponse.json({ pin })
 }
 
@@ -144,7 +168,7 @@ export async function DELETE(
     .eq('id', id)
 
   if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to remove PIN' }, { status: 500 })
   }
 
   return NextResponse.json({ success: true })

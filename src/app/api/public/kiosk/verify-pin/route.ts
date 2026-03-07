@@ -16,6 +16,7 @@
 import { createAdminClient } from '@/lib/supabase/server'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
+import bcrypt from 'bcryptjs'
 import type { KioskEmployeeStatus } from '@/types'
 import { verifyTurnstileToken, getRateLimitKey } from '@/lib/turnstile/verify'
 import { checkRateLimit, recordAttempt, resetRateLimit } from '@/lib/kiosk/rate-limiter'
@@ -97,10 +98,12 @@ export async function POST(request: NextRequest) {
   // ============================================================================
   const supabase = createAdminClient()
 
-  const { data: employee, error: empError } = await supabase
+  // Fetch all active employees with a PIN set, then bcrypt.compare each
+  const { data: employees, error: empError } = await supabase
     .from('employees')
     .select(`
       id,
+      kiosk_pin,
       profile:profiles(
         id,
         full_name,
@@ -108,11 +111,23 @@ export async function POST(request: NextRequest) {
         avatar_url
       )
     `)
-    .eq('kiosk_pin', pin)
     .eq('employment_status', 'active')
-    .single()
+    .not('kiosk_pin', 'is', null)
 
-  if (empError || !employee) {
+  if (empError) {
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
+  }
+
+  // Find matching employee via bcrypt comparison
+  let employee = null as (typeof employees)[0] | null
+  for (const emp of employees ?? []) {
+    if (emp.kiosk_pin && (await bcrypt.compare(pin, emp.kiosk_pin))) {
+      employee = emp
+      break
+    }
+  }
+
+  if (!employee) {
     // Record failed attempt for rate limiting
     await recordAttempt(ip, false)
     await logSecurityEvent('invalid_pin', { ip })
