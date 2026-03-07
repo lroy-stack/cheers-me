@@ -87,7 +87,7 @@ export async function POST(request: NextRequest) {
     // End break
     const { data: activeBreak, error: findError } = await supabase
       .from('clock_breaks')
-      .select('id')
+      .select('id, start_time')
       .eq('clock_record_id', clock_record_id)
       .is('end_time', null)
       .single()
@@ -106,6 +106,62 @@ export async function POST(request: NextRequest) {
 
     if (updateError) {
       return NextResponse.json({ error: updateError.message }, { status: 500 })
+    }
+
+    // Feature S11.E1: Alert managers if break exceeds max_break_minutes
+    try {
+      const { data: maxBreakSetting } = await supabase
+        .from('restaurant_settings')
+        .select('value')
+        .eq('key', 'max_break_minutes')
+        .single()
+
+      const maxBreakMinutes =
+        typeof maxBreakSetting?.value === 'number' ? (maxBreakSetting.value as number) : null
+
+      if (maxBreakMinutes !== null) {
+        const breakStartMs = new Date(activeBreak.start_time).getTime()
+        const breakEndMs = new Date(now).getTime()
+        const breakDurationMinutes = Math.round((breakEndMs - breakStartMs) / 60000)
+
+        if (breakDurationMinutes > maxBreakMinutes) {
+          // Get employee name for notification
+          const { data: employee } = await supabase
+            .from('employees')
+            .select('id, profile:profiles(full_name)')
+            .eq('id', employee_id)
+            .single()
+
+          const employeeName =
+            (employee?.profile as { full_name?: string } | null)?.full_name ?? 'An employee'
+
+          // Notify all managers
+          const { data: managers } = await supabase
+            .from('profiles')
+            .select('id')
+            .in('role', ['admin', 'owner', 'manager'])
+
+          if (managers) {
+            for (const manager of managers) {
+              await supabase.rpc('create_notification', {
+                p_user_id: manager.id,
+                p_type: 'break_exceeded',
+                p_title: 'Break Limit Exceeded',
+                p_body: `${employeeName} took a ${breakDurationMinutes}min break (max: ${maxBreakMinutes}min).`,
+                p_data: {
+                  employee_id,
+                  clock_record_id,
+                  break_duration_minutes: breakDurationMinutes,
+                  max_break_minutes: maxBreakMinutes,
+                },
+                p_action_url: '/staff/clock',
+              })
+            }
+          }
+        }
+      }
+    } catch {
+      // Non-critical: don't fail the break end on notification error
     }
 
     return NextResponse.json({ break_record: breakRecord })

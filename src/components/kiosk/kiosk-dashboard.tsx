@@ -17,18 +17,20 @@ interface KioskDashboardProps {
   onBack: () => void
   onClockOut: (summary: ClockOutSummary) => void
   onStatusUpdate: (status: KioskEmployeeStatus) => void
+  autoLockSeconds?: number
 }
 
-const AUTO_LOCK_SECONDS = 10
+const DEFAULT_AUTO_LOCK_SECONDS = 30
 
 export function KioskDashboard({
   employeeStatus,
   onBack,
   onClockOut,
   onStatusUpdate,
+  autoLockSeconds = DEFAULT_AUTO_LOCK_SECONDS,
 }: KioskDashboardProps) {
   const t = useTranslations('kiosk')
-  const [lockCountdown, setLockCountdown] = useState(AUTO_LOCK_SECONDS)
+  const [lockCountdown, setLockCountdown] = useState(autoLockSeconds)
   const lockTimerRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const [currentTime, setCurrentTime] = useState(new Date())
   const [weekHours, setWeekHours] = useState<number | null>(null)
@@ -75,7 +77,7 @@ export function KioskDashboard({
 
   // Auto-lock timer
   const resetLockTimer = useCallback(() => {
-    setLockCountdown(AUTO_LOCK_SECONDS)
+    setLockCountdown(autoLockSeconds)
   }, [])
 
   useEffect(() => {
@@ -149,7 +151,7 @@ export function KioskDashboard({
         <div className="w-full bg-muted rounded-full h-1.5 overflow-hidden">
           <div
             className="bg-primary h-full transition-all duration-1000 ease-linear"
-            style={{ width: `${(lockCountdown / AUTO_LOCK_SECONDS) * 100}%` }}
+            style={{ width: `${(lockCountdown / autoLockSeconds) * 100}%` }}
           />
         </div>
       </motion.div>

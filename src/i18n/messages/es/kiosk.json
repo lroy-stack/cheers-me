@@ -67,6 +67,9 @@
     "feedbackPlaceholder": "¿Qué salió bien? ¿Qué se puede mejorar?",
     "charsRemaining": "{count} caracteres restantes",
     "thankYou": "¡Gracias!",
-    "thankYouMessage": "Tu opinión nos ayuda a mejorar."
+    "thankYouMessage": "Tu opinión nos ayuda a mejorar.",
+    "errorTitle": "Error al enviar",
+    "errorMessage": "No pudimos guardar tus comentarios. Por favor, inténtalo de nuevo.",
+    "retry": "Reintentar"
   }
 }

@@ -67,6 +67,9 @@
     "feedbackPlaceholder": "Wat ging goed? Wat kan beter?",
     "charsRemaining": "{count} tekens over",
     "thankYou": "Bedankt!",
-    "thankYouMessage": "Je feedback helpt ons te verbeteren."
+    "thankYouMessage": "Je feedback helpt ons te verbeteren.",
+    "errorTitle": "Verzending mislukt",
+    "errorMessage": "We konden je feedback niet opslaan. Probeer het opnieuw.",
+    "retry": "Opnieuw proberen"
   }
 }

@@ -110,12 +110,31 @@ export default function BookingSuccess({ result, onNewBooking }: BookingSuccessP
     const formatICS = (d: Date) =>
       `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}T${pad(d.getHours())}${pad(d.getMinutes())}00`
 
+    // Include VTIMEZONE for Europe/Madrid (Feature S12.B4)
     const ics = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
+      'PRODID:-//GrandCafe Cheers//EN',
+      'BEGIN:VTIMEZONE',
+      'TZID:Europe/Madrid',
+      'BEGIN:STANDARD',
+      'TZOFFSETFROM:+0200',
+      'TZOFFSETTO:+0100',
+      'TZNAME:CET',
+      'DTSTART:19701025T030000',
+      'RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10',
+      'END:STANDARD',
+      'BEGIN:DAYLIGHT',
+      'TZOFFSETFROM:+0100',
+      'TZOFFSETTO:+0200',
+      'TZNAME:CEST',
+      'DTSTART:19700329T020000',
+      'RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3',
+      'END:DAYLIGHT',
+      'END:VTIMEZONE',
       'BEGIN:VEVENT',
-      `DTSTART:${formatICS(startDate)}`,
-      `DTEND:${formatICS(endDate)}`,
+      `DTSTART;TZID=Europe/Madrid:${formatICS(startDate)}`,
+      `DTEND;TZID=Europe/Madrid:${formatICS(endDate)}`,
       'SUMMARY:Reservation at GrandCafe Cheers',
       'LOCATION:Carrer de Cartago 22\\, El Arenal\\, Mallorca 07600',
       `DESCRIPTION:Table for ${reservation.party_size} guests.${reservation.table_number ? ` Table ${reservation.table_number}.` : ''}`,

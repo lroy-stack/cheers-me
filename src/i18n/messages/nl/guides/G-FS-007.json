@@ -1,0 +1,191 @@
+{
+  "title": "Food Waste Prevention",
+  "legalBasis": "Law 7/2022 on waste and contaminated soils for a circular economy; Law 1/2025 on prevention of food losses and food waste; EU Farm to Fork Strategy; Royal Decree 1181/2022 establishing food donation requirements",
+  "summary": "Spain's groundbreaking Food Waste Law (Law 1/2025), which came into effect in early 2025, establishes comprehensive requirements for food waste prevention, prioritization of food donation, and mandatory waste recording for hospitality establishments. The law is part of Spain's commitment to reducing food waste by 50% by 2030 in line with EU and UN Sustainable Development Goals. One-third of all food produced globally is lost or wasted, and in Spain, hospitality and food service contribute significantly to this waste.\n\nThe law requires hospitality establishments to implement food waste prevention plans, offer take-away containers for unfinished meals (known as 'doggy bags'), prioritize donation of surplus edible food to authorized organizations, and maintain records of food waste quantities and management. Establishments that fail to comply face sanctions ranging from minor fines to suspension of operations for repeat serious violations. Beyond legal compliance, food waste reduction delivers significant business benefits: reduced food costs, decreased waste disposal expenses, positive environmental impact, and enhanced reputation among increasingly environmentally conscious consumers.\n\nEffective food waste prevention requires a systematic approach addressing all stages from purchasing and storage through preparation, service, and end-of-day management. It involves planning, measurement, staff training, menu design, and cultural change. Small changes in practices, when consistently implemented, can dramatically reduce waste while maintaining food safety and quality standards.",
+  "keyPoints": [
+    "Implement a food waste prevention plan identifying sources of waste and reduction strategies",
+    "Offer take-away containers ('doggy bags') to customers for unfinished meals at no charge",
+    "Prioritize food donation to authorized organizations over disposal of surplus edible food",
+    "Maintain records of food waste quantities, causes, and management methods",
+    "Train all staff on portion control, FIFO rotation, and waste prevention practices",
+    "Monitor and reduce overproduction through demand forecasting and batch cooking",
+    "Partner with food banks, donation platforms, or charity organizations for surplus food",
+    "Establish differentiated pricing for different portion sizes to prevent over-ordering"
+  ],
+  "sections": [
+    {
+      "heading": "1. Legal Framework and Requirements",
+      "content": "Law 1/2025 establishes a waste hierarchy that food businesses must follow: (1) prevention — avoid generating food waste in the first place, (2) donation — surplus edible food must be made available to authorized food banks and social organizations, (3) transformation — food unfit for human consumption can be used for animal feed or composting, (4) disposal — only as a last resort. The law prohibits establishments from disposing of surplus edible food when donation options are available. Violations of this hierarchy constitute legal non-compliance subject to sanctions.\n\nHospitality establishments must develop and implement a food waste prevention plan proportionate to the size and nature of operations. The plan identifies main sources of food waste (purchasing, storage spoilage, preparation waste, overproduction, customer plate waste), quantifies waste through measurement and recording, establishes prevention measures for each waste source, sets reduction targets, and assigns responsibilities for implementation and monitoring. The plan must be reviewed annually and updated based on results. While the law provides flexibility in how prevention plans are structured, they must address all these elements to demonstrate compliance.",
+      "subsections": [
+        {
+          "heading": "1.1 Take-Away Container Requirements",
+          "content": "The law requires that all hospitality establishments (restaurants, bars, cafeterias) offer take-away containers to customers who wish to take away unfinished food at no additional charge. This applies to all table service establishments regardless of size. The containers must be suitable for food contact, and establishments should offer sustainable, reusable, or recyclable packaging in preference to single-use plastics. Customers must be informed of this option, either through signage, menu information, or staff communication. Establishments should normalize 'doggy bags' as a positive practice rather than embarrassing or unusual. The terminology matters: framing it as 'Would you like to take the rest to enjoy later?' is more appealing than 'Do you want a doggy bag?' This practice not only complies with the law but also enhances customer satisfaction and reduces waste."
+        },
+        {
+          "heading": "1.2 Food Donation Requirements",
+          "content": "Surplus edible food that is safe for consumption but will not be served or sold must be made available for donation to authorized social organizations, food banks, or charity platforms. 'Surplus food' includes: over-prepared dishes that were not served, products approaching use-by dates but still safe, edible parts removed during preparation (trimmings that could be used in soups or stocks), and buffet or display items removed at the end of service that were maintained at safe temperatures. Food donation must respect food safety requirements: donated food must be safe, properly stored until collection, and collected by authorized organizations with appropriate food handling capabilities. Establishments should formalize donation partnerships through agreements specifying collection schedules, food safety responsibilities, and documentation procedures. Tax incentives may be available for food donations — consult with your tax advisor."
+        },
+        {
+          "heading": "1.3 Sanctions for Non-Compliance",
+          "content": "The law establishes a tiered sanction system. Minor infractions (failure to maintain waste records, not offering take-away containers) result in warnings or fines of €2,001-€6,000. Serious infractions (systematic failure to implement prevention plan, disposal of edible food without attempting donation, repeated minor infractions) result in fines of €6,001-€60,000 and may include publication of the infraction. Very serious infractions (systematic disposal of large quantities of edible food, repeated serious infractions, endangering food safety through waste management practices) result in fines of €60,001-€500,000, temporary suspension of operations, or closure. The sanctions regime demonstrates that food waste prevention is not optional but a legal requirement enforced by competent authorities."
+        }
+      ]
+    },
+    {
+      "heading": "2. Measuring and Monitoring Food Waste",
+      "content": "The principle 'what gets measured gets managed' applies to food waste. The law requires establishments to maintain records of food waste, but beyond legal compliance, measurement provides essential data for identifying waste sources, quantifying the problem, setting reduction targets, evaluating the effectiveness of interventions, and demonstrating progress over time. Without measurement, waste reduction efforts are based on assumptions rather than evidence.\n\nVarious measurement approaches exist, from simple to sophisticated. Small establishments might use straightforward methods: weighing waste bins, visual estimation with photographic documentation, or tracking specific high-waste items. Larger operations might implement detailed waste audits, digital tracking systems, or automated waste scales. The appropriate method depends on your operation size, resources, and waste complexity. The key is consistency: measure the same way over time to enable meaningful comparison.",
+      "subsections": [
+        {
+          "heading": "2.1 Waste Categories and Tracking",
+          "content": "Categorize food waste by source to enable targeted interventions. Common categories include: (1) preparation waste — trimmings, peelings, unusable parts (some inevitable, but excessive suggests poor purchasing or preparation skills), (2) spoilage — food that expired or deteriorated in storage (indicates purchasing, storage, or FIFO issues), (3) overproduction — cooked food that was not served (production planning issue), (4) plate waste — food served to customers but not consumed (portion size or menu appeal issue), and (5) contamination — food discarded due to cross-contamination or equipment failure. Track each category separately, as they require different prevention strategies. Record at minimum weekly, daily for more detailed tracking. Note quantities (weight or volume), estimated value, and causes when identifiable. Some operations take photographs of waste to document types and quantities visually."
+        },
+        {
+          "heading": "2.2 Key Performance Indicators",
+          "content": "Develop KPIs to track waste reduction progress. Useful metrics include: total waste weight or volume per day/week/month, waste as percentage of food purchased, waste cost (estimating the value of discarded food), waste per customer served (portion control indicator), waste by category (identifying problem areas), and waste reduction percentage (comparing current period to baseline). Set realistic reduction targets: 10-20% reduction in first year is ambitious but achievable. Track progress against targets monthly and review trends. Share results with staff — visibility of progress creates engagement and motivation. Celebrate achievements when targets are met."
+        },
+        {
+          "heading": "2.3 Waste Audits",
+          "content": "Conduct periodic detailed waste audits to understand waste composition and causes. A waste audit involves: selecting a representative period (typically one week), sorting all waste into categories, weighing or measuring each category precisely, identifying causes for waste (expired, overproduced, customer returns, etc.), photographing typical waste for documentation and training, analyzing results to identify top waste sources (often 80% of waste comes from 20% of sources), and developing targeted action plans for major waste sources. Waste audits provide detailed baseline data and should be repeated (every 6-12 months) to assess improvement. While time-intensive, audits provide insights that general tracking cannot capture."
+        }
+      ]
+    },
+    {
+      "heading": "3. Prevention Strategies by Stage",
+      "content": "Food waste prevention requires interventions at all stages of the food flow: purchasing, receiving, storage, preparation, cooking, service, and end-of-day management. A comprehensive approach addresses all stages systematically rather than focusing only on one area. Each stage presents different waste opportunities and requires different prevention strategies. The most effective interventions are typically in purchasing and production planning, as preventing waste at these early stages eliminates waste throughout the subsequent flow.\n\nImplementing prevention strategies requires both procedural changes and cultural change. Procedures define what should be done; culture determines whether procedures are actually followed consistently. Leadership commitment, staff training and engagement, performance monitoring, and recognition of success are all necessary to create a waste-conscious culture where prevention is valued and practiced by everyone.",
+      "subsections": [
+        {
+          "heading": "3.1 Purchasing and Procurement",
+          "content": "Purchasing practices significantly affect waste. Strategies include: forecast demand accurately using historical data, seasonal patterns, and reservation trends rather than ordering based on habit or fear of shortages; order appropriate quantities with more frequent smaller orders rather than large infrequent orders that risk spoilage; specify appropriate product sizes and packaging — smaller packages may have higher unit cost but reduce waste if large packages often spoil; negotiate with suppliers for flexible ordering and returns policies for products approaching expiry; specify quality standards that avoid excessive trimmings without requiring premium products beyond customer expectations; purchase whole products rather than pre-processed when kitchen skills and time allow (whole vegetables, whole fish) to utilize all parts including trimmings for stocks and soups; and maintain good supplier relationships enabling communication about delivery quantities and schedules. Purchasing decisions should balance cost, quality, and waste risk."
+        },
+        {
+          "heading": "3.2 Storage and Rotation",
+          "content": "Storage management prevents spoilage waste. Key practices include: implement rigorous FIFO rotation — older stock must be used before newer stock; organize storage logically with clear labeling of dates; conduct regular stock checks (at least weekly) to identify items approaching expiry; adjust purchasing based on stock levels rather than ordering habitually; maintain appropriate storage conditions (temperature, humidity) to maximize shelf life; proper packaging and sealing to prevent deterioration; and creative use of items approaching expiry through specials or menu planning. Storage waste is often the easiest to prevent through discipline and organization. Track spoilage waste specifically to identify whether it results from over-purchasing, poor rotation, inadequate storage conditions, or insufficient use planning."
+        },
+        {
+          "heading": "3.3 Preparation and Production",
+          "content": "Production practices minimize both preparation waste and overproduction waste. Strategies include: improve knife skills and preparation techniques to reduce trimmings; utilize trimmings creatively — vegetable peelings and scraps for stocks, meat and fish trimmings for soups or sauces, stale bread for breadcrumbs or croutons; implement batch cooking rather than bulk production — cook smaller quantities more frequently to match actual demand; use demand forecasting based on historical data, weather, events, and reservations rather than guessing; implement prep-to-order for certain items rather than pre-preparing large quantities that may not be needed; standardize portion sizes through recipes, scales, and portioning tools; and plan menu items that share ingredients to increase flexibility and reduce waste if demand shifts between dishes. Monitor overproduction specifically — frequent excess indicates production planning needs improvement."
+        },
+        {
+          "heading": "3.4 Service and Customer Interface",
+          "content": "Service practices affect plate waste. Strategies include: offer different portion sizes at different prices to accommodate varied appetites; clearly indicate portion sizes on menus so customers can order appropriately; train service staff to help customers order appropriate quantities rather than over-ordering; actively offer take-away containers for unfinished meals, normalizing this as standard practice; consider 'finishing touches' added at service rather than on the plate (sauces, garnishes) allowing customers to choose; use customer feedback about portion sizes to adjust menu offerings; buffets should implement time limits on display and portion control strategies (smaller serving utensils, smaller plates) to reduce customer over-serving; and analyze plate waste patterns — if specific dishes consistently return with high waste, assess whether portion size, quality, or menu description is the issue. Engaging customers in waste prevention through portion choice empowers them and reduces waste."
+        }
+      ]
+    },
+    {
+      "heading": "4. Food Donation Programs",
+      "content": "Food donation transforms potential waste into social benefit while complying with legal requirements. In Spain, several organizations facilitate food donation: food banks (Bancos de Alimentos), social dining halls (comedores sociales), platforms like Too Good To Go that connect businesses with consumers to sell surplus food at reduced prices, and charity organizations serving vulnerable populations. Establishing donation partnerships requires: identifying suitable organizations in your area, establishing formalized agreements on food safety responsibilities, collection schedules, and types of food accepted, implementing procedures ensuring donated food is safe and properly stored until collection, training staff on donation procedures, and documenting all donations for legal compliance and tax purposes.\n\nFood safety responsibilities are paramount: establishments remain responsible for ensuring donated food is safe until it is collected. This means maintaining temperature control, respecting use-by dates, and communicating any handling requirements to recipient organizations. Organizations collecting food for donation must have appropriate food handling capabilities and legal authorization. Donation should not be used as a way to dispose of food that is no longer safe — only edible, safe food should be donated.",
+      "subsections": [
+        {
+          "heading": "4.1 Types of Donatable Food",
+          "content": "Various food types from hospitality can be donated: prepared dishes that were not served but were maintained at proper temperatures and within safe time limits, packaged products approaching use-by dates but still within safe consumption period, baked goods from the previous day (if still fresh and safe), buffet or display items removed at end of service (if temperature and time requirements were maintained), and raw ingredients approaching expiry that can be used safely if processed promptly. Food that should NOT be donated includes: anything past use-by date, food that has been temperature-abused, food that has been served to customers (individual plate returns), food with broken packaging or uncertain storage history, and food that does not meet normal food safety standards. The principle is that donated food must meet the same safety standards as food sold to customers."
+        },
+        {
+          "heading": "4.2 Too Good To Go and Similar Platforms",
+          "content": "Digital platforms like Too Good To Go connect businesses with surplus food to consumers who purchase it at reduced prices. This model prevents waste while generating some revenue from food that would otherwise be discarded. The platform works by: establishments listing 'surprise bags' of surplus food available at end of day at approximately one-third normal price, customers purchasing via app and collecting at specified times, and platforms handling payment processing and take a small commission. Benefits include waste reduction, reaching sustainability-conscious customers, and revenue recovery from surplus. Implementation requires: registering with the platform, establishing end-of-day procedures for assessing surplus, packaging surplus appropriately, managing customer collection at closing time, and ensuring food safety during the process. While not a substitute for prevention, surplus food platforms provide a valuable option for managing inevitable end-of-service surplus."
+        }
+      ]
+    },
+    {
+      "heading": "5. Menu Design and Portion Management",
+      "content": "Menu design significantly influences food waste. A well-designed menu considering waste prevention includes: shared ingredients across multiple dishes allowing flexibility and reducing waste if one dish sells more than expected, menu size appropriate to kitchen capacity and customer volume — extensive menus increase waste risk from slow-moving items, seasonal items taking advantage of peak freshness and availability, daily specials utilizing surplus ingredients or products approaching expiry, and clear descriptions helping customers understand dishes and order appropriately. Menu engineering techniques analyze sales and profitability of each item, identifying underperforming items that tie up inventory and generate waste.\n\nPortion management balances customer satisfaction with waste prevention. Strategies include offering multiple portion sizes, using standardized recipes and portioning tools, training kitchen staff on proper portioning, monitoring plate waste by dish to identify over-portioning issues, and adjusting portions based on data rather than assumptions. Some establishments photograph properly portioned dishes as references for kitchen staff. Portion standardization improves consistency, cost control, and waste reduction simultaneously.",
+      "subsections": [
+        {
+          "heading": "5.1 Menu Engineering",
+          "content": "Menu engineering analyzes each menu item's sales volume and contribution margin to optimize profitability and reduce waste. Classify items as: stars (high sales, high margin) — promote heavily; plowhorses (high sales, low margin) — important volume drivers, seek cost improvements; puzzles (low sales, high margin) — evaluate whether better promotion would increase sales or whether limited appeal means they should be removed; and dogs (low sales, low margin) — prime candidates for removal unless they serve strategic purposes. Slow-moving items tie up inventory, increase spoilage risk, and require maintaining ingredients that may be used infrequently. Regularly review menu performance (quarterly minimum) and be willing to remove underperforming items even if the chef likes them. A tighter menu focusing on popular, profitable items reduces waste and operational complexity."
+        },
+        {
+          "heading": "5.2 Nose-to-Tail and Root-to-Stem Approaches",
+          "content": "Whole-utilization approaches maximize use of ingredients. Nose-to-tail cooking uses all parts of animals: less expensive cuts for stews and braises, organs for pâtés or specialties, bones for stocks, and rendered fat for cooking. Root-to-stem vegetable cooking uses parts often discarded: broccoli stems peeled and used like broccoli hearts, cauliflower leaves in soups, beet greens in salads, carrot tops for pesto or stocks, and stale bread for breadcrumbs, croutons, or bread puddings. These approaches reduce waste, lower food costs, and can create distinctive menu offerings appealing to sustainability-conscious customers. Implementation requires chef creativity and skills, customer education (many customers are unfamiliar with whole-utilization dishes), and kitchen organization to ensure trimmings are collected and used rather than discarded automatically."
+        }
+      ]
+    },
+    {
+      "heading": "6. Staff Engagement and Culture",
+      "content": "Technical interventions alone are insufficient for waste reduction; cultural change is essential. Creating a waste-conscious culture requires: leadership commitment demonstrated through resources, attention, and modeling desired behaviors; staff training on waste prevention techniques and the business case for reduction (cost savings, environmental benefits, legal compliance); involvement of staff in identifying waste sources and developing solutions — frontline staff often have best insights; regular communication about waste reduction progress and celebrating achievements; recognition and incentives for staff who contribute to waste reduction; and making waste prevention part of daily operations rather than an add-on initiative. When staff understand why waste reduction matters and feel empowered to contribute, sustained behavioral change is possible.\n\nOvercome common barriers to engagement: staff perception that waste prevention creates extra work (show that many prevention measures actually simplify operations), concerns that reduced portions disappoint customers (communicate that appropriate portions enhance satisfaction while excessive portions are often wasted), and belief that waste is inevitable in hospitality (demonstrate through data that significant reduction is achievable). Change takes time and persistence, but the benefits — financial, environmental, and cultural — justify the effort.",
+      "subsections": [
+        {
+          "heading": "6.1 Training and Skills Development",
+          "content": "Provide training equipping staff with waste prevention skills: knife skills and preparation techniques minimizing trimmings, proper storage and FIFO rotation, demand forecasting and batch cooking, portion control and standardization, creative use of trimmings and surplus ingredients, and food donation procedures and documentation. Make training practical with hands-on demonstrations and practice. Include waste prevention in induction training for new staff so it is understood as standard practice from the start. Provide refresher training periodically to reinforce practices and introduce new techniques. Cross-train staff so multiple people can perform key waste prevention tasks, reducing dependency on specific individuals."
+        },
+        {
+          "heading": "6.2 Incentives and Recognition",
+          "content": "Recognize and reward waste reduction contributions: celebrate milestones when waste reduction targets are achieved, acknowledge individuals or teams who develop effective waste reduction innovations, consider financial incentives such as sharing cost savings from waste reduction with staff, highlight waste reduction achievements in internal communications and staff meetings, and create friendly competition between shifts or teams around waste reduction KPIs. Recognition need not be expensive to be effective — public acknowledgment, preferred scheduling, or small tokens can motivate. The key is making waste reduction visible and valued rather than taken for granted."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Food Waste Prevention Plan Development",
+      "items": [
+        "Conduct initial waste audit to establish baseline and identify main waste sources",
+        "Categorize waste by source: purchasing, storage, preparation, production, service, plate waste",
+        "Quantify waste in each category by weight, volume, or cost",
+        "Identify root causes for each major waste source",
+        "Develop specific prevention strategies for each waste source",
+        "Set measurable waste reduction targets (e.g., 15% reduction in 12 months)",
+        "Assign responsibilities for implementing each prevention strategy",
+        "Establish waste tracking and recording procedures",
+        "Train all staff on waste prevention plan and their roles",
+        "Schedule regular review of waste data and plan effectiveness (monthly minimum)",
+        "Document the plan and make accessible to all staff",
+        "Review and update plan annually or when major operational changes occur"
+      ]
+    },
+    {
+      "title": "Daily Food Waste Management",
+      "items": [
+        "Review previous day's waste data and identify any unusual patterns",
+        "Check inventory and FIFO rotation — prioritize using items closest to expiry",
+        "Plan daily production based on forecasted demand (reservations, historical data, events)",
+        "Brief staff on waste prevention priorities for the day",
+        "Monitor production quantities during service — adjust as needed",
+        "Offer customers take-away containers for unfinished meals",
+        "At end of service, assess surplus food for donation or preservation",
+        "Contact food bank or donation partner if significant surplus is available",
+        "Weigh and categorize food waste by source",
+        "Record waste quantities and causes in tracking system",
+        "Photograph unusual or instructive waste examples for training",
+        "Plan next day's menu and production to utilize any remaining safe food"
+      ]
+    },
+    {
+      "title": "Food Donation Process",
+      "items": [
+        "Identify surplus food available for donation at end of service",
+        "Verify that all food items are still within safe use-by dates",
+        "Confirm that food was stored at appropriate temperatures throughout",
+        "Package food safely in clean, food-grade containers with labels showing content and date",
+        "Store packaged food under appropriate conditions until collection",
+        "Contact donation partner to arrange collection if not pre-scheduled",
+        "Document what is being donated: items, quantities, date, recipient organization",
+        "Provide any necessary handling instructions to collection personnel",
+        "Ensure food is collected within safe time limits",
+        "Retain documentation of donation for legal compliance and tax records",
+        "Follow up periodically with donation partners to ensure satisfaction and address issues"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Start waste tracking immediately even before implementing prevention strategies — baseline data is essential for setting targets and measuring improvement",
+    "Focus prevention efforts on the largest waste sources identified through measurement rather than trying to address everything simultaneously",
+    "Involve staff at all levels in identifying waste and developing solutions — frontline workers often have the best insights into practical prevention opportunities",
+    "Make waste prevention visible through dashboards, charts, or regular communications showing progress against targets to maintain awareness and engagement",
+    "Normalize take-away containers as standard practice by proactively offering them to all customers with unfinished food rather than waiting for customers to ask",
+    "Build food donation into standard end-of-day procedures rather than treating it as occasional or exceptional",
+    "Use creative menu planning and daily specials to utilize surplus ingredients and products approaching expiry before they become waste",
+    "Celebrate waste reduction achievements with staff to reinforce that prevention is valued and that their efforts make a difference"
+  ],
+  "glossary": {
+    "Food Waste": "Food intended for human consumption that is discarded or removed from the food supply chain",
+    "Food Loss": "Decrease in quantity or quality of food resulting from decisions and actions by food suppliers (before food reaches consumer), distinct from food waste",
+    "Waste Hierarchy": "Priority order established by law: prevention, donation, transformation (animal feed/composting), disposal",
+    "FIFO": "First In, First Out — stock rotation principle ensuring older stock is used before newer stock to prevent spoilage",
+    "Batch Cooking": "Preparing food in smaller quantities at intervals rather than large quantities all at once, reducing overproduction waste",
+    "Plate Waste": "Food served to customers but not consumed, indicating possible issues with portion size or quality",
+    "Overproduction": "Preparing more food than is needed for service, resulting in excess that cannot be sold",
+    "Food Donation": "Transferring surplus edible food to authorized organizations for distribution to people in need",
+    "Too Good To Go": "Digital platform connecting businesses with surplus food to consumers who purchase it at reduced prices",
+    "Menu Engineering": "Analytical approach to menu design evaluating each item's sales volume and profitability to optimize menu performance"
+  }
+}

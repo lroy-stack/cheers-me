@@ -67,6 +67,9 @@
     "feedbackPlaceholder": "What went well? What could be improved?",
     "charsRemaining": "{count} characters remaining",
     "thankYou": "Thank You!",
-    "thankYouMessage": "Your feedback helps us improve."
+    "thankYouMessage": "Your feedback helps us improve.",
+    "errorTitle": "Submission Failed",
+    "errorMessage": "We could not save your feedback. Please try again.",
+    "retry": "Try Again"
   }
 }

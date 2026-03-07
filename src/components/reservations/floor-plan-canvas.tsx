@@ -40,6 +40,7 @@ interface FloorPlanCanvasProps {
   onTableSelect: (table: Table | null) => void
   selectedTable: Table | null
   className?: string
+  activeSessionsByTableId?: Record<string, number>
 }
 
 export function FloorPlanCanvas({
@@ -48,6 +49,7 @@ export function FloorPlanCanvas({
   onTableSelect,
   selectedTable,
   className,
+  activeSessionsByTableId = {},
 }: FloorPlanCanvasProps) {
   const [activeId, setActiveId] = useState<string | null>(null)
   const { toast } = useToast()
@@ -166,6 +168,7 @@ export function FloorPlanCanvas({
             isSelected={selectedTable?.id === table.id}
             onSelect={onTableSelect}
             isDragging={activeId === table.id}
+            activePartySize={activeSessionsByTableId[table.id] ?? null}
           />
         ))}
 

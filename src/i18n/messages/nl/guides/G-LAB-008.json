@@ -1,0 +1,204 @@
+{
+  "title": "Understanding Your Payroll",
+  "legalBasis": "Workers' Statute (Real Decreto Legislativo 2/2015) Article 29; Royal Decree 1659/1998 on model payroll forms; General Social Security Law (Real Decreto Legislativo 8/2015); Personal Income Tax Law (Ley 35/2006 del IRPF)",
+  "summary": "Your monthly payroll document (nómina) is more than just a payment notification — it is a detailed legal record of your remuneration, working time, and the deductions that determine your net take-home pay. Spanish law requires employers to provide every employee with a written, itemized payroll document each payment period, typically monthly. Understanding how to read and verify your payroll is essential for ensuring you are being paid correctly, that Social Security contributions are being made properly, and that tax withholdings are appropriate to your personal situation.\n\nThe Spanish payroll structure is standardized but complex. It is divided into sections: a header with employer and employee identification, earned income (devengos) broken down into base salary (salario base) and various supplements (complementos), followed by deductions (deducciones) including Social Security contributions and income tax withholding (IRPF), and finally the net payable amount (líquido a percibir). Each component is governed by specific rules established in the Workers' Statute, the applicable collective agreement, Social Security law, and tax law.\n\nFor hospitality workers, payroll can be particularly complex due to variable factors such as tips (propinas), overtime, night shift supplements, split shift supplements, and seasonal variations in working hours. Additionally, many hospitality workers receive two extra salary payments per year (pagas extraordinarias), which may be paid separately in summer and winter or prorated across twelve monthly payments. Understanding these components helps you verify that your compensation is complete and correct.\n\nDiscrepancies in payroll are not uncommon and can result from honest errors in calculation, miscommunication about hours worked, or unfortunately sometimes deliberate wage theft. Employers are legally obligated to provide accurate, timely payroll and to correct errors promptly when identified. Workers who identify payroll errors should raise them with the employer immediately; unresolved wage disputes can be escalated to the labor inspectorate or labor courts.",
+  "keyPoints": [
+    "Employers must provide a written payroll document (nómina) for each pay period, typically monthly",
+    "The payroll must be signed by the employee; however, signature only confirms receipt, not agreement with all contents",
+    "Base salary (salario base) is determined by your professional category in the applicable collective agreement",
+    "Supplements (complementos) include additional pay for seniority, overtime, night work, responsibility, and other factors",
+    "Social Security contributions (Seguridad Social) are approximately 6.35% of gross salary, deducted from your pay",
+    "Income tax withholding (retención IRPF) varies based on your personal situation (marital status, dependents, disabilities)",
+    "Most hospitality workers receive two extra salary payments per year, paid either as lump sums or prorated monthly",
+    "Tips may be included in gross salary and subject to tax and Social Security contributions, depending on how they are managed",
+    "Your annual gross salary and Social Security contributions determine your unemployment and pension benefits",
+    "You can request correction of payroll errors and claim unpaid wages through internal procedures, labor inspectorate, or courts"
+  ],
+  "sections": [
+    {
+      "heading": "1. Structure of the Spanish Payroll (Nómina)",
+      "content": "The Spanish payroll document follows a standardized structure established by Royal Decree 1659/1998. While the exact format may vary slightly depending on the payroll software used, all payrolls must contain the same essential information organized in a logical sequence. Understanding this structure is the first step to reading your payroll effectively.\n\nThe payroll begins with identification information: company name, address, and tax identification (CIF); employee name, Social Security number, and tax identification (NIF/NIE); professional category according to the collective agreement; contribution group for Social Security purposes; and the pay period (typically a specific month). Following this header, the payroll is divided into three main sections: earned income (devengos), deductions (deducciones), and net payment (líquido a percibir). Each section contains multiple line items with descriptions and amounts.",
+      "subsections": [
+        {
+          "heading": "1.1 Earned Income (Devengos)",
+          "content": "The earned income section lists all components of your gross remuneration for the pay period. It is subdivided into several categories. Percepciones salariales (wage earnings) include salario base (base salary per your professional category and working hours), complemento de antigüedad (seniority supplement after certain years of service), horas extraordinarias (overtime pay), plus de nocturnidad (night shift supplement, typically for work between 22:00 and 06:00), plus de festividad (holiday work supplement), and plus de turnicidad or partido (split shift supplement).\n\nPercepciones no salariales (non-wage earnings) are amounts paid by the employer that do not count as salary for Social Security contribution purposes, though they may be taxable. Examples include dietas (meal allowances for work away from usual workplace, within legal limits), plus de transporte (transport allowance, within legal limits), indemnizaciones (compensation for expenses such as using personal vehicle for work), and compensaciones (payments for work-related costs). The distinction between wage and non-wage earnings affects Social Security contributions but both contribute to taxable income with certain exceptions."
+        },
+        {
+          "heading": "1.2 Deductions (Deducciones)",
+          "content": "The deductions section shows amounts subtracted from your gross earnings to arrive at net pay. The two main categories are Social Security contributions and income tax withholding. Aportación del trabajador a la Seguridad Social (employee's Social Security contribution) is calculated as a percentage of your contribution base (base de cotización), which is generally your gross wage earnings. The standard employee contribution rate is approximately 6.35% of gross salary, composed of common contingencies (~4.70%), unemployment (~1.55%), and vocational training (~0.10%).\n\nRetención a cuenta del IRPF (income tax withholding) is an advance payment of your annual personal income tax obligation. The withholding percentage is calculated based on your expected annual income, personal situation (marital status, number of dependents, disabilities), and other factors you declare on Form 145. This is not a tax in itself, but an advance; when you file your annual tax return, you reconcile what was withheld during the year with your actual tax liability, resulting in either additional payment or refund."
+        },
+        {
+          "heading": "1.3 Net Pay and Extra Payments",
+          "content": "The bottom line of your payroll is líquido total a percibir (total net payable) — the amount actually deposited in your bank account or paid to you. This is your gross earnings minus all deductions. The payroll should also show información acumulada (cumulative information) for the year to date: total gross earnings, total Social Security contributions, and total IRPF withholding so far in the calendar year. This cumulative information is important for verifying annual limits and for tax return preparation.\n\nMost Spanish employment includes two extra salary payments per year (pagas extraordinarias), traditionally paid in summer (typically June or July) and winter (typically December or Christmas). The amount of each extra payment is usually equal to one month's base salary plus certain supplements as specified in the collective agreement. These can be paid as lump sums twice per year, or they can be prorated (prorrateadas) and included in each monthly payment. Your employment contract or collective agreement should specify which system applies. If prorated, your monthly payroll will show a line item for prorrateo de pagas extraordinarias."
+        }
+      ]
+    },
+    {
+      "heading": "2. Base Salary and Supplements",
+      "content": "Your base salary (salario base) is determined by your professional category as defined in the applicable collective agreement (convenio colectivo) for the hospitality sector in your province. Professional categories in hospitality collective agreements typically include classifications such as Group 0 (high-level managers), Group I (managers and head chefs), Group II (section chiefs and specialized technicians), Group III (qualified employees such as cooks and senior waiters), Group IV (semi-qualified employees), and Group V (entry-level positions). Each category has a minimum monthly base salary that employers cannot pay below.\n\nSupplements (complementos) are additional payments beyond base salary, compensating for factors such as seniority, special working conditions, productivity, or personal qualifications. Some supplements are mandatory per collective agreement, others are discretionary and established in the employment contract. Understanding which supplements you are entitled to, and how they are calculated, is essential for verifying that your total gross salary is correct.",
+      "subsections": [
+        {
+          "heading": "2.1 Mandatory and Conventional Supplements",
+          "content": "Complemento de antigüedad (seniority supplement) is typically paid after completing a specified number of years with the same employer. Many hospitality collective agreements establish seniority supplements (trienios or quinquenios) after every three or five years of service. The amount varies by agreement but is calculated as a percentage of base salary or a fixed amount per year of service. This supplement accumulates over time, so long-service employees receive higher total compensation than newly hired workers in the same category.\n\nPlus de nocturnidad (night shift supplement) compensates for work performed during nighttime hours, typically defined as 22:00 to 06:00. The supplement is usually a percentage increase over the hourly rate (commonly 25% to 50% depending on the collective agreement) or a fixed amount per night hour worked. Plus de festividad (holiday work supplement) compensates for work on official public holidays, typically paid at 150% to 200% of normal hourly rate. Plus de turnicidad or plus de partido (split shift supplement) compensates employees who work split shifts (common in hospitality: e.g., 11:00-16:00 and 20:00-23:00), recognizing the inconvenience of having working hours divided across the day."
+        },
+        {
+          "heading": "2.2 Overtime and Additional Hours",
+          "content": "Horas extraordinarias (overtime hours) are hours worked beyond the ordinary working day, subject to legal and conventional limits (maximum 80 overtime hours per year unless force majeure). Overtime must be compensated either with increased pay (typically 175% of the normal hourly rate per many hospitality collective agreements) or with equivalent time off (descanso compensatorio) taken within four months. Your payroll should clearly show the number of overtime hours worked and the payment or compensation method.\n\nFor part-time employees, horas complementarias (complementary hours) are additional hours beyond the contracted part-time schedule but within full-time limits. These are paid at the normal hourly rate, not overtime rate. It is important that your payroll separately identifies regular hours, complementary hours, and any overtime to verify correct payment rates."
+        },
+        {
+          "heading": "2.3 Tips and Service Charges",
+          "content": "Tips (propinas) can be handled in various ways depending on workplace policy. In some establishments, tips are kept entirely by employees and not declared to the employer — in this case, technically employees are responsible for declaring tip income on their personal tax returns, though enforcement is limited. In other establishments, particularly where tips are pooled or where service charges are added to bills, the employer may include tip income in the payroll.\n\nWhen tips are included in payroll, they appear as a line item in gross earnings and are subject to Social Security contributions and income tax withholding. This increases your official earnings for Social Security purposes (affecting unemployment and pension benefits) but also increases deductions. Some collective agreements establish minimum hourly rates excluding tips, with actual take-home pay intended to be higher once tips are included. Understanding how tips are treated in your workplace and reflected (or not reflected) in your payroll is important for assessing your true compensation and tax obligations."
+        }
+      ]
+    },
+    {
+      "heading": "3. Social Security Contributions",
+      "content": "Social Security (Seguridad Social) contributions fund Spain's comprehensive social insurance system, providing healthcare, pension, unemployment benefits, sick leave, maternity/paternity leave, and other protections. Both employers and employees contribute, though the employer's share is much larger (approximately 29.9% of gross salary) while the employee contributes approximately 6.35%. Your payroll only shows your employee contribution, but you should be aware that the employer is making substantial additional contributions on your behalf.\n\nYour Social Security contribution is calculated on your base de cotización (contribution base), which is generally your gross wage earnings up to legal maximum and minimum limits (bases máximas and mínimas) that vary by professional category. For most hospitality workers in 2026, the contribution base minimum is approximately €1,323 per month and the maximum is €4,720.50 per month. Earnings above the maximum do not increase contributions but also do not increase unemployment or pension benefits proportionally.",
+      "subsections": [
+        {
+          "heading": "3.1 Components of Social Security Contribution",
+          "content": "Your total employee Social Security contribution of approximately 6.35% is divided among several insurance funds. Contingencias comunes (common contingencies, primarily pension and healthcare) accounts for approximately 4.70% of your contribution base. Desempleo (unemployment insurance) accounts for approximately 1.55% for permanent contracts (1.60% for fixed-term contracts). Formación profesional (vocational training) accounts for approximately 0.10%.\n\nYour payroll should show each component separately or may show a combined total. The rates are set by law and change only through regulatory amendments. If you notice that your Social Security contribution percentage is significantly different from these figures, it may indicate a calculation error or, in some cases, that you are in a special contribution regime (e.g., artists, professional athletes) with different rates."
+        },
+        {
+          "heading": "3.2 Verification and Vida Laboral",
+          "content": "It is important to verify that your employer is actually making Social Security contributions on your behalf, not just deducting them from your pay. The way to verify this is through your informe de vida laboral (working life report), an official document issued by Social Security showing all periods you have been registered as an employee, the companies you worked for, contribution bases, and total contributions. You can obtain your vida laboral online through the Social Security website or app (Importass, cl@ve), at Social Security offices, or at authorized points.\n\nCheck your vida laboral at least annually, particularly after changing jobs or if you have any reason to doubt your employer's compliance. Discrepancies between what your payroll shows and what Social Security has recorded may indicate that your employer is deducting contributions but not paying them to Social Security (a serious fraud) or that you have been registered under an incorrect category or contribution base. Any discrepancies should be investigated immediately and, if not resolved by the employer, reported to Social Security and the labor inspectorate."
+        },
+        {
+          "heading": "3.3 Impact on Benefits",
+          "content": "Your Social Security contributions directly determine your eligibility and benefit amounts for unemployment (desempleo or paro), contributory pension (pensión contributiva), sick leave payments (incapacidad temporal), and maternity/paternity leave benefits. Higher contribution bases result in higher benefit amounts, subject to maximums. The number of months or years you have contributed determines eligibility for benefits — for example, unemployment benefits generally require at least 12 months of contributions in the previous six years.\n\nThis is why accurate Social Security registration and contribution are so important. Workers in irregular employment situations (unregistered, registered at artificially low contribution bases, or registered only for part of their actual working time) may find themselves ineligible for benefits or receiving far less than they expected when they need them. Ensuring that your payroll correctly reflects your actual earnings and that contributions are being made properly protects your future financial security."
+        }
+      ]
+    },
+    {
+      "heading": "4. Income Tax Withholding (IRPF)",
+      "content": "Retención del IRPF (Personal Income Tax withholding) is an advance payment of your annual income tax obligation. The amount withheld from each paycheck is an estimate based on your expected annual income and personal situation. Unlike Social Security contributions, which are a fixed percentage for all employees, IRPF withholding percentages vary significantly between individuals based on factors declared on Form 145 (Modelo 145) that you provide to your employer.\n\nKey factors affecting your IRPF withholding percentage include your expected annual income (higher income = higher withholding percentage), personal situation (single, married, number of dependent children or other family members), whether you have a spouse and whether they work, special circumstances such as disabilities (your own or dependents), and whether you have a mortgage with deduction rights. Based on these factors, the tax agency provides employers with tables and calculators to determine each employee's withholding percentage.",
+      "subsections": [
+        {
+          "heading": "4.1 Form 145 and Withholding Percentage",
+          "content": "When you begin employment, your employer should provide Form 145 (Modelo 145) for you to complete, declaring your personal and family situation. This form includes information about your marital status, number of children under 25 or with disabilities, other dependent family members, whether your spouse works and their income, any disabilities you or your family members have, and whether you claim mortgage deduction. Based on this information, your employer calculates your withholding percentage.\n\nIf your personal situation changes (marriage, birth of child, divorce, change in spouse's employment status, acquisition or payoff of mortgage), you should submit an updated Form 145 to adjust your withholding. Having too little withheld during the year will result in owing additional tax when you file your annual return; having too much withheld means you are unnecessarily reducing your monthly take-home pay and will receive a refund later. The goal is to have withholding approximately match your actual annual tax liability."
+        },
+        {
+          "heading": "4.2 Understanding Withholding Amounts",
+          "content": "IRPF withholding percentages for hospitality workers typically range from 0% to 20% depending on income level and personal situation. Low-income workers (near minimum wage) with dependents may have 0% withholding because their annual income will fall below taxable thresholds once standard deductions and family minimums are applied. Single workers with middle incomes and no dependents might have withholding percentages of 8% to 15%. Higher-income workers (managers, head chefs) might have withholding percentages of 15% to 25% or more.\n\nYour payroll shows both the withholding percentage applied and the actual amount withheld. If you believe your withholding percentage is incorrect, first verify that your employer has your current Form 145 information. If the form is correct but withholding seems wrong, you can use the tax agency's online calculators to estimate what your withholding should be. Significant discrepancies may indicate calculation errors that should be corrected."
+        },
+        {
+          "heading": "4.3 Annual Tax Return and Reconciliation",
+          "content": "Between April and June each year, most workers must file an annual income tax return (declaración de la renta, Modelo 100) for the previous calendar year. This return calculates your actual tax liability based on all income received, applies all deductions and credits you are entitled to, and compares the result to the amount already withheld from your paychecks. If withholding exceeded your actual liability, you receive a refund (resultado a devolver); if withholding was less than your actual liability, you owe additional payment (resultado a ingresar).\n\nYour employer provides you with a certificate (certificado de retenciones, Modelo 190) showing total annual gross income and total IRPF withheld, which you use to complete your tax return. Some workers are exempt from filing a return if they have a single employer, earnings below approximately €22,000 per year, and withholding was calculated correctly. However, filing is often beneficial even when not required, as you may be entitled to refunds from deductions or credits not reflected in withholding. Understanding how withholding during the year affects your annual tax situation helps you plan financially and avoid surprises."
+        }
+      ]
+    },
+    {
+      "heading": "5. Verifying Your Payroll and Detecting Errors",
+      "content": "While most employers process payroll accurately and in good faith, errors do occur. Common payroll mistakes in hospitality include incorrect calculation of hours worked (particularly overtime or split shifts), failure to apply correct collective agreement rates for professional category, incorrect calculation of supplements such as night work or holiday pay, errors in Social Security contribution or IRPF withholding calculations, and failure to include extra salary payments or prorate them correctly. More serious issues include deliberate wage theft such as paying less than legal minimum, not paying for all hours worked, or deducting Social Security contributions without actually paying them to Social Security.\n\nSystematically verifying your payroll each month, and raising discrepancies promptly, protects your earnings and your Social Security benefits. Keep copies of all payrolls, employment contracts, and communications about salary and working conditions. If you identify an error, first approach your employer or human resources department calmly with specific information about the discrepancy. Most honest mistakes can be corrected quickly through internal procedures. If the employer refuses to correct the error or if you suspect deliberate underpayment, escalation to labor authorities may be necessary.",
+      "subsections": [
+        {
+          "heading": "5.1 Monthly Payroll Verification Checklist",
+          "content": "Each month when you receive your payroll, verify several key elements. Check that your identification information is correct (name, Social Security number, professional category). Verify that your base salary matches the minimum for your category in the applicable collective agreement — if you are unsure, your union or the labor ministry website can provide collective agreement texts. Check that all hours worked are reflected: count your actual shifts and hours against what the payroll shows, particularly overtime, holiday work, and night shifts.\n\nVerify that all applicable supplements are included: seniority if you are entitled, split shift supplement if you work split shifts, night shift supplement for night hours, holiday supplement for work on public holidays. Check that Social Security contributions are approximately 6.35% of your gross wage earnings. Verify that your IRPF withholding percentage matches what you expect based on your Form 145 situation. Finally, calculate manually: gross earnings minus deductions should equal net pay shown on payroll. Even if you do not detect specific errors, this monthly verification habit familiarizes you with your payroll structure and helps you notice anomalies quickly."
+        },
+        {
+          "heading": "5.2 Addressing Payroll Discrepancies",
+          "content": "If you identify a potential error, gather supporting information before approaching your employer. This might include your own record of hours worked, time recording logs or sign-in sheets, the relevant collective agreement provisions showing correct pay rates, previous payrolls showing correct treatment of similar situations, or calculations demonstrating the discrepancy. Approach your immediate supervisor, human resources department, or payroll administrator calmly and professionally, providing specific information about the suspected error.\n\nHonest errors are usually corrected quickly, often by adjusting the following month's payroll. Request written confirmation of the correction and verify that the subsequent payroll includes the adjustment. If the employer denies any error or refuses to correct it, request a written explanation of their position. This documentation becomes important if you need to escalate the dispute. Keep in mind that signing your payroll confirms receipt but does not constitute agreement with its contents — you can sign and still dispute incorrect amounts."
+        },
+        {
+          "heading": "5.3 Formal Claims for Unpaid Wages",
+          "content": "If internal procedures do not resolve the wage dispute, you have several escalation options. You can file a complaint with the Labor and Social Security Inspectorate, which has authority to investigate wage violations and impose sanctions on non-compliant employers. The inspectorate can order the employer to pay unpaid wages, though their primary function is administrative sanctions rather than recovering individual payments.\n\nFor direct recovery of unpaid wages, you can file a claim in labor court (demanda por reclamación de cantidad). Labor court procedures in Spain are relatively accessible and quick. You present your claim with supporting evidence (payrolls, contracts, time records, collective agreement provisions), the employer responds, a hearing is held within weeks or a few months, and the judge issues a decision. If you win, the court orders the employer to pay the unpaid wages plus interest. Legal advice from a lawyer or union representative is advisable for court claims, though not mandatory. Many unions provide free legal representation for members in wage disputes."
+        }
+      ]
+    },
+    {
+      "heading": "6. Special Situations and Considerations",
+      "content": "Several special situations affect how payroll is calculated and what appears on your nómina. Understanding these situations helps you verify that your payroll correctly reflects your specific circumstances. Part-time workers have payrolls calculated pro rata based on their actual working hours compared to full-time hours, with base salary and supplements proportionally reduced. Seasonal workers on discontinuous permanent contracts receive payroll only during active work periods and should verify that seniority calculations correctly account for all previous active periods.\n\nWorkers on sick leave (incapacidad temporal) receive sick leave benefits from Social Security (after a three-day waiting period), usually processed through the employer who then claims reimbursement. Your payroll during sick leave should show a different structure, with sick leave benefit payments instead of normal salary. Workers on maternity/paternity leave receive Social Security benefits at 100% of their contribution base, processed similarly. Understanding how these special situations affect payroll prevents confusion and helps you verify that benefits are being calculated and paid correctly.",
+      "subsections": [
+        {
+          "heading": "6.1 Partial Unemployment and ERTE",
+          "content": "During periods when your employer implements a partial suspension of employment or temporary reduction of working hours (ERTE - Expediente de Regulación Temporal de Empleo), your payroll structure changes significantly. You receive partial salary from your employer for the hours you actually work, plus partial unemployment benefits from Social Security for the hours not worked. Your payroll should clearly show the reduced working hours, proportionally reduced salary, and the unemployment benefit component.\n\nWhile on ERTE, your Social Security contributions continue (both employer and employee shares) based on the theoretical full-time salary you would have earned without the ERTE, even though you are actually receiving less. This protects your future pension and unemployment benefit rights. Verify that your payroll during ERTE correctly reflects the hour reduction, the proportional salary, the unemployment benefit, and that Social Security contributions are being maintained at the pre-ERTE level."
+        },
+        {
+          "heading": "6.2 Final Settlement Upon Contract Termination",
+          "content": "When your employment ends, you receive a final settlement payroll (finiquito) in addition to your regular final month payroll. The finiquito includes any unpaid salary for worked days in the final partial month, proportional payment for accrued but untaken vacation days (calculated as 2.5 days per month worked, or the amount specified in the collective agreement), proportional extra salary payments if not already prorated, and any other amounts owed such as pending expense reimbursements or unused rest days compensation.\n\nIf the termination is dismissal, the finiquito may also include severance compensation (indemnización) if applicable. Review the finiquito carefully before signing to ensure all amounts are correct. Signing the finiquito without reservations can limit your ability to later claim additional amounts, so if you dispute any calculation, note your objections in writing on the finiquito document or in an accompanying communication before signing. Many workers benefit from union or legal advice when reviewing finiquito documents, particularly if the termination was contested."
+        },
+        {
+          "heading": "6.3 Extra Payments and Proration",
+          "content": "The two extra salary payments (pagas extraordinarias) can be structured in two ways. Traditional payment is two lump sums (usually in June/July and December), each equal to one month's base salary plus certain supplements. When paid this way, your regular monthly payrolls show only base salary and supplements, then June/July and December payrolls include an additional line item for the extra payment, significantly increasing those months' gross earnings.\n\nProrated payment (prorrateo) divides the two extra payments across twelve months, including one-twelfth of each extra payment in every monthly payroll. This results in more consistent monthly income but slightly higher tax withholding (since your regular monthly gross is higher). Your employment contract or applicable collective agreement specifies which system applies. If extra payments are prorated, your monthly payroll should show a specific line item for prorrateo de pagas extras. If traditional, your June/July and December payrolls should clearly show the extra payment. Workers who leave employment mid-year are entitled to proportional extra payment for the months worked."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Monthly Payroll Verification Checklist",
+      "items": [
+        "Verify your personal identification information: name, Social Security number, NIF/NIE, professional category",
+        "Check that base salary matches the minimum for your professional category in the applicable collective agreement",
+        "Count your actual working hours and verify they match the hours reflected in the payroll",
+        "Verify that overtime hours (if any) are correctly counted and paid at the collective agreement rate",
+        "Check that night shift supplement is included for all hours worked between 22:00-06:00",
+        "Verify holiday work supplement for any work on official public holidays",
+        "Check that seniority supplement is included if you are entitled based on years of service",
+        "Verify that Social Security contribution is approximately 6.35% of gross wage earnings",
+        "Check that IRPF withholding percentage matches your Form 145 personal situation",
+        "Manually calculate: gross earnings minus deductions should equal net pay",
+        "Verify that cumulative year-to-date figures are increasing correctly month by month",
+        "Keep a copy of the payroll securely filed with your other employment documents"
+      ]
+    },
+    {
+      "title": "Annual Payroll and Benefits Review Checklist",
+      "items": [
+        "Request and review your informe de vida laboral to verify Social Security registration and contributions",
+        "Verify that all employment periods are correctly recorded in your vida laboral",
+        "Check that contribution bases in vida laboral match gross salaries in your payrolls",
+        "Review all twelve payrolls for the year for any discrepancies or errors",
+        "Calculate total annual gross earnings and compare to employer's certificate (Modelo 190)",
+        "Verify that extra salary payments were paid (either two lump sums or prorated across twelve months)",
+        "Review IRPF withholding: did total withholding seem appropriate for your annual income?",
+        "Prepare documents for annual tax return: all payrolls, Modelo 190, other income sources if any",
+        "File annual tax return (April-June) and verify that result matches expectations",
+        "If tax return shows significant refund or payment, consider adjusting Form 145 for current year",
+        "Review whether any changes in personal situation (marriage, children, mortgage) should update your Form 145",
+        "If you changed jobs during the year, ensure you have documentation from all employers"
+      ]
+    },
+    {
+      "title": "Payroll Error Resolution Checklist",
+      "items": [
+        "Document the specific error: what is incorrect, what the amount should be, what it actually shows",
+        "Gather supporting evidence: time records, collective agreement provisions, previous correct payrolls, calculations",
+        "Raise the issue with your immediate supervisor, HR department, or payroll administrator",
+        "Provide specific information and supporting documents in a professional manner",
+        "Request written confirmation of the error acknowledgment and expected correction timeline",
+        "Verify that the following month's payroll includes the correction or adjustment",
+        "If the employer denies an error, request written explanation of their calculation",
+        "If the error is not resolved internally, consult with union representative or labor lawyer",
+        "Consider filing a complaint with the Labor Inspectorate if wage violations are systematic",
+        "If necessary, file a labor court claim for unpaid wages with legal advice",
+        "Keep all documentation: correspondence, payrolls, time records, collective agreement, court filings",
+        "Be aware of time limits: wage claims generally must be filed within one year of when payment was due"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Maintain your own record of hours worked each day using a calendar or app, so you can verify payroll accuracy",
+    "Create a personal file with copies of all payrolls, employment contract, collective agreement, and employment-related communications",
+    "Review your payroll carefully each month within a few days of receipt while details are fresh in your memory",
+    "Obtain and review your vida laboral at least once per year to verify Social Security contributions are being made properly",
+    "Update your Form 145 promptly when your personal situation changes to ensure IRPF withholding remains accurate",
+    "If you do not understand a component of your payroll, ask your employer or consult a union representative rather than ignoring it",
+    "Never sign a finiquito upon employment termination without carefully reviewing all calculations or consulting an advisor",
+    "Keep payrolls and employment documents for at least four years (the legal retention period for labor claims)"
+  ],
+  "glossary": {
+    "Nómina": "Payroll — the monthly document showing gross earnings, deductions, and net pay",
+    "Salario Base": "Base salary — the minimum monthly salary for your professional category per the collective agreement",
+    "Complementos": "Supplements — additional payments beyond base salary for factors such as seniority, overtime, or special working conditions",
+    "Devengos": "Earned income — the section of the payroll showing all components of gross remuneration",
+    "Deducciones": "Deductions — amounts subtracted from gross earnings including Social Security contributions and income tax withholding",
+    "Líquido a Percibir": "Net payable — the final amount paid to you after all deductions (take-home pay)",
+    "Seguridad Social": "Social Security — the system of contributions funding healthcare, pensions, unemployment, and other social insurance",
+    "Base de Cotización": "Contribution base — the amount of earnings on which Social Security contributions are calculated",
+    "IRPF": "Impuesto sobre la Renta de las Personas Físicas — Personal Income Tax; the payroll shows advance withholding (retención)",
+    "Pagas Extraordinarias": "Extra salary payments — two additional monthly salary payments per year, paid either as lump sums or prorated across twelve months",
+    "Vida Laboral": "Working life report — an official Social Security document showing all employment periods and contributions",
+    "Finiquito": "Final settlement — the final payroll upon employment termination including unpaid salary, accrued vacation, and any severance"
+  }
+}

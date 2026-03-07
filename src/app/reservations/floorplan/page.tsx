@@ -24,6 +24,7 @@ export default function FloorPlanEditorPage() {
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false)
   const [isGeneratingQR, setIsGeneratingQR] = useState(false)
   const [isDownloadingPDF, setIsDownloadingPDF] = useState(false)
+  const [activeSessionsByTableId, setActiveSessionsByTableId] = useState<Record<string, number>>({})
 
   const supabase = createClient()
   const { toast } = useToast()
@@ -93,6 +94,25 @@ export default function FloorPlanEditorPage() {
     }))
 
     setTables(tablesData)
+
+    // Fetch active table sessions for order status badges (Feature S11.C1)
+    const tableIds = tablesData.map((t) => t.id)
+    if (tableIds.length > 0) {
+      const { data: sessions } = await supabase
+        .from('table_sessions')
+        .select('table_id, party_size')
+        .in('table_id', tableIds)
+        .is('departed_at', null)
+
+      const sessionMap: Record<string, number> = {}
+      for (const session of sessions || []) {
+        sessionMap[session.table_id] = session.party_size
+      }
+      setActiveSessionsByTableId(sessionMap)
+    } else {
+      setActiveSessionsByTableId({})
+    }
+
     setIsLoading(false)
     setHasUnsavedChanges(false)
   }, [activeSection, supabase, toast])
@@ -485,6 +505,7 @@ export default function FloorPlanEditorPage() {
               onTableSelect={handleTableSelect}
               selectedTable={selectedTable}
               className="w-full h-full"
+              activeSessionsByTableId={activeSessionsByTableId}
             />
           )}
         </div>

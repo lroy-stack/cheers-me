@@ -253,13 +253,19 @@ async function findAlternativeTimes(
   const requestedHour = parseInt(requestedTime.split(':')[0])
   const requestedMinute = parseInt(requestedTime.split(':')[1])
 
-  // Check slots 30 minutes before and after
+  // Check slots 30 minutes before and after (fix: handle minute underflow/overflow)
+  const minusTotalMinutes = requestedHour * 60 + requestedMinute - 30
+  const plusTotalMinutes = requestedHour * 60 + requestedMinute + 30
   const timesToCheck = [
-    `${String(requestedHour).padStart(2, '0')}:${String(requestedMinute - 30).padStart(2, '0')}`,
-    `${String(requestedHour).padStart(2, '0')}:${String(requestedMinute + 30).padStart(2, '0')}`,
+    minusTotalMinutes >= 0
+      ? `${String(Math.floor(minusTotalMinutes / 60)).padStart(2, '0')}:${String(minusTotalMinutes % 60).padStart(2, '0')}`
+      : null,
+    plusTotalMinutes < 24 * 60
+      ? `${String(Math.floor(plusTotalMinutes / 60)).padStart(2, '0')}:${String(plusTotalMinutes % 60).padStart(2, '0')}`
+      : null,
     `${String(requestedHour - 1).padStart(2, '0')}:${String(requestedMinute).padStart(2, '0')}`,
     `${String(requestedHour + 1).padStart(2, '0')}:${String(requestedMinute).padStart(2, '0')}`,
-  ]
+  ].filter(Boolean) as string[]
 
   for (const timeToCheck of timesToCheck) {
     // Validate time format

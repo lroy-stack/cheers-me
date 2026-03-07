@@ -167,26 +167,36 @@ export async function POST(request: NextRequest) {
   // Trigger AI analysis if low rating or anomaly
   const shouldAnalyze = rating <= 2 || anomaly_type
   if (shouldAnalyze) {
-    try {
-      // Call AI analysis endpoint (fire and forget, don't wait)
-      fetch(`${request.nextUrl.origin}/api/ai/analyze-shift-feedback`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          survey_id: survey.id,
-          rating,
-          feedback,
-          anomaly_type,
-          anomaly_reason,
-          anomaly_comment,
-          worked_minutes: workedMinutes,
-          variance_minutes: varianceMinutes,
-          break_variance_minutes: breakVarianceMinutes,
-        }),
-      }).catch((e) => console.error('Failed to trigger AI analysis:', e))
-    } catch (e) {
-      console.error('Failed to trigger AI analysis:', e)
+    // Fire and forget with 1 retry (Feature S12.A4)
+    const triggerAI = async (attempt = 1) => {
+      try {
+        const res = await fetch(`${request.nextUrl.origin}/api/ai/analyze-shift-feedback`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            survey_id: survey.id,
+            rating,
+            feedback,
+            anomaly_type,
+            anomaly_reason,
+            anomaly_comment,
+            worked_minutes: workedMinutes,
+            variance_minutes: varianceMinutes,
+            break_variance_minutes: breakVarianceMinutes,
+          }),
+        })
+        if (!res.ok && attempt < 2) {
+          await triggerAI(2)
+        }
+      } catch (e) {
+        if (attempt < 2) {
+          await triggerAI(2)
+        } else {
+          console.error('Failed to trigger AI analysis after retry:', e)
+        }
+      }
     }
+    triggerAI().catch((e) => console.error('AI analysis trigger error:', e))
 
     // Create notification for managers
     const { data: managers } = await supabase

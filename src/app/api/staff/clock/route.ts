@@ -59,6 +59,8 @@ export async function GET(request: NextRequest) {
   const startDate = searchParams.get('start_date')
   const endDate = searchParams.get('end_date')
   const format = searchParams.get('format')
+  const limit = Math.min(parseInt(searchParams.get('limit') || '50'), 200)
+  const offset = parseInt(searchParams.get('offset') || '0')
 
   // Get current user's employee record
   const { data: myEmployee } = await supabase
@@ -104,6 +106,7 @@ export async function GET(request: NextRequest) {
       breaks:clock_breaks(*)
     `)
     .order('clock_in_time', { ascending: false })
+    .range(offset, offset + limit - 1)
 
   // Apply filters
   if (effectiveEmployeeId) {
@@ -149,7 +152,14 @@ export async function GET(request: NextRequest) {
     })
   }
 
-  return NextResponse.json(clockRecords)
+  return NextResponse.json({
+    data: clockRecords,
+    pagination: {
+      limit,
+      offset,
+      count: clockRecords?.length ?? 0,
+    },
+  })
 }
 
 /**
@@ -243,6 +253,20 @@ export async function POST(request: NextRequest) {
       }
     }
 
+    // Capture device/IP metadata (Feature S12.A5)
+    const ip =
+      (request as NextRequest).headers.get('x-forwarded-for')?.split(',')[0].trim() ||
+      (request as NextRequest).headers.get('x-real-ip') ||
+      null
+    const userAgent = (request as NextRequest).headers.get('user-agent') || null
+    const deviceMetadata: Record<string, unknown> = {
+      ...(ip ? { ip } : {}),
+      ...(userAgent ? { user_agent: userAgent } : {}),
+    }
+
+    // Merge geolocation + device metadata
+    const combinedMetadata = { ...geolocationMetadata, ...deviceMetadata }
+
     // Create clock-in record with optional metadata
     const { data: clockRecord, error } = await supabase
       .from('clock_in_out')
@@ -250,7 +274,7 @@ export async function POST(request: NextRequest) {
         employee_id: employeeRecord.id,
         shift_id: validation.data.shift_id,
         clock_in_time: new Date().toISOString(),
-        ...(Object.keys(geolocationMetadata).length > 0 ? { metadata: geolocationMetadata } : {}),
+        ...(Object.keys(combinedMetadata).length > 0 ? { metadata: combinedMetadata } : {}),
       })
       .select()
       .single()

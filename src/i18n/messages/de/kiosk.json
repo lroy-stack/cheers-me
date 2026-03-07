@@ -67,6 +67,9 @@
     "feedbackPlaceholder": "Was lief gut? Was könnte verbessert werden?",
     "charsRemaining": "{count} Zeichen übrig",
     "thankYou": "Danke!",
-    "thankYouMessage": "Dein Feedback hilft uns besser zu werden."
+    "thankYouMessage": "Dein Feedback hilft uns besser zu werden.",
+    "errorTitle": "Übermittlung fehlgeschlagen",
+    "errorMessage": "Wir konnten dein Feedback nicht speichern. Bitte versuche es erneut.",
+    "retry": "Erneut versuchen"
   }
 }

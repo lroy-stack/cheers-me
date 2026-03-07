@@ -111,9 +111,10 @@ export async function POST(request: NextRequest) {
 
   try {
     const body = await request.json()
-    const { message, history } = body as {
+    const { message, history, locale } = body as {
       message: string
       history?: { role: string; content: string }[]
+      locale?: string
     }
 
     if (!message || typeof message !== 'string') {
@@ -122,6 +123,16 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       )
     }
+
+    // Locale-specific language instruction (Feature S12.B2)
+    const localeLanguageMap: Record<string, string> = {
+      nl: 'Dutch (Nederlands)',
+      es: 'Spanish (Español)',
+      de: 'German (Deutsch)',
+      en: 'English',
+    }
+    const responseLanguage = localeLanguageMap[locale || 'en'] || 'English'
+    const localizedSystemPrompt = `${SYSTEM_PROMPT}\n\n- IMPORTANT: Always respond in ${responseLanguage}`
 
     // If no ANTHROPIC_API_KEY, use mock responses
     const apiKey = process.env.ANTHROPIC_API_KEY
@@ -145,7 +156,7 @@ export async function POST(request: NextRequest) {
     const response = await client.messages.create({
       model: 'claude-haiku-4-5-20251001',
       max_tokens: 200,
-      system: SYSTEM_PROMPT,
+      system: localizedSystemPrompt,
       messages,
     })
 

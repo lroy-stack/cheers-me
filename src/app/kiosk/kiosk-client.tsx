@@ -15,7 +15,12 @@ import { Button } from '@/components/ui/button'
 
 type KioskState = 'IDLE' | 'PIN_ENTRY' | 'TURNSTILE' | 'LOADING' | 'DASHBOARD' | 'SUMMARY' | 'SURVEY'
 
-export function KioskClient() {
+interface KioskClientProps {
+  standardBreakMinutes?: number
+  autoLockSeconds?: number
+}
+
+export function KioskClient({ standardBreakMinutes = 30, autoLockSeconds = 30 }: KioskClientProps) {
   const t = useTranslations('kiosk')
   const [state, setState] = useState<KioskState>('IDLE')
   const [employeeStatus, setEmployeeStatus] = useState<KioskEmployeeStatus | null>(null)
@@ -248,6 +253,7 @@ export function KioskClient() {
               onBack={goToIdle}
               onClockOut={handleClockOut}
               onStatusUpdate={handleStatusUpdate}
+              autoLockSeconds={autoLockSeconds}
             />
           </motion.div>
         )}
@@ -287,6 +293,7 @@ export function KioskClient() {
               clockRecordId={summary.clock_record_id}
               summary={summary}
               onComplete={goToIdle}
+              standardBreakMinutes={standardBreakMinutes}
             />
           </motion.div>
         )}

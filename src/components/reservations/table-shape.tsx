@@ -16,6 +16,7 @@ interface TableShapeProps {
   isSelected?: boolean
   isDragging?: boolean
   className?: string
+  activePartySize?: number | null
 }
 
 const statusColors: Record<TableStatus, string> = {
@@ -36,6 +37,7 @@ export function TableShape({
   isSelected = false,
   isDragging = false,
   className,
+  activePartySize,
 }: TableShapeProps) {
   const baseClasses = cn(
     'flex items-center justify-center relative transition-all cursor-move',
@@ -97,7 +99,23 @@ export function TableShape({
     }
   }
 
-  return renderShape()
+  const badge =
+    activePartySize != null && status === 'occupied' ? (
+      <div
+        className="absolute -top-2 -right-2 z-20 flex items-center justify-center rounded-full bg-destructive text-destructive-foreground text-xs font-bold shadow-md"
+        style={{ minWidth: '20px', height: '20px', padding: '0 4px' }}
+        title={`${activePartySize} guests`}
+      >
+        {activePartySize}
+      </div>
+    ) : null
+
+  return (
+    <div className="relative inline-block">
+      {renderShape()}
+      {badge}
+    </div>
+  )
 }
 
 function TableContent({

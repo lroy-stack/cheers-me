@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
-import { CheckCircle } from 'lucide-react'
+import { CheckCircle, AlertCircle } from 'lucide-react'
 import type { ClockOutSummary } from '@/types'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -14,9 +14,10 @@ interface KioskShiftSurveyProps {
   clockRecordId: string
   summary: ClockOutSummary
   onComplete: () => void
+  standardBreakMinutes?: number
 }
 
-type SurveyStep = 'anomaly' | 'rating' | 'feedback' | 'submitting' | 'thankyou'
+type SurveyStep = 'anomaly' | 'rating' | 'feedback' | 'submitting' | 'thankyou' | 'error'
 
 const EMOJI_RATINGS = ['😡', '😕', '😐', '🙂', '😄']
 
@@ -25,6 +26,7 @@ export function KioskShiftSurvey({
   clockRecordId,
   summary,
   onComplete,
+  standardBreakMinutes = 30,
 }: KioskShiftSurveyProps) {
   const t = useTranslations('kiosk.survey')
   const [step, setStep] = useState<SurveyStep>('anomaly')
@@ -47,7 +49,7 @@ export function KioskShiftSurvey({
     const scheduledMinutes = endMinutes - startMinutes
 
     const variance = summary.total_minutes - scheduledMinutes
-    const breakVariance = Math.abs(summary.break_minutes - 30) // Assuming 30min standard break
+    const breakVariance = Math.abs(summary.break_minutes - standardBreakMinutes)
 
     return Math.abs(variance) > 15 || breakVariance > 15
   }
@@ -69,7 +71,7 @@ export function KioskShiftSurvey({
       return t('anomalyOvertime', { minutes: variance })
     }
 
-    const breakVariance = summary.break_minutes - 30
+    const breakVariance = summary.break_minutes - standardBreakMinutes
     if (Math.abs(breakVariance) > 15) {
       setAnomalyType('break_variance')
       if (breakVariance > 0) {
@@ -144,12 +146,12 @@ export function KioskShiftSurvey({
       if (response.ok) {
         setStep('thankyou')
       } else {
-        console.error('Survey submission failed')
-        setStep('thankyou') // Still show thank you to avoid confusing user
+        console.error('Survey submission failed', response.status)
+        setStep('error')
       }
     } catch (error) {
       console.error('Survey submission error:', error)
-      setStep('thankyou')
+      setStep('error')
     }
   }
 
@@ -331,6 +333,33 @@ export function KioskShiftSurvey({
             className="flex justify-center items-center py-20"
           >
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary" />
+          </motion.div>
+        )}
+
+        {step === 'error' && (
+          <motion.div
+            key="error"
+            variants={pageVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            transition={{ duration: 0.3 }}
+          >
+            <Card>
+              <CardContent className="text-center py-12">
+                <AlertCircle className="h-16 w-16 text-destructive mx-auto mb-4" />
+                <h2 className="text-xl font-bold mb-2">{t('errorTitle')}</h2>
+                <p className="text-muted-foreground mb-6">{t('errorMessage')}</p>
+                <div className="flex gap-2 justify-center">
+                  <Button variant="ghost" onClick={handleSkip} className="h-12 px-6">
+                    {t('skip')}
+                  </Button>
+                  <Button onClick={handleSubmit} className="h-12 px-6">
+                    {t('retry')}
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </motion.div>
         )}
 

@@ -1,0 +1,194 @@
+{
+  "title": "Oil Quality Control",
+  "legalBasis": "Royal Decree 2207/1995 on fried foods and frying oils regulation; Royal Decree 308/1983 on edible fats and oils; Royal Decree 640/2006 on HACCP implementation; EU Regulation 852/2004 on food hygiene",
+  "summary": "Frying oil quality control is essential for both food safety and food quality in hospitality establishments where deep frying is performed. Royal Decree 2207/1995 establishes specific requirements for frying oils and fried foods in Spain, including maximum limits for polar compounds (the primary indicator of oil degradation), temperature restrictions, and requirements for oil quality monitoring and documentation.\n\nAs frying oil is repeatedly heated and exposed to food, moisture, and oxygen, it undergoes chemical degradation producing polar compounds, free fatty acids, polymers, and other breakdown products. These degradation products affect food quality (taste, odor, appearance, fat absorption) and may pose health concerns at high levels. Spanish law requires that frying oil containing more than 25 percent polar compounds must be discarded and must not be used for human consumption.\n\nEffective oil quality control requires appropriate oil selection, proper frying equipment and temperature management, good operating practices including filtration and protection from contamination, regular monitoring using polar compound test kits or other methods, timely oil replacement when quality limits are exceeded, and documentation of all oil changes and test results. These controls protect customer health, maintain food quality, and demonstrate regulatory compliance during health inspections.",
+  "keyPoints": [
+    "Frying oil must be replaced when polar compound content exceeds 25 percent as required by RD 2207/1995",
+    "Frying temperature must not exceed 180°C to minimize oil degradation",
+    "Oil quality should be tested regularly using polar compound test kits or other approved methods",
+    "Oil must be filtered daily and between frying different food types to remove debris and extend oil life",
+    "Fresh oil should not be mixed with degraded oil — fully replace oil when quality limits are reached",
+    "All oil changes, test results, and monitoring activities must be documented",
+    "Used frying oil must be collected separately and disposed of through authorized waste oil collectors",
+    "Staff must be trained in correct frying practices, oil quality testing, and when to replace oil"
+  ],
+  "sections": [
+    {
+      "heading": "1. Legal Requirements for Frying Oil Quality",
+      "content": "Royal Decree 2207/1995 establishes specific regulations for establishments that fry foods for human consumption. Article 3 prohibits the use of frying oils and fats containing more than 25 percent polar compounds. This limit is based on health considerations — at higher degradation levels, oil breakdown products may include potentially harmful compounds, and the degraded oil affects food quality through excessive fat absorption, off-flavors, and poor appearance.\n\nThe regulation also establishes requirements for frying temperature (Article 4 recommends maximum 180°C), requirements for proper oil management and maintenance, prohibition of mixing fresh oil with degraded oil to reduce polar compound levels, and requirements for appropriate disposal of used oil. Food business operators must be able to demonstrate compliance through documentation of oil quality monitoring and change records.\n\nHealth inspectors can and do test frying oil during official controls. If oil is found to exceed the 25 percent polar compound limit, this constitutes a serious non-compliance that may result in immediate disposal requirements, improvement notices, and fines. Repeat violations may result in prohibition orders. Beyond legal compliance, oil quality directly affects customer satisfaction and food quality — degraded oil produces dark, greasy, bad-tasting fried foods that generate customer complaints.",
+      "subsections": [
+        {
+          "heading": "1.1 Polar Compounds — The Primary Quality Indicator",
+          "content": "Polar compounds are the primary legal and practical indicator of frying oil degradation. Fresh, unused frying oil contains approximately 3-8 percent polar compounds. As the oil is used for frying, exposure to heat, oxygen, moisture (from food), and food particles causes chemical breakdown that produces additional polar compounds including oxidized triglycerides, polymers, and free fatty acids.\n\nThe rate of polar compound formation depends on multiple factors: frying temperature (higher temperatures accelerate degradation), duration of heating, frequency of use, type of food being fried (foods with high moisture content or coatings accelerate degradation), oil composition (some oils are more stable than others), and how well the oil is maintained (filtering, protection from oxygen exposure). Under typical commercial frying conditions, oil may reach the 25 percent polar compound limit after 3-7 days of use, though this varies enormously depending on the factors above."
+        },
+        {
+          "heading": "1.2 Testing Requirements and Methods",
+          "content": "While RD 2207/1995 establishes the 25 percent polar compound limit, it does not mandate a specific testing frequency or method. However, food business operators must be able to demonstrate that oil in use complies with the limit. This implies regular testing — health authorities recommend testing at least every 2-3 days in high-volume frying operations, and daily in very high-volume or high-temperature operations.\n\nThe reference laboratory method for polar compound measurement is column chromatography, which is accurate but time-consuming and requires specialized equipment. For routine operational monitoring, establishments use rapid test methods including polar compound test kits (chemical test strips or electronic devices), total polar materials (TPM) meters (electronic devices providing immediate digital readout), and sensory evaluation combined with operational indicators (oil color, smoke, foam, viscosity). Rapid methods should be validated against laboratory analysis periodically."
+        },
+        {
+          "heading": "1.3 Temperature Management Requirements",
+          "content": "RD 2207/1995 recommends that frying temperature should not exceed 180°C. While this is framed as a recommendation rather than an absolute prohibition, exceeding 180°C significantly accelerates oil degradation and can produce potentially harmful compounds including acrolein (from glycerol breakdown) which is irritating and possibly carcinogenic. Additionally, excessive temperatures can char food surfaces while leaving interiors undercooked.\n\nFrying equipment should be fitted with accurate, reliable thermostats that prevent temperature exceeding 180°C. Thermostats should be calibrated periodically to ensure accuracy. Staff should be trained never to override temperature controls or manually increase temperature beyond recommended settings. For most fried foods, optimal frying temperatures are 160-180°C depending on the product — there is rarely justification for exceeding 180°C. Temperature monitoring and recording demonstrates compliance and helps identify equipment malfunction."
+        }
+      ]
+    },
+    {
+      "heading": "2. Oil Selection and Initial Setup",
+      "content": "The choice of frying oil affects how quickly the oil degrades, the quality of fried food, and operational costs. Not all frying oils are equal — some are significantly more stable and suitable for high-temperature frying than others. Selection should be based on smoke point (the temperature at which oil begins to smoke and break down rapidly), oxidative stability (resistance to degradation from heat and oxygen), flavor neutrality (unless a specific flavor is desired), and cost considerations.\n\nHigh-quality frying oils designed for commercial use are formulated to resist degradation and maintain quality through extended frying cycles. While premium oils cost more per liter than standard vegetable oils, they last significantly longer, produce better quality fried food, and may result in lower total cost when oil replacement frequency and food quality are factored in. False economy in oil selection can result in frequent oil changes, poor food quality, and customer complaints.",
+      "subsections": [
+        {
+          "heading": "2.1 Suitable Oils for Deep Frying",
+          "content": "Oils suitable for commercial deep frying include high-oleic sunflower oil (excellent stability, high smoke point around 230°C, increasingly popular in Spanish hospitality), refined olive oil and olive pomace oil (good stability, higher cost, imparts characteristic flavor), palm oil and blends (very stable, concerns about sustainability and health effects have reduced use), rapeseed/canola oil (good stability, neutral flavor, cost-effective), and specialized commercial frying oils (blends formulated for stability and performance).\n\nOils to avoid for deep frying include unrefined or virgin oils (low smoke points, break down rapidly), butter and animal fats (break down rapidly at frying temperatures, health concerns), oils high in polyunsaturated fats such as standard sunflower, corn, or soybean oil (less stable than high-oleic or monounsaturated alternatives), and any oils past their use-by date or showing signs of rancidity. Consult with oil suppliers about products specifically formulated for commercial frying — these often include natural antioxidants to extend oil life."
+        },
+        {
+          "heading": "2.2 Equipment Requirements",
+          "content": "Professional deep fryers should have accurate thermostatic control maintaining temperature within ±5°C of setpoint, adequate capacity for the volume of food being fried (overcrowding lowers temperature excessively), efficient heating elements for rapid temperature recovery after food is added, cold zones below the heating elements where food particles settle and remain relatively cool (preventing burning), effective filtration systems (built-in or separate), and safety features including temperature limit cutouts preventing overheating.\n\nFryers should be positioned away from sources of excess heat or airflow that can affect temperature control. Adequate ventilation with effective extraction hoods is essential to remove frying vapors and maintain air quality. The work area around fryers should allow safe operation including space to safely lower and raise frying baskets, safe positioning of oil containers for filling and draining, and clear access to emergency shut-off controls and fire suppression equipment."
+        },
+        {
+          "heading": "2.3 Initial Oil Filling and Conditioning",
+          "content": "When filling fryers with fresh oil, ensure the fryer is clean and completely dry — water residue will cause violent spattering when the oil is heated and will accelerate oil degradation. Fill to the manufacturer's recommended level — overfilling can cause overflow when food is added, while underfilling may expose heating elements causing overheating. Some operators condition new oil by heating to frying temperature and holding for 30-60 minutes before first use, which stabilizes the oil.\n\nDocument the date of initial fill and the volume of oil used. This provides a baseline for tracking oil usage and calculating replacement frequency. Never mix different types of oil (e.g., olive and sunflower) as they have different characteristics and may interact unpredictably. If changing from one oil type to another, drain the fryer completely, clean thoroughly, and refill with the new oil type — do not mix old and new oil types."
+        }
+      ]
+    },
+    {
+      "heading": "3. Operational Practices to Extend Oil Life",
+      "content": "How oil is used and maintained during operations dramatically affects its lifespan and quality. Good frying practices can extend oil life by 50-100 percent compared to poor practices, delivering significant cost savings and better food quality. Key principles include maintaining appropriate frying temperature, avoiding overheating, minimizing exposure to air and light, filtering regularly to remove food particles and carbon buildup, protecting oil from moisture and salt, and avoiding contamination from different food types.\n\nConsistent, disciplined operational practices require staff training, clear procedures, and management oversight. The investment in proper oil management pays dividends through reduced oil costs, better food quality, and improved regulatory compliance. Degraded oil not only violates regulations but produces inferior food that damages customer satisfaction and business reputation.",
+      "subsections": [
+        {
+          "heading": "3.1 Temperature Control During Frying",
+          "content": "Maintain frying temperature at the optimal level for the food being fried, typically 160-180°C. Different foods require different temperatures: delicate foods like fish may fry best at 160-165°C, while denser foods like potato chips may require 175-180°C. Avoid exceeding 180°C — the incremental improvement in frying speed is far outweighed by the accelerated oil degradation and increased risk of burning food exteriors.\n\nWhen food is added to the fryer, oil temperature drops. Load fryers appropriately — avoid overcrowding which causes excessive temperature drop and results in greasy, poorly cooked food. Allow temperature to recover fully between batches. During slow periods, reduce fryer temperature to a holding setting (around 100-120°C) rather than full frying temperature to minimize degradation while maintaining readiness for service. Turn fryers off completely during extended breaks or at end of service."
+        },
+        {
+          "heading": "3.2 Filtration and Particle Removal",
+          "content": "Food particles and carbon deposits accumulate in frying oil, accelerating degradation and giving food an unpleasant burnt taste and dark appearance. Daily filtration using appropriate filter paper or mesh removes these particles and significantly extends oil life. Many modern fryers have built-in filtration systems that can be operated during service. Manual filtration requires cooling the oil to safe handling temperature (below 50°C), then passing it through filter paper into a clean container.\n\nIn addition to daily filtration, fryers should be cleaned completely and oil replaced when visual inspection shows excessive dark color, foam during frying, or accumulated residue that filtration cannot remove. Clean the fryer thoroughly before refilling with fresh oil — residues from degraded oil will contaminate fresh oil. Between different food types (e.g., between frying fish and frying potatoes), filter oil thoroughly or use dedicated fryers for different food categories to prevent flavor transfer."
+        },
+        {
+          "heading": "3.3 Protection from Contamination",
+          "content": "Protect frying oil from contamination by moisture, salt, cleaning chemicals, and incompatible food types. Water is the enemy of frying oil — ensure food is dried as much as practical before frying (e.g., pat dry wet-coated items), avoid splashing water into hot oil, and never attempt to clean equipment with water while oil is hot. Salt accelerates oil degradation — avoid salting food over the fryer or allowing salt to fall into the oil.\n\nCleaning chemicals must never contact frying oil. When cleaning fryers, ensure all cleaning products are completely rinsed away and surfaces are bone dry before refilling with oil. Store frying oil in sealed containers protected from light and heat when not in use. Never use the same oil for incompatible foods — fish oil should not be used for doughnuts, for example. Consider dedicating separate fryers to different food categories in high-volume operations."
+        }
+      ]
+    },
+    {
+      "heading": "4. Monitoring and Testing Oil Quality",
+      "content": "Regular monitoring and testing of oil quality enables timely replacement before the 25 percent polar compound limit is exceeded and before food quality is seriously degraded. A comprehensive monitoring program combines regular testing using polar compound test kits or meters, sensory evaluation (appearance, odor, foam, smoke), operational indicators (frying time, temperature stability, food appearance and quality), and documentation of test results and oil change decisions.\n\nThe frequency of testing should reflect the intensity of fryer use. High-volume operations frying continuously throughout service should test daily. Medium-volume operations might test every 2-3 days. Low-volume operations using fryers occasionally should test before use and at reasonable intervals. When oil is approaching the replacement point (polar compounds 20-23 percent), increase testing frequency to daily or every other day to ensure the legal limit is not exceeded.",
+      "subsections": [
+        {
+          "heading": "4.1 Polar Compound Test Kits",
+          "content": "Disposable test strips provide a simple, low-cost method for monitoring polar compounds. The strip is dipped in cooled oil (typically around 50°C — follow manufacturer instructions), held for a specified time, then compared to a color chart. The color indicates approximate polar compound level in ranges such as <15 percent (good), 15-20 percent (fair), 20-25 percent (marginal), >25 percent (replace). Test strips are consumable and relatively inexpensive, but provide only approximate results.\n\nElectronic TPM (Total Polar Materials) meters provide more accurate digital readout of polar compound levels. A probe is inserted into the oil at the specified temperature (typically around 50°C), and the device displays the polar compound percentage digitally. TPM meters require initial investment (typically €200-500) but are reusable and provide precise results. They should be calibrated periodically according to manufacturer instructions. Whichever method is used, maintain the testing equipment properly and replace consumables before expiry dates."
+        },
+        {
+          "heading": "4.2 Sensory and Operational Evaluation",
+          "content": "Experienced fryer operators can assess oil condition through sensory evaluation and operational indicators. Visual signs of degraded oil include dark brown or black color (fresh oil is light yellow to clear), excessive foam or bubbles that persist during frying, visible residue or particles even after filtration, and increased viscosity (thick, syrupy texture). Olfactory signs include acrid, burnt, or rancid odors, or smoke production at normal frying temperatures.\n\nOperational indicators of degraded oil include food that absorbs excessive oil (comes out greasy), food that develops very dark color quickly, food with burnt or off-flavors, and food that requires longer frying time to cook properly. While sensory evaluation is useful for experienced staff, it should not replace objective testing — oils can exceed polar compound limits before sensory changes are obvious, and sensory assessment is subjective and variable between individuals."
+        },
+        {
+          "heading": "4.3 Documentation of Test Results",
+          "content": "All oil quality tests should be documented in a frying oil quality log. The log should record: date and time of test, identification of fryer or oil batch, test method used (test strip brand or TPM meter), test result (polar compound percentage or color rating), visual and sensory observations, any corrective actions taken (filtration, partial top-up, full replacement), and name or initials of person performing test.\n\nDocumentation serves multiple purposes: it provides evidence of compliance with legal requirements, it enables trend analysis to optimize oil replacement schedules, it helps identify operational practices or equipment issues affecting oil life, and it demonstrates due diligence during health inspections. The log should be kept with other HACCP documentation and should be available for inspection. Review the log regularly to identify patterns and optimize oil management."
+        }
+      ]
+    },
+    {
+      "heading": "5. Oil Replacement and Disposal",
+      "content": "When testing or evaluation indicates that oil has reached the end of its useful life, it must be completely replaced. The legal requirement is clear: oil exceeding 25 percent polar compounds must be discarded. In practice, many operators replace oil before reaching the legal limit when quality degradation affects food quality. Complete replacement is required — adding fresh oil to degraded oil (topping up) does not adequately address the problem and is specifically prohibited when done to reduce polar compound levels below the legal limit.\n\nUsed frying oil is classified as waste and must be managed according to waste regulations. It must not be disposed of down drains where it can cause blockages and environmental damage. Used oil must be collected separately in appropriate containers and disposed of through authorized waste oil collection services. Documentation of waste oil disposal should be maintained as part of environmental compliance records.",
+      "subsections": [
+        {
+          "heading": "5.1 When to Replace Oil",
+          "content": "Replace oil when polar compound testing shows levels at or approaching 25 percent. As a safety margin, many establishments replace oil when testing shows 23-24 percent to ensure the legal limit is not exceeded between tests. Oil should also be replaced when sensory or operational indicators show unacceptable degradation even if polar compound levels are compliant, when food quality is adversely affected, or when the oil has been in use for the maximum time recommended by the oil supplier (even if testing shows acceptable levels).\n\nSome establishments operate on a scheduled replacement cycle based on experience: for example, replacing oil every 5 days in high-volume operations, or every 10 days in lower-volume settings. Scheduled replacement should be combined with testing to verify that the schedule is appropriate. If testing consistently shows oil exceeding limits before the scheduled change, shorten the interval. If oil consistently tests well below limits at scheduled change, the interval might be safely extended, though food quality should remain the primary consideration."
+        },
+        {
+          "heading": "5.2 Proper Disposal Procedures",
+          "content": "Allow used oil to cool to safe handling temperature (below 50°C) before draining. Drain completely into appropriate storage containers — purpose-made waste oil containers with secure lids and spouts are ideal. Store used oil containers in a designated area away from food storage, clearly labeled as used oil. Ensure containers are secure and cannot spill or leak. Keep used oil separate from other waste streams.\n\nContract with an authorized waste oil collection service (empresa autorizada de recogida de aceites usados) registered with environmental authorities. The collector should provide documentation for each collection showing the quantity of oil collected and its destination for recycling or disposal. Used frying oil is typically recycled into biodiesel, industrial lubricants, or soap. Maintain collection records as part of waste management documentation. Never pour used oil down drains or dispose of it with general waste."
+        },
+        {
+          "heading": "5.3 Fryer Cleaning Before Refill",
+          "content": "Before refilling with fresh oil, clean the fryer thoroughly to remove all residues of degraded oil, carbon deposits, and food particles. Drain the fryer completely and, if equipped with a drain valve, flush with a small amount of fresh oil which is then discarded to remove the last traces of old oil. While the fryer is still slightly warm but safe to handle, wipe down all internal surfaces with appropriate cleaning cloths.\n\nFor thorough cleaning, remove fryer baskets and heating elements if possible and clean separately. Use a cleaning product specifically formulated for fryer cleaning — these products are designed to cut through oil and carbon deposits. Follow manufacturer instructions carefully and rinse thoroughly with water to remove all traces of cleaning product. Dry the fryer completely before refilling — any water residue will cause violent spattering when fresh oil is heated. Record the date of fryer cleaning and oil replacement in the maintenance log."
+        }
+      ]
+    },
+    {
+      "heading": "6. HACCP Integration and Staff Training",
+      "content": "Frying oil quality management should be integrated into the establishment's HACCP plan. Depending on the hazard analysis, oil quality may be identified as a Critical Control Point (CCP) with the 25 percent polar compound limit as the critical limit, or it may be managed through prerequisite programs as part of overall food quality management. Either way, documented procedures, monitoring, and verification are required.\n\nAll staff involved in frying operations must be trained in proper frying techniques, temperature management, oil quality testing procedures, when and how to replace oil, and waste oil disposal requirements. Training should emphasize both the legal requirements and the food quality implications of poor oil management. Regular refresher training and performance monitoring ensure continued compliance.",
+      "subsections": [
+        {
+          "heading": "6.1 HACCP Documentation Requirements",
+          "content": "HACCP documentation for frying oil management should include: written procedures for oil testing, interpretation of results, and replacement criteria; procedures for oil disposal and fryer cleaning; monitoring schedules and forms (oil quality test log); corrective action procedures when oil exceeds quality limits; verification activities such as supervisor checks of testing compliance and review of test logs; and training records for all staff involved in frying operations.\n\nIf oil quality is identified as a CCP, the HACCP plan must define: the hazard being controlled (consumption of degraded oil and associated quality/health concerns), the critical limit (25 percent polar compounds per RD 2207/1995), monitoring procedures (testing method, frequency, responsible person), corrective actions when the limit is exceeded (immediate oil replacement, assessment of food prepared in degraded oil), and verification (supervisor review of test results, periodic validation of testing methods)."
+        },
+        {
+          "heading": "6.2 Staff Training Content",
+          "content": "Training on frying oil management should cover: legal requirements including the 25 percent polar compound limit and temperature restrictions; the effects of degraded oil on food quality and customer satisfaction; proper frying techniques to minimize oil degradation; how to perform oil quality testing using the establishment's chosen method; how to interpret test results and when to replace oil; procedures for draining, disposing, and replacing oil; fryer cleaning procedures; and documentation requirements.\n\nTraining should be practical — demonstrate oil testing using actual equipment, show examples of fresh versus degraded oil, and have trainees practice testing and recording results. Use visual aids showing the color and appearance of oil at different degradation stages. Explain the business rationale — poor oil management wastes money through excessive oil consumption and customer complaints. Assess competence through demonstration and questioning, and document all training."
+        },
+        {
+          "heading": "6.3 Monitoring and Continuous Improvement",
+          "content": "Managers should regularly verify that oil quality management procedures are being followed. Check that oil testing is being performed according to schedule, that test results are being correctly recorded, that oil is being replaced when quality limits are reached, and that fryers are being properly maintained and cleaned. Review oil quality logs to identify trends — if oil is consistently failing quality tests earlier than expected, investigate possible causes such as excessive temperature, poor filtration, or equipment problems.\n\nCalculate oil usage and replacement frequency to identify opportunities for improvement. If oil life is shorter than typical for your type of operation and oil used, review operational practices to identify causes. Conversely, if food quality issues arise, review whether oil replacement frequency is adequate. Continuous improvement might involve investing in better quality oil, upgrading to fryers with better filtration systems, improving staff training, or optimizing operational practices to extend oil life while maintaining quality."
+        }
+      ]
+    }
+  ],
+  "checklists": [
+    {
+      "title": "Daily Frying Oil Management Checklist",
+      "items": [
+        "Check oil appearance, color, and odor before starting service",
+        "Verify fryer temperature control is functioning correctly (set at ≤180°C)",
+        "Filter oil to remove food particles and carbon deposits",
+        "Perform oil quality test using test strip or TPM meter if scheduled",
+        "Record oil quality test result in oil quality log",
+        "Check that oil level is adequate — top up with fresh oil if necessary (only if quality is acceptable)",
+        "Ensure food is appropriately dried before frying to minimize moisture contamination",
+        "Avoid overloading fryers — cook in appropriately sized batches",
+        "Turn fryers down or off during quiet periods to minimize degradation",
+        "Document any issues with oil quality or fryer operation"
+      ]
+    },
+    {
+      "title": "Oil Replacement Procedure Checklist",
+      "items": [
+        "Verify that oil quality testing justifies replacement (polar compounds ≥23-25% or other quality indicators)",
+        "Turn off fryer and allow oil to cool to safe handling temperature (<50°C)",
+        "Drain used oil completely into approved waste oil container",
+        "Flush fryer with small amount of fresh oil and drain to remove residues",
+        "Clean all fryer surfaces thoroughly with appropriate fryer cleaning product",
+        "Rinse thoroughly with water to remove all cleaning product residue",
+        "Dry fryer completely before refilling",
+        "Refill with fresh oil to manufacturer's recommended level",
+        "Document date and volume of oil replacement in oil quality log",
+        "Label waste oil container and arrange collection by authorized service"
+      ]
+    },
+    {
+      "title": "Weekly Oil Quality System Review",
+      "items": [
+        "Review oil quality test log for completeness and trending",
+        "Verify all required tests have been performed according to schedule",
+        "Check that test results are within acceptable limits or corrective action was taken",
+        "Assess oil consumption and replacement frequency for efficiency",
+        "Verify temperature monitoring records show frying temperature ≤180°C",
+        "Check condition of testing equipment (test strips in date, TPM meter functioning)",
+        "Verify used oil is being properly stored and collected by authorized service",
+        "Review any customer or staff feedback on food quality related to frying",
+        "Verify fryer maintenance is current and equipment is functioning correctly",
+        "Update procedures or training if gaps or issues identified"
+      ]
+    }
+  ],
+  "bestPractices": [
+    "Invest in quality frying oil designed for commercial use — the additional cost is offset by longer oil life and better food quality",
+    "Use electronic TPM meters rather than test strips for more accurate, objective monitoring of polar compound levels",
+    "Implement daily filtration discipline even when time is tight — the investment of 10 minutes extends oil life significantly",
+    "Maintain fryer temperature at minimum necessary for food quality (typically 165-175°C) rather than maximum (180°C)",
+    "Dedicate separate fryers to different food categories (fish, potatoes, general) to prevent flavor transfer and cross-contamination",
+    "Replace oil proactively before quality seriously degrades rather than waiting for legal limit — food quality is the ultimate goal",
+    "Turn fryers down to holding temperature or off during quiet periods rather than maintaining full frying temperature unnecessarily",
+    "Keep comprehensive oil quality records not just for compliance but to optimize oil usage and identify operational improvements"
+  ],
+  "glossary": {
+    "Polar Compounds": "Chemical compounds formed during oil degradation that are attracted to polar substances; the primary legal indicator of frying oil quality in Spain",
+    "TPM (Total Polar Materials)": "Total amount of polar compounds in oil, measured as a percentage; fresh oil typically contains 3-8%, legal limit is 25%",
+    "Smoke Point": "The temperature at which oil begins to smoke visibly and break down rapidly, producing acrolein and other degradation products",
+    "Oxidation": "Chemical reaction between oil and oxygen that produces degradation products including peroxides, polymers, and off-flavors",
+    "Polymerization": "Formation of large molecules from smaller ones during oil degradation, resulting in increased viscosity and foam",
+    "Free Fatty Acids": "Fatty acids released from triglycerides during oil breakdown, contributing to off-flavors and reduced smoke point",
+    "Filtration": "Process of removing food particles, carbon deposits, and other solid contaminants from frying oil to extend oil life",
+    "Acrolein": "Pungent, irritating compound formed when frying oil is overheated or severely degraded; indicator of poor oil management",
+    "Cold Zone": "Area below heating elements in a deep fryer where temperature is lower and food particles settle without burning",
+    "Topping Up": "Adding fresh oil to partially used oil; acceptable for maintaining oil level but not for diluting degraded oil below legal limits"
+  }
+}

@@ -10,6 +10,7 @@ interface DraggableTableProps {
   isSelected: boolean
   isDragging: boolean
   onSelect: (table: Table) => void
+  activePartySize?: number | null
 }
 
 export function DraggableTable({
@@ -17,6 +18,7 @@ export function DraggableTable({
   isSelected,
   isDragging,
   onSelect,
+  activePartySize,
 }: DraggableTableProps) {
   const { attributes, listeners, setNodeRef, transform } = useDraggable({
     id: table.id,
@@ -54,6 +56,7 @@ export function DraggableTable({
         rotation={table.rotation}
         isSelected={isSelected}
         isDragging={isDragging}
+        activePartySize={activePartySize}
       />
     </div>
   )
