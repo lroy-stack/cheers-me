@@ -116,7 +116,7 @@ function CarouselRow({
           onMouseLeave={() => setIsPaused(false)}
           onTouchStart={() => setIsPaused(true)}
           onTouchEnd={() => setIsPaused(false)}
-          className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide"
+          className="flex gap-4 overflow-x-auto pb-4 snap-x snap-proximity scrollbar-hide touch-pan-y"
         >
           {items.map((item, i) => (
             <motion.div
