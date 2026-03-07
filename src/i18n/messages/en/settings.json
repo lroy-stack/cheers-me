@@ -177,5 +177,42 @@
     "email": "Email",
     "saved": "Fiscal data saved successfully",
     "saveError": "Failed to save fiscal data"
+  },
+  "reservations": {
+    "title": "Reservation Settings",
+    "subtitle": "Configure reservation rules and availability",
+    "backToSettings": "Back to Settings",
+    "maxPartySize": "Max Party Size",
+    "maxPartySizeHint": "Maximum number of guests per reservation",
+    "bufferMinutes": "Buffer Between Reservations (minutes)",
+    "bufferMinutesHint": "Time buffer added after each reservation to allow table turnover",
+    "autoConfirm": "Auto-Confirm Reservations",
+    "autoConfirmHint": "Automatically confirm new reservations without manual approval",
+    "saveSettings": "Save Settings",
+    "saving": "Saving...",
+    "saved": "Reservation settings saved",
+    "error": "Failed to save reservation settings"
+  },
+  "holidays": {
+    "title": "Holiday & Closure Calendar",
+    "subtitle": "Manage days when the restaurant is closed",
+    "backToSettings": "Back to Settings",
+    "addClosure": "Add Closure",
+    "date": "Date",
+    "name": "Name / Reason",
+    "namePlaceholder": "e.g. Christmas Day",
+    "allDay": "All Day",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "add": "Add Closure",
+    "adding": "Adding...",
+    "added": "Closure added",
+    "deleted": "Closure deleted",
+    "error": "Failed to save closure",
+    "deleteError": "Failed to delete closure",
+    "noClosures": "No closures configured for this year",
+    "year": "Year",
+    "delete": "Delete",
+    "confirmDelete": "Delete this closure?"
   }
 }

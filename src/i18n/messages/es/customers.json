@@ -177,5 +177,51 @@
     "alreadyExists": "El cliente ya existe",
     "created": "Cliente creado",
     "error": "Error"
+  },
+  "allergies": {
+    "title": "Alérgenos",
+    "subtitle": "Selecciona los alérgenos de la UE aplicables a este cliente",
+    "save": "Guardar Alérgenos",
+    "saving": "Guardando...",
+    "saved": "Alérgenos guardados",
+    "error": "Error al guardar alérgenos",
+    "gluten": "Gluten",
+    "crustaceans": "Crustáceos",
+    "eggs": "Huevos",
+    "fish": "Pescado",
+    "peanuts": "Cacahuetes",
+    "soybeans": "Soja",
+    "milk": "Leche / Lácteos",
+    "nuts": "Frutos Secos",
+    "celery": "Apio",
+    "mustard": "Mostaza",
+    "sesame": "Sésamo",
+    "sulphites": "Dióxido de Azufre / Sulfitos",
+    "lupin": "Altramuces",
+    "molluscs": "Moluscos"
+  },
+  "tags": {
+    "title": "Etiquetas",
+    "placeholder": "Añadir etiqueta...",
+    "add": "Añadir",
+    "added": "Etiqueta añadida",
+    "removed": "Etiqueta eliminada",
+    "error": "Error al gestionar etiqueta",
+    "filterByTag": "Filtrar por etiqueta",
+    "allTags": "Todas las Etiquetas"
+  },
+  "vipSettings": {
+    "title": "Reglas de Auto-VIP",
+    "subtitle": "Los clientes son promovidos automáticamente a VIP cuando cumplen los criterios",
+    "visitThreshold": "Umbral de Visitas",
+    "visitThresholdHint": "Número de visitas para promoción VIP (0 = desactivado)",
+    "spentThreshold": "Umbral de Gasto (€)",
+    "spentThresholdHint": "Gasto mínimo total para promoción VIP (0 = desactivado)",
+    "autoPromoteEnabled": "Auto-Promoción Activada",
+    "autoPromoteHint": "Promover automáticamente a clientes que cumplan los criterios",
+    "save": "Guardar Configuración",
+    "saving": "Guardando...",
+    "saved": "Configuración VIP guardada",
+    "error": "Error al guardar configuración VIP"
   }
 }

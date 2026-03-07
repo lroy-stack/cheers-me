@@ -1,4 +1,4 @@
-import { createClient } from '@/lib/supabase/server'
+import { createClient, createAdminClient } from '@/lib/supabase/server'
 import { requireRole } from '@/lib/utils/auth'
 import { NextRequest, NextResponse } from 'next/server'
 
@@ -60,6 +60,35 @@ export async function POST(
       { error: `Failed to fetch customer: ${fetchError.message}` },
       { status: 500 }
     )
+  }
+
+  // Auto-promote to VIP if criteria met and not already VIP
+  if (!customer.vip) {
+    try {
+      const adminSupabase = createAdminClient()
+      const { data: vipSettings } = await adminSupabase
+        .from('vip_settings')
+        .select('visit_threshold, spent_threshold, auto_promote_enabled')
+        .limit(1)
+        .single()
+
+      if (vipSettings?.auto_promote_enabled) {
+        const meetsVisitThreshold = vipSettings.visit_threshold > 0 && customer.visit_count >= vipSettings.visit_threshold
+        const meetsSpentThreshold = vipSettings.spent_threshold > 0
+          ? (customer.total_spent ?? 0) >= vipSettings.spent_threshold
+          : true
+
+        if (meetsVisitThreshold && meetsSpentThreshold) {
+          await adminSupabase
+            .from('customers')
+            .update({ vip: true })
+            .eq('id', id)
+          customer.vip = true
+        }
+      }
+    } catch {
+      // Non-critical: don't fail the visit record if VIP check fails
+    }
   }
 
   // Check if a new reward was just issued (issued within last 10 seconds)

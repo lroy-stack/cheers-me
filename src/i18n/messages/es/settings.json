@@ -177,5 +177,42 @@
     "email": "Correo Electrónico",
     "saved": "Datos fiscales guardados correctamente",
     "saveError": "Error al guardar los datos fiscales"
+  },
+  "reservations": {
+    "title": "Configuración de Reservas",
+    "subtitle": "Configura reglas de reservas y disponibilidad",
+    "backToSettings": "Volver a Configuración",
+    "maxPartySize": "Tamaño Máximo de Grupo",
+    "maxPartySizeHint": "Número máximo de comensales por reserva",
+    "bufferMinutes": "Buffer Entre Reservas (minutos)",
+    "bufferMinutesHint": "Tiempo buffer después de cada reserva para cambio de mesa",
+    "autoConfirm": "Confirmar Reservas Automáticamente",
+    "autoConfirmHint": "Confirmar nuevas reservas sin aprobación manual",
+    "saveSettings": "Guardar Configuración",
+    "saving": "Guardando...",
+    "saved": "Configuración de reservas guardada",
+    "error": "Error al guardar configuración"
+  },
+  "holidays": {
+    "title": "Calendario de Festivos y Cierres",
+    "subtitle": "Gestiona los días en que el restaurante está cerrado",
+    "backToSettings": "Volver a Configuración",
+    "addClosure": "Añadir Cierre",
+    "date": "Fecha",
+    "name": "Nombre / Motivo",
+    "namePlaceholder": "ej. Día de Navidad",
+    "allDay": "Todo el Día",
+    "startTime": "Hora de Inicio",
+    "endTime": "Hora de Fin",
+    "add": "Añadir Cierre",
+    "adding": "Añadiendo...",
+    "added": "Cierre añadido",
+    "deleted": "Cierre eliminado",
+    "error": "Error al guardar cierre",
+    "deleteError": "Error al eliminar cierre",
+    "noClosures": "No hay cierres configurados para este año",
+    "year": "Año",
+    "delete": "Eliminar",
+    "confirmDelete": "¿Eliminar este cierre?"
   }
 }

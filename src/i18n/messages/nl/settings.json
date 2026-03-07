@@ -177,5 +177,42 @@
     "email": "E-mail",
     "saved": "Fiscale gegevens succesvol opgeslagen",
     "saveError": "Opslaan van fiscale gegevens mislukt"
+  },
+  "reservations": {
+    "title": "Reserveringsinstellingen",
+    "subtitle": "Configureer reserveringsregels en beschikbaarheid",
+    "backToSettings": "Terug naar Instellingen",
+    "maxPartySize": "Maximale Groepsgrootte",
+    "maxPartySizeHint": "Maximum aantal gasten per reservering",
+    "bufferMinutes": "Buffer Tussen Reserveringen (minuten)",
+    "bufferMinutesHint": "Tijdbuffer na elke reservering voor tafelbezetting",
+    "autoConfirm": "Reserveringen Auto-Bevestigen",
+    "autoConfirmHint": "Nieuwe reserveringen automatisch bevestigen",
+    "saveSettings": "Instellingen Opslaan",
+    "saving": "Opslaan...",
+    "saved": "Reserveringsinstellingen opgeslagen",
+    "error": "Opslaan mislukt"
+  },
+  "holidays": {
+    "title": "Feestdagen & Sluitingskalender",
+    "subtitle": "Beheer dagen waarop het restaurant gesloten is",
+    "backToSettings": "Terug naar Instellingen",
+    "addClosure": "Sluiting Toevoegen",
+    "date": "Datum",
+    "name": "Naam / Reden",
+    "namePlaceholder": "bijv. Kerstmis",
+    "allDay": "Gehele Dag",
+    "startTime": "Begintijd",
+    "endTime": "Eindtijd",
+    "add": "Sluiting Toevoegen",
+    "adding": "Toevoegen...",
+    "added": "Sluiting toegevoegd",
+    "deleted": "Sluiting verwijderd",
+    "error": "Sluiting opslaan mislukt",
+    "deleteError": "Sluiting verwijderen mislukt",
+    "noClosures": "Geen sluitingen geconfigureerd voor dit jaar",
+    "year": "Jaar",
+    "delete": "Verwijderen",
+    "confirmDelete": "Deze sluiting verwijderen?"
   }
 }

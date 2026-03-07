@@ -177,5 +177,51 @@
     "alreadyExists": "Customer already exists",
     "created": "Customer created",
     "error": "Error"
+  },
+  "allergies": {
+    "title": "Allergens",
+    "subtitle": "Select EU allergens applicable to this customer",
+    "save": "Save Allergens",
+    "saving": "Saving...",
+    "saved": "Allergens saved",
+    "error": "Failed to save allergens",
+    "gluten": "Gluten",
+    "crustaceans": "Crustaceans",
+    "eggs": "Eggs",
+    "fish": "Fish",
+    "peanuts": "Peanuts",
+    "soybeans": "Soybeans",
+    "milk": "Milk / Dairy",
+    "nuts": "Tree Nuts",
+    "celery": "Celery",
+    "mustard": "Mustard",
+    "sesame": "Sesame",
+    "sulphites": "Sulphur Dioxide / Sulphites",
+    "lupin": "Lupin",
+    "molluscs": "Molluscs"
+  },
+  "tags": {
+    "title": "Tags",
+    "placeholder": "Add tag...",
+    "add": "Add",
+    "added": "Tag added",
+    "removed": "Tag removed",
+    "error": "Failed to manage tag",
+    "filterByTag": "Filter by tag",
+    "allTags": "All Tags"
+  },
+  "vipSettings": {
+    "title": "Auto-VIP Rules",
+    "subtitle": "Customers are automatically promoted to VIP when criteria are met",
+    "visitThreshold": "Visit Threshold",
+    "visitThresholdHint": "Number of visits to trigger VIP promotion (0 = disabled)",
+    "spentThreshold": "Spent Threshold (€)",
+    "spentThresholdHint": "Minimum total spent to trigger VIP promotion (0 = disabled)",
+    "autoPromoteEnabled": "Auto-Promote Enabled",
+    "autoPromoteHint": "Automatically promote customers who meet the criteria",
+    "save": "Save Settings",
+    "saving": "Saving...",
+    "saved": "VIP settings saved",
+    "error": "Failed to save VIP settings"
   }
 }

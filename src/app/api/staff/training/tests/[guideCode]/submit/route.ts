@@ -88,37 +88,18 @@ export async function POST(
   const score = Math.round((correct / questions.length) * 100)
   const passed = score >= passingScore
 
-  // Record test_started, then test result
-  await supabase.from('training_records').insert({
-    employee_id: employee.id,
-    guide_code: guideCode,
-    action: 'test_completed',
-    language: lang,
-    score,
-    answers: validation.data.answers,
+  // Atomically record both training records and update assignment via RPC
+  const { error: submitError } = await supabase.rpc('submit_training_test', {
+    p_employee_id: employee.id,
+    p_guide_code: guideCode,
+    p_language: lang,
+    p_score: score,
+    p_passed: passed,
+    p_answers: validation.data.answers,
   })
 
-  await supabase.from('training_records').insert({
-    employee_id: employee.id,
-    guide_code: guideCode,
-    action: passed ? 'test_passed' : 'test_failed',
-    language: lang,
-    score,
-    answers: validation.data.answers,
-  })
-
-  // If passed, update any pending assignment
-  if (passed) {
-    await supabase
-      .from('training_assignments')
-      .update({
-        status: 'completed',
-        completed_at: new Date().toISOString(),
-        score,
-      })
-      .eq('guide_code', guideCode)
-      .eq('assigned_to', employee.id)
-      .eq('status', 'pending')
+  if (submitError) {
+    return NextResponse.json({ error: 'Failed to record test result' }, { status: 500 })
   }
 
   return NextResponse.json({

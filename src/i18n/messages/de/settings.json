@@ -177,5 +177,42 @@
     "email": "E-Mail",
     "saved": "Steuerdaten erfolgreich gespeichert",
     "saveError": "Steuerdaten konnten nicht gespeichert werden"
+  },
+  "reservations": {
+    "title": "Reservierungseinstellungen",
+    "subtitle": "Reservierungsregeln und Verfügbarkeit konfigurieren",
+    "backToSettings": "Zurück zu Einstellungen",
+    "maxPartySize": "Maximale Gruppengröße",
+    "maxPartySizeHint": "Maximale Anzahl von Gästen pro Reservierung",
+    "bufferMinutes": "Puffer Zwischen Reservierungen (Minuten)",
+    "bufferMinutesHint": "Zeitpuffer nach jeder Reservierung für den Tischumbau",
+    "autoConfirm": "Reservierungen Auto-Bestätigen",
+    "autoConfirmHint": "Neue Reservierungen automatisch ohne manuelle Genehmigung bestätigen",
+    "saveSettings": "Einstellungen Speichern",
+    "saving": "Speichern...",
+    "saved": "Reservierungseinstellungen gespeichert",
+    "error": "Einstellungen speichern fehlgeschlagen"
+  },
+  "holidays": {
+    "title": "Feiertags- & Schließungskalender",
+    "subtitle": "Tage verwalten, an denen das Restaurant geschlossen ist",
+    "backToSettings": "Zurück zu Einstellungen",
+    "addClosure": "Schließung Hinzufügen",
+    "date": "Datum",
+    "name": "Name / Grund",
+    "namePlaceholder": "z.B. Weihnachtstag",
+    "allDay": "Ganztägig",
+    "startTime": "Startzeit",
+    "endTime": "Endzeit",
+    "add": "Schließung Hinzufügen",
+    "adding": "Hinzufügen...",
+    "added": "Schließung hinzugefügt",
+    "deleted": "Schließung gelöscht",
+    "error": "Schließung speichern fehlgeschlagen",
+    "deleteError": "Schließung löschen fehlgeschlagen",
+    "noClosures": "Keine Schließungen für dieses Jahr konfiguriert",
+    "year": "Jahr",
+    "delete": "Löschen",
+    "confirmDelete": "Diese Schließung löschen?"
   }
 }

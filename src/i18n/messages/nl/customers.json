@@ -177,5 +177,51 @@
     "alreadyExists": "Klant bestaat al",
     "created": "Klant aangemaakt",
     "error": "Fout"
+  },
+  "allergies": {
+    "title": "Allergenen",
+    "subtitle": "Selecteer EU-allergenen die van toepassing zijn op deze klant",
+    "save": "Allergenen Opslaan",
+    "saving": "Opslaan...",
+    "saved": "Allergenen opgeslagen",
+    "error": "Allergenen opslaan mislukt",
+    "gluten": "Gluten",
+    "crustaceans": "Schaaldieren",
+    "eggs": "Eieren",
+    "fish": "Vis",
+    "peanuts": "Pinda's",
+    "soybeans": "Soja",
+    "milk": "Melk / Zuivel",
+    "nuts": "Noten",
+    "celery": "Selderij",
+    "mustard": "Mosterd",
+    "sesame": "Sesam",
+    "sulphites": "Zwaveldioxide / Sulfieten",
+    "lupin": "Lupine",
+    "molluscs": "Weekdieren"
+  },
+  "tags": {
+    "title": "Tags",
+    "placeholder": "Tag toevoegen...",
+    "add": "Toevoegen",
+    "added": "Tag toegevoegd",
+    "removed": "Tag verwijderd",
+    "error": "Tag beheren mislukt",
+    "filterByTag": "Filteren op tag",
+    "allTags": "Alle Tags"
+  },
+  "vipSettings": {
+    "title": "Auto-VIP Regels",
+    "subtitle": "Klanten worden automatisch VIP als ze aan de criteria voldoen",
+    "visitThreshold": "Bezoekdrempel",
+    "visitThresholdHint": "Aantal bezoeken voor VIP-promotie (0 = uitgeschakeld)",
+    "spentThreshold": "Uitgavendrempel (€)",
+    "spentThresholdHint": "Minimum totaal besteed voor VIP-promotie (0 = uitgeschakeld)",
+    "autoPromoteEnabled": "Auto-Promotie Ingeschakeld",
+    "autoPromoteHint": "Klanten automatisch promoveren die aan de criteria voldoen",
+    "save": "Instellingen Opslaan",
+    "saving": "Opslaan...",
+    "saved": "VIP-instellingen opgeslagen",
+    "error": "VIP-instellingen opslaan mislukt"
   }
 }

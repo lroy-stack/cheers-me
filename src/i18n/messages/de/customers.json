@@ -177,5 +177,51 @@
     "alreadyExists": "Customer already exists",
     "created": "Customer created",
     "error": "Error"
+  },
+  "allergies": {
+    "title": "Allergene",
+    "subtitle": "EU-Allergene für diesen Kunden auswählen",
+    "save": "Allergene Speichern",
+    "saving": "Speichern...",
+    "saved": "Allergene gespeichert",
+    "error": "Allergene speichern fehlgeschlagen",
+    "gluten": "Gluten",
+    "crustaceans": "Krebstiere",
+    "eggs": "Eier",
+    "fish": "Fisch",
+    "peanuts": "Erdnüsse",
+    "soybeans": "Soja",
+    "milk": "Milch / Milchprodukte",
+    "nuts": "Schalenfrüchte",
+    "celery": "Sellerie",
+    "mustard": "Senf",
+    "sesame": "Sesam",
+    "sulphites": "Schwefeldioxid / Sulfite",
+    "lupin": "Lupinen",
+    "molluscs": "Weichtiere"
+  },
+  "tags": {
+    "title": "Tags",
+    "placeholder": "Tag hinzufügen...",
+    "add": "Hinzufügen",
+    "added": "Tag hinzugefügt",
+    "removed": "Tag entfernt",
+    "error": "Tag verwalten fehlgeschlagen",
+    "filterByTag": "Nach Tag filtern",
+    "allTags": "Alle Tags"
+  },
+  "vipSettings": {
+    "title": "Auto-VIP-Regeln",
+    "subtitle": "Kunden werden automatisch zu VIP befördert, wenn Kriterien erfüllt sind",
+    "visitThreshold": "Besuchsschwelle",
+    "visitThresholdHint": "Anzahl der Besuche für VIP-Beförderung (0 = deaktiviert)",
+    "spentThreshold": "Ausgabenschwelle (€)",
+    "spentThresholdHint": "Mindestgesamtausgaben für VIP-Beförderung (0 = deaktiviert)",
+    "autoPromoteEnabled": "Auto-Beförderung Aktiviert",
+    "autoPromoteHint": "Kunden automatisch befördern, die die Kriterien erfüllen",
+    "save": "Einstellungen Speichern",
+    "saving": "Speichern...",
+    "saved": "VIP-Einstellungen gespeichert",
+    "error": "VIP-Einstellungen speichern fehlgeschlagen"
   }
 }

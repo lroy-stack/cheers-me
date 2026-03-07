@@ -10,6 +10,7 @@ import {
   CustomersDataTable,
   AddCustomerSheet,
 } from '@/components/crm'
+import { CustomerDetailDialog } from '@/components/crm/customer-detail-dialog'
 import { useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 
@@ -52,6 +53,7 @@ export default function CustomersPage() {
   const t = useTranslations('customers')
   const [page, setPage] = useState(1)
   const [addCustomerOpen, setAddCustomerOpen] = useState(false)
+  const [detailCustomer, setDetailCustomer] = useState<Customer | null>(null)
   const [searchQuery, setSearchQuery] = useState('')
   const [filters, setFilters] = useState<{ vip?: string; language?: string }>({})
 
@@ -95,8 +97,7 @@ export default function CustomersPage() {
   }
 
   const handleCustomerEdit = (customer: Customer) => {
-    // TODO: Implement edit functionality
-    console.log('Edit customer:', customer)
+    setDetailCustomer(customer)
   }
 
   const handleCustomerDelete = async (customerId: string) => {
@@ -212,6 +213,17 @@ export default function CustomersPage() {
         open={addCustomerOpen}
         onOpenChange={setAddCustomerOpen}
         onSuccess={handleCustomerAdded}
+      />
+
+      {/* Customer Detail Dialog (allergies + tags) */}
+      <CustomerDetailDialog
+        customer={detailCustomer}
+        open={!!detailCustomer}
+        onOpenChange={(open) => !open && setDetailCustomer(null)}
+        onUpdated={() => {
+          mutateCustomers()
+          mutateInsights()
+        }}
       />
     </div>
   )
