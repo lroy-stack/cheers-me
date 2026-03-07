@@ -63,6 +63,13 @@ export function EmployeeForm({
     { value: 'part_time', labelKey: 'employees.partTimeLabel' },
     { value: 'casual', labelKey: 'employees.casualLabel' },
     { value: 'contractor', labelKey: 'employees.contractorLabel' },
+    { value: 'indefinido_ordinario', labelKey: 'employees.contractTypeIndefinidoOrdinario' },
+    { value: 'temporal_obra', labelKey: 'employees.contractTypeTemporalObra' },
+    { value: 'fijo_discontinuo', labelKey: 'employees.contractTypeFijoDiscontinuo' },
+    { value: 'formacion', labelKey: 'employees.contractTypeFormacion' },
+    { value: 'practicas', labelKey: 'employees.contractTypePracticas' },
+    { value: 'relevo', labelKey: 'employees.contractTypeRelevo' },
+    { value: 'interinidad', labelKey: 'employees.contractTypeInterinidad' },
   ]
 
   // Form state
@@ -78,7 +85,7 @@ export function EmployeeForm({
     emergency_contact: '',
     emergency_phone: '',
     kiosk_pin: '',
-    // New fields
+    // Salary fields
     gross_salary: '',
     weekly_hours_target: '',
     irpf_retention: '',
@@ -90,6 +97,15 @@ export function EmployeeForm({
     job_title: '',
     contract_end_date: '',
     employment_status: 'active',
+    // Identity & payment
+    dni_nie: '',
+    iban: '',
+    // Address
+    address_street: '',
+    address_postal_code: '',
+    address_city: '',
+    address_province: '',
+    address_country: 'España',
   })
 
   // Reset form when employee changes or dialog closes
@@ -118,6 +134,13 @@ export function EmployeeForm({
         job_title: employee.job_title || '',
         contract_end_date: employee.contract_end_date || '',
         employment_status: employee.employment_status || 'active',
+        dni_nie: ((employee as unknown) as Record<string, unknown>).dni_nie as string || '',
+        iban: ((employee as unknown) as Record<string, unknown>).iban as string || '',
+        address_street: ((employee as unknown) as Record<string, unknown>).address_street as string || '',
+        address_postal_code: ((employee as unknown) as Record<string, unknown>).address_postal_code as string || '',
+        address_city: ((employee as unknown) as Record<string, unknown>).address_city as string || '',
+        address_province: ((employee as unknown) as Record<string, unknown>).address_province as string || '',
+        address_country: ((employee as unknown) as Record<string, unknown>).address_country as string || 'España',
       })
     } else {
       setFormData({
@@ -143,6 +166,13 @@ export function EmployeeForm({
         job_title: '',
         contract_end_date: '',
         employment_status: 'active',
+        dni_nie: '',
+        iban: '',
+        address_street: '',
+        address_postal_code: '',
+        address_city: '',
+        address_province: '',
+        address_country: 'España',
       })
     }
   }, [employee, open])
@@ -165,6 +195,8 @@ export function EmployeeForm({
             weekly_hours_target: formData.weekly_hours_target ? parseFloat(formData.weekly_hours_target) : null,
             irpf_retention: formData.irpf_retention ? parseFloat(formData.irpf_retention) : null,
             social_security_number: formData.social_security_number || null,
+            dni_nie: formData.dni_nie || null,
+            iban: formData.iban || null,
             convenio_colectivo: formData.convenio_colectivo || null,
             categoria_profesional: formData.categoria_profesional || null,
             tipo_jornada: formData.tipo_jornada,
@@ -172,6 +204,11 @@ export function EmployeeForm({
             job_title: formData.job_title || null,
             contract_end_date: formData.contract_end_date || null,
             employment_status: formData.employment_status,
+            address_street: formData.address_street || null,
+            address_postal_code: formData.address_postal_code || null,
+            address_city: formData.address_city || null,
+            address_province: formData.address_province || null,
+            address_country: formData.address_country || null,
             profile: {
               full_name: formData.full_name,
               phone: formData.phone || null,
@@ -231,10 +268,17 @@ export function EmployeeForm({
             contract_end_date: formData.contract_end_date || null,
             irpf_retention: formData.irpf_retention ? parseFloat(formData.irpf_retention) : null,
             social_security_number: formData.social_security_number || null,
+            dni_nie: formData.dni_nie || null,
+            iban: formData.iban || null,
             convenio_colectivo: formData.convenio_colectivo || null,
             categoria_profesional: formData.categoria_profesional || null,
             tipo_jornada: formData.tipo_jornada,
             periodo_prueba_end: formData.periodo_prueba_end || null,
+            address_street: formData.address_street || null,
+            address_postal_code: formData.address_postal_code || null,
+            address_city: formData.address_city || null,
+            address_province: formData.address_province || null,
+            address_country: formData.address_country || null,
           }),
         })
 
@@ -547,6 +591,29 @@ export function EmployeeForm({
             <h3 className="text-sm font-medium">{t('employees.spanishLaborDetails')}</h3>
 
             <div className="space-y-2">
+              <Label htmlFor="dni_nie">{t('employees.dniNie')}</Label>
+              <Input
+                id="dni_nie"
+                value={formData.dni_nie}
+                onChange={(e) => setFormData({ ...formData, dni_nie: e.target.value.toUpperCase() })}
+                disabled={loading}
+                placeholder={t('employees.dniNiePlaceholder')}
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="iban">{t('employees.iban')}</Label>
+              <Input
+                id="iban"
+                value={formData.iban}
+                onChange={(e) => setFormData({ ...formData, iban: e.target.value.toUpperCase() })}
+                disabled={loading}
+                placeholder={t('employees.ibanPlaceholder')}
+                className="font-mono"
+              />
+            </div>
+
+            <div className="space-y-2">
               <Label htmlFor="social_security_number">{t('employees.socialSecurityNumber')}</Label>
               <Input
                 id="social_security_number"
@@ -603,6 +670,67 @@ export function EmployeeForm({
                 onChange={(e) => setFormData({ ...formData, periodo_prueba_end: e.target.value })}
                 disabled={loading}
               />
+            </div>
+          </div>
+
+          {/* Address */}
+          <div className="space-y-4">
+            <h3 className="text-sm font-medium">{t('employees.addressDetails')}</h3>
+
+            <div className="space-y-2">
+              <Label htmlFor="address_street">{t('employees.addressStreet')}</Label>
+              <Input
+                id="address_street"
+                value={formData.address_street}
+                onChange={(e) => setFormData({ ...formData, address_street: e.target.value })}
+                disabled={loading}
+              />
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              <div className="space-y-2">
+                <Label htmlFor="address_postal_code">{t('employees.addressPostalCode')}</Label>
+                <Input
+                  id="address_postal_code"
+                  value={formData.address_postal_code}
+                  onChange={(e) => setFormData({ ...formData, address_postal_code: e.target.value })}
+                  disabled={loading}
+                  placeholder="07001"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="address_city">{t('employees.addressCity')}</Label>
+                <Input
+                  id="address_city"
+                  value={formData.address_city}
+                  onChange={(e) => setFormData({ ...formData, address_city: e.target.value })}
+                  disabled={loading}
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              <div className="space-y-2">
+                <Label htmlFor="address_province">{t('employees.addressProvince')}</Label>
+                <Input
+                  id="address_province"
+                  value={formData.address_province}
+                  onChange={(e) => setFormData({ ...formData, address_province: e.target.value })}
+                  disabled={loading}
+                  placeholder="Baleares"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="address_country">{t('employees.addressCountry')}</Label>
+                <Input
+                  id="address_country"
+                  value={formData.address_country}
+                  onChange={(e) => setFormData({ ...formData, address_country: e.target.value })}
+                  disabled={loading}
+                />
+              </div>
             </div>
           </div>
 

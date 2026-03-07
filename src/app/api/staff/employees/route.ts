@@ -8,7 +8,7 @@ import { z } from 'zod'
 const createEmployeeSchema = z.object({
   profile_id: z.string().uuid(),
   hourly_rate: z.number().min(0),
-  contract_type: z.enum(['full_time', 'part_time', 'casual', 'contractor']),
+  contract_type: z.enum(['full_time', 'part_time', 'casual', 'contractor', 'indefinido_ordinario', 'temporal_obra', 'fijo_discontinuo', 'formacion', 'practicas', 'relevo', 'interinidad']),
   date_hired: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
   job_title: z.string().nullable().optional(),
   gross_salary: z.number().min(0).nullable().optional(),
@@ -16,10 +16,17 @@ const createEmployeeSchema = z.object({
   contract_end_date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable().optional(),
   irpf_retention: z.number().min(0).max(100).nullable().optional(),
   social_security_number: z.string().nullable().optional(),
+  dni_nie: z.string().nullable().optional(),
+  iban: z.string().nullable().optional(),
   convenio_colectivo: z.string().nullable().optional(),
   categoria_profesional: z.string().nullable().optional(),
   tipo_jornada: z.enum(['completa', 'parcial', 'flexible']).optional(),
   periodo_prueba_end: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable().optional(),
+  address_street: z.string().nullable().optional(),
+  address_postal_code: z.string().nullable().optional(),
+  address_city: z.string().nullable().optional(),
+  address_province: z.string().nullable().optional(),
+  address_country: z.string().nullable().optional(),
 })
 
 /** Decrypt SSN field in employee record (or array of records) */

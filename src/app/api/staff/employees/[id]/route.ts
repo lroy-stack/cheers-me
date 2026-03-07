@@ -7,7 +7,7 @@ import { z } from 'zod'
 // Validation schema for updating employee
 const updateEmployeeSchema = z.object({
   hourly_rate: z.number().min(0).optional(),
-  contract_type: z.enum(['full_time', 'part_time', 'casual', 'contractor']).optional(),
+  contract_type: z.enum(['full_time', 'part_time', 'casual', 'contractor', 'indefinido_ordinario', 'temporal_obra', 'fijo_discontinuo', 'formacion', 'practicas', 'relevo', 'interinidad']).optional(),
   date_hired: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable().optional(),
   date_terminated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable().optional(),
   weekly_hours_target: z.number().min(0).nullable().optional(),
@@ -15,12 +15,19 @@ const updateEmployeeSchema = z.object({
   contract_end_date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable().optional(),
   employment_status: z.enum(['active', 'terminated', 'on_leave', 'suspended']).optional(),
   social_security_number: z.string().nullable().optional(),
+  dni_nie: z.string().nullable().optional(),
+  iban: z.string().nullable().optional(),
   convenio_colectivo: z.string().nullable().optional(),
   categoria_profesional: z.string().nullable().optional(),
   tipo_jornada: z.enum(['completa', 'parcial', 'flexible']).optional(),
   periodo_prueba_end: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable().optional(),
   irpf_retention: z.number().min(0).max(100).nullable().optional(),
   job_title: z.string().nullable().optional(),
+  address_street: z.string().nullable().optional(),
+  address_postal_code: z.string().nullable().optional(),
+  address_city: z.string().nullable().optional(),
+  address_province: z.string().nullable().optional(),
+  address_country: z.string().nullable().optional(),
   profile: z.object({
     full_name: z.string().optional(),
     phone: z.string().nullable().optional(),

@@ -164,6 +164,9 @@ export async function GET(request: NextRequest) {
     )
   }
 
+  // Buffer between reservations (configurable, default 15 minutes)
+  const bufferMinutes = (settings as Record<string, unknown>).buffer_minutes as number ?? 15
+
   // Check which tables are already reserved during the requested time
   const requestStartTime = new Date(`${date}T${time}:00`)
   const requestEndTime = new Date(requestStartTime.getTime() + duration * 60000)
@@ -178,24 +181,25 @@ export async function GET(request: NextRequest) {
       suitableTables.map((t) => t.id)
     )
 
-  // Find available tables (not reserved during the requested time)
+  // Find available tables (not reserved during the requested time, respecting buffer)
   const availableTables = suitableTables.filter((table) => {
     const tableReservations = existingReservations?.filter((r) => r.table_id === table.id) || []
 
-    // Check if any reservation overlaps with requested time
+    // Check if any reservation overlaps with requested time (including buffer)
     for (const reservation of tableReservations) {
       const resStartTime = new Date(`${date}T${reservation.start_time}`)
-      const resEndTime = new Date(
-        resStartTime.getTime() + (reservation.estimated_duration_minutes || 90) * 60000
+      // Add buffer to the end of the existing reservation
+      const resEndWithBuffer = new Date(
+        resStartTime.getTime() + ((reservation.estimated_duration_minutes || 90) + bufferMinutes) * 60000
       )
 
-      // Check for overlap
+      // Check for overlap: new reservation must not start within buffer period of existing
       if (
-        (requestStartTime >= resStartTime && requestStartTime < resEndTime) ||
-        (requestEndTime > resStartTime && requestEndTime <= resEndTime) ||
-        (requestStartTime <= resStartTime && requestEndTime >= resEndTime)
+        (requestStartTime >= resStartTime && requestStartTime < resEndWithBuffer) ||
+        (requestEndTime > resStartTime && requestEndTime <= resEndWithBuffer) ||
+        (requestStartTime <= resStartTime && requestEndTime >= resEndWithBuffer)
       ) {
-        return false // Table is occupied during requested time
+        return false // Table is occupied or in buffer period
       }
     }
 
