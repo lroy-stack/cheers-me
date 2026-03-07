@@ -96,16 +96,16 @@ function CarouselRow({
 
   return (
     <div>
-      <div className="relative group">
+      <div className="relative group overflow-hidden">
         <Button
           onClick={() => scrollToIndex(Math.max(0, activeIndex - 1))}
-          className="hidden md:flex absolute -left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center rounded-full bg-background/80 border border-border shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+          className="hidden md:flex absolute left-1 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center rounded-full bg-background/80 border border-border shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
         >
           <ChevronLeft className="w-5 h-5" />
         </Button>
         <Button
           onClick={() => scrollToIndex(Math.min(items.length - 1, activeIndex + 1))}
-          className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center rounded-full bg-background/80 border border-border shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
+          className="hidden md:flex absolute right-1 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center rounded-full bg-background/80 border border-border shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
         >
           <ChevronRight className="w-5 h-5" />
         </Button>
@@ -247,7 +247,7 @@ export default function FeaturedCarousel() {
   const sectionTitle = language === 'nl' ? 'Specialiteiten van het Huis' : language === 'es' ? 'Especiales de la Casa' : language === 'de' ? 'Spezialitäten des Hauses' : 'House Specials'
 
   return (
-    <section className="py-12 px-4">
+    <section className="py-12 px-4 overflow-hidden">
       <div className="max-w-5xl mx-auto space-y-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
