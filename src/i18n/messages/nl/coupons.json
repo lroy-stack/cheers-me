@@ -72,6 +72,7 @@
     "step3": "Jouw gegevens",
     "step4": "Betaling",
     "selectAmount": "Selecteer een bedrag",
+    "ivaIncluido": "BTW inbegrepen (21%)",
     "customAmount": "Aangepast bedrag",
     "minAmount": "Minimum €{min}",
     "maxAmount": "Maximum €{max}",

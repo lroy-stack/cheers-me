@@ -72,6 +72,7 @@
     "step3": "Your Details",
     "step4": "Payment",
     "selectAmount": "Select an amount",
+    "ivaIncluido": "IVA incluido (21%)",
     "customAmount": "Custom amount",
     "minAmount": "Minimum €{min}",
     "maxAmount": "Maximum €{max}",

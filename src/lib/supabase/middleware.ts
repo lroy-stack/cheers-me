@@ -58,7 +58,8 @@ export async function updateSession(request: NextRequest) {
     !request.nextUrl.pathname.startsWith('/api/coupons/purchase') &&
     !request.nextUrl.pathname.startsWith('/legal') &&
     !request.nextUrl.pathname.startsWith('/api/marketing/subscribers/verify') &&
-    !request.nextUrl.pathname.startsWith('/api/marketing/subscribers/unsubscribe')
+    !request.nextUrl.pathname.startsWith('/api/marketing/subscribers/unsubscribe') &&
+    !request.nextUrl.pathname.startsWith('/api/cron/')
   ) {
     const url = request.nextUrl.clone()
     url.pathname = '/login'

@@ -72,6 +72,7 @@
     "step3": "Tus datos",
     "step4": "Pago",
     "selectAmount": "Selecciona un importe",
+    "ivaIncluido": "IVA incluido (21%)",
     "customAmount": "Importe personalizado",
     "minAmount": "Mínimo €{min}",
     "maxAmount": "Máximo €{max}",

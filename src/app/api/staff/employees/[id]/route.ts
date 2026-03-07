@@ -1,4 +1,4 @@
-import { createClient } from '@/lib/supabase/server'
+import { createClient, createAdminClient } from '@/lib/supabase/server'
 import { requireRole } from '@/lib/utils/auth'
 import { encryptString, decryptString } from '@/lib/utils/encryption'
 import { NextRequest, NextResponse } from 'next/server'
@@ -28,6 +28,7 @@ const updateEmployeeSchema = z.object({
   address_city: z.string().nullable().optional(),
   address_province: z.string().nullable().optional(),
   address_country: z.string().nullable().optional(),
+  grupo_cotizacion: z.number().int().min(1).max(11).nullable().optional(),
   profile: z.object({
     full_name: z.string().optional(),
     phone: z.string().nullable().optional(),
@@ -155,6 +156,13 @@ export async function PATCH(
     }
   }
 
+  // Fetch current employee for change tracking
+  const { data: currentEmployee } = await supabase
+    .from('employees')
+    .select('contract_type, gross_salary, profile:profiles(role)')
+    .eq('id', id)
+    .single()
+
   // Encrypt SSN if provided
   if ('social_security_number' in employeeData) {
     if (employeeData.social_security_number) {
@@ -214,6 +222,29 @@ export async function PATCH(
       return NextResponse.json({ error: 'Employee not found' }, { status: 404 })
     }
     return NextResponse.json({ error: 'Failed to update employee' }, { status: 500 })
+  }
+
+  // Log sensitive field changes (role, gross_salary, contract_type)
+  if (currentEmployee) {
+    const adminSupabase = createAdminClient()
+    const changedBy = authResult.data.user?.id
+    const changeLogs: Array<{ employee_id: string; changed_by: string | undefined; field_name: string; old_value: string | null; new_value: string | null }> = []
+
+    const currentProfile = currentEmployee.profile as { role?: string } | null
+
+    if (profileData?.role && currentProfile?.role !== profileData.role) {
+      changeLogs.push({ employee_id: id, changed_by: changedBy, field_name: 'role', old_value: currentProfile?.role ?? null, new_value: profileData.role })
+    }
+    if ('gross_salary' in employeeData && String(currentEmployee.gross_salary ?? '') !== String(employeeData.gross_salary ?? '')) {
+      changeLogs.push({ employee_id: id, changed_by: changedBy, field_name: 'gross_salary', old_value: String(currentEmployee.gross_salary ?? ''), new_value: String(employeeData.gross_salary ?? '') })
+    }
+    if ('contract_type' in employeeData && currentEmployee.contract_type !== employeeData.contract_type) {
+      changeLogs.push({ employee_id: id, changed_by: changedBy, field_name: 'contract_type', old_value: currentEmployee.contract_type, new_value: String(employeeData.contract_type ?? '') })
+    }
+
+    if (changeLogs.length > 0) {
+      await adminSupabase.from('employee_changes').insert(changeLogs)
+    }
   }
 
   // Decrypt SSN before returning

@@ -51,6 +51,29 @@ export function formatCurrencyCompact(amount: number, locale: string = 'es-ES'):
 }
 
 /**
+ * Round a currency amount to 2 decimal places using banker's-safe arithmetic.
+ * Use this for ALL financial calculations to prevent floating-point drift.
+ * @param amount - The amount to round
+ * @returns Amount rounded to 2 decimal places
+ */
+export function roundCurrency(amount: number): number {
+  return Math.round(amount * 100) / 100
+}
+
+/**
+ * Calculate IVA (Spanish VAT) from a gross amount (IVA-inclusive).
+ * @param grossAmount - Total price including IVA
+ * @param ivaRate - IVA rate as a decimal (default 0.21 for 21%)
+ * @returns { base, iva, total } all rounded to 2 decimal places
+ */
+export function splitIVA(grossAmount: number, ivaRate = 0.21): { base: number; iva: number; total: number } {
+  const total = roundCurrency(grossAmount)
+  const base = roundCurrency(total / (1 + ivaRate))
+  const iva = roundCurrency(total - base)
+  return { base, iva, total }
+}
+
+/**
  * Parse a currency string to a number
  * @param value - The currency string to parse (e.g., "€1.234,56" or "1234.56")
  * @returns The parsed number

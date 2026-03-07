@@ -106,6 +106,7 @@ export function EmployeeForm({
     address_city: '',
     address_province: '',
     address_country: 'España',
+    grupo_cotizacion: '',
   })
 
   // Reset form when employee changes or dialog closes
@@ -141,6 +142,7 @@ export function EmployeeForm({
         address_city: ((employee as unknown) as Record<string, unknown>).address_city as string || '',
         address_province: ((employee as unknown) as Record<string, unknown>).address_province as string || '',
         address_country: ((employee as unknown) as Record<string, unknown>).address_country as string || 'España',
+        grupo_cotizacion: (((employee as unknown) as Record<string, unknown>).grupo_cotizacion as number)?.toString() || '',
       })
     } else {
       setFormData({
@@ -173,6 +175,7 @@ export function EmployeeForm({
         address_city: '',
         address_province: '',
         address_country: 'España',
+        grupo_cotizacion: '',
       })
     }
   }, [employee, open])
@@ -209,6 +212,7 @@ export function EmployeeForm({
             address_city: formData.address_city || null,
             address_province: formData.address_province || null,
             address_country: formData.address_country || null,
+            grupo_cotizacion: formData.grupo_cotizacion ? parseInt(formData.grupo_cotizacion) : null,
             profile: {
               full_name: formData.full_name,
               phone: formData.phone || null,
@@ -279,6 +283,7 @@ export function EmployeeForm({
             address_city: formData.address_city || null,
             address_province: formData.address_province || null,
             address_country: formData.address_country || null,
+            grupo_cotizacion: formData.grupo_cotizacion ? parseInt(formData.grupo_cotizacion) : null,
           }),
         })
 
@@ -670,6 +675,32 @@ export function EmployeeForm({
                 onChange={(e) => setFormData({ ...formData, periodo_prueba_end: e.target.value })}
                 disabled={loading}
               />
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="grupo_cotizacion">{t('employees.grupoCotizacion')}</Label>
+              <Select
+                value={formData.grupo_cotizacion}
+                onValueChange={(value) => setFormData({ ...formData, grupo_cotizacion: value })}
+                disabled={loading}
+              >
+                <SelectTrigger id="grupo_cotizacion">
+                  <SelectValue placeholder={t('employees.grupoCotizacionPlaceholder')} />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="1">{t('employees.grupoCotizacion1')}</SelectItem>
+                  <SelectItem value="2">{t('employees.grupoCotizacion2')}</SelectItem>
+                  <SelectItem value="3">{t('employees.grupoCotizacion3')}</SelectItem>
+                  <SelectItem value="4">{t('employees.grupoCotizacion4')}</SelectItem>
+                  <SelectItem value="5">{t('employees.grupoCotizacion5')}</SelectItem>
+                  <SelectItem value="6">{t('employees.grupoCotizacion6')}</SelectItem>
+                  <SelectItem value="7">{t('employees.grupoCotizacion7')}</SelectItem>
+                  <SelectItem value="8">{t('employees.grupoCotizacion8')}</SelectItem>
+                  <SelectItem value="9">{t('employees.grupoCotizacion9')}</SelectItem>
+                  <SelectItem value="10">{t('employees.grupoCotizacion10')}</SelectItem>
+                  <SelectItem value="11">{t('employees.grupoCotizacion11')}</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
           </div>
 

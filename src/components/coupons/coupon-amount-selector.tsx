@@ -36,7 +36,10 @@ export default function CouponAmountSelector({ value, onChange }: CouponAmountSe
 
   return (
     <div className="space-y-3">
-      <p className="text-sm font-medium">{t('selectAmount')}</p>
+      <div className="flex items-center justify-between">
+        <p className="text-sm font-medium">{t('selectAmount')}</p>
+        <span className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded">{t('ivaIncluido')}</span>
+      </div>
       <div className="grid grid-cols-2 gap-2">
         {PRESETS.map(cents => (
           <button

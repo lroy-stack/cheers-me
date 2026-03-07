@@ -27,6 +27,7 @@ const createEmployeeSchema = z.object({
   address_city: z.string().nullable().optional(),
   address_province: z.string().nullable().optional(),
   address_country: z.string().nullable().optional(),
+  grupo_cotizacion: z.number().int().min(1).max(11).nullable().optional(),
 })
 
 /** Decrypt SSN field in employee record (or array of records) */
@@ -168,6 +169,7 @@ export async function POST(request: NextRequest) {
       categoria_profesional: validation.data.categoria_profesional ?? null,
       tipo_jornada: validation.data.tipo_jornada ?? 'completa',
       periodo_prueba_end: validation.data.periodo_prueba_end ?? null,
+      grupo_cotizacion: validation.data.grupo_cotizacion ?? null,
     })
     .select(`
       *,

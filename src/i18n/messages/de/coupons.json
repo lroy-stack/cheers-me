@@ -72,6 +72,7 @@
     "step3": "Deine Daten",
     "step4": "Zahlung",
     "selectAmount": "Wähle einen Betrag",
+    "ivaIncluido": "MwSt. inklusive (21%)",
     "customAmount": "Benutzerdefinierter Betrag",
     "minAmount": "Minimum €{min}",
     "maxAmount": "Maximum €{max}",
