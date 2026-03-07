@@ -16,7 +16,7 @@ export const TaskPlanPrintView = forwardRef<HTMLDivElement, TaskPlanPrintViewPro
     return (
       <div ref={ref} className="print-only hidden print:block p-8 text-black bg-white">
         <h1 className="text-xl font-bold mb-1">Weekly Task Plan</h1>
-        <p className="text-sm text-gray-600 mb-4">
+        <p className="text-sm text-muted-foreground mb-4">
           Week of {weekStartStr} — Status: {plan?.status || 'draft'}
         </p>
 
@@ -26,11 +26,11 @@ export const TaskPlanPrintView = forwardRef<HTMLDivElement, TaskPlanPrintViewPro
               {dayLabels.map((label, i) => (
                 <th
                   key={i}
-                  className="border border-gray-300 bg-gray-100 px-2 py-1.5 text-left font-semibold"
+                  className="border border-border bg-muted px-2 py-1.5 text-left font-semibold"
                   style={{ width: `${100 / 7}%` }}
                 >
                   <div>{label}</div>
-                  <div className="font-normal text-gray-500">{weekDates[i]}</div>
+                  <div className="font-normal text-muted-foreground">{weekDates[i]}</div>
                 </th>
               ))}
             </tr>
@@ -38,7 +38,7 @@ export const TaskPlanPrintView = forwardRef<HTMLDivElement, TaskPlanPrintViewPro
           <tbody>
             <tr>
               {Array.from({ length: 7 }, (_, day) => (
-                <td key={day} className="border border-gray-300 px-1.5 py-1 align-top">
+                <td key={day} className="border border-border px-1.5 py-1 align-top">
                   <div className="space-y-1">
                     {(tasksByDay[day] || []).map(task => (
                       <div
@@ -53,10 +53,10 @@ export const TaskPlanPrintView = forwardRef<HTMLDivElement, TaskPlanPrintViewPro
                       >
                         <div className="font-medium">{task.title}</div>
                         {task.assigned_employee?.profile?.full_name && (
-                          <div className="text-gray-500">{task.assigned_employee.profile.full_name}</div>
+                          <div className="text-muted-foreground">{task.assigned_employee.profile.full_name}</div>
                         )}
                         {task.estimated_minutes && (
-                          <div className="text-gray-400">{task.estimated_minutes}m</div>
+                          <div className="text-muted-foreground">{task.estimated_minutes}m</div>
                         )}
                       </div>
                     ))}
@@ -70,7 +70,7 @@ export const TaskPlanPrintView = forwardRef<HTMLDivElement, TaskPlanPrintViewPro
           </tbody>
         </table>
 
-        <div className="mt-4 flex gap-4 text-xs text-gray-500">
+        <div className="mt-4 flex gap-4 text-xs text-muted-foreground">
           <span>Total tasks: {Object.values(tasksByDay).flat().length}</span>
           <span>
             Est. time: {Object.values(tasksByDay).flat().reduce((s, t) => s + (t.estimated_minutes || 0), 0)}min

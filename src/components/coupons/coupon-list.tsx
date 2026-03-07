@@ -9,12 +9,12 @@ import CouponDetailDialog from './coupon-detail-dialog'
 import { Loader2, Search, Download } from 'lucide-react'
 
 const statusColors: Record<string, string> = {
-  pending_payment: 'bg-gray-100 text-gray-700',
+  pending_payment: 'bg-muted text-gray-700',
   active: 'bg-green-100 text-green-700',
   partially_used: 'bg-amber-100 text-amber-700',
   fully_used: 'bg-blue-100 text-blue-700',
   expired: 'bg-red-100 text-red-700',
-  cancelled: 'bg-gray-100 text-gray-500',
+  cancelled: 'bg-muted text-muted-foreground',
 }
 
 export default function CouponList() {

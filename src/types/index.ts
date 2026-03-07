@@ -20,6 +20,7 @@ export interface Profile {
   role: UserRole
   avatar_url: string | null
   language: Language
+  theme?: 'light' | 'dark' | 'system'
   phone: string | null
   emergency_contact: string | null
   emergency_phone: string | null

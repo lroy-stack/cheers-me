@@ -24,13 +24,13 @@ export default async function SettingsPage() {
 
   // Role badge colors
   const roleColors: Record<string, string> = {
-    admin: 'bg-red-500',
-    manager: 'bg-blue-500',
-    kitchen: 'bg-orange-500',
-    bar: 'bg-green-500',
-    waiter: 'bg-cyan-500',
-    dj: 'bg-pink-500',
-    owner: 'bg-purple-500',
+    admin: 'bg-destructive',
+    manager: 'bg-primary',
+    kitchen: 'bg-primary/70',
+    bar: 'bg-accent',
+    waiter: 'bg-secondary',
+    dj: 'bg-muted',
+    owner: 'bg-primary/90',
   }
 
   return (

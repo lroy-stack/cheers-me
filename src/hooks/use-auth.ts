@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { useTheme } from 'next-themes'
 import { createClient } from '@/lib/supabase/client'
 import { useAuthContext } from '@/components/providers/auth-provider'
 import type { User } from '@supabase/supabase-js'
@@ -29,6 +30,7 @@ export function useAuth() {
     error: null,
   })
   const router = useRouter()
+  const { setTheme } = useTheme()
   const supabase = createClient()
 
   useEffect(() => {
@@ -36,6 +38,9 @@ export function useAuth() {
     if (serverAuth.user && serverAuth.profile) {
       if (serverAuth.profile.language) {
         setLocaleCookie(serverAuth.profile.language)
+      }
+      if (serverAuth.profile.theme) {
+        setTheme(serverAuth.profile.theme)
       }
       return
     }
@@ -53,6 +58,9 @@ export function useAuth() {
             const profile = await response.json()
             if (profile?.language) {
               setLocaleCookie(profile.language)
+            }
+            if (profile?.theme) {
+              setTheme(profile.theme)
             }
             setState({
               user: session.user,
@@ -139,6 +147,9 @@ export function useAuth() {
 
       if (profile?.language) {
         setLocaleCookie(profile.language)
+      }
+      if (profile?.theme) {
+        setTheme(profile.theme)
       }
 
       setState({

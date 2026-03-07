@@ -10,6 +10,7 @@ const updateProfileSchema = z.object({
   language: z.enum(['en', 'nl', 'es', 'de']).optional(),
   emergency_contact: z.string().max(255).nullable().optional(),
   emergency_phone: z.string().max(20).nullable().optional(),
+  theme: z.enum(['light', 'dark', 'system']).optional(),
 })
 
 /**

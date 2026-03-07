@@ -11,11 +11,11 @@ interface AdCardProps {
 }
 
 const statusColors: Record<string, string> = {
-  draft: 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300',
+  draft: 'bg-muted text-gray-700 dark:bg-gray-800 dark:text-gray-300',
   active: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400',
   paused: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400',
   expired: 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400',
-  archived: 'bg-gray-100 text-gray-500 dark:bg-gray-800 dark:text-gray-500',
+  archived: 'bg-muted text-muted-foreground dark:bg-gray-800 dark:text-muted-foreground',
 }
 
 export default function AdCard({ ad, onClick, onStatusToggle }: AdCardProps) {

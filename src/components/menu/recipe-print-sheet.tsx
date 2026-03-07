@@ -32,7 +32,7 @@ export const RecipePrintSheet = forwardRef<HTMLDivElement, RecipePrintSheetProps
             </span>
           )}
           {description && (
-            <p className="mt-2 text-sm text-gray-600">{description}</p>
+            <p className="mt-2 text-sm text-muted-foreground">{description}</p>
           )}
         </div>
 
@@ -66,7 +66,7 @@ export const RecipePrintSheet = forwardRef<HTMLDivElement, RecipePrintSheetProps
 
         {/* Flavors */}
         {item.flavor_profiles && item.flavor_profiles.length > 0 && (
-          <div className="mb-6 text-xs text-gray-500">
+          <div className="mb-6 text-xs text-muted-foreground">
             Flavors: {item.flavor_profiles.join(', ')}
           </div>
         )}
@@ -79,12 +79,12 @@ export const RecipePrintSheet = forwardRef<HTMLDivElement, RecipePrintSheetProps
             </h2>
             <div className="space-y-1">
               {item.ingredients.map((ing, idx) => (
-                <div key={idx} className="flex justify-between text-sm py-1 border-b border-gray-100">
-                  <span className={ing.is_garnish ? 'italic text-gray-500' : ''}>
+                <div key={idx} className="flex justify-between text-sm py-1 border-b border-border">
+                  <span className={ing.is_garnish ? 'italic text-muted-foreground' : ''}>
                     {ing.name}
-                    {ing.is_optional && <span className="text-xs text-gray-400 ml-1">(optional)</span>}
+                    {ing.is_optional && <span className="text-xs text-muted-foreground ml-1">(optional)</span>}
                   </span>
-                  <span className="text-gray-600">{ing.quantity} {ing.unit}</span>
+                  <span className="text-muted-foreground">{ing.quantity} {ing.unit}</span>
                 </div>
               ))}
             </div>
@@ -125,7 +125,7 @@ export const RecipePrintSheet = forwardRef<HTMLDivElement, RecipePrintSheetProps
 
         {/* Footer */}
         <div className="border-t-2 border-[#722F37] pt-3 mt-8 flex justify-between items-center">
-          <div className="text-xs text-gray-400">
+          <div className="text-xs text-muted-foreground">
             GrandCafe Cheers — Carrer de la Platja de Palma, El Arenal, Mallorca
           </div>
           <div className="text-2xl font-bold text-[#722F37]">
