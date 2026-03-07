@@ -105,6 +105,51 @@ export async function GET(request: NextRequest) {
 
     const resultado = ivaRepercutido - ivaSoportado
 
+    // ─────────────────────────────────────────────────────────────
+    // Casilla 65 – Carry-forward from previous quarter (Art. 99 LIVA)
+    // If the previous quarter's resultado was negative (A compensar),
+    // that amount can offset the current quarter's payment obligation.
+    // ─────────────────────────────────────────────────────────────
+    const prevQuarter = quarter === 1 ? 4 : quarter - 1
+    const prevYear = quarter === 1 ? year - 1 : year
+    const { getQuarterDateRange: getRange } = await import('@/lib/utils/spanish-tax')
+    const { start: prevStart, end: prevEnd } = getRange(prevYear, prevQuarter)
+
+    // Prefer saved declaration for previous quarter (reflects any manual adjustments)
+    const { data: prevDeclaration } = await supabase
+      .from('tax_declarations')
+      .select('iva_resultado')
+      .eq('modelo', '303')
+      .gte('period_start', prevStart)
+      .lte('period_end', prevEnd)
+      .order('created_at', { ascending: false })
+      .limit(1)
+      .single()
+
+    let casilla65 = 0
+    if (prevDeclaration && prevDeclaration.iva_resultado < 0) {
+      // Previous quarter was a compensar – carry the absolute value forward
+      casilla65 = Math.abs(prevDeclaration.iva_resultado)
+    } else if (!prevDeclaration) {
+      // No saved declaration – compute previous quarter's resultado on the fly
+      const [prevSalesResult, prevExpensesResult] = await Promise.all([
+        supabase.from('sales_iva_breakdown').select('iva_amount').gte('date', prevStart).lte('date', prevEnd),
+        supabase.from('overhead_expenses').select('iva_amount').eq('is_deductible', true).gte('date', prevStart).lte('date', prevEnd),
+      ])
+      const prevIvaRep = (prevSalesResult.data || []).reduce((s, r) => s + (r.iva_amount || 0), 0)
+      const prevIvaRec = (prevExpensesResult.data || []).reduce((s, r) => s + (r.iva_amount || 0), 0)
+      const prevResultado = prevIvaRep - prevIvaRec
+      if (prevResultado < 0) {
+        casilla65 = Math.abs(prevResultado)
+      }
+    }
+
+    // Net resultado after applying carry-forward
+    const resultadoNeto = resultado - casilla65
+    // If net is still negative, this quarter's excess becomes available for next quarter
+    const aIngresar = Math.max(0, resultadoNeto)
+    const aCompensar = resultadoNeto < 0 ? Math.abs(resultadoNeto) : 0
+
     return NextResponse.json({
       quarter: `${quarter}T ${year}`,
       period_start: start,
@@ -122,6 +167,12 @@ export async function GET(request: NextRequest) {
         iva: Math.round(item.iva * 100) / 100,
       })),
       resultado: Math.round(resultado * 100) / 100,
+      // Casilla 65 – carry-forward from previous quarter
+      casilla_65: Math.round(casilla65 * 100) / 100,
+      resultado_neto: Math.round(resultadoNeto * 100) / 100,
+      a_ingresar: Math.round(aIngresar * 100) / 100,
+      a_compensar: Math.round(aCompensar * 100) / 100,
+      previous_quarter: `${prevQuarter}T ${prevYear}`,
     })
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : 'Unknown error'

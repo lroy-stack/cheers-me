@@ -56,7 +56,13 @@
     "notesPlaceholder": "A\u00f1ada notas sobre el cierre de caja (ej. razones de la diferencia, recibos faltantes, etc.)",
     "notesDescription": "Notas opcionales sobre este cierre de caja",
     "closing": "Cerrando...",
-    "notesRecommended": "(Recomendado para diferencias)"
+    "notesRecommended": "(Recomendado para diferencias)",
+    "paymentBreakdown": "Desglose por Método de Pago",
+    "openingCash": "Fondo Inicial de Caja",
+    "cashAmount": "Efectivo Recibido",
+    "cardAmount": "Tarjeta / TPV",
+    "bizumAmount": "Bizum",
+    "paymentBreakdownDesc": "Introduce los importes por cada método de pago"
   },
   "tips": {
     "title": "Propinas",

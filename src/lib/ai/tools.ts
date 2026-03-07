@@ -6,12 +6,21 @@ import { generateGeminiImage } from '@/lib/utils/gemini-image'
 import sharp from 'sharp'
 import { readFile } from 'fs/promises'
 import { join } from 'path'
+import type { UserRole } from '@/lib/ai/types'
 
 type ToolInput = Record<string, unknown>
 
+/** Roles that are allowed to see salary/compensation data */
+const SALARY_ROLES: readonly UserRole[] = ['admin', 'owner', 'manager']
+
+function canViewSalary(role: UserRole | undefined): boolean {
+  return SALARY_ROLES.includes(role as UserRole)
+}
+
 export async function executeTool(
   toolName: string,
-  toolInput: ToolInput
+  toolInput: ToolInput,
+  userRole?: UserRole
 ): Promise<unknown> {
   const supabase = await createClient()
 
@@ -37,7 +46,7 @@ export async function executeTool(
     case 'draft_review_reply':
       return await draftReviewReply(supabase, toolInput)
     case 'suggest_schedule':
-      return await suggestSchedule(supabase, toolInput)
+      return await suggestSchedule(supabase, toolInput, userRole)
     case 'predict_demand':
       return await predictDemand(supabase, toolInput)
     case 'analyze_trends':
@@ -45,11 +54,11 @@ export async function executeTool(
     case 'compare_periods':
       return await comparePeriods(supabase, toolInput)
     case 'employee_performance':
-      return await employeePerformance(supabase, toolInput)
+      return await employeePerformance(supabase, toolInput, userRole)
     case 'profit_analysis':
-      return await profitAnalysis(supabase, toolInput)
+      return await profitAnalysis(supabase, toolInput, userRole)
     case 'query_tax_data':
-      return await queryTaxData(supabase, toolInput)
+      return await queryTaxData(supabase, toolInput, userRole)
     case 'generate_tax_form_url':
       return generateTaxFormUrl(toolInput)
     case 'get_cocktail_recipe':
@@ -75,9 +84,9 @@ export async function executeTool(
     case 'generate_image':
       return await generateImage(supabase, toolInput)
     case 'get_employees':
-      return await getEmployees(supabase, toolInput)
+      return await getEmployees(supabase, toolInput, userRole)
     case 'get_employee_details':
-      return await getEmployeeDetails(supabase, toolInput)
+      return await getEmployeeDetails(supabase, toolInput, userRole)
     case 'get_leave_requests':
       return await getLeaveRequests(supabase, toolInput)
     case 'get_employee_availability':
@@ -634,7 +643,7 @@ async function draftReviewReply(supabase: SupabaseClient, input: ToolInput) {
   }
 }
 
-async function suggestSchedule(supabase: SupabaseClient, input: ToolInput) {
+async function suggestSchedule(supabase: SupabaseClient, input: ToolInput, _userRole?: UserRole) {
   const { date } = input as {
     date: string
     week?: boolean
@@ -882,12 +891,13 @@ async function comparePeriods(supabase: SupabaseClient, input: ToolInput) {
   }
 }
 
-async function employeePerformance(supabase: SupabaseClient, input: ToolInput) {
+async function employeePerformance(supabase: SupabaseClient, input: ToolInput, userRole?: UserRole) {
   const { employee_id, date_from, date_to } = input as {
     employee_id?: string
     date_from: string
     date_to: string
   }
+  const showSalary = canViewSalary(userRole)
 
   let query = supabase
     .from('shifts')
@@ -947,27 +957,31 @@ async function employeePerformance(supabase: SupabaseClient, input: ToolInput) {
       role: emp.role,
       total_shifts: emp.shifts.length,
       total_hours: parseFloat(totalHours.toFixed(1)),
-      total_cost: parseFloat(totalCost.toFixed(2)),
+      ...(showSalary ? {
+        total_cost: parseFloat(totalCost.toFixed(2)),
+        hourly_rate: emp.hourly_rate,
+      } : {}),
       shifts_per_week: parseFloat(shiftsPerWeek.toFixed(1)),
       avg_hours_per_shift: parseFloat(avgHoursPerShift.toFixed(1)),
-      hourly_rate: emp.hourly_rate,
     }
   }).sort((a, b) => b.total_hours - a.total_hours)
 
   const totalHoursAll = employees.reduce((s, e) => s + e.total_hours, 0)
-  const totalCostAll = employees.reduce((s, e) => s + e.total_cost, 0)
+  const totalCostAll = showSalary
+    ? employees.reduce((s, e) => s + ((e as { total_cost?: number }).total_cost || 0), 0)
+    : 0
 
   return {
     period: { from: date_from, to: date_to },
     total_weeks: parseFloat(totalWeeks.toFixed(1)),
     total_employees: employees.length,
     total_hours: parseFloat(totalHoursAll.toFixed(1)),
-    total_labor_cost: parseFloat(totalCostAll.toFixed(2)),
+    ...(showSalary ? { total_labor_cost: parseFloat(totalCostAll.toFixed(2)) } : {}),
     employees,
   }
 }
 
-async function profitAnalysis(supabase: SupabaseClient, input: ToolInput) {
+async function profitAnalysis(supabase: SupabaseClient, input: ToolInput, userRole?: UserRole) {
   const { period, date_from, date_to } = input as {
     period: string
     date_from?: string
@@ -1039,12 +1053,13 @@ async function profitAnalysis(supabase: SupabaseClient, input: ToolInput) {
   }
   const totalCOGS = foodCOGS + beverageCOGS
 
-  // Labor cost
-  const totalLaborCost = shiftsData.reduce((sum, shift) => {
+  // Labor cost (only computed/exposed to privileged roles)
+  const showSalary = canViewSalary(userRole)
+  const totalLaborCost = showSalary ? shiftsData.reduce((sum, shift) => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const cost = (shift.hours_worked || 0) * ((shift.employee as any).hourly_rate || 0)
     return sum + cost
-  }, 0)
+  }, 0) : 0
 
   // Overhead
   const totalOverhead = overheadData.reduce((s, e) => s + (e.amount || 0), 0)
@@ -1107,7 +1122,7 @@ async function profitAnalysis(supabase: SupabaseClient, input: ToolInput) {
         cogs: parseFloat(totalCOGS.toFixed(2)),
         food_cogs: parseFloat(foodCOGS.toFixed(2)),
         beverage_cogs: parseFloat(beverageCOGS.toFixed(2)),
-        labor: parseFloat(totalLaborCost.toFixed(2)),
+        ...(showSalary ? { labor: parseFloat(totalLaborCost.toFixed(2)) } : {}),
         overhead: parseFloat(totalOverhead.toFixed(2)),
         overhead_breakdown: overheadByCategory,
       },
@@ -1118,7 +1133,7 @@ async function profitAnalysis(supabase: SupabaseClient, input: ToolInput) {
     ratios: {
       food_cost_pct: parseFloat(foodCostRatio.toFixed(1)),
       beverage_cost_pct: parseFloat(beverageCostRatio.toFixed(1)),
-      labor_cost_pct: parseFloat(laborCostRatio.toFixed(1)),
+      ...(showSalary ? { labor_cost_pct: parseFloat(laborCostRatio.toFixed(1)) } : {}),
       avg_ticket: parseFloat(avgTicket.toFixed(2)),
     },
     targets: {
@@ -1136,7 +1151,7 @@ async function profitAnalysis(supabase: SupabaseClient, input: ToolInput) {
 // TAX / FISCAL TOOLS
 // ============================================
 
-async function queryTaxData(supabase: SupabaseClient, input: ToolInput) {
+async function queryTaxData(supabase: SupabaseClient, input: ToolInput, userRole?: UserRole) {
   const { modelo, year, quarter } = input as {
     modelo: '303' | '111' | '347'
     year: number
@@ -1202,6 +1217,7 @@ async function queryTaxData(supabase: SupabaseClient, input: ToolInput) {
       .gt('gross_salary', 0)
 
     const MONTHS_IN_QUARTER = 3
+    const showSalary = canViewSalary(userRole)
     const employeeBreakdown = (employees || []).map(emp => {
       const profile = (emp.profiles as { full_name: string }[] | null)?.[0] ?? null
       const grossSalary = emp.gross_salary || 0
@@ -1209,8 +1225,7 @@ async function queryTaxData(supabase: SupabaseClient, input: ToolInput) {
       const irpfAmount = Math.round(grossSalary * (irpfRate / 100) * MONTHS_IN_QUARTER * 100) / 100
       return {
         name: profile?.full_name || 'Unknown',
-        gross_salary: grossSalary,
-        irpf_rate: irpfRate,
+        ...(showSalary ? { gross_salary: grossSalary, irpf_rate: irpfRate } : {}),
         irpf_amount: irpfAmount,
       }
     })
@@ -1741,8 +1756,9 @@ function getBusinessResource(input: ToolInput) {
 // EMPLOYEE / SCHEDULE TOOLS (NEW)
 // ============================================
 
-async function getEmployees(supabase: SupabaseClient, input: ToolInput) {
+async function getEmployees(supabase: SupabaseClient, input: ToolInput, userRole?: UserRole) {
   const { role, status = 'active' } = input as { role?: string; status?: string }
+  const showSalary = canViewSalary(userRole)
 
   let query = supabase
     .from('employees')
@@ -1771,13 +1787,13 @@ async function getEmployees(supabase: SupabaseClient, input: ToolInput) {
       email: emp.email,
       contract_type: emp.contract_type,
       contract_hours: emp.contract_hours,
-      hourly_rate: emp.hourly_rate,
+      ...(showSalary ? { hourly_rate: emp.hourly_rate } : {}),
       status: emp.status,
     })),
   }
 }
 
-async function getEmployeeDetails(supabase: SupabaseClient, input: ToolInput) {
+async function getEmployeeDetails(supabase: SupabaseClient, input: ToolInput, userRole?: UserRole) {
   const { employee_id } = input as { employee_id: string }
 
   const today = format(new Date(), 'yyyy-MM-dd')
@@ -1796,6 +1812,7 @@ async function getEmployeeDetails(supabase: SupabaseClient, input: ToolInput) {
   const emp = employeeResult.data
   const shifts = shiftsResult.data || []
   const totalHours = shifts.reduce((sum, s) => sum + (s.hours_worked || 0), 0)
+  const showSalary = canViewSalary(userRole)
 
   return {
     employee: {
@@ -1807,9 +1824,11 @@ async function getEmployeeDetails(supabase: SupabaseClient, input: ToolInput) {
       contract_type: emp.contract_type,
       contract_hours: emp.contract_hours,
       weekly_hours_target: emp.weekly_hours_target,
-      hourly_rate: emp.hourly_rate,
-      gross_salary: emp.gross_salary,
-      irpf_retention: emp.irpf_retention,
+      ...(showSalary ? {
+        hourly_rate: emp.hourly_rate,
+        gross_salary: emp.gross_salary,
+        irpf_retention: emp.irpf_retention,
+      } : {}),
       status: emp.status,
     },
     recent_shifts: {

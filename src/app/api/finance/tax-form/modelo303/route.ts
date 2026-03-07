@@ -93,6 +93,25 @@ export async function GET(request: NextRequest) {
     const c07 = (byRate['21']?.base || 0).toFixed(2)
     const c29 = ((expenses || []).reduce((sum, row) => sum + (row.iva_amount || 0), 0)).toFixed(2)
 
+    // Casilla 65 – carry-forward from previous quarter (Art. 99 LIVA)
+    const prevQ = quarter === 1 ? 4 : quarter - 1
+    const prevY = quarter === 1 ? year - 1 : year
+    const { start: prevStart, end: prevEnd } = getQuarterDateRange(prevY, prevQ)
+    const { data: prevDecl } = await supabase
+      .from('tax_declarations')
+      .select('iva_resultado')
+      .eq('modelo', '303')
+      .gte('period_start', prevStart)
+      .lte('period_end', prevEnd)
+      .order('created_at', { ascending: false })
+      .limit(1)
+      .single()
+    let casilla65 = 0
+    if (prevDecl && prevDecl.iva_resultado < 0) {
+      casilla65 = Math.abs(prevDecl.iva_resultado)
+    }
+    const c65 = casilla65.toFixed(2)
+
     const periodMap: Record<number, string> = { 1: '1T', 2: '2T', 3: '3T', 4: '4T' }
 
     // Inject data into HTML via script at end of body
@@ -123,6 +142,10 @@ export async function GET(request: NextRequest) {
     // Set deductible IVA
     var c29El = document.getElementById('c29');
     if (c29El) { c29El.value = '${c29}'; c29El.dispatchEvent(new Event('input')); }
+
+    // Set casilla 65 – carry-forward from previous quarter
+    var c65El = document.getElementById('c65');
+    if (c65El) { c65El.value = '${c65}'; c65El.dispatchEvent(new Event('input')); }
 
     // Trigger calculations
     if (typeof realizarCalculos === 'function') {

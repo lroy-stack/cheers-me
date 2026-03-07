@@ -29,10 +29,10 @@ export async function GET(request: NextRequest) {
   const endDate = `${year}-12-31`
 
   try {
-    // Fetch all overhead expenses for the year
+    // Fetch all overhead expenses for the year (with date for quarterly breakdown)
     const { data: expenses, error } = await supabase
       .from('overhead_expenses')
-      .select('supplier_nif, vendor, amount')
+      .select('supplier_nif, vendor, amount, date')
       .gte('date', startDate)
       .lte('date', endDate)
       .not('supplier_nif', 'is', null)
@@ -44,8 +44,17 @@ export async function GET(request: NextRequest) {
       )
     }
 
-    // Group by supplier_nif and sum amounts
-    const supplierTotals = (expenses || []).reduce(
+    /** Map month → quarter (1-indexed) */
+    function monthToQuarter(dateStr: string): 1 | 2 | 3 | 4 {
+      const month = new Date(dateStr).getMonth() + 1 // 1-12
+      if (month <= 3) return 1
+      if (month <= 6) return 2
+      if (month <= 9) return 3
+      return 4
+    }
+
+    // Group by supplier_nif with quarterly breakdown
+    const supplierMap = (expenses || []).reduce(
       (acc, expense) => {
         const nif = expense.supplier_nif
         if (!nif) return acc
@@ -55,21 +64,36 @@ export async function GET(request: NextRequest) {
             nif,
             name: expense.vendor || 'Unknown',
             total: 0,
+            quarterly: { 1: 0, 2: 0, 3: 0, 4: 0 },
           }
         }
-        acc[nif].total += expense.amount || 0
+        const amount = expense.amount || 0
+        acc[nif].total += amount
+        if (expense.date) {
+          const q = monthToQuarter(expense.date)
+          acc[nif].quarterly[q] += amount
+        }
         return acc
       },
-      {} as Record<string, { nif: string; name: string; total: number }>
+      {} as Record<string, {
+        nif: string; name: string; total: number
+        quarterly: Record<1 | 2 | 3 | 4, number>
+      }>
     )
 
-    // Filter suppliers above threshold
-    const suppliersAboveThreshold = Object.values(supplierTotals)
+    // Filter suppliers above threshold (€3,005.06) and add quarterly_amounts array
+    const suppliersAboveThreshold = Object.values(supplierMap)
       .filter((supplier) => supplier.total > MODELO_347_THRESHOLD)
       .map((supplier) => ({
         nif: supplier.nif,
         name: supplier.name,
         total: Math.round(supplier.total * 100) / 100,
+        quarterly_amounts: [
+          { quarter: 1, label: '1T', amount: Math.round(supplier.quarterly[1] * 100) / 100 },
+          { quarter: 2, label: '2T', amount: Math.round(supplier.quarterly[2] * 100) / 100 },
+          { quarter: 3, label: '3T', amount: Math.round(supplier.quarterly[3] * 100) / 100 },
+          { quarter: 4, label: '4T', amount: Math.round(supplier.quarterly[4] * 100) / 100 },
+        ],
       }))
       .sort((a, b) => b.total - a.total)
 

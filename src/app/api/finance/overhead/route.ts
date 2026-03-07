@@ -3,6 +3,33 @@ import { requireRole } from '@/lib/utils/auth'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 
+/**
+ * Validate Spanish NIF (DNI), NIE, or CIF (company identifier).
+ * Accepts: 8-digit + letter (DNI), X/Y/Z + 7-digit + letter (NIE),
+ * letter + 7-digit + letter/digit (CIF).
+ */
+function isValidSpanishNIF(nif: string): boolean {
+  const normalized = nif.trim().toUpperCase()
+  // NIF/DNI: 8 digits + control letter
+  if (/^\d{8}[A-Z]$/.test(normalized)) {
+    const letters = 'TRWAGMYFPDXBNJZSQVHLCKE'
+    const num = parseInt(normalized.slice(0, 8), 10)
+    return normalized[8] === letters[num % 23]
+  }
+  // NIE: starts with X, Y, or Z, then 7 digits + letter
+  if (/^[XYZ]\d{7}[A-Z]$/.test(normalized)) {
+    const letters = 'TRWAGMYFPDXBNJZSQVHLCKE'
+    const replaced = normalized.replace('X', '0').replace('Y', '1').replace('Z', '2')
+    const num = parseInt(replaced.slice(0, 8), 10)
+    return normalized[8] === letters[num % 23]
+  }
+  // CIF: letter + 7 digits + letter or digit
+  if (/^[ABCDEFGHJKLMNPQRSUVW]\d{7}[A-Z0-9]$/.test(normalized)) {
+    return true // structural validation only for CIF
+  }
+  return false
+}
+
 // Validation schema for overhead expense
 const overheadExpenseSchema = z.object({
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Date must be in YYYY-MM-DD format'),
@@ -18,7 +45,12 @@ const overheadExpenseSchema = z.object({
   payment_method: z.enum(['cash', 'card', 'transfer', 'other']).optional(),
   notes: z.string().optional(),
   factura_number: z.string().optional(),
-  supplier_nif: z.string().optional(),
+  supplier_nif: z.string()
+    .optional()
+    .refine(
+      (nif) => !nif || nif.trim() === '' || isValidSpanishNIF(nif),
+      { message: 'Invalid Spanish NIF/NIE/CIF format' }
+    ),
   iva_rate: z.number().min(0).max(100).default(21),
   iva_amount: z.number().optional(),
   base_imponible: z.number().optional(),

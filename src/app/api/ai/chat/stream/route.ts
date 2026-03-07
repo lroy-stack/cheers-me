@@ -478,9 +478,9 @@ export async function POST(request: NextRequest) {
                     }
                   }
 
-                  // Read tool
+                  // Read tool (pass userRole for salary redaction)
                   const toolStart = Date.now()
-                  const result = await executeTool(block.name, block.input as Record<string, unknown>)
+                  const result = await executeTool(block.name, block.input as Record<string, unknown>, userRole)
                   controller.enqueue(encoder.encode(
                     sseEncode('tool_result', { tool: block.name, status: 'done' })
                   ))

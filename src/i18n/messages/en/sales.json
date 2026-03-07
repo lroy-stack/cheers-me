@@ -56,7 +56,13 @@
     "notesPlaceholder": "Add any notes about the cash close (e.g., reasons for variance, missing receipts, etc.)",
     "notesDescription": "Optional notes about this register close",
     "closing": "Closing...",
-    "notesRecommended": "(Recommended for variances)"
+    "notesRecommended": "(Recommended for variances)",
+    "paymentBreakdown": "Payment Method Breakdown",
+    "openingCash": "Opening Cash Float",
+    "cashAmount": "Cash Received",
+    "cardAmount": "Card / TPV",
+    "bizumAmount": "Bizum",
+    "paymentBreakdownDesc": "Enter amounts received by each payment method"
   },
   "tips": {
     "title": "Tips",

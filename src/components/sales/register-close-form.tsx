@@ -24,6 +24,10 @@ import { Loader2, AlertCircle, CheckCircle2, TrendingUp, TrendingDown, Minus } f
 
 const formSchema = z.object({
   actual_amount: z.string().min(1, 'Actual amount is required'),
+  opening_cash: z.string().optional().default('0'),
+  cash_amount: z.string().optional().default('0'),
+  card_amount: z.string().optional().default('0'),
+  bizum_amount: z.string().optional().default('0'),
   notes: z.string().optional(),
 })
 
@@ -50,6 +54,10 @@ export function RegisterCloseForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
       actual_amount: '',
+      opening_cash: '0',
+      cash_amount: '0',
+      card_amount: '0',
+      bizum_amount: '0',
       notes: '',
     },
   })
@@ -74,6 +82,10 @@ export function RegisterCloseForm({
           date,
           expected_amount: expectedAmount,
           actual_amount: parseFloat(values.actual_amount),
+          opening_cash: parseFloat(values.opening_cash || '0'),
+          cash_amount: parseFloat(values.cash_amount || '0'),
+          card_amount: parseFloat(values.card_amount || '0'),
+          bizum_amount: parseFloat(values.bizum_amount || '0'),
           notes: values.notes || undefined,
           closed_by: employeeId,
         }),
@@ -213,6 +225,78 @@ export function RegisterCloseForm({
             </AlertDescription>
           </Alert>
         )}
+
+        {/* Payment Method Breakdown */}
+        <Card className="p-4">
+          <p className="text-sm font-semibold mb-1">{t('close.paymentBreakdown')}</p>
+          <p className="text-xs text-muted-foreground mb-4">{t('close.paymentBreakdownDesc')}</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <FormField
+              control={form.control}
+              name="opening_cash"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text-xs">{t('close.openingCash')}</FormLabel>
+                  <FormControl>
+                    <div className="relative">
+                      <span className="absolute left-2 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">€</span>
+                      <Input type="number" step="0.01" min="0" placeholder="0.00" className="pl-6" disabled={disabled || isSubmitting} {...field} />
+                    </div>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="cash_amount"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text-xs">{t('close.cashAmount')}</FormLabel>
+                  <FormControl>
+                    <div className="relative">
+                      <span className="absolute left-2 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">€</span>
+                      <Input type="number" step="0.01" min="0" placeholder="0.00" className="pl-6" disabled={disabled || isSubmitting} {...field} />
+                    </div>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="card_amount"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text-xs">{t('close.cardAmount')}</FormLabel>
+                  <FormControl>
+                    <div className="relative">
+                      <span className="absolute left-2 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">€</span>
+                      <Input type="number" step="0.01" min="0" placeholder="0.00" className="pl-6" disabled={disabled || isSubmitting} {...field} />
+                    </div>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="bizum_amount"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text-xs">{t('close.bizumAmount')}</FormLabel>
+                  <FormControl>
+                    <div className="relative">
+                      <span className="absolute left-2 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">€</span>
+                      <Input type="number" step="0.01" min="0" placeholder="0.00" className="pl-6" disabled={disabled || isSubmitting} {...field} />
+                    </div>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+        </Card>
 
         {/* Notes */}
         <FormField

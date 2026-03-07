@@ -8,6 +8,10 @@ const registerCloseSchema = z.object({
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   expected_amount: z.number().min(0),
   actual_amount: z.number().min(0),
+  opening_cash: z.number().min(0).optional().default(0),
+  cash_amount: z.number().min(0).optional().default(0),
+  card_amount: z.number().min(0).optional().default(0),
+  bizum_amount: z.number().min(0).optional().default(0),
   notes: z.string().optional(),
   closed_by: z.string().uuid(),
 })
@@ -125,6 +129,10 @@ export async function POST(request: NextRequest) {
       expected_amount: validation.data.expected_amount,
       actual_amount: validation.data.actual_amount,
       variance,
+      opening_cash: validation.data.opening_cash ?? 0,
+      cash_amount: validation.data.cash_amount ?? 0,
+      card_amount: validation.data.card_amount ?? 0,
+      bizum_amount: validation.data.bizum_amount ?? 0,
       notes: validation.data.notes || null,
       closed_by: validation.data.closed_by,
     })

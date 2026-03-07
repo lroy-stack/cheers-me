@@ -244,8 +244,8 @@ export async function POST(request: NextRequest) {
               }
             }
 
-            // Read tool - execute normally
-            const result = await executeTool(block.name, block.input as Record<string, unknown>)
+            // Read tool - execute normally (pass userRole for salary redaction)
+            const result = await executeTool(block.name, block.input as Record<string, unknown>, userRole)
             return {
               type: 'tool_result' as const,
               tool_use_id: block.id,

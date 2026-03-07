@@ -56,7 +56,13 @@
     "notesPlaceholder": "Voeg notities toe over de kassa-afsluiting (bijv. reden voor verschil, ontbrekende bonnen, etc.)",
     "notesDescription": "Optionele notities over deze kassa-afsluiting",
     "closing": "Afsluiten...",
-    "notesRecommended": "(Aanbevolen bij afwijkingen)"
+    "notesRecommended": "(Aanbevolen bij afwijkingen)",
+    "paymentBreakdown": "Betaalmethode Uitsplitsing",
+    "openingCash": "Beginkas",
+    "cashAmount": "Contant Ontvangen",
+    "cardAmount": "Kaart / TPV",
+    "bizumAmount": "Bizum",
+    "paymentBreakdownDesc": "Voer bedragen in per betaalmethode"
   },
   "tips": {
     "title": "Fooien",
