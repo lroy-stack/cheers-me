@@ -8,6 +8,7 @@ import { Globe } from 'lucide-react'
 import { localeNames, type Locale } from '@/i18n/config'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { Button } from '@/components/ui/button'
 
 interface KioskIdleScreenProps {
   onTouchToBegin: () => void
@@ -42,7 +43,7 @@ export function KioskIdleScreen({ onTouchToBegin }: KioskIdleScreenProps) {
       onPointerDown={onTouchToBegin}
     >
       {/* Language selector - top right */}
-      <button
+      <Button
         className="absolute top-6 right-6 flex items-center gap-2 px-3 py-2 rounded-lg bg-muted/50 hover:bg-muted text-sm text-muted-foreground"
         onClick={(e) => {
           e.stopPropagation()
@@ -52,7 +53,7 @@ export function KioskIdleScreen({ onTouchToBegin }: KioskIdleScreenProps) {
       >
         <Globe className="h-4 w-4" />
         {t('language')}
-      </button>
+      </Button>
 
       {showLangPicker && (
         <div
@@ -61,13 +62,13 @@ export function KioskIdleScreen({ onTouchToBegin }: KioskIdleScreenProps) {
           onPointerDown={(e) => e.stopPropagation()}
         >
           {(Object.entries(localeNames) as [Locale, string][]).map(([key, name]) => (
-            <button
+            <Button
               key={key}
               className="block w-full text-left px-4 py-2 rounded hover:bg-muted text-sm"
               onClick={() => handleLocaleChange(key)}
             >
               {name}
-            </button>
+            </Button>
           ))}
         </div>
       )}

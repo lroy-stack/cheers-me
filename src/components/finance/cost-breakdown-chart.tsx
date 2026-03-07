@@ -113,13 +113,13 @@ export function CostBreakdownChart({ revenue, cogs, labor, overhead, profit }: C
             </div>
             <div className="flex items-center justify-between text-sm">
               <span className="text-muted-foreground">{t('charts.totalCosts')}</span>
-              <span className="font-semibold text-red-600">
+              <span className="font-semibold text-destructive">
                 -&euro;{(cogs + labor + overhead).toLocaleString()}
               </span>
             </div>
             <div className="flex items-center justify-between text-sm pt-2 border-t">
               <span className="font-medium">{t('charts.netProfit')}</span>
-              <span className={`font-bold ${profit >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+              <span className={`font-bold ${profit >= 0 ? 'text-success' : 'text-destructive'}`}>
                 &euro;{profit.toLocaleString()}
               </span>
             </div>

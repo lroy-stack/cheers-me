@@ -220,7 +220,7 @@ export default function PublicBookingForm() {
     return (
       <Card className="max-w-2xl mx-auto">
         <CardHeader>
-          <div className="flex items-center gap-2 text-green-600">
+          <div className="flex items-center gap-2 text-success">
             <CheckCircle2 className="h-6 w-6" />
             <CardTitle>{tb('booking.reservationReceived')}</CardTitle>
           </div>

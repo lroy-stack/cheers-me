@@ -1,6 +1,7 @@
 'use client'
 
 import { Euro } from 'lucide-react'
+import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/ui/table'
 
 interface Ingredient {
   name: string
@@ -28,38 +29,38 @@ export function CostBreakdown({ ingredients, sellingPrice }: CostBreakdownProps)
   const totalCost = rows.reduce((sum, r) => sum + r.subtotal, 0)
   const margin = sellingPrice > 0 ? ((sellingPrice - totalCost) / sellingPrice) * 100 : 0
 
-  const marginColor = margin >= 60 ? 'text-green-600' : margin >= 40 ? 'text-amber-600' : 'text-red-600'
-  const marginBg = margin >= 60 ? 'bg-green-50 dark:bg-green-950/30' : margin >= 40 ? 'bg-amber-50 dark:bg-amber-950/30' : 'bg-red-50 dark:bg-red-950/30'
+  const marginColor = margin >= 60 ? 'text-success' : margin >= 40 ? 'text-amber-600' : 'text-destructive'
+  const marginBg = margin >= 60 ? 'bg-success/15 dark:bg-success/15' : margin >= 40 ? 'bg-amber-50 dark:bg-amber-950/30' : 'bg-destructive/15 dark:bg-destructive/15'
 
   return (
     <div className="space-y-3">
       <div className="rounded-lg border overflow-hidden">
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="bg-muted/50 text-left">
-              <th className="px-3 py-2 font-medium">Ingredient</th>
-              <th className="px-3 py-2 font-medium text-right">Qty</th>
-              <th className="px-3 py-2 font-medium text-right">Unit Cost</th>
-              <th className="px-3 py-2 font-medium text-right">Subtotal</th>
-            </tr>
-          </thead>
-          <tbody>
+        <Table className="w-full text-sm">
+          <TableHeader>
+            <TableRow className="bg-muted/50 text-left">
+              <TableHead className="px-3 py-2 font-medium">Ingredient</TableHead>
+              <TableHead className="px-3 py-2 font-medium text-right">Qty</TableHead>
+              <TableHead className="px-3 py-2 font-medium text-right">Unit Cost</TableHead>
+              <TableHead className="px-3 py-2 font-medium text-right">Subtotal</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
             {rows.map((row, idx) => (
-              <tr key={idx} className="border-t">
-                <td className={`px-3 py-1.5 ${row.isGarnish ? 'italic text-muted-foreground' : ''}`}>
+              <TableRow key={idx} className="border-t">
+                <TableCell className={`px-3 py-1.5 ${row.isGarnish ? 'italic text-muted-foreground' : ''}`}>
                   {row.name}
-                </td>
-                <td className="px-3 py-1.5 text-right text-muted-foreground">{row.qty}</td>
-                <td className="px-3 py-1.5 text-right text-muted-foreground">
+                </TableCell>
+                <TableCell className="px-3 py-1.5 text-right text-muted-foreground">{row.qty}</TableCell>
+                <TableCell className="px-3 py-1.5 text-right text-muted-foreground">
                   {row.unitCost > 0 ? `€${row.unitCost.toFixed(2)}` : '—'}
-                </td>
-                <td className="px-3 py-1.5 text-right font-medium">
+                </TableCell>
+                <TableCell className="px-3 py-1.5 text-right font-medium">
                   {row.subtotal > 0 ? `€${row.subtotal.toFixed(2)}` : '—'}
-                </td>
-              </tr>
+                </TableCell>
+              </TableRow>
             ))}
-          </tbody>
-        </table>
+          </TableBody>
+        </Table>
       </div>
 
       <div className={`rounded-lg p-3 ${marginBg}`}>

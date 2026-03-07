@@ -7,6 +7,8 @@ import type { Advertisement, AdTemplate, AdPlacement, AdDisplayPage } from '@/ty
 import AdTemplatePicker from './ad-template-picker'
 import AdImageUpload from './ad-image-upload'
 import { Loader2 } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
 
 interface AdFormProps {
   ad?: Advertisement
@@ -118,7 +120,7 @@ export default function AdForm({ ad, onSuccess }: AdFormProps) {
         <label className="block text-sm font-medium mb-2">{t('form.content')}</label>
         <div className="flex gap-1 mb-3">
           {LANGUAGES.map(lang => (
-            <button
+            <Button
               key={lang}
               type="button"
               onClick={() => setActiveLang(lang)}
@@ -127,7 +129,7 @@ export default function AdForm({ ad, onSuccess }: AdFormProps) {
               }`}
             >
               {t(`tabs.${lang}`)}
-            </button>
+            </Button>
           ))}
         </div>
 
@@ -232,7 +234,7 @@ export default function AdForm({ ad, onSuccess }: AdFormProps) {
           <label className="block text-sm font-medium mb-1">{t('displayPages.label')}</label>
           <div className="flex gap-2 mt-1">
             {(['digital_menu', 'booking'] as AdDisplayPage[]).map(page => (
-              <button
+              <Button
                 key={page}
                 type="button"
                 onClick={() => toggleDisplayPage(page)}
@@ -243,7 +245,7 @@ export default function AdForm({ ad, onSuccess }: AdFormProps) {
                 }`}
               >
                 {t(`displayPages.${page}`)}
-              </button>
+              </Button>
             ))}
           </div>
         </div>
@@ -255,19 +257,19 @@ export default function AdForm({ ad, onSuccess }: AdFormProps) {
         <div className="grid grid-cols-2 gap-3">
           <div>
             <label className="text-xs text-muted-foreground">{t('form.startDate')}</label>
-            <input type="date" value={form.start_date} onChange={e => updateField('start_date', e.target.value)} className="w-full px-3 py-2 rounded-md border border-border bg-background text-sm" />
+            <Input type="date" value={form.start_date} onChange={e => updateField('start_date', e.target.value)} className="w-full px-3 py-2 rounded-md border border-border bg-background text-sm" />
           </div>
           <div>
             <label className="text-xs text-muted-foreground">{t('form.endDate')}</label>
-            <input type="date" value={form.end_date} onChange={e => updateField('end_date', e.target.value)} className="w-full px-3 py-2 rounded-md border border-border bg-background text-sm" />
+            <Input type="date" value={form.end_date} onChange={e => updateField('end_date', e.target.value)} className="w-full px-3 py-2 rounded-md border border-border bg-background text-sm" />
           </div>
           <div>
             <label className="text-xs text-muted-foreground">{t('form.startTime')}</label>
-            <input type="time" value={form.start_time} onChange={e => updateField('start_time', e.target.value)} className="w-full px-3 py-2 rounded-md border border-border bg-background text-sm" />
+            <Input type="time" value={form.start_time} onChange={e => updateField('start_time', e.target.value)} className="w-full px-3 py-2 rounded-md border border-border bg-background text-sm" />
           </div>
           <div>
             <label className="text-xs text-muted-foreground">{t('form.endTime')}</label>
-            <input type="time" value={form.end_time} onChange={e => updateField('end_time', e.target.value)} className="w-full px-3 py-2 rounded-md border border-border bg-background text-sm" />
+            <Input type="time" value={form.end_time} onChange={e => updateField('end_time', e.target.value)} className="w-full px-3 py-2 rounded-md border border-border bg-background text-sm" />
           </div>
         </div>
 
@@ -276,7 +278,7 @@ export default function AdForm({ ad, onSuccess }: AdFormProps) {
           <label className="text-xs text-muted-foreground">{t('form.daysOfWeek')}</label>
           <div className="flex gap-1 mt-1">
             {DAYS.map((day, i) => (
-              <button
+              <Button
                 key={i}
                 type="button"
                 onClick={() => toggleDayOfWeek(i)}
@@ -287,7 +289,7 @@ export default function AdForm({ ad, onSuccess }: AdFormProps) {
                 }`}
               >
                 {day}
-              </button>
+              </Button>
             ))}
           </div>
         </div>
@@ -307,15 +309,15 @@ export default function AdForm({ ad, onSuccess }: AdFormProps) {
 
       {/* Actions */}
       <div className="flex gap-3 pt-2">
-        <button
+        <Button
           type="button"
           onClick={() => handleSubmit('draft')}
           disabled={saving}
           className="px-4 py-2 rounded-lg border border-border text-sm font-medium hover:bg-muted transition-colors disabled:opacity-50"
         >
           {t('form.saveDraft')}
-        </button>
-        <button
+        </Button>
+        <Button
           type="button"
           onClick={() => handleSubmit('active')}
           disabled={saving}
@@ -323,7 +325,7 @@ export default function AdForm({ ad, onSuccess }: AdFormProps) {
         >
           {saving && <Loader2 className="h-4 w-4 animate-spin" />}
           {t('form.publish')}
-        </button>
+        </Button>
       </div>
     </div>
   )

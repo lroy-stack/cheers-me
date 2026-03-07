@@ -183,9 +183,9 @@ export function AssistantInput({ onSend, onStop, isStreaming, disabled }: Assist
         <div className="flex items-center gap-2 mb-2 px-2 py-1.5 rounded-md bg-destructive/10 text-destructive text-xs">
           <MicOff className="h-3 w-3 shrink-0" />
           <span className="flex-1">{t(micErrorKey) || speech.error}</span>
-          <button onClick={() => speech.startListening()} className="underline shrink-0">
+          <Button onClick={() => speech.startListening()} className="underline shrink-0">
             {t('retry')}
-          </button>
+          </Button>
         </div>
       )}
 
@@ -216,9 +216,9 @@ export function AssistantInput({ onSend, onStop, isStreaming, disabled }: Assist
               className="flex items-center gap-1.5 px-2 py-1 rounded bg-muted text-xs"
             >
               <span className="truncate max-w-[120px]">{file.filename}</span>
-              <button onClick={() => removeAttachment(file.id)} className="shrink-0">
+              <Button onClick={() => removeAttachment(file.id)} className="shrink-0">
                 <X className="h-3 w-3" />
-              </button>
+              </Button>
             </div>
           ))}
         </div>
@@ -229,9 +229,9 @@ export function AssistantInput({ onSend, onStop, isStreaming, disabled }: Assist
         <div className="flex items-center gap-2 mb-2 px-2 py-1.5 rounded-md bg-primary/10 text-xs">
           <ImageIcon className="h-3 w-3 text-primary shrink-0" />
           <span className="text-primary font-medium">{t('generateImage')}</span>
-          <button onClick={() => setImageMode(false)} className="ml-auto shrink-0">
+          <Button onClick={() => setImageMode(false)} className="ml-auto shrink-0">
             <X className="h-3 w-3 text-muted-foreground" />
-          </button>
+          </Button>
         </div>
       )}
 

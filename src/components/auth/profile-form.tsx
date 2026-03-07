@@ -231,7 +231,7 @@ export function ProfileForm({ profile, onUpdate }: ProfileFormProps) {
             )}
 
             {success && (
-              <div className="rounded-md bg-green-500/15 p-3 text-sm text-green-600 dark:text-green-400">
+              <div className="rounded-md bg-success/15 p-3 text-sm text-success dark:text-success">
                 {t('success')}
               </div>
             )}

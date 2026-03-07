@@ -111,9 +111,9 @@ export function RegisterCloseForm({
 
   if (success) {
     return (
-      <Alert className="border-green-200 bg-green-50 dark:bg-green-900/10 dark:border-green-800">
-        <CheckCircle2 className="h-4 w-4 text-green-600" />
-        <AlertDescription className="text-green-900 dark:text-green-400">
+      <Alert className="border-success/30 bg-success/15 dark:bg-success/15 dark:border-success/30">
+        <CheckCircle2 className="h-4 w-4 text-success" />
+        <AlertDescription className="text-success dark:text-success">
           {t('close.successMessage')}
         </AlertDescription>
       </Alert>
@@ -178,19 +178,19 @@ export function RegisterCloseForm({
         {actualAmount > 0 && (
           <Card className={`p-4 ${
             variance === 0
-              ? 'border-green-200 bg-green-50 dark:bg-green-900/10 dark:border-green-800'
+              ? 'border-success/30 bg-success/15 dark:bg-success/15 dark:border-success/30'
               : Math.abs(variance) > 10
-              ? 'border-red-200 bg-red-50 dark:bg-red-900/10 dark:border-red-800'
+              ? 'border-destructive/30 bg-destructive/15 dark:bg-destructive/15 dark:border-destructive/30'
               : 'border-orange-200 bg-orange-50 dark:bg-orange-900/10 dark:border-orange-800'
           }`}>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 {variance === 0 ? (
-                  <Minus className="h-6 w-6 text-green-600" />
+                  <Minus className="h-6 w-6 text-success" />
                 ) : variance > 0 ? (
                   <TrendingUp className="h-6 w-6 text-orange-600" />
                 ) : (
-                  <TrendingDown className="h-6 w-6 text-red-600" />
+                  <TrendingDown className="h-6 w-6 text-destructive" />
                 )}
                 <div>
                   <p className="text-sm font-medium">
@@ -205,9 +205,9 @@ export function RegisterCloseForm({
               </div>
               <div className={`text-2xl font-bold ${
                 variance === 0
-                  ? 'text-green-700'
+                  ? 'text-success'
                   : Math.abs(variance) > 10
-                  ? 'text-red-700'
+                  ? 'text-destructive'
                   : 'text-orange-700'
               }`}>
                 {variance > 0 ? '+' : ''}€{variance.toFixed(2)}

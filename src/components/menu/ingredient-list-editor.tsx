@@ -84,9 +84,9 @@ function SortableRow({ row, onChange, onRemove }: SortableRowProps) {
       style={style}
       className="flex items-center gap-2 p-2 rounded-lg bg-muted/30 border"
     >
-      <button {...attributes} {...listeners} className="cursor-grab touch-none">
+      <Button {...attributes} {...listeners} className="cursor-grab touch-none">
         <GripVertical className="h-4 w-4 text-muted-foreground" />
-      </button>
+      </Button>
 
       <Input
         value={row.name}
@@ -139,7 +139,7 @@ function SortableRow({ row, onChange, onRemove }: SortableRowProps) {
         <span className="text-xs text-muted-foreground">Opt</span>
       </div>
 
-      <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => onRemove(row.id)}>
+      <Button variant="ghost" size="icon" className="h-8 w-8 min-h-[44px] min-w-[44px]" onClick={() => onRemove(row.id)}>
         <Trash2 className="h-3.5 w-3.5 text-destructive" />
       </Button>
     </div>

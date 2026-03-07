@@ -36,7 +36,7 @@ export function ScheduleCell({
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <button
+        <Button
           className={cn(
             'w-full h-12 rounded-md border text-center text-sm font-bold transition-all',
             'focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-1',
@@ -66,12 +66,12 @@ export function ScheduleCell({
             <span className="text-muted-foreground/40 text-lg">+</span>
           )}
           {cell.hasViolation && (
-            <span className="absolute top-0.5 right-0.5 w-2 h-2 rounded-full bg-red-500" />
+            <span className="absolute top-0.5 right-0.5 w-2 h-2 rounded-full bg-destructive/15" />
           )}
           {cell.isOnLeave && !cell.cellType && (
             <span className="text-xs text-muted-foreground">{t('schedule.onLeave')}</span>
           )}
-        </button>
+        </Button>
       </PopoverTrigger>
       <PopoverContent className="w-56 p-2" align="center">
         <div className="space-y-2">

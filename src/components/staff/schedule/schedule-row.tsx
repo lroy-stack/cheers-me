@@ -61,7 +61,7 @@ export function ScheduleRow({ row, weekDates, onSetType, onOpenShiftForm }: Sche
         <div className="flex flex-col items-end">
           <span className={cn(
             'text-sm',
-            row.totalHours > 40 && 'text-red-600 font-bold',
+            row.totalHours > 40 && 'text-destructive font-bold',
             row.totalHours > 35 && row.totalHours <= 40 && 'text-primary'
           )}>
             {row.totalHours.toFixed(1)}h

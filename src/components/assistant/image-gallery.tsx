@@ -143,7 +143,7 @@ export function ImageGallery({ onBack, onOpenConversation }: ImageGalleryProps) 
     <div className="flex flex-col h-full">
       {/* Header */}
       <div className="flex items-center gap-3 h-14 px-4 border-b border-border shrink-0">
-        <Button variant="ghost" size="icon" className="h-8 w-8" onClick={onBack}>
+        <Button variant="ghost" size="icon" className="h-8 w-8 min-h-[44px] min-w-[44px]" onClick={onBack}>
           <ArrowLeft className="h-4 w-4" />
         </Button>
         <h2 className="text-sm font-semibold flex-1">{t('gallery') || 'Gallery'}</h2>
@@ -163,7 +163,7 @@ export function ImageGallery({ onBack, onOpenConversation }: ImageGalleryProps) 
         </div>
         <div className="flex gap-1 flex-wrap">
           {PURPOSE_CHIPS.map(chip => (
-            <button
+            <Button
               key={chip.value}
               onClick={() => setPurpose(chip.value)}
               className={cn(
@@ -174,7 +174,7 @@ export function ImageGallery({ onBack, onOpenConversation }: ImageGalleryProps) 
               )}
             >
               {chip.label}
-            </button>
+            </Button>
           ))}
         </div>
       </div>
@@ -222,24 +222,24 @@ export function ImageGallery({ onBack, onOpenConversation }: ImageGalleryProps) 
                         {image.prompt}
                       </p>
                       <div className="flex items-center gap-1">
-                        <button
+                        <Button
                           className="p-1.5 rounded-md bg-white/20 hover:bg-white/40 transition-colors backdrop-blur-sm"
                           onClick={(e) => { e.stopPropagation(); handleDownload(image) }}
                           title="Download"
                         >
                           <Download className="h-3.5 w-3.5 text-white" />
-                        </button>
+                        </Button>
                         {image.conversation_id && onOpenConversation && (
-                          <button
+                          <Button
                             className="p-1.5 rounded-md bg-white/20 hover:bg-white/40 transition-colors backdrop-blur-sm"
                             onClick={(e) => { e.stopPropagation(); onOpenConversation(image.conversation_id!) }}
                             title="Open chat"
                           >
                             <MessageSquare className="h-3.5 w-3.5 text-white" />
-                          </button>
+                          </Button>
                         )}
-                        <button
-                          className="p-1.5 rounded-md bg-white/20 hover:bg-red-500/60 transition-colors backdrop-blur-sm"
+                        <Button
+                          className="p-1.5 rounded-md bg-white/20 hover:bg-destructive/15 transition-colors backdrop-blur-sm"
                           onClick={(e) => { e.stopPropagation(); handleDelete(image.id) }}
                           title="Delete"
                           disabled={deletingId === image.id}
@@ -248,7 +248,7 @@ export function ImageGallery({ onBack, onOpenConversation }: ImageGalleryProps) 
                             ? <Loader2 className="h-3.5 w-3.5 text-white animate-spin" />
                             : <Trash2 className="h-3.5 w-3.5 text-white" />
                           }
-                        </button>
+                        </Button>
                       </div>
                     </div>
 

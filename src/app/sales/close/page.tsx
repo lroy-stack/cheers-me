@@ -132,7 +132,7 @@ export default async function CashRegisterClosePage() {
             </p>
           </div>
           {todayClose && (
-            <Badge variant="outline" className="border-green-500 text-green-700 dark:text-green-400">
+            <Badge variant="outline" className="border-success/30 text-success dark:text-success">
               ✓ Already Closed Today
             </Badge>
           )}
@@ -229,9 +229,9 @@ export default async function CashRegisterClosePage() {
                     <p className="text-sm text-muted-foreground mb-1">{t('close.difference')}</p>
                     <p className={`text-2xl font-bold ${
                       todayClose.variance === 0
-                        ? 'text-green-600'
+                        ? 'text-success'
                         : Math.abs(todayClose.variance) > 10
-                        ? 'text-red-600'
+                        ? 'text-destructive'
                         : 'text-orange-600'
                     }`}>
                       {todayClose.variance > 0 ? '+' : ''}€{todayClose.variance.toFixed(2)}

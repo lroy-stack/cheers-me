@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, CheckCircle2, Loader2 } from 'lucide-react'
 import { useBookingLanguage } from './booking-language-provider'
+import { Button } from '@/components/ui/button'
 
 type Status = 'idle' | 'loading' | 'success' | 'error'
 
@@ -82,13 +83,13 @@ export default function NewsletterSection() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 rounded-xl p-6"
+            className="bg-success/15 dark:bg-success/15 border border-success/30 dark:border-success/30 rounded-xl p-6"
           >
-            <CheckCircle2 className="h-8 w-8 text-green-600 mx-auto mb-2" />
-            <p className="font-semibold text-green-800 dark:text-green-200">
+            <CheckCircle2 className="h-8 w-8 text-success mx-auto mb-2" />
+            <p className="font-semibold text-success dark:text-success">
               {t('newsletter.successTitle')}
             </p>
-            <p className="text-sm text-green-700 dark:text-green-300 mt-1">
+            <p className="text-sm text-success dark:text-success mt-1">
               {t('newsletter.pendingVerification')}
             </p>
           </motion.div>
@@ -137,7 +138,7 @@ export default function NewsletterSection() {
                 <p className="text-xs text-destructive mt-1 ml-6">{consentError}</p>
               )}
             </div>
-            <button
+            <Button
               type="submit"
               disabled={status === 'loading' || !email}
               className="w-full px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
@@ -150,7 +151,7 @@ export default function NewsletterSection() {
               ) : (
                 t('newsletter.subscribe')
               )}
-            </button>
+            </Button>
             {status === 'error' && errorMsg && (
               <p className="text-sm text-destructive">{errorMsg}</p>
             )}

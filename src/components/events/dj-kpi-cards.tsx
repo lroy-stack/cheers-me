@@ -48,8 +48,8 @@ export function DJKPICards({ data, isLoading }: DJKPICardsProps) {
       title: t('totalFees'),
       value: `€${data.totalFees.toFixed(0)}`,
       icon: Euro,
-      color: 'text-green-500',
-      bgColor: 'bg-green-500/10',
+      color: 'text-success',
+      bgColor: 'bg-success/15',
     },
     {
       title: t('avgFee'),

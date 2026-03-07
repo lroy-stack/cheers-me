@@ -147,12 +147,12 @@ export function AllergenFilter({
               >
                 <Icon className={`h-3 w-3 ${allergen.color}`} />
                 <span className="text-xs">{allergen[`name_${language}`]}</span>
-                <button
+                <Button
                   onClick={() => toggleAllergen(allergenId)}
                   className="ml-1 hover:bg-muted rounded-full p-0.5"
                 >
                   <X className="h-3 w-3" />
-                </button>
+                </Button>
               </Badge>
             )
           })}

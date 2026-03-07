@@ -48,6 +48,14 @@ const config: Config = {
           DEFAULT: oklch('card'),
           foreground: oklch('card-foreground'),
         },
+        success: {
+          DEFAULT: oklch('success'),
+          foreground: oklch('success-foreground'),
+        },
+        warning: {
+          DEFAULT: oklch('warning'),
+          foreground: oklch('warning-foreground'),
+        },
         'cheers-amber': oklch('primary'),
         'cheers-sunset': oklch('accent'),
         'cheers-coral': oklch('destructive'),

@@ -6,6 +6,7 @@ import type { GiftCouponPublic } from '@/types'
 import { formatCouponAmount } from '@/lib/utils/coupon-code'
 import CouponPreviewCard from './coupon-preview-card'
 import { Download, Loader2, Gift, Image as ImageIcon, Printer } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 interface CouponPublicViewProps {
   code: string
@@ -87,7 +88,7 @@ export default function CouponPublicView({ code }: CouponPublicViewProps) {
       <div className="bg-card border border-border rounded-xl p-4 space-y-3">
         <div className="flex justify-between items-center">
           <span className="text-sm text-muted-foreground">{t('balance')}</span>
-          <span className="text-xl font-bold text-green-600">{formatCouponAmount(coupon.remaining_cents)}</span>
+          <span className="text-xl font-bold text-success">{formatCouponAmount(coupon.remaining_cents)}</span>
         </div>
         <div className="flex justify-between items-center text-sm">
           <span className="text-muted-foreground">{t('validUntil')}</span>
@@ -107,21 +108,21 @@ export default function CouponPublicView({ code }: CouponPublicViewProps) {
           </a>
         )}
 
-        <button
+        <Button
           onClick={handleDownloadPng}
           className="flex items-center justify-center gap-2 w-full py-3 rounded-lg border border-border font-medium hover:bg-muted transition-colors"
         >
           <ImageIcon className="h-5 w-5" />
           Download Image (PNG)
-        </button>
+        </Button>
 
-        <button
+        <Button
           onClick={handlePrint}
           className="flex items-center justify-center gap-2 w-full py-3 rounded-lg border border-border font-medium hover:bg-muted transition-colors text-sm"
         >
           <Printer className="h-4 w-4" />
           Print Voucher
-        </button>
+        </Button>
       </div>
 
       <p className="text-center text-xs text-muted-foreground px-4 print:hidden">

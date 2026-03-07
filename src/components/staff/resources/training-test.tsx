@@ -111,7 +111,7 @@ export function TrainingTest({
             )}
 
             {error && (
-              <div className="text-center py-12 text-red-500">
+              <div className="text-center py-12 text-destructive">
                 <p>{error}</p>
               </div>
             )}
@@ -135,10 +135,10 @@ export function TrainingTest({
 
             {/* Result Banner — Passed */}
             {result && result.passed && (
-              <div className="rounded-lg p-6 bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 text-center space-y-4">
-                <Trophy className="h-12 w-12 text-green-600 mx-auto" />
+              <div className="rounded-lg p-6 bg-success/15 dark:bg-success/15 border border-success/30 dark:border-success/30 text-center space-y-4">
+                <Trophy className="h-12 w-12 text-success mx-auto" />
                 <div>
-                  <p className="font-semibold text-xl text-green-800 dark:text-green-300">
+                  <p className="font-semibold text-xl text-success dark:text-success">
                     {t('course.congratulations')}
                   </p>
                   <p className="text-sm text-muted-foreground mt-1">
@@ -157,9 +157,9 @@ export function TrainingTest({
 
             {/* Result Banner — Failed */}
             {result && !result.passed && (
-              <div className="rounded-lg p-4 bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800">
+              <div className="rounded-lg p-4 bg-destructive/15 dark:bg-destructive/15 border border-destructive/30 dark:border-destructive/30">
                 <div className="flex items-center gap-3">
-                  <XCircle className="h-8 w-8 text-red-600" />
+                  <XCircle className="h-8 w-8 text-destructive" />
                   <div>
                     <p className="font-semibold text-lg">
                       {t('training.testFailed')}
@@ -196,7 +196,7 @@ export function TrainingTest({
                     const isSelected = answers[currentQ.id] === optIdx
 
                     return (
-                      <button
+                      <Button
                         key={optIdx}
                         type="button"
                         onClick={() => handleSelect(currentQ.id, optIdx)}
@@ -214,7 +214,7 @@ export function TrainingTest({
                           </div>
                           <span>{opt.text}</span>
                         </div>
-                      </button>
+                      </Button>
                     )
                   })}
                 </div>
@@ -239,9 +239,9 @@ export function TrainingTest({
 
                       let optionClass = 'border rounded-lg p-3 text-sm'
                       if (isCorrectAnswer) {
-                        optionClass += ' border-green-500 bg-green-50 dark:bg-green-950/20'
+                        optionClass += ' border-success/30 bg-success/15 dark:bg-success/15'
                       } else if (isWrongSelection) {
-                        optionClass += ' border-red-500 bg-red-50 dark:bg-red-950/20'
+                        optionClass += ' border-destructive/30 bg-destructive/15 dark:bg-destructive/15'
                       } else {
                         optionClass += ' border-muted opacity-50'
                       }
@@ -250,8 +250,8 @@ export function TrainingTest({
                         <div key={optIdx} className={optionClass}>
                           <div className="flex items-center gap-3">
                             <span>{opt.text}</span>
-                            {isCorrectAnswer && <CheckCircle2 className="h-4 w-4 text-green-600 ml-auto shrink-0" />}
-                            {isWrongSelection && <XCircle className="h-4 w-4 text-red-600 ml-auto shrink-0" />}
+                            {isCorrectAnswer && <CheckCircle2 className="h-4 w-4 text-success ml-auto shrink-0" />}
+                            {isWrongSelection && <XCircle className="h-4 w-4 text-destructive ml-auto shrink-0" />}
                           </div>
                         </div>
                       )

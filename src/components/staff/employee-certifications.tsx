@@ -96,8 +96,8 @@ export function EmployeeCertifications({
                   key={record.id}
                   className="flex items-center gap-3 p-3 rounded-lg border"
                 >
-                  <div className="rounded-md bg-green-100 dark:bg-green-900/30 p-1.5 shrink-0">
-                    <Award className="h-4 w-4 text-green-700 dark:text-green-300" />
+                  <div className="rounded-md bg-success/15 dark:bg-success/15 p-1.5 shrink-0">
+                    <Award className="h-4 w-4 text-success dark:text-success" />
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="text-sm font-medium truncate">

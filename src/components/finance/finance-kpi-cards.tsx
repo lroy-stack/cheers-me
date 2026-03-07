@@ -5,8 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { TrendingUp, TrendingDown, Minus, Euro, PiggyBank, CreditCard, Wallet } from 'lucide-react'
 
 function TrendIcon({ trend }: { trend: 'up' | 'down' | 'stable' | null }) {
-  if (trend === 'up') return <TrendingUp className="h-4 w-4 text-green-500" />
-  if (trend === 'down') return <TrendingDown className="h-4 w-4 text-red-500" />
+  if (trend === 'up') return <TrendingUp className="h-4 w-4 text-success" />
+  if (trend === 'down') return <TrendingDown className="h-4 w-4 text-destructive" />
   if (trend === 'stable') return <Minus className="h-4 w-4 text-muted-foreground" />
   return null
 }
@@ -15,7 +15,7 @@ function TrendBadge({ value, isProfit = false, label }: { value: number | null; 
   if (value === null) return null
 
   const isPositive = isProfit ? value > 0 : value > 0
-  const color = isPositive ? 'text-green-600' : 'text-red-600'
+  const color = isPositive ? 'text-success' : 'text-destructive'
 
   return (
     <p className={`text-xs ${color} font-medium mt-1`}>
@@ -117,7 +117,7 @@ export function FinanceKPICards({
             <PiggyBank className="h-4 w-4 text-primary" />
           </CardDescription>
           <div className="flex items-baseline gap-2">
-            <CardTitle className={`text-2xl ${todayProfit < 0 ? 'text-red-500' : ''}`}>
+            <CardTitle className={`text-2xl ${todayProfit < 0 ? 'text-destructive' : ''}`}>
               &euro;{todayProfit.toLocaleString()}
             </CardTitle>
             {profitTrend && <TrendIcon trend={profitTrend} />}
@@ -142,7 +142,7 @@ export function FinanceKPICards({
         </CardHeader>
         <CardContent>
           <p className="text-xs text-muted-foreground">{t('kpi.revenue')}</p>
-          <p className={`text-sm font-semibold mt-1 ${weekProfit < 0 ? 'text-red-500' : 'text-green-600'}`}>
+          <p className={`text-sm font-semibold mt-1 ${weekProfit < 0 ? 'text-destructive' : 'text-success'}`}>
             &euro;{weekProfit.toLocaleString()} {t('kpi.profit')}
           </p>
         </CardContent>
@@ -159,7 +159,7 @@ export function FinanceKPICards({
         </CardHeader>
         <CardContent>
           <p className="text-xs text-muted-foreground">{t('kpi.revenue')}</p>
-          <p className={`text-sm font-semibold mt-1 ${monthProfit < 0 ? 'text-red-500' : 'text-green-600'}`}>
+          <p className={`text-sm font-semibold mt-1 ${monthProfit < 0 ? 'text-destructive' : 'text-success'}`}>
             &euro;{monthProfit.toLocaleString()} {t('kpi.profit')}
           </p>
         </CardContent>

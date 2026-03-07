@@ -47,7 +47,7 @@ const statusConfig = {
     labelKey: 'overview.completed' as const,
     variant: 'default' as const,
     icon: CheckCheck,
-    className: 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400',
+    className: 'bg-success/15 text-success dark:bg-success/15 dark:text-success',
   },
   cancelled: {
     labelKey: 'overview.cancelled' as const,
@@ -59,7 +59,7 @@ const statusConfig = {
     labelKey: 'overview.noShow' as const,
     variant: 'destructive' as const,
     icon: UserX,
-    className: 'bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-400',
+    className: 'bg-destructive/15 text-destructive dark:bg-destructive/15 dark:text-destructive',
   },
 }
 

@@ -279,9 +279,9 @@ export function InventoryDashboard({
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-muted-foreground">{t('dashboard.outOfStock')}</p>
-                <p className="text-2xl font-bold text-red-500">{outOfStockProducts.length}</p>
+                <p className="text-2xl font-bold text-destructive">{outOfStockProducts.length}</p>
               </div>
-              <TrendingDown className="h-8 w-8 text-red-500" />
+              <TrendingDown className="h-8 w-8 text-destructive" />
             </div>
           </CardContent>
         </Card>

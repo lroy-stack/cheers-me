@@ -47,10 +47,10 @@ interface EmployeeListProps {
 }
 
 const roleColors: Record<string, string> = {
-  admin: 'bg-red-500 text-white',
+  admin: 'bg-destructive/15 text-white',
   manager: 'bg-blue-500 text-white',
   kitchen: 'bg-orange-500 text-white',
-  bar: 'bg-green-500 text-white',
+  bar: 'bg-success/15 text-white',
   waiter: 'bg-purple-500 text-white',
   dj: 'bg-pink-500 text-white',
   owner: 'bg-primary text-primary-foreground',
@@ -184,7 +184,7 @@ export function EmployeeList({ employees, onEdit, onDelete, onShareSchedule }: E
                             href={`https://wa.me/${employee.profile.phone.replace(/[^0-9+]/g, '')}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-muted-foreground hover:text-green-600"
+                            className="text-muted-foreground hover:text-success"
                             title={t('employees.whatsapp')}
                           >
                             <MessageCircle className="h-3.5 w-3.5" />

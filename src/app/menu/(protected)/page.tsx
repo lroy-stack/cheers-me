@@ -237,7 +237,7 @@ export default function MenuOverviewPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-green-600">
+            <div className="text-2xl font-bold text-success">
               {categoryStats.reduce((sum, cat) => sum + cat.available_items, 0)}
             </div>
           </CardContent>
@@ -283,10 +283,10 @@ export default function MenuOverviewPage() {
         {categoryStats.map((category) => {
           const marginColor =
             category.avg_margin >= 70
-              ? 'text-green-600'
+              ? 'text-success'
               : category.avg_margin >= 50
               ? 'text-primary'
-              : 'text-red-600'
+              : 'text-destructive'
 
           return (
             <Card key={category.id} className="hover:shadow-lg transition-shadow">
@@ -331,7 +331,7 @@ export default function MenuOverviewPage() {
                       <Eye className="h-4 w-4" />
                       {t('builder.available')}
                     </div>
-                    <div className="text-lg font-semibold text-green-600">
+                    <div className="text-lg font-semibold text-success">
                       {category.available_items}
                     </div>
                   </div>

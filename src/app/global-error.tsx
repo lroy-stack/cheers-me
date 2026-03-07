@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import { Button } from '@/components/ui/button'
 
 interface GlobalErrorProps {
   error: Error & { digest?: string }
@@ -60,7 +61,7 @@ export default function GlobalError({ error, reset }: GlobalErrorProps) {
               Error ID: {error.digest}
             </p>
           )}
-          <button
+          <Button
             onClick={reset}
             style={{
               background: '#2563eb',
@@ -74,7 +75,7 @@ export default function GlobalError({ error, reset }: GlobalErrorProps) {
             }}
           >
             Try again
-          </button>
+          </Button>
         </div>
       </body>
     </html>

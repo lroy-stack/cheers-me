@@ -94,8 +94,8 @@ export function MyScheduleDashboard({ employeeId, employeeName }: MyScheduleDash
 
         <Card>
           <CardContent className="flex items-center gap-3 p-4">
-            <div className="rounded-lg bg-green-100 dark:bg-green-900/40 p-2">
-              <Calendar className="h-5 w-5 text-green-600 dark:text-green-400" />
+            <div className="rounded-lg bg-success/15 dark:bg-success/15 p-2">
+              <Calendar className="h-5 w-5 text-success dark:text-success" />
             </div>
             <div>
               <p className="text-sm text-muted-foreground">{t('daysOff')}</p>

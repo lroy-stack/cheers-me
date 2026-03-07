@@ -185,7 +185,7 @@ export function LogMovementDialog({ products, onMovementCreated }: LogMovementDi
                         const Icon = option.icon
                         const isSelected = field.value === option.value
                         return (
-                          <button
+                          <Button
                             key={option.value}
                             type="button"
                             onClick={() => field.onChange(option.value)}
@@ -200,7 +200,7 @@ export function LogMovementDialog({ products, onMovementCreated }: LogMovementDi
                             <div className="text-xs text-muted-foreground mt-1">
                               {option.description}
                             </div>
-                          </button>
+                          </Button>
                         )
                       })}
                     </div>

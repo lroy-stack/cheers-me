@@ -9,10 +9,10 @@ import { useTranslations } from 'next-intl'
 import { Pencil, X, Plus } from 'lucide-react'
 
 const PRIORITY_STYLES: Record<string, { bg: string; text: string; border: string; dot: string }> = {
-  urgent: { bg: 'bg-red-100 dark:bg-red-950/40', text: 'text-red-800 dark:text-red-300', border: 'border-l-red-500', dot: 'bg-red-500' },
+  urgent: { bg: 'bg-destructive/15 dark:bg-destructive/15', text: 'text-destructive dark:text-destructive', border: 'border-l-red-500', dot: 'bg-destructive/15' },
   high: { bg: 'bg-orange-100 dark:bg-orange-950/40', text: 'text-orange-800 dark:text-orange-300', border: 'border-l-orange-500', dot: 'bg-orange-500' },
   medium: { bg: 'bg-blue-100 dark:bg-blue-950/40', text: 'text-blue-800 dark:text-blue-300', border: 'border-l-blue-500', dot: 'bg-blue-500' },
-  low: { bg: 'bg-green-100 dark:bg-green-950/40', text: 'text-green-800 dark:text-green-300', border: 'border-l-green-500', dot: 'bg-green-500' },
+  low: { bg: 'bg-success/15 dark:bg-success/15', text: 'text-success dark:text-success', border: 'border-l-green-500', dot: 'bg-success/15' },
 }
 
 interface TaskPlanningCellProps {
@@ -49,7 +49,7 @@ export function TaskPlanningCell({
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <button
+        <Button
           className={cn(
             'w-full h-12 rounded-md border text-center text-sm font-bold transition-all',
             'focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-1',
@@ -72,7 +72,7 @@ export function TaskPlanningCell({
           ) : (
             <span className="text-muted-foreground/40 text-lg">+</span>
           )}
-        </button>
+        </Button>
       </PopoverTrigger>
       <PopoverContent className="w-64 sm:w-72 p-3" align="center">
         <div className="space-y-3">

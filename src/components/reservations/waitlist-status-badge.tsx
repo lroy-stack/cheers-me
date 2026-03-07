@@ -33,7 +33,7 @@ export function WaitlistStatusBadge({ status }: WaitlistStatusBadgeProps) {
     seated: {
       label: t('statusSeated'),
       icon: Check,
-      className: 'bg-green-500/10 text-green-500 hover:bg-green-500/20',
+      className: 'bg-success/15 text-success hover:bg-success/15',
     },
     cancelled: {
       label: t('statusCancelled'),
@@ -43,7 +43,7 @@ export function WaitlistStatusBadge({ status }: WaitlistStatusBadgeProps) {
     expired: {
       label: t('statusExpired'),
       icon: AlertCircle,
-      className: 'bg-red-500/10 text-red-500 hover:bg-red-500/20',
+      className: 'bg-destructive/15 text-destructive hover:bg-destructive/15',
     },
   }
 

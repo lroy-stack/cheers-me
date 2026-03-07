@@ -392,20 +392,20 @@ export function MenuItemForm({
             <label className="text-sm font-medium leading-none">{t('builder.image')}</label>
             {menuItemId && (
               <div className="flex border rounded-md overflow-hidden text-xs">
-                <button
+                <Button
                   type="button"
                   className={`px-3 py-1 transition-colors ${imageMode === 'upload' ? 'bg-primary text-primary-foreground' : 'bg-muted hover:bg-muted/80'}`}
                   onClick={() => setImageMode('upload')}
                 >
                   Upload
-                </button>
-                <button
+                </Button>
+                <Button
                   type="button"
                   className={`px-3 py-1 transition-colors ${imageMode === 'url' ? 'bg-primary text-primary-foreground' : 'bg-muted hover:bg-muted/80'}`}
                   onClick={() => setImageMode('url')}
                 >
                   URL
-                </button>
+                </Button>
               </div>
             )}
           </div>
@@ -429,13 +429,13 @@ export function MenuItemForm({
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <button
+                  <Button
                     type="button"
                     className="absolute top-2 right-2 px-2 py-1 rounded bg-destructive text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity"
                     onClick={() => { setPendingFile(null); setPendingPreview(null) }}
                   >
                     Remove
-                  </button>
+                  </Button>
                 </div>
               ) : (
                 <div

@@ -3,9 +3,9 @@
 import type { DifficultyLevel } from '@/types'
 
 const CONFIG: Record<DifficultyLevel, { dots: number; color: string; label: string }> = {
-  easy: { dots: 1, color: 'bg-green-500', label: 'Easy' },
+  easy: { dots: 1, color: 'bg-success/15', label: 'Easy' },
   medium: { dots: 2, color: 'bg-amber-500', label: 'Medium' },
-  advanced: { dots: 3, color: 'bg-red-500', label: 'Advanced' },
+  advanced: { dots: 3, color: 'bg-destructive/15', label: 'Advanced' },
 }
 
 interface DifficultyIndicatorProps {

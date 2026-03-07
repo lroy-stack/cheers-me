@@ -159,14 +159,14 @@ export function TaxExportTool() {
 
           {/* Status Messages */}
           {exportStatus === 'success' && (
-            <div className="flex items-center gap-2 text-green-600 bg-green-50 dark:bg-green-900/20 p-3 rounded-lg">
+            <div className="flex items-center gap-2 text-success bg-success/15 dark:bg-success/15 p-3 rounded-lg">
               <CheckCircle2 className="h-5 w-5" />
               <span className="text-sm font-medium">{t('taxExport.exportSuccess')}</span>
             </div>
           )}
 
           {exportStatus === 'error' && (
-            <div className="flex items-center gap-2 text-red-600 bg-red-50 dark:bg-red-900/20 p-3 rounded-lg">
+            <div className="flex items-center gap-2 text-destructive bg-destructive/15 dark:bg-destructive/15 p-3 rounded-lg">
               <AlertCircle className="h-5 w-5" />
               <span className="text-sm font-medium">
                 {t('taxExport.exportError')}

@@ -14,7 +14,7 @@ interface TaskPlanPrintViewProps {
 export const TaskPlanPrintView = forwardRef<HTMLDivElement, TaskPlanPrintViewProps>(
   function TaskPlanPrintView({ plan, tasksByDay, weekStartStr, dayLabels, weekDates }, ref) {
     return (
-      <div ref={ref} className="print-only hidden print:block p-8 text-black bg-white">
+      <div ref={ref} className="print-only hidden print:block p-8 text-black bg-card">
         <h1 className="text-xl font-bold mb-1">Weekly Task Plan</h1>
         <p className="text-sm text-muted-foreground mb-4">
           Week of {weekStartStr} — Status: {plan?.status || 'draft'}
@@ -61,7 +61,7 @@ export const TaskPlanPrintView = forwardRef<HTMLDivElement, TaskPlanPrintViewPro
                       </div>
                     ))}
                     {(!tasksByDay[day] || tasksByDay[day].length === 0) && (
-                      <div className="text-gray-300 italic">—</div>
+                      <div className="text-muted-foreground italic">—</div>
                     )}
                   </div>
                 </td>

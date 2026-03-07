@@ -72,7 +72,7 @@ export function MessageFeedback({ messageId, conversationId }: MessageFeedbackPr
           onClick={handleThumbsUp}
           title={t('feedbackPositive')}
         >
-          <ThumbsUp className="h-3 w-3 text-muted-foreground hover:text-green-500" />
+          <ThumbsUp className="h-3 w-3 text-muted-foreground hover:text-success" />
         </Button>
         <Button
           variant="ghost"
@@ -100,13 +100,13 @@ export function MessageFeedback({ messageId, conversationId }: MessageFeedbackPr
             </Button>
           </div>
           {NEGATIVE_REASON_KEYS.map(r => (
-            <button
+            <Button
               key={r.key}
               className="block w-full text-left text-xs px-2 py-1 rounded hover:bg-muted transition-colors"
               onClick={() => submitFeedback('negative', r.key)}
             >
               {t(r.i18nKey)}
-            </button>
+            </Button>
           ))}
           <textarea
             value={comment}

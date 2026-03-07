@@ -3,6 +3,7 @@
 import type { AdTemplate } from '@/types'
 import { useTranslations } from 'next-intl'
 import { Trophy, Utensils, Clock, Wine, Pencil } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 interface AdTemplatePickerProps {
   selected: AdTemplate
@@ -23,7 +24,7 @@ export default function AdTemplatePicker({ selected, onChange }: AdTemplatePicke
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
       {templates.map(({ value, icon: Icon, colors }) => (
-        <button
+        <Button
           key={value}
           type="button"
           onClick={() => onChange(value)}
@@ -40,7 +41,7 @@ export default function AdTemplatePicker({ selected, onChange }: AdTemplatePicke
             <Icon className="h-6 w-6" />
           </div>
           <span className="text-xs font-medium text-center">{t(value)}</span>
-        </button>
+        </Button>
       ))}
     </div>
   )

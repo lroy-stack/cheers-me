@@ -176,7 +176,7 @@ export default async function DashboardPage() {
             <Card className="hover:shadow-md transition-shadow cursor-pointer">
               <CardHeader className="pb-3">
                 <CardDescription>{st('stockAlerts')}</CardDescription>
-                <CardTitle className={`text-2xl ${stats.stockAlerts > 0 ? 'text-orange-500' : 'text-green-500'}`}>
+                <CardTitle className={`text-2xl ${stats.stockAlerts > 0 ? 'text-orange-500' : 'text-success'}`}>
                   {stats.stockAlerts}
                 </CardTitle>
               </CardHeader>
@@ -191,10 +191,10 @@ export default async function DashboardPage() {
 
         {/* VIP Arrivals Today */}
         {stats.vipArrivals.length > 0 && (
-          <Card className="border-yellow-500/30 bg-yellow-500/5">
+          <Card className="border-warning/30 bg-warning/15">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center gap-2 text-base">
-                <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
+                <Star className="h-4 w-4 text-warning-foreground fill-yellow-500" />
                 {t('vipArrivals.title')}
               </CardTitle>
               <CardDescription>{t('vipArrivals.subtitle', { count: stats.vipArrivals.length })}</CardDescription>
@@ -203,7 +203,7 @@ export default async function DashboardPage() {
               <ul className="space-y-2">
                 {stats.vipArrivals.map((arrival) => (
                   <li key={arrival.id} className="flex items-center gap-3 text-sm">
-                    <Badge variant="secondary" className="bg-yellow-500/20 text-yellow-700 dark:text-yellow-400 border-yellow-500/30 text-xs shrink-0">
+                    <Badge variant="secondary" className="bg-warning/15 text-warning-foreground dark:text-warning-foreground border-warning/30 text-xs shrink-0">
                       VIP
                     </Badge>
                     <span className="font-medium">{arrival.guest_name}</span>

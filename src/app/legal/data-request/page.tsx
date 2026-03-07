@@ -78,7 +78,7 @@ export default function DataRequestPage() {
 
       {status === 'success' ? (
         <div className="rounded-xl border border-border bg-card p-8 text-center">
-          <CheckCircle2 className="h-12 w-12 text-green-500 mx-auto mb-4" />
+          <CheckCircle2 className="h-12 w-12 text-success mx-auto mb-4" />
           <h2 className="text-xl font-semibold text-foreground mb-2">{t('successTitle')}</h2>
           <p className="text-muted-foreground">{t('successText')}</p>
         </div>

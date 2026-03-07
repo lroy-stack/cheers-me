@@ -28,10 +28,10 @@ export function BeerKegGrid({ kegs, onUpdateKeg, onMarkEmpty }: BeerKegGridProps
   const t = useTranslations('stock')
 
   const getKegStatusColor = (percentRemaining: number) => {
-    if (percentRemaining === 0) return 'text-red-500'
+    if (percentRemaining === 0) return 'text-destructive'
     if (percentRemaining < 20) return 'text-orange-500'
     if (percentRemaining < 50) return 'text-primary'
-    return 'text-green-500'
+    return 'text-success'
   }
 
   const getKegStatusBadge = (percentRemaining: number, status: string) => {
@@ -63,7 +63,7 @@ export function BeerKegGrid({ kegs, onUpdateKeg, onMarkEmpty }: BeerKegGridProps
     }
 
     return (
-      <Badge variant="secondary" className="gap-1 bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">
+      <Badge variant="secondary" className="gap-1 bg-success/15 text-success dark:bg-success/15 dark:text-success">
         <CheckCircle2 className="h-3 w-3" />
         {t('beers.good')}
       </Badge>
@@ -164,12 +164,12 @@ export function BeerKegGrid({ kegs, onUpdateKeg, onMarkEmpty }: BeerKegGridProps
             className={cn(
               'absolute bottom-0 left-0 h-1 transition-all',
               keg.status === 'empty'
-                ? 'bg-red-500'
+                ? 'bg-destructive/15'
                 : keg.percent_remaining < 20
                   ? 'bg-orange-500'
                   : keg.percent_remaining < 50
                     ? 'bg-primary'
-                    : 'bg-green-500'
+                    : 'bg-success/15'
             )}
             style={{ width: `${keg.percent_remaining}%` }}
           />

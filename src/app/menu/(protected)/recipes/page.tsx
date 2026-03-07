@@ -175,7 +175,7 @@ export default function RecipesPage() {
                     onEditIngredients={handleEditDone}
                     onEditSteps={handleEditDone}
                   >
-                    <button className="w-full flex items-center gap-3 px-3 py-2 text-left hover:bg-muted/50 transition-colors">
+                    <Button className="w-full flex items-center gap-3 px-3 py-2 text-left hover:bg-muted/50 transition-colors">
                       {cocktail.glass_type && (
                         <GlassTypeIcon glassType={cocktail.glass_type} size="sm" />
                       )}
@@ -211,7 +211,7 @@ export default function RecipesPage() {
                         <Euro className="h-3 w-3" />
                         {cocktail.price.toFixed(2)}
                       </span>
-                    </button>
+                    </Button>
                   </CocktailDetailDialog>
                 )
               })}

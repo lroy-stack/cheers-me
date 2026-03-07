@@ -128,7 +128,7 @@ export function WaitlistEntryCard({
 
             {/* Seated Info */}
             {entry.tables && (
-              <Badge variant="outline" className="bg-green-500/10 text-green-500">
+              <Badge variant="outline" className="bg-success/15 text-success">
                 Seated at Table {entry.tables.table_number}
               </Badge>
             )}
@@ -173,7 +173,7 @@ export function WaitlistEntryCard({
                     <DropdownMenuSeparator />
                     <DropdownMenuItem
                       onClick={() => onRemove(entry.id)}
-                      className="text-red-500"
+                      className="text-destructive"
                     >
                       <X className="mr-2 h-4 w-4" />
                       {t('waitlist.remove')}

@@ -61,10 +61,10 @@ interface SurveyRecord {
 }
 
 const roleColors: Record<string, string> = {
-  admin: 'bg-red-500 text-white',
+  admin: 'bg-destructive/15 text-white',
   manager: 'bg-blue-500 text-white',
   kitchen: 'bg-orange-500 text-white',
-  bar: 'bg-green-500 text-white',
+  bar: 'bg-success/15 text-white',
   waiter: 'bg-purple-500 text-white',
   dj: 'bg-pink-500 text-white',
   owner: 'bg-primary text-primary-foreground',
@@ -308,7 +308,7 @@ export function EmployeeProfile({ employeeId }: EmployeeProfileProps) {
         <Card>
           <CardContent className="pt-6">
             <div className="flex items-center gap-2">
-              <Clock className="h-5 w-5 text-green-500" />
+              <Clock className="h-5 w-5 text-success" />
               <div className="text-2xl font-bold">
                 {summary ? `${summary.monthHours}h` : '—'}
               </div>
@@ -319,7 +319,7 @@ export function EmployeeProfile({ employeeId }: EmployeeProfileProps) {
         <Card>
           <CardContent className="pt-6">
             <div className="flex items-center gap-2">
-              <Star className="h-5 w-5 text-yellow-500" />
+              <Star className="h-5 w-5 text-warning-foreground" />
               <div className="text-2xl font-bold">
                 {summary?.avgRating !== null && summary?.avgRating !== undefined
                   ? `${summary.avgRating}/5 ${EMOJI_RATINGS[Math.round(summary.avgRating)] || ''}`
@@ -546,7 +546,7 @@ export function EmployeeProfile({ employeeId }: EmployeeProfileProps) {
                             <Badge variant="outline">{survey.anomaly_type}</Badge>
                           )}
                           {!survey.manager_reviewed && (
-                            <Badge variant="outline" className="text-yellow-600 border-yellow-400">
+                            <Badge variant="outline" className="text-warning-foreground border-warning/30">
                               Unreviewed
                             </Badge>
                           )}

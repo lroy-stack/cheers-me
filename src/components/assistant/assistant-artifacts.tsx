@@ -110,7 +110,7 @@ export function AssistantArtifacts({
             {isImageArtifact(activeArtifact) ? 'Image' : (TYPE_LABELS[activeArtifact.type] || activeArtifact.type)}
           </Badge>
           <div className="flex items-center border rounded-md overflow-hidden shrink-0">
-            <button
+            <Button
               className={cn(
                 'px-2 py-0.5 text-xs font-medium transition-colors',
                 viewMode === 'preview' ? 'bg-primary text-primary-foreground' : 'hover:bg-muted'
@@ -118,8 +118,8 @@ export function AssistantArtifacts({
               onClick={() => setViewMode('preview')}
             >
               {t('preview')}
-            </button>
-            <button
+            </Button>
+            <Button
               className={cn(
                 'px-2 py-0.5 text-xs font-medium transition-colors',
                 viewMode === 'code' ? 'bg-primary text-primary-foreground' : 'hover:bg-muted'
@@ -127,7 +127,7 @@ export function AssistantArtifacts({
               onClick={() => setViewMode('code')}
             >
               {t('code')}
-            </button>
+            </Button>
           </div>
           <div className="flex items-center shrink-0">
             {isImageArtifact(activeArtifact) && (
@@ -148,7 +148,7 @@ export function AssistantArtifacts({
               onClick={handleCopy}
               title={copied ? t('copied') : t('copy')}
             >
-              {copied ? <Check className="h-3.5 w-3.5 text-green-500" /> : <Copy className="h-3.5 w-3.5" />}
+              {copied ? <Check className="h-3.5 w-3.5 text-success" /> : <Copy className="h-3.5 w-3.5" />}
             </Button>
             <Button
               variant="ghost"

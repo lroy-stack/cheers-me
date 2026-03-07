@@ -40,13 +40,13 @@ const priorityColors: Record<string, string> = {
   low: 'bg-muted text-foreground dark:bg-muted dark:text-muted-foreground',
   medium: 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300',
   high: 'bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300',
-  urgent: 'bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300',
+  urgent: 'bg-destructive/15 text-destructive dark:bg-destructive/15 dark:text-destructive',
 }
 
 const statusColors: Record<string, string> = {
-  pending: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-300',
+  pending: 'bg-warning/15 text-warning-foreground dark:bg-warning/15 dark:text-warning-foreground',
   in_progress: 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300',
-  completed: 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300',
+  completed: 'bg-success/15 text-success dark:bg-success/15 dark:text-success',
   cancelled: 'bg-muted text-foreground dark:bg-muted dark:text-muted-foreground',
 }
 
@@ -253,7 +253,7 @@ export function TaskDetail({
 
             {/* Due date */}
             {task.due_date && (
-              <div className={`flex items-center gap-3 text-sm ${isOverdue ? 'text-red-500' : isDueToday ? 'text-orange-500' : ''}`}>
+              <div className={`flex items-center gap-3 text-sm ${isOverdue ? 'text-destructive' : isDueToday ? 'text-orange-500' : ''}`}>
                 <Calendar className="h-4 w-4" />
                 <span className="text-muted-foreground">{t('tasks.dueDate')}:</span>
                 <span className="font-medium">
@@ -270,7 +270,7 @@ export function TaskDetail({
 
             {/* Completed info */}
             {task.completed_at && (
-              <div className="flex items-center gap-3 text-sm text-green-600 dark:text-green-400">
+              <div className="flex items-center gap-3 text-sm text-success dark:text-success">
                 <CheckCircle2 className="h-4 w-4" />
                 <span>{t('tasks.completedOn')}:</span>
                 <span>{format(new Date(task.completed_at), 'MMM d, yyyy HH:mm')}</span>
@@ -313,7 +313,7 @@ export function TaskDetail({
                 {/* Progress bar */}
                 <div className="w-full bg-muted rounded-full h-2">
                   <div
-                    className="bg-green-500 h-2 rounded-full transition-all"
+                    className="bg-success/15 h-2 rounded-full transition-all"
                     style={{
                       width: `${totalItems > 0 ? (completedItems / totalItems) * 100 : 0}%`,
                     }}
@@ -364,7 +364,7 @@ export function TaskDetail({
               <Button
                 onClick={() => handleStatusChange('completed')}
                 disabled={loading}
-                className="bg-green-600 hover:bg-green-700"
+                className="bg-success/15 hover:bg-success/15"
               >
                 {loading ? (
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />

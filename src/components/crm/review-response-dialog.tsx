@@ -156,10 +156,10 @@ export function ReviewResponseDialog({
 
           {/* Response already sent */}
           {review.response_sent ? (
-            <div className="p-4 bg-green-500/10 border border-green-500/20 rounded-lg">
+            <div className="p-4 bg-success/15 border border-success/30 rounded-lg">
               <div className="flex items-center gap-2 mb-2">
-                <Check className="h-4 w-4 text-green-600" />
-                <p className="text-sm font-semibold text-green-600">{t('responseSent')}</p>
+                <Check className="h-4 w-4 text-success" />
+                <p className="text-sm font-semibold text-success">{t('responseSent')}</p>
               </div>
               <p className="text-sm">{review.response_sent}</p>
             </div>

@@ -63,7 +63,7 @@ export function ExpensesSummary({ summary }: ExpensesSummaryProps) {
           <CardHeader className="pb-3">
             <div className="flex items-center justify-between">
               <CardDescription className="text-xs">{t('expenses.deductibleTotal')}</CardDescription>
-              <CheckCircle className="h-4 w-4 text-green-500" />
+              <CheckCircle className="h-4 w-4 text-success" />
             </div>
           </CardHeader>
           <CardContent>

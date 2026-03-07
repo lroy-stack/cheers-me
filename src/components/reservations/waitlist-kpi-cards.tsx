@@ -39,7 +39,7 @@ export function WaitlistKPICards({ data, isLoading }: WaitlistKPICardsProps) {
       value: data.total_seated_today,
       icon: TrendingUp,
       description: 'From waitlist',
-      color: 'text-green-500',
+      color: 'text-success',
     },
     {
       title: t('waitlist.estimatedWait'),

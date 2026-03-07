@@ -36,7 +36,7 @@ export function CourseCard({ guide, assignment, trainingStatus, onSelect }: Cour
   const getStatusBadge = () => {
     if (isCompleted) {
       return (
-        <Badge className="bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300 border-0">
+        <Badge className="bg-success/15 text-success dark:bg-success/15 dark:text-success border-0">
           <CheckCircle2 className="h-3 w-3 mr-1" />
           {t('course.testPassed')}
         </Badge>
@@ -44,7 +44,7 @@ export function CourseCard({ guide, assignment, trainingStatus, onSelect }: Cour
     }
     if (isOverdue) {
       return (
-        <Badge className="bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300 border-0">
+        <Badge className="bg-destructive/15 text-destructive dark:bg-destructive/15 dark:text-destructive border-0">
           <AlertTriangle className="h-3 w-3 mr-1" />
           {t('training.statusOverdue')}
         </Badge>

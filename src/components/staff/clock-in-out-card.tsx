@@ -228,7 +228,7 @@ export function ClockInOutCard({ employeeId, onClockChange }: ClockInOutCardProp
                   {t('clock.breakTime')}
                 </Badge>
               )}
-              <Badge variant="default" className="bg-green-500">
+              <Badge variant="default" className="bg-success/15">
                 {t('clock.active')}
               </Badge>
             </div>
@@ -269,7 +269,7 @@ export function ClockInOutCard({ employeeId, onClockChange }: ClockInOutCardProp
               </div>
               <div className="flex items-center justify-between text-sm">
                 <span className="text-muted-foreground">{t('clock.duration')}</span>
-                <span className="font-mono font-bold text-lg text-green-600">
+                <span className="font-mono font-bold text-lg text-success">
                   {calculateDuration(currentClock.clock_in_time)}
                 </span>
               </div>

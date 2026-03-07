@@ -376,7 +376,7 @@ export function getTaskColumns(options: ColumnOptions): ColumnDef<StaffTaskWithD
         const date = new Date(d + 'T23:59:59')
         const isOverdue = row.original.status !== 'completed' && row.original.status !== 'cancelled' && isPast(date)
         return (
-          <span className={cn('text-sm', isOverdue && 'text-red-600 dark:text-red-400 font-medium')}>
+          <span className={cn('text-sm', isOverdue && 'text-destructive dark:text-destructive font-medium')}>
             {format(new Date(d + 'T00:00:00'), 'dd/MM/yyyy')}
             {row.original.due_time && (
               <span className="text-xs text-muted-foreground ml-1">{row.original.due_time}</span>

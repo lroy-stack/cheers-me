@@ -1,5 +1,6 @@
 'use client'
 
+import { Button } from '@/components/ui/button'
 import { useState } from 'react'
 import { ComplianceFichaType, ComplianceFichaCategory } from '@/types'
 import { Card, CardContent } from '@/components/ui/card'
@@ -41,7 +42,7 @@ const CATEGORIES: ComplianceFichaCategory[] = [
 ]
 
 const FREQUENCY_COLORS: Record<string, string> = {
-  daily: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
+  daily: 'bg-success/15 text-success dark:bg-success/15 dark:text-success',
   weekly: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
   monthly: 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300',
   per_event: 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300',
@@ -178,16 +179,16 @@ export function ComplianceTypeSelector({
                             }}
                           >
                             <PopoverTrigger asChild>
-                              <button
+                              <Button
                                 type="button"
                                 title={t('downloadBlankPdf')}
-                                className="p-1 rounded hover:bg-red-50 dark:hover:bg-red-900/20 text-muted-foreground hover:text-red-600 transition-colors"
+                                className="p-1 rounded hover:bg-destructive/15 dark:hover:bg-destructive/15 text-muted-foreground hover:text-destructive transition-colors"
                                 onClick={(e) => {
                                   e.stopPropagation()
                                 }}
                               >
                                 <Download className="h-3.5 w-3.5" />
-                              </button>
+                              </Button>
                             </PopoverTrigger>
                             <PopoverContent
                               className="w-auto p-2"
@@ -197,7 +198,7 @@ export function ComplianceTypeSelector({
                               <p className="text-xs text-muted-foreground mb-1.5 px-1">{t('selectLanguage')}</p>
                               <div className="flex gap-1">
                                 {DOWNLOAD_LANGUAGES.map((lang) => (
-                                  <button
+                                  <Button
                                     key={lang.code}
                                     type="button"
                                     className="flex items-center gap-1 px-2 py-1 rounded text-xs hover:bg-accent transition-colors"
@@ -208,7 +209,7 @@ export function ComplianceTypeSelector({
                                   >
                                     <span className="text-base">{lang.flag}</span>
                                     <span>{lang.label}</span>
-                                  </button>
+                                  </Button>
                                 ))}
                               </div>
                             </PopoverContent>
@@ -225,16 +226,16 @@ export function ComplianceTypeSelector({
                             }}
                           >
                             <PopoverTrigger asChild>
-                              <button
+                              <Button
                                 type="button"
                                 title={t('downloadBlankExcel')}
-                                className="p-1 rounded hover:bg-green-50 dark:hover:bg-green-900/20 text-muted-foreground hover:text-green-600 transition-colors"
+                                className="p-1 rounded hover:bg-success/15 dark:hover:bg-success/15 text-muted-foreground hover:text-success transition-colors"
                                 onClick={(e) => {
                                   e.stopPropagation()
                                 }}
                               >
                                 <FileSpreadsheet className="h-3.5 w-3.5" />
-                              </button>
+                              </Button>
                             </PopoverTrigger>
                             <PopoverContent
                               className="w-auto p-2"
@@ -244,7 +245,7 @@ export function ComplianceTypeSelector({
                               <p className="text-xs text-muted-foreground mb-1.5 px-1">{t('selectLanguage')}</p>
                               <div className="flex gap-1">
                                 {DOWNLOAD_LANGUAGES.map((lang) => (
-                                  <button
+                                  <Button
                                     key={lang.code}
                                     type="button"
                                     className="flex items-center gap-1 px-2 py-1 rounded text-xs hover:bg-accent transition-colors"
@@ -255,7 +256,7 @@ export function ComplianceTypeSelector({
                                   >
                                     <span className="text-base">{lang.flag}</span>
                                     <span>{lang.label}</span>
-                                  </button>
+                                  </Button>
                                 ))}
                               </div>
                             </PopoverContent>

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import type { Advertisement, Language } from '@/types'
 import { X } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 interface AdFullscreenOverlayProps {
   ad: Advertisement
@@ -70,13 +71,13 @@ export default function AdFullscreenOverlay({ ad, lang }: AdFullscreenOverlayPro
         className="relative mx-4 max-w-md w-full rounded-2xl overflow-hidden shadow-2xl"
         style={{ backgroundColor: ad.background_color, color: ad.text_color }}
       >
-        <button
+        <Button
           onClick={() => setVisible(false)}
           className="absolute top-3 right-3 z-10 p-1.5 rounded-full bg-black/30 hover:bg-black/50 transition-colors"
           aria-label="Close"
         >
           <X className="h-5 w-5" />
-        </button>
+        </Button>
 
         {ad.image_url && (
           <img src={ad.image_url} alt={title} className="w-full h-48 object-cover" />
@@ -86,12 +87,12 @@ export default function AdFullscreenOverlay({ ad, lang }: AdFullscreenOverlayPro
           {title && <h2 className="text-2xl font-bold">{title}</h2>}
           {description && <p className="text-base opacity-90">{description}</p>}
           {ctaText && (
-            <button
+            <Button
               onClick={handleClick}
               className="mt-3 px-6 py-2.5 rounded-full font-semibold text-sm bg-white/20 hover:bg-white/30 transition-colors"
             >
               {ctaText}
-            </button>
+            </Button>
           )}
         </div>
       </div>

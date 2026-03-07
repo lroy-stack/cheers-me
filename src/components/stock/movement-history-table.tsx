@@ -41,10 +41,10 @@ export function MovementHistoryTable({ movements }: MovementHistoryTableProps) {
   const [filterCategory, setFilterCategory] = useState<string>('all')
 
   const movementTypeConfig: Record<MovementType, { label: string; icon: React.ComponentType<{ className?: string }>; color: string }> = {
-    in: { label: t('movements.stockIn'), icon: ArrowDownToLine, color: 'text-green-500 bg-green-50 dark:bg-green-950' },
+    in: { label: t('movements.stockIn'), icon: ArrowDownToLine, color: 'text-success bg-success/15 dark:bg-success/15' },
     out: { label: t('movements.stockOut'), icon: ArrowUpFromLine, color: 'text-blue-500 bg-blue-50 dark:bg-blue-950' },
     adjustment: { label: t('movements.adjustment'), icon: RefreshCw, color: 'text-primary bg-primary/5 dark:bg-primary/5' },
-    waste: { label: t('movements.waste'), icon: Trash2, color: 'text-red-500 bg-red-50 dark:bg-red-950' },
+    waste: { label: t('movements.waste'), icon: Trash2, color: 'text-destructive bg-destructive/15 dark:bg-destructive/15' },
   }
 
   // Filter and search movements
@@ -169,7 +169,7 @@ export function MovementHistoryTable({ movements }: MovementHistoryTableProps) {
                       <TableCell className="text-right">
                         <span
                           className={`font-semibold ${
-                            movement.quantity > 0 ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'
+                            movement.quantity > 0 ? 'text-success dark:text-success' : 'text-destructive dark:text-destructive'
                           }`}
                         >
                           {movement.quantity > 0 ? '+' : ''}

@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl'
 import type { GiftCouponPublic } from '@/types'
 import { formatCouponAmount } from '@/lib/utils/coupon-code'
 import { Loader2, X } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 interface CouponRedeemDialogProps {
   coupon: GiftCouponPublic
@@ -40,7 +41,7 @@ export default function CouponRedeemDialog({ coupon, validationMethod, onRedeem,
       >
         <div className="flex items-center justify-between p-4 border-b border-border">
           <h2 className="font-bold">{t('title')}</h2>
-          <button onClick={onClose} className="p-1 rounded-md hover:bg-muted"><X className="h-5 w-5" /></button>
+          <Button onClick={onClose} className="p-1 rounded-md hover:bg-muted"><X className="h-5 w-5" /></Button>
         </div>
 
         <div className="p-4 space-y-4">
@@ -52,7 +53,7 @@ export default function CouponRedeemDialog({ coupon, validationMethod, onRedeem,
           </div>
 
           <div className="flex gap-2">
-            <button
+            <Button
               type="button"
               onClick={() => setMode('full')}
               className={`flex-1 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -60,8 +61,8 @@ export default function CouponRedeemDialog({ coupon, validationMethod, onRedeem,
               }`}
             >
               {t('fullAmount')}
-            </button>
-            <button
+            </Button>
+            <Button
               type="button"
               onClick={() => setMode('custom')}
               className={`flex-1 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -69,7 +70,7 @@ export default function CouponRedeemDialog({ coupon, validationMethod, onRedeem,
               }`}
             >
               {t('customAmount')}
-            </button>
+            </Button>
           </div>
 
           {mode === 'custom' && (
@@ -108,14 +109,14 @@ export default function CouponRedeemDialog({ coupon, validationMethod, onRedeem,
             {formatCouponAmount(amountCents)}
           </div>
 
-          <button
+          <Button
             onClick={handleConfirm}
             disabled={loading || amountCents <= 0}
             className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors disabled:opacity-50"
           >
             {loading && <Loader2 className="h-4 w-4 animate-spin" />}
             {loading ? t('confirming') : t('confirm')}
-          </button>
+          </Button>
         </div>
       </div>
     </div>

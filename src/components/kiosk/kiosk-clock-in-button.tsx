@@ -125,7 +125,7 @@ export function KioskClockInButton({ employeeId, onClockIn }: KioskClockInButton
             strokeDasharray={circumference}
             strokeDashoffset={circumference * (1 - progress)}
             strokeLinecap="round"
-            className={success ? 'text-green-500' : 'text-primary'}
+            className={success ? 'text-success' : 'text-primary'}
           />
         </svg>
 
@@ -134,7 +134,7 @@ export function KioskClockInButton({ employeeId, onClockIn }: KioskClockInButton
           <div
             className={`w-[${size - stroke * 4}px] h-[${size - stroke * 4}px] rounded-full flex items-center justify-center transition-colors ${
               success
-                ? 'bg-green-500/10'
+                ? 'bg-success/15'
                 : isHolding
                   ? 'bg-primary/10'
                   : 'bg-muted/50'

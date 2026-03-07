@@ -155,14 +155,14 @@ export function MonthlyReportsTab() {
     if (growth === null || growth === undefined) return null
     if (growth > 0)
       return (
-        <span className="flex items-center gap-1 text-green-600">
+        <span className="flex items-center gap-1 text-success">
           <TrendingUp className="h-3 w-3" />
           {growth.toFixed(1)}%
         </span>
       )
     if (growth < 0)
       return (
-        <span className="flex items-center gap-1 text-red-500">
+        <span className="flex items-center gap-1 text-destructive">
           <TrendingDown className="h-3 w-3" />
           {Math.abs(growth).toFixed(1)}%
         </span>
@@ -227,7 +227,7 @@ export function MonthlyReportsTab() {
                   <span className="text-sm text-muted-foreground">{t('reports.totalProfit')}</span>
                   <span
                     className={`text-lg font-bold ${
-                      yearTotals.profit >= 0 ? 'text-green-600' : 'text-red-500'
+                      yearTotals.profit >= 0 ? 'text-success' : 'text-destructive'
                     }`}
                   >
                     &euro;{yearTotals.profit.toLocaleString()}
@@ -237,7 +237,7 @@ export function MonthlyReportsTab() {
                   <span className="text-sm text-muted-foreground">{t('reports.profitMargin')}</span>
                   <Badge
                     variant={yearProfitMargin >= 15 ? 'default' : yearProfitMargin >= 5 ? 'secondary' : 'destructive'}
-                    className={yearProfitMargin >= 15 ? 'bg-green-500 hover:bg-green-600' : ''}
+                    className={yearProfitMargin >= 15 ? 'bg-success/15 hover:bg-success/15' : ''}
                   >
                     {yearProfitMargin.toFixed(1)}%
                   </Badge>
@@ -263,7 +263,7 @@ export function MonthlyReportsTab() {
                           ? 'secondary'
                           : 'destructive'
                     }
-                    className={yearAverages.avg_food_cost_ratio <= 30 ? 'bg-green-500 hover:bg-green-600' : ''}
+                    className={yearAverages.avg_food_cost_ratio <= 30 ? 'bg-success/15 hover:bg-success/15' : ''}
                   >
                     {yearAverages.avg_food_cost_ratio.toFixed(1)}%
                   </Badge>
@@ -278,7 +278,7 @@ export function MonthlyReportsTab() {
                           ? 'secondary'
                           : 'destructive'
                     }
-                    className={yearAverages.avg_beverage_cost_ratio <= 22 ? 'bg-green-500 hover:bg-green-600' : ''}
+                    className={yearAverages.avg_beverage_cost_ratio <= 22 ? 'bg-success/15 hover:bg-success/15' : ''}
                   >
                     {yearAverages.avg_beverage_cost_ratio.toFixed(1)}%
                   </Badge>
@@ -293,7 +293,7 @@ export function MonthlyReportsTab() {
                           ? 'secondary'
                           : 'destructive'
                     }
-                    className={yearAverages.avg_labor_cost_ratio <= 30 ? 'bg-green-500 hover:bg-green-600' : ''}
+                    className={yearAverages.avg_labor_cost_ratio <= 30 ? 'bg-success/15 hover:bg-success/15' : ''}
                   >
                     {yearAverages.avg_labor_cost_ratio.toFixed(1)}%
                   </Badge>
@@ -377,7 +377,7 @@ export function MonthlyReportsTab() {
                         </TableCell>
                         <TableCell
                           className={`text-right font-semibold ${
-                            report.total_profit >= 0 ? 'text-green-600' : 'text-red-500'
+                            report.total_profit >= 0 ? 'text-success' : 'text-destructive'
                           }`}
                         >
                           &euro;{report.total_profit.toLocaleString()}
@@ -385,7 +385,7 @@ export function MonthlyReportsTab() {
                         <TableCell className="text-right">
                           <Badge
                             variant={profitMargin >= 15 ? 'default' : profitMargin >= 5 ? 'secondary' : 'destructive'}
-                            className={profitMargin >= 15 ? 'bg-green-500 hover:bg-green-600' : ''}
+                            className={profitMargin >= 15 ? 'bg-success/15 hover:bg-success/15' : ''}
                           >
                             {profitMargin.toFixed(1)}%
                           </Badge>
@@ -399,7 +399,7 @@ export function MonthlyReportsTab() {
                                   ? 'secondary'
                                   : 'destructive'
                             }
-                            className={report.avg_food_cost_ratio <= 30 ? 'bg-green-500 hover:bg-green-600' : ''}
+                            className={report.avg_food_cost_ratio <= 30 ? 'bg-success/15 hover:bg-success/15' : ''}
                           >
                             {report.avg_food_cost_ratio.toFixed(1)}%
                           </Badge>
@@ -413,7 +413,7 @@ export function MonthlyReportsTab() {
                                   ? 'secondary'
                                   : 'destructive'
                             }
-                            className={report.avg_labor_cost_ratio <= 30 ? 'bg-green-500 hover:bg-green-600' : ''}
+                            className={report.avg_labor_cost_ratio <= 30 ? 'bg-success/15 hover:bg-success/15' : ''}
                           >
                             {report.avg_labor_cost_ratio.toFixed(1)}%
                           </Badge>

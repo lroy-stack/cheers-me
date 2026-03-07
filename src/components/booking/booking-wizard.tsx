@@ -1,5 +1,6 @@
 'use client'
 
+import { Button } from '@/components/ui/button'
 import { useReducer, useCallback, useRef, useLayoutEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useBookingLanguage } from './booking-language-provider'
@@ -275,14 +276,14 @@ export default function BookingWizard() {
   if (bookingResult && !bookingResult.success) {
     return (
       <div className="text-center py-8 space-y-4">
-        <p className="text-red-500 font-medium">{bookingResult.message}</p>
-        <button
+        <p className="text-destructive font-medium">{bookingResult.message}</p>
+        <Button
           type="button"
           onClick={() => dispatch({ type: 'SET_BOOKING_RESULT', result: null })}
           className="px-6 py-2 rounded-xl bg-cheers-amber text-white font-medium"
         >
           {t('aiAssistant.tryAgain')}
-        </button>
+        </Button>
       </div>
     )
   }

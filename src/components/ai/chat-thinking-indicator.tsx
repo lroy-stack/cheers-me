@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import Image from 'next/image'
 import type { SubAgentEvent } from '@/lib/ai/types'
+import { Button } from '@/components/ui/button'
 
 interface ChatThinkingIndicatorProps {
   subAgentEvent?: SubAgentEvent | null
@@ -20,7 +21,7 @@ export function ChatThinkingIndicator({ subAgentEvent }: ChatThinkingIndicatorPr
         <Image src="/icons/logoheader.png" alt="GC" width={16} height={16} className="h-4 w-4 object-contain" />
       </div>
       <div className="flex-1 min-w-0">
-        <button
+        <Button
           type="button"
           onClick={() => setExpanded(!expanded)}
           className="rounded-lg px-3 py-3 bg-muted inline-flex items-center gap-1.5 cursor-pointer hover:bg-muted/80 transition-colors"
@@ -34,7 +35,7 @@ export function ChatThinkingIndicator({ subAgentEvent }: ChatThinkingIndicatorPr
               ? <ChevronUp className="h-3 w-3 text-muted-foreground ml-1" />
               : <ChevronDown className="h-3 w-3 text-muted-foreground ml-1" />
           )}
-        </button>
+        </Button>
 
         {expanded && subAgentEvent && (
           <div className="mt-1 ml-1 rounded-md border bg-card p-2 text-xs text-muted-foreground space-y-0.5">

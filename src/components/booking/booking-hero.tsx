@@ -6,6 +6,7 @@ import { useRef } from 'react'
 import { useBookingLanguage, LanguageSelector } from './booking-language-provider'
 import Image from 'next/image'
 import { useBranding } from '@/hooks/use-branding'
+import { Button } from '@/components/ui/button'
 
 export default function BookingHero() {
   const { t } = useBookingLanguage()
@@ -110,7 +111,7 @@ export default function BookingHero() {
           className="flex flex-wrap justify-center gap-2 sm:gap-3 mt-4 sm:mt-6 px-4"
         >
           <span className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/15 backdrop-blur-sm text-white text-xs sm:text-sm font-medium border border-white/20">
-            <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-yellow-400 text-yellow-400" />
+            <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-yellow-400 text-warning-foreground" />
             {t('hero.ratingBadge')}
           </span>
           <span className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/15 backdrop-blur-sm text-white text-xs sm:text-sm font-medium border border-white/20">
@@ -130,13 +131,13 @@ export default function BookingHero() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mt-6 sm:mt-8"
         >
-          <button
+          <Button
             onClick={scrollToWizard}
             className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-primary text-white font-bold text-base sm:text-lg hover:bg-primary/90 transition-all shadow-xl hover:shadow-2xl hover:scale-105 active:scale-100 touch-manipulation"
           >
             {t('hero.reserveTable')}
             <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 animate-bounce" />
-          </button>
+          </Button>
         </motion.div>
       </motion.div>
 

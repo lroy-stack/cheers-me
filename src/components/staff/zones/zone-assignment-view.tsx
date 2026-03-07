@@ -137,7 +137,7 @@ export function ZoneAssignmentView() {
       </div>
 
       {error && (
-        <div className="text-sm text-red-500 bg-red-50 dark:bg-red-950/20 rounded-md px-3 py-2">
+        <div className="text-sm text-destructive bg-destructive/15 dark:bg-destructive/15 rounded-md px-3 py-2">
           {error}
         </div>
       )}
@@ -191,9 +191,9 @@ export function ZoneAssignmentView() {
                         {empIds.map(empId => (
                           <Badge key={empId} variant="secondary" className="text-xs gap-1">
                             {getEmployeeName(empId)}
-                            <button onClick={() => removeAssignment(section.id, empId)} className="hover:text-destructive">
+                            <Button onClick={() => removeAssignment(section.id, empId)} className="hover:text-destructive">
                               <X className="h-3 w-3" />
-                            </button>
+                            </Button>
                           </Badge>
                         ))}
                       </div>

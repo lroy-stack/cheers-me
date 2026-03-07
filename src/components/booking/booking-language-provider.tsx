@@ -1,6 +1,7 @@
 'use client'
 
 import { createContext, useContext, useState, useCallback, useEffect } from 'react'
+import { Button } from '@/components/ui/button'
 
 type Language = 'en' | 'nl' | 'es' | 'de'
 
@@ -102,7 +103,7 @@ export function LanguageSelector() {
   return (
     <div className="flex items-center justify-center gap-1">
       {langs.map((lang) => (
-        <button
+        <Button
           key={lang}
           onClick={() => setLanguage(lang)}
           className={`flex items-center gap-1 px-2.5 py-1.5 rounded-full text-sm transition-all ${
@@ -114,7 +115,7 @@ export function LanguageSelector() {
         >
           <span className="text-base">{LANGUAGE_FLAGS[lang]}</span>
           <span className="text-xs">{LANGUAGE_LABELS[lang]}</span>
-        </button>
+        </Button>
       ))}
     </div>
   )

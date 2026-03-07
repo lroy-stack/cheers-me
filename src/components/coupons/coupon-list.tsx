@@ -7,13 +7,14 @@ import { formatCouponAmount } from '@/lib/utils/coupon-code'
 import CouponStatsCards from './coupon-stats-cards'
 import CouponDetailDialog from './coupon-detail-dialog'
 import { Loader2, Search, Download } from 'lucide-react'
+import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/ui/table'
 
 const statusColors: Record<string, string> = {
-  pending_payment: 'bg-muted text-gray-700',
-  active: 'bg-green-100 text-green-700',
+  pending_payment: 'bg-muted text-muted-foreground',
+  active: 'bg-success/15 text-success',
   partially_used: 'bg-amber-100 text-amber-700',
   fully_used: 'bg-blue-100 text-blue-700',
-  expired: 'bg-red-100 text-red-700',
+  expired: 'bg-destructive/15 text-destructive',
   cancelled: 'bg-muted text-muted-foreground',
 }
 
@@ -69,38 +70,38 @@ export default function CouponList() {
       ) : (
         <div className="bg-card border border-border rounded-lg overflow-hidden">
           <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead className="bg-muted/50">
-                <tr>
-                  <th className="text-left px-4 py-2 font-medium">{t('detail.couponCode')}</th>
-                  <th className="text-left px-4 py-2 font-medium">{t('detail.amount')}</th>
-                  <th className="text-left px-4 py-2 font-medium">{t('detail.remaining')}</th>
-                  <th className="text-left px-4 py-2 font-medium">{t('detail.purchaser')}</th>
-                  <th className="text-left px-4 py-2 font-medium">Status</th>
-                  <th className="text-left px-4 py-2 font-medium">{t('detail.purchasedAt')}</th>
-                  <th className="px-4 py-2"></th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-border">
+            <Table className="w-full text-sm">
+              <TableHeader className="bg-muted/50">
+                <TableRow>
+                  <TableHead className="text-left px-4 py-2 font-medium">{t('detail.couponCode')}</TableHead>
+                  <TableHead className="text-left px-4 py-2 font-medium">{t('detail.amount')}</TableHead>
+                  <TableHead className="text-left px-4 py-2 font-medium">{t('detail.remaining')}</TableHead>
+                  <TableHead className="text-left px-4 py-2 font-medium">{t('detail.purchaser')}</TableHead>
+                  <TableHead className="text-left px-4 py-2 font-medium">Status</TableHead>
+                  <TableHead className="text-left px-4 py-2 font-medium">{t('detail.purchasedAt')}</TableHead>
+                  <TableHead className="px-4 py-2"></TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody className="divide-y divide-border">
                 {coupons.map(c => (
-                  <tr
+                  <TableRow
                     key={c.id}
                     className="hover:bg-muted/30 cursor-pointer transition-colors"
                     onClick={() => setSelectedId(c.id)}
                   >
-                    <td className="px-4 py-2 font-mono font-bold">{c.code}</td>
-                    <td className="px-4 py-2">{formatCouponAmount(c.amount_cents)}</td>
-                    <td className="px-4 py-2">{formatCouponAmount(c.remaining_cents)}</td>
-                    <td className="px-4 py-2">{c.purchaser_name}</td>
-                    <td className="px-4 py-2">
+                    <TableCell className="px-4 py-2 font-mono font-bold">{c.code}</TableCell>
+                    <TableCell className="px-4 py-2">{formatCouponAmount(c.amount_cents)}</TableCell>
+                    <TableCell className="px-4 py-2">{formatCouponAmount(c.remaining_cents)}</TableCell>
+                    <TableCell className="px-4 py-2">{c.purchaser_name}</TableCell>
+                    <TableCell className="px-4 py-2">
                       <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${statusColors[c.status]}`}>
                         {t(`status.${c.status}`)}
                       </span>
-                    </td>
-                    <td className="px-4 py-2 text-muted-foreground">
+                    </TableCell>
+                    <TableCell className="px-4 py-2 text-muted-foreground">
                       {c.purchased_at ? new Date(c.purchased_at).toLocaleDateString() : '—'}
-                    </td>
-                    <td className="px-4 py-2">
+                    </TableCell>
+                    <TableCell className="px-4 py-2">
                       {c.pdf_url && (
                         <a
                           href={c.pdf_url}
@@ -112,11 +113,11 @@ export default function CouponList() {
                           <Download className="h-4 w-4" />
                         </a>
                       )}
-                    </td>
-                  </tr>
+                    </TableCell>
+                  </TableRow>
                 ))}
-              </tbody>
-            </table>
+              </TableBody>
+            </Table>
           </div>
         </div>
       )}

@@ -37,13 +37,13 @@ export function EventKPICards({ data, isLoading }: EventKPICardsProps) {
       label: t('kpi.confirmed'),
       value: data.confirmedCount,
       icon: CheckCircle,
-      color: 'text-green-500',
+      color: 'text-success',
     },
     {
       label: t('kpi.pending'),
       value: data.pendingCount,
       icon: Clock,
-      color: 'text-yellow-500',
+      color: 'text-warning-foreground',
     },
   ]
 

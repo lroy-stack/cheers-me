@@ -122,11 +122,11 @@ export function ReviewsDataTable({
   const getSentimentBadge = (sentiment: string) => {
     switch (sentiment) {
       case 'positive':
-        return <Badge className="bg-green-500">{t('positive')}</Badge>
+        return <Badge className="bg-success/15">{t('positive')}</Badge>
       case 'neutral':
         return <Badge className="bg-muted0">{t('neutral')}</Badge>
       case 'negative':
-        return <Badge className="bg-red-500">{t('negative')}</Badge>
+        return <Badge className="bg-destructive/15">{t('negative')}</Badge>
       default:
         return <Badge>{sentiment}</Badge>
     }
@@ -246,7 +246,7 @@ export function ReviewsDataTable({
                   </TableCell>
                   <TableCell>
                     {review.response_sent ? (
-                      <Badge variant="outline" className="bg-green-500/10 text-green-500">
+                      <Badge variant="outline" className="bg-success/15 text-success">
                         {t('sent')}
                       </Badge>
                     ) : review.response_draft ? (

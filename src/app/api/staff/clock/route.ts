@@ -30,9 +30,14 @@ const clockOutSchema = z.object({
   clock_record_id: z.string().uuid(),
 })
 
+const MANAGER_ROLES = ['admin', 'owner', 'manager']
+
 /**
  * GET /api/staff/clock
- * Get clock records for the current user or all (if manager)
+ * Get clock records.
+ * - Staff (waiter/bar/kitchen/dj): can only query own records
+ * - Manager+: can query any employee_id or all records
+ * Query params: employee_id, start_date, end_date, format (csv)
  */
 export async function GET(request: NextRequest) {
   const authResult = await requireAuth()
@@ -44,12 +49,38 @@ export async function GET(request: NextRequest) {
     )
   }
 
+  const { data: userData } = authResult
+  const isManager = MANAGER_ROLES.includes(userData.profile?.role || '')
+
   const supabase = await createClient()
   const { searchParams } = new URL(request.url)
 
-  const employeeId = searchParams.get('employee_id')
+  const requestedEmployeeId = searchParams.get('employee_id')
   const startDate = searchParams.get('start_date')
   const endDate = searchParams.get('end_date')
+  const format = searchParams.get('format')
+
+  // Get current user's employee record
+  const { data: myEmployee } = await supabase
+    .from('employees')
+    .select('id')
+    .eq('profile_id', userData.user.id)
+    .single()
+
+  // Role-scope: non-managers can only see their own records
+  let effectiveEmployeeId: string | null = requestedEmployeeId
+
+  if (!isManager) {
+    if (!myEmployee) {
+      return NextResponse.json({ error: 'Employee record not found' }, { status: 404 })
+    }
+    // If a non-manager requests a different employee_id, return 403
+    if (requestedEmployeeId && requestedEmployeeId !== myEmployee.id) {
+      return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
+    }
+    // Force filter to own employee_id
+    effectiveEmployeeId = myEmployee.id
+  }
 
   let query = supabase
     .from('clock_in_out')
@@ -75,8 +106,8 @@ export async function GET(request: NextRequest) {
     .order('clock_in_time', { ascending: false })
 
   // Apply filters
-  if (employeeId) {
-    query = query.eq('employee_id', employeeId)
+  if (effectiveEmployeeId) {
+    query = query.eq('employee_id', effectiveEmployeeId)
   }
 
   if (startDate) {
@@ -90,7 +121,32 @@ export async function GET(request: NextRequest) {
   const { data: clockRecords, error } = await query
 
   if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to fetch clock records' }, { status: 500 })
+  }
+
+  // CSV export format
+  if (format === 'csv') {
+    const rows = [
+      ['Date', 'Clock In', 'Clock Out', 'Total Hours', 'Status'],
+      ...(clockRecords || []).map((r) => {
+        const clockIn = r.clock_in_time ? new Date(r.clock_in_time).toISOString() : ''
+        const clockOut = r.clock_out_time ? new Date(r.clock_out_time).toISOString() : ''
+        const hours =
+          r.clock_in_time && r.clock_out_time
+            ? ((new Date(r.clock_out_time).getTime() - new Date(r.clock_in_time).getTime()) / 3600000).toFixed(2)
+            : ''
+        const date = clockIn ? clockIn.slice(0, 10) : ''
+        return [date, clockIn, clockOut, hours, r.status || '']
+      }),
+    ]
+    const csv = rows.map((row) => row.map((v) => `"${v}"`).join(',')).join('\n')
+    const timestamp = new Date().toISOString().slice(0, 10)
+    return new Response(csv, {
+      headers: {
+        'Content-Type': 'text/csv',
+        'Content-Disposition': `attachment; filename="clock-records-${timestamp}.csv"`,
+      },
+    })
   }
 
   return NextResponse.json(clockRecords)

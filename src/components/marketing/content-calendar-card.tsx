@@ -39,8 +39,8 @@ interface ContentCalendarCardProps {
 const statusIcons = {
   draft: { icon: FileText, color: 'bg-muted0', variant: 'secondary' as const },
   scheduled: { icon: Clock, color: 'bg-blue-500', variant: 'default' as const },
-  published: { icon: CheckCircle2, color: 'bg-green-500', variant: 'default' as const },
-  failed: { icon: AlertCircle, color: 'bg-red-500', variant: 'destructive' as const },
+  published: { icon: CheckCircle2, color: 'bg-success/15', variant: 'default' as const },
+  failed: { icon: AlertCircle, color: 'bg-destructive/15', variant: 'destructive' as const },
 }
 
 const platformIcons = {
@@ -127,7 +127,7 @@ export function ContentCalendarCard({
               {onDelete && (
                 <DropdownMenuItem
                   onClick={() => onDelete(entry)}
-                  className="text-red-600"
+                  className="text-destructive"
                 >
                   <Trash2 className="mr-2 h-4 w-4" />
                   {t('common.delete')}

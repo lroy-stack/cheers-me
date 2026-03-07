@@ -274,7 +274,7 @@ export function NewsletterEditor({ newsletter, onClose, onSave }: NewsletterEdit
                         {...register('subject')}
                       />
                       {errors.subject && (
-                        <p className="text-sm text-red-500">{errors.subject.message}</p>
+                        <p className="text-sm text-destructive">{errors.subject.message}</p>
                       )}
                     </div>
 
@@ -299,7 +299,7 @@ export function NewsletterEditor({ newsletter, onClose, onSave }: NewsletterEdit
                         {...register('content')}
                       />
                       {errors.content && (
-                        <p className="text-sm text-red-500">{errors.content.message}</p>
+                        <p className="text-sm text-destructive">{errors.content.message}</p>
                       )}
                     </div>
 

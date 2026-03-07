@@ -19,7 +19,7 @@ export const RecipePrintSheet = forwardRef<HTMLDivElement, RecipePrintSheetProps
     }
 
     return (
-      <div ref={ref} className="hidden print:block p-8 max-w-[210mm] mx-auto bg-white text-black">
+      <div ref={ref} className="hidden print:block p-8 max-w-[210mm] mx-auto bg-card text-black">
         {/* Header */}
         <div className="border-b-2 border-[#722F37] pb-4 mb-6">
           <div className="text-xs tracking-[0.3em] text-[#722F37] uppercase mb-1">

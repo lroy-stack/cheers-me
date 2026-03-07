@@ -18,8 +18,8 @@ export default async function GiftSuccessPage({
   return (
     <div className="min-h-screen bg-background flex items-center justify-center px-4">
       <div className="max-w-md w-full text-center space-y-6">
-        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-green-100">
-          <CheckCircle className="h-10 w-10 text-green-600" />
+        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-success/15">
+          <CheckCircle className="h-10 w-10 text-success" />
         </div>
 
         <div>

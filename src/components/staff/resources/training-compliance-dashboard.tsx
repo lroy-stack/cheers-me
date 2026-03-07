@@ -1,5 +1,6 @@
 'use client'
 
+import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/ui/table'
 import { useState, useMemo } from 'react'
 import { useTranslations } from 'next-intl'
 import { useTrainingCompliance } from '@/hooks/use-training-compliance'
@@ -104,9 +105,9 @@ export function TrainingComplianceDashboard() {
 
   if (error) {
     return (
-      <Card className="border-red-200 bg-red-50 dark:bg-red-950/20">
+      <Card className="border-destructive/30 bg-destructive/15 dark:bg-destructive/15">
         <CardContent className="pt-6">
-          <p className="text-red-600">{error}</p>
+          <p className="text-destructive">{error}</p>
         </CardContent>
       </Card>
     )
@@ -129,7 +130,7 @@ export function TrainingComplianceDashboard() {
         <Card>
           <CardContent className="pt-6">
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-5 w-5 text-green-500" />
+              <CheckCircle2 className="h-5 w-5 text-success" />
               <div className="text-2xl font-bold">{stats?.completedCount || 0}</div>
             </div>
             <p className="text-xs text-muted-foreground mt-1">{t('training.completedTraining')}</p>
@@ -149,7 +150,7 @@ export function TrainingComplianceDashboard() {
         <Card>
           <CardContent className="pt-6">
             <div className="flex items-center gap-2">
-              <AlertTriangle className="h-5 w-5 text-red-500" />
+              <AlertTriangle className="h-5 w-5 text-destructive" />
               <div className="text-2xl font-bold">{stats?.overdueCount || 0}</div>
             </div>
             <p className="text-xs text-muted-foreground mt-1">{t('training.overdueTraining')}</p>
@@ -205,41 +206,41 @@ export function TrainingComplianceDashboard() {
 
       {/* Employee Table */}
       <div className="rounded-lg border overflow-hidden">
-        <table className="w-full text-sm">
-          <thead className="bg-muted/50">
-            <tr>
-              <th className="text-left p-3 font-medium">{t('training.employeeStatus')}</th>
-              <th className="text-left p-3 font-medium">{tCommon('roles.label')}</th>
-              <th className="text-center p-3 font-medium">{t('training.completedTraining')}</th>
-              <th className="text-center p-3 font-medium">{t('training.pendingTraining')}</th>
-              <th className="text-center p-3 font-medium">{t('training.overdueTraining')}</th>
-              <th className="text-center p-3 font-medium">{t('training.lastActivity')}</th>
-              <th className="text-center p-3 font-medium">{t('training.statusPending')}</th>
-            </tr>
-          </thead>
-          <tbody>
+        <Table className="w-full text-sm">
+          <TableHeader className="bg-muted/50">
+            <TableRow>
+              <TableHead className="text-left p-3 font-medium">{t('training.employeeStatus')}</TableHead>
+              <TableHead className="text-left p-3 font-medium">{tCommon('roles.label')}</TableHead>
+              <TableHead className="text-center p-3 font-medium">{t('training.completedTraining')}</TableHead>
+              <TableHead className="text-center p-3 font-medium">{t('training.pendingTraining')}</TableHead>
+              <TableHead className="text-center p-3 font-medium">{t('training.overdueTraining')}</TableHead>
+              <TableHead className="text-center p-3 font-medium">{t('training.lastActivity')}</TableHead>
+              <TableHead className="text-center p-3 font-medium">{t('training.statusPending')}</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
             {filteredEmployees.map((emp) => (
-              <tr key={emp.employeeId} className="border-t hover:bg-muted/30">
-                <td className="p-3 font-medium">{emp.employeeName}</td>
-                <td className="p-3">
+              <TableRow key={emp.employeeId} className="border-t hover:bg-muted/30">
+                <TableCell className="p-3 font-medium">{emp.employeeName}</TableCell>
+                <TableCell className="p-3">
                   <Badge variant="outline" className="text-xs">{emp.role}</Badge>
-                </td>
-                <td className="p-3 text-center text-green-600">{emp.completed}/{emp.totalRequired}</td>
-                <td className="p-3 text-center text-orange-600">{emp.pending}</td>
-                <td className="p-3 text-center text-red-600">{emp.overdue}</td>
-                <td className="p-3 text-center text-muted-foreground text-xs">
+                </TableCell>
+                <TableCell className="p-3 text-center text-success">{emp.completed}/{emp.totalRequired}</TableCell>
+                <TableCell className="p-3 text-center text-orange-600">{emp.pending}</TableCell>
+                <TableCell className="p-3 text-center text-destructive">{emp.overdue}</TableCell>
+                <TableCell className="p-3 text-center text-muted-foreground text-xs">
                   {emp.lastActivity
                     ? new Date(emp.lastActivity).toLocaleDateString()
                     : '-'}
-                </td>
-                <td className="p-3 text-center">
+                </TableCell>
+                <TableCell className="p-3 text-center">
                   {emp.fullyCompliant ? (
-                    <Badge className="bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300 border-0">
+                    <Badge className="bg-success/15 text-success dark:bg-success/15 dark:text-success border-0">
                       <CheckCircle2 className="h-3 w-3 mr-1" />
                       {t('training.fullyCompliant')}
                     </Badge>
                   ) : emp.overdue > 0 ? (
-                    <Badge className="bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300 border-0">
+                    <Badge className="bg-destructive/15 text-destructive dark:bg-destructive/15 dark:text-destructive border-0">
                       <AlertTriangle className="h-3 w-3 mr-1" />
                       {t('training.statusOverdue')}
                     </Badge>
@@ -249,18 +250,18 @@ export function TrainingComplianceDashboard() {
                       {t('training.statusPending')}
                     </Badge>
                   )}
-                </td>
-              </tr>
+                </TableCell>
+              </TableRow>
             ))}
             {filteredEmployees.length === 0 && (
-              <tr>
-                <td colSpan={7} className="p-8 text-center text-muted-foreground">
+              <TableRow>
+                <TableCell colSpan={7} className="p-8 text-center text-muted-foreground">
                   {t('course.noEmployeesMatch')}
-                </td>
-              </tr>
+                </TableCell>
+              </TableRow>
             )}
-          </tbody>
-        </table>
+          </TableBody>
+        </Table>
       </div>
     </div>
   )

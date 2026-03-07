@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { useBookingLanguage } from './booking-language-provider'
 import { Wine, UtensilsCrossed, Star, ChevronLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
+import { Button } from '@/components/ui/button'
 
 interface FeaturedItem {
   id: string
@@ -96,18 +97,18 @@ function CarouselRow({
   return (
     <div>
       <div className="relative group">
-        <button
+        <Button
           onClick={() => scrollToIndex(Math.max(0, activeIndex - 1))}
           className="hidden md:flex absolute -left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center rounded-full bg-background/80 border border-border shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
         >
           <ChevronLeft className="w-5 h-5" />
-        </button>
-        <button
+        </Button>
+        <Button
           onClick={() => scrollToIndex(Math.min(items.length - 1, activeIndex + 1))}
           className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center rounded-full bg-background/80 border border-border shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
         >
           <ChevronRight className="w-5 h-5" />
-        </button>
+        </Button>
 
         <div
           ref={scrollRef}
@@ -194,7 +195,7 @@ function CarouselRow({
       {items.length > 1 && (
         <div className="flex justify-center gap-2 mt-2">
           {items.map((_, i) => (
-            <button
+            <Button
               key={i}
               onClick={() => scrollToIndex(i)}
               className={`w-2 h-2 rounded-full transition-all ${

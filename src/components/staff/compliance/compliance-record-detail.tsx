@@ -175,8 +175,8 @@ export function ComplianceRecordDetail({
                   </span>
                   <span className={cn(
                     'text-sm text-right font-medium',
-                    isBoolTrue && 'text-green-600',
-                    isBoolFalse && 'text-red-600',
+                    isBoolTrue && 'text-success',
+                    isBoolFalse && 'text-destructive',
                   )}>
                     {isBoolTrue && <CheckCircle2 className="inline h-4 w-4 mr-1" />}
                     {isBoolFalse && <AlertTriangle className="inline h-4 w-4 mr-1" />}

@@ -52,7 +52,7 @@ export function KioskShiftSummary({ summary, onDismiss, onContinueToSurvey }: Ki
     >
       <Card>
         <CardHeader className="text-center pb-2">
-          <CheckCircle className="h-12 w-12 text-green-500 mx-auto mb-2" />
+          <CheckCircle className="h-12 w-12 text-success mx-auto mb-2" />
           <CardTitle className="text-xl">{t('clockedOut')}</CardTitle>
           <p className="text-sm text-muted-foreground">{t('shiftSummary')}</p>
         </CardHeader>

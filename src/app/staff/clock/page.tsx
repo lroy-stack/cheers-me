@@ -28,7 +28,7 @@ export default async function ClockPage() {
     return (
       <div className="max-w-7xl mx-auto py-10">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-red-500">{t('clock.employeeNotFound')}</h1>
+          <h1 className="text-2xl font-bold text-destructive">{t('clock.employeeNotFound')}</h1>
           <p className="text-muted-foreground mt-2">
             {t('clock.contactManager')}
           </p>

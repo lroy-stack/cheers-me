@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import type { Advertisement } from '@/types'
 import { Eye, MousePointerClick, Calendar, Play, Pause } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 interface AdCardProps {
   ad: Advertisement
@@ -11,11 +12,11 @@ interface AdCardProps {
 }
 
 const statusColors: Record<string, string> = {
-  draft: 'bg-muted text-gray-700 dark:bg-gray-800 dark:text-gray-300',
-  active: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400',
-  paused: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400',
-  expired: 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400',
-  archived: 'bg-muted text-muted-foreground dark:bg-gray-800 dark:text-muted-foreground',
+  draft: 'bg-muted text-muted-foreground dark:bg-muted dark:text-muted-foreground',
+  active: 'bg-success/15 text-success dark:bg-success/15 dark:text-success',
+  paused: 'bg-warning/15 text-warning-foreground dark:bg-warning/15 dark:text-warning-foreground',
+  expired: 'bg-destructive/15 text-destructive dark:bg-destructive/15 dark:text-destructive',
+  archived: 'bg-muted text-muted-foreground dark:bg-muted dark:text-muted-foreground',
 }
 
 export default function AdCard({ ad, onClick, onStatusToggle }: AdCardProps) {
@@ -53,18 +54,18 @@ export default function AdCard({ ad, onClick, onStatusToggle }: AdCardProps) {
     >
       {/* Quick toggle button */}
       {canToggle && (
-        <button
+        <Button
           onClick={handleToggle}
           disabled={toggling}
           className="absolute top-2 right-2 z-10 w-8 h-8 rounded-full bg-background/80 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-background transition-colors shadow-sm disabled:opacity-50"
           title={ad.status === 'active' ? 'Pause ad' : 'Activate ad'}
         >
           {ad.status === 'active' ? (
-            <Pause className="w-3.5 h-3.5 text-yellow-600" />
+            <Pause className="w-3.5 h-3.5 text-warning-foreground" />
           ) : (
-            <Play className="w-3.5 h-3.5 text-green-600" />
+            <Play className="w-3.5 h-3.5 text-success" />
           )}
-        </button>
+        </Button>
       )}
 
       {ad.image_url ? (

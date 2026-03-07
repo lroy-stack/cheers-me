@@ -77,9 +77,9 @@ function SortableStep({ row, index, activeLang, onChange, onRemove }: SortableSt
   return (
     <div ref={setNodeRef} style={style} className="p-3 rounded-lg border bg-muted/20 space-y-2">
       <div className="flex items-start gap-2">
-        <button {...attributes} {...listeners} className="cursor-grab touch-none mt-1">
+        <Button {...attributes} {...listeners} className="cursor-grab touch-none mt-1">
           <GripVertical className="h-4 w-4 text-muted-foreground" />
-        </button>
+        </Button>
 
         <div className="flex-shrink-0 w-7 h-7 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">
           {index + 1}

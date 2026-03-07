@@ -27,7 +27,7 @@ export function StockLevelBadge({
         label: t('inventory.outOfStock'),
         variant: 'destructive' as const,
         icon: XCircle,
-        color: 'text-red-500',
+        color: 'text-destructive',
       }
     }
 
@@ -53,7 +53,7 @@ export function StockLevelBadge({
       label: t('inventory.inStock'),
       variant: 'secondary' as const,
       icon: CheckCircle,
-      color: 'text-green-500',
+      color: 'text-success',
     }
   }
 
@@ -97,9 +97,9 @@ export function StockProgressBar({
 
   // Determine color based on stock level
   const getColor = () => {
-    if (currentStock === 0) return 'bg-red-500'
+    if (currentStock === 0) return 'bg-destructive/15'
     if (minStock !== null && currentStock < minStock) return 'bg-primary'
-    return 'bg-green-500'
+    return 'bg-success/15'
   }
 
   return (

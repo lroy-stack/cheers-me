@@ -108,13 +108,13 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
               placeholder={t('guestInfo.namePlaceholder')}
               className={`w-full pl-10 pr-4 py-3 rounded-xl border bg-card text-foreground placeholder:text-muted-foreground transition-colors ${
                 errors.guest_name
-                  ? 'border-red-400 focus:ring-red-400'
+                  ? 'border-destructive/30 focus:ring-red-400'
                   : 'border-border focus:ring-cheers-amber'
               } focus:outline-none focus:ring-2`}
             />
           </motion.div>
           {errors.guest_name && (
-            <p className="text-xs text-red-500 mt-1">{errors.guest_name}</p>
+            <p className="text-xs text-destructive mt-1">{errors.guest_name}</p>
           )}
         </motion.div>
 
@@ -139,13 +139,13 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
               placeholder={t('guestInfo.phonePlaceholder')}
               className={`w-full pl-10 pr-4 py-3 rounded-xl border bg-card text-foreground placeholder:text-muted-foreground transition-colors ${
                 errors.guest_phone
-                  ? 'border-red-400 focus:ring-red-400'
+                  ? 'border-destructive/30 focus:ring-red-400'
                   : 'border-border focus:ring-cheers-amber'
               } focus:outline-none focus:ring-2`}
             />
           </motion.div>
           {errors.guest_phone && (
-            <p className="text-xs text-red-500 mt-1">{errors.guest_phone}</p>
+            <p className="text-xs text-destructive mt-1">{errors.guest_phone}</p>
           )}
         </motion.div>
 
@@ -170,13 +170,13 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
               placeholder={t('guestInfo.emailPlaceholder')}
               className={`w-full pl-10 pr-4 py-3 rounded-xl border bg-card text-foreground placeholder:text-muted-foreground transition-colors ${
                 errors.guest_email
-                  ? 'border-red-400 focus:ring-red-400'
+                  ? 'border-destructive/30 focus:ring-red-400'
                   : 'border-border focus:ring-cheers-amber'
               } focus:outline-none focus:ring-2`}
             />
           </motion.div>
           {errors.guest_email && (
-            <p className="text-xs text-red-500 mt-1">{errors.guest_email}</p>
+            <p className="text-xs text-destructive mt-1">{errors.guest_email}</p>
           )}
         </motion.div>
 
@@ -250,7 +250,7 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
           </span>
         </label>
         {errors.privacy && (
-          <p className="text-xs text-red-500 mt-1 ml-7">{errors.privacy}</p>
+          <p className="text-xs text-destructive mt-1 ml-7">{errors.privacy}</p>
         )}
       </div>
 

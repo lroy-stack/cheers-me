@@ -9,11 +9,11 @@ import { AlertCircle, CheckCircle2, AlertTriangle } from 'lucide-react'
 function getStatusColor(status: 'good' | 'warning' | 'danger') {
   switch (status) {
     case 'good':
-      return 'text-green-500'
+      return 'text-success'
     case 'warning':
       return 'text-orange-500'
     case 'danger':
-      return 'text-red-500'
+      return 'text-destructive'
   }
 }
 
@@ -169,7 +169,7 @@ export function CostRatioGauges({
           <div className="flex items-center justify-between">
             <span className="text-sm font-medium">{t('ratios.overallStatus')}</span>
             {foodStatus === 'good' && beverageStatus === 'good' && laborStatus === 'good' ? (
-              <Badge variant="default" className="bg-green-500 hover:bg-green-600">
+              <Badge variant="default" className="bg-success/15 hover:bg-success/15">
                 {t('ratios.allTargetsMet')}
               </Badge>
             ) : foodStatus === 'danger' || beverageStatus === 'danger' || laborStatus === 'danger' ? (

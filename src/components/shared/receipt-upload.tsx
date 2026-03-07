@@ -57,7 +57,7 @@ export function ReceiptUpload({ value, onChange }: ReceiptUploadProps) {
             {isImage ? (
               <Image className="h-4 w-4 text-blue-500" />
             ) : isPdf ? (
-              <FileText className="h-4 w-4 text-red-500" />
+              <FileText className="h-4 w-4 text-destructive" />
             ) : (
               <FileText className="h-4 w-4 text-muted-foreground" />
             )}

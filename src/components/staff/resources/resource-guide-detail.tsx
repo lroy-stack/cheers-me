@@ -68,7 +68,7 @@ const roleColors: Record<string, string> = {
   admin:
     'bg-muted text-foreground dark:bg-card/30 dark:text-muted-foreground',
   manager:
-    'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300',
+    'bg-success/15 text-success dark:bg-success/15 dark:text-success',
   owner:
     'bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary',
   dj: 'bg-pink-100 text-pink-800 dark:bg-pink-900/30 dark:text-pink-300',
@@ -216,12 +216,12 @@ export function ResourceGuideDetail({
                   </Badge>
                   {/* Training status badge */}
                   {trainingStatus === 'passed' && (
-                    <Badge className="bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300 border-0 text-xs">
+                    <Badge className="bg-success/15 text-success dark:bg-success/15 dark:text-success border-0 text-xs">
                       {t('training.statusPassed')}
                     </Badge>
                   )}
                   {trainingStatus === 'failed' && (
-                    <Badge className="bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300 border-0 text-xs">
+                    <Badge className="bg-destructive/15 text-destructive dark:bg-destructive/15 dark:text-destructive border-0 text-xs">
                       {t('training.statusFailed')}
                     </Badge>
                   )}
@@ -335,7 +335,7 @@ export function ResourceGuideDetail({
                     </div>
                     <div className="space-y-2">
                       {relatedGuides.map((related) => (
-                        <button
+                        <Button
                           key={related.code}
                           onClick={() => onSelectRelated(related.code)}
                           className="w-full text-left flex items-center gap-3 p-2 rounded-lg hover:bg-muted/50 transition-colors group"
@@ -349,7 +349,7 @@ export function ResourceGuideDetail({
                           <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors truncate">
                             {t(related.titleKey)}
                           </span>
-                        </button>
+                        </Button>
                       ))}
                     </div>
                   </div>
@@ -364,7 +364,7 @@ export function ResourceGuideDetail({
                   variant="default"
                   size="sm"
                   onClick={handleDownloadCertificate}
-                  className="w-full flex items-center gap-2 bg-green-600 hover:bg-green-700"
+                  className="w-full flex items-center gap-2 bg-success/15 hover:bg-success/15"
                 >
                   <Award className="h-4 w-4" />
                   {t('training.downloadCertificate')}

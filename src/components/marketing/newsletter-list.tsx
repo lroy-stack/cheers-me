@@ -56,9 +56,9 @@ const getStatusColor = (status: Newsletter['status']) => {
     case 'scheduled':
       return 'bg-blue-500'
     case 'sent':
-      return 'bg-green-500'
+      return 'bg-success/15'
     case 'failed':
-      return 'bg-red-500'
+      return 'bg-destructive/15'
     default:
       return 'bg-muted0'
   }
@@ -173,7 +173,7 @@ export function NewsletterList({
                   {(newsletter.status === 'draft' || newsletter.status === 'scheduled') && (
                     <DropdownMenuItem
                       onClick={() => onSend(newsletter.id)}
-                      className="text-green-600"
+                      className="text-success"
                     >
                       <Send className="mr-2 h-4 w-4" />
                       {t('newsletter.send')}
@@ -181,7 +181,7 @@ export function NewsletterList({
                   )}
                   <DropdownMenuItem
                     onClick={() => onDelete(newsletter.id)}
-                    className="text-red-600"
+                    className="text-destructive"
                   >
                     <Trash2 className="mr-2 h-4 w-4" />
                     {t('newsletter.delete')}

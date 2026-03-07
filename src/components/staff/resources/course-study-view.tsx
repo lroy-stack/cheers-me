@@ -129,20 +129,20 @@ export function CourseStudyView({
                 {/* Section navigation sidebar */}
                 <div className="flex gap-1 flex-wrap">
                   {content.sections.map((_, idx) => (
-                    <button
+                    <Button
                       key={idx}
                       onClick={() => setCurrentSection(idx)}
                       className={`flex items-center gap-1 px-2 py-1 rounded text-xs transition-colors ${
                         idx === currentSection
                           ? 'bg-primary text-primary-foreground'
                           : isSectionViewed(idx)
-                            ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300'
+                            ? 'bg-success/15 text-success dark:bg-success/15 dark:text-success'
                             : 'bg-muted text-muted-foreground hover:bg-muted/80'
                       }`}
                     >
                       {isSectionViewed(idx) && <CheckCircle2 className="h-3 w-3" />}
                       {idx + 1}
-                    </button>
+                    </Button>
                   ))}
                 </div>
 
@@ -193,7 +193,7 @@ export function CourseStudyView({
                       {t('course.sectionCompleted')}
                     </Button>
                   ) : (
-                    <Badge className="bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300 border-0">
+                    <Badge className="bg-success/15 text-success dark:bg-success/15 dark:text-success border-0">
                       <CheckCircle2 className="h-3 w-3 mr-1" />
                       {t('course.sectionCompleted')}
                     </Badge>
@@ -212,9 +212,9 @@ export function CourseStudyView({
 
                 {/* All sections read → Take test CTA */}
                 {allRead && (
-                  <div className="rounded-lg border border-green-200 bg-green-50 dark:bg-green-950/20 dark:border-green-800 p-4 text-center space-y-3">
-                    <CheckCircle2 className="h-8 w-8 text-green-600 mx-auto" />
-                    <p className="font-medium text-green-800 dark:text-green-300">
+                  <div className="rounded-lg border border-success/30 bg-success/15 dark:bg-success/15 dark:border-success/30 p-4 text-center space-y-3">
+                    <CheckCircle2 className="h-8 w-8 text-success mx-auto" />
+                    <p className="font-medium text-success dark:text-success">
                       {t('course.allSectionsRead')}
                     </p>
                     <Button onClick={onTakeTest}>
@@ -240,7 +240,7 @@ export function CourseStudyView({
                   <ul className="space-y-1 text-sm text-muted-foreground">
                     {content.keyPoints.map((point, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <CheckCircle2 className="h-3 w-3 mt-1 shrink-0 text-green-500" />
+                        <CheckCircle2 className="h-3 w-3 mt-1 shrink-0 text-success" />
                         {point}
                       </li>
                     ))}

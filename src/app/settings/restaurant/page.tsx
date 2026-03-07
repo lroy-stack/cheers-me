@@ -669,7 +669,7 @@ export default function RestaurantSettingsPage() {
                     </div>
                     <span className="text-sm font-medium">{label}</span>
                     <span className="text-xs text-muted-foreground font-mono">{description}</span>
-                    <span className={`text-xs font-medium ${web[key] ? 'text-green-600 dark:text-green-400' : 'text-muted-foreground'}`}>
+                    <span className={`text-xs font-medium ${web[key] ? 'text-success dark:text-success' : 'text-muted-foreground'}`}>
                       {web[key] ? 'Active' : 'Disabled'}
                     </span>
                   </label>

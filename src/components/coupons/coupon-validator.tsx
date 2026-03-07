@@ -7,6 +7,7 @@ import { formatCouponCode, formatCouponAmount } from '@/lib/utils/coupon-code'
 import CouponQrScanner from './coupon-qr-scanner'
 import CouponRedeemDialog from './coupon-redeem-dialog'
 import { QrCode, Keyboard, Loader2, CheckCircle, AlertCircle } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 export default function CouponValidator() {
   const t = useTranslations('coupons.validate')
@@ -33,7 +34,7 @@ export default function CouponValidator() {
     <div className="max-w-md mx-auto space-y-4">
       {/* Mode tabs */}
       <div className="flex gap-1 bg-muted p-1 rounded-lg">
-        <button
+        <Button
           onClick={() => { setMode('scan'); reset() }}
           className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-md text-sm font-medium transition-colors ${
             mode === 'scan' ? 'bg-background shadow-sm' : 'text-muted-foreground'
@@ -41,8 +42,8 @@ export default function CouponValidator() {
         >
           <QrCode className="h-4 w-4" />
           {t('scanQr')}
-        </button>
-        <button
+        </Button>
+        <Button
           onClick={() => { setMode('code'); reset() }}
           className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-md text-sm font-medium transition-colors ${
             mode === 'code' ? 'bg-background shadow-sm' : 'text-muted-foreground'
@@ -50,7 +51,7 @@ export default function CouponValidator() {
         >
           <Keyboard className="h-4 w-4" />
           {t('enterCode')}
-        </button>
+        </Button>
       </div>
 
       {/* Scanner or code input */}
@@ -66,13 +67,13 @@ export default function CouponValidator() {
             className="flex-1 px-3 py-2.5 rounded-md border border-border bg-background text-sm font-mono uppercase"
             onKeyDown={e => e.key === 'Enter' && handleLookup()}
           />
-          <button
+          <Button
             onClick={handleLookup}
             disabled={loading}
             className="px-4 py-2.5 rounded-md bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 disabled:opacity-50"
           >
             {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : t('lookup')}
-          </button>
+          </Button>
         </div>
       )}
 
@@ -86,7 +87,7 @@ export default function CouponValidator() {
 
       {/* Success message */}
       {redeemSuccess && (
-        <div className="flex items-center gap-2 p-3 rounded-lg bg-green-50 text-green-700 text-sm">
+        <div className="flex items-center gap-2 p-3 rounded-lg bg-success/15 text-success text-sm">
           <CheckCircle className="h-4 w-4 flex-shrink-0" />
           {tr('success')}
         </div>
@@ -107,7 +108,7 @@ export default function CouponValidator() {
             </div>
             <div className="text-center p-2 bg-muted rounded-md">
               <p className="text-xs text-muted-foreground">Remaining</p>
-              <p className="font-bold text-green-600">{formatCouponAmount(coupon.remaining_cents)}</p>
+              <p className="font-bold text-success">{formatCouponAmount(coupon.remaining_cents)}</p>
             </div>
           </div>
 
@@ -116,12 +117,12 @@ export default function CouponValidator() {
           </div>
 
           {canRedeem && (
-            <button
+            <Button
               onClick={() => setShowRedeem(true)}
               className="w-full py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors"
             >
               {tr('title')}
-            </button>
+            </Button>
           )}
         </div>
       )}

@@ -51,13 +51,13 @@ export function SalesKPICards({
             <div className="flex items-center text-xs">
               {weekGrowth >= 0 ? (
                 <>
-                  <ArrowUp className="h-3 w-3 text-green-500 mr-1" />
-                  <span className="text-green-500">+{weekGrowth.toFixed(1)}%</span>
+                  <ArrowUp className="h-3 w-3 text-success mr-1" />
+                  <span className="text-success">+{weekGrowth.toFixed(1)}%</span>
                 </>
               ) : (
                 <>
-                  <ArrowDown className="h-3 w-3 text-red-500 mr-1" />
-                  <span className="text-red-500">{weekGrowth.toFixed(1)}%</span>
+                  <ArrowDown className="h-3 w-3 text-destructive mr-1" />
+                  <span className="text-destructive">{weekGrowth.toFixed(1)}%</span>
                 </>
               )}
               <span className="text-muted-foreground ml-1">{t('overview.vsLastWeek')}</span>

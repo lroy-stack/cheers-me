@@ -367,7 +367,7 @@ export function TablePropertiesPanel({
                 if (qrGenAt) {
                   const hoursSince = (Date.now() - new Date(qrGenAt).getTime()) / (1000 * 60 * 60)
                   if (hoursSince < 24) {
-                    versionBadge = <Badge className="bg-green-500 text-white text-[10px]">New</Badge>
+                    versionBadge = <Badge className="bg-success/15 text-white text-[10px]">New</Badge>
                   } else if (hoursSince < 168) { // 7 days
                     versionBadge = <Badge className="bg-blue-500 text-white text-[10px]">Updated</Badge>
                   } else {

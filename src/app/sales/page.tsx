@@ -242,7 +242,7 @@ export default async function SalesDashboardPage() {
 
         {/* Cash Register Close Status */}
         {dashboardData?.register_close && (
-          <Card className="border-green-200 bg-green-50 dark:bg-green-900/10 dark:border-green-800">
+          <Card className="border-success/30 bg-success/15 dark:bg-success/15 dark:border-success/30">
             <CardHeader>
               <CardTitle className="text-base flex items-center gap-2">
                 <span>✓</span>
@@ -267,9 +267,9 @@ export default async function SalesDashboardPage() {
                   <p className="text-muted-foreground">{t('close.difference')}</p>
                   <p className={`font-semibold ${
                     dashboardData.register_close.variance === 0
-                      ? 'text-green-600'
+                      ? 'text-success'
                       : Math.abs(dashboardData.register_close.variance) > 10
-                      ? 'text-red-600'
+                      ? 'text-destructive'
                       : 'text-orange-600'
                   }`}>
                     {dashboardData.register_close.variance > 0 ? '+' : ''}

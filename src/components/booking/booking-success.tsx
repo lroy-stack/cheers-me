@@ -5,6 +5,7 @@ import { CalendarPlus, Share2, Copy, MapPin, Clock, Music, Car } from 'lucide-re
 import { useState, useMemo } from 'react'
 import { useBookingLanguage } from './booking-language-provider'
 import type { BookingResult } from './types'
+import { Button } from '@/components/ui/button'
 
 interface BookingSuccessProps {
   result: BookingResult
@@ -61,7 +62,7 @@ function AnimatedCheck() {
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       transition={{ type: 'spring', stiffness: 200, damping: 15, delay: 0.2 }}
-      className="w-20 h-20 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mx-auto"
+      className="w-20 h-20 rounded-full bg-success/15 dark:bg-success/15 flex items-center justify-center mx-auto"
     >
       <svg viewBox="0 0 50 50" className="w-10 h-10">
         <motion.path
@@ -71,7 +72,7 @@ function AnimatedCheck() {
           strokeWidth="3"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="text-green-600 dark:text-green-400"
+          className="text-success dark:text-success"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
           transition={{ duration: 0.5, delay: 0.5, ease: 'easeOut' }}
@@ -180,30 +181,30 @@ export default function BookingSuccess({ result, onNewBooking }: BookingSuccessP
           transition={{ delay: 1 }}
           className="flex flex-wrap justify-center gap-3"
         >
-          <button
+          <Button
             type="button"
             onClick={handleWhatsApp}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-green-500 text-white text-sm font-medium hover:bg-green-600 transition-colors"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-success/15 text-white text-sm font-medium hover:bg-success/15 transition-colors"
           >
             <Share2 className="w-4 h-4" />
             {t('success.shareWhatsApp')}
-          </button>
-          <button
+          </Button>
+          <Button
             type="button"
             onClick={handleCopy}
             className="flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm font-medium hover:bg-muted transition-colors"
           >
             <Copy className="w-4 h-4" />
             {copied ? t('success.copied') : t('success.copyLink')}
-          </button>
-          <button
+          </Button>
+          <Button
             type="button"
             onClick={handleCalendar}
             className="flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm font-medium hover:bg-muted transition-colors"
           >
             <CalendarPlus className="w-4 h-4" />
             {t('success.addCalendar')}
-          </button>
+          </Button>
         </motion.div>
 
         {/* Pre-arrival tips */}

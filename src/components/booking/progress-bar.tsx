@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { STEPS, type BookingStep } from './types'
 import { Check } from 'lucide-react'
 import { useBookingLanguage } from './booking-language-provider'
+import { Button } from '@/components/ui/button'
 
 interface ProgressBarProps {
   currentIndex: number
@@ -39,7 +40,7 @@ export default function ProgressBar({ currentIndex, onStepClick }: ProgressBarPr
           const isClickable = i < currentIndex && onStepClick
 
           return (
-            <button
+            <Button
               key={step}
               type="button"
               onClick={() => isClickable && onStepClick(i)}
@@ -80,7 +81,7 @@ export default function ProgressBar({ currentIndex, onStepClick }: ProgressBarPr
               >
                 {STEP_LABELS[step]}
               </span>
-            </button>
+            </Button>
           )
         })}
       </div>

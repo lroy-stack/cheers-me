@@ -143,7 +143,7 @@ export function DJTable({ djs, onEdit, onDelete, onView, isLoading }: DJTablePro
                     <span className="font-medium text-sm">&euro;{dj.fee.toFixed(0)}</span>
                     <DropdownMenu>
                       <DropdownMenuTrigger asChild onClick={(e) => e.stopPropagation()}>
-                        <Button variant="ghost" size="icon" className="h-9 w-9">
+                        <Button variant="ghost" size="icon" className="h-9 w-9 min-h-[44px] min-w-[44px]">
                           <MoreHorizontal className="h-4 w-4" />
                           <span className="sr-only">{t('djs.openMenu')}</span>
                         </Button>

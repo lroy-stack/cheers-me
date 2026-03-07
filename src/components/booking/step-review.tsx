@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react'
 import { useBookingLanguage } from './booking-language-provider'
 import { Turnstile } from '@marsidev/react-turnstile'
 import type { BookingFormData, OccasionType, AvailabilityResult } from './types'
+import { Button } from '@/components/ui/button'
 
 interface StepReviewProps {
   formData: BookingFormData
@@ -122,14 +123,14 @@ export default function StepReview({
           animate={{ opacity: 1, scale: 1 }}
           className="flex justify-center"
         >
-          <button
+          <Button
             type="button"
             onClick={() => onEdit(0)}
             className="px-4 py-1.5 rounded-full bg-primary/15 text-cheers-amber text-sm font-medium flex items-center gap-2 hover:bg-primary/20 transition-colors"
           >
             {OCCASION_LABELS[formData.occasion]}
             <Pencil className="w-3 h-3" />
-          </button>
+          </Button>
         </motion.div>
       )}
 
@@ -152,13 +153,13 @@ export default function StepReview({
                 <p className="text-sm font-medium text-foreground truncate">{value}</p>
               </div>
             </div>
-            <button
+            <Button
               type="button"
               onClick={() => onEdit(editStep)}
               className="text-cheers-amber hover:text-cheers-coral text-xs font-medium flex items-center gap-1 flex-shrink-0"
             >
               <Pencil className="w-3 h-3" /> {t('review.edit')}
-            </button>
+            </Button>
           </motion.div>
         ))}
       </div>
@@ -178,13 +179,13 @@ export default function StepReview({
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="flex items-center justify-center gap-2 text-sm text-green-600 dark:text-green-400"
+            className="flex items-center justify-center gap-2 text-sm text-success dark:text-success"
           >
             <CheckCircle className="w-4 h-4" />
             {t('review.available')} {availability.available_tables && t('review.tablesReady', { count: availability.available_tables })}
           </motion.div>
         ) : availability ? (
-          <div className="text-sm text-red-500">
+          <div className="text-sm text-destructive">
             <p>{availability.reason || t('review.notAvailable')}</p>
             {availability.suggested_times && availability.suggested_times.length > 0 && (
               <p className="mt-1">

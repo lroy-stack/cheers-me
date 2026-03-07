@@ -72,7 +72,7 @@ export function RegisterCloseHistory({ history }: RegisterCloseHistoryProps) {
   const getVarianceBadge = (variance: number) => {
     if (variance === 0) {
       return (
-        <Badge variant="outline" className="border-green-500 text-green-700 dark:text-green-400">
+        <Badge variant="outline" className="border-success/30 text-success dark:text-success">
           <Minus className="h-3 w-3 mr-1" />
           Perfect
         </Badge>
@@ -106,7 +106,7 @@ export function RegisterCloseHistory({ history }: RegisterCloseHistoryProps) {
     }
 
     return (
-      <Badge variant="outline" className="border-red-500 text-red-700 dark:text-red-400">
+      <Badge variant="outline" className="border-destructive/30 text-destructive dark:text-destructive">
         {variance > 0 ? (
           <TrendingUp className="h-3 w-3 mr-1" />
         ) : (
@@ -195,9 +195,9 @@ export function RegisterCloseHistory({ history }: RegisterCloseHistoryProps) {
                       </TableCell>
                       <TableCell className={`text-right font-semibold ${
                         close.variance === 0
-                          ? 'text-green-600'
+                          ? 'text-success'
                           : Math.abs(close.variance) > 10
-                          ? 'text-red-600'
+                          ? 'text-destructive'
                           : 'text-orange-600'
                       }`}>
                         {close.variance > 0 ? '+' : ''}€{close.variance.toFixed(2)}
@@ -249,9 +249,9 @@ export function RegisterCloseHistory({ history }: RegisterCloseHistoryProps) {
                           <p className="text-muted-foreground text-xs">{t('close.difference')}</p>
                           <p className={`font-semibold ${
                             close.variance === 0
-                              ? 'text-green-600'
+                              ? 'text-success'
                               : Math.abs(close.variance) > 10
-                              ? 'text-red-600'
+                              ? 'text-destructive'
                               : 'text-orange-600'
                           }`}>
                             {close.variance > 0 ? '+' : ''}€{close.variance.toFixed(2)}

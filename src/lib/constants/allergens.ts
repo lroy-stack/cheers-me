@@ -57,7 +57,7 @@ export const ALLERGENS: Record<AllergenType, AllergenInfo> = {
     name_es: 'Huevos',
     name_de: 'Eier',
     icon: Egg,
-    color: 'text-yellow-500',
+    color: 'text-warning-foreground',
   },
   fish: {
     id: 'fish',
@@ -84,7 +84,7 @@ export const ALLERGENS: Record<AllergenType, AllergenInfo> = {
     name_es: 'Soja',
     name_de: 'Soja',
     icon: Sprout,
-    color: 'text-green-600',
+    color: 'text-success',
   },
   milk: {
     id: 'milk',
@@ -111,7 +111,7 @@ export const ALLERGENS: Record<AllergenType, AllergenInfo> = {
     name_es: 'Apio',
     name_de: 'Sellerie',
     icon: Leaf,
-    color: 'text-green-500',
+    color: 'text-success',
   },
   mustard: {
     id: 'mustard',
@@ -120,7 +120,7 @@ export const ALLERGENS: Record<AllergenType, AllergenInfo> = {
     name_es: 'Mostaza',
     name_de: 'Senf',
     icon: Circle,
-    color: 'text-yellow-600',
+    color: 'text-warning-foreground',
   },
   sesame: {
     id: 'sesame',

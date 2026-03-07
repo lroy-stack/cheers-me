@@ -26,7 +26,7 @@ export function POSSyncStatus({ integration }: POSSyncStatusProps) {
               key={feature.key}
               className={`flex flex-col items-center gap-1 p-2 rounded-lg text-center ${
                 feature.enabled
-                  ? 'bg-green-50 dark:bg-green-950 text-green-700 dark:text-green-300'
+                  ? 'bg-success/15 dark:bg-success/15 text-success dark:text-success'
                   : 'bg-muted text-muted-foreground'
               }`}
             >
@@ -54,7 +54,7 @@ export function POSSyncStatus({ integration }: POSSyncStatusProps) {
 
       {/* Error display */}
       {integration.last_error && (
-        <div className="p-2 rounded bg-red-50 dark:bg-red-950 text-red-700 dark:text-red-300 text-sm">
+        <div className="p-2 rounded bg-destructive/15 dark:bg-destructive/15 text-destructive dark:text-destructive text-sm">
           {integration.last_error}
         </div>
       )}

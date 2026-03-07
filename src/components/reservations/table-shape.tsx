@@ -19,8 +19,8 @@ interface TableShapeProps {
 }
 
 const statusColors: Record<TableStatus, string> = {
-  available: 'bg-green-500 border-green-600',
-  occupied: 'bg-red-500 border-red-600',
+  available: 'bg-success/15 border-success/30',
+  occupied: 'bg-destructive/15 border-destructive/30',
   reserved: 'bg-primary border-primary',
   cleaning: 'bg-amber-400 border-amber-500',
 }

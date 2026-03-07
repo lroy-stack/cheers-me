@@ -99,7 +99,7 @@ export function BudgetVsActualView() {
   const getVarianceIndicator = (variance: number, variancePct: number) => {
     const isPositive = variance > 0
     const Icon = isPositive ? TrendingUp : TrendingDown
-    const colorClass = isPositive ? 'text-green-600' : 'text-red-500'
+    const colorClass = isPositive ? 'text-success' : 'text-destructive'
 
     return (
       <div className={`flex items-center gap-2 ${colorClass}`}>
@@ -243,7 +243,7 @@ export function BudgetVsActualView() {
                           {Math.abs(item.variance_pct) < 5 ? (
                             <Badge variant="secondary">{t('budget.onTrack')}</Badge>
                           ) : isFavorable ? (
-                            <Badge className="bg-green-500 hover:bg-green-600">{t('budget.favorable')}</Badge>
+                            <Badge className="bg-success/15 hover:bg-success/15">{t('budget.favorable')}</Badge>
                           ) : (
                             <Badge variant="destructive">{t('budget.unfavorable')}</Badge>
                           )}

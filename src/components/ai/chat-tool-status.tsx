@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Loader2, Check, X, ChevronDown, ChevronUp } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { Button } from '@/components/ui/button'
 
 // Tool display labels
 const toolLabels: Record<string, string> = {
@@ -104,7 +105,7 @@ export function ChatToolStatus({ activeTools, completedTools, errorTools }: Chat
             className={cn(
               'inline-flex items-center gap-1.5 rounded-md border px-2 py-1 text-xs transition-colors',
               tool.status === 'active' && 'border-primary/30 bg-primary/5 text-foreground',
-              tool.status === 'done' && 'border-green-200 bg-green-50 text-green-700 dark:border-green-800 dark:bg-green-950/30 dark:text-green-400',
+              tool.status === 'done' && 'border-success/30 bg-success/15 text-success dark:border-success/30 dark:bg-success/15 dark:text-success',
               tool.status === 'error' && 'border-destructive/30 bg-destructive/5 text-destructive',
             )}
           >
@@ -116,13 +117,13 @@ export function ChatToolStatus({ activeTools, completedTools, errorTools }: Chat
         ))}
       </div>
       {hiddenCount > 0 && (
-        <button
+        <Button
           onClick={() => setExpanded(!expanded)}
           className="inline-flex items-center gap-0.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
         >
           {expanded ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
           {expanded ? 'Show less' : `+${hiddenCount} more`}
-        </button>
+        </Button>
       )}
     </div>
   )

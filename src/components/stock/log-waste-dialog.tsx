@@ -131,7 +131,7 @@ export function LogWasteDialog({ products, onWasteLogged }: LogWasteDialogProps)
       <DialogContent className="max-w-lg max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
-            <Trash2 className="h-5 w-5 text-red-500" />
+            <Trash2 className="h-5 w-5 text-destructive" />
             {t('movements.waste')}
           </DialogTitle>
           <DialogDescription>

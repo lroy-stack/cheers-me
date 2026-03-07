@@ -36,6 +36,10 @@
     --sidebar-accent-foreground: 0.9832 0.0055 3.3355;
     --sidebar-border: 0.3800 0.0700 18.0000;
     --sidebar-ring: 0.7000 0.1600 18.0000;
+    --success: 0.5270 0.1551 142.4952;
+    --success-foreground: 1.0000 0 0;
+    --warning: 0.7270 0.1540 85.8731;
+    --warning-foreground: 0.2000 0.0500 85.0000;
     --radius: 0.75rem;
   }
 
@@ -72,6 +76,10 @@
     --sidebar-accent-foreground: 0.9607 0.0154 7.4853;
     --sidebar-border: 0.2500 0.0600 16.0000;
     --sidebar-ring: 0.6122 0.2082 22.2410;
+    --success: 0.6350 0.1680 142.4952;
+    --success-foreground: 1.0000 0 0;
+    --warning: 0.8270 0.1540 85.8731;
+    --warning-foreground: 0.2000 0.0500 85.0000;
   }
 }
 

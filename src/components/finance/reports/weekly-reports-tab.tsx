@@ -185,7 +185,7 @@ export function WeeklyReportsTab() {
                   <p className="text-xs text-muted-foreground">{t('reports.totalProfit')}</p>
                   <p
                     className={`text-xl font-bold ${
-                      summary.total_profit >= 0 ? 'text-green-600' : 'text-red-500'
+                      summary.total_profit >= 0 ? 'text-success' : 'text-destructive'
                     }`}
                   >
                     &euro;{summary.total_profit.toLocaleString()}
@@ -213,7 +213,7 @@ export function WeeklyReportsTab() {
                   <p className="text-xs text-muted-foreground">{t('reports.avgProfit')}</p>
                   <p
                     className={`text-xl font-bold ${
-                      averages.avg_weekly_profit >= 0 ? 'text-green-600' : 'text-red-500'
+                      averages.avg_weekly_profit >= 0 ? 'text-success' : 'text-destructive'
                     }`}
                   >
                     &euro;{averages.avg_weekly_profit.toLocaleString()}
@@ -290,7 +290,7 @@ export function WeeklyReportsTab() {
                         <TableCell className="text-right">&euro;{report.total_labor.toLocaleString()}</TableCell>
                         <TableCell
                           className={`text-right font-semibold ${
-                            report.total_profit >= 0 ? 'text-green-600' : 'text-red-500'
+                            report.total_profit >= 0 ? 'text-success' : 'text-destructive'
                           }`}
                         >
                           &euro;{report.total_profit.toLocaleString()}
@@ -298,7 +298,7 @@ export function WeeklyReportsTab() {
                         <TableCell className="text-right">
                           <Badge
                             variant={profitMargin >= 15 ? 'default' : profitMargin >= 5 ? 'secondary' : 'destructive'}
-                            className={profitMargin >= 15 ? 'bg-green-500 hover:bg-green-600' : ''}
+                            className={profitMargin >= 15 ? 'bg-success/15 hover:bg-success/15' : ''}
                           >
                             {profitMargin.toFixed(1)}%
                           </Badge>
@@ -313,7 +313,7 @@ export function WeeklyReportsTab() {
                                   : 'destructive'
                             }
                             className={
-                              report.avg_food_cost_ratio <= 30 ? 'bg-green-500 hover:bg-green-600' : ''
+                              report.avg_food_cost_ratio <= 30 ? 'bg-success/15 hover:bg-success/15' : ''
                             }
                           >
                             {report.avg_food_cost_ratio.toFixed(1)}%
@@ -329,7 +329,7 @@ export function WeeklyReportsTab() {
                                   : 'destructive'
                             }
                             className={
-                              report.avg_labor_cost_ratio <= 30 ? 'bg-green-500 hover:bg-green-600' : ''
+                              report.avg_labor_cost_ratio <= 30 ? 'bg-success/15 hover:bg-success/15' : ''
                             }
                           >
                             {report.avg_labor_cost_ratio.toFixed(1)}%

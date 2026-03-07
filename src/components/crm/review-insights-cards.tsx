@@ -101,11 +101,11 @@ export function ReviewInsightsCards({
       <Card>
         <CardContent className="pt-6">
           <div className="flex items-center gap-2 mb-2">
-            <ThumbsUp className="h-4 w-4 text-green-500" />
+            <ThumbsUp className="h-4 w-4 text-success" />
             <div className="text-2xl font-bold">{positivePercentage}%</div>
           </div>
           <p className="text-xs text-muted-foreground">{t('positiveReviews')}</p>
-          <p className="text-xs text-green-500 mt-1">
+          <p className="text-xs text-success mt-1">
             {t('ofTotal', { count: insights.sentiment_breakdown.positive, total: insights.total_reviews })}
           </p>
         </CardContent>

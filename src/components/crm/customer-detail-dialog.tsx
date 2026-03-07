@@ -247,12 +247,12 @@ export function CustomerDetailDialog({ customer, open, onOpenChange, onUpdated }
                 {tags.map((t) => (
                   <Badge key={t.id} variant="secondary" className="gap-1">
                     {t.tag}
-                    <button
+                    <Button
                       onClick={() => removeTag(t.tag)}
                       className="ml-1 hover:text-destructive transition-colors"
                     >
                       <X className="h-3 w-3" />
-                    </button>
+                    </Button>
                   </Badge>
                 ))}
                 {tags.length === 0 && (

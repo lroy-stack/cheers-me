@@ -5,9 +5,9 @@
 
 export const STATUS_COLORS = {
   pending: {
-    bg: 'bg-yellow-100 dark:bg-yellow-900/30',
-    text: 'text-yellow-800 dark:text-yellow-300',
-    border: 'border-yellow-300 dark:border-yellow-700',
+    bg: 'bg-warning/15 dark:bg-warning/15',
+    text: 'text-warning-foreground dark:text-warning-foreground',
+    border: 'border-warning/30 dark:border-warning/30',
     excel: { fill: 'FFF9C4', font: 'F57F17' },
   },
   in_progress: {
@@ -17,9 +17,9 @@ export const STATUS_COLORS = {
     excel: { fill: 'BBDEFB', font: '1565C0' },
   },
   completed: {
-    bg: 'bg-green-100 dark:bg-green-900/30',
-    text: 'text-green-800 dark:text-green-300',
-    border: 'border-green-300 dark:border-green-700',
+    bg: 'bg-success/15 dark:bg-success/15',
+    text: 'text-success dark:text-success',
+    border: 'border-success/30 dark:border-success/30',
     excel: { fill: 'C8E6C9', font: '2E7D32' },
   },
   cancelled: {
@@ -50,22 +50,22 @@ export const PRIORITY_COLORS = {
     excel: { fill: 'FFE0B2', font: 'E65100' },
   },
   urgent: {
-    bg: 'bg-red-100 dark:bg-red-900/30',
-    text: 'text-red-700 dark:text-red-300',
-    border: 'border-red-300 dark:border-red-700',
+    bg: 'bg-destructive/15 dark:bg-destructive/15',
+    text: 'text-destructive dark:text-destructive',
+    border: 'border-destructive/30 dark:border-destructive/30',
     excel: { fill: 'FFCDD2', font: 'C62828' },
   },
 } as const
 
 export const COMPLIANCE_STATUS_COLORS = {
   completed: {
-    bg: 'bg-green-100 dark:bg-green-900/30',
-    text: 'text-green-800 dark:text-green-300',
+    bg: 'bg-success/15 dark:bg-success/15',
+    text: 'text-success dark:text-success',
     excel: { fill: 'C8E6C9', font: '2E7D32' },
   },
   flagged: {
-    bg: 'bg-red-100 dark:bg-red-900/30',
-    text: 'text-red-800 dark:text-red-300',
+    bg: 'bg-destructive/15 dark:bg-destructive/15',
+    text: 'text-destructive dark:text-destructive',
     excel: { fill: 'FFCDD2', font: 'C62828' },
   },
   requires_review: {
@@ -82,7 +82,7 @@ export const COMPLIANCE_CATEGORY_COLORS: Record<string, { bg: string; text: stri
   receiving: { bg: 'bg-teal-100 dark:bg-teal-900/30', text: 'text-teal-700 dark:text-teal-300' },
   pest_control: { bg: 'bg-lime-100 dark:bg-lime-900/30', text: 'text-lime-700 dark:text-lime-300' },
   maintenance: { bg: 'bg-muted', text: 'text-muted-foreground' },
-  incident: { bg: 'bg-red-100 dark:bg-red-900/30', text: 'text-red-700 dark:text-red-300' },
+  incident: { bg: 'bg-destructive/15 dark:bg-destructive/15', text: 'text-destructive dark:text-destructive' },
   training: { bg: 'bg-purple-100 dark:bg-purple-900/30', text: 'text-purple-700 dark:text-purple-300' },
   other: { bg: 'bg-muted', text: 'text-muted-foreground' },
 }

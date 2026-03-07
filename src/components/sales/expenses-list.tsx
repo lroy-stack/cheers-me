@@ -59,7 +59,7 @@ export function ExpensesList({ expenses }: ExpensesListProps) {
   const getCategoryBadgeColor = (category: string) => {
     switch (category) {
       case 'food':
-        return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300'
+        return 'bg-success/15 text-success dark:bg-success/15 dark:text-success'
       case 'beverages':
       case 'non-alcoholic':
         return 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300'
@@ -67,7 +67,7 @@ export function ExpensesList({ expenses }: ExpensesListProps) {
         return 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300'
       case 'utilities':
       case 'phone':
-        return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300'
+        return 'bg-warning/15 text-warning-foreground dark:bg-warning/15 dark:text-warning-foreground'
       case 'insurance':
         return 'bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-300'
       case 'marketing':
@@ -189,9 +189,9 @@ export function ExpensesList({ expenses }: ExpensesListProps) {
                   </TableCell>
                   <TableCell className="text-center">
                     {expense.is_deductible ? (
-                      <CheckCircle className="h-4 w-4 text-green-500 mx-auto" />
+                      <CheckCircle className="h-4 w-4 text-success mx-auto" />
                     ) : (
-                      <XCircle className="h-4 w-4 text-red-400 mx-auto" />
+                      <XCircle className="h-4 w-4 text-destructive mx-auto" />
                     )}
                   </TableCell>
                 </TableRow>
@@ -215,7 +215,7 @@ export function ExpensesList({ expenses }: ExpensesListProps) {
                       {getCategoryLabel(expense.category)}
                     </Badge>
                     {expense.is_deductible && (
-                      <CheckCircle className="h-3.5 w-3.5 text-green-500" />
+                      <CheckCircle className="h-3.5 w-3.5 text-success" />
                     )}
                   </div>
                 </div>

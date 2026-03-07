@@ -37,7 +37,7 @@ import { useTranslations } from 'next-intl'
 
 const LEAVE_TYPE_COLORS: Record<LeaveType, string> = {
   vacation: 'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300',
-  sick_leave: 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300',
+  sick_leave: 'bg-destructive/15 text-destructive dark:bg-destructive/15 dark:text-destructive',
   personal_day: 'bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-300',
   maternity: 'bg-pink-100 text-pink-800 dark:bg-pink-900/40 dark:text-pink-300',
   unpaid: 'bg-muted text-foreground dark:bg-muted dark:text-muted-foreground',
@@ -193,10 +193,10 @@ export function LeaveManagementView() {
                     </TableCell>
                     <TableCell className="text-right">
                       <div className="flex items-center justify-end gap-1">
-                        <Button size="icon" variant="ghost" className="h-7 w-7 text-green-600" onClick={() => handleApprove(req.id)}>
+                        <Button size="icon" variant="ghost" className="h-7 w-7 text-success" onClick={() => handleApprove(req.id)}>
                           <Check className="h-4 w-4" />
                         </Button>
-                        <Button size="icon" variant="ghost" className="h-7 w-7 text-red-600" onClick={() => handleReject(req.id)}>
+                        <Button size="icon" variant="ghost" className="h-7 w-7 text-destructive" onClick={() => handleReject(req.id)}>
                           <X className="h-4 w-4" />
                         </Button>
                       </div>

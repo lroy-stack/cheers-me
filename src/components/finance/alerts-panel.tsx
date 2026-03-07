@@ -23,17 +23,17 @@ export function AlertsPanel({ alerts }: AlertsPanelProps) {
 
   if (alerts.length === 0) {
     return (
-      <Card className="border-green-200 bg-green-50 dark:bg-green-900/10 dark:border-green-800">
+      <Card className="border-success/30 bg-success/15 dark:bg-success/15 dark:border-success/30">
         <CardHeader className="pb-4">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-full bg-green-500 flex items-center justify-center">
+            <div className="h-8 w-8 rounded-full bg-success/15 flex items-center justify-center">
               <span className="text-white text-lg">✓</span>
             </div>
             <div>
-              <CardTitle className="text-base text-green-900 dark:text-green-100">
+              <CardTitle className="text-base text-success dark:text-success">
                 {t('alerts.allNormal')}
               </CardTitle>
-              <CardDescription className="text-green-700 dark:text-green-300">
+              <CardDescription className="text-success dark:text-success">
                 {t('alerts.allNormalDesc')}
               </CardDescription>
             </div>
@@ -46,7 +46,7 @@ export function AlertsPanel({ alerts }: AlertsPanelProps) {
   const getAlertIcon = (severity: 'info' | 'warning' | 'danger') => {
     switch (severity) {
       case 'danger':
-        return <AlertCircle className="h-5 w-5 text-red-500" />
+        return <AlertCircle className="h-5 w-5 text-destructive" />
       case 'warning':
         return <AlertTriangle className="h-5 w-5 text-orange-500" />
       case 'info':
@@ -57,7 +57,7 @@ export function AlertsPanel({ alerts }: AlertsPanelProps) {
   const getAlertStyles = (severity: 'info' | 'warning' | 'danger') => {
     switch (severity) {
       case 'danger':
-        return 'border-red-200 bg-red-50 dark:bg-red-900/10 dark:border-red-800'
+        return 'border-destructive/30 bg-destructive/15 dark:bg-destructive/15 dark:border-destructive/30'
       case 'warning':
         return 'border-orange-200 bg-orange-50 dark:bg-orange-900/10 dark:border-orange-800'
       case 'info':
@@ -113,7 +113,7 @@ export function AlertsPanel({ alerts }: AlertsPanelProps) {
                     <span>
                       {t('alerts.target')} <span className="font-semibold">{alert.target.toFixed(1)}%</span>
                     </span>
-                    <span className="text-red-600 dark:text-red-400 font-semibold">
+                    <span className="text-destructive dark:text-destructive font-semibold">
                       &Delta; {(alert.actual - alert.target).toFixed(1)}%
                     </span>
                   </div>

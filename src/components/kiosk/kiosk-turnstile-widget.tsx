@@ -138,8 +138,8 @@ export function KioskTurnstileWidget({ onSuccess, onError, onExpire }: KioskTurn
       {/* Success State (brief) */}
       {state === 'SUCCESS' && (
         <div className="flex flex-col items-center space-y-2 py-8">
-          <ShieldCheck className="h-8 w-8 text-green-500" />
-          <p className="text-sm text-green-600 dark:text-green-400">
+          <ShieldCheck className="h-8 w-8 text-success" />
+          <p className="text-sm text-success dark:text-success">
             {t('securityCheckPassed') || 'Security check passed'}
           </p>
         </div>

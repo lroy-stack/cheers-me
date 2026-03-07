@@ -224,7 +224,7 @@ export default async function FinanceDashboardPage() {
                 </div>
                 <div className="space-y-1">
                   <p className="text-xs text-muted-foreground">{t('dashboard.totalProfit')}</p>
-                  <p className={`text-xl font-bold ${weekProfit < 0 ? 'text-red-500' : 'text-green-600'}`}>
+                  <p className={`text-xl font-bold ${weekProfit < 0 ? 'text-destructive' : 'text-success'}`}>
                     &euro;{weekProfit.toLocaleString()}
                   </p>
                 </div>
@@ -263,7 +263,7 @@ export default async function FinanceDashboardPage() {
                 </div>
                 <div className="space-y-1">
                   <p className="text-xs text-muted-foreground">{t('dashboard.totalProfit')}</p>
-                  <p className={`text-xl font-bold ${monthProfit < 0 ? 'text-red-500' : 'text-green-600'}`}>
+                  <p className={`text-xl font-bold ${monthProfit < 0 ? 'text-destructive' : 'text-success'}`}>
                     &euro;{monthProfit.toLocaleString()}
                   </p>
                 </div>
@@ -277,7 +277,7 @@ export default async function FinanceDashboardPage() {
                   <p className="text-xs text-muted-foreground">{t('dashboard.status')}</p>
                   <Badge
                     variant={monthProfit > 0 ? 'default' : 'destructive'}
-                    className={monthProfit > 0 ? 'bg-green-500 hover:bg-green-600' : ''}
+                    className={monthProfit > 0 ? 'bg-success/15 hover:bg-success/15' : ''}
                   >
                     {monthProfit > 0 ? t('dashboard.profitable') : t('dashboard.loss')}
                   </Badge>

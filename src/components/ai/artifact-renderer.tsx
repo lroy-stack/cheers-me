@@ -2,6 +2,7 @@
 
 import { useMemo, useRef, useEffect, useState, useCallback } from 'react'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell } from 'recharts'
+import { Button } from '@/components/ui/button'
 // Note: DOMPurify loaded dynamically inside useEffect to avoid SSR issues
 
 interface ArtifactRendererProps {
@@ -90,7 +91,7 @@ function HTMLArtifact({ content }: { content: string }) {
         ref={iframeRef}
         srcDoc={srcDoc}
         sandbox="allow-popups"
-        className="w-full bg-white"
+        className="w-full bg-card"
         style={{ border: 'none', height: `${height}px` }}
         title="AI-generated content"
       />
@@ -452,7 +453,7 @@ function PDFRenderer({ content }: { content: string }) {
       </div>
       <iframe
         src={url}
-        className="w-full bg-white"
+        className="w-full bg-card"
         style={{ border: 'none', height: 'clamp(300px, 50vh, 700px)' }}
         title="PDF preview"
       />
@@ -486,12 +487,12 @@ function CodeRenderer({ content }: { content: string }) {
         ) : (
           <span />
         )}
-        <button
+        <Button
           onClick={handleCopy}
           className="text-[10px] sm:text-xs px-2 py-0.5 rounded hover:bg-muted text-muted-foreground"
         >
           {copied ? 'Copied!' : 'Copy'}
-        </button>
+        </Button>
       </div>
       <pre className="p-2 sm:p-3 overflow-x-auto text-xs sm:text-sm bg-card">
         <code className="font-mono">{content}</code>
@@ -583,12 +584,12 @@ function FormRenderer({ content }: { content: string }) {
             )}
           </div>
         ))}
-        <button
+        <Button
           type="submit"
           className="px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-medium rounded-md bg-primary text-primary-foreground hover:bg-primary/90"
         >
           {formData.submitLabel ?? 'Submit'}
-        </button>
+        </Button>
       </form>
     </div>
   )

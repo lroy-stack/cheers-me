@@ -13,7 +13,7 @@ export default function CouponStatsCards({ stats }: CouponStatsCardsProps) {
 
   const cards = [
     { label: t('totalSold'), value: stats.totalSold.toString(), icon: Gift, color: 'text-blue-500' },
-    { label: t('totalRevenue'), value: `€${(stats.totalRevenue / 100).toFixed(0)}`, icon: Euro, color: 'text-green-500' },
+    { label: t('totalRevenue'), value: `€${(stats.totalRevenue / 100).toFixed(0)}`, icon: Euro, color: 'text-success' },
     { label: t('activeCoupons'), value: stats.activeCount.toString(), icon: CreditCard, color: 'text-amber-500' },
     { label: t('redeemed'), value: stats.redeemedCount.toString(), icon: CheckCircle, color: 'text-purple-500' },
   ]

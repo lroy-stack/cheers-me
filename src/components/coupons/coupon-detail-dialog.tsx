@@ -4,6 +4,7 @@ import { useCoupon } from '@/hooks/use-coupons'
 import { useTranslations } from 'next-intl'
 import { formatCouponAmount } from '@/lib/utils/coupon-code'
 import { X, Loader2, Download } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 interface CouponDetailDialogProps {
   couponId: string
@@ -23,7 +24,7 @@ export default function CouponDetailDialog({ couponId, onClose }: CouponDetailDi
       >
         <div className="flex items-center justify-between p-4 border-b border-border">
           <h2 className="font-bold">{t('couponCode')}</h2>
-          <button onClick={onClose} className="p-1 rounded-md hover:bg-muted"><X className="h-5 w-5" /></button>
+          <Button onClick={onClose} className="p-1 rounded-md hover:bg-muted"><X className="h-5 w-5" /></Button>
         </div>
 
         {loading || !coupon ? (

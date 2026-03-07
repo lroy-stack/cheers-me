@@ -57,7 +57,7 @@ export function SubAgentStatus({ event }: SubAgentStatusProps) {
           isError ? (
             <XCircle className="h-4 w-4 text-destructive shrink-0" />
           ) : (
-            <CheckCircle2 className="h-4 w-4 text-green-500 shrink-0" />
+            <CheckCircle2 className="h-4 w-4 text-success shrink-0" />
           )
         ) : (
           <Loader2 className="h-4 w-4 animate-spin text-primary shrink-0" />

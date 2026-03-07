@@ -33,7 +33,7 @@ export function PolaroidPhoto({ image, captionKey, rotation = 0, className = '' 
             sizes="(max-width: 640px) 140px, (max-width: 768px) 180px, 220px"
           />
         </div>
-        <p className="absolute bottom-2 sm:bottom-2.5 left-0 right-0 text-center text-xs sm:text-sm font-medium text-gray-700 font-[cursive]">
+        <p className="absolute bottom-2 sm:bottom-2.5 left-0 right-0 text-center text-xs sm:text-sm font-medium text-muted-foreground font-[cursive]">
           {t(`experience.${captionKey}`)}
         </p>
       </div>

@@ -42,11 +42,11 @@ export function ReviewCard({ review }: ReviewCardProps) {
   const getSentimentColor = (sentiment: string) => {
     switch (sentiment) {
       case 'positive':
-        return 'bg-green-500'
+        return 'bg-success/15'
       case 'neutral':
         return 'bg-muted0'
       case 'negative':
-        return 'bg-red-500'
+        return 'bg-destructive/15'
       default:
         return 'bg-muted0'
     }

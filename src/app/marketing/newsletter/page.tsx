@@ -201,7 +201,7 @@ export default function NewsletterPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-green-500">{stats.sent}</div>
+            <div className="text-2xl font-bold text-success">{stats.sent}</div>
           </CardContent>
         </Card>
 

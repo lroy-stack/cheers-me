@@ -100,7 +100,7 @@ export function ShiftCard({ shift, onEdit, onDelete, isDragging }: ShiftCardProp
               <Button
                 variant="ghost"
                 size="icon"
-                className="h-7 w-7 text-red-500 hover:text-red-700 hover:bg-red-50 dark:hover:bg-red-950"
+                className="h-7 w-7 text-destructive hover:text-destructive hover:bg-destructive/15 dark:hover:bg-destructive/15"
                 onClick={(e) => {
                   e.stopPropagation()
                   onDelete(shift)

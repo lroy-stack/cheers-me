@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import type { Advertisement, Language } from '@/types'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 interface AdBannerProps {
   ads: Advertisement[]
@@ -94,23 +95,23 @@ export default function AdBanner({ ads, lang }: AdBannerProps) {
 
       {ads.length > 1 && (
         <>
-          <button
+          <Button
             onClick={(e) => { e.stopPropagation(); setCurrent(i => (i - 1 + ads.length) % ads.length) }}
             className="absolute left-1 top-1/2 -translate-y-1/2 p-1 rounded-full bg-black/20 hover:bg-black/40 transition-colors"
             aria-label="Previous"
           >
             <ChevronLeft className="h-4 w-4" />
-          </button>
-          <button
+          </Button>
+          <Button
             onClick={(e) => { e.stopPropagation(); next() }}
             className="absolute right-1 top-1/2 -translate-y-1/2 p-1 rounded-full bg-black/20 hover:bg-black/40 transition-colors"
             aria-label="Next"
           >
             <ChevronRight className="h-4 w-4" />
-          </button>
+          </Button>
           <div className="absolute bottom-1 left-1/2 -translate-x-1/2 flex gap-1">
             {ads.map((_, i) => (
-              <span key={i} className={`h-1.5 w-1.5 rounded-full ${i === current ? 'bg-white' : 'bg-white/40'}`} />
+              <span key={i} className={`h-1.5 w-1.5 rounded-full ${i === current ? 'bg-card' : 'bg-white/40'}`} />
             ))}
           </div>
         </>

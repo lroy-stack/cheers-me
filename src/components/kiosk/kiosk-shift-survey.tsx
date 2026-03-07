@@ -350,7 +350,7 @@ export function KioskShiftSurvey({
                   animate={{ scale: 1 }}
                   transition={{ type: 'spring', duration: 0.5 }}
                 >
-                  <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
+                  <CheckCircle className="h-16 w-16 text-success mx-auto mb-4" />
                 </motion.div>
                 <h2 className="text-2xl font-bold mb-2">{t('thankYou')}</h2>
                 <p className="text-muted-foreground">{t('thankYouMessage')}</p>

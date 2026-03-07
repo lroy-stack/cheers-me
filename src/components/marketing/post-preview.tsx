@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Heart, MessageCircle, Send, Bookmark, MoreHorizontal, ThumbsUp, Share2 } from 'lucide-react'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { useTranslations } from 'next-intl'
+import { Button } from '@/components/ui/button'
 
 interface PostPreviewProps {
   caption: string
@@ -52,7 +53,7 @@ export function PostPreview({ caption, imageUrl, platform, language }: PostPrevi
       <div className="p-3 space-y-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <Heart className="h-6 w-6 cursor-pointer hover:text-red-500 transition-colors" />
+            <Heart className="h-6 w-6 cursor-pointer hover:text-destructive transition-colors" />
             <MessageCircle className="h-6 w-6 cursor-pointer" />
             <Send className="h-6 w-6 cursor-pointer" />
           </div>
@@ -122,18 +123,18 @@ export function PostPreview({ caption, imageUrl, platform, language }: PostPrevi
       {/* Facebook Actions */}
       <div className="p-3 border-t border-neutral-200 dark:border-neutral-800">
         <div className="flex items-center justify-around">
-          <button className="flex items-center gap-2 px-4 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-md transition-colors">
+          <Button className="flex items-center gap-2 px-4 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-md transition-colors">
             <ThumbsUp className="h-5 w-5 text-muted-foreground" />
             <span className="text-sm font-medium text-muted-foreground">{t('postPreview.like')}</span>
-          </button>
-          <button className="flex items-center gap-2 px-4 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-md transition-colors">
+          </Button>
+          <Button className="flex items-center gap-2 px-4 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-md transition-colors">
             <MessageCircle className="h-5 w-5 text-muted-foreground" />
             <span className="text-sm font-medium text-muted-foreground">{t('postPreview.comment')}</span>
-          </button>
-          <button className="flex items-center gap-2 px-4 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-md transition-colors">
+          </Button>
+          <Button className="flex items-center gap-2 px-4 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-md transition-colors">
             <Share2 className="h-5 w-5 text-muted-foreground" />
             <span className="text-sm font-medium text-muted-foreground">{t('postPreview.share')}</span>
-          </button>
+          </Button>
         </div>
       </div>
     </div>

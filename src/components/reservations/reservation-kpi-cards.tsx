@@ -51,7 +51,7 @@ export function ReservationKPICards({ data, isLoading }: ReservationKPICardsProp
       value: data.seatedCount,
       icon: CheckCircle2,
       description: t('overview.activeTables'),
-      color: "text-green-500",
+      color: "text-success",
     },
     {
       title: t('overview.occupancyRate'),
@@ -72,7 +72,7 @@ export function ReservationKPICards({ data, isLoading }: ReservationKPICardsProp
       value: data.noShowCount,
       icon: UserX,
       description: t('overview.today'),
-      color: "text-red-500",
+      color: "text-destructive",
     },
   ]
 
@@ -110,7 +110,7 @@ export function ReservationKPICards({ data, isLoading }: ReservationKPICardsProp
               <div className="text-2xl font-bold">{card.value}</div>
               <p className="text-xs text-muted-foreground">{card.description}</p>
               {card.trend && (
-                <p className="mt-1 text-xs text-green-600 dark:text-green-400">
+                <p className="mt-1 text-xs text-success dark:text-success">
                   {card.trend}
                 </p>
               )}

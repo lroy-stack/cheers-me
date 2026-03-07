@@ -7,17 +7,17 @@ import { cn } from '@/lib/utils'
 import type { PlannedTask } from '@/types'
 
 const priorityColors: Record<string, string> = {
-  urgent: 'bg-red-100 border-red-300 dark:bg-red-950/30 dark:border-red-800',
+  urgent: 'bg-destructive/15 border-destructive/30 dark:bg-destructive/15 dark:border-destructive/30',
   high: 'bg-orange-100 border-orange-300 dark:bg-orange-950/30 dark:border-orange-800',
   medium: 'bg-blue-100 border-blue-300 dark:bg-blue-950/30 dark:border-blue-800',
-  low: 'bg-green-100 border-green-300 dark:bg-green-950/30 dark:border-green-800',
+  low: 'bg-success/15 border-success/30 dark:bg-success/15 dark:border-success/30',
 }
 
 const priorityBadgeColors: Record<string, string> = {
-  urgent: 'bg-red-500 text-white',
+  urgent: 'bg-destructive/15 text-white',
   high: 'bg-orange-500 text-white',
   medium: 'bg-blue-500 text-white',
-  low: 'bg-green-500 text-white',
+  low: 'bg-success/15 text-white',
 }
 
 interface TaskPlanCardProps {

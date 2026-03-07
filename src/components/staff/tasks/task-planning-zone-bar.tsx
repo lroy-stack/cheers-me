@@ -266,7 +266,7 @@ export function TaskPlanningZoneBar({
       </div>
 
       {error && (
-        <div className="text-xs text-red-500 bg-red-50 dark:bg-red-950/20 rounded px-2 py-1">
+        <div className="text-xs text-destructive bg-destructive/15 dark:bg-destructive/15 rounded px-2 py-1">
           {error}
         </div>
       )}
@@ -303,12 +303,12 @@ export function TaskPlanningZoneBar({
                     {empIds.map(empId => (
                       <Badge key={empId} variant="secondary" className="text-xs gap-1 pr-1">
                         {getEmployeeName(empId)}
-                        <button
+                        <Button
                           onClick={() => removeAssignment(section.id, empId)}
                           className="hover:text-destructive ml-0.5"
                         >
                           <X className="h-3 w-3" />
-                        </button>
+                        </Button>
                       </Badge>
                     ))}
                   </div>

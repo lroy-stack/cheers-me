@@ -15,7 +15,8 @@ export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url)
     const format = searchParams.get('format') || 'json'
-    const language = (searchParams.get('language') || 'en') as 'en' | 'nl' | 'es'
+    const langParam = searchParams.get('language') || searchParams.get('lang') || 'en'
+    const language = (['en', 'nl', 'es', 'de'].includes(langParam) ? langParam : 'en') as 'en' | 'nl' | 'es' | 'de'
 
     const supabase = await createClient()
 

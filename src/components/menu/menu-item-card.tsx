@@ -79,10 +79,10 @@ export function MenuItemCard({
 
   const marginColor =
     margin && parseInt(margin) >= 70
-      ? 'text-green-600'
+      ? 'text-success'
       : margin && parseInt(margin) >= 50
       ? 'text-primary'
-      : 'text-red-600'
+      : 'text-destructive'
 
   const actionsMenu = (
     <DropdownMenu>

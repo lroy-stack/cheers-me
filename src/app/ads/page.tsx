@@ -21,8 +21,8 @@ function AdStats() {
       label: 'Active Ads',
       value: activeCount,
       icon: Radio,
-      color: 'text-green-600',
-      bg: 'bg-green-50 dark:bg-green-900/20',
+      color: 'text-success',
+      bg: 'bg-success/15 dark:bg-success/15',
     },
     {
       label: 'Total Impressions',

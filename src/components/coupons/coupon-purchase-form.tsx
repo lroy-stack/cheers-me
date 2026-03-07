@@ -7,6 +7,7 @@ import CouponAmountSelector from './coupon-amount-selector'
 import CouponThemePicker from './coupon-theme-picker'
 import CouponPreviewCard from './coupon-preview-card'
 import { Loader2, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 const STEPS = ['step1', 'step2', 'step3', 'step4'] as const
 
@@ -221,18 +222,18 @@ export default function CouponPurchaseForm() {
       {/* Navigation */}
       <div className="flex gap-3 mt-6">
         {step > 0 && (
-          <button
+          <Button
             type="button"
             onClick={() => setStep(s => s - 1)}
             className="flex items-center gap-1 px-4 py-2.5 rounded-lg border border-border text-sm font-medium hover:bg-muted transition-colors"
           >
             <ChevronLeft className="h-4 w-4" />
             Back
-          </button>
+          </Button>
         )}
         <div className="flex-1" />
         {step < 3 ? (
-          <button
+          <Button
             type="button"
             onClick={() => setStep(s => s + 1)}
             disabled={!canProceed()}
@@ -240,9 +241,9 @@ export default function CouponPurchaseForm() {
           >
             Next
             <ChevronRight className="h-4 w-4" />
-          </button>
+          </Button>
         ) : (
-          <button
+          <Button
             type="button"
             onClick={handleSubmit}
             disabled={processing || !canProceed()}
@@ -250,7 +251,7 @@ export default function CouponPurchaseForm() {
           >
             {processing && <Loader2 className="h-4 w-4 animate-spin" />}
             {processing ? t('processing') : t('payNow', { amount: `€${(amount / 100).toFixed(0)}` })}
-          </button>
+          </Button>
         )}
       </div>
     </div>

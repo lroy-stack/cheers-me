@@ -241,20 +241,20 @@ export function CalendarView({
                         <div className="text-xs text-muted-foreground">{t('contentCalendar.loading')}</div>
                       ) : (
                         dayEntries.slice(0, 3).map((entry) => (
-                          <button
+                          <Button
                             key={entry.id}
                             onClick={() => onEntryEdit?.(entry)}
                             className={cn(
                               'w-full text-left text-xs p-1.5 rounded truncate transition-colors',
                               'hover:bg-accent cursor-pointer',
-                              entry.status === 'published' && 'bg-green-500/10 text-green-700 dark:text-green-400',
+                              entry.status === 'published' && 'bg-success/15 text-success dark:text-success',
                               entry.status === 'scheduled' && 'bg-blue-500/10 text-blue-700 dark:text-blue-400',
                               entry.status === 'draft' && 'bg-muted0/10 text-foreground dark:text-muted-foreground',
-                              entry.status === 'failed' && 'bg-red-500/10 text-red-700 dark:text-red-400'
+                              entry.status === 'failed' && 'bg-destructive/15 text-destructive dark:text-destructive'
                             )}
                           >
                             {entry.title}
-                          </button>
+                          </Button>
                         ))
                       )}
                       {dayEntries.length > 3 && (

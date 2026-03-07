@@ -190,7 +190,7 @@ export function ClockHistory({
                       </TableCell>
                       <TableCell>
                         {isActive ? (
-                          <Badge variant="default" className="bg-green-500">
+                          <Badge variant="default" className="bg-success/15">
                             {t('clock.active')}
                           </Badge>
                         ) : (

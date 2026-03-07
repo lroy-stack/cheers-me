@@ -65,16 +65,16 @@ export default function POSSettingsPage() {
   }
 
   const statusIcons: Record<string, React.ReactNode> = {
-    active: <Wifi className="h-4 w-4 text-green-500" />,
-    paused: <WifiOff className="h-4 w-4 text-yellow-500" />,
-    error: <AlertCircle className="h-4 w-4 text-red-500" />,
+    active: <Wifi className="h-4 w-4 text-success" />,
+    paused: <WifiOff className="h-4 w-4 text-warning-foreground" />,
+    error: <AlertCircle className="h-4 w-4 text-destructive" />,
     disconnected: <WifiOff className="h-4 w-4 text-muted-foreground" />,
   }
 
   const statusColors: Record<string, string> = {
-    active: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
-    paused: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200',
-    error: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200',
+    active: 'bg-success/15 text-success dark:bg-success/15 dark:text-success',
+    paused: 'bg-warning/15 text-warning-foreground dark:bg-warning/15 dark:text-warning-foreground',
+    error: 'bg-destructive/15 text-destructive dark:bg-destructive/15 dark:text-destructive',
     disconnected: 'bg-muted text-foreground dark:bg-card dark:text-foreground',
   }
 

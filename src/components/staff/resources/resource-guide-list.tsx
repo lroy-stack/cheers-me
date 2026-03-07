@@ -19,7 +19,7 @@ const roleColors: Record<string, string> = {
   bar: 'bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300',
   waiter: 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300',
   admin: 'bg-muted text-foreground dark:bg-card/30 dark:text-muted-foreground',
-  manager: 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300',
+  manager: 'bg-success/15 text-success dark:bg-success/15 dark:text-success',
   owner: 'bg-primary/10 text-primary dark:bg-primary/10 dark:text-primary',
   dj: 'bg-pink-100 text-pink-800 dark:bg-pink-900/30 dark:text-pink-300',
 }
@@ -48,13 +48,13 @@ export function ResourceGuideList({ guides, onSelect, trainingStatuses }: Resour
                       {guide.code}
                     </Badge>
                     {status === 'completed' && (
-                      <CheckCircle2 className="h-4 w-4 text-green-500" />
+                      <CheckCircle2 className="h-4 w-4 text-success" />
                     )}
                     {status === 'pending' && (
                       <Clock className="h-4 w-4 text-orange-500" />
                     )}
                     {status === 'overdue' && (
-                      <AlertTriangle className="h-4 w-4 text-red-500" />
+                      <AlertTriangle className="h-4 w-4 text-destructive" />
                     )}
                   </div>
 

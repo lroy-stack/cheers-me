@@ -3,6 +3,7 @@
 import { useState, useRef } from 'react'
 import { useTranslations } from 'next-intl'
 import { Upload, X, Loader2 } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 interface AdImageUploadProps {
   adId: string
@@ -55,14 +56,14 @@ export default function AdImageUpload({ adId, currentImageUrl, onImageChange }: 
       {currentImageUrl ? (
         <div className="relative group">
           <img src={currentImageUrl} alt="Ad" className="w-full h-40 rounded-lg object-cover" />
-          <button
+          <Button
             type="button"
             onClick={handleRemove}
             disabled={uploading}
-            className="absolute top-2 right-2 p-1.5 rounded-full bg-red-500 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+            className="absolute top-2 right-2 p-1.5 rounded-full bg-destructive/15 text-white opacity-0 group-hover:opacity-100 transition-opacity"
           >
             <X className="h-4 w-4" />
-          </button>
+          </Button>
         </div>
       ) : (
         <label className="flex flex-col items-center justify-center h-40 rounded-lg border-2 border-dashed border-border hover:border-primary/50 cursor-pointer transition-colors">

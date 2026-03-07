@@ -103,8 +103,8 @@ export function DailyReportsTab() {
   }
 
   const getProfitTrend = (profit: number) => {
-    if (profit > 0) return <TrendingUp className="h-4 w-4 text-green-500" />
-    if (profit < 0) return <TrendingDown className="h-4 w-4 text-red-500" />
+    if (profit > 0) return <TrendingUp className="h-4 w-4 text-success" />
+    if (profit < 0) return <TrendingDown className="h-4 w-4 text-destructive" />
     return <Minus className="h-4 w-4 text-muted-foreground" />
   }
 
@@ -187,7 +187,7 @@ export function DailyReportsTab() {
                 <p className="text-xs text-muted-foreground">{t('reports.netProfit')}</p>
                 <p
                   className={`text-xl font-bold ${
-                    totals.profit >= 0 ? 'text-green-600' : 'text-red-500'
+                    totals.profit >= 0 ? 'text-success' : 'text-destructive'
                   }`}
                 >
                   &euro;{totals.profit.toLocaleString()}
@@ -250,7 +250,7 @@ export function DailyReportsTab() {
                           </TableCell>
                           <TableCell
                             className={`text-right font-semibold ${
-                              report.profit >= 0 ? 'text-green-600' : 'text-red-500'
+                              report.profit >= 0 ? 'text-success' : 'text-destructive'
                             }`}
                           >
                             &euro;{report.profit.toLocaleString()}
@@ -258,7 +258,7 @@ export function DailyReportsTab() {
                           <TableCell className="text-right">
                             <Badge
                               variant={profitMargin >= 15 ? 'default' : profitMargin >= 5 ? 'secondary' : 'destructive'}
-                              className={profitMargin >= 15 ? 'bg-green-500 hover:bg-green-600 text-white' : ''}
+                              className={profitMargin >= 15 ? 'bg-success/15 hover:bg-success/15 text-white' : ''}
                             >
                               {profitMargin.toFixed(1)}%
                             </Badge>
@@ -297,7 +297,7 @@ export function DailyReportsTab() {
                         </div>
                         <Badge
                           variant={profitMargin >= 15 ? 'default' : profitMargin >= 5 ? 'secondary' : 'destructive'}
-                          className={profitMargin >= 15 ? 'bg-green-500 hover:bg-green-600 text-white' : ''}
+                          className={profitMargin >= 15 ? 'bg-success/15 hover:bg-success/15 text-white' : ''}
                         >
                           {profitMargin.toFixed(1)}%
                         </Badge>
@@ -315,7 +315,7 @@ export function DailyReportsTab() {
                           <span className="text-sm text-muted-foreground">{t('reports.profit')}</span>
                           <span
                             className={`text-sm font-semibold ${
-                              report.profit >= 0 ? 'text-green-600' : 'text-red-500'
+                              report.profit >= 0 ? 'text-success' : 'text-destructive'
                             }`}
                           >
                             &euro;{report.profit.toLocaleString()}

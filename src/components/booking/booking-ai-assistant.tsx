@@ -5,6 +5,7 @@ import { MessageCircle, X, Send, Sparkles } from 'lucide-react'
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { useBookingLanguage } from './booking-language-provider'
 import type { BookingFormData } from './types'
+import { Button } from '@/components/ui/button'
 
 interface Message {
   role: 'user' | 'assistant'
@@ -155,13 +156,13 @@ export default function BookingAIAssistant({ onApplySuggestion }: BookingAIAssis
                   >
                     <p>{msg.content}</p>
                     {msg.suggestion && (
-                      <button
+                      <Button
                         type="button"
                         onClick={() => handleApplySuggestion(msg.suggestion!)}
                         className="mt-2 w-full px-3 py-1.5 rounded-lg bg-white/20 dark:bg-white/10 text-xs font-medium hover:bg-white/30 transition-colors border border-white/20"
                       >
                         {t('aiAssistant.applyToBooking')}
-                      </button>
+                      </Button>
                     )}
                   </div>
                 </div>
@@ -195,14 +196,14 @@ export default function BookingAIAssistant({ onApplySuggestion }: BookingAIAssis
             {messages.length === 0 && (
               <div className="px-4 pb-2 flex flex-wrap gap-1.5">
                 {QUICK_SUGGESTIONS.map((q) => (
-                  <button
+                  <Button
                     key={q}
                     type="button"
                     onClick={() => sendMessage(q)}
                     className="text-xs px-2.5 py-1 rounded-full border border-border text-muted-foreground hover:border-cheers-amber hover:text-cheers-amber transition-colors"
                   >
                     {q}
-                  </button>
+                  </Button>
                 ))}
               </div>
             )}
@@ -224,13 +225,13 @@ export default function BookingAIAssistant({ onApplySuggestion }: BookingAIAssis
                   placeholder={t('aiAssistant.inputPlaceholder')}
                   className="flex-1 px-3 py-2 rounded-lg border border-border bg-card text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-cheers-amber"
                 />
-                <button
+                <Button
                   type="submit"
                   disabled={!input.trim() || loading}
                   className="w-9 h-9 rounded-lg bg-cheers-amber text-white flex items-center justify-center disabled:opacity-50 hover:bg-cheers-coral transition-colors"
                 >
                   <Send className="w-4 h-4" />
-                </button>
+                </Button>
               </form>
             </div>
           </motion.div>

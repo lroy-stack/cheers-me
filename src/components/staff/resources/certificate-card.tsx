@@ -34,8 +34,8 @@ export function CertificateCard({ guide, record, locale }: CertificateCardProps)
     <Card className="overflow-hidden">
       <CardContent className="p-4 space-y-3">
         <div className="flex items-start gap-3">
-          <div className="rounded-lg bg-green-100 dark:bg-green-900/30 p-2 shrink-0">
-            <Award className="h-5 w-5 text-green-700 dark:text-green-300" />
+          <div className="rounded-lg bg-success/15 dark:bg-success/15 p-2 shrink-0">
+            <Award className="h-5 w-5 text-success dark:text-success" />
           </div>
           <div className="min-w-0 flex-1">
             <h3 className="font-medium text-sm leading-tight truncate">

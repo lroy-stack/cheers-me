@@ -77,7 +77,7 @@ export function OrderCard({ order, onStatusChange, isPriority = false }: OrderCa
   return (
     <Card
       className={`transition-all hover:shadow-lg ${
-        isPriority ? 'border-2 border-red-500 shadow-red-100' : ''
+        isPriority ? 'border-2 border-destructive/30 shadow-red-100' : ''
       } ${order.status === 'pending' ? 'bg-primary/5/50 dark:bg-primary/5' : ''} ${
         order.status === 'in_progress' ? 'bg-blue-50/50 dark:bg-blue-950/10' : ''
       }`}

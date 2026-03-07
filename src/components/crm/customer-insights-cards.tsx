@@ -88,8 +88,8 @@ export function CustomerInsightsCards({ insights, isLoading }: CustomerInsightsC
       value: (sentiment.positive ?? 0).toLocaleString(),
       label: t('positiveReviews'),
       sublabel: `${sentiment.negative ?? 0} ${t('negative')}`,
-      color: 'text-green-500',
-      bgColor: 'bg-green-500/10',
+      color: 'text-success',
+      bgColor: 'bg-success/15',
     },
     {
       icon: Calendar,

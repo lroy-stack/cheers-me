@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { useBranding } from '@/hooks/use-branding'
 import { useAuth } from '@/hooks/use-auth'
 import type { UserRole } from '@/types'
+import { Button } from '@/components/ui/button'
 
 interface AssistantWelcomeProps {
   onSuggestion: (text: string) => void
@@ -53,14 +54,14 @@ export function AssistantWelcome({ onSuggestion }: AssistantWelcomeProps) {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 w-full">
         {visibleSuggestions.map(({ icon: Icon, key }) => (
-          <button
+          <Button
             key={key}
             onClick={() => onSuggestion(t(key))}
             className="flex items-center gap-3 p-3 rounded-lg border border-border hover:bg-muted transition-colors text-left"
           >
             <Icon className="h-4 w-4 text-muted-foreground shrink-0" />
             <span className="text-sm">{t(key)}</span>
-          </button>
+          </Button>
         ))}
       </div>
 

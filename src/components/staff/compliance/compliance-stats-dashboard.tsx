@@ -44,7 +44,7 @@ export function ComplianceStatsDashboard({ stats, loading }: ComplianceStatsDash
     },
     {
       icon: CalendarDays,
-      color: 'text-green-500',
+      color: 'text-success',
       value: stats.recordsThisWeek,
       label: t('stats.thisWeek'),
     },
@@ -56,7 +56,7 @@ export function ComplianceStatsDashboard({ stats, loading }: ComplianceStatsDash
     },
     {
       icon: AlertTriangle,
-      color: 'text-red-500',
+      color: 'text-destructive',
       value: stats.flaggedCount,
       label: t('stats.flagged'),
     },

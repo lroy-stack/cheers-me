@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils'
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
 import { FileText, BarChart3, Table2, GitBranch, Calendar, FileDown, Code2, FormInput, X } from 'lucide-react'
 import type { Artifact } from '@/lib/ai/types'
+import { Button } from '@/components/ui/button'
 
 interface ArtifactTabsProps {
   artifacts: Artifact[]
@@ -47,7 +48,7 @@ export function ArtifactTabs({ artifacts, activeId, onSelect, onClose }: Artifac
         {artifacts.map(artifact => {
           const Icon = typeIconComponents[artifact.type] || FileText
           return (
-            <button
+            <Button
               key={artifact.id}
               onClick={() => onSelect(artifact.id)}
               className={cn(
@@ -77,7 +78,7 @@ export function ArtifactTabs({ artifacts, activeId, onSelect, onClose }: Artifac
                   <X className="h-2.5 w-2.5" />
                 </span>
               )}
-            </button>
+            </Button>
           )
         })}
       </div>

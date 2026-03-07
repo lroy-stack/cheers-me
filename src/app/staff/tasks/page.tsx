@@ -380,9 +380,9 @@ export default function TasksPage() {
       <div className="max-w-7xl mx-auto space-y-6 no-print">
         {/* Error */}
         {error && (
-          <Card className="border-red-200 bg-red-50 dark:bg-red-950/20">
+          <Card className="border-destructive/30 bg-destructive/15 dark:bg-destructive/15">
             <CardContent className="pt-6">
-              <div className="flex items-center gap-2 text-red-600 dark:text-red-400">
+              <div className="flex items-center gap-2 text-destructive dark:text-destructive">
                 <AlertTriangle className="h-5 w-5" />
                 <div>
                   <p className="font-medium">{t('tasks.failedToLoad')}</p>
@@ -426,7 +426,7 @@ export default function TasksPage() {
             <TabsContent value="planning" className="space-y-4">
               {/* Sub-toggle: Task Grid / Zone Assignment */}
               <div className="inline-flex items-center rounded-lg border bg-muted p-0.5">
-                <button
+                <Button
                   className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
                     planningSubView === 'grid'
                       ? 'bg-background shadow-sm font-medium'
@@ -435,8 +435,8 @@ export default function TasksPage() {
                   onClick={() => setPlanningSubView('grid')}
                 >
                   {t('taskPlanning.taskGrid')}
-                </button>
-                <button
+                </Button>
+                <Button
                   className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
                     planningSubView === 'zones'
                       ? 'bg-background shadow-sm font-medium'
@@ -445,7 +445,7 @@ export default function TasksPage() {
                   onClick={() => setPlanningSubView('zones')}
                 >
                   {t('taskPlanning.zoneAssignment')}
-                </button>
+                </Button>
               </div>
 
               {planningSubView === 'grid' ? (
@@ -513,7 +513,7 @@ export default function TasksPage() {
             <div className="flex items-center justify-between">
               {/* Sub-toggle: All / My */}
               <div className="inline-flex items-center rounded-lg border bg-muted p-0.5">
-                <button
+                <Button
                   className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
                     tasksSubView === 'all'
                       ? 'bg-background shadow-sm font-medium'
@@ -522,8 +522,8 @@ export default function TasksPage() {
                   onClick={() => setTasksSubView('all')}
                 >
                   {t('taskPlanning.allTasks')}
-                </button>
-                <button
+                </Button>
+                <Button
                   className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
                     tasksSubView === 'my'
                       ? 'bg-background shadow-sm font-medium'
@@ -532,7 +532,7 @@ export default function TasksPage() {
                   onClick={() => setTasksSubView('my')}
                 >
                   {t('taskPlanning.myTasks')}
-                </button>
+                </Button>
               </div>
 
               <div className="flex items-center gap-2">
@@ -569,7 +569,7 @@ export default function TasksPage() {
             <div className="flex items-center justify-between">
               {/* Sub-toggle: New Record / All Records */}
               <div className="inline-flex items-center rounded-lg border bg-muted p-0.5">
-                <button
+                <Button
                   className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
                     complianceSubView === 'new'
                       ? 'bg-background shadow-sm font-medium'
@@ -578,8 +578,8 @@ export default function TasksPage() {
                   onClick={() => setComplianceSubView('new')}
                 >
                   {t('taskPlanning.newRecord')}
-                </button>
-                <button
+                </Button>
+                <Button
                   className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
                     complianceSubView === 'records'
                       ? 'bg-background shadow-sm font-medium'
@@ -591,7 +591,7 @@ export default function TasksPage() {
                   }}
                 >
                   {t('taskPlanning.allRecords')}
-                </button>
+                </Button>
               </div>
             </div>
 

@@ -157,7 +157,7 @@ export default function MarketingPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-green-500">{stats.published}</div>
+            <div className="text-2xl font-bold text-success">{stats.published}</div>
           </CardContent>
         </Card>
 

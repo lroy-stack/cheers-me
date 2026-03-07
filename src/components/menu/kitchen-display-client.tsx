@@ -321,7 +321,7 @@ export function KitchenDisplayClient({ initialOrders }: KitchenDisplayClientProp
           {/* Actions */}
           <div className="flex items-center gap-2">
             {priorityOrders.length > 0 && (
-              <div className="flex items-center gap-2 text-sm text-red-600 dark:text-red-400 font-medium">
+              <div className="flex items-center gap-2 text-sm text-destructive dark:text-destructive font-medium">
                 <AlertTriangle className="h-4 w-4" />
                 {t('kitchen.urgentOrders', { count: priorityOrders.length })}
               </div>

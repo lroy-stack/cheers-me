@@ -42,9 +42,9 @@ export function WasteLogsTable({ wasteLogs }: WasteLogsTableProps) {
   const [filterCategory, setFilterCategory] = useState<string>('all')
 
   const wasteReasonConfig: Record<WasteReason, { label: string; color: string }> = {
-    expired: { label: t('wasteReasons.expired'), color: 'bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-400' },
+    expired: { label: t('wasteReasons.expired'), color: 'bg-destructive/15 text-destructive dark:bg-destructive/15 dark:text-destructive' },
     damaged: { label: t('wasteReasons.damaged'), color: 'bg-orange-100 text-orange-700 dark:bg-orange-950 dark:text-orange-400' },
-    overproduction: { label: t('wasteReasons.overproduction'), color: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-950 dark:text-yellow-400' },
+    overproduction: { label: t('wasteReasons.overproduction'), color: 'bg-warning/15 text-warning-foreground dark:bg-warning/15 dark:text-warning-foreground' },
     spoiled: { label: t('wasteReasons.spoiled'), color: 'bg-purple-100 text-purple-700 dark:bg-purple-950 dark:text-purple-400' },
     customer_return: { label: t('wasteReasons.customerReturn'), color: 'bg-cyan-100 text-cyan-700 dark:bg-cyan-950 dark:text-cyan-400' },
     other: { label: t('wasteReasons.other'), color: 'bg-muted text-foreground dark:bg-muted dark:text-muted-foreground' },
@@ -132,9 +132,9 @@ export function WasteLogsTable({ wasteLogs }: WasteLogsTableProps) {
           {t('wasteTable.showingWaste', { filtered: filteredLogs.length, total: wasteLogs.length })}
         </p>
         <div className="flex items-center gap-2 text-sm">
-          <AlertTriangle className="h-4 w-4 text-red-500" />
+          <AlertTriangle className="h-4 w-4 text-destructive" />
           <span className="text-muted-foreground">{t('wasteTable.totalWasteValue')}</span>
-          <span className="font-semibold text-red-600 dark:text-red-400">
+          <span className="font-semibold text-destructive dark:text-destructive">
             {formatCurrency(filteredWasteValue)}
           </span>
           {filteredWasteValue !== totalWasteValue && (
@@ -201,12 +201,12 @@ export function WasteLogsTable({ wasteLogs }: WasteLogsTableProps) {
                         </Badge>
                       </TableCell>
                       <TableCell className="text-right">
-                        <span className="font-semibold text-red-600 dark:text-red-400">
+                        <span className="font-semibold text-destructive dark:text-destructive">
                           {log.quantity} {log.product?.unit}
                         </span>
                       </TableCell>
                       <TableCell className="text-right">
-                        <span className="font-semibold text-red-600 dark:text-red-400">
+                        <span className="font-semibold text-destructive dark:text-destructive">
                           {formatCurrency(valueLost)}
                         </span>
                       </TableCell>

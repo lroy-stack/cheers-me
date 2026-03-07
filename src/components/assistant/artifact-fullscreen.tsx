@@ -76,7 +76,7 @@ export function ArtifactFullscreen({ artifact, onClose, onEditSubmit, isStreamin
           {isImageArtifact(artifact) ? 'Image' : (TYPE_LABELS[artifact.type] || artifact.type)}
         </Badge>
         <div className="flex items-center border rounded-md overflow-hidden shrink-0">
-          <button
+          <Button
             className={cn(
               'px-2 py-0.5 text-xs font-medium transition-colors',
               viewMode === 'preview' ? 'bg-primary text-primary-foreground' : 'hover:bg-muted'
@@ -84,8 +84,8 @@ export function ArtifactFullscreen({ artifact, onClose, onEditSubmit, isStreamin
             onClick={() => setViewMode('preview')}
           >
             {t('preview')}
-          </button>
-          <button
+          </Button>
+          <Button
             className={cn(
               'px-2 py-0.5 text-xs font-medium transition-colors',
               viewMode === 'code' ? 'bg-primary text-primary-foreground' : 'hover:bg-muted'
@@ -93,21 +93,21 @@ export function ArtifactFullscreen({ artifact, onClose, onEditSubmit, isStreamin
             onClick={() => setViewMode('code')}
           >
             {t('code')}
-          </button>
+          </Button>
         </div>
         <div className="flex items-center shrink-0">
           {isImageArtifact(artifact) && (
-            <Button variant="ghost" size="icon" className="h-7 w-7" onClick={() => setLightboxOpen(true)} title="View image">
+            <Button variant="ghost" size="icon" className="h-7 w-7 min-h-[44px] min-w-[44px]" onClick={() => setLightboxOpen(true)} title="View image">
               <ImageIcon className="h-3.5 w-3.5" />
             </Button>
           )}
-          <Button variant="ghost" size="icon" className="h-7 w-7" onClick={handleCopy} title={copied ? t('copied') : t('copy')}>
-            {copied ? <Check className="h-3.5 w-3.5 text-green-500" /> : <Copy className="h-3.5 w-3.5" />}
+          <Button variant="ghost" size="icon" className="h-7 w-7 min-h-[44px] min-w-[44px]" onClick={handleCopy} title={copied ? t('copied') : t('copy')}>
+            {copied ? <Check className="h-3.5 w-3.5 text-success" /> : <Copy className="h-3.5 w-3.5" />}
           </Button>
-          <Button variant="ghost" size="icon" className="h-7 w-7" onClick={handleDownload} title={isImageArtifact(artifact) ? 'Download PNG' : t('download')}>
+          <Button variant="ghost" size="icon" className="h-7 w-7 min-h-[44px] min-w-[44px]" onClick={handleDownload} title={isImageArtifact(artifact) ? 'Download PNG' : t('download')}>
             <Download className="h-3.5 w-3.5" />
           </Button>
-          <Button variant="ghost" size="icon" className="h-7 w-7" onClick={onClose} title="Exit fullscreen (Esc)">
+          <Button variant="ghost" size="icon" className="h-7 w-7 min-h-[44px] min-w-[44px]" onClick={onClose} title="Exit fullscreen (Esc)">
             <Minimize2 className="h-3.5 w-3.5" />
           </Button>
         </div>

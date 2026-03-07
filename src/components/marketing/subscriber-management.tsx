@@ -290,7 +290,7 @@ export function SubscriberManagement({
                     </TableCell>
                     <TableCell>
                       {subscriber.is_active ? (
-                        <Badge className="bg-green-500">{t('active')}</Badge>
+                        <Badge className="bg-success/15">{t('active')}</Badge>
                       ) : (
                         <Badge variant="secondary">{t('inactive')}</Badge>
                       )}
@@ -309,7 +309,7 @@ export function SubscriberManagement({
                           {subscriber.is_active ? (
                             <DropdownMenuItem
                               onClick={() => handleUnsubscribe(subscriber)}
-                              className="text-red-600"
+                              className="text-destructive"
                             >
                               <UserX className="mr-2 h-4 w-4" />
                               {t('unsubscribe')}
@@ -317,7 +317,7 @@ export function SubscriberManagement({
                           ) : (
                             <DropdownMenuItem
                               onClick={() => handleReactivate(subscriber)}
-                              className="text-green-600"
+                              className="text-success"
                             >
                               <Users className="mr-2 h-4 w-4" />
                               {t('reactivate')}

@@ -2,6 +2,7 @@
 
 import type { CouponTheme } from '@/types'
 import { useTranslations } from 'next-intl'
+import { Button } from '@/components/ui/button'
 
 interface CouponThemePickerProps {
   selected: CouponTheme
@@ -21,7 +22,7 @@ export default function CouponThemePicker({ selected, onChange }: CouponThemePic
   return (
     <div className="grid grid-cols-2 gap-3">
       {themes.map(({ value, gradient }) => (
-        <button
+        <Button
           key={value}
           type="button"
           onClick={() => onChange(value)}
@@ -35,7 +36,7 @@ export default function CouponThemePicker({ selected, onChange }: CouponThemePic
             <span className="text-white text-xs font-bold tracking-wider">GIFT VOUCHER</span>
           </div>
           <span className="text-xs font-medium">{t(value)}</span>
-        </button>
+        </Button>
       ))}
     </div>
   )

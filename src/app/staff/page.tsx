@@ -155,7 +155,7 @@ export default function StaffPage() {
           <Card>
             <CardContent className="pt-6">
               <div className="flex items-center gap-2">
-                <Clock className="h-5 w-5 text-green-500" />
+                <Clock className="h-5 w-5 text-success" />
                 <div className="text-2xl font-bold">{fullTimeCount}</div>
               </div>
               <p className="text-xs text-muted-foreground mt-1">{t('employees.fullTime')}</p>
@@ -190,9 +190,9 @@ export default function StaffPage() {
 
       {/* Error State */}
       {error && (
-        <Card className="border-red-200 bg-red-50 dark:bg-red-950/20">
+        <Card className="border-destructive/30 bg-destructive/15 dark:bg-destructive/15">
           <CardContent className="pt-6">
-            <div className="flex items-center gap-2 text-red-600 dark:text-red-400">
+            <div className="flex items-center gap-2 text-destructive dark:text-destructive">
               <AlertTriangle className="h-5 w-5" />
               <div>
                 <p className="font-medium">{t('employees.failedToLoad')}</p>

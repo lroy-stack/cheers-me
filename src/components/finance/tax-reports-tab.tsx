@@ -21,6 +21,7 @@ import { FileText, Download, ChevronDown, ChevronUp, ExternalLink } from 'lucide
 import { formatCurrency } from '@/lib/utils/currency'
 import { exportModelo303Excel } from '@/lib/utils/sales-excel-export'
 import type { Modelo303Data, Modelo111Data, Modelo347Data } from '@/types/expenses'
+import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/ui/table'
 
 const CURRENT_YEAR = new Date().getFullYear()
 const YEARS = Array.from({ length: 5 }, (_, i) => CURRENT_YEAR - i)
@@ -165,7 +166,7 @@ function Modelo303Card({ t }: { t: any }) {
         </div>
 
         {error && (
-          <div className="text-sm text-red-600 bg-red-50 p-3 rounded-md">
+          <div className="text-sm text-destructive bg-destructive/15 p-3 rounded-md">
             {error}
           </div>
         )}
@@ -179,16 +180,16 @@ function Modelo303Card({ t }: { t: any }) {
                   {formatCurrency(data.iva_repercutido)}
                 </p>
               </div>
-              <div className="bg-green-50 dark:bg-green-950 p-4 rounded-lg">
+              <div className="bg-success/15 dark:bg-success/15 p-4 rounded-lg">
                 <p className="text-sm text-muted-foreground">{t('tax.ivaSoportado')}</p>
-                <p className="text-xl font-bold text-green-700 dark:text-green-300">
+                <p className="text-xl font-bold text-success dark:text-success">
                   {formatCurrency(data.iva_soportado)}
                 </p>
               </div>
               <div
                 className={`p-4 rounded-lg ${
                   data.resultado >= 0
-                    ? 'bg-red-50 dark:bg-red-950'
+                    ? 'bg-destructive/15 dark:bg-destructive/15'
                     : 'bg-emerald-50 dark:bg-emerald-950'
                 }`}
               >
@@ -196,7 +197,7 @@ function Modelo303Card({ t }: { t: any }) {
                 <p
                   className={`text-xl font-bold ${
                     data.resultado >= 0
-                      ? 'text-red-700 dark:text-red-300'
+                      ? 'text-destructive dark:text-destructive'
                       : 'text-emerald-700 dark:text-emerald-300'
                   }`}
                 >
@@ -205,7 +206,7 @@ function Modelo303Card({ t }: { t: any }) {
               </div>
             </div>
 
-            <button
+            <Button
               onClick={() => setExpanded(!expanded)}
               className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
@@ -215,7 +216,7 @@ function Modelo303Card({ t }: { t: any }) {
                 <ChevronDown className="h-4 w-4" />
               )}
               {expanded ? t('tax.hideDetails') : t('tax.showDetails')}
-            </button>
+            </Button>
 
             {expanded && (
               <div className="space-y-4 border-t pt-4">
@@ -225,28 +226,28 @@ function Modelo303Card({ t }: { t: any }) {
                       {t('tax.ivaByRate')}
                     </h4>
                     <div className="overflow-x-auto">
-                      <table className="w-full text-sm">
-                        <thead>
-                          <tr className="border-b">
-                            <th className="text-left py-1 pr-4">{t('tax.rate')}</th>
-                            <th className="text-right py-1 pr-4">{t('tax.base')}</th>
-                            <th className="text-right py-1">{t('tax.iva')}</th>
-                          </tr>
-                        </thead>
-                        <tbody>
+                      <Table className="w-full text-sm">
+                        <TableHeader>
+                          <TableRow className="border-b">
+                            <TableHead className="text-left py-1 pr-4">{t('tax.rate')}</TableHead>
+                            <TableHead className="text-right py-1 pr-4">{t('tax.base')}</TableHead>
+                            <TableHead className="text-right py-1">{t('tax.iva')}</TableHead>
+                          </TableRow>
+                        </TableHeader>
+                        <TableBody>
                           {data.iva_repercutido_by_rate.map((item, idx) => (
-                            <tr key={idx} className="border-b border-dashed">
-                              <td className="py-1 pr-4">{item.rate}%</td>
-                              <td className="text-right py-1 pr-4">
+                            <TableRow key={idx} className="border-b border-dashed">
+                              <TableCell className="py-1 pr-4">{item.rate}%</TableCell>
+                              <TableCell className="text-right py-1 pr-4">
                                 {formatCurrency(item.base)}
-                              </td>
-                              <td className="text-right py-1">
+                              </TableCell>
+                              <TableCell className="text-right py-1">
                                 {formatCurrency(item.iva)}
-                              </td>
-                            </tr>
+                              </TableCell>
+                            </TableRow>
                           ))}
-                        </tbody>
-                      </table>
+                        </TableBody>
+                      </Table>
                     </div>
                   </div>
                 )}
@@ -257,28 +258,28 @@ function Modelo303Card({ t }: { t: any }) {
                       {t('tax.ivaByCategory')}
                     </h4>
                     <div className="overflow-x-auto">
-                      <table className="w-full text-sm">
-                        <thead>
-                          <tr className="border-b">
-                            <th className="text-left py-1 pr-4">{t('tax.category')}</th>
-                            <th className="text-right py-1 pr-4">{t('tax.base')}</th>
-                            <th className="text-right py-1">{t('tax.iva')}</th>
-                          </tr>
-                        </thead>
-                        <tbody>
+                      <Table className="w-full text-sm">
+                        <TableHeader>
+                          <TableRow className="border-b">
+                            <TableHead className="text-left py-1 pr-4">{t('tax.category')}</TableHead>
+                            <TableHead className="text-right py-1 pr-4">{t('tax.base')}</TableHead>
+                            <TableHead className="text-right py-1">{t('tax.iva')}</TableHead>
+                          </TableRow>
+                        </TableHeader>
+                        <TableBody>
                           {data.iva_soportado_by_category.map((item, idx) => (
-                            <tr key={idx} className="border-b border-dashed">
-                              <td className="py-1 pr-4">{item.category}</td>
-                              <td className="text-right py-1 pr-4">
+                            <TableRow key={idx} className="border-b border-dashed">
+                              <TableCell className="py-1 pr-4">{item.category}</TableCell>
+                              <TableCell className="text-right py-1 pr-4">
                                 {formatCurrency(item.base)}
-                              </td>
-                              <td className="text-right py-1">
+                              </TableCell>
+                              <TableCell className="text-right py-1">
                                 {formatCurrency(item.iva)}
-                              </td>
-                            </tr>
+                              </TableCell>
+                            </TableRow>
                           ))}
-                        </tbody>
-                      </table>
+                        </TableBody>
+                      </Table>
                     </div>
                   </div>
                 )}
@@ -407,7 +408,7 @@ function Modelo111Card({ t }: { t: any }) {
         </div>
 
         {error && (
-          <div className="text-sm text-red-600 bg-red-50 p-3 rounded-md">
+          <div className="text-sm text-destructive bg-destructive/15 p-3 rounded-md">
             {error}
           </div>
         )}
@@ -424,7 +425,7 @@ function Modelo111Card({ t }: { t: any }) {
               </p>
             </div>
 
-            <button
+            <Button
               onClick={() => setExpanded(!expanded)}
               className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
@@ -434,35 +435,35 @@ function Modelo111Card({ t }: { t: any }) {
                 <ChevronDown className="h-4 w-4" />
               )}
               {expanded ? t('tax.hideDetails') : t('tax.showDetails')}
-            </button>
+            </Button>
 
             {expanded && data.employees.length > 0 && (
               <div className="border-t pt-4">
                 <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="border-b">
-                        <th className="text-left py-1 pr-4">{t('tax.employee')}</th>
-                        <th className="text-right py-1 pr-4">{t('tax.grossSalary')}</th>
-                        <th className="text-right py-1 pr-4">{t('tax.irpfPercent')}</th>
-                        <th className="text-right py-1">{t('tax.irpfAmount')}</th>
-                      </tr>
-                    </thead>
-                    <tbody>
+                  <Table className="w-full text-sm">
+                    <TableHeader>
+                      <TableRow className="border-b">
+                        <TableHead className="text-left py-1 pr-4">{t('tax.employee')}</TableHead>
+                        <TableHead className="text-right py-1 pr-4">{t('tax.grossSalary')}</TableHead>
+                        <TableHead className="text-right py-1 pr-4">{t('tax.irpfPercent')}</TableHead>
+                        <TableHead className="text-right py-1">{t('tax.irpfAmount')}</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
                       {data.employees.map((emp, idx) => (
-                        <tr key={idx} className="border-b border-dashed">
-                          <td className="py-1 pr-4">{emp.name}</td>
-                          <td className="text-right py-1 pr-4">
+                        <TableRow key={idx} className="border-b border-dashed">
+                          <TableCell className="py-1 pr-4">{emp.name}</TableCell>
+                          <TableCell className="text-right py-1 pr-4">
                             {formatCurrency(emp.gross_salary)}
-                          </td>
-                          <td className="text-right py-1 pr-4">{emp.irpf_rate}%</td>
-                          <td className="text-right py-1">
+                          </TableCell>
+                          <TableCell className="text-right py-1 pr-4">{emp.irpf_rate}%</TableCell>
+                          <TableCell className="text-right py-1">
                             {formatCurrency(emp.irpf_amount)}
-                          </td>
-                        </tr>
+                          </TableCell>
+                        </TableRow>
                       ))}
-                    </tbody>
-                  </table>
+                    </TableBody>
+                  </Table>
                 </div>
               </div>
             )}
@@ -571,7 +572,7 @@ function Modelo347Card({ t }: { t: any }) {
         </div>
 
         {error && (
-          <div className="text-sm text-red-600 bg-red-50 p-3 rounded-md">
+          <div className="text-sm text-destructive bg-destructive/15 p-3 rounded-md">
             {error}
           </div>
         )}
@@ -592,28 +593,28 @@ function Modelo347Card({ t }: { t: any }) {
 
             {data.suppliers.length > 0 && (
               <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="border-b">
-                      <th className="text-left py-1 pr-4">{t('tax.supplier')}</th>
-                      <th className="text-left py-1 pr-4">{t('tax.nif')}</th>
-                      <th className="text-right py-1">{t('tax.totalOperations')}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
+                <Table className="w-full text-sm">
+                  <TableHeader>
+                    <TableRow className="border-b">
+                      <TableHead className="text-left py-1 pr-4">{t('tax.supplier')}</TableHead>
+                      <TableHead className="text-left py-1 pr-4">{t('tax.nif')}</TableHead>
+                      <TableHead className="text-right py-1">{t('tax.totalOperations')}</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
                     {data.suppliers.map((supplier, idx) => (
-                      <tr key={idx} className="border-b border-dashed">
-                        <td className="py-1 pr-4">{supplier.name}</td>
-                        <td className="py-1 pr-4 font-mono text-xs">
+                      <TableRow key={idx} className="border-b border-dashed">
+                        <TableCell className="py-1 pr-4">{supplier.name}</TableCell>
+                        <TableCell className="py-1 pr-4 font-mono text-xs">
                           {supplier.nif}
-                        </td>
-                        <td className="text-right py-1">
+                        </TableCell>
+                        <TableCell className="text-right py-1">
                           {formatCurrency(supplier.total)}
-                        </td>
-                      </tr>
+                        </TableCell>
+                      </TableRow>
                     ))}
-                  </tbody>
-                </table>
+                  </TableBody>
+                </Table>
               </div>
             )}
           </div>

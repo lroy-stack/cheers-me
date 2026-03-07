@@ -278,7 +278,7 @@ export function DigitalMenuClient({
               {LANGUAGES.map((lang) => {
                 const isActive = language === lang.code
                 return (
-                  <button
+                  <Button
                     key={lang.code}
                     onClick={() => setLanguage(lang.code)}
                     className={`
@@ -293,7 +293,7 @@ export function DigitalMenuClient({
                     aria-label={lang.label}
                   >
                     {lang.flag}
-                  </button>
+                  </Button>
                 )
               })}
 
@@ -393,7 +393,7 @@ export function DigitalMenuClient({
             style={{ scrollSnapType: 'x mandatory' }}
           >
             {/* "All" button */}
-            <button
+            <Button
               data-active={selectedCategory === 'all'}
               onClick={() => setSelectedCategory('all')}
               className={`
@@ -416,13 +416,13 @@ export function DigitalMenuClient({
                   transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                 />
               )}
-            </button>
+            </Button>
 
             {categories.map((category) => {
               const isActive = selectedCategory === category.id
               const CategoryIcon = getCategoryIcon(category.name_en)
               return (
-                <button
+                <Button
                   key={category.id}
                   data-active={isActive}
                   onClick={() => setSelectedCategory(category.id)}
@@ -446,7 +446,7 @@ export function DigitalMenuClient({
                       transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                     />
                   )}
-                </button>
+                </Button>
               )
             })}
           </div>
