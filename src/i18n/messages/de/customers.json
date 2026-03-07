@@ -223,5 +223,10 @@
     "saving": "Speichern...",
     "saved": "VIP-Einstellungen gespeichert",
     "error": "VIP-Einstellungen speichern fehlgeschlagen"
+  },
+  "reservationHistory": {
+    "title": "Reservierungshistorie",
+    "empty": "Keine früheren Reservierungen",
+    "guests": "{count} Gäste"
   }
 }

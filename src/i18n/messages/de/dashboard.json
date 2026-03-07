@@ -21,6 +21,11 @@
     "language": "Sprache",
     "notSet": "Nicht festgelegt"
   },
+  "vipArrivals": {
+    "title": "VIP-Ankünfte Heute",
+    "subtitle": "{count} VIP-Gast/Gäste erwartet",
+    "guests": "{count} Gäste"
+  },
   "quickAccess": {
     "title": "Schnellzugriff",
     "subtitle": "Navigieren Sie zu Ihren verfügbaren Modulen",

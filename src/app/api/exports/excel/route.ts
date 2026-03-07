@@ -49,6 +49,7 @@ export async function GET(request: NextRequest) {
   if ('error' in roleResult) {
     return NextResponse.json({ error: roleResult.error }, { status: roleResult.status })
   }
+  const { user } = roleResult.data
 
   const supabase = await createClient()
 

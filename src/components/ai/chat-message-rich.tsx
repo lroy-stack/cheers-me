@@ -3,6 +3,7 @@
 import { useMemo, memo } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import rehypeSanitize from 'rehype-sanitize'
 import { cn } from '@/lib/utils'
 import { User, Download } from 'lucide-react'
 import Image from 'next/image'
@@ -180,6 +181,7 @@ const markdownComponents = {
 }
 
 const remarkPlugins = [remarkGfm]
+const rehypePlugins = [rehypeSanitize]
 
 export const ChatMessageRich = memo(function ChatMessageRich({
   message,
@@ -261,6 +263,7 @@ export const ChatMessageRich = memo(function ChatMessageRich({
                 <div key={idx} className="rounded-lg px-3 py-2 bg-muted max-w-full overflow-hidden">
                   <ReactMarkdown
                     remarkPlugins={remarkPlugins}
+                    rehypePlugins={rehypePlugins}
                     components={markdownComponents}
                   >
                     {segment.content}

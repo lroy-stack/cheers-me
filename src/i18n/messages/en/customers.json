@@ -223,5 +223,10 @@
     "saving": "Saving...",
     "saved": "VIP settings saved",
     "error": "Failed to save VIP settings"
+  },
+  "reservationHistory": {
+    "title": "Reservation History",
+    "empty": "No past reservations",
+    "guests": "{count} guests"
   }
 }

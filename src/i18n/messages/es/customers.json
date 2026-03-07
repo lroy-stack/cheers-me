@@ -223,5 +223,10 @@
     "saving": "Guardando...",
     "saved": "Configuración VIP guardada",
     "error": "Error al guardar configuración VIP"
+  },
+  "reservationHistory": {
+    "title": "Historial de Reservas",
+    "empty": "Sin reservas anteriores",
+    "guests": "{count} comensales"
   }
 }

@@ -62,7 +62,8 @@ export async function GET(request: NextRequest) {
   const monthlyRegistryCsv = buildCsv(
     ['Employee Number', 'First Name', 'Last Name', 'Clock In', 'Clock Out', 'Total Hours'],
     (clockData ?? []).map((r) => {
-      const emp = r.employees as { first_name: string; last_name: string; employee_number: string } | null
+      const empRaw = r.employees as unknown
+      const emp = (Array.isArray(empRaw) ? empRaw[0] : empRaw) as { first_name: string; last_name: string; employee_number: string } | null
       return [
         emp?.employee_number ?? '',
         emp?.first_name ?? '',
@@ -152,7 +153,7 @@ export async function GET(request: NextRequest) {
 
   const zipBuffer = await zip.generateAsync({ type: 'nodebuffer', compression: 'DEFLATE' })
 
-  return new NextResponse(zipBuffer, {
+  return new NextResponse(new Uint8Array(zipBuffer), {
     status: 200,
     headers: {
       'Content-Type': 'application/zip',

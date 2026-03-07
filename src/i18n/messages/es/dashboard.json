@@ -21,6 +21,11 @@
     "language": "Idioma",
     "notSet": "No configurado"
   },
+  "vipArrivals": {
+    "title": "Llegadas VIP Hoy",
+    "subtitle": "{count} huésped(es) VIP esperado(s)",
+    "guests": "{count} comensales"
+  },
   "quickAccess": {
     "title": "Acceso Rápido",
     "subtitle": "Navega a tus módulos disponibles",

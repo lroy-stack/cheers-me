@@ -21,6 +21,11 @@
     "language": "Taal",
     "notSet": "Niet ingesteld"
   },
+  "vipArrivals": {
+    "title": "VIP Aankomsten Vandaag",
+    "subtitle": "{count} VIP gast(en) verwacht",
+    "guests": "{count} gasten"
+  },
   "quickAccess": {
     "title": "Snelle Toegang",
     "subtitle": "Navigeer naar uw beschikbare modules",

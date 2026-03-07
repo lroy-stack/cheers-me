@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge'
 import {
   Users, UtensilsCrossed, ChefHat, Package, Beer,
   BookOpen, Map, TrendingUp, Calendar, Music,
-  Megaphone, Settings, Trophy, Receipt,
+  Megaphone, Settings, Trophy, Receipt, Star,
 } from 'lucide-react'
 
 export const metadata = {
@@ -16,12 +16,20 @@ export const metadata = {
   description: 'GrandCafe Cheers management dashboard',
 }
 
+interface VipArrival {
+  id: string
+  guest_name: string
+  start_time: string
+  party_size: number
+  status: string
+}
+
 async function getDashboardStats() {
   const supabase = createAdminClient()
   const today = new Date().toISOString().split('T')[0]
 
   // Fetch stats in parallel
-  const [reservationsRes, stockAlertsRes, employeesRes] = await Promise.all([
+  const [reservationsRes, stockAlertsRes, employeesRes, vipRes] = await Promise.all([
     supabase
       .from('reservations')
       .select('id, status', { count: 'exact' })
@@ -34,11 +42,26 @@ async function getDashboardStats() {
       .from('employees')
       .select('id', { count: 'exact' })
       .is('date_terminated', null),
+    // VIP arrivals today — reservations linked to VIP customers
+    supabase
+      .from('reservations')
+      .select('id, guest_name, start_time, party_size, status, customers!inner(vip)')
+      .eq('reservation_date', today)
+      .eq('customers.vip', true)
+      .order('start_time'),
   ])
 
   const reservations = reservationsRes.data || []
   const confirmed = reservations.filter(r => r.status === 'confirmed').length
   const pending = reservations.filter(r => r.status === 'pending').length
+
+  const vipArrivals: VipArrival[] = (vipRes.data || []).map(r => ({
+    id: r.id,
+    guest_name: r.guest_name,
+    start_time: r.start_time,
+    party_size: r.party_size,
+    status: r.status,
+  }))
 
   return {
     reservationsTotal: reservationsRes.count || 0,
@@ -46,6 +69,7 @@ async function getDashboardStats() {
     reservationsPending: pending,
     stockAlerts: stockAlertsRes.count || 0,
     activeStaff: employeesRes.count || 0,
+    vipArrivals,
   }
 }
 
@@ -164,6 +188,35 @@ export default async function DashboardPage() {
             </Card>
           </Link>
         </div>
+
+        {/* VIP Arrivals Today */}
+        {stats.vipArrivals.length > 0 && (
+          <Card className="border-yellow-500/30 bg-yellow-500/5">
+            <CardHeader className="pb-3">
+              <CardTitle className="flex items-center gap-2 text-base">
+                <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
+                {t('vipArrivals.title')}
+              </CardTitle>
+              <CardDescription>{t('vipArrivals.subtitle', { count: stats.vipArrivals.length })}</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2">
+                {stats.vipArrivals.map((arrival) => (
+                  <li key={arrival.id} className="flex items-center gap-3 text-sm">
+                    <Badge variant="secondary" className="bg-yellow-500/20 text-yellow-700 dark:text-yellow-400 border-yellow-500/30 text-xs shrink-0">
+                      VIP
+                    </Badge>
+                    <span className="font-medium">{arrival.guest_name}</span>
+                    <span className="text-muted-foreground">·</span>
+                    <span className="text-muted-foreground">{arrival.start_time?.slice(0, 5)}</span>
+                    <span className="text-muted-foreground">·</span>
+                    <span className="text-muted-foreground">{t('vipArrivals.guests', { count: arrival.party_size })}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+        )}
 
         {/* Profile Info Card */}
         <Card>

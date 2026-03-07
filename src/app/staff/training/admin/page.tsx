@@ -40,10 +40,10 @@ export default function TrainingAdminPage() {
 
   const [showCreate, setShowCreate] = useState(false)
   const [editMaterial, setEditMaterial] = useState<TrainingMaterial | null>(null)
-  const [form, setForm] = useState({ guide_code: '', title: '', description: '', passing_score: 70 })
+  const [form, setForm] = useState({ guide_code: '', title: '', description: '', passing_score: 70, video_url: '' })
   const [saving, setSaving] = useState(false)
 
-  const resetForm = () => setForm({ guide_code: '', title: '', description: '', passing_score: 70 })
+  const resetForm = () => setForm({ guide_code: '', title: '', description: '', passing_score: 70, video_url: '' })
 
   const handleCreate = async () => {
     setSaving(true)
@@ -104,6 +104,7 @@ export default function TrainingAdminPage() {
       title: m.title,
       description: m.description || '',
       passing_score: m.passing_score,
+      video_url: (m as { video_url?: string }).video_url || '',
     })
     setEditMaterial(m)
   }
@@ -217,6 +218,14 @@ export default function TrainingAdminPage() {
                 value={form.passing_score}
                 onChange={(e) => setForm((p) => ({ ...p, passing_score: parseInt(e.target.value) || 70 }))}
                 className="max-w-xs"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label>Video URL (optional)</Label>
+              <Input
+                placeholder="https://www.youtube.com/embed/..."
+                value={form.video_url}
+                onChange={(e) => setForm((p) => ({ ...p, video_url: e.target.value }))}
               />
             </div>
           </div>

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
+import useSWR from 'swr'
 import {
   Dialog,
   DialogContent,
@@ -15,8 +16,20 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Separator } from '@/components/ui/separator'
 import { useToast } from '@/hooks/use-toast'
-import { Loader2, AlertTriangle, Tag, X, Plus } from 'lucide-react'
+import { Loader2, AlertTriangle, Tag, X, Plus, CalendarDays } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { format } from 'date-fns'
+
+const fetcher = (url: string) => fetch(url).then(r => r.json())
+
+interface Reservation {
+  id: string
+  reservation_date: string
+  start_time: string
+  party_size: number
+  status: string
+  occasion?: string | null
+}
 
 const ALLERGENS = [
   'gluten','crustaceans','eggs','fish','peanuts','soybeans',
@@ -53,6 +66,12 @@ export function CustomerDetailDialog({ customer, open, onOpenChange, onUpdated }
   const [savingAllergens, setSavingAllergens] = useState(false)
   const [newTag, setNewTag] = useState('')
   const [addingTag, setAddingTag] = useState(false)
+
+  // Reservation history via SWR — only when dialog is open and customer is set
+  const { data: reservationsData, isLoading: loadingReservations } = useSWR<{ data: Reservation[] }>(
+    open && customer ? `/api/reservations?customer_id=${customer.id}&limit=10&sort=reservation_date&order=desc` : null,
+    fetcher
+  )
 
   const fetchAllergens = useCallback(async () => {
     if (!customer) return
@@ -254,6 +273,49 @@ export function CustomerDetailDialog({ customer, open, onOpenChange, onUpdated }
                 {addingTag ? <Loader2 className="h-3 w-3 animate-spin" /> : <Plus className="h-3 w-3" />}
               </Button>
             </div>
+          </div>
+
+          <Separator />
+
+          {/* Reservation History */}
+          <div className="space-y-3">
+            <div className="flex items-center gap-2">
+              <CalendarDays className="h-4 w-4 text-primary" />
+              <h3 className="font-semibold text-sm">{t('reservationHistory.title')}</h3>
+            </div>
+
+            {loadingReservations ? (
+              <div className="flex justify-center py-2">
+                <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />
+              </div>
+            ) : (reservationsData?.data ?? []).length === 0 ? (
+              <p className="text-xs text-muted-foreground">{t('reservationHistory.empty')}</p>
+            ) : (
+              <ul className="space-y-2">
+                {(reservationsData?.data ?? []).map((r) => (
+                  <li key={r.id} className="flex items-center gap-2 text-sm">
+                    <span className="text-muted-foreground w-24 shrink-0">
+                      {format(new Date(r.reservation_date), 'dd MMM yyyy')}
+                    </span>
+                    <span className="text-muted-foreground">{r.start_time?.slice(0, 5)}</span>
+                    <span className="text-muted-foreground">·</span>
+                    <span>{t('reservationHistory.guests', { count: r.party_size })}</span>
+                    {r.occasion && (
+                      <>
+                        <span className="text-muted-foreground">·</span>
+                        <span className="text-muted-foreground text-xs italic">{r.occasion}</span>
+                      </>
+                    )}
+                    <Badge
+                      variant={r.status === 'confirmed' ? 'default' : r.status === 'cancelled' ? 'destructive' : 'secondary'}
+                      className="ml-auto text-xs"
+                    >
+                      {r.status}
+                    </Badge>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
       </DialogContent>

@@ -223,5 +223,10 @@
     "saving": "Opslaan...",
     "saved": "VIP-instellingen opgeslagen",
     "error": "VIP-instellingen opslaan mislukt"
+  },
+  "reservationHistory": {
+    "title": "Reserveringsgeschiedenis",
+    "empty": "Geen eerdere reserveringen",
+    "guests": "{count} gasten"
   }
 }

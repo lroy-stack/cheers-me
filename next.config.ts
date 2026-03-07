@@ -46,9 +46,9 @@ const nextConfig: NextConfig = {
         { key: 'Cache-Control', value: 'no-cache' },
       ],
     },
-    // Cache static assets for 1 year
+    // Cache Next.js static chunks for 1 year (immutable, content-hashed)
     {
-      source: '/public/:path*',
+      source: '/_next/static/:path*',
       headers: [
         { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
       ],
