@@ -19,6 +19,9 @@ interface FiscalData {
   pais: string
   telefono: string
   email: string
+  iva_rate_standard: string
+  iva_rate_reduced: string
+  iva_rate_super_reduced: string
 }
 
 const DEFAULT_FISCAL_DATA: FiscalData = {
@@ -31,6 +34,9 @@ const DEFAULT_FISCAL_DATA: FiscalData = {
   pais: 'Espana',
   telefono: '',
   email: '',
+  iva_rate_standard: '21',
+  iva_rate_reduced: '10',
+  iva_rate_super_reduced: '4',
 }
 
 export function FiscalSettingsForm() {
@@ -193,6 +199,55 @@ export function FiscalSettingsForm() {
               onChange={(e) => handleChange('telefono', e.target.value)}
               placeholder="+34 971 123 456"
             />
+          </div>
+        </div>
+
+        {/* IVA Rate Configuration */}
+        <div className="border-t border-border pt-4">
+          <h3 className="text-sm font-medium mb-3">IVA Rates</h3>
+          <div className="grid gap-4 md:grid-cols-3">
+            <div className="space-y-2">
+              <Label htmlFor="iva_rate_standard">Standard IVA Rate (%)</Label>
+              <Input
+                id="iva_rate_standard"
+                type="number"
+                min="0"
+                max="100"
+                step="0.1"
+                value={formData.iva_rate_standard}
+                onChange={(e) => handleChange('iva_rate_standard', e.target.value)}
+                placeholder="21"
+              />
+              <p className="text-xs text-muted-foreground">Default: 21%</p>
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="iva_rate_reduced">Reduced IVA Rate (%)</Label>
+              <Input
+                id="iva_rate_reduced"
+                type="number"
+                min="0"
+                max="100"
+                step="0.1"
+                value={formData.iva_rate_reduced}
+                onChange={(e) => handleChange('iva_rate_reduced', e.target.value)}
+                placeholder="10"
+              />
+              <p className="text-xs text-muted-foreground">Default: 10%</p>
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="iva_rate_super_reduced">Super-Reduced IVA Rate (%)</Label>
+              <Input
+                id="iva_rate_super_reduced"
+                type="number"
+                min="0"
+                max="100"
+                step="0.1"
+                value={formData.iva_rate_super_reduced}
+                onChange={(e) => handleChange('iva_rate_super_reduced', e.target.value)}
+                placeholder="4"
+              />
+              <p className="text-xs text-muted-foreground">Default: 4%</p>
+            </div>
           </div>
         </div>
 

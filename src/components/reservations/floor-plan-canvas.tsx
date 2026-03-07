@@ -101,9 +101,14 @@ export function FloorPlanCanvas({
         const newX = table.x_position + delta.x
         const newY = table.y_position + delta.y
 
+        // Snap to 20px grid
+        const GRID_SIZE = 20
+        const snappedX = Math.round(newX / GRID_SIZE) * GRID_SIZE
+        const snappedY = Math.round(newY / GRID_SIZE) * GRID_SIZE
+
         // Ensure table stays within canvas bounds (minimum 0)
-        const clampedX = Math.max(0, newX)
-        const clampedY = Math.max(0, newY)
+        const clampedX = Math.max(0, snappedX)
+        const clampedY = Math.max(0, snappedY)
 
         // Check for overlap with other tables
         if (checkOverlap(table, clampedX, clampedY)) {

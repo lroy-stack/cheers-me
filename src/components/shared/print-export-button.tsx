@@ -8,14 +8,15 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { Download, FileSpreadsheet, FileText, Printer } from 'lucide-react'
+import { Download, FileSpreadsheet, FileText, Loader2, Printer } from 'lucide-react'
+import { useToast } from '@/hooks/use-toast'
 
 interface PrintExportButtonProps {
   apiRoute: string
   filename: string
   params?: Record<string, string>
-  onExportExcel?: () => void
-  onExportCSV?: () => void
+  onExportExcel?: () => Promise<void> | void
+  onExportCSV?: () => Promise<void> | void
 }
 
 export function PrintExportButton({
@@ -26,6 +27,8 @@ export function PrintExportButton({
   onExportCSV,
 }: PrintExportButtonProps) {
   const [loading, setLoading] = useState(false)
+  const [excelLoading, setExcelLoading] = useState(false)
+  const { toast } = useToast()
 
   const handleDownloadPDF = async () => {
     setLoading(true)
@@ -52,8 +55,30 @@ export function PrintExportButton({
       URL.revokeObjectURL(url)
     } catch (error) {
       console.error('PDF download error:', error)
+      toast({
+        title: 'Export failed',
+        description: error instanceof Error ? error.message : 'Failed to generate PDF',
+        variant: 'destructive',
+      })
     } finally {
       setLoading(false)
+    }
+  }
+
+  const handleExcelExport = async () => {
+    if (!onExportExcel) return
+    setExcelLoading(true)
+    try {
+      await onExportExcel()
+    } catch (error) {
+      console.error('Excel export error:', error)
+      toast({
+        title: 'Export failed',
+        description: error instanceof Error ? error.message : 'Failed to generate Excel file',
+        variant: 'destructive',
+      })
+    } finally {
+      setExcelLoading(false)
     }
   }
 
@@ -61,27 +86,33 @@ export function PrintExportButton({
     window.print()
   }
 
+  const isLoading = loading || excelLoading
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="sm" disabled={loading}>
-          <Download className="h-4 w-4 mr-2" />
-          {loading ? 'Loading...' : 'Export'}
+        <Button variant="outline" size="sm" disabled={isLoading}>
+          {isLoading ? (
+            <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+          ) : (
+            <Download className="h-4 w-4 mr-2" />
+          )}
+          {isLoading ? 'Exporting...' : 'Export'}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={handleDownloadPDF}>
-          <FileText className="h-4 w-4 mr-2" />
+        <DropdownMenuItem onClick={handleDownloadPDF} disabled={loading}>
+          {loading ? <Loader2 className="h-4 w-4 mr-2 animate-spin" /> : <FileText className="h-4 w-4 mr-2" />}
           Download PDF
         </DropdownMenuItem>
         {onExportExcel && (
-          <DropdownMenuItem onClick={onExportExcel}>
-            <FileSpreadsheet className="h-4 w-4 mr-2" />
-            Export Excel
+          <DropdownMenuItem onClick={handleExcelExport} disabled={excelLoading}>
+            {excelLoading ? <Loader2 className="h-4 w-4 mr-2 animate-spin" /> : <FileSpreadsheet className="h-4 w-4 mr-2" />}
+            {excelLoading ? 'Generating...' : 'Export Excel'}
           </DropdownMenuItem>
         )}
         {onExportCSV && (
-          <DropdownMenuItem onClick={onExportCSV}>
+          <DropdownMenuItem onClick={async () => { try { await onExportCSV?.() } catch (error) { toast({ title: 'Export failed', description: error instanceof Error ? error.message : 'Failed to export CSV', variant: 'destructive' }) } }}>
             <FileText className="h-4 w-4 mr-2" />
             Export CSV
           </DropdownMenuItem>

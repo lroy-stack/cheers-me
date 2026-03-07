@@ -2,6 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { requireRole } from '@/lib/utils/auth'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
+import Anthropic from '@anthropic-ai/sdk'
 
 // Validation schema for creating review
 const createReviewSchema = z.object({
@@ -9,8 +10,47 @@ const createReviewSchema = z.object({
   platform: z.string().min(1).max(100),
   rating: z.number().min(0).max(5).optional().nullable(),
   review_text: z.string(),
-  sentiment: z.enum(['positive', 'neutral', 'negative']),
+  sentiment: z.enum(['positive', 'neutral', 'negative']).optional(),
 })
+
+// Auto-detect sentiment using Claude API
+async function detectSentiment(
+  reviewText: string,
+  rating?: number | null
+): Promise<'positive' | 'neutral' | 'negative'> {
+  if (!process.env.ANTHROPIC_API_KEY) {
+    if (rating !== undefined && rating !== null) {
+      if (rating >= 4) return 'positive'
+      if (rating <= 2) return 'negative'
+    }
+    return 'neutral'
+  }
+
+  try {
+    const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
+    const message = await anthropic.messages.create({
+      model: 'claude-haiku-4-5',
+      max_tokens: 10,
+      messages: [
+        {
+          role: 'user',
+          content: `Classify this restaurant review as exactly one word: positive, neutral, or negative.\n\nReview: "${reviewText}"\n\nRespond with only one word.`,
+        },
+      ],
+    })
+    const result = (message.content[0] as { type: string; text: string }).text.trim().toLowerCase()
+    if (result === 'positive' || result === 'negative' || result === 'neutral') {
+      return result
+    }
+    return 'neutral'
+  } catch {
+    if (rating !== undefined && rating !== null) {
+      if (rating >= 4) return 'positive'
+      if (rating <= 2) return 'negative'
+    }
+    return 'neutral'
+  }
+}
 
 /**
  * GET /api/crm/reviews
@@ -147,6 +187,10 @@ export async function POST(request: NextRequest) {
     }
   }
 
+  // Auto-detect sentiment if not provided
+  const sentiment = validation.data.sentiment
+    ?? await detectSentiment(validation.data.review_text, validation.data.rating)
+
   // Create review record
   const { data: newReview, error } = await supabase
     .from('customer_reviews')
@@ -155,7 +199,7 @@ export async function POST(request: NextRequest) {
       platform: validation.data.platform,
       rating: validation.data.rating,
       review_text: validation.data.review_text,
-      sentiment: validation.data.sentiment,
+      sentiment,
     })
     .select(`
       *,

@@ -100,6 +100,8 @@ export function EmployeeForm({
     // Identity & payment
     dni_nie: '',
     iban: '',
+    birthday: '',
+    nationality: '',
     // Address
     address_street: '',
     address_postal_code: '',
@@ -143,6 +145,8 @@ export function EmployeeForm({
         address_province: ((employee as unknown) as Record<string, unknown>).address_province as string || '',
         address_country: ((employee as unknown) as Record<string, unknown>).address_country as string || 'España',
         grupo_cotizacion: (((employee as unknown) as Record<string, unknown>).grupo_cotizacion as number)?.toString() || '',
+        birthday: ((employee as unknown) as Record<string, unknown>).birthday as string || '',
+        nationality: ((employee as unknown) as Record<string, unknown>).nationality as string || '',
       })
     } else {
       setFormData({
@@ -176,6 +180,8 @@ export function EmployeeForm({
         address_province: '',
         address_country: 'España',
         grupo_cotizacion: '',
+        birthday: '',
+        nationality: '',
       })
     }
   }, [employee, open])
@@ -213,6 +219,8 @@ export function EmployeeForm({
             address_province: formData.address_province || null,
             address_country: formData.address_country || null,
             grupo_cotizacion: formData.grupo_cotizacion ? parseInt(formData.grupo_cotizacion) : null,
+            birthday: formData.birthday || null,
+            nationality: formData.nationality || null,
             profile: {
               full_name: formData.full_name,
               phone: formData.phone || null,
@@ -284,6 +292,8 @@ export function EmployeeForm({
             address_province: formData.address_province || null,
             address_country: formData.address_country || null,
             grupo_cotizacion: formData.grupo_cotizacion ? parseInt(formData.grupo_cotizacion) : null,
+            birthday: formData.birthday || null,
+            nationality: formData.nationality || null,
           }),
         })
 
@@ -588,6 +598,34 @@ export function EmployeeForm({
                 onChange={(e) => setFormData({ ...formData, irpf_retention: e.target.value })}
                 disabled={loading}
               />
+            </div>
+          </div>
+
+          {/* Personal Details */}
+          <div className="space-y-4">
+            <h3 className="text-sm font-medium">{t('employees.personalDetails')}</h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="birthday">{t('employees.birthday')}</Label>
+                <Input
+                  id="birthday"
+                  type="date"
+                  value={formData.birthday}
+                  onChange={(e) => setFormData({ ...formData, birthday: e.target.value })}
+                  disabled={loading}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="nationality">{t('employees.nationality')}</Label>
+                <Input
+                  id="nationality"
+                  value={formData.nationality}
+                  onChange={(e) => setFormData({ ...formData, nationality: e.target.value })}
+                  disabled={loading}
+                  placeholder={t('employees.nationalityPlaceholder')}
+                />
+              </div>
             </div>
           </div>
 

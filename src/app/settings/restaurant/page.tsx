@@ -9,6 +9,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { useToast } from '@/hooks/use-toast'
 import { Toaster } from '@/components/ui/toaster'
 import { Loader2, Save, ArrowLeft, Building2, Globe, Palette, Clock, Image as ImageIcon, Upload, RotateCcw, CalendarCheck, Monitor, UtensilsCrossed, Search, Info } from 'lucide-react'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
@@ -43,6 +44,7 @@ interface RestaurantWebConfig {
   booking_enabled: boolean
   kiosk_enabled: boolean
   digital_menu_enabled: boolean
+  default_locale: string
 }
 
 interface RestaurantHours {
@@ -82,6 +84,7 @@ const DEFAULT_WEB: RestaurantWebConfig = {
   booking_enabled: true,
   kiosk_enabled: true,
   digital_menu_enabled: true,
+  default_locale: 'en',
 }
 
 const DEFAULT_HOURS: RestaurantHours = {
@@ -674,6 +677,30 @@ export default function RestaurantSettingsPage() {
                     </span>
                   </label>
                 ))}
+              </div>
+            </div>
+
+            {/* Default Locale */}
+            <div className="border-t border-border pt-4">
+              <div className="space-y-2 max-w-xs">
+                <Label htmlFor="default_locale">Default Language</Label>
+                <Select
+                  value={web.default_locale || 'en'}
+                  onValueChange={(value) => setWeb({ ...web, default_locale: value })}
+                >
+                  <SelectTrigger id="default_locale">
+                    <SelectValue placeholder="Select default language" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="en">English (EN)</SelectItem>
+                    <SelectItem value="nl">Nederlands (NL)</SelectItem>
+                    <SelectItem value="es">Español (ES)</SelectItem>
+                    <SelectItem value="de">Deutsch (DE)</SelectItem>
+                  </SelectContent>
+                </Select>
+                <p className="text-xs text-muted-foreground">
+                  Default language for new users and public pages
+                </p>
               </div>
             </div>
 
