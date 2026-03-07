@@ -49,6 +49,7 @@ export async function updateSession(request: NextRequest) {
   // Protected routes - redirect to /login if not authenticated
   if (
     !user &&
+    request.nextUrl.pathname !== '/' &&
     !request.nextUrl.pathname.startsWith('/login') &&
     !request.nextUrl.pathname.startsWith('/auth') &&
     !request.nextUrl.pathname.startsWith('/api/auth/sign-in') &&
@@ -57,7 +58,7 @@ export async function updateSession(request: NextRequest) {
     !request.nextUrl.pathname.startsWith('/api/health') &&
     !request.nextUrl.pathname.startsWith('/booking') &&
     !request.nextUrl.pathname.startsWith('/kiosk') &&
-    !request.nextUrl.pathname.startsWith('/menu/digital') &&
+    !request.nextUrl.pathname.startsWith('/digital') &&
     !request.nextUrl.pathname.startsWith('/api/public') &&
     !request.nextUrl.pathname.startsWith('/api/ai/booking-chat') &&
     !request.nextUrl.pathname.startsWith('/gift') &&

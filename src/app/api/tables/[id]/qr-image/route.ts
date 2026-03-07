@@ -28,7 +28,7 @@ export async function GET(
   // Build menu URL
   const baseUrl =
     process.env.NEXT_PUBLIC_APP_URL || 'https://app.cheersmallorca.com'
-  const menuUrl = `${baseUrl}/menu/digital?table=${table.table_number}`
+  const menuUrl = `${baseUrl}/digital?table=${table.table_number}`
 
   // Generate styled QR with logo
   const qrBuffer = await generateStyledQR(menuUrl)

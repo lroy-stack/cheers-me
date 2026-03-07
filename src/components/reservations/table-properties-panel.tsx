@@ -424,7 +424,7 @@ export function TablePropertiesPanel({
                         variant="outline"
                         size="sm"
                         className="flex-1"
-                        onClick={() => window.open(`/menu/digital?table=${table.table_number}`, '_blank')}
+                        onClick={() => window.open(`/digital?table=${table.table_number}`, '_blank')}
                       >
                         <ExternalLink className="h-3 w-3 mr-1" />
                         Preview

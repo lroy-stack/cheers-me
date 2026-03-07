@@ -84,7 +84,7 @@ function MenuSkeleton() {
         ))}
       </div>
 
-      {/* Menu Items Skeleton — grid 2x2 mobile */}
+      {/* Menu Items Skeleton */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
         {[...Array(8)].map((_, i) => (
           <div key={i} className="space-y-2">

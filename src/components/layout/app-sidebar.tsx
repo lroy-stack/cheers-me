@@ -168,7 +168,7 @@ const navGroups: NavGroup[] = [
   {
     titleKey: 'public',
     items: [
-      { labelKey: 'digitalMenu', href: '/menu/digital', icon: Smartphone },
+      { labelKey: 'digitalMenu', href: '/digital', icon: Smartphone },
       { labelKey: 'kiosk', href: '/kiosk', icon: Monitor },
       { labelKey: 'publicForm', href: '/booking', icon: Ticket },
     ],

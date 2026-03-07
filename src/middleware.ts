@@ -16,7 +16,7 @@ export const config = {
      * - api/public/* (public API routes)
      * - booking/* (public booking pages)
      * - kiosk/* (public kiosk)
-     * - menu/digital/* (public digital menu)
+     * - digital/* (public digital menu)
      * - gift/* (public gift card pages)
      * - login, auth (auth pages)
      */

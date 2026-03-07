@@ -649,7 +649,7 @@ export default function RestaurantSettingsPage() {
                   {
                     key: 'digital_menu_enabled' as const,
                     label: t('digitalMenuModule'),
-                    description: '/menu/digital',
+                    description: '/digital',
                     icon: UtensilsCrossed,
                   },
                 ] as const).map(({ key, label, description, icon: Icon }) => (

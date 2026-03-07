@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
 
   // Generate digital menu URL for this table
   const baseUrl = validation.data.base_url || process.env.NEXT_PUBLIC_APP_URL || 'https://app.cheersmallorca.com'
-  const menuUrl = `${baseUrl}/menu/digital?table=${table.table_number}`
+  const menuUrl = `${baseUrl}/digital?table=${table.table_number}`
 
   // Use local QR generation API route (styled with logo)
   const qrCodeUrl = `/api/tables/${table.id}/qr-image`
@@ -118,7 +118,7 @@ export async function GET(_request: NextRequest) {
   const now = new Date().toISOString()
 
   for (const table of tables || []) {
-    const menuUrl = `${baseUrl}/menu/digital?table=${table.table_number}`
+    const menuUrl = `${baseUrl}/digital?table=${table.table_number}`
     const qrCodeUrl = `/api/tables/${table.id}/qr-image`
 
     const { error: updateError } = await supabase

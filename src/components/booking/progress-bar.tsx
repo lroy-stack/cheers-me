@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import { STEPS, type BookingStep } from './types'
 import { Check } from 'lucide-react'
 import { useBookingLanguage } from './booking-language-provider'
-import { Button } from '@/components/ui/button'
 
 interface ProgressBarProps {
   currentIndex: number
@@ -21,6 +20,7 @@ export default function ProgressBar({ currentIndex, onStepClick }: ProgressBarPr
     'guest-info': t('wizard.details'),
     'review': t('wizard.confirm'),
   }
+
   return (
     <div className="w-full max-w-xl mx-auto px-4 py-6">
       <div className="flex items-center justify-between relative">
@@ -37,15 +37,17 @@ export default function ProgressBar({ currentIndex, onStepClick }: ProgressBarPr
         {STEPS.map((step, i) => {
           const isCompleted = i < currentIndex
           const isCurrent = i === currentIndex
-          const isClickable = i < currentIndex && onStepClick
+          const isClickable = i < currentIndex && !!onStepClick
 
           return (
-            <Button
+            <button
               key={step}
               type="button"
-              onClick={() => isClickable && onStepClick(i)}
+              onClick={() => isClickable && onStepClick?.(i)}
               disabled={!isClickable}
-              className="relative z-10 flex flex-col items-center gap-2 disabled:cursor-default"
+              className={`relative z-10 flex flex-col items-center gap-1.5 bg-transparent border-0 p-0 ${
+                isClickable ? 'cursor-pointer' : 'cursor-default'
+              }`}
             >
               <motion.div
                 className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-semibold border-2 transition-colors ${
@@ -71,17 +73,15 @@ export default function ProgressBar({ currentIndex, onStepClick }: ProgressBarPr
                 )}
               </motion.div>
               <span
-                className={`text-xs font-medium hidden sm:block ${
+                className={`text-xs font-medium hidden sm:block whitespace-nowrap ${
                   isCurrent
                     ? 'text-cheers-amber'
-                    : isCompleted
-                      ? 'text-muted-foreground'
-                      : 'text-muted-foreground'
+                    : 'text-muted-foreground'
                 }`}
               >
                 {STEP_LABELS[step]}
               </span>
-            </Button>
+            </button>
           )
         })}
       </div>

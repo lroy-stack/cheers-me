@@ -63,7 +63,7 @@ export default async function LoginPage() {
               {t('bookTable')}
             </Link>
             <Link
-              href="/menu/digital"
+              href="/digital"
               className="flex flex-col items-center gap-1.5 rounded-lg border border-border px-3 py-3 text-xs font-medium text-muted-foreground hover:bg-muted transition-colors"
             >
               <Smartphone className="h-5 w-5" />

@@ -141,12 +141,12 @@ export default function BookingWizard() {
     }
   }, [])
 
-  const next = useCallback(() => { lockHeight(); dispatch({ type: 'NEXT_STEP' }) }, [lockHeight])
-  const prev = useCallback(() => { lockHeight(); dispatch({ type: 'PREV_STEP' }) }, [lockHeight])
-  const goTo = useCallback((index: number) => { lockHeight(); dispatch({ type: 'GO_TO_STEP', index }) }, [lockHeight])
+  const next = useCallback(() => { hasInteracted.current = true; lockHeight(); dispatch({ type: 'NEXT_STEP' }) }, [lockHeight])
+  const prev = useCallback(() => { hasInteracted.current = true; lockHeight(); dispatch({ type: 'PREV_STEP' }) }, [lockHeight])
+  const goTo = useCallback((index: number) => { hasInteracted.current = true; lockHeight(); dispatch({ type: 'GO_TO_STEP', index }) }, [lockHeight])
 
-  // Track initial mount to prevent auto-scroll on page load
-  const isInitialMount = useRef(true)
+  // Track whether user has interacted with the wizard (changed step)
+  const hasInteracted = useRef(false)
 
   // After step renders, release locked height and keep wizard in viewport
   useLayoutEffect(() => {
@@ -154,9 +154,8 @@ export default function BookingWizard() {
       containerRef.current.style.minHeight = ''
     }
 
-    // Skip scroll on initial mount
-    if (isInitialMount.current) {
-      isInitialMount.current = false
+    // Only scroll after a user-initiated step change, never on initial mount
+    if (!hasInteracted.current) {
       return
     }
 

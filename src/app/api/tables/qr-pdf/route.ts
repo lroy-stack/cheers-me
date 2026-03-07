@@ -92,7 +92,7 @@ export async function GET(_request: NextRequest) {
   // Generate QR images for all tables
   const qrImages: Map<string, Buffer> = new Map()
   for (const table of tables || []) {
-    const menuUrl = `${baseUrl}/menu/digital?table=${table.table_number}`
+    const menuUrl = `${baseUrl}/digital?table=${table.table_number}`
     try {
       const qrBuffer = await generateStyledQR(menuUrl, 400)
       qrImages.set(table.id, qrBuffer)
@@ -215,7 +215,7 @@ export async function GET(_request: NextRequest) {
       }
 
       // Menu URL text
-      const menuUrl = `${baseUrl}/menu/digital?table=${table.table_number}`
+      const menuUrl = `${baseUrl}/digital?table=${table.table_number}`
       doc
         .font('Helvetica')
         .fontSize(6)
