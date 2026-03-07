@@ -12,6 +12,8 @@ export interface BookingFormData {
   guest_phone: string
   special_requests: string
   language: 'en' | 'nl' | 'es' | 'de'
+  cf_turnstile_response: string  // Cloudflare Turnstile token
+  privacy_consent: boolean       // GDPR consent
 }
 
 export interface AvailabilityResult {

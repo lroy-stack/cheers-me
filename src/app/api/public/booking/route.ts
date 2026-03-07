@@ -50,7 +50,33 @@ const publicBookingSchema = z.object({
   start_time: z.string().regex(/^\d{2}:\d{2}$/, 'Time format must be HH:MM'),
   special_requests: z.string().max(1000).optional(),
   language: z.enum(['en', 'nl', 'es', 'de']).default('en'),
+  cf_turnstile_response: z.string().min(1, 'Security verification token required'),
+  privacy_consent: z.boolean().refine((v) => v === true, 'Privacy consent is required'),
 })
+
+async function verifyTurnstileToken(token: string, ip: string): Promise<boolean> {
+  const secret = process.env.TURNSTILE_SECRET_KEY
+  if (!secret) {
+    console.error('TURNSTILE_SECRET_KEY not configured')
+    return false
+  }
+
+  try {
+    const formData = new FormData()
+    formData.append('secret', secret)
+    formData.append('response', token)
+    formData.append('remoteip', ip)
+
+    const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      body: formData,
+    })
+    const result = await res.json() as { success: boolean; 'error-codes'?: string[] }
+    return result.success === true
+  } catch {
+    return false
+  }
+}
 
 /**
  * POST /api/public/booking
@@ -82,7 +108,7 @@ export async function POST(request: NextRequest) {
     )
   }
 
-  // Validate input
+  // Validate input (includes cf_turnstile_response check)
   const validation = publicBookingSchema.safeParse(body)
   if (!validation.success) {
     return NextResponse.json(
@@ -98,6 +124,17 @@ export async function POST(request: NextRequest) {
   }
 
   const data = validation.data
+
+  // Verify Cloudflare Turnstile token
+  const clientIp = rateLimitKey
+  const turnstileValid = await verifyTurnstileToken(data.cf_turnstile_response, clientIp)
+  if (!turnstileValid) {
+    return NextResponse.json(
+      { error: 'Security verification failed. Please refresh the page and try again.' },
+      { status: 400 }
+    )
+  }
+
   const supabase = createAdminClient()
 
   // Check reservation settings

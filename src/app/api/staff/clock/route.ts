@@ -3,9 +3,26 @@ import { requireAuth } from '@/lib/utils/auth'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 
-// Validation schema for clock-in
+// Restaurant location (Carrer de Cartago 22, El Arenal, Mallorca)
+const RESTAURANT_LAT = 39.5021
+const RESTAURANT_LNG = 2.7392
+const GEOFENCE_RADIUS_METERS = 200
+
+function haversineDistance(lat1: number, lng1: number, lat2: number, lng2: number): number {
+  const R = 6371000 // Earth radius in meters
+  const dLat = ((lat2 - lat1) * Math.PI) / 180
+  const dLng = ((lng2 - lng1) * Math.PI) / 180
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos((lat1 * Math.PI) / 180) * Math.cos((lat2 * Math.PI) / 180) * Math.sin(dLng / 2) ** 2
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+}
+
+// Validation schema for clock-in (with optional geolocation)
 const clockInSchema = z.object({
   shift_id: z.string().uuid().optional(),
+  latitude: z.number().min(-90).max(90).optional(),
+  longitude: z.number().min(-180).max(180).optional(),
 })
 
 // Validation schema for clock-out
@@ -148,22 +165,51 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Create clock-in record
+    // Geolocation check (Feature S2.B1)
+    let geolocationWarning: string | null = null
+    let geolocationMetadata: Record<string, unknown> = {}
+
+    if (validation.data.latitude !== undefined && validation.data.longitude !== undefined) {
+      const distance = haversineDistance(
+        validation.data.latitude,
+        validation.data.longitude,
+        RESTAURANT_LAT,
+        RESTAURANT_LNG
+      )
+      geolocationMetadata = {
+        latitude: validation.data.latitude,
+        longitude: validation.data.longitude,
+        distance_meters: Math.round(distance),
+        within_geofence: distance <= GEOFENCE_RADIUS_METERS,
+      }
+      if (distance > GEOFENCE_RADIUS_METERS) {
+        geolocationWarning = `Location is ${Math.round(distance)}m from the restaurant (max ${GEOFENCE_RADIUS_METERS}m)`
+      }
+    }
+
+    // Create clock-in record with optional metadata
     const { data: clockRecord, error } = await supabase
       .from('clock_in_out')
       .insert({
         employee_id: employeeRecord.id,
         shift_id: validation.data.shift_id,
         clock_in_time: new Date().toISOString(),
+        ...(Object.keys(geolocationMetadata).length > 0 ? { metadata: geolocationMetadata } : {}),
       })
       .select()
       .single()
 
     if (error) {
-      return NextResponse.json({ error: error.message }, { status: 500 })
+      return NextResponse.json({ error: 'Failed to create clock record' }, { status: 500 })
     }
 
-    return NextResponse.json(clockRecord, { status: 201 })
+    return NextResponse.json(
+      {
+        ...clockRecord,
+        ...(geolocationWarning ? { geolocation_warning: geolocationWarning } : {}),
+      },
+      { status: 201 }
+    )
   } else if (action === 'out') {
     // Clock out
     let body
@@ -184,12 +230,31 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    const clockOutTime = new Date().toISOString()
+
+    // Feature S2.B2: Auto-close any active breaks before clocking out
+    const { data: activeBreaks } = await supabase
+      .from('clock_breaks')
+      .select('id')
+      .eq('clock_record_id', validation.data.clock_record_id)
+      .is('end_time', null)
+
+    let closedBreaksCount = 0
+    if (activeBreaks && activeBreaks.length > 0) {
+      const breakIds = activeBreaks.map((b) => b.id)
+      await supabase
+        .from('clock_breaks')
+        .update({ end_time: clockOutTime, updated_at: clockOutTime })
+        .in('id', breakIds)
+      closedBreaksCount = breakIds.length
+    }
+
     // Update clock record with clock_out_time
     const { data: clockRecord, error } = await supabase
       .from('clock_in_out')
       .update({
-        clock_out_time: new Date().toISOString(),
-        updated_at: new Date().toISOString(),
+        clock_out_time: clockOutTime,
+        updated_at: clockOutTime,
       })
       .eq('id', validation.data.clock_record_id)
       .eq('employee_id', employeeRecord.id)
@@ -203,10 +268,13 @@ export async function POST(request: NextRequest) {
           { status: 404 }
         )
       }
-      return NextResponse.json({ error: error.message }, { status: 500 })
+      return NextResponse.json({ error: 'Failed to update clock record' }, { status: 500 })
     }
 
-    return NextResponse.json(clockRecord)
+    return NextResponse.json({
+      ...clockRecord,
+      closed_breaks: closedBreaksCount,
+    })
   } else {
     return NextResponse.json(
       { error: 'Invalid action. Use ?action=in or ?action=out' },

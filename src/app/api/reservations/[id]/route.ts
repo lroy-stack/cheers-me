@@ -233,11 +233,12 @@ export async function PATCH(
 
 /**
  * DELETE /api/reservations/[id]
- * Delete a reservation (hard delete - use with caution)
+ * Soft delete: sets status='cancelled' (default).
+ * Hard delete: only for admin with ?hard=true query param.
  * Access: admin, manager only
  */
 export async function DELETE(
-  _request: NextRequest,
+  request: NextRequest,
   context: RouteContext
 ) {
   const authResult = await requireRole(['admin', 'manager'])
@@ -249,24 +250,56 @@ export async function DELETE(
     )
   }
 
+  const { data: userData } = authResult
   const { id } = await context.params
+  const { searchParams } = new URL(request.url)
+  const hardDelete = searchParams.get('hard') === 'true'
+
+  // Only admin can perform hard delete
+  if (hardDelete && userData.profile.role !== 'admin') {
+    return NextResponse.json(
+      { error: 'Hard delete requires admin role' },
+      { status: 403 }
+    )
+  }
+
   const supabase = await createClient()
 
-  // Instead of hard delete, prefer soft delete by updating status to cancelled
-  const { error } = await supabase
+  if (hardDelete) {
+    // Admin-only hard delete
+    const { error } = await supabase
+      .from('reservations')
+      .delete()
+      .eq('id', id)
+
+    if (error) {
+      if (error.code === 'PGRST116') {
+        return NextResponse.json({ error: 'Reservation not found' }, { status: 404 })
+      }
+      return NextResponse.json({ error: 'Failed to delete reservation' }, { status: 500 })
+    }
+
+    return NextResponse.json({ success: true, deleted: true }, { status: 200 })
+  }
+
+  // Soft delete: set status to cancelled
+  const { data: updated, error } = await supabase
     .from('reservations')
-    .delete()
+    .update({
+      reservation_status: 'cancelled',
+      cancelled_at: new Date().toISOString(),
+      cancelled_by: userData.user.id,
+    })
     .eq('id', id)
+    .select('id, reservation_status, cancelled_at')
+    .single()
 
   if (error) {
     if (error.code === 'PGRST116') {
-      return NextResponse.json(
-        { error: 'Reservation not found' },
-        { status: 404 }
-      )
+      return NextResponse.json({ error: 'Reservation not found' }, { status: 404 })
     }
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    return NextResponse.json({ error: 'Failed to cancel reservation' }, { status: 500 })
   }
 
-  return NextResponse.json({ success: true }, { status: 200 })
+  return NextResponse.json({ success: true, cancelled: true, reservation: updated }, { status: 200 })
 }

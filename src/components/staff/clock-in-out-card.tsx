@@ -4,11 +4,14 @@ import { useState, useEffect } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Clock, LogIn, LogOut, Loader2, Coffee } from 'lucide-react'
+import { Alert, AlertDescription } from '@/components/ui/alert'
+import { Clock, LogIn, LogOut, Loader2, Coffee, AlertTriangle } from 'lucide-react'
 import { ClockInOut } from '@/types'
 import { format, formatDistanceToNow } from 'date-fns'
 import { useToast } from '@/hooks/use-toast'
 import { useTranslations } from 'next-intl'
+
+const SIX_HOURS_MS = 6 * 60 * 60 * 1000
 
 interface ClockInOutCardProps {
   employeeId: string
@@ -21,6 +24,7 @@ export function ClockInOutCard({ employeeId, onClockChange }: ClockInOutCardProp
   const [loading, setLoading] = useState(true)
   const [actionLoading, setActionLoading] = useState(false)
   const [currentTime, setCurrentTime] = useState(new Date())
+  const [showBreakReminder, setShowBreakReminder] = useState(false)
   const { toast } = useToast()
   const t = useTranslations('staff')
 
@@ -31,6 +35,13 @@ export function ClockInOutCard({ employeeId, onClockChange }: ClockInOutCardProp
     }, 1000)
     return () => clearInterval(timer)
   }, [])
+
+  // Feature S2.B3: Check mandatory break after 6h (ET Art. 34.4)
+  useEffect(() => {
+    if (!currentClock) { setShowBreakReminder(false); return }
+    const elapsed = currentTime.getTime() - new Date(currentClock.clock_in_time).getTime()
+    setShowBreakReminder(elapsed >= SIX_HOURS_MS && !isOnBreak)
+  }, [currentTime, currentClock, isOnBreak])
 
   // Fetch current clock status
   useEffect(() => {
@@ -64,10 +75,21 @@ export function ClockInOutCard({ employeeId, onClockChange }: ClockInOutCardProp
   async function handleClockIn() {
     setActionLoading(true)
     try {
+      // Feature S2.B1: Capture geolocation on clock-in
+      let geoPayload: { latitude?: number; longitude?: number } = {}
+      if (typeof navigator !== 'undefined' && 'geolocation' in navigator) {
+        try {
+          const pos = await new Promise<GeolocationPosition>((resolve, reject) => {
+            navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 5000, enableHighAccuracy: true })
+          })
+          geoPayload = { latitude: pos.coords.latitude, longitude: pos.coords.longitude }
+        } catch { /* Geolocation denied — continue without */ }
+      }
+
       const res = await fetch('/api/staff/clock?action=in', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({}),
+        body: JSON.stringify(geoPayload),
       })
 
       if (!res.ok) {
@@ -81,7 +103,9 @@ export function ClockInOutCard({ employeeId, onClockChange }: ClockInOutCardProp
 
       toast({
         title: 'Clocked In',
-        description: `Successfully clocked in at ${format(new Date(), 'HH:mm')}`,
+        description: newClock.geolocation_warning
+          ? `Clocked in at ${format(new Date(), 'HH:mm')} ⚠️ ${newClock.geolocation_warning}`
+          : `Successfully clocked in at ${format(new Date(), 'HH:mm')}`,
       })
     } catch (error) {
       toast({
@@ -92,6 +116,42 @@ export function ClockInOutCard({ employeeId, onClockChange }: ClockInOutCardProp
     } finally {
       setActionLoading(false)
     }
+  }
+
+  // Feature S2.B4: Start break
+  async function handleStartBreak() {
+    if (!currentClock) return
+    setActionLoading(true)
+    try {
+      const res = await fetch('/api/staff/clock/break', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ clock_record_id: currentClock.id, action: 'start' }),
+      })
+      if (!res.ok) { const e = await res.json(); throw new Error(e.error || 'Failed to start break') }
+      setIsOnBreak(true)
+      toast({ title: 'Break Started', description: `Break started at ${format(new Date(), 'HH:mm')}` })
+    } catch (error) {
+      toast({ variant: 'destructive', title: 'Error', description: error instanceof Error ? error.message : 'Failed to start break' })
+    } finally { setActionLoading(false) }
+  }
+
+  // Feature S2.B4: End break
+  async function handleEndBreak() {
+    if (!currentClock) return
+    setActionLoading(true)
+    try {
+      const res = await fetch('/api/staff/clock/break', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ clock_record_id: currentClock.id, action: 'end' }),
+      })
+      if (!res.ok) { const e = await res.json(); throw new Error(e.error || 'Failed to end break') }
+      setIsOnBreak(false)
+      toast({ title: 'Break Ended', description: `Break ended at ${format(new Date(), 'HH:mm')}` })
+    } catch (error) {
+      toast({ variant: 'destructive', title: 'Error', description: error instanceof Error ? error.message : 'Failed to end break' })
+    } finally { setActionLoading(false) }
   }
 
   async function handleClockOut() {
@@ -187,6 +247,16 @@ export function ClockInOutCard({ employeeId, onClockChange }: ClockInOutCardProp
           </p>
         </div>
 
+        {/* Feature S2.B3: Mandatory break reminder (ET Art. 34.4) */}
+        {showBreakReminder && (
+          <Alert variant="destructive">
+            <AlertTriangle className="h-4 w-4" />
+            <AlertDescription>
+              You have worked 6+ hours without a break. Spanish law (ET Art. 34.4) requires a minimum 15-minute break.
+            </AlertDescription>
+          </Alert>
+        )}
+
         {/* Clock Status */}
         {currentClock ? (
           <div className="space-y-4">
@@ -208,6 +278,18 @@ export function ClockInOutCard({ employeeId, onClockChange }: ClockInOutCardProp
                   {t('clock.started')} {formatDistanceToNow(new Date(currentClock.clock_in_time), { addSuffix: true })}
                 </p>
               </div>
+            </div>
+
+            {/* Feature S2.B4: Start Break / End Break buttons */}
+            <div className="grid grid-cols-2 gap-2">
+              <Button onClick={handleStartBreak} disabled={actionLoading || isOnBreak} variant="outline" size="sm">
+                <Coffee className="mr-2 h-4 w-4" />
+                Start Break
+              </Button>
+              <Button onClick={handleEndBreak} disabled={actionLoading || !isOnBreak} variant="outline" size="sm" className="text-orange-600 border-orange-600 hover:bg-orange-50 dark:hover:bg-orange-950">
+                <Coffee className="mr-2 h-4 w-4" />
+                End Break
+              </Button>
             </div>
 
             {/* Clock Out Button */}

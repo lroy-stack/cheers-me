@@ -29,6 +29,8 @@ const initialFormData: BookingFormData = {
   guest_phone: '',
   special_requests: '',
   language: 'en',
+  cf_turnstile_response: '',
+  privacy_consent: false,
 }
 
 const initialState: WizardState = {
@@ -211,6 +213,8 @@ export default function BookingWizard() {
           start_time: formData.start_time,
           special_requests: specialRequests || undefined,
           language: formData.language,
+          cf_turnstile_response: formData.cf_turnstile_response,
+          privacy_consent: formData.privacy_consent,
         }),
       })
 
@@ -330,6 +334,7 @@ export default function BookingWizard() {
             onConfirm={submitBooking}
             onBack={prev}
             onCheckAvailability={checkAvailability}
+            onTurnstileToken={(token) => dispatch({ type: 'UPDATE_FORM', data: { cf_turnstile_response: token } })}
           />
         )
     }
