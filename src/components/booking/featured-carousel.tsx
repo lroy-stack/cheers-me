@@ -96,7 +96,7 @@ function CarouselRow({
 
   return (
     <div>
-      <div className="relative group overflow-hidden">
+      <div className="relative group">
         <Button
           onClick={() => scrollToIndex(Math.max(0, activeIndex - 1))}
           className="hidden md:flex absolute left-1 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center rounded-full bg-background/80 border border-border shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"

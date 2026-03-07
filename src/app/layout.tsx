@@ -68,7 +68,7 @@ export default async function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Cheers Manager" />
         <link rel="apple-touch-icon" href="/icons/icon-192.png" />
       </head>
-      <body className={`${inter.variable} ${lora.variable} ${firaCode.variable} font-sans`}>
+      <body className={`${inter.variable} ${lora.variable} ${firaCode.variable} font-sans overflow-x-hidden`}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
             attribute="class"
