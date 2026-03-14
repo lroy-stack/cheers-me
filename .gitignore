@@ -73,3 +73,17 @@ next-env.d.ts
 *.png
 !public/**/*.png
 !src/**/*.png
+
+# Sensitive audit/testing documents — NEVER commit
+tests/AUDIT_*.md
+tests/PRODUCTION_ROADMAP.md
+tests/TEST_CREDENTIALS.md
+tests/E2E_FINDINGS_*.md
+tests/BRAND_REFERENCE.md
+tests/CARTA_BEBIDAS_OFICIAL.md
+tests/E2E_TESTING_PLAN.md
+
+# Screenshots from E2E testing
+*.png
+!public/**/*.png
+!src/**/*.png
