@@ -17,6 +17,7 @@ import { PrintSector } from '@/components/staff/schedule/schedule-toolbar'
 import { exportScheduleToExcel } from '@/lib/utils/schedule-excel-export'
 import { useRouter } from 'next/navigation'
 import { useAuthContext } from '@/components/providers/auth-provider'
+import { ConfirmDialog } from '@/components/ui/confirm-dialog'
 
 // Schedule components
 import { SchedulePageHeader } from '@/components/staff/schedule/schedule-page-header'
@@ -75,6 +76,7 @@ export default function SchedulePage() {
   const [selectedShift, setSelectedShift] = useState<ShiftWithEmployee | null>(null)
   const [defaultDate, setDefaultDate] = useState<string | undefined>()
   const [, setDefaultEmployeeId] = useState<string | undefined>()
+  const [publishConfirmOpen, setPublishConfirmOpen] = useState(false)
 
   const handleOpenShiftForm = useCallback((employeeId: string, date: string) => {
     // Find existing shift
@@ -135,15 +137,19 @@ export default function SchedulePage() {
     }
   }, [saveDraft, toast])
 
-  const handlePublish = useCallback(async () => {
-    if (!confirm('Publish this schedule? Staff will be able to see it.')) return
+  const handlePublishRequest = useCallback(() => {
+    setPublishConfirmOpen(true)
+  }, [])
+
+  const handlePublishConfirm = useCallback(async () => {
+    setPublishConfirmOpen(false)
     try {
       await publish()
-      toast({ title: 'Published', description: 'Schedule published successfully' })
+      toast({ title: t('schedule.published'), description: t('schedule.publishedDescription') })
     } catch {
-      toast({ title: 'Error', description: 'Failed to publish', variant: 'destructive' })
+      toast({ title: 'Error', description: t('schedule.publishFailed'), variant: 'destructive' })
     }
-  }, [publish, toast])
+  }, [publish, toast, t])
 
   const handleCopyPreviousWeek = useCallback(async (sourceWeek: string) => {
     try {
@@ -264,7 +270,7 @@ export default function SchedulePage() {
                   canUndo={canUndo}
                   canRedo={canRedo}
                   onSave={handleSave}
-                  onPublish={handlePublish}
+                  onPublish={handlePublishRequest}
                   onCopyPreviousWeek={handleCopyPreviousWeek}
                   onUndo={undo}
                   onRedo={redo}
@@ -362,6 +368,16 @@ export default function SchedulePage() {
         defaultDate={defaultDate}
         employees={employees}
         onSubmit={handleFormSubmit}
+      />
+
+      <ConfirmDialog
+        open={publishConfirmOpen}
+        onOpenChange={setPublishConfirmOpen}
+        title={t('schedule.publishConfirmTitle')}
+        description={t('schedule.publishConfirmDescription')}
+        confirmLabel={t('schedule.publish')}
+        cancelLabel={t('schedule.cancel')}
+        onConfirm={handlePublishConfirm}
       />
 
       <Toaster />

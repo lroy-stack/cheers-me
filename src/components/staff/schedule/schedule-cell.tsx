@@ -37,16 +37,17 @@ export function ScheduleCell({
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <Button
+          variant="ghost"
           className={cn(
-            'w-full h-12 rounded-md border text-center text-sm font-bold transition-all',
+            'w-full h-12 rounded-md text-center text-sm font-bold transition-all',
             'focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-1',
-            'hover:shadow-sm cursor-pointer',
+            'cursor-pointer',
             isToday && 'ring-2 ring-primary ring-offset-1',
             cell.isOnLeave && 'bg-stripes',
             cell.hasViolation && 'relative',
             config
-              ? cn(config.bg, config.text, 'border-l-4', config.border)
-              : 'border-dashed border-muted-foreground/30 hover:border-muted-foreground/60 hover:bg-muted/50'
+              ? cn(config.bg, config.text, 'border border-l-4', config.border, 'hover:opacity-80')
+              : 'border border-dashed border-muted-foreground/20 hover:border-muted-foreground/40 hover:bg-muted/30'
           )}
         >
           {cell.cellType ? (

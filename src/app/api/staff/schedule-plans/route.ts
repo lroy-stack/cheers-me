@@ -26,28 +26,33 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'week_start_date is required' }, { status: 400 })
   }
 
-  const { data: plan, error } = await supabase
+  // Fetch all plans for this week (newest first)
+  const { data: plans, error } = await supabase
     .from('schedule_plans')
     .select('*')
     .eq('week_start_date', weekStartDate)
     .order('version', { ascending: false })
-    .limit(1)
-    .maybeSingle()
 
   if (error) {
-    // Table doesn't exist yet (migration not applied)
     if (error.message?.includes('relation') || error.code === '42P01') {
       return NextResponse.json({ plan: null, shifts: [] })
     }
     return NextResponse.json({ error: error.message }, { status: 500 })
   }
 
-  if (!plan) {
+  if (!plans || plans.length === 0) {
     return NextResponse.json({ plan: null, shifts: [] })
   }
 
-  // Fetch shifts for this plan
-  const { data: shifts, error: shiftsError } = await supabase
+  // Strategy: find the best plan to show
+  // 1. Draft (newest version) — this is the "working copy"
+  // 2. If no draft, the newest published version
+  const draftPlan = plans.find((p) => p.status === 'draft')
+  const publishedPlan = plans.find((p) => p.status === 'published')
+  const activePlan = draftPlan || publishedPlan || plans[0]
+
+  // Fetch shifts for the active plan
+  const { data: activeShifts, error: shiftsError } = await supabase
     .from('shifts')
     .select(`
       *,
@@ -60,7 +65,7 @@ export async function GET(request: NextRequest) {
         )
       )
     `)
-    .eq('schedule_plan_id', plan.id)
+    .eq('schedule_plan_id', activePlan.id)
     .order('date', { ascending: true })
     .order('start_time', { ascending: true })
 
@@ -68,7 +73,32 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: shiftsError.message }, { status: 500 })
   }
 
-  return NextResponse.json({ plan, shifts: shifts || [] })
+  let shifts = activeShifts || []
+
+  // If active plan is a draft with 0 shifts AND there's a published version,
+  // load published shifts as the base (so the grid isn't empty)
+  if (activePlan.status === 'draft' && shifts.length === 0 && publishedPlan) {
+    const { data: publishedShifts } = await supabase
+      .from('shifts')
+      .select(`
+        *,
+        employee:employees(
+          id,
+          profile:profiles(
+            id,
+            full_name,
+            role
+          )
+        )
+      `)
+      .eq('schedule_plan_id', publishedPlan.id)
+      .order('date', { ascending: true })
+      .order('start_time', { ascending: true })
+
+    shifts = publishedShifts || []
+  }
+
+  return NextResponse.json({ plan: activePlan, shifts })
 }
 
 /**

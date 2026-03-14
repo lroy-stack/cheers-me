@@ -20,7 +20,7 @@ export default async function MySchedulePage() {
 
   const { data: employeeRecord } = await supabase
     .from('employees')
-    .select('id, profile:profiles(id, full_name), contract_type, hourly_rate, date_hired, job_title, department')
+    .select('id, profile:profiles(id, full_name), contract_type, hourly_rate, date_hired, job_title')
     .eq('profile_id', user.id)
     .single()
 

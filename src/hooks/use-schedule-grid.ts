@@ -404,6 +404,7 @@ export function useScheduleGrid(weekStart: Date) {
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to save')
+      throw err
     } finally {
       setSaving(false)
     }
@@ -455,6 +456,7 @@ export function useScheduleGrid(weekStart: Date) {
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to publish')
+      throw err
     } finally {
       setSaving(false)
     }
@@ -481,6 +483,7 @@ export function useScheduleGrid(weekStart: Date) {
       dispatch({ type: 'LOAD_DATA', plan: data.plan, shifts: data.shifts })
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to copy')
+      throw err
     } finally {
       setSaving(false)
     }

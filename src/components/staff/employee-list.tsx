@@ -47,13 +47,13 @@ interface EmployeeListProps {
 }
 
 const roleColors: Record<string, string> = {
-  admin: 'bg-destructive/15 text-white',
-  manager: 'bg-blue-500 text-white',
-  kitchen: 'bg-orange-500 text-white',
-  bar: 'bg-success/15 text-white',
-  waiter: 'bg-purple-500 text-white',
-  dj: 'bg-pink-500 text-white',
-  owner: 'bg-primary text-primary-foreground',
+  admin: 'bg-red-500/15 text-red-700 dark:text-red-300',
+  manager: 'bg-blue-500/15 text-blue-700 dark:text-blue-300',
+  kitchen: 'bg-orange-500/15 text-orange-700 dark:text-orange-300',
+  bar: 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-300',
+  waiter: 'bg-purple-500/15 text-purple-700 dark:text-purple-300',
+  dj: 'bg-pink-500/15 text-pink-700 dark:text-pink-300',
+  owner: 'bg-primary/15 text-primary',
 }
 
 const contractTypeLabels: Record<string, string> = {

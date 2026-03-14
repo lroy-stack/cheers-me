@@ -65,12 +65,15 @@ export async function POST(request: NextRequest) {
 
   // Auto-find today's shift for linking
   const today = new Date().toISOString().split('T')[0]
-  const { data: todayShift } = await supabase
+  const { data: todayShifts } = await supabase
     .from('shifts')
     .select('id, shift_type, start_time, end_time')
     .eq('employee_id', employee_id)
     .eq('date', today)
-    .single()
+    .eq('is_day_off', false)
+    .order('created_at', { ascending: false })
+    .limit(1)
+  const todayShift = todayShifts?.[0] ?? null
 
   // Grace period validation
   const shiftWarning = validateClockInTiming(todayShift ?? null)
