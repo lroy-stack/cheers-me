@@ -3,6 +3,7 @@ import { requireAuth } from '@/lib/utils/auth'
 import { NextRequest, NextResponse } from 'next/server'
 import { GUIDES } from '@/lib/data/resource-guides'
 import PDFDocument from 'pdfkit'
+import QRCode from 'qrcode'
 import path from 'path'
 import fs from 'fs'
 import crypto from 'crypto'
@@ -325,6 +326,18 @@ export async function GET(
 
   doc.font('Helvetica').fontSize(7).fillColor(GOLD_LIGHT)
     .text(t('location', lang), W - 200, barY + 5, { width: 160, align: 'right' })
+
+  // QR Code for verification
+  const verifyUrl = `${process.env.NEXT_PUBLIC_APP_URL || 'https://grandcafe-cheers-app.vercel.app'}/api/staff/training/verify/${certNumber}`
+  try {
+    const qrDataUrl = await QRCode.toDataURL(verifyUrl, { width: 60, margin: 1, color: { dark: '#1a237e', light: '#ffffff' } })
+    const qrBuffer = Buffer.from(qrDataUrl.split(',')[1], 'base64')
+    doc.image(qrBuffer, W - 100, barY - 70, { width: 55, height: 55 })
+    doc.font('Helvetica').fontSize(5).fillColor('#666')
+      .text('Scan to verify', W - 105, barY - 12, { width: 65, align: 'center' })
+  } catch {
+    // QR generation failed — skip silently
+  }
 
   // Verification note (small, below bar)
   doc.font('Helvetica').fontSize(5.5).fillColor('#999')
