@@ -148,8 +148,37 @@ function getTranslation(key: string, language: Language): string {
       es: 'platos',
       de: 'Artikel',
     },
+    food: {
+      en: 'Food',
+      nl: 'Eten',
+      es: 'Comida',
+      de: 'Essen',
+    },
+    drinks: {
+      en: 'Drinks',
+      nl: 'Dranken',
+      es: 'Bebidas',
+      de: 'Getranke',
+    },
   }
   return translations[key]?.[language] || translations[key]?.en || key
+}
+
+// ---------------------------------------------------------------------------
+// Category grouping (Food vs Drinks) for desktop sidebar
+// ---------------------------------------------------------------------------
+
+const FOOD_CATEGORIES = new Set([
+  'Breakfast & Lunch',
+  'Burgers & Schnitzel',
+  'Pasta',
+  'Salads',
+  'Desserts',
+  'Sauces & Sides',
+])
+
+function isFoodCategory(cat: Category): boolean {
+  return FOOD_CATEGORIES.has(cat.name_en)
 }
 
 // ---------------------------------------------------------------------------
@@ -186,7 +215,9 @@ export function DigitalMenuClient({
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
   const [searchQuery, setSearchQuery] = useState('')
   const [headerHeight, setHeaderHeight] = useState(52)
+  const [searchBarHeight, setSearchBarHeight] = useState(0)
   const headerRef = useRef<HTMLElement>(null)
+  const searchBarRef = useRef<HTMLDivElement>(null)
   const categoryScrollRef = useRef<HTMLDivElement>(null)
 
   // Welcome message for QR table scan
@@ -205,6 +236,19 @@ export function DigitalMenuClient({
     const observer = new ResizeObserver((entries) => {
       for (const entry of entries) {
         setHeaderHeight(entry.target.getBoundingClientRect().height)
+      }
+    })
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
+  // Dynamically measure search bar height with ResizeObserver
+  useEffect(() => {
+    const el = searchBarRef.current
+    if (!el) return
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        setSearchBarHeight(entry.target.getBoundingClientRect().height)
       }
     })
     observer.observe(el)
@@ -270,6 +314,25 @@ export function DigitalMenuClient({
     return items
   }, [initialItems, selectedCategory])
 
+  // Count items per category (for sidebar badges)
+  const categoryItemCounts = useMemo(() => {
+    const counts = new Map<string, number>()
+    initialItems.forEach((item) => {
+      counts.set(item.category_id, (counts.get(item.category_id) ?? 0) + 1)
+    })
+    return counts
+  }, [initialItems])
+
+  // Split categories into food and drinks groups for sidebar
+  const foodCategories = useMemo(
+    () => categories.filter(isFoodCategory),
+    [categories]
+  )
+  const drinkCategories = useMemo(
+    () => categories.filter((cat) => !isFoodCategory(cat)),
+    [categories]
+  )
+
   // Resolve the category name in current language
   const getCategoryLabel = (cat: Category): string =>
     cat[`name_${language}`] || cat.name_en
@@ -279,7 +342,7 @@ export function DigitalMenuClient({
       {/* ---------------------------------------------------------------- */}
       {/* Header (single row: logo + title + table + flags + allergen)    */}
       {/* ---------------------------------------------------------------- */}
-      <header ref={headerRef} className="sticky top-0 z-50 w-full border-b border-primary/20/60 dark:border-primary/40 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/15 dark:from-primary/20 dark:via-accent/15 dark:to-primary/20 backdrop-blur-md">
+      <header ref={headerRef} className="sticky top-0 z-50 w-full border-b border-primary/20 dark:border-primary/40 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/15 dark:from-primary/20 dark:via-accent/15 dark:to-primary/20 backdrop-blur-md">
         <div className="container mx-auto px-3 py-2">
           <div className="flex items-center justify-between gap-2">
             {/* Left: Logo + title + table badge */}
@@ -287,14 +350,17 @@ export function DigitalMenuClient({
               <Image
                 src="/icons/logoheader.png"
                 alt="GrandCafe Cheers Mallorca"
-                width={36}
-                height={36}
-                className="rounded-lg shadow-sm shrink-0"
+                width={44}
+                height={44}
+                className="w-9 h-9 lg:w-11 lg:h-11 rounded-lg shadow-sm shrink-0"
               />
-              <span className="font-bold text-sm leading-tight tracking-tight text-primary truncate">
-                <span className="sm:hidden">Cheers</span>
-                <span className="hidden sm:inline">GrandCafe Cheers</span>
-              </span>
+              <div className="min-w-0">
+                <span className="font-bold text-sm lg:text-base leading-tight tracking-tight text-primary truncate block">
+                  <span className="sm:hidden">Cheers</span>
+                  <span className="hidden sm:inline">GrandCafe Cheers</span>
+                </span>
+                <span className="hidden lg:block text-xs text-muted-foreground">Food &middot; Drinks &middot; Sports</span>
+              </div>
               {tableNumber && (
                 <Badge className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-md shrink-0 gap-1.5 px-2.5 py-1 text-xs font-bold rounded-full">
                   <TableProperties className="h-3.5 w-3.5" />
@@ -312,7 +378,7 @@ export function DigitalMenuClient({
                     key={lang.code}
                     onClick={() => setLanguage(lang.code)}
                     className={`
-                      w-9 h-9 sm:w-7 sm:h-7 rounded-full flex items-center justify-center text-base sm:text-sm
+                      w-8 h-8 sm:w-8 sm:h-8 lg:w-9 lg:h-9 rounded-full flex items-center justify-center text-base sm:text-sm
                       transition-all duration-200 cursor-pointer
                       ${
                         isActive
@@ -427,7 +493,7 @@ export function DigitalMenuClient({
       {/* ---------------------------------------------------------------- */}
       {/* Search + Category Filter (sticky combined)                      */}
       {/* ---------------------------------------------------------------- */}
-      <div className="sticky z-40 w-full border-b border-primary/20/40 dark:border-primary/30 bg-white/90 dark:bg-background/90 backdrop-blur-md" style={{ top: headerHeight }}>
+      <div ref={searchBarRef} className="sticky z-40 w-full border-b border-primary/20 dark:border-primary/30 bg-white/90 dark:bg-background/90 backdrop-blur-md" style={{ top: headerHeight }}>
         <div className="container mx-auto px-3 py-2 space-y-2">
           {/* Search input */}
           <div className="relative">
@@ -456,8 +522,8 @@ export function DigitalMenuClient({
             </p>
           )}
 
-          {/* Category pills */}
-          <div className="relative">
+          {/* Category pills — mobile/tablet only */}
+          <div className="relative lg:hidden">
             {/* Left fade gradient */}
             <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-6 z-10 bg-gradient-to-r from-white dark:from-background to-transparent" />
             {/* Right fade gradient */}
@@ -530,116 +596,226 @@ export function DigitalMenuClient({
       </div>
 
       {/* ---------------------------------------------------------------- */}
-      {/* Signature Cocktails                                             */}
+      {/* Desktop sidebar + content layout                                */}
       {/* ---------------------------------------------------------------- */}
-      {signatureItems.length > 0 && !searchQuery.trim() && (
-        <section className="container mx-auto px-4 pt-6">
-          <div className="rounded-2xl border border-primary/20/60 dark:border-primary/40 overflow-hidden">
-            {/* Glass morphism container */}
-            <div className="bg-gradient-to-r from-primary/10 via-accent/8 to-destructive/5 dark:from-primary/15 dark:via-accent/10 dark:to-destructive/8 backdrop-blur-sm p-4 md:p-6 space-y-4">
-              {/* Title */}
-              <div className="flex items-center justify-center gap-2">
-                <Star className="h-4 w-4 text-primary fill-primary" />
-                <h2 className="text-lg font-bold text-primary tracking-tight">
-                  {getTranslation('signatureTitle', language)}
-                </h2>
-                <Star className="h-4 w-4 text-primary fill-primary" />
-              </div>
+      <div className="container mx-auto px-4 lg:flex lg:gap-6">
+        {/* Desktop category sidebar */}
+        <aside
+          className="hidden lg:block w-56 shrink-0 sticky overflow-y-auto pt-4"
+          style={{
+            top: headerHeight + searchBarHeight,
+            maxHeight: `calc(100vh - ${headerHeight + searchBarHeight}px)`,
+          }}
+        >
+          <nav className="space-y-1 pb-6">
+            {/* All categories button */}
+            <button
+              onClick={() => setSelectedCategory('all')}
+              className={`
+                w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors duration-200
+                ${
+                  selectedCategory === 'all'
+                    ? 'bg-primary/10 text-primary font-medium'
+                    : 'text-muted-foreground hover:bg-muted'
+                }
+              `}
+            >
+              <UtensilsCrossed className="h-4 w-4 shrink-0" />
+              <span className="truncate">{getTranslation('allCategories', language)}</span>
+              <span className="ml-auto text-xs text-muted-foreground">
+                ({initialItems.length})
+              </span>
+            </button>
 
-              {/* Glass morphism card wrapper */}
-              <div className="rounded-xl backdrop-blur-sm bg-white/30 dark:bg-black/20 p-3 md:p-4">
-                <motion.div
-                  className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4"
-                  variants={staggerContainer}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, margin: '-40px' }}
-                >
-                  {signatureItems.map((item) => (
-                    <motion.div key={item.id} variants={fadeInUp}>
-                      <CocktailCard
-                        item={item as CocktailMenuItem}
-                        language={language}
-                      />
-                    </motion.div>
-                  ))}
-                </motion.div>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
+            {/* Divider */}
+            <div className="h-px bg-border mx-3 my-2" />
 
-      {/* ---------------------------------------------------------------- */}
-      {/* Menu Items                                                      */}
-      {/* ---------------------------------------------------------------- */}
-      <main className="container mx-auto px-4 py-6">
-        {groupedItems.length === 0 ? (
-          <div className="text-center py-16">
-            <UtensilsCrossed className="h-14 w-14 mx-auto text-muted-foreground/50 mb-4" />
-            <p className="text-muted-foreground text-lg">
-              {searchQuery.trim()
-                ? getTranslation('noSearchResults', language)
-                : getTranslation('noItems', language)}
-            </p>
-          </div>
-        ) : (
-          <div className="space-y-8">
-            {groupedItems.map(([categoryName, items], catIdx) => (
-              <section key={categoryName} className="space-y-4">
-                {/* Section header: gold line - title - gold line */}
-                <div className="flex items-center gap-4">
-                  <div className="h-px flex-1 bg-primary/80/60" />
-                  <h2 className="text-lg md:text-xl font-bold text-center whitespace-nowrap text-foreground/90">
-                    {categoryName}
-                  </h2>
-                  <div className="h-px flex-1 bg-primary/80/60" />
-                </div>
+            {/* Food group */}
+            {foodCategories.length > 0 && (
+              <>
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-3 py-2">
+                  {getTranslation('food', language)}
+                </p>
+                {foodCategories.map((cat) => {
+                  const isActive = selectedCategory === cat.id
+                  const CategoryIcon = getCategoryIcon(cat.name_en)
+                  const count = categoryItemCounts.get(cat.id) ?? 0
+                  return (
+                    <button
+                      key={cat.id}
+                      onClick={() => setSelectedCategory(cat.id)}
+                      className={`
+                        w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors duration-200
+                        ${
+                          isActive
+                            ? 'bg-primary/10 text-primary font-medium'
+                            : 'text-muted-foreground hover:bg-muted'
+                        }
+                      `}
+                    >
+                      <CategoryIcon className="h-4 w-4 shrink-0" />
+                      <span className="truncate">{getCategoryLabel(cat)}</span>
+                      <span className="ml-auto text-xs text-muted-foreground">({count})</span>
+                    </button>
+                  )
+                })}
+              </>
+            )}
 
-                {/* Items grid with staggered animation */}
-                <motion.div
-                  className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4"
-                  variants={staggerContainer}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, margin: '-40px' }}
-                >
-                  {items.map((item) => {
-                    const cocktailItem = item as DigitalMenuItem & {
-                      glass_type?: string
-                    }
-                    return (
-                      <motion.div key={item.id} variants={fadeInUp}>
-                        {cocktailItem.glass_type ? (
+            {/* Divider */}
+            {foodCategories.length > 0 && drinkCategories.length > 0 && (
+              <div className="h-px bg-border mx-3 my-2" />
+            )}
+
+            {/* Drinks group */}
+            {drinkCategories.length > 0 && (
+              <>
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-3 py-2">
+                  {getTranslation('drinks', language)}
+                </p>
+                {drinkCategories.map((cat) => {
+                  const isActive = selectedCategory === cat.id
+                  const CategoryIcon = getCategoryIcon(cat.name_en)
+                  const count = categoryItemCounts.get(cat.id) ?? 0
+                  return (
+                    <button
+                      key={cat.id}
+                      onClick={() => setSelectedCategory(cat.id)}
+                      className={`
+                        w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors duration-200
+                        ${
+                          isActive
+                            ? 'bg-primary/10 text-primary font-medium'
+                            : 'text-muted-foreground hover:bg-muted'
+                        }
+                      `}
+                    >
+                      <CategoryIcon className="h-4 w-4 shrink-0" />
+                      <span className="truncate">{getCategoryLabel(cat)}</span>
+                      <span className="ml-auto text-xs text-muted-foreground">({count})</span>
+                    </button>
+                  )
+                })}
+              </>
+            )}
+          </nav>
+        </aside>
+
+        {/* Main content area */}
+        <div className="flex-1 min-w-0">
+          {/* ---------------------------------------------------------------- */}
+          {/* Signature Cocktails                                             */}
+          {/* ---------------------------------------------------------------- */}
+          {signatureItems.length > 0 && !searchQuery.trim() && (
+            <section className="pt-6">
+              <div className="rounded-2xl border border-primary/20 dark:border-primary/40 overflow-hidden">
+                {/* Glass morphism container */}
+                <div className="bg-gradient-to-r from-primary/10 via-accent/8 to-destructive/5 dark:from-primary/15 dark:via-accent/10 dark:to-destructive/8 backdrop-blur-sm p-4 md:p-6 space-y-4">
+                  {/* Title */}
+                  <div className="flex items-center justify-center gap-2">
+                    <Star className="h-4 w-4 text-primary fill-primary" />
+                    <h2 className="text-lg font-bold text-primary tracking-tight">
+                      {getTranslation('signatureTitle', language)}
+                    </h2>
+                    <Star className="h-4 w-4 text-primary fill-primary" />
+                  </div>
+
+                  {/* Glass morphism card wrapper */}
+                  <div className="rounded-xl backdrop-blur-sm bg-white/30 dark:bg-black/20 p-3 md:p-4">
+                    <motion.div
+                      className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-3 md:gap-4"
+                      variants={staggerContainer}
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: true, margin: '-40px' }}
+                    >
+                      {signatureItems.map((item) => (
+                        <motion.div key={item.id} variants={fadeInUp}>
                           <CocktailCard
                             item={item as CocktailMenuItem}
                             language={language}
                           />
-                        ) : (
-                          <DigitalMenuItemCard
-                            item={item}
-                            language={language}
-                          />
-                        )}
-                      </motion.div>
-                    )
-                  })}
-                </motion.div>
+                        </motion.div>
+                      ))}
+                    </motion.div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          )}
 
-                {/* Ad between categories (show after every 2nd category) */}
-                {catIdx > 0 && catIdx % 2 === 1 && (
-                  <AdRenderer page="digital_menu" placement="between_categories" lang={language} />
-                )}
-              </section>
-            ))}
-          </div>
-        )}
-      </main>
+          {/* ---------------------------------------------------------------- */}
+          {/* Menu Items                                                      */}
+          {/* ---------------------------------------------------------------- */}
+          <main className="py-6">
+            {groupedItems.length === 0 ? (
+              <div className="text-center py-16">
+                <UtensilsCrossed className="h-14 w-14 mx-auto text-muted-foreground/50 mb-4" />
+                <p className="text-muted-foreground text-lg">
+                  {searchQuery.trim()
+                    ? getTranslation('noSearchResults', language)
+                    : getTranslation('noItems', language)}
+                </p>
+              </div>
+            ) : (
+              <div className="space-y-8">
+                {groupedItems.map(([categoryName, items], catIdx) => (
+                  <section key={categoryName} className="space-y-4">
+                    {/* Section header: gold line - title - gold line */}
+                    <div className="flex items-center gap-4">
+                      <div className="h-px flex-1 bg-primary/60" />
+                      <h2 className="text-lg md:text-xl font-bold text-center whitespace-nowrap text-foreground/90">
+                        {categoryName}
+                      </h2>
+                      <div className="h-px flex-1 bg-primary/60" />
+                    </div>
+
+                    {/* Items grid with staggered animation */}
+                    <motion.div
+                      className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-3 md:gap-4"
+                      variants={staggerContainer}
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: true, margin: '-40px' }}
+                    >
+                      {items.map((item) => {
+                        const cocktailItem = item as DigitalMenuItem & {
+                          glass_type?: string
+                        }
+                        return (
+                          <motion.div key={item.id} variants={fadeInUp}>
+                            {cocktailItem.glass_type ? (
+                              <CocktailCard
+                                item={item as CocktailMenuItem}
+                                language={language}
+                              />
+                            ) : (
+                              <DigitalMenuItemCard
+                                item={item}
+                                language={language}
+                              />
+                            )}
+                          </motion.div>
+                        )
+                      })}
+                    </motion.div>
+
+                    {/* Ad between categories (show after every 2nd category) */}
+                    {catIdx > 0 && catIdx % 2 === 1 && (
+                      <AdRenderer page="digital_menu" placement="between_categories" lang={language} />
+                    )}
+                  </section>
+                ))}
+              </div>
+            )}
+          </main>
+        </div>
+      </div>
 
       {/* ---------------------------------------------------------------- */}
       {/* Footer                                                          */}
       {/* ---------------------------------------------------------------- */}
-      <footer className="border-t border-primary/20/40 dark:border-primary/30 bg-muted/30 mt-12">
+      <footer className="border-t border-primary/20 dark:border-primary/30 bg-muted/30 mt-12">
         <div className="container mx-auto px-4 py-10 space-y-4">
           {/* Logo + name */}
           <div className="flex items-center justify-center gap-2.5">

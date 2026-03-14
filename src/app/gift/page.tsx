@@ -64,8 +64,8 @@ export default async function GiftPage() {
 
       {/* Purchase form in glass container */}
       <main className="relative z-30 -mt-16 px-4 pb-12">
-        <div className="max-w-lg mx-auto">
-          <div className="bg-card/50 backdrop-blur-sm border border-border/40 rounded-2xl p-6 sm:p-8 shadow-xl">
+        <div className="max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto">
+          <div className="bg-card/50 backdrop-blur-sm border border-border/40 rounded-2xl p-6 sm:p-8 lg:p-10 shadow-xl">
             <CouponPurchaseForm />
           </div>
         </div>
@@ -73,7 +73,7 @@ export default async function GiftPage() {
 
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border/30">
-        <div className="max-w-lg mx-auto text-center text-xs text-muted-foreground space-y-1">
+        <div className="max-w-lg lg:max-w-2xl mx-auto text-center text-xs text-muted-foreground space-y-1">
           <p>{t('footerAddress')}</p>
         </div>
       </footer>

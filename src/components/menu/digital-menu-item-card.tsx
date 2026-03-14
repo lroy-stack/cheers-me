@@ -105,12 +105,12 @@ export function DigitalMenuItemCard({
               <div className="p-2 space-y-1">
                 {/* Name + Price row */}
                 <div className="flex items-start justify-between gap-1">
-                  <h3 className="text-xs font-semibold leading-tight line-clamp-2 flex-1 min-w-0">
+                  <h3 className="text-xs md:text-sm font-semibold leading-tight line-clamp-2 flex-1 min-w-0">
                     {name}
                   </h3>
                   <div className="flex items-center gap-0.5 shrink-0 text-primary">
                     <Euro className="h-3 w-3" />
-                    <span className="font-bold text-xs">
+                    <span className="font-bold text-xs md:text-sm">
                       {item.price.toFixed(2)}
                     </span>
                   </div>
@@ -118,7 +118,7 @@ export function DigitalMenuItemCard({
 
                 {/* Description (1 line) */}
                 {description && (
-                  <p className="text-[10px] leading-snug text-muted-foreground line-clamp-1">
+                  <p className="text-[10px] md:text-xs leading-snug text-muted-foreground line-clamp-1">
                     {description}
                   </p>
                 )}
