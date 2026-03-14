@@ -596,7 +596,9 @@ function generateNewsletterHTML(
   language: string
 ): string {
   const translations = getNewsletterTranslations(language)
-  const greeting = subscriberName ? `${translations.hello} ${subscriberName}` : translations.hello
+  const safeSubscriberName = subscriberName ? escapeHtml(subscriberName) : undefined
+  const safeContent = escapeHtml(content)
+  const greeting = safeSubscriberName ? `${translations.hello} ${safeSubscriberName}` : translations.hello
 
   return `
 <!DOCTYPE html>
@@ -692,7 +694,7 @@ function generateNewsletterHTML(
 
     <div class="greeting">${greeting}!</div>
 
-    <div class="content">${content}</div>
+    <div class="content">${safeContent}</div>
 
     <div class="social-links">
       <p style="margin-bottom: 15px; color: #111827; font-weight: 600;">
@@ -736,12 +738,14 @@ function generateNewsletterText(
   language: string
 ): string {
   const translations = getNewsletterTranslations(language)
-  const greeting = subscriberName ? `${translations.hello} ${subscriberName}` : translations.hello
+  const safeSubscriberName = subscriberName ? escapeHtml(subscriberName) : undefined
+  const safeContent = escapeHtml(content)
+  const greeting = safeSubscriberName ? `${translations.hello} ${safeSubscriberName}` : translations.hello
 
   return `
 ${greeting}!
 
-${content}
+${safeContent}
 
 -----------------------------------
 

@@ -204,7 +204,7 @@ export function DigitalMenuClient({
     if (!el) return
     const observer = new ResizeObserver((entries) => {
       for (const entry of entries) {
-        setHeaderHeight(entry.contentRect.height)
+        setHeaderHeight(entry.target.getBoundingClientRect().height)
       }
     })
     observer.observe(el)

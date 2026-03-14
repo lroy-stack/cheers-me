@@ -38,17 +38,23 @@ const updateEmployeeSchema = z.object({
   }).optional(),
 })
 
-/** Decrypt SSN field in employee record */
-function decryptEmployeeSSN<T extends { social_security_number?: string | null }>(
-  employee: T
-): T {
-  if (employee.social_security_number) {
-    return {
-      ...employee,
-      social_security_number: decryptString(employee.social_security_number),
-    }
+/** Decrypt sensitive fields (SSN, DNI/NIE, IBAN) in employee record */
+function decryptEmployeeSensitiveData<T extends {
+  social_security_number?: string | null
+  dni_nie?: string | null
+  iban?: string | null
+}>(employee: T): T {
+  const result = { ...employee }
+  if (result.social_security_number) {
+    result.social_security_number = decryptString(result.social_security_number)
   }
-  return employee
+  if (result.dni_nie) {
+    result.dni_nie = decryptString(result.dni_nie)
+  }
+  if (result.iban) {
+    result.iban = decryptString(result.iban)
+  }
+  return result
 }
 
 /**
@@ -99,7 +105,7 @@ export async function GET(
   }
 
   // Decrypt SSN before returning
-  return NextResponse.json(decryptEmployeeSSN(employee))
+  return NextResponse.json(decryptEmployeeSensitiveData(employee))
 }
 
 /**
@@ -163,10 +169,20 @@ export async function PATCH(
     .eq('id', id)
     .single()
 
-  // Encrypt SSN if provided
+  // Encrypt sensitive fields if provided
   if ('social_security_number' in employeeData) {
     if (employeeData.social_security_number) {
       employeeData.social_security_number = encryptString(employeeData.social_security_number)
+    }
+  }
+  if ('dni_nie' in employeeData) {
+    if (employeeData.dni_nie) {
+      employeeData.dni_nie = encryptString(employeeData.dni_nie)
+    }
+  }
+  if ('iban' in employeeData) {
+    if (employeeData.iban) {
+      employeeData.iban = encryptString(employeeData.iban)
     }
   }
 
@@ -248,7 +264,7 @@ export async function PATCH(
   }
 
   // Decrypt SSN before returning
-  return NextResponse.json(decryptEmployeeSSN(updatedEmployee))
+  return NextResponse.json(decryptEmployeeSensitiveData(updatedEmployee))
 }
 
 /**

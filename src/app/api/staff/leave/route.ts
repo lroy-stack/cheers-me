@@ -1,5 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
-import { requireAuth } from '@/lib/utils/auth'
+import { requireAuth, type UserRole } from '@/lib/utils/auth'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -77,6 +77,24 @@ export async function POST(request: NextRequest) {
       { error: 'Validation failed', details: validation.error.errors },
       { status: 400 }
     )
+  }
+
+  // Ownership check: non-privileged users can only create leave requests for themselves
+  const privilegedRoles: UserRole[] = ['admin', 'owner', 'manager']
+  if (!privilegedRoles.includes(authResult.data.profile.role as UserRole)) {
+    const supabaseCheck = await createClient()
+    const { data: employee } = await supabaseCheck
+      .from('employees')
+      .select('profile_id')
+      .eq('id', validation.data.employee_id)
+      .single()
+
+    if (!employee || employee.profile_id !== authResult.data.user.id) {
+      return NextResponse.json(
+        { error: 'Forbidden: you can only create leave requests for yourself' },
+        { status: 403 }
+      )
+    }
   }
 
   const supabase = await createClient()

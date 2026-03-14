@@ -117,11 +117,15 @@ The AI system lives in `src/lib/ai/` and is the most complex subsystem:
 
 ## Database
 
-~60+ tables across 69 migrations. Key table groups:
+~120+ tables/views across 129 migrations. Key table groups:
 - **Auth/Users**: `profiles`, `employees`
-- **Operations**: `menu_items`, `recipes`, `stock`, `stock_movements`, `sales`, `pos_transactions`, `reservations`, `events`, `staff_shifts`, `schedule_plans`
+- **Operations**: `menu_items`, `menu_categories`, `cocktail_recipes`, `products`, `stock_movements`, `daily_sales`, `reservations`, `events`, `shifts`, `schedule_plans`
 - **AI**: `ai_conversations`, `ai_conversation_messages`, `ai_pending_actions`, `ai_audit_log`, `ai_tool_executions`, `ai_subagent_tasks`
-- **CRM**: `customers`, `reviews`, `loyalty_rewards`
+- **CRM**: `customers`, `customer_reviews`, `loyalty_rewards`
+- **Finance**: `daily_financials`, `cash_register_closes`, `tax_declarations`, `overhead_expenses`
+- **Staff**: `shifts`, `shift_templates`, `leave_requests`, `leave_entitlements`, `clock_in_out`, `training_materials`, `training_records`
+- **Gift/Coupons**: `gift_coupons`, `gift_coupon_redemptions`
+- **POS**: `pos_integrations`, `pos_sync_log`, `pos_item_mappings`
 
 All tables use Row-Level Security (RLS). Admin client (`createAdminClient()`) bypasses RLS for server-side operations.
 

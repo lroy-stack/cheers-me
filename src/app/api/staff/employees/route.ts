@@ -30,17 +30,23 @@ const createEmployeeSchema = z.object({
   grupo_cotizacion: z.number().int().min(1).max(11).nullable().optional(),
 })
 
-/** Decrypt SSN field in employee record (or array of records) */
-function decryptEmployeeSSN<T extends { social_security_number?: string | null }>(
-  employee: T
-): T {
-  if (employee.social_security_number) {
-    return {
-      ...employee,
-      social_security_number: decryptString(employee.social_security_number),
-    }
+/** Decrypt sensitive fields (SSN, DNI/NIE, IBAN) in employee record */
+function decryptEmployeeSensitiveData<T extends {
+  social_security_number?: string | null
+  dni_nie?: string | null
+  iban?: string | null
+}>(employee: T): T {
+  const result = { ...employee }
+  if (result.social_security_number) {
+    result.social_security_number = decryptString(result.social_security_number)
   }
-  return employee
+  if (result.dni_nie) {
+    result.dni_nie = decryptString(result.dni_nie)
+  }
+  if (result.iban) {
+    result.iban = decryptString(result.iban)
+  }
+  return result
 }
 
 /**
@@ -91,7 +97,7 @@ export async function GET(request: NextRequest) {
   }
 
   // Decrypt SSN for each employee before returning
-  const decrypted = (employees ?? []).map(decryptEmployeeSSN)
+  const decrypted = (employees ?? []).map(decryptEmployeeSensitiveData)
 
   return NextResponse.json(decrypted)
 }
@@ -146,10 +152,12 @@ export async function POST(request: NextRequest) {
     )
   }
 
-  // Encrypt SSN before storage
+  // Encrypt sensitive fields before storage
   const encryptedSSN = validation.data.social_security_number
     ? encryptString(validation.data.social_security_number)
     : null
+  const encryptedDNI = validation.data.dni_nie ? encryptString(validation.data.dni_nie) : null
+  const encryptedIBAN = validation.data.iban ? encryptString(validation.data.iban) : null
 
   // Create employee record
   const { data: newEmployee, error } = await supabase
@@ -165,6 +173,8 @@ export async function POST(request: NextRequest) {
       contract_end_date: validation.data.contract_end_date ?? null,
       irpf_retention: validation.data.irpf_retention ?? null,
       social_security_number: encryptedSSN,
+      dni_nie: encryptedDNI,
+      iban: encryptedIBAN,
       convenio_colectivo: validation.data.convenio_colectivo ?? null,
       categoria_profesional: validation.data.categoria_profesional ?? null,
       tipo_jornada: validation.data.tipo_jornada ?? 'completa',
@@ -191,5 +201,5 @@ export async function POST(request: NextRequest) {
   }
 
   // Decrypt SSN in response
-  return NextResponse.json(decryptEmployeeSSN(newEmployee), { status: 201 })
+  return NextResponse.json(decryptEmployeeSensitiveData(newEmployee), { status: 201 })
 }
