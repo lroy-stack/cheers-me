@@ -2,6 +2,7 @@
 
 import { useBookingLanguage } from './booking-language-provider'
 import { ThemeToggle } from '@/components/theme-toggle'
+import Image from 'next/image'
 
 export default function BookingFooter() {
   const { t } = useBookingLanguage()
@@ -15,8 +16,13 @@ export default function BookingFooter() {
   return (
     <footer className="relative overflow-hidden bg-muted">
       <div className="relative z-10">
+        {/* Brand logo */}
+        <div className="text-center mb-8 pt-12 sm:pt-14">
+          <Image src="/logofooter.png" alt="Cheers Mallorca" width={200} height={100} className="mx-auto" />
+        </div>
+
         {/* Contact grid */}
-        <div className="py-12 sm:py-14 px-4">
+        <div className="pb-12 sm:pb-14 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
               {/* Visit Us */}

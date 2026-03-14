@@ -6,8 +6,8 @@
     "ogDescription": "Reserveer je tafel bij GrandCafe Cheers, de beste strandrestaurant-ervaring in El Arenal, Mallorca."
   },
   "hero": {
-    "title": "GrandCafe Cheers",
-    "tagline": "Wereldkeuken, groot feest!",
+    "title": "Cheers Mallorca",
+    "tagline": "Food · Drinks · Sports",
     "description": "El Arenal, Platja de Palma, Mallorca — Jouw strandbestemming voor wereldkeuken, cocktails, sport en live DJ-avonden.",
     "ratingBadge": "4.8/5 Google",
     "hoursBadge": "Open 10:30 — 03:00",
@@ -208,5 +208,19 @@
     "reclamaciones": "Klachtenboek beschikbaar in het etablissement",
     "seasonDates": "1 april – 1 november",
     "dailyHours": "10:30 – 03:00 dagelijks"
+  },
+  "about": {
+    "heading": "Welkom bij Cheers",
+    "paragraph1": "Jouw strandbestemming aan Platja de Palma, El Arenal. Waar wereldkeuken de beste cocktails en de beste sfeer van het eiland ontmoet.",
+    "paragraph2": "Van ons World Kitchen menu met burgers, pasta en salades tot 50+ ambachtelijke cocktails — elk bezoek is een feest.",
+    "paragraph3": "15 schermen voor live sport, DJ's elke avond vanaf 22:00, en het warmste team op de boulevard. Cheers to you!"
+  },
+  "work": {
+    "heading": "Word Deel van Ons Team",
+    "subtitle": "Seizoen 2026 — April tot November",
+    "description": "We zoeken enthousiaste mensen voor ons strandteam. Minimaal 4 weken, een onvergetelijke zomer.",
+    "positions": "Bartenders · Bediening · Promoters · DJs",
+    "cta": "Nu Solliciteren",
+    "email": "work@cheersmallorca.com"
   }
 }

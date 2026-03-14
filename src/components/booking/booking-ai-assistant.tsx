@@ -1,11 +1,12 @@
 'use client'
 
 import { motion, AnimatePresence } from 'framer-motion'
-import { MessageCircle, X, Send, Sparkles } from 'lucide-react'
+import { X, Send, Sparkles } from 'lucide-react'
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { useBookingLanguage } from './booking-language-provider'
 import type { BookingFormData } from './types'
 import { Button } from '@/components/ui/button'
+import Image from 'next/image'
 
 interface Message {
   role: 'user' | 'assistant'
@@ -108,7 +109,7 @@ export default function BookingAIAssistant({ onApplySuggestion }: BookingAIAssis
             </motion.div>
           ) : (
             <motion.div key="open" initial={{ rotate: 90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: -90, opacity: 0 }}>
-              <MessageCircle className="w-6 h-6" />
+              <Image src="/logoheader.png" alt="AI Assistant" width={24} height={24} className="rounded-sm" />
             </motion.div>
           )}
         </AnimatePresence>

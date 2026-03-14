@@ -6,6 +6,7 @@ interface WebConfig {
   booking_enabled: boolean
   kiosk_enabled: boolean
   digital_menu_enabled: boolean
+  careers_enabled: boolean
 }
 
 const DEFAULTS: WebConfig = {
@@ -14,6 +15,7 @@ const DEFAULTS: WebConfig = {
   booking_enabled: true,
   kiosk_enabled: true,
   digital_menu_enabled: true,
+  careers_enabled: false,
 }
 
 /**

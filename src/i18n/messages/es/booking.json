@@ -6,8 +6,8 @@
     "ogDescription": "Reserva tu mesa en GrandCafe Cheers, la mejor experiencia gastronómica frente al mar en El Arenal, Mallorca."
   },
   "hero": {
-    "title": "GrandCafe Cheers",
-    "tagline": "¡Cocina del mundo, gran fiesta!",
+    "title": "Cheers Mallorca",
+    "tagline": "Food · Drinks · Sports",
     "description": "El Arenal, Platja de Palma, Mallorca — Tu destino frente al mar para cocina del mundo, cócteles, deportes y noches de DJ en vivo.",
     "ratingBadge": "4.8/5 Google",
     "hoursBadge": "Abierto 10:30 — 03:00",
@@ -208,5 +208,19 @@
     "reclamaciones": "Hojas de Reclamaciones disponibles en el establecimiento",
     "seasonDates": "1 de abril – 1 de noviembre",
     "dailyHours": "10:30 – 03:00 diario"
+  },
+  "about": {
+    "heading": "Bienvenido a Cheers",
+    "paragraph1": "Tu destino frente a la playa en Platja de Palma, El Arenal. Donde la cocina del mundo se encuentra con los mejores cócteles y el mejor ambiente de la isla.",
+    "paragraph2": "Desde nuestra carta World Kitchen con hamburguesas, pasta y ensaladas hasta más de 50 cócteles artesanales — cada visita es una celebración.",
+    "paragraph3": "15 pantallas para deportes en vivo, DJs cada noche desde las 22:00, y el equipo más cálido del bulevar. ¡Cheers to you!"
+  },
+  "work": {
+    "heading": "Únete al Equipo",
+    "subtitle": "Temporada 2026 — Abril a Noviembre",
+    "description": "Buscamos personas entusiastas para unirse a nuestro equipo de playa. Mínimo 4 semanas, un verano inolvidable.",
+    "positions": "Bartenders · Camareros · Promotores · DJs",
+    "cta": "Solicitar Ahora",
+    "email": "work@cheersmallorca.com"
   }
 }

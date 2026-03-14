@@ -5,6 +5,8 @@ import BookingWizardLoader from '@/components/booking/booking-wizard-loader'
 import ExperienceShowcase from '@/components/booking/experience-showcase'
 import FeaturedCarousel from '@/components/booking/featured-carousel'
 import SocialProof from '@/components/booking/social-proof'
+import AboutSection from '@/components/booking/about-section'
+import WorkSection from '@/components/booking/work-section'
 import BookingFooter from '@/components/booking/booking-footer'
 import FloatingReserveButton from '@/components/booking/floating-reserve-button'
 import { BookingLanguageProvider } from '@/components/booking/booking-language-provider'
@@ -102,17 +104,23 @@ export default async function HomePage() {
         {/* 2. Experience Showcase — full-bleed parallax blocks + stats */}
         <ExperienceShowcase />
 
-        {/* 3. Featured Menu — glass cards + tonight events */}
+        {/* 3. About Us — brand story */}
+        <AboutSection />
+
+        {/* 4. Featured Menu — glass cards + tonight events */}
         <Suspense fallback={null}>
           <FeaturedCarousel />
         </Suspense>
 
-        {/* 4. Booking Wizard — the star */}
+        {/* 5. Booking Wizard — the star */}
         <main id="booking-wizard">
           <BookingWizardLoader />
         </main>
 
-        {/* 5. Trust & Community — dark section with reviews, newsletter, gift */}
+        {/* 6. Work/Careers — activable from admin */}
+        <WorkSection enabled={webConfig.careers_enabled} />
+
+        {/* 7. Trust & Community — reviews, newsletter, gift */}
         <SocialProof />
 
         {/* 6. Footer */}

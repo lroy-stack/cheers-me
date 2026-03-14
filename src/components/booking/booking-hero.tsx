@@ -19,6 +19,7 @@ export default function BookingHero() {
   // Hero fades out, scales down, and blurs as user scrolls
   const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0])
   const scale = useTransform(scrollYProgress, [0, 0.7], [1, 0.95])
+  const rotate = useTransform(scrollYProgress, [0, 1], [0, 360])
 
   const scrollToWizard = () => {
     document.getElementById('booking-wizard')?.scrollIntoView({ behavior: 'smooth' })
@@ -38,6 +39,8 @@ export default function BookingHero() {
         />
         {/* Sophisticated radial gradient overlay */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.25)_0%,rgba(0,0,0,0.65)_70%,rgba(0,0,0,0.8)_100%)]" />
+        {/* Warm amber tint */}
+        <div className="absolute inset-0 bg-primary/25 mix-blend-multiply" />
       </div>
 
       {/* Content — sticky with scroll transforms */}
@@ -57,20 +60,22 @@ export default function BookingHero() {
           </div>
         </motion.div>
 
-        {/* Logo — blur-in */}
+        {/* Logo — blur-in with scroll-linked rotation */}
         <motion.div
           initial={{ opacity: 0, filter: 'blur(12px)' }}
           animate={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 0.8 }}
           className="mb-6 sm:mb-8"
         >
-          <Image
-            src={logoUrl}
-            alt="GrandCafe Cheers"
-            width={80}
-            height={80}
-            className="mx-auto rounded-2xl shadow-2xl sm:w-[90px] sm:h-[90px]"
-          />
+          <motion.div style={{ rotate }}>
+            <Image
+              src={logoUrl}
+              alt="GrandCafe Cheers"
+              width={120}
+              height={120}
+              className="mx-auto rounded-2xl shadow-2xl"
+            />
+          </motion.div>
         </motion.div>
 
         {/* Title — extralight, dramatic */}
@@ -79,7 +84,7 @@ export default function BookingHero() {
           animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
           data-testid="hero-title"
-          className="text-5xl sm:text-6xl lg:text-7xl font-light text-white text-shadow-hero tracking-tight text-center leading-[1.05]"
+          className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white text-shadow-hero tracking-[0.15em] uppercase text-center"
         >
           {t('hero.title')}
         </motion.h1>
@@ -89,7 +94,7 @@ export default function BookingHero() {
           initial={{ opacity: 0, filter: 'blur(8px)', y: 15 }}
           animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="mt-3 sm:mt-4 text-lg sm:text-xl font-light text-white/65 text-center max-w-lg"
+          className="mt-3 sm:mt-4 tracking-[0.3em] text-xs sm:text-sm uppercase font-light text-white/65 text-center max-w-lg"
         >
           {t('hero.tagline')}
         </motion.p>
