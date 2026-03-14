@@ -13,7 +13,7 @@
 |---------|--------|-------------|
 | Dashboard | `/dashboard` | Resumen: staff activo, reservas, stock alerts, perfil |
 | Mi Horario | `/staff/my-schedule` | 4 tabs: Schedule (semana), Tasks, Hours, Leave |
-| Time Clock | `/staff/clock` | Clock in/out, breaks, historial, survey post-turno |
+| My Hours | `/staff/clock` | Visualizacion de horas trabajadas, historial de fichajes (SOLO LECTURA — clock in/out se hace UNICAMENTE desde la tablet/kiosk del restaurante) |
 | Tareas | `/staff/tasks` | Ver/completar tareas asignadas, compliance fichas |
 | Recursos | `/staff/resources` | Guias de formacion, tests, certificados |
 | Documentos | `/staff/documents` | Contratos, nominas (solo lectura) |
@@ -80,15 +80,18 @@
 ## 4. Layout de la App — Tab Bar (5 tabs)
 
 ```
-[ Home ]  [ Schedule ]  [ Clock ]  [ Chat ]  [ More ]
+[ Home ]  [ Schedule ]  [ Hours ]  [ Chat ]  [ More ]
 ```
+
+> **IMPORTANTE:** Clock in/out se hace UNICAMENTE desde la tablet del restaurante (kiosk con PIN).
+> La app movil NO permite fichar. El tab "Hours" es solo visualizacion de horas trabajadas.
 
 ### Tab 1: Home
 - Card "Next Shift": fecha, hora, countdown
 - Anuncios del management (banner)
 - Stats rapidos: horas esta semana, dias libres
 - Widget de clima (critico para beach bar)
-- Accesos rapidos a clock-in, horario
+- Accesos rapidos a mis horas, horario, compartir
 
 ### Tab 2: Schedule
 - Top: Franja horizontal de semana (Lun-Dom) con puntos de turnos
@@ -97,13 +100,15 @@
 - Tap turno → detalle + opcion de swap
 - Filtro: semana/mes
 
-### Tab 3: Clock (central, prominente)
-- Boton circular grande: verde "Clock In" / rojo "Clock Out"
-- Slide-to-confirm para clock-out (previene taps accidentales)
-- Timer en vivo cuando esta fichado
-- Indicador de geofence: check verde = en restaurante
-- Botones Start Break / End Break
-- Survey post-turno al hacer clock-out
+### Tab 3: Hours (central, solo lectura)
+> Clock in/out se hace UNICAMENTE desde la tablet/kiosk del restaurante con PIN.
+> Esta tab es solo para CONSULTAR horas trabajadas.
+
+- Si esta fichado ahora: badge "Working" + timer en vivo (read-only, info del kiosk)
+- Horas esta semana / este mes (netas, breaks descontados)
+- Historial de fichajes: fecha, entrada, salida, breaks, duracion
+- NO hay botones de fichar
+- NO hay survey post-turno (eso ocurre en el kiosk al hacer clock-out)
 
 ### Tab 4: Chat
 - Anuncios (unidireccional desde management)
@@ -156,11 +161,15 @@
 - Auth (login con credenciales Supabase existentes)
 - Home screen con next shift + anuncios
 - Schedule viewing (mi semana/mes)
-- Clock in/out con geofence
+- My Hours: visualizacion de horas trabajadas + historial de fichajes (SOLO LECTURA)
 - Push notifications (shift reminders + schedule published)
 - Profile management (nombre, telefono, avatar, idioma)
+- Anadir turno al calendario iOS
+- Compartir horario por WhatsApp/share sheet
 - 4 idiomas (NL/EN/ES/DE)
 - Dark/light mode
+
+> NOTA: Clock in/out NO esta en la app. Se hace desde la tablet del restaurante (kiosk con PIN).
 
 ### Fase 2 (4 semanas)
 - Shift swap requests
