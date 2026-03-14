@@ -84,9 +84,9 @@ export function MonthlyRegistryView() {
   }
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 min-w-0 overflow-hidden">
       {/* Month Navigation */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-2">
           <Button variant="outline" size="icon" onClick={prevMonth}>
             <ChevronLeft className="h-4 w-4" />
@@ -100,7 +100,7 @@ export function MonthlyRegistryView() {
         </div>
 
         {registry && (
-          <div className="flex gap-4 text-sm text-muted-foreground">
+          <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
             <span>{t('schedule.totalLabel')}: <b>{registry.grand_total.hours.toFixed(1)}h</b></span>
             <span>{t('schedule.costLabel')}: <b>{registry.grand_total.cost.toFixed(0)}</b></span>
             <span>{t('schedule.overtimeLabel')}: <b>{registry.grand_total.overtime.toFixed(1)}h</b></span>
@@ -197,7 +197,7 @@ export function MonthlyRegistryView() {
             <CardTitle className="text-sm">{t('schedule.departmentTotals')}</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid gap-3 md:grid-cols-3">
+            <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
               {Object.entries(registry.role_totals)
                 .sort(([a], [b]) => {
                   const aOrder = ROLE_DEPARTMENT_MAP[a as keyof typeof ROLE_DEPARTMENT_MAP]?.order || 99
