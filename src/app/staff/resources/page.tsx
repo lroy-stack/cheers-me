@@ -130,11 +130,32 @@ export default function ResourcesPage() {
         .map((a) => a.guide_code)
     )
 
+    // Also include mandatory guides for the user's role that aren't completed
+    const completedCodes = new Set(
+      records
+        .filter((r) => r.action === 'test_passed')
+        .map((r) => r.guide_code)
+    )
+
+    const mandatoryCodes = new Set(
+      (trainingMaterials || [])
+        .filter((m: { is_mandatory: boolean; guide_code: string }) => m.is_mandatory)
+        .map((m: { guide_code: string }) => m.guide_code)
+    )
+
     return GUIDES.filter((guide) => {
+      // Already completed — don't show
+      if (completedCodes.has(guide.code)) return false
+      // Explicitly assigned and not completed
       if (assignedCodes.has(guide.code)) return true
+      // Mandatory for this role (or universal) and not completed
+      if (mandatoryCodes.has(guide.code)) {
+        if (guide.applicableRoles.length === 0) return true // universal
+        if (userRole && guide.applicableRoles.includes(userRole)) return true
+      }
       return false
     })
-  }, [assignments])
+  }, [assignments, records, trainingMaterials, userRole])
 
   // Certified guides: guides where user has test_passed records
   const certifiedGuides = useMemo(() => {

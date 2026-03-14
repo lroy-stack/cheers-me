@@ -22,9 +22,10 @@ interface CourseCardProps {
   assignment?: TrainingAssignment
   trainingStatus?: TrainingStatusMap[string]
   onSelect: (guide: GuideMetadata) => void
+  onDownloadCertificate?: (guide: GuideMetadata) => void
 }
 
-export function CourseCard({ guide, assignment, trainingStatus, onSelect }: CourseCardProps) {
+export function CourseCard({ guide, assignment, trainingStatus, onSelect, onDownloadCertificate }: CourseCardProps) {
   const t = useTranslations('resources')
   // Determine status
   const status = trainingStatus || 'not_started'
@@ -70,7 +71,19 @@ export function CourseCard({ guide, assignment, trainingStatus, onSelect }: Cour
   const getCTA = () => {
     if (isCompleted) {
       return (
-        <Button size="sm" variant="outline" onClick={() => onSelect(guide)}>
+        <Button
+          size="sm"
+          variant="outline"
+          onClick={() => {
+            if (onDownloadCertificate) {
+              onDownloadCertificate(guide)
+            } else {
+              // Fallback: direct download via API
+              const lang = document.documentElement.lang || 'en'
+              window.open(`/api/staff/training/certificate/${guide.code}?lang=${lang}`, '_blank')
+            }
+          }}
+        >
           <Download className="h-4 w-4 mr-1" />
           {t('course.downloadCertificate')}
         </Button>
