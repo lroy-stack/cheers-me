@@ -121,7 +121,7 @@ export default function SocialProof() {
   const { t } = useBookingLanguage()
 
   return (
-    <section className="dark relative py-16 sm:py-20 px-4 bg-background text-foreground overflow-hidden">
+    <section className="relative py-16 sm:py-20 px-4 bg-muted text-foreground overflow-hidden">
       {/* Subtle radial glow using semantic primary token */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,oklch(var(--primary)/0.08)_0%,transparent_60%)]" />
 
@@ -159,7 +159,7 @@ export default function SocialProof() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="shrink-0 w-[300px] sm:w-[340px] snap-start rounded-2xl bg-muted border border-border p-5 sm:p-6"
+              className="shrink-0 w-[280px] sm:w-[320px] snap-start rounded-2xl bg-card border border-border p-5 sm:p-6"
             >
               <div className="flex gap-0.5 mb-3">
                 {Array.from({ length: review.rating }, (_, j) => (

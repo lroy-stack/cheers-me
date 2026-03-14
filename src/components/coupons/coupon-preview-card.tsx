@@ -61,18 +61,18 @@ export default function CouponPreviewCard({ amount, theme, recipientName, messag
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-2.5">
             <Image
-              src="/icons/logoheader.png"
-              alt="GrandCafe Cheers"
+              src="/logofooter.png"
+              alt={t('brandName')}
               width={32}
               height={32}
               className="rounded-md shrink-0 shadow-lg"
             />
             <div>
               <p className={`text-[10px] sm:text-[11px] font-semibold tracking-[0.2em] uppercase ${styles.accent}`}>
-                GIFT VOUCHER
+                {t('giftVoucherLabel')}
               </p>
               <p className="text-[8px] sm:text-[9px] text-foreground/40 mt-0.5">
-                GrandCafe Cheers &middot; Mallorca
+                {t('brandNameShort')}
               </p>
             </div>
           </div>
@@ -101,7 +101,7 @@ export default function CouponPreviewCard({ amount, theme, recipientName, messag
             </p>
           ) : (
             <p className="text-[10px] sm:text-[11px] text-foreground/30 tracking-wider uppercase">
-              El Arenal, Mallorca
+              {t('location')}
             </p>
           )}
           {expiresAt && (

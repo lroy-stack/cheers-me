@@ -306,12 +306,9 @@ export default function CouponPurchaseForm() {
               )
             })()}
 
-            {/* Consumer Protection Disclosures */}
-            <div className="rounded-xl border border-border/30 bg-muted/30 p-4 space-y-2 text-xs text-muted-foreground">
-              <p className="font-medium text-foreground text-sm">{t('traderTitle')}</p>
-              <p>{t('traderIdentity')}</p>
-              <p className="mt-2 font-medium text-foreground">{t('withdrawalTitle')}</p>
-              <p>{t('withdrawalText')}</p>
+            {/* Validity notice */}
+            <div className="rounded-xl border border-border/30 bg-muted/30 p-4 text-xs text-muted-foreground">
+              <p>{t('validityNote')}</p>
             </div>
           </div>
           </motion.div>

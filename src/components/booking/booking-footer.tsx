@@ -1,6 +1,7 @@
 'use client'
 
 import { useBookingLanguage } from './booking-language-provider'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 export default function BookingFooter() {
   const { t } = useBookingLanguage()
@@ -12,7 +13,7 @@ export default function BookingFooter() {
   ]
 
   return (
-    <footer className="dark relative overflow-hidden bg-background">
+    <footer className="relative overflow-hidden bg-muted">
       <div className="relative z-10">
         {/* Contact grid */}
         <div className="py-12 sm:py-14 px-4">
@@ -101,9 +102,12 @@ export default function BookingFooter() {
         {/* Bottom bar */}
         <div className="border-t border-border py-5 px-4">
           <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p className="text-[10px] text-muted-foreground/50">
-              {t('footer.allRights')}
-            </p>
+            <div className="flex items-center gap-3">
+              <ThemeToggle />
+              <p className="text-[10px] text-muted-foreground/50">
+                {t('footer.allRights')}
+              </p>
+            </div>
 
             <nav className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-[10px] text-muted-foreground/50">
               <a href="/digital" className="hover:text-foreground transition-colors">{t('footer.digitalMenu')}</a>

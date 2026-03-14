@@ -19,6 +19,7 @@ const themes: { value: CouponTheme; gradient: string; accentColor: string }[] = 
 
 export default function CouponThemePicker({ selected, onChange }: CouponThemePickerProps) {
   const t = useTranslations('coupons.theme')
+  const tp = useTranslations('coupons.purchase')
 
   return (
     <div className="grid grid-cols-2 gap-3">
@@ -52,9 +53,9 @@ export default function CouponThemePicker({ selected, onChange }: CouponThemePic
                     className="text-[7px] font-bold tracking-[0.15em] uppercase"
                     style={{ color: accentColor }}
                   >
-                    GIFT VOUCHER
+                    {tp('giftVoucherLabel')}
                   </p>
-                  <p className="text-[5px] text-foreground/40">GrandCafe Cheers</p>
+                  <p className="text-[5px] text-foreground/40">{tp('brandName')}</p>
                 </div>
               </div>
 
@@ -68,7 +69,7 @@ export default function CouponThemePicker({ selected, onChange }: CouponThemePic
 
               {/* Bottom: location */}
               <p className="text-[5px] text-center text-foreground/30 relative z-10">
-                El Arenal, Mallorca
+                {tp('location')}
               </p>
             </div>
 

@@ -26,8 +26,8 @@ export default async function GiftPage() {
         {/* Background image with Ken Burns */}
         <div className="absolute inset-0">
           <Image
-            src="/cheers.jpeg"
-            alt="GrandCafe Cheers Mallorca"
+            src="/expresso_martini.jpeg"
+            alt="Gift Voucher"
             fill
             className="object-cover animate-ken-burns"
             sizes="100vw"
@@ -50,10 +50,10 @@ export default async function GiftPage() {
 
         {/* Hero content */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center px-4 text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extralight text-foreground tracking-tight leading-[1.05]">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white text-shadow-hero tracking-tight leading-[1.05]">
             {t('heroTitle')}
           </h1>
-          <p className="mt-3 sm:mt-4 text-base sm:text-lg font-light text-foreground/60 max-w-md">
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg font-light text-white/70 text-shadow-hero max-w-md">
             {t('heroSubtitle')}
           </p>
         </div>
@@ -74,8 +74,7 @@ export default async function GiftPage() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border/30">
         <div className="max-w-lg mx-auto text-center text-xs text-muted-foreground space-y-1">
-          <p>GrandCafe Cheers &middot; Carrer de Cartago 22, El Arenal, Mallorca 07600</p>
-          <p>@cheersmallorca</p>
+          <p>{t('footerAddress')}</p>
         </div>
       </footer>
     </div>

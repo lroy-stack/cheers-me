@@ -1,13 +1,16 @@
+import { getTranslations } from 'next-intl/server'
 import CouponPublicView from '@/components/coupons/coupon-public-view'
 
-export function generateMetadata() {
+export async function generateMetadata() {
+  const t = await getTranslations('coupons.purchase')
   return {
-    title: 'Gift Voucher — GrandCafe Cheers',
+    title: `${t('giftVoucherLabel')} — ${t('brandName')}`,
   }
 }
 
 export default async function GiftCodePage({ params }: { params: Promise<{ code: string }> }) {
   const { code } = await params
+  const t = await getTranslations('coupons.purchase')
 
   return (
     <div className="min-h-screen bg-background">
@@ -23,7 +26,7 @@ export default async function GiftCodePage({ params }: { params: Promise<{ code:
       {/* Header */}
       <div className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground py-6 px-4 print:hidden">
         <div className="max-w-lg mx-auto text-center">
-          <p className="text-primary-foreground text-sm font-semibold tracking-wider">GRANDCAFE CHEERS</p>
+          <p className="text-primary-foreground text-sm font-semibold tracking-wider">{t('brandName').toUpperCase()}</p>
         </div>
       </div>
 
@@ -33,7 +36,7 @@ export default async function GiftCodePage({ params }: { params: Promise<{ code:
 
       <footer className="py-6 px-4 border-t border-border print:hidden">
         <div className="max-w-lg mx-auto text-center text-xs text-muted-foreground">
-          <p>GrandCafe Cheers · El Arenal, Mallorca</p>
+          <p>{t('footerAddress')}</p>
         </div>
       </footer>
     </div>

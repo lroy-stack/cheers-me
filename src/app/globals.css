@@ -167,6 +167,11 @@
   box-shadow: 0 0 24px oklch(var(--primary) / 0.35);
 }
 
+/* Hero text shadow for legibility over images */
+.text-shadow-hero {
+  text-shadow: 0 2px 16px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.3);
+}
+
 /* Fix Radix ScrollArea viewport forcing display:table on inner div, breaking truncation */
 .sidebar-scroll [data-radix-scroll-area-viewport] > div {
   display: block !important;

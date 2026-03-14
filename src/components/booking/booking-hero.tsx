@@ -79,7 +79,7 @@ export default function BookingHero() {
           animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
           data-testid="hero-title"
-          className="text-5xl sm:text-6xl lg:text-7xl font-extralight text-white tracking-tight text-center leading-[1.05]"
+          className="text-5xl sm:text-6xl lg:text-7xl font-light text-white text-shadow-hero tracking-tight text-center leading-[1.05]"
         >
           {t('hero.title')}
         </motion.h1>
