@@ -39,9 +39,9 @@ function getNestedValue(obj: Record<string, unknown>, path: string): string | un
 }
 
 function detectBrowserLanguage(): Language {
-  // First check if there's a NEXT_LOCALE cookie (set by admin panel or previous selection)
+  // Check public locale cookie (separate from admin NEXT_LOCALE)
   if (typeof document !== 'undefined') {
-    const match = document.cookie.match(/NEXT_LOCALE=(\w+)/)
+    const match = document.cookie.match(/CHEERS_LOCALE=(\w+)/)
     if (match && (['en', 'nl', 'es', 'de'] as string[]).includes(match[1])) {
       return match[1] as Language
     }
@@ -70,8 +70,8 @@ export function BookingLanguageProvider({
 
   const setLanguage = useCallback((lang: Language) => {
     setLanguageState(lang)
-    // Sync with next-intl cookie so /gift, /kiosk, etc. use the same language
-    document.cookie = `NEXT_LOCALE=${lang};path=/;max-age=${60 * 60 * 24 * 365};samesite=lax`
+    // Public locale cookie — separate from admin NEXT_LOCALE
+    document.cookie = `CHEERS_LOCALE=${lang};path=/;max-age=${60 * 60 * 24 * 365};samesite=lax`
   }, [])
 
   const t = useCallback(

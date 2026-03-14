@@ -172,7 +172,12 @@ const messagesByLocale = {
 
 export default getRequestConfig(async () => {
   const cookieStore = await cookies()
-  let locale = cookieStore.get('NEXT_LOCALE')?.value as Locale | undefined
+
+  // Public pages (landing, /gift, /digital, /kiosk) use CHEERS_LOCALE
+  // Admin panel uses NEXT_LOCALE — they never interfere with each other
+  const publicLocale = cookieStore.get('CHEERS_LOCALE')?.value as Locale | undefined
+  const adminLocale = cookieStore.get('NEXT_LOCALE')?.value as Locale | undefined
+  let locale = publicLocale || adminLocale
 
   if (!locale || !locales.includes(locale)) {
     locale = defaultLocale
