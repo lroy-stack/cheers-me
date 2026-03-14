@@ -33,7 +33,7 @@ export interface Employee {
   id: string
   profile_id: string
   hourly_rate: number
-  contract_type: 'full_time' | 'part_time' | 'casual' | 'contractor'
+  contract_type: 'full_time' | 'part_time' | 'casual' | 'contractor' | 'indefinido_ordinario' | 'temporal_obra' | 'fijo_discontinuo' | 'formacion' | 'practicas' | 'relevo' | 'interinidad'
   date_hired: string | null
   date_terminated: string | null
   weekly_hours_target: number | null
@@ -48,6 +48,16 @@ export interface Employee {
   irpf_retention: number | null
   job_title: string | null
   kiosk_pin?: string | null
+  dni_nie: string | null
+  iban: string | null
+  address_street: string | null
+  address_postal_code: string | null
+  address_city: string | null
+  address_province: string | null
+  address_country: string | null
+  grupo_cotizacion: number | null
+  birthday: string | null
+  nationality: string | null
   created_at: string
   updated_at: string
 }

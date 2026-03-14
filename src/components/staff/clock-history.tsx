@@ -46,7 +46,8 @@ export function ClockHistory({
       const res = await fetch(`/api/staff/clock?${params.toString()}`)
       if (!res.ok) throw new Error('Failed to fetch clock history')
 
-      const data = await res.json()
+      const result = await res.json()
+      const data = Array.isArray(result) ? result : (result.data || [])
       setRecords(data.slice(0, limit))
     } catch (error) {
       console.error('Error fetching clock history:', error)

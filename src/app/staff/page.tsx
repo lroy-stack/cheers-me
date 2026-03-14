@@ -65,12 +65,14 @@ export default function StaffPage() {
       return
     }
 
-    // TODO: Implement delete endpoint
-    toast({
-      title: 'Not implemented',
-      description: 'Employee deletion will be available soon',
-      variant: 'destructive',
-    })
+    try {
+      const res = await fetch(`/api/staff/employees/${_employee.id}`, { method: 'DELETE' })
+      if (!res.ok) throw new Error('Delete failed')
+      toast({ title: t('employees.deleted'), description: t('employees.deletedDescription') })
+      refetch()
+    } catch {
+      toast({ title: t('employees.deleteError'), variant: 'destructive' })
+    }
   }
 
   const handleFormClose = (open: boolean) => {

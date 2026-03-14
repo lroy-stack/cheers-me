@@ -5,7 +5,7 @@ import { z } from 'zod'
 
 const createRecordSchema = z.object({
   guide_code: z.string().min(1),
-  action: z.enum(['viewed', 'downloaded', 'test_started', 'test_completed', 'test_passed', 'test_failed']),
+  action: z.enum(['viewed', 'downloaded', 'test_started', 'test_completed', 'test_passed', 'test_failed', 'section_viewed', 'certificate_downloaded']),
   language: z.string().length(2).optional(),
   score: z.number().int().min(0).max(100).nullable().optional(),
   answers: z.record(z.number()).nullable().optional(),

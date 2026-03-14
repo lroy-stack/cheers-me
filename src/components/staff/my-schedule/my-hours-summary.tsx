@@ -24,8 +24,8 @@ interface MyHoursSummaryProps {
 interface ClockRecord {
   id: string
   employee_id: string
-  clock_in: string
-  clock_out: string | null
+  clock_in_time: string
+  clock_out_time: string | null
   created_at: string
 }
 
@@ -67,9 +67,9 @@ export function MyHoursSummary({ employeeId }: MyHoursSummaryProps) {
     let monthMin = 0
 
     for (const record of records) {
-      if (!record.clock_out) continue
-      const clockIn = parseISO(record.clock_in)
-      const clockOut = parseISO(record.clock_out)
+      if (!record.clock_out_time) continue
+      const clockIn = parseISO(record.clock_in_time)
+      const clockOut = parseISO(record.clock_out_time)
       const mins = differenceInMinutes(clockOut, clockIn)
 
       if (isWithinInterval(clockIn, weekInterval)) {

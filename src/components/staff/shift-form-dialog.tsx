@@ -205,6 +205,7 @@ export function ShiftFormDialog({
                         <SelectItem value="morning">{t('schedule.morning')}</SelectItem>
                         <SelectItem value="afternoon">{t('schedule.afternoon')}</SelectItem>
                         <SelectItem value="night">{t('schedule.night')}</SelectItem>
+                        <SelectItem value="split">{t('schedule.split')}</SelectItem>
                       </SelectContent>
                     </Select>
                     <FormMessage />
