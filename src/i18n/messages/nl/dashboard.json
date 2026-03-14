@@ -9,6 +9,8 @@
     "pending": "{count} in afwachting",
     "confirmedPending": "{confirmed} bevestigd, {pending} in afwachting",
     "teamSize": "Teamgrootte",
+    "todaysRevenue": "Omzet Vandaag",
+    "salesOverview": "Verkoopoverzicht van vandaag",
     "stockAlerts": "Voorraadmeldingen",
     "needsAttention": "Aandacht nodig",
     "allGood": "Alles in orde"

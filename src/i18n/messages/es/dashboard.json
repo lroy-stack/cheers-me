@@ -9,6 +9,8 @@
     "pending": "{count} pendientes",
     "confirmedPending": "{confirmed} confirmadas, {pending} pendientes",
     "teamSize": "Equipo",
+    "todaysRevenue": "Ingresos de Hoy",
+    "salesOverview": "Resumen de ventas del dia",
     "stockAlerts": "Alertas de Stock",
     "needsAttention": "Requiere atención",
     "allGood": "Todo en orden"

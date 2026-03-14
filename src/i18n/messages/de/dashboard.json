@@ -9,6 +9,8 @@
     "pending": "{count} ausstehend",
     "confirmedPending": "{confirmed} bestätigt, {pending} ausstehend",
     "teamSize": "Teamgröße",
+    "todaysRevenue": "Heutiger Umsatz",
+    "salesOverview": "Verkaufsubersicht fur heute",
     "stockAlerts": "Lageralarme",
     "needsAttention": "Erfordert Aufmerksamkeit",
     "allGood": "Alles in Ordnung"

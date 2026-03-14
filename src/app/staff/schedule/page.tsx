@@ -231,7 +231,7 @@ export default function SchedulePage() {
 
         {/* Tabs */}
         <Tabs defaultValue="weekly">
-          <TabsList>
+          <TabsList className="flex-wrap h-auto gap-1">
             <TabsTrigger value="weekly">{t('schedule.weeklyTab')}</TabsTrigger>
             <TabsTrigger value="monthly">{t('schedule.monthlyTab')}</TabsTrigger>
             <TabsTrigger value="leave">{t('schedule.leaveTab')}</TabsTrigger>

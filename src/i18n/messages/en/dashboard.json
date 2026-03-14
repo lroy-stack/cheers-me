@@ -9,6 +9,8 @@
     "pending": "{count} pending",
     "confirmedPending": "{confirmed} confirmed, {pending} pending",
     "teamSize": "Team Size",
+    "todaysRevenue": "Today's Revenue",
+    "salesOverview": "Sales overview for today",
     "stockAlerts": "Stock Alerts",
     "needsAttention": "Needs attention",
     "allGood": "All good"

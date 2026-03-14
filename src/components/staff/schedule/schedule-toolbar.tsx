@@ -80,9 +80,10 @@ export function ScheduleToolbar({
         size="sm"
         onClick={() => onCopyPreviousWeek(previousWeek)}
         disabled={saving}
+        title={t('schedule.copyPreviousWeek')}
       >
-        <Copy className="mr-2 h-4 w-4" />
-        {t('schedule.copyPreviousWeek')}
+        <Copy className="h-4 w-4 sm:mr-2" />
+        <span className="hidden sm:inline">{t('schedule.copyPreviousWeek')}</span>
       </Button>
 
       {/* Print sector + button */}
@@ -99,15 +100,15 @@ export function ScheduleToolbar({
         </Select>
       )}
 
-      <Button variant="outline" size="sm" onClick={onPrint}>
-        <Printer className="mr-2 h-4 w-4" />
-        {t('schedule.print')}
+      <Button variant="outline" size="sm" onClick={onPrint} title={t('schedule.print')}>
+        <Printer className="h-4 w-4 sm:mr-2" />
+        <span className="hidden sm:inline">{t('schedule.print')}</span>
       </Button>
 
       {onExportExcel && (
-        <Button variant="outline" size="sm" onClick={onExportExcel}>
-          <FileSpreadsheet className="mr-2 h-4 w-4" />
-          {t('schedule.exportExcel')}
+        <Button variant="outline" size="sm" onClick={onExportExcel} title={t('schedule.exportExcel')}>
+          <FileSpreadsheet className="h-4 w-4 sm:mr-2" />
+          <span className="hidden sm:inline">{t('schedule.exportExcel')}</span>
         </Button>
       )}
 
@@ -117,26 +118,28 @@ export function ScheduleToolbar({
           size="sm"
           onClick={onSave}
           disabled={!isDirty || saving}
+          title={t('schedule.saveDraft')}
         >
           {saving ? (
-            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            <Loader2 className="h-4 w-4 sm:mr-2 animate-spin" />
           ) : (
-            <Save className="mr-2 h-4 w-4" />
+            <Save className="h-4 w-4 sm:mr-2" />
           )}
-          {t('schedule.saveDraft')}
+          <span className="hidden sm:inline">{t('schedule.saveDraft')}</span>
         </Button>
 
         <Button
           size="sm"
           onClick={onPublish}
           disabled={saving || (!plan && !isDirty)}
+          title={t('schedule.publishSchedule')}
         >
           {saving ? (
-            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            <Loader2 className="h-4 w-4 sm:mr-2 animate-spin" />
           ) : (
-            <Send className="mr-2 h-4 w-4" />
+            <Send className="h-4 w-4 sm:mr-2" />
           )}
-          {t('schedule.publishSchedule')}
+          <span className="hidden sm:inline">{t('schedule.publishSchedule')}</span>
         </Button>
       </div>
     </div>
