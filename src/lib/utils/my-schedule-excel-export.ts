@@ -1,5 +1,4 @@
 import ExcelJS from 'exceljs'
-import { saveAs } from 'file-saver'
 import { format, parseISO } from 'date-fns'
 import { SHIFT_TYPE_CONFIG, SHIFT_TYPE_TO_CELL_TYPE } from '@/lib/constants/schedule'
 import type { ShiftWithEmployee } from '@/types'
@@ -162,9 +161,19 @@ export async function exportMyScheduleToExcel(options: ExportOptions) {
   }
   totalRow.height = 26
 
-  // Download
+  // Download using native browser API
   const buffer = await workbook.xlsx.writeBuffer()
-  const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' })
+  const blob = new Blob([buffer], {
+    type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+  })
   const filename = `my_schedule_${format(weekStart, 'yyyy-MM-dd')}.xlsx`
-  saveAs(blob, filename)
+
+  const url = URL.createObjectURL(blob)
+  const link = document.createElement('a')
+  link.href = url
+  link.download = filename
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+  URL.revokeObjectURL(url)
 }

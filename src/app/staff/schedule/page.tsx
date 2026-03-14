@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback, useEffect } from 'react'
-import { startOfWeek } from 'date-fns'
+import { startOfWeek, format } from 'date-fns'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Card, CardContent } from '@/components/ui/card'
 import { AlertTriangle, Loader2 } from 'lucide-react'
@@ -14,7 +14,6 @@ import { ShiftWithEmployee, CreateShiftRequest } from '@/types'
 import { ShiftFormDialog } from '@/components/staff/shift-form-dialog'
 import { SHIFT_TYPE_CONFIG } from '@/lib/constants/schedule'
 import { PrintSector } from '@/components/staff/schedule/schedule-toolbar'
-import { exportScheduleToExcel } from '@/lib/utils/schedule-excel-export'
 import { useRouter } from 'next/navigation'
 import { useAuthContext } from '@/components/providers/auth-provider'
 import { ConfirmDialog } from '@/components/ui/confirm-dialog'
@@ -168,21 +167,37 @@ export default function SchedulePage() {
     window.print()
   }, [])
 
-  const handleExportExcel = useCallback(() => {
-    const dayLabels = [
-      t('schedule.dayMon'), t('schedule.dayTue'), t('schedule.dayWed'),
-      t('schedule.dayThu'), t('schedule.dayFri'), t('schedule.daySat'), t('schedule.daySun'),
-    ]
-    exportScheduleToExcel({
-      departmentGroups,
-      weekDates,
-      dailyTotals,
-      grandTotal,
-      weekStart,
-      dayLabels,
-      shiftTemplates: settings.shift_templates,
-    })
-  }, [departmentGroups, weekDates, dailyTotals, grandTotal, weekStart, t, settings.shift_templates])
+  const handleExportExcel = useCallback(async () => {
+    try {
+      const weekStartStr = format(weekStart, 'yyyy-MM-dd')
+      const res = await fetch('/api/staff/schedule-plans/export', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ week_start_date: weekStartStr }),
+      })
+
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}))
+        throw new Error(err.error || 'Export failed')
+      }
+
+      const blob = await res.blob()
+      const url = URL.createObjectURL(blob)
+      const link = document.createElement('a')
+      link.href = url
+      link.download = `schedule_${weekStartStr}.xlsx`
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+      URL.revokeObjectURL(url)
+    } catch (err) {
+      toast({
+        title: 'Export Error',
+        description: err instanceof Error ? err.message : 'Failed to export',
+        variant: 'destructive',
+      })
+    }
+  }, [weekStart, toast])
 
   // Keyboard shortcuts
   useEffect(() => {

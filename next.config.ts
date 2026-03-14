@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   // Exclude pdfkit from bundling — its fontkit dependency uses legacy @swc/helpers
   // imports incompatible with Turbopack. Only used in server-side API routes.
-  serverExternalPackages: ['pdfkit'],
+  serverExternalPackages: ['pdfkit', 'exceljs'],
   // Production bundle optimization
   compress: true,
   productionBrowserSourceMaps: false,

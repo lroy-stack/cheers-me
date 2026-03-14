@@ -1,5 +1,4 @@
 import ExcelJS from 'exceljs'
-import { saveAs } from 'file-saver'
 import { format, parseISO } from 'date-fns'
 import { DepartmentGroup } from '@/types'
 import { SHIFT_TYPE_CONFIG } from '@/lib/constants/schedule'
@@ -235,9 +234,19 @@ export async function exportScheduleToExcel(options: ExportOptions) {
   legendRow.getCell(1).value = `Legend: ${legendParts}`
   legendRow.getCell(1).font = { size: 8, color: { argb: '757575' }, italic: true }
 
-  // Generate and download
+  // Generate and download using native browser API
   const buffer = await workbook.xlsx.writeBuffer()
-  const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' })
+  const blob = new Blob([buffer], {
+    type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+  })
   const filename = `schedule_${format(weekStart, 'yyyy-MM-dd')}.xlsx`
-  saveAs(blob, filename)
+
+  const url = URL.createObjectURL(blob)
+  const link = document.createElement('a')
+  link.href = url
+  link.download = filename
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+  URL.revokeObjectURL(url)
 }
