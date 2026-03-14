@@ -74,10 +74,12 @@ export function DigitalMenuItemCard({
       <SheetTrigger asChild>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.35, ease: 'easeOut' }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-30px' }}
+          transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+          whileHover={{ y: -4 }}
         >
-          <Card className="group cursor-pointer overflow-hidden rounded-xl transition-all hover:shadow-xl hover:scale-[1.02] border border-border/50">
+          <Card className="group cursor-pointer overflow-hidden rounded-xl border border-border/50 transition-shadow duration-300 hover:shadow-xl">
             <CardContent className="p-0">
               {/* Square Image */}
               <div className="relative aspect-square overflow-hidden">
@@ -96,23 +98,30 @@ export function DigitalMenuItemCard({
                 )}
 
                 {/* Dark gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-
-                {/* Price badge at top-right */}
-                <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-full px-2 py-0.5 flex items-center gap-0.5 shadow-sm">
-                  <Euro className="h-3 w-3 text-primary" />
-                  <span className="font-bold text-xs text-foreground">
-                    {item.price.toFixed(2)}
-                  </span>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
               </div>
 
               {/* Compact Content Below Image */}
               <div className="p-2 space-y-1">
-                {/* Name */}
-                <h3 className="text-xs font-semibold leading-tight line-clamp-2">
-                  {name}
-                </h3>
+                {/* Name + Price row */}
+                <div className="flex items-start justify-between gap-1">
+                  <h3 className="text-xs font-semibold leading-tight line-clamp-2 flex-1 min-w-0">
+                    {name}
+                  </h3>
+                  <div className="flex items-center gap-0.5 shrink-0 text-primary">
+                    <Euro className="h-3 w-3" />
+                    <span className="font-bold text-xs">
+                      {item.price.toFixed(2)}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Description (1 line) */}
+                {description && (
+                  <p className="text-[10px] leading-snug text-muted-foreground line-clamp-1">
+                    {description}
+                  </p>
+                )}
 
                 {/* Allergen dots */}
                 {item.allergens && item.allergens.length > 0 && (

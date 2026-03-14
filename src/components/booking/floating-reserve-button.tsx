@@ -44,7 +44,7 @@ export default function FloatingReserveButton() {
           transition={{ duration: 0.3, ease: 'easeOut' }}
           data-testid="floating-reserve"
           onClick={scrollToWizard}
-          className="fixed z-50 bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:bottom-6 sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-primary/90 backdrop-blur-xl text-white font-semibold text-sm shadow-2xl shadow-primary/20 glow-hover touch-manipulation"
+          className="fixed z-50 bottom-20 left-4 right-4 sm:left-auto sm:right-20 sm:bottom-6 sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-primary/90 backdrop-blur-xl text-primary-foreground font-semibold text-sm shadow-2xl shadow-primary/20 glow-hover touch-manipulation"
         >
           <CalendarCheck className="w-4 h-4" />
           {t('hero.reserveTable')}

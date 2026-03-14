@@ -40,6 +40,10 @@ export const metadata: Metadata = {
   title: 'GrandCafe Cheers Manager',
   description: 'Restaurant management platform for GrandCafe Cheers Mallorca',
   manifest: '/manifest.json',
+  icons: {
+    icon: '/favicon.png',
+    apple: '/icons/icon-192.png',
+  },
   applicationName: 'GrandCafe Cheers Manager',
   appleWebApp: {
     capable: true,

@@ -193,5 +193,20 @@
     "label": "Ich habe die",
     "link": "Datenschutzerklärung",
     "required": "Sie müssen die Datenschutzerklärung akzeptieren, um fortzufahren."
+  },
+  "footer": {
+    "visitUs": "Besuchen Sie Uns",
+    "contact": "Kontakt",
+    "hours": "Öffnungszeiten",
+    "getDirections": "Wegbeschreibung",
+    "allRights": "© 2026 GrandCafe Cheers. Alle Rechte vorbehalten.",
+    "digitalMenu": "Digitale Speisekarte",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "refunds": "Rückerstattung",
+    "avisoLegal": "Impressum",
+    "reclamaciones": "Beschwerdebuch im Betrieb verfügbar",
+    "seasonDates": "1. April – 1. November",
+    "dailyHours": "10:30 – 03:00 täglich"
   }
 }

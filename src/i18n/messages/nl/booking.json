@@ -193,5 +193,20 @@
     "label": "Ik heb het",
     "link": "Privacybeleid",
     "required": "Je moet het privacybeleid accepteren om door te gaan."
+  },
+  "footer": {
+    "visitUs": "Bezoek Ons",
+    "contact": "Contact",
+    "hours": "Openingstijden",
+    "getDirections": "Routebeschrijving",
+    "allRights": "© 2026 GrandCafe Cheers. Alle rechten voorbehouden.",
+    "digitalMenu": "Digitale Menukaart",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden",
+    "refunds": "Restitutie",
+    "avisoLegal": "Juridische Kennisgeving",
+    "reclamaciones": "Klachtenboek beschikbaar in het etablissement",
+    "seasonDates": "1 april – 1 november",
+    "dailyHours": "10:30 – 03:00 dagelijks"
   }
 }

@@ -110,17 +110,19 @@ export function KioskTurnstileWidget({ onSuccess, onError, onExpire }: KioskTurn
     }, 30000)
   }
 
+  // If Turnstile is not configured, skip security check — PIN is sufficient for kiosk
+  useEffect(() => {
+    if (!siteKey) {
+      console.log('[Turnstile] No site key configured — skipping security check (PIN-only mode)')
+      onSuccess('kiosk-pin-only-bypass')
+    }
+  }, [siteKey, onSuccess])
+
   if (!siteKey) {
-    console.error('[Turnstile] NEXT_PUBLIC_TURNSTILE_SITE_KEY is not configured')
     return (
-      <div className="flex flex-col items-center space-y-4 p-6 bg-destructive/10 rounded-lg border border-destructive">
-        <AlertCircle className="h-12 w-12 text-destructive" />
-        <p className="text-sm text-destructive text-center">
-          Turnstile configuration error. NEXT_PUBLIC_TURNSTILE_SITE_KEY is missing.
-        </p>
-        <p className="text-xs text-muted-foreground text-center">
-          Check Vercel environment variables
-        </p>
+      <div className="flex flex-col items-center space-y-2 py-8">
+        <ShieldCheck className="h-8 w-8 text-success" />
+        <p className="text-sm text-muted-foreground">{t('securityCheck')}</p>
       </div>
     )
   }

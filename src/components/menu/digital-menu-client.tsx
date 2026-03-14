@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useMemo, useRef, useEffect } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { DigitalMenuItemCard, type DigitalMenuItem } from './digital-menu-item-card'
 import { CocktailCard, type CocktailMenuItem } from './cocktail-card'
 import { Button } from '@/components/ui/button'
@@ -16,7 +16,7 @@ import {
 } from '@/components/ui/sheet'
 import { ALLERGEN_LIST } from '@/lib/constants/allergens'
 import { getCategoryIcon } from '@/lib/constants/menu-categories'
-import { Info, UtensilsCrossed, Star, Instagram, MapPin, Clock, TableProperties, Search } from 'lucide-react'
+import { Info, UtensilsCrossed, Star, Instagram, MapPin, Clock, TableProperties, Search, X } from 'lucide-react'
 import Image from 'next/image'
 import AdRenderer from '@/components/ads/ad-renderer'
 
@@ -36,6 +36,7 @@ interface DigitalMenuClientProps {
   initialItems: DigitalMenuItem[]
   categories: Category[]
   tableNumber?: string | null
+  showWelcome?: boolean
 }
 
 // ---------------------------------------------------------------------------
@@ -129,6 +130,24 @@ function getTranslation(key: string, language: Language): string {
       es: 'No se encontraron resultados.',
       de: 'Keine Ergebnisse gefunden.',
     },
+    tableWelcome: {
+      en: 'Welcome! You are at table',
+      nl: 'Welkom! U zit aan tafel',
+      es: 'Bienvenido! Estas en la mesa',
+      de: 'Willkommen! Sie sitzen an Tisch',
+    },
+    browseMenu: {
+      en: 'Browse our menu below',
+      nl: 'Bekijk ons menu hieronder',
+      es: 'Explora nuestro menu',
+      de: 'Entdecken Sie unsere Speisekarte',
+    },
+    items: {
+      en: 'items',
+      nl: 'items',
+      es: 'platos',
+      de: 'Artikel',
+    },
   }
   return translations[key]?.[language] || translations[key]?.en || key
 }
@@ -161,6 +180,7 @@ export function DigitalMenuClient({
   initialItems,
   categories,
   tableNumber,
+  showWelcome: initialShowWelcome = false,
 }: DigitalMenuClientProps) {
   const [language, setLanguage] = useState<Language>('en')
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
@@ -168,6 +188,15 @@ export function DigitalMenuClient({
   const [headerHeight, setHeaderHeight] = useState(52)
   const headerRef = useRef<HTMLElement>(null)
   const categoryScrollRef = useRef<HTMLDivElement>(null)
+
+  // Welcome message for QR table scan
+  const [showWelcome, setShowWelcome] = useState(initialShowWelcome)
+  useEffect(() => {
+    if (showWelcome) {
+      const timer = setTimeout(() => setShowWelcome(false), 4000)
+      return () => clearTimeout(timer)
+    }
+  }, [showWelcome])
 
   // Dynamically measure header height with ResizeObserver
   useEffect(() => {
@@ -263,11 +292,12 @@ export function DigitalMenuClient({
                 className="rounded-lg shadow-sm shrink-0"
               />
               <span className="font-bold text-sm leading-tight tracking-tight text-primary truncate">
-                GrandCafe Cheers
+                <span className="sm:hidden">Cheers</span>
+                <span className="hidden sm:inline">GrandCafe Cheers</span>
               </span>
               {tableNumber && (
-                <Badge className="bg-primary text-white hover:bg-primary/80 shadow-sm shrink-0 gap-1 px-2 py-0.5 text-xs font-semibold">
-                  <TableProperties className="h-3 w-3" />
+                <Badge className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-md shrink-0 gap-1.5 px-2.5 py-1 text-xs font-bold rounded-full">
+                  <TableProperties className="h-3.5 w-3.5" />
                   {getTranslation('table', language)} {tableNumber}
                 </Badge>
               )}
@@ -282,7 +312,7 @@ export function DigitalMenuClient({
                     key={lang.code}
                     onClick={() => setLanguage(lang.code)}
                     className={`
-                      w-7 h-7 rounded-full flex items-center justify-center text-sm
+                      w-9 h-9 sm:w-7 sm:h-7 rounded-full flex items-center justify-center text-base sm:text-sm
                       transition-all duration-200 cursor-pointer
                       ${
                         isActive
@@ -361,6 +391,31 @@ export function DigitalMenuClient({
         </div>
       </header>
 
+      {/* Welcome toast for QR table scan */}
+      <AnimatePresence>
+        {showWelcome && tableNumber && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3, ease: 'easeOut' }}
+            className="container mx-auto px-4 pt-3"
+          >
+            <div className="rounded-xl bg-primary/10 dark:bg-primary/20 border border-primary/20 px-4 py-3 flex items-center gap-3">
+              <span className="text-2xl" role="img" aria-label="wave">&#x1F44B;</span>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-semibold text-foreground">
+                  {getTranslation('tableWelcome', language)} {tableNumber}
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {getTranslation('browseMenu', language)}
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Ad: Top Banner */}
       <div className="container mx-auto px-4 pt-2">
         <AdRenderer page="digital_menu" placement="banner_top" lang={language} />
@@ -382,14 +437,34 @@ export function DigitalMenuClient({
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={getTranslation('searchPlaceholder', language)}
-              className="w-full rounded-full border border-border bg-background pl-9 pr-4 py-1.5 text-sm outline-none focus:ring-2 focus:ring-primary/40 transition-shadow"
+              className="w-full rounded-full border border-border bg-background pl-9 pr-9 py-1.5 text-sm outline-none focus:ring-2 focus:ring-primary/40 transition-shadow"
             />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery('')}
+                className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 flex items-center justify-center rounded-full bg-muted hover:bg-muted-foreground/20 transition-colors"
+                aria-label="Clear search"
+              >
+                <X className="h-3 w-3 text-muted-foreground" />
+              </button>
+            )}
           </div>
+          {/* Result count when searching */}
+          {searchQuery.trim() && (
+            <p className="text-xs text-muted-foreground pl-1">
+              {filteredItems.length} {getTranslation('items', language)}
+            </p>
+          )}
 
           {/* Category pills */}
+          <div className="relative">
+            {/* Left fade gradient */}
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-6 z-10 bg-gradient-to-r from-white dark:from-background to-transparent" />
+            {/* Right fade gradient */}
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-6 z-10 bg-gradient-to-l from-white dark:from-background to-transparent" />
           <div
             ref={categoryScrollRef}
-            className="flex gap-1.5 overflow-x-auto pb-1 scrollbar-hide"
+            className="flex gap-1.5 overflow-x-auto pb-1 scrollbar-hide px-2"
             style={{ scrollSnapType: 'x mandatory' }}
           >
             {/* "All" button */}
@@ -449,6 +524,7 @@ export function DigitalMenuClient({
                 </Button>
               )
             })}
+          </div>
           </div>
         </div>
       </div>

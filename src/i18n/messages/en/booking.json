@@ -193,5 +193,20 @@
     "label": "I have read and accept the",
     "link": "Privacy Policy",
     "required": "You must accept the privacy policy to continue."
+  },
+  "footer": {
+    "visitUs": "Visit Us",
+    "contact": "Contact",
+    "hours": "Hours",
+    "getDirections": "Get Directions",
+    "allRights": "© 2026 GrandCafe Cheers. All rights reserved.",
+    "digitalMenu": "Digital Menu",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "refunds": "Refunds",
+    "avisoLegal": "Aviso Legal",
+    "reclamaciones": "Complaints book available at the establishment",
+    "seasonDates": "April 1 – November 1",
+    "dailyHours": "10:30 – 03:00 daily"
   }
 }

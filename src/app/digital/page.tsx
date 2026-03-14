@@ -4,9 +4,15 @@ import { createClient } from '@/lib/supabase/server'
 import { Skeleton } from '@/components/ui/skeleton'
 import { getWebConfig } from '@/lib/utils/get-web-config'
 import { ModuleDisabledPage } from '@/components/module-disabled'
+import type { Metadata } from 'next'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
+
+export const metadata: Metadata = {
+  title: 'Menu | GrandCafe Cheers',
+  description: 'Digital menu — GrandCafe Cheers Mallorca',
+}
 
 async function getMenuData() {
   const supabase = await createClient()
@@ -62,6 +68,7 @@ export default async function DigitalMenuPage({
           initialItems={items}
           categories={categories}
           tableNumber={tableNumber}
+          showWelcome={!!tableNumber}
         />
       </Suspense>
     </div>
