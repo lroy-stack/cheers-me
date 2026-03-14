@@ -221,7 +221,7 @@ export default function ResourcesPage() {
 
       {/* Main Tabs: Guides / My Training / Compliance */}
       <Tabs value={activeTab} onValueChange={setActiveTab}>
-        <TabsList className="h-auto gap-1">
+        <TabsList className="h-auto gap-1 flex-wrap">
           <TabsTrigger value="guides" className="flex items-center gap-2">
             <BookOpen className="h-4 w-4" />
             {t('title')}

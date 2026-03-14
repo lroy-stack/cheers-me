@@ -121,14 +121,14 @@ export default function CustomersPage() {
   return (
     <div className="max-w-7xl mx-auto space-y-6">
       {/* Page Header */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-2xl font-bold">{t('page.title')}</h1>
           <p className="text-muted-foreground">
             {t('page.subtitle')}
           </p>
         </div>
-        <Button onClick={() => setAddCustomerOpen(true)}>
+        <Button onClick={() => setAddCustomerOpen(true)} size="sm">
           <Plus className="mr-2 h-4 w-4" />
           {t('page.addCustomer')}
         </Button>

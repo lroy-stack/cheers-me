@@ -185,7 +185,7 @@ export default async function TipsTrackingPage() {
 
         {/* Tabs for Different Time Periods */}
         <Tabs defaultValue="today" className="space-y-6">
-          <TabsList className="grid w-full max-w-md grid-cols-3">
+          <TabsList className="flex flex-wrap h-auto gap-1 w-full max-w-md">
             <TabsTrigger value="today">
               {t('overview.today')}
               {todayTips.length > 0 && (

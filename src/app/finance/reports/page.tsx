@@ -56,7 +56,7 @@ export default async function FinanceReportsPage({
 
         {/* Reports Tabs */}
         <Tabs defaultValue={activeTab} className="w-full">
-          <TabsList className="grid w-full md:w-auto grid-cols-5 mb-6">
+          <TabsList className="flex flex-wrap h-auto gap-1 w-full md:w-auto mb-6">
             <TabsTrigger value="daily" className="gap-2">
               <Calendar className="h-4 w-4" />
               {t('reports.daily')}

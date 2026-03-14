@@ -3,8 +3,8 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card'
 
 export default function Loading() {
   return (
-    <div className="space-y-6 p-6">
-      <div className="flex items-center justify-between">
+    <div className="max-w-7xl mx-auto space-y-6 p-4 md:p-6">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <Skeleton className="h-9 w-40 mb-2" />
           <Skeleton className="h-5 w-56" />

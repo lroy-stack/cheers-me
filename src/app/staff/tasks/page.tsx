@@ -402,7 +402,7 @@ export default function TasksPage() {
 
         {/* 3 Tabs */}
         <Tabs value={activeTab} onValueChange={handleTabChange}>
-          <TabsList className="h-auto gap-1">
+          <TabsList className="h-auto gap-1 flex-wrap">
             {canManage && (
               <TabsTrigger value="planning" className="gap-1.5">
                 <CalendarDays className="h-3.5 w-3.5" />
@@ -510,7 +510,7 @@ export default function TasksPage() {
           {/* TAB: TASKS — Operational task list */}
           {/* ============================================================ */}
           <TabsContent value="tasks" className="space-y-4">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               {/* Sub-toggle: All / My */}
               <div className="inline-flex items-center rounded-lg border bg-muted p-0.5">
                 <Button
@@ -566,7 +566,7 @@ export default function TasksPage() {
           {/* TAB: COMPLIANCE — New record + records list */}
           {/* ============================================================ */}
           <TabsContent value="compliance" className="space-y-4">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               {/* Sub-toggle: New Record / All Records */}
               <div className="inline-flex items-center rounded-lg border bg-muted p-0.5">
                 <Button

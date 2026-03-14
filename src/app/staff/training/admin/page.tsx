@@ -111,7 +111,7 @@ export default function TrainingAdminPage() {
 
   return (
     <div className="max-w-4xl mx-auto space-y-6 p-6">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-3">
           <GraduationCap className="h-6 w-6 text-primary" />
           <div>
@@ -119,7 +119,7 @@ export default function TrainingAdminPage() {
             <p className="text-muted-foreground text-sm">Manage training materials and courses</p>
           </div>
         </div>
-        <Button onClick={() => { resetForm(); setShowCreate(true) }}>
+        <Button onClick={() => { resetForm(); setShowCreate(true) }} size="sm">
           <Plus className="mr-2 h-4 w-4" />
           New Material
         </Button>

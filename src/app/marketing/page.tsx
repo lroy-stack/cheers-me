@@ -108,7 +108,7 @@ export default function MarketingPage() {
   return (
     <div className="max-w-7xl mx-auto space-y-6">
       {/* Page Header */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-3xl font-bold flex items-center gap-2">
             <Megaphone className="h-8 w-8 text-indigo-500" />
@@ -118,7 +118,7 @@ export default function MarketingPage() {
             {t('contentCalendar.subtitle')}
           </p>
         </div>
-        <Button onClick={() => handleCreatePost()} className="gap-2">
+        <Button onClick={() => handleCreatePost()} className="gap-2" size="sm">
           <Plus className="h-4 w-4" />
           {t('contentCalendar.addPost')}
         </Button>

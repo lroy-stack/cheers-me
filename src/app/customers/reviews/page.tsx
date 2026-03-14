@@ -189,14 +189,14 @@ export default function ReviewsPage() {
   return (
     <div className="max-w-7xl mx-auto space-y-6">
       {/* Page Header */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-2xl font-bold">{t('pageTitle')}</h1>
           <p className="text-muted-foreground">
             {t('pageSubtitle')}
           </p>
         </div>
-        <Button onClick={() => setAddReviewOpen(true)}>
+        <Button onClick={() => setAddReviewOpen(true)} size="sm">
           <Plus className="mr-2 h-4 w-4" />
           {t('addReview')}
         </Button>

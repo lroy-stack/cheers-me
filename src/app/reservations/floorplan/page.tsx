@@ -493,9 +493,9 @@ export default function FloorPlanEditorPage() {
       </div>
 
       {/* Main Content Area */}
-      <div className="flex-1 flex overflow-hidden">
+      <div className="flex-1 flex flex-col md:flex-row overflow-hidden">
         {/* Canvas Area */}
-        <div className="flex-1 p-6 overflow-auto">
+        <div className="flex-1 p-4 md:p-6 overflow-auto">
           {isLoading ? (
             <Skeleton className="w-full h-[600px]" />
           ) : (
@@ -510,8 +510,8 @@ export default function FloorPlanEditorPage() {
           )}
         </div>
 
-        {/* Properties Panel */}
-        <div className="w-80 border-l overflow-auto">
+        {/* Properties Panel — hidden on mobile when no table selected */}
+        <div className={`w-full md:w-80 border-t md:border-t-0 md:border-l overflow-auto ${!selectedTable ? 'hidden md:block' : ''}`}>
           <TablePropertiesPanel
             table={selectedTable}
             onUpdate={handleTableUpdate}
