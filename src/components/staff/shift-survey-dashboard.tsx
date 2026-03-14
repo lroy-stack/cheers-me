@@ -71,6 +71,11 @@ interface SurveyStats {
 
 const EMOJI_RATINGS = ['😡', '😕', '😐', '🙂', '😄']
 
+interface EmployeeOption {
+  id: string
+  name: string
+}
+
 export function ShiftSurveyDashboard() {
   const t = useTranslations('staff.feedback')
   const [surveys, setSurveys] = useState<SurveyResponse[]>([])
@@ -78,6 +83,7 @@ export function ShiftSurveyDashboard() {
   const [loading, setLoading] = useState(true)
   const [selectedSurvey, setSelectedSurvey] = useState<SurveyResponse | null>(null)
   const [reviewNotes, setReviewNotes] = useState('')
+  const [employees, setEmployees] = useState<EmployeeOption[]>([])
   const [filters, setFilters] = useState({
     from: '',
     to: '',
@@ -110,6 +116,17 @@ export function ShiftSurveyDashboard() {
 
   useEffect(() => {
     fetchSurveys()
+    // Load employees for filter dropdown
+    fetch('/api/staff/employees')
+      .then((res) => res.ok ? res.json() : [])
+      .then((data) => {
+        const list = (Array.isArray(data) ? data : []).map((e: { id: string; profile: { full_name: string | null } }) => ({
+          id: e.id,
+          name: e.profile?.full_name || 'Unknown',
+        }))
+        setEmployees(list)
+      })
+      .catch(() => {})
   }, [])
 
   const handleMarkReviewed = async () => {
@@ -194,7 +211,7 @@ export function ShiftSurveyDashboard() {
           <CardTitle>{t('filters')}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
             <div>
               <Label htmlFor="from">{t('from')}</Label>
               <Input
@@ -227,6 +244,23 @@ export function ShiftSurveyDashboard() {
                   <SelectItem value="2">≤ 2 (Flagged)</SelectItem>
                   <SelectItem value="3">≤ 3</SelectItem>
                   <SelectItem value="4">≤ 4</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            <div>
+              <Label htmlFor="employeeFilter">{t('employee')}</Label>
+              <Select
+                value={filters.employee_id || 'all'}
+                onValueChange={(value) => setFilters({ ...filters, employee_id: value === 'all' ? '' : value })}
+              >
+                <SelectTrigger id="employeeFilter">
+                  <SelectValue placeholder={t('allRatings')} />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All Employees</SelectItem>
+                  {employees.map((emp) => (
+                    <SelectItem key={emp.id} value={emp.id}>{emp.name}</SelectItem>
+                  ))}
                 </SelectContent>
               </Select>
             </div>

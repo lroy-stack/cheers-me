@@ -102,12 +102,14 @@ export function EmployeeForm({
     iban: '',
     birthday: '',
     nationality: '',
+    foreign_id: '',
+    language: 'en',
     // Address
     address_street: '',
     address_postal_code: '',
     address_city: '',
     address_province: '',
-    address_country: 'España',
+    address_country: '',
     grupo_cotizacion: '',
   })
 
@@ -143,10 +145,12 @@ export function EmployeeForm({
         address_postal_code: ((employee as unknown) as Record<string, unknown>).address_postal_code as string || '',
         address_city: ((employee as unknown) as Record<string, unknown>).address_city as string || '',
         address_province: ((employee as unknown) as Record<string, unknown>).address_province as string || '',
-        address_country: ((employee as unknown) as Record<string, unknown>).address_country as string || 'España',
+        address_country: ((employee as unknown) as Record<string, unknown>).address_country as string || '',
         grupo_cotizacion: (((employee as unknown) as Record<string, unknown>).grupo_cotizacion as number)?.toString() || '',
         birthday: ((employee as unknown) as Record<string, unknown>).birthday as string || '',
         nationality: ((employee as unknown) as Record<string, unknown>).nationality as string || '',
+        foreign_id: ((employee as unknown) as Record<string, unknown>).foreign_id as string || '',
+        language: employee.profile.language || 'en',
       })
     } else {
       setFormData({
@@ -178,10 +182,12 @@ export function EmployeeForm({
         address_postal_code: '',
         address_city: '',
         address_province: '',
-        address_country: 'España',
+        address_country: '',
         grupo_cotizacion: '',
         birthday: '',
         nationality: '',
+        foreign_id: '',
+        language: 'en',
       })
     }
   }, [employee, open])
@@ -254,13 +260,14 @@ export function EmployeeForm({
             full_name: formData.full_name,
             role: formData.role,
             phone: formData.phone || undefined,
-            language: 'en',
+            language: formData.language,
           }),
         })
 
         if (!signUpResponse.ok) {
-          const error = await signUpResponse.json()
-          throw new Error(error.error || 'Failed to create user')
+          const errorData = await signUpResponse.json()
+          const details = errorData.details?.map((d: { message: string }) => d.message).join('. ')
+          throw new Error(details || errorData.error || 'Failed to create user')
         }
 
         const { user } = await signUpResponse.json()
@@ -393,10 +400,10 @@ export function EmployeeForm({
                   }
                   required
                   disabled={loading}
-                  minLength={6}
+                  minLength={12}
                 />
                 <p className="text-xs text-muted-foreground">
-                  {t('employees.minChars')}
+                  {t('employees.passwordRequirements')}
                 </p>
               </div>
             )}
@@ -605,6 +612,25 @@ export function EmployeeForm({
           <div className="space-y-4">
             <h3 className="text-sm font-medium">{t('employees.personalDetails')}</h3>
 
+            <div className="space-y-2">
+              <Label htmlFor="language">{t('employees.language')} *</Label>
+              <Select
+                value={formData.language}
+                onValueChange={(value) => setFormData({ ...formData, language: value })}
+                disabled={loading}
+              >
+                <SelectTrigger id="language">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="en">English</SelectItem>
+                  <SelectItem value="nl">Nederlands</SelectItem>
+                  <SelectItem value="es">Español</SelectItem>
+                  <SelectItem value="de">Deutsch</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="birthday">{t('employees.birthday')}</Label>
@@ -629,19 +655,31 @@ export function EmployeeForm({
             </div>
           </div>
 
-          {/* Spanish Labor Details */}
+          {/* Identity & Work Permit */}
           <div className="space-y-4">
-            <h3 className="text-sm font-medium">{t('employees.spanishLaborDetails')}</h3>
+            <h3 className="text-sm font-medium">{t('employees.identityDocuments')}</h3>
 
-            <div className="space-y-2">
-              <Label htmlFor="dni_nie">{t('employees.dniNie')}</Label>
-              <Input
-                id="dni_nie"
-                value={formData.dni_nie}
-                onChange={(e) => setFormData({ ...formData, dni_nie: e.target.value.toUpperCase() })}
-                disabled={loading}
-                placeholder={t('employees.dniNiePlaceholder')}
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="dni_nie">{t('employees.dniNie')}</Label>
+                <Input
+                  id="dni_nie"
+                  value={formData.dni_nie}
+                  onChange={(e) => setFormData({ ...formData, dni_nie: e.target.value.toUpperCase() })}
+                  disabled={loading}
+                  placeholder={t('employees.dniNiePlaceholder')}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="foreign_id">{t('employees.foreignId')}</Label>
+                <Input
+                  id="foreign_id"
+                  value={formData.foreign_id}
+                  onChange={(e) => setFormData({ ...formData, foreign_id: e.target.value.toUpperCase() })}
+                  disabled={loading}
+                  placeholder={t('employees.foreignIdPlaceholder')}
+                />
+              </div>
             </div>
 
             <div className="space-y-2">
@@ -764,7 +802,7 @@ export function EmployeeForm({
                   value={formData.address_postal_code}
                   onChange={(e) => setFormData({ ...formData, address_postal_code: e.target.value })}
                   disabled={loading}
-                  placeholder="07001"
+                  placeholder={t('employees.postalCodePlaceholder')}
                 />
               </div>
 
@@ -787,7 +825,7 @@ export function EmployeeForm({
                   value={formData.address_province}
                   onChange={(e) => setFormData({ ...formData, address_province: e.target.value })}
                   disabled={loading}
-                  placeholder="Baleares"
+                  placeholder={t('employees.provincePlaceholder')}
                 />
               </div>
 

@@ -2,6 +2,7 @@ import { createAdminClient } from '@/lib/supabase/server'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import { requireKioskSession, validateEmployeeMatch } from '@/lib/kiosk/auth-middleware'
+import { validateClockInTiming } from '@/lib/utils/clock-in-validation'
 
 const schema = z.object({
   employee_id: z.string().uuid(),
@@ -71,6 +72,15 @@ export async function POST(request: NextRequest) {
     .eq('date', today)
     .single()
 
+  // Grace period validation
+  const shiftWarning = validateClockInTiming(todayShift ?? null)
+  if (shiftWarning?.blocked) {
+    return NextResponse.json(
+      { error: shiftWarning.message, shift_warning: shiftWarning },
+      { status: 403 }
+    )
+  }
+
   // Create clock-in record
   const { data: clockRecord, error: clockError } = await supabase
     .from('clock_in_out')
@@ -87,7 +97,11 @@ export async function POST(request: NextRequest) {
   }
 
   return NextResponse.json(
-    { clock_record: clockRecord, shift: todayShift ?? null },
+    {
+      clock_record: clockRecord,
+      shift: todayShift ?? null,
+      ...(shiftWarning ? { shift_warning: shiftWarning } : {}),
+    },
     { status: 201 }
   )
 }

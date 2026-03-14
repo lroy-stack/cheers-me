@@ -22,6 +22,7 @@ import {
 import { EmployeeWithProfile } from '@/types'
 import { useTranslations } from 'next-intl'
 import { useAuthContext } from '@/components/providers/auth-provider'
+import { ConfirmDialog } from '@/components/ui/confirm-dialog'
 
 export default function StaffPage() {
   const { profile } = useAuthContext()
@@ -39,6 +40,7 @@ export default function StaffPage() {
   const [selectedEmployee, setSelectedEmployee] = useState<EmployeeWithProfile | null>(
     null
   )
+  const [deleteTarget, setDeleteTarget] = useState<EmployeeWithProfile | null>(null)
 
   const handleEdit = (employee: EmployeeWithProfile) => {
     setSelectedEmployee(employee)
@@ -56,22 +58,21 @@ export default function StaffPage() {
     }
   }
 
-  const handleDelete = async (_employee: EmployeeWithProfile) => {
-    if (
-      !confirm(
-        t('employees.deleteConfirm')
-      )
-    ) {
-      return
-    }
+  const handleDeleteRequest = (employee: EmployeeWithProfile) => {
+    setDeleteTarget(employee)
+  }
 
+  const handleDeleteConfirm = async () => {
+    if (!deleteTarget) return
     try {
-      const res = await fetch(`/api/staff/employees/${_employee.id}`, { method: 'DELETE' })
+      const res = await fetch(`/api/staff/employees/${deleteTarget.id}`, { method: 'DELETE' })
       if (!res.ok) throw new Error('Delete failed')
       toast({ title: t('employees.deleted'), description: t('employees.deletedDescription') })
       refetch()
     } catch {
       toast({ title: t('employees.deleteError'), variant: 'destructive' })
+    } finally {
+      setDeleteTarget(null)
     }
   }
 
@@ -224,7 +225,7 @@ export default function StaffPage() {
             <EmployeeList
               employees={employees}
               onEdit={handleEdit}
-              onDelete={handleDelete}
+              onDelete={handleDeleteRequest}
               onShareSchedule={handleShareSchedule}
             />
           )}
@@ -237,6 +238,18 @@ export default function StaffPage() {
         onOpenChange={handleFormClose}
         employee={selectedEmployee}
         onSuccess={handleSuccess}
+      />
+
+      {/* Delete Confirmation Dialog */}
+      <ConfirmDialog
+        open={!!deleteTarget}
+        onOpenChange={(open) => { if (!open) setDeleteTarget(null) }}
+        title={t('employees.deleteConfirm')}
+        description={t('employees.deleteConfirmDescription', { name: deleteTarget?.profile.full_name || '' })}
+        confirmLabel={t('employees.delete')}
+        cancelLabel={t('employees.cancel')}
+        variant="destructive"
+        onConfirm={handleDeleteConfirm}
       />
 
       {/* Toast Notifications */}

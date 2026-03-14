@@ -6,10 +6,11 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Clock, LogIn, LogOut, Loader2, Coffee, AlertTriangle } from 'lucide-react'
-import { ClockInOut } from '@/types'
+import { ClockInOut, ClockOutSummary } from '@/types'
 import { format, formatDistanceToNow } from 'date-fns'
 import { useToast } from '@/hooks/use-toast'
 import { useTranslations } from 'next-intl'
+import { PostShiftSurvey } from './post-shift-survey'
 
 const SIX_HOURS_MS = 6 * 60 * 60 * 1000
 
@@ -25,6 +26,8 @@ export function ClockInOutCard({ employeeId, onClockChange }: ClockInOutCardProp
   const [actionLoading, setActionLoading] = useState(false)
   const [currentTime, setCurrentTime] = useState(new Date())
   const [showBreakReminder, setShowBreakReminder] = useState(false)
+  const [surveyOpen, setSurveyOpen] = useState(false)
+  const [clockOutSummary, setClockOutSummary] = useState<ClockOutSummary | null>(null)
   const { toast } = useToast()
   const t = useTranslations('staff')
 
@@ -101,11 +104,16 @@ export function ClockInOutCard({ employeeId, onClockChange }: ClockInOutCardProp
       setCurrentClock(newClock)
       onClockChange?.()
 
+      const warnings: string[] = []
+      if (newClock.shift_warning) warnings.push(newClock.shift_warning.message)
+      if (newClock.geolocation_warning) warnings.push(newClock.geolocation_warning)
+
       toast({
-        title: 'Clocked In',
-        description: newClock.geolocation_warning
-          ? `Clocked in at ${format(new Date(), 'HH:mm')} ⚠️ ${newClock.geolocation_warning}`
-          : `Successfully clocked in at ${format(new Date(), 'HH:mm')}`,
+        title: t('clock.clockedIn'),
+        description: warnings.length > 0
+          ? `${format(new Date(), 'HH:mm')} — ${warnings.join(' | ')}`
+          : `${t('clock.clockedInAt')} ${format(new Date(), 'HH:mm')}`,
+        variant: warnings.length > 0 ? 'default' : 'default',
       })
     } catch (error) {
       toast({
@@ -170,12 +178,18 @@ export function ClockInOutCard({ employeeId, onClockChange }: ClockInOutCardProp
         throw new Error(error.error || 'Failed to clock out')
       }
 
+      const summary: ClockOutSummary = await res.json()
       setCurrentClock(null)
+      setIsOnBreak(false)
       onClockChange?.()
+
+      // Show post-shift survey
+      setClockOutSummary(summary)
+      setSurveyOpen(true)
 
       toast({
         title: 'Clocked Out',
-        description: `Successfully clocked out at ${format(new Date(), 'HH:mm')}`,
+        description: `Clocked out at ${format(new Date(), 'HH:mm')} — ${Math.floor(summary.net_minutes / 60)}h ${summary.net_minutes % 60}m worked`,
       })
     } catch (error) {
       toast({
@@ -343,6 +357,15 @@ export function ClockInOutCard({ employeeId, onClockChange }: ClockInOutCardProp
           </div>
         )}
       </CardContent>
+
+      {/* Post-shift feedback survey */}
+      {clockOutSummary && (
+        <PostShiftSurvey
+          open={surveyOpen}
+          onOpenChange={setSurveyOpen}
+          summary={clockOutSummary}
+        />
+      )}
     </Card>
   )
 }

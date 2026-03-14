@@ -45,11 +45,7 @@ export function KioskShiftSummary({ summary, onDismiss, onContinueToSurvey }: Ki
   }
 
   return (
-    <div
-      className="w-full max-w-md mx-auto px-6 cursor-pointer"
-      onClick={onDismiss}
-      onPointerDown={onDismiss}
-    >
+    <div className="w-full max-w-md mx-auto px-6">
       <Card>
         <CardHeader className="text-center pb-2">
           <CheckCircle className="h-12 w-12 text-success mx-auto mb-2" />

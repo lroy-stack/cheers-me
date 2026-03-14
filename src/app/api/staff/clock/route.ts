@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { requireAuth } from '@/lib/utils/auth'
+import { validateClockInTiming } from '@/lib/utils/clock-in-validation'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 
@@ -231,6 +232,24 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Auto-find today's shift for linking (like kiosk clock-in)
+    const today = new Date().toISOString().split('T')[0]
+    const { data: todayShift } = await supabase
+      .from('shifts')
+      .select('id, shift_type, start_time, end_time, break_duration_minutes')
+      .eq('employee_id', employeeRecord.id)
+      .eq('date', today)
+      .single()
+
+    // Grace period validation
+    const shiftWarning = validateClockInTiming(todayShift ?? null)
+    if (shiftWarning?.blocked) {
+      return NextResponse.json(
+        { error: shiftWarning.message, shift_warning: shiftWarning },
+        { status: 403 }
+      )
+    }
+
     // Geolocation check (Feature S2.B1)
     let geolocationWarning: string | null = null
     let geolocationMetadata: Record<string, unknown> = {}
@@ -272,7 +291,7 @@ export async function POST(request: NextRequest) {
       .from('clock_in_out')
       .insert({
         employee_id: employeeRecord.id,
-        shift_id: validation.data.shift_id,
+        shift_id: validation.data.shift_id ?? todayShift?.id ?? null,
         clock_in_time: new Date().toISOString(),
         ...(Object.keys(combinedMetadata).length > 0 ? { metadata: combinedMetadata } : {}),
       })
@@ -286,6 +305,8 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       {
         ...clockRecord,
+        shift: todayShift ?? null,
+        ...(shiftWarning ? { shift_warning: shiftWarning } : {}),
         ...(geolocationWarning ? { geolocation_warning: geolocationWarning } : {}),
       },
       { status: 201 }
@@ -351,8 +372,45 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Failed to update clock record' }, { status: 500 })
     }
 
+    // Calculate shift summary (like kiosk clock-out)
+    const { data: breaks } = await supabase
+      .from('clock_breaks')
+      .select('start_time, end_time')
+      .eq('clock_record_id', validation.data.clock_record_id)
+
+    let breakMinutes = 0
+    if (breaks) {
+      for (const b of breaks) {
+        const start = new Date(b.start_time).getTime()
+        const end = new Date(b.end_time ?? clockOutTime).getTime()
+        breakMinutes += (end - start) / 60000
+      }
+    }
+
+    const clockInTime = new Date(clockRecord.clock_in_time).getTime()
+    const clockOutMs = new Date(clockOutTime).getTime()
+    const totalMinutes = Math.round((clockOutMs - clockInTime) / 60000)
+    const netMinutes = Math.round(totalMinutes - breakMinutes)
+
+    // Fetch scheduled shift if linked
+    let scheduledShift: { start_time: string; end_time: string; shift_type: string } | null = null
+    if (clockRecord.shift_id) {
+      const { data: shift } = await supabase
+        .from('shifts')
+        .select('start_time, end_time, shift_type')
+        .eq('id', clockRecord.shift_id)
+        .single()
+      if (shift) scheduledShift = shift
+    }
+
     return NextResponse.json({
-      ...clockRecord,
+      clock_record_id: clockRecord.id,
+      clock_in_time: clockRecord.clock_in_time,
+      clock_out_time: clockOutTime,
+      total_minutes: totalMinutes,
+      break_minutes: Math.round(breakMinutes),
+      net_minutes: netMinutes,
+      scheduled_shift: scheduledShift,
       closed_breaks: closedBreaksCount,
     })
   } else {

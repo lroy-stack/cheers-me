@@ -27,6 +27,7 @@ interface ClockRecord {
   clock_in_time: string
   clock_out_time: string | null
   created_at: string
+  breaks?: Array<{ start_time: string; end_time: string | null }>
 }
 
 export function MyHoursSummary({ employeeId }: MyHoursSummaryProps) {
@@ -41,7 +42,7 @@ export function MyHoursSummary({ employeeId }: MyHoursSummaryProps) {
         const res = await fetch(`/api/staff/clock?employee_id=${employeeId}`)
         if (res.ok) {
           const data = await res.json()
-          setRecords(Array.isArray(data) ? data : data.records || [])
+          setRecords(Array.isArray(data) ? data : data.data || data.records || [])
         }
       } catch {
         // silently fail
@@ -70,13 +71,22 @@ export function MyHoursSummary({ employeeId }: MyHoursSummaryProps) {
       if (!record.clock_out_time) continue
       const clockIn = parseISO(record.clock_in_time)
       const clockOut = parseISO(record.clock_out_time)
-      const mins = differenceInMinutes(clockOut, clockIn)
+      let mins = differenceInMinutes(clockOut, clockIn)
+
+      // Deduct break minutes for net hours
+      if (record.breaks && Array.isArray(record.breaks)) {
+        for (const b of record.breaks) {
+          if (b.start_time && b.end_time) {
+            mins -= differenceInMinutes(parseISO(b.end_time), parseISO(b.start_time))
+          }
+        }
+      }
 
       if (isWithinInterval(clockIn, weekInterval)) {
-        weekMin += mins
+        weekMin += Math.max(0, mins)
       }
       if (isWithinInterval(clockIn, monthInterval)) {
-        monthMin += mins
+        monthMin += Math.max(0, mins)
       }
     }
 
