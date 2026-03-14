@@ -96,20 +96,20 @@ function InlineNewsletter() {
   return (
     <form onSubmit={handleSubmit} className="flex gap-2 w-full max-w-sm">
       <div className="relative flex-1">
-        <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/30" />
+        <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[oklch(var(--landing-section-foreground)/0.3)]" />
         <input
           type="email"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder={t('newsletter.emailPlaceholder')}
-          className="w-full pl-10 pr-4 py-2.5 rounded-full bg-white/8 border border-white/10 text-white text-sm placeholder:text-white/30 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary/30"
+          className="w-full pl-10 pr-4 py-2.5 rounded-full bg-[oklch(var(--landing-section-foreground)/0.08)] border border-[oklch(var(--landing-section-foreground)/0.1)] text-[oklch(var(--landing-section-foreground))] text-sm placeholder:text-[oklch(var(--landing-section-foreground)/0.3)] focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary/30"
         />
       </div>
       <button
         type="submit"
         disabled={status === 'loading'}
-        className="px-5 py-2.5 rounded-full bg-primary text-white text-sm font-medium hover:bg-primary/90 transition-colors disabled:opacity-50 shrink-0"
+        className="px-5 py-2.5 rounded-full bg-primary text-[oklch(var(--landing-section-foreground))] text-sm font-medium hover:bg-primary/90 transition-colors disabled:opacity-50 shrink-0"
       >
         {status === 'loading' ? <Loader2 className="w-4 h-4 animate-spin" /> : t('newsletter.subscribe')}
       </button>
@@ -121,9 +121,9 @@ export default function SocialProof() {
   const { t } = useBookingLanguage()
 
   return (
-    <section className="relative py-16 sm:py-20 px-4 bg-[oklch(0.12_0.03_15)] text-white overflow-hidden">
+    <section className="relative py-16 sm:py-20 px-4 bg-[oklch(var(--landing-section))] text-[oklch(var(--landing-section-foreground))] overflow-hidden">
       {/* Subtle radial glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,oklch(0.2_0.06_18/0.3)_0%,transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,oklch(var(--landing-section-foreground)/0.05)_0%,transparent_60%)]" />
 
       <div className="relative z-10 max-w-5xl mx-auto space-y-12 sm:space-y-16">
         {/* Google Rating */}
@@ -134,7 +134,7 @@ export default function SocialProof() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="text-6xl sm:text-7xl font-extralight tracking-tight text-white">
+          <p className="text-6xl sm:text-7xl font-extralight tracking-tight text-[oklch(var(--landing-section-foreground))]">
             <RatingCounter />
           </p>
           <div className="flex justify-center gap-1 mt-3">
@@ -147,7 +147,7 @@ export default function SocialProof() {
               />
             ))}
           </div>
-          <p className="text-sm text-white/40 mt-2">{t('socialProof.onGoogleReviews')}</p>
+          <p className="text-sm text-[oklch(var(--landing-section-foreground)/0.4)] mt-2">{t('socialProof.onGoogleReviews')}</p>
         </motion.div>
 
         {/* Reviews — horizontal scroll */}
@@ -159,17 +159,17 @@ export default function SocialProof() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="shrink-0 w-[300px] sm:w-[340px] snap-start rounded-2xl bg-white/5 border border-white/8 p-5 sm:p-6"
+              className="shrink-0 w-[300px] sm:w-[340px] snap-start rounded-2xl bg-[oklch(var(--landing-section-foreground)/0.05)] border border-[oklch(var(--landing-section-foreground)/0.08)] p-5 sm:p-6"
             >
               <div className="flex gap-0.5 mb-3">
                 {Array.from({ length: review.rating }, (_, j) => (
                   <Star key={j} className="w-3.5 h-3.5 text-primary fill-primary" />
                 ))}
               </div>
-              <p className="text-sm text-white/70 leading-relaxed italic">
+              <p className="text-sm text-[oklch(var(--landing-section-foreground)/0.7)] leading-relaxed italic">
                 {review.text}
               </p>
-              <p className="text-xs text-white/40 mt-3">
+              <p className="text-xs text-[oklch(var(--landing-section-foreground)/0.4)] mt-3">
                 {review.flag} {review.author}
               </p>
             </motion.div>
@@ -182,7 +182,7 @@ export default function SocialProof() {
             href="https://instagram.com/cheersmallorca"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm text-white/40 hover:text-primary transition-colors"
+            className="inline-flex items-center gap-2 text-sm text-[oklch(var(--landing-section-foreground)/0.4)] hover:text-primary transition-colors"
           >
             <Instagram className="w-4 h-4" />
             {t('socialProof.followersCount')}
@@ -195,19 +195,19 @@ export default function SocialProof() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="border-t border-white/8 pt-10 sm:pt-12"
+          className="border-t border-[oklch(var(--landing-section-foreground)/0.08)] pt-10 sm:pt-12"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
             {/* Newsletter */}
             <div className="space-y-3">
-              <h3 className="text-lg font-medium text-white">
+              <h3 className="text-lg font-medium text-[oklch(var(--landing-section-foreground))]">
                 {t('newsletter.heading')}
               </h3>
-              <p className="text-sm text-white/40">
+              <p className="text-sm text-[oklch(var(--landing-section-foreground)/0.4)]">
                 {t('newsletter.description')}
               </p>
               <InlineNewsletter />
-              <p className="text-[10px] text-white/20">
+              <p className="text-[10px] text-[oklch(var(--landing-section-foreground)/0.2)]">
                 {t('newsletter.consentLabel')}{' '}
                 <a href="/legal/privacy" className="underline hover:no-underline" target="_blank" rel="noopener noreferrer">
                   {t('newsletter.consentLink')}
@@ -216,15 +216,15 @@ export default function SocialProof() {
             </div>
 
             {/* Gift voucher banner */}
-            <div className="flex items-center gap-4 p-5 rounded-2xl bg-white/5 border border-white/8">
+            <div className="flex items-center gap-4 p-5 rounded-2xl bg-[oklch(var(--landing-section-foreground)/0.05)] border border-[oklch(var(--landing-section-foreground)/0.08)]">
               <div className="w-12 h-12 rounded-full bg-primary/15 flex items-center justify-center shrink-0">
                 <Gift className="w-5 h-5 text-primary" />
               </div>
               <div className="min-w-0 flex-1">
-                <h3 className="font-medium text-white text-sm">
+                <h3 className="font-medium text-[oklch(var(--landing-section-foreground))] text-sm">
                   {t('giftVoucher.heading')}
                 </h3>
-                <p className="text-xs text-white/40 mt-0.5">
+                <p className="text-xs text-[oklch(var(--landing-section-foreground)/0.4)] mt-0.5">
                   {t('giftVoucher.fromAmount')}
                 </p>
               </div>

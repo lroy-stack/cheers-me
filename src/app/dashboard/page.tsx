@@ -134,7 +134,7 @@ export default async function DashboardPage() {
 
         {/* Quick Stats — Real data */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <Link href="/sales">
+          <Link href="/staff">
             <Card className="hover:shadow-md transition-shadow cursor-pointer">
               <CardHeader className="pb-3">
                 <CardDescription>{st('activeStaff')}</CardDescription>
@@ -160,14 +160,14 @@ export default async function DashboardPage() {
             </Card>
           </Link>
 
-          <Link href="/staff">
+          <Link href="/sales">
             <Card className="hover:shadow-md transition-shadow cursor-pointer">
               <CardHeader className="pb-3">
-                <CardDescription>{st('teamSize')}</CardDescription>
-                <CardTitle className="text-2xl">{stats.activeStaff}</CardTitle>
+                <CardDescription>{st('todaysRevenue')}</CardDescription>
+                <CardTitle className="text-2xl">&euro;0</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-xs text-muted-foreground">{st('activeEmployees')}</p>
+                <p className="text-xs text-muted-foreground">{st('salesOverview')}</p>
               </CardContent>
             </Card>
           </Link>

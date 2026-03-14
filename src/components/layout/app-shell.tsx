@@ -15,6 +15,7 @@ import {
 import { Menu } from 'lucide-react'
 import Image from 'next/image'
 import { useBranding } from '@/hooks/use-branding'
+import { PwaProvider } from '@/components/pwa/pwa-provider'
 // LazyChatPanel removed — AI assistant is now a dedicated page at /assistant
 
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -23,6 +24,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const { logoUrl } = useBranding()
 
   return (
+    <PwaProvider>
     <div className="min-h-screen flex">
       {/* Desktop sidebar */}
       <aside className="hidden md:flex md:w-60 md:flex-col md:fixed md:inset-y-0 border-r border-sidebar-border bg-sidebar no-print">
@@ -90,5 +92,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </div>
 
     </div>
+    </PwaProvider>
   )
 }

@@ -126,7 +126,11 @@ export default function ExperienceShowcase() {
                 <Icon className="w-5 h-5 text-primary mx-auto mb-2" />
                 <p className="text-3xl sm:text-4xl font-light text-foreground tracking-tight">
                   {isDecimal ? (
-                    <AnimatedCounter value={48} suffix="" />
+                    <>
+                      <AnimatedCounter value={Math.floor(value)} />
+                      <span>.</span>
+                      <AnimatedCounter value={Math.round((value % 1) * 10)} />
+                    </>
                   ) : (
                     <AnimatedCounter value={value} />
                   )}

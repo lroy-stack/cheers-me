@@ -40,10 +40,14 @@
     --success-foreground: 1.0000 0 0;
     --warning: 0.7270 0.1540 85.8731;
     --warning-foreground: 0.2000 0.0500 85.0000;
+    --landing-section: 0.9500 0.0080 3.0000;
+    --landing-section-foreground: 0.2410 0.0786 22.3674;
     --radius: 0.75rem;
   }
 
   .dark {
+    --landing-section: 0.1100 0.0280 15.0000;
+    --landing-section-foreground: 0.9607 0.0154 7.4853;
     --background: 0.1188 0.0318 15.2849;
     --foreground: 0.9607 0.0154 7.4853;
     --card: 0.1558 0.0393 15.4394;

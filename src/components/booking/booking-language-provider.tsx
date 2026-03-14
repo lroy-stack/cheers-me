@@ -39,6 +39,14 @@ function getNestedValue(obj: Record<string, unknown>, path: string): string | un
 }
 
 function detectBrowserLanguage(): Language {
+  // First check if there's a NEXT_LOCALE cookie (set by admin panel or previous selection)
+  if (typeof document !== 'undefined') {
+    const match = document.cookie.match(/NEXT_LOCALE=(\w+)/)
+    if (match && (['en', 'nl', 'es', 'de'] as string[]).includes(match[1])) {
+      return match[1] as Language
+    }
+  }
+  // Fallback to browser language
   if (typeof navigator === 'undefined') return 'en'
   const lang = navigator.language?.toLowerCase() || ''
   if (lang.startsWith('nl')) return 'nl'
@@ -54,10 +62,16 @@ export function BookingLanguageProvider({
   messages: Messages
   children: React.ReactNode
 }) {
-  const [language, setLanguage] = useState<Language>('en')
+  const [language, setLanguageState] = useState<Language>('en')
 
   useEffect(() => {
-    setLanguage(detectBrowserLanguage())
+    setLanguageState(detectBrowserLanguage())
+  }, [])
+
+  const setLanguage = useCallback((lang: Language) => {
+    setLanguageState(lang)
+    // Sync with next-intl cookie so /gift, /kiosk, etc. use the same language
+    document.cookie = `NEXT_LOCALE=${lang};path=/;max-age=${60 * 60 * 24 * 365};samesite=lax`
   }, [])
 
   const t = useCallback(
