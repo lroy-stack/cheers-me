@@ -1208,6 +1208,212 @@ GrandCafe Cheers - Inventory Management System
   `.trim()
 }
 
+// ============================================================================
+// NEWSLETTER VERIFICATION EMAILS
+// ============================================================================
+
+/**
+ * Send verification email to new newsletter subscriber (double opt-in)
+ */
+export async function sendVerificationEmail(data: {
+  email: string
+  name?: string
+  verification_token: string
+  language?: string
+}): Promise<{ success: boolean; error?: string; messageId?: string }> {
+  try {
+    const resend = getResend()
+    if (!resend) {
+      console.warn('RESEND_API_KEY not configured, skipping verification email')
+      return { success: false, error: 'Email service not configured' }
+    }
+
+    const lang = data.language || 'en'
+    const translations = getVerificationTranslations(lang)
+    const verificationUrl = `${process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'}/api/marketing/subscribers/verify?token=${data.verification_token}`
+    const safeName = data.name ? escapeHtml(data.name) : undefined
+    const greeting = safeName ? `${translations.hello} ${safeName}` : translations.hello
+
+    const htmlContent = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      background-color: white;
+      border-radius: 8px;
+      padding: 40px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #f59e0b;
+    }
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      color: #d97706;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      color: #666;
+      font-size: 14px;
+    }
+    .button {
+      display: inline-block;
+      background-color: #d97706;
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
+      color: #9ca3af;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">🏖️ GrandCafe Cheers</div>
+      <div class="subtitle">El Arenal, Platja de Palma, Mallorca</div>
+    </div>
+
+    <h1 style="color: #111827; font-size: 24px; margin-bottom: 10px;">
+      ${greeting}!
+    </h1>
+
+    <p style="font-size: 16px; color: #4b5563;">
+      ${translations.message}
+    </p>
+
+    <div style="text-align: center;">
+      <a href="${verificationUrl}" class="button">${translations.verifyButton}</a>
+    </div>
+
+    <p style="font-size: 14px; color: #6b7280; margin-top: 20px;">
+      ${translations.linkNote}
+    </p>
+    <p style="font-size: 12px; color: #9ca3af; word-break: break-all;">
+      ${verificationUrl}
+    </p>
+
+    <div class="footer">
+      <p>${translations.notRequested}</p>
+      <p style="margin-top: 10px;">
+        <strong>GrandCafe Cheers</strong><br>
+        Carrer de Cartago 22, El Arenal, Mallorca 07600
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+    `
+
+    const textContent = `
+${greeting}!
+
+${translations.message}
+
+${translations.verifyButton}: ${verificationUrl}
+
+${translations.notRequested}
+
+GrandCafe Cheers
+Carrer de Cartago 22, El Arenal, Mallorca 07600
+    `.trim()
+
+    const response = await resend.emails.send({
+      from: EMAIL_FROM,
+      to: data.email,
+      subject: translations.subject,
+      html: htmlContent,
+      text: textContent,
+    })
+
+    if (response.error) {
+      console.error('Resend error:', response.error)
+      return {
+        success: false,
+        error: response.error.message,
+      }
+    }
+
+    return {
+      success: true,
+      messageId: response.data?.id,
+    }
+  } catch (error) {
+    console.error('Error sending verification email:', error)
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error',
+    }
+  }
+}
+
+/**
+ * Get translations for verification email
+ */
+function getVerificationTranslations(language: string): Record<string, string> {
+  const translations: Record<string, Record<string, string>> = {
+    en: {
+      subject: 'Verify your email - GrandCafe Cheers Newsletter',
+      hello: 'Hello',
+      message: 'Please verify your email to subscribe to our newsletter. Click the button below to confirm your subscription.',
+      verifyButton: 'Verify Email',
+      linkNote: 'If the button above does not work, copy and paste the following link into your browser:',
+      notRequested: 'If you did not request this subscription, you can safely ignore this email.',
+    },
+    nl: {
+      subject: 'Bevestig je e-mail - GrandCafe Cheers Nieuwsbrief',
+      hello: 'Hallo',
+      message: 'Bevestig je e-mailadres om je te abonneren op onze nieuwsbrief. Klik op de onderstaande knop om je inschrijving te bevestigen.',
+      verifyButton: 'E-mail bevestigen',
+      linkNote: 'Als de bovenstaande knop niet werkt, kopieer en plak de volgende link in je browser:',
+      notRequested: 'Als je deze inschrijving niet hebt aangevraagd, kun je deze e-mail veilig negeren.',
+    },
+    es: {
+      subject: 'Verifica tu email - Newsletter GrandCafe Cheers',
+      hello: 'Hola',
+      message: 'Por favor, verifica tu correo electrónico para suscribirte a nuestro boletín. Haz clic en el botón de abajo para confirmar tu suscripción.',
+      verifyButton: 'Verificar email',
+      linkNote: 'Si el botón de arriba no funciona, copia y pega el siguiente enlace en tu navegador:',
+      notRequested: 'Si no solicitaste esta suscripción, puedes ignorar este correo de forma segura.',
+    },
+    de: {
+      subject: 'E-Mail bestätigen - GrandCafe Cheers Newsletter',
+      hello: 'Hallo',
+      message: 'Bitte bestätigen Sie Ihre E-Mail-Adresse, um unseren Newsletter zu abonnieren. Klicken Sie auf den Button unten, um Ihr Abonnement zu bestätigen.',
+      verifyButton: 'E-Mail bestätigen',
+      linkNote: 'Falls der Button oben nicht funktioniert, kopieren Sie den folgenden Link und fügen Sie ihn in Ihren Browser ein:',
+      notRequested: 'Wenn Sie dieses Abonnement nicht angefordert haben, können Sie diese E-Mail bedenkenlos ignorieren.',
+    },
+  }
+
+  return translations[language] || translations.en
+}
+
 /**
  * Get translations for stock alert
  */

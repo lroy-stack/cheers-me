@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
+import { sendVerificationEmail } from '@/lib/email/resend'
 import { requireRole } from '@/lib/utils/auth'
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
@@ -156,8 +157,13 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Failed to create subscriber' }, { status: 500 })
   }
 
-  // TODO: Send verification email via Resend with link to /api/marketing/subscribers/verify?token={verificationToken}
-  // For now, return success — verification email sending is handled separately
+  // Fire-and-forget: send verification email without blocking the response
+  void sendVerificationEmail({
+    email: newSubscriber.email,
+    name: newSubscriber.name || undefined,
+    verification_token: verificationToken,
+    language: newSubscriber.language || 'en',
+  })
 
   return NextResponse.json({
     message: 'Subscription pending — please check your email to confirm',

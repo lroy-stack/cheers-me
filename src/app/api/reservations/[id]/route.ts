@@ -178,7 +178,8 @@ export async function PATCH(
         id,
         name,
         email,
-        phone
+        phone,
+        language
       )
     `)
     .single()
@@ -223,7 +224,7 @@ export async function PATCH(
       start_time: updatedReservation.start_time.substring(0, 5),
       table_number: updatedReservation.tables?.table_number,
       section: undefined,
-      language: 'en',
+      language: updatedReservation.customers?.language || 'en',
     }).then(async (result) => {
       // Record the confirmation
       const sb = await createClient()
