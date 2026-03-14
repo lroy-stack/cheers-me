@@ -28,44 +28,46 @@ export default function StepPartySize({ partySize, onPartySizeChange, onNext, ma
   }
 
   return (
-    <div className="space-y-6 sm:space-y-8">
+    <div className="space-y-8 sm:space-y-10">
       <div className="text-center px-2">
-        <h2 className="text-xl sm:text-2xl font-bold text-foreground">
+        <h2 className="text-2xl sm:text-3xl font-light text-foreground tracking-tight">
           {t('partySize.heading')}
         </h2>
-        <p className="text-sm sm:text-base text-muted-foreground mt-2">
+        <p className="text-sm sm:text-base text-muted-foreground mt-2 font-light">
           {t('partySize.subheading')}
         </p>
       </div>
 
-      {/* Counter */}
-      <div className="flex items-center justify-center gap-4 sm:gap-6">
+      {/* Counter — dramatic size */}
+      <div className="flex items-center justify-center gap-6 sm:gap-8">
         <motion.button
           type="button"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
+          data-testid="party-decrement"
           onClick={() => handleChange(-1)}
           disabled={partySize <= 1}
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-border flex items-center justify-center text-muted-foreground hover:border-cheers-amber hover:text-cheers-amber disabled:opacity-30 disabled:cursor-not-allowed transition-colors touch-manipulation"
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border border-border/50 flex items-center justify-center text-muted-foreground hover:border-primary hover:text-primary disabled:opacity-20 disabled:cursor-not-allowed transition-all touch-manipulation"
         >
-          <Minus className="w-5 h-5 sm:w-6 sm:h-6" />
+          <Minus className="w-5 h-5" />
         </motion.button>
 
-        <div className="w-20 sm:w-24 text-center">
+        <div data-testid="party-size-display" className="w-24 sm:w-28 text-center">
           <AnimatePresence mode="wait">
             <motion.span
               key={partySize}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 20 }}
-              transition={{ duration: 0.15 }}
-              className="block text-5xl sm:text-6xl font-bold text-cheers-amber"
+              initial={{ opacity: 0, y: -25, scale: 0.8 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 25, scale: 0.8 }}
+              transition={{ duration: 0.2, ease: 'easeOut' }}
+              data-testid="party-counter"
+              className="block text-6xl sm:text-7xl font-extralight text-primary tracking-tight"
             >
               {partySize}
             </motion.span>
           </AnimatePresence>
-          <span className="text-xs sm:text-sm text-muted-foreground mt-1 flex items-center justify-center gap-1">
-            <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+          <span className="text-xs sm:text-sm text-muted-foreground mt-2 flex items-center justify-center gap-1.5">
+            <Users className="w-3.5 h-3.5" />
             {partySize === 1 ? t('partySize.guest') : t('partySize.guests')}
           </span>
         </div>
@@ -74,16 +76,17 @@ export default function StepPartySize({ partySize, onPartySizeChange, onNext, ma
           type="button"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
+          data-testid="party-increment"
           onClick={() => handleChange(1)}
-          disabled={partySize >= 20}
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-border flex items-center justify-center text-muted-foreground hover:border-cheers-amber hover:text-cheers-amber disabled:opacity-30 disabled:cursor-not-allowed transition-colors touch-manipulation"
+          disabled={partySize >= maxPartySize}
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border border-border/50 flex items-center justify-center text-muted-foreground hover:border-primary hover:text-primary disabled:opacity-20 disabled:cursor-not-allowed transition-all touch-manipulation"
         >
-          <Plus className="w-5 h-5 sm:w-6 sm:h-6" />
+          <Plus className="w-5 h-5" />
         </motion.button>
       </div>
 
       {/* Presets */}
-      <div className="flex flex-wrap justify-center gap-2 sm:gap-2.5 px-2">
+      <div className="flex flex-wrap justify-center gap-2 px-2">
         {PRESETS.map(({ label, value }) => (
           <motion.button
             key={value}
@@ -91,10 +94,10 @@ export default function StepPartySize({ partySize, onPartySizeChange, onNext, ma
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => onPartySizeChange(value)}
-            className={`px-3 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium border transition-colors touch-manipulation ${
+            className={`px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-all touch-manipulation ${
               partySize === value
-                ? 'bg-cheers-amber border-cheers-amber text-white'
-                : 'bg-card border-border text-muted-foreground hover:border-cheers-coral'
+                ? 'bg-primary text-white shadow-[0_0_16px_oklch(var(--primary)/0.25)]'
+                : 'bg-card/30 border border-border/30 text-muted-foreground hover:border-border/60'
             }`}
           >
             {label} ({value})
@@ -109,15 +112,15 @@ export default function StepPartySize({ partySize, onPartySizeChange, onNext, ma
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="bg-primary/10 border border-primary/20 rounded-lg p-4 text-center"
+            className="bg-primary/5 border border-primary/10 rounded-2xl p-5 text-center"
           >
-            <Phone className="w-5 h-5 mx-auto mb-2 text-cheers-amber" />
-            <p className="text-sm text-primary">
+            <Phone className="w-5 h-5 mx-auto mb-2 text-primary" />
+            <p className="text-sm text-muted-foreground">
               {t('partySize.largeGroupMessage')}
             </p>
             <a
               href="tel:+34971XXXXXX"
-              className="text-sm font-semibold text-cheers-amber hover:underline mt-1 inline-block"
+              className="text-sm font-medium text-primary hover:underline mt-1 inline-block"
             >
               +34 971 XXX XXX
             </a>
@@ -126,13 +129,14 @@ export default function StepPartySize({ partySize, onPartySizeChange, onNext, ma
       </AnimatePresence>
 
       {/* Next button */}
-      <div className="text-center pt-2">
+      <div className="text-center">
         <motion.button
           type="button"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
+          data-testid="wizard-next"
           onClick={onNext}
-          className="px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl bg-cheers-amber text-white font-semibold shadow-lg hover:shadow-xl transition-shadow touch-manipulation min-w-[200px]"
+          className="px-8 py-3 rounded-full bg-primary text-white font-medium shadow-lg glow-hover transition-all touch-manipulation min-w-[200px]"
         >
           {t('partySize.continue')}
         </motion.button>

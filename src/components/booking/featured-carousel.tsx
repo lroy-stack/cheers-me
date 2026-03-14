@@ -1,11 +1,10 @@
 'use client'
 
-import { useEffect, useState, useRef, useCallback } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { useBookingLanguage } from './booking-language-provider'
-import { Wine, UtensilsCrossed, Star, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Wine, UtensilsCrossed, Calendar, Music, Tv } from 'lucide-react'
 import Image from 'next/image'
-import { Button } from '@/components/ui/button'
 
 interface FeaturedItem {
   id: string
@@ -24,6 +23,17 @@ interface FeaturedItem {
   glass_type: string | null
 }
 
+interface TonightEvent {
+  id: string
+  title: string
+  start_time: string
+  end_time: string
+  event_type: string
+  dj?: { name: string; genre: string }
+  home_team?: string
+  away_team?: string
+}
+
 type LangSuffix = 'en' | 'nl' | 'es' | 'de'
 
 function getLocalizedField(item: FeaturedItem, field: 'name' | 'description', lang: LangSuffix): string {
@@ -39,167 +49,40 @@ function getCategoryName(item: FeaturedItem, lang: LangSuffix): string {
   return (item.category[key] as string) || item.category.name_en || ''
 }
 
-function CarouselRow({
-  items,
-  lang,
-  language,
-}: {
-  items: FeaturedItem[]
-  lang: LangSuffix
-  language: string
-}) {
+/** Mobile carousel with snap */
+function MobileCarousel({ items, lang }: { items: FeaturedItem[]; lang: LangSuffix }) {
   const scrollRef = useRef<HTMLDivElement>(null)
   const [activeIndex, setActiveIndex] = useState(0)
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
-  const [isPaused, setIsPaused] = useState(false)
-
-  const scrollToIndex = useCallback((index: number) => {
-    const el = scrollRef.current
-    if (!el) return
-    const cards = el.querySelectorAll('[data-card]') as NodeListOf<HTMLElement>
-    if (cards[index]) {
-      const cardLeft = cards[index].offsetLeft - el.offsetLeft
-      el.scrollTo({ left: cardLeft, behavior: 'smooth' })
-      setActiveIndex(index)
-    }
-  }, [])
-
-  useEffect(() => {
-    if (items.length <= 1 || isPaused) return
-    intervalRef.current = setInterval(() => {
-      setActiveIndex((prev) => {
-        const next = (prev + 1) % items.length
-        scrollToIndex(next)
-        return next
-      })
-    }, 4000)
-    return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current)
-    }
-  }, [items.length, isPaused, scrollToIndex])
 
   useEffect(() => {
     const el = scrollRef.current
     if (!el) return
     const handleScroll = () => {
-      const scrollLeft = el.scrollLeft
-      const cardWidth = el.querySelector('[data-card]')?.clientWidth || 280
-      const gap = 16
-      const index = Math.round(scrollLeft / (cardWidth + gap))
+      const cardWidth = el.querySelector('[data-card]')?.clientWidth || 300
+      const index = Math.round(el.scrollLeft / (cardWidth + 16))
       setActiveIndex(Math.min(index, items.length - 1))
     }
     el.addEventListener('scroll', handleScroll, { passive: true })
     return () => el.removeEventListener('scroll', handleScroll)
   }, [items.length])
 
-  if (items.length === 0) return null
-
   return (
     <div>
-      <div className="relative group">
-        <Button
-          onClick={() => scrollToIndex(Math.max(0, activeIndex - 1))}
-          className="hidden md:flex absolute left-1 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center rounded-full bg-background/80 border border-border shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
-        >
-          <ChevronLeft className="w-5 h-5" />
-        </Button>
-        <Button
-          onClick={() => scrollToIndex(Math.min(items.length - 1, activeIndex + 1))}
-          className="hidden md:flex absolute right-1 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center rounded-full bg-background/80 border border-border shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
-        >
-          <ChevronRight className="w-5 h-5" />
-        </Button>
-
-        <div
-          ref={scrollRef}
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-          onTouchStart={() => setIsPaused(true)}
-          onTouchEnd={() => setIsPaused(false)}
-          className="flex gap-4 overflow-x-auto pb-4 snap-x snap-proximity scrollbar-hide touch-pan-y"
-        >
-          {items.map((item, i) => (
-            <motion.div
-              key={item.id}
-              data-card
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.4 }}
-              className="shrink-0 w-[280px] snap-start rounded-2xl overflow-hidden bg-card border border-border shadow-md hover:shadow-xl transition-shadow"
-            >
-              {/* Image */}
-              <div className="relative h-44 overflow-hidden">
-                {item.photo_url ? (
-                  <Image
-                    src={item.photo_url}
-                    alt={getLocalizedField(item, 'name', lang)}
-                    fill
-                    className="object-cover"
-                    sizes="280px"
-                  />
-                ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-primary/20 via-accent/20 to-primary/10 flex items-center justify-center">
-                    {item.type === 'cocktail' ? (
-                      <Wine className="w-12 h-12 text-primary/40" />
-                    ) : (
-                      <UtensilsCrossed className="w-12 h-12 text-primary/40" />
-                    )}
-                  </div>
-                )}
-
-                {/* Recommended badge */}
-                <div className="absolute top-3 left-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary text-white text-xs font-semibold">
-                  <Star className="w-3 h-3 fill-current" />
-                  {language === 'nl' ? 'Aanbevolen' : language === 'es' ? 'Recomendado' : language === 'de' ? 'Empfohlen' : 'Recommended'}
-                </div>
-
-                {/* Category chip */}
-                {item.category && (
-                  <div className="absolute bottom-3 left-3 px-2.5 py-1 rounded-full bg-black/50 backdrop-blur-sm text-white text-xs">
-                    {getCategoryName(item, lang)}
-                  </div>
-                )}
-              </div>
-
-              {/* Content */}
-              <div className="p-4 space-y-2">
-                <div className="flex items-start justify-between gap-2">
-                  <h3 className="font-bold text-foreground leading-tight">
-                    {getLocalizedField(item, 'name', lang)}
-                  </h3>
-                  <span className="shrink-0 font-bold text-primary">
-                    &euro;{Number(item.price).toFixed(2)}
-                  </span>
-                </div>
-
-                {getLocalizedField(item, 'description', lang) && (
-                  <p className="text-sm text-muted-foreground line-clamp-2">
-                    {getLocalizedField(item, 'description', lang)}
-                  </p>
-                )}
-
-                {item.glass_type && (
-                  <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                    <Wine className="w-3 h-3" />
-                    <span className="capitalize">{item.glass_type.replace('_', ' ')}</span>
-                  </div>
-                )}
-              </div>
-            </motion.div>
-          ))}
-        </div>
+      <div
+        ref={scrollRef}
+        className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide touch-pan-y -mx-4 px-4"
+      >
+        {items.map((item) => (
+          <FeaturedCard key={item.id} item={item} lang={lang} className="shrink-0 w-[280px] snap-start" />
+        ))}
       </div>
-
-      {/* Dots navigation */}
       {items.length > 1 && (
-        <div className="flex justify-center gap-2 mt-2">
+        <div className="flex justify-center gap-1.5 mt-3">
           {items.map((_, i) => (
-            <Button
+            <div
               key={i}
-              onClick={() => scrollToIndex(i)}
-              className={`w-2 h-2 rounded-full transition-all ${
-                i === activeIndex ? 'bg-primary w-6' : 'bg-muted-foreground/30'
+              className={`h-1 rounded-full transition-all duration-300 ${
+                i === activeIndex ? 'bg-primary w-5' : 'bg-muted-foreground/20 w-1.5'
               }`}
             />
           ))}
@@ -209,30 +92,134 @@ function CarouselRow({
   )
 }
 
+/** Featured card — glass-morphism style */
+function FeaturedCard({ item, lang, className = '' }: { item: FeaturedItem; lang: LangSuffix; className?: string }) {
+  return (
+    <motion.div
+      data-card
+      initial={{ opacity: 0, y: 20, scale: 0.95 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className={`group rounded-2xl overflow-hidden bg-card/50 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-xl transition-all duration-300 ${className}`}
+    >
+      {/* Image */}
+      <div className="relative h-48 overflow-hidden">
+        {item.photo_url ? (
+          <Image
+            src={item.photo_url}
+            alt={getLocalizedField(item, 'name', lang)}
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
+            sizes="(max-width: 640px) 280px, (max-width: 1024px) 50vw, 33vw"
+          />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-primary/10 via-accent/5 to-transparent flex items-center justify-center">
+            {item.type === 'cocktail' ? (
+              <Wine className="w-10 h-10 text-primary/30" />
+            ) : (
+              <UtensilsCrossed className="w-10 h-10 text-primary/30" />
+            )}
+          </div>
+        )}
+
+        {/* Category chip */}
+        {item.category && (
+          <div className="absolute bottom-3 left-3 px-2.5 py-1 rounded-full glass text-white text-xs font-medium">
+            {getCategoryName(item, lang)}
+          </div>
+        )}
+      </div>
+
+      {/* Content */}
+      <div className="p-5 space-y-2">
+        <div className="flex items-start justify-between gap-3">
+          <h3 className="font-semibold text-foreground text-base leading-tight">
+            {getLocalizedField(item, 'name', lang)}
+          </h3>
+          <span className="shrink-0 font-semibold text-primary text-sm">
+            &euro;{Number(item.price).toFixed(2)}
+          </span>
+        </div>
+
+        {getLocalizedField(item, 'description', lang) && (
+          <p className="text-sm text-muted-foreground line-clamp-2 leading-relaxed">
+            {getLocalizedField(item, 'description', lang)}
+          </p>
+        )}
+
+        {item.glass_type && (
+          <div className="flex items-center gap-1.5 text-xs text-muted-foreground/70 pt-1">
+            <Wine className="w-3 h-3" />
+            <span className="capitalize">{item.glass_type.replace('_', ' ')}</span>
+          </div>
+        )}
+      </div>
+    </motion.div>
+  )
+}
+
+/** Tonight events banner */
+function TonightBanner({ events, t }: { events: TonightEvent[]; t: (key: string) => string }) {
+  if (events.length === 0) return null
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="mb-8 rounded-2xl glass p-4 sm:p-5"
+    >
+      <div className="flex items-center gap-2 mb-3">
+        <Calendar className="w-4 h-4 text-primary" />
+        <span className="text-sm font-medium text-foreground">{t('tonight.heading')}</span>
+      </div>
+      <div className="flex gap-3 overflow-x-auto scrollbar-hide">
+        {events.map((event) => (
+          <div
+            key={event.id}
+            className="shrink-0 flex items-center gap-3 px-4 py-2.5 rounded-xl bg-background/50 border border-border/30"
+          >
+            {event.event_type === 'dj_night' || event.dj ? (
+              <Music className="w-4 h-4 text-primary shrink-0" />
+            ) : (
+              <Tv className="w-4 h-4 text-primary shrink-0" />
+            )}
+            <div className="min-w-0">
+              <p className="text-sm font-medium text-foreground truncate">{event.title}</p>
+              <p className="text-xs text-muted-foreground">{event.start_time} — {event.end_time}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </motion.div>
+  )
+}
+
 export default function FeaturedCarousel() {
-  const { language } = useBookingLanguage()
+  const { language, t } = useBookingLanguage()
   const [cocktails, setCocktails] = useState<FeaturedItem[]>([])
   const [food, setFood] = useState<FeaturedItem[]>([])
+  const [events, setEvents] = useState<TonightEvent[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/api/public/menu/featured')
-      .then((r) => r.json())
-      .then((data) => {
-        if (data.cocktails) setCocktails(data.cocktails)
-        if (data.food) setFood(data.food)
-      })
-      .catch(() => {})
-      .finally(() => setLoading(false))
+    Promise.all([
+      fetch('/api/public/menu/featured').then(r => r.json()),
+      fetch('/api/public/events/tonight').then(r => r.json()).catch(() => ({ events: [] })),
+    ]).then(([menuData, eventsData]) => {
+      if (menuData.cocktails) setCocktails(menuData.cocktails)
+      if (menuData.food) setFood(menuData.food)
+      if (eventsData.events) setEvents(eventsData.events)
+    }).catch(() => {}).finally(() => setLoading(false))
   }, [])
 
   if (loading) {
     return (
-      <section className="py-12 px-4">
+      <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <div className="flex gap-4 overflow-hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="shrink-0 w-[280px] h-[340px] rounded-2xl bg-muted animate-pulse" />
+              <div key={i} className="h-[340px] rounded-2xl bg-muted/50 animate-pulse" />
             ))}
           </div>
         </div>
@@ -240,45 +227,63 @@ export default function FeaturedCarousel() {
     )
   }
 
-  if (cocktails.length === 0 && food.length === 0) return null
+  const allItems = [...cocktails, ...food]
+  if (allItems.length === 0) return null
 
   const lang = language as LangSuffix
 
-  const sectionTitle = language === 'nl' ? 'Specialiteiten van het Huis' : language === 'es' ? 'Especiales de la Casa' : language === 'de' ? 'Spezialitäten des Hauses' : 'House Specials'
+  const sectionTitle = language === 'nl' ? 'Specialiteiten van het Huis'
+    : language === 'es' ? 'Especiales de la Casa'
+    : language === 'de' ? 'Spezialitäten des Hauses'
+    : 'House Specials'
 
   return (
-    <section className="py-12 px-4 overflow-hidden">
-      <div className="max-w-5xl mx-auto space-y-10">
-        <motion.h2
+    <section className="py-16 sm:py-20 px-4">
+      <div className="max-w-5xl mx-auto">
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl sm:text-4xl font-bold text-center text-foreground flex items-center justify-center gap-3"
+          className="text-center mb-10 sm:mb-12"
         >
-          <Star className="w-8 h-8 text-primary fill-primary" />
-          {sectionTitle}
-        </motion.h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-foreground tracking-tight">
+            {sectionTitle}
+          </h2>
+        </motion.div>
 
-        {/* Cocktails */}
-        {cocktails.length > 0 && (
-          <CarouselRow items={cocktails} lang={lang} language={language} />
-        )}
+        {/* Tonight's events banner */}
+        <TonightBanner events={events} t={t} />
 
-        {/* Food */}
-        {food.length > 0 && (
-          <CarouselRow items={food} lang={lang} language={language} />
-        )}
+        {/* Desktop: grid layout */}
+        <div className="hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-5">
+          {allItems.map((item) => (
+            <FeaturedCard key={item.id} item={item} lang={lang} />
+          ))}
+        </div>
+
+        {/* Mobile: carousel */}
+        <div className="sm:hidden">
+          <MobileCarousel items={allItems} lang={lang} />
+        </div>
 
         {/* CTA to full menu */}
-        <div className="text-center pt-2">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-center mt-10 sm:mt-12"
+        >
           <a
             href="/digital"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-primary/30 text-primary font-semibold text-sm hover:bg-primary/10 transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-primary/20 text-primary font-medium text-sm glow-hover transition-all hover:border-primary/40 hover:bg-primary/5"
           >
-            {language === 'nl' ? 'Bekijk de volledige kaart' : language === 'es' ? 'Ver carta completa' : language === 'de' ? 'Vollständige Karte ansehen' : 'View Full Menu'}
+            {language === 'nl' ? 'Bekijk de volledige kaart'
+              : language === 'es' ? 'Ver carta completa'
+              : language === 'de' ? 'Vollständige Karte ansehen'
+              : 'View Full Menu'}
             <span aria-hidden="true">&rarr;</span>
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

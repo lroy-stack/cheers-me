@@ -21,19 +21,22 @@ export default function ProgressBar({ currentIndex, onStepClick }: ProgressBarPr
     'review': t('wizard.confirm'),
   }
 
-  return (
-    <div className="w-full max-w-xl mx-auto px-4 py-6">
-      <div className="flex items-center justify-between relative">
-        {/* Background line */}
-        <div className="absolute top-5 left-0 right-0 h-0.5 bg-muted" />
-        {/* Active line */}
-        <motion.div
-          className="absolute top-5 left-0 h-0.5 bg-cheers-amber"
-          initial={false}
-          animate={{ width: `${(currentIndex / (STEPS.length - 1)) * 100}%` }}
-          transition={{ duration: 0.4, ease: 'easeInOut' }}
-        />
+  const progress = currentIndex / (STEPS.length - 1)
 
+  return (
+    <div className="w-full max-w-lg mx-auto px-2">
+      {/* Thin continuous line */}
+      <div className="relative h-0.5 bg-border/50 rounded-full">
+        <motion.div
+          className="absolute top-0 left-0 h-full bg-primary rounded-full"
+          initial={false}
+          animate={{ width: `${progress * 100}%` }}
+          transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+        />
+      </div>
+
+      {/* Dots on the line */}
+      <div className="relative flex items-center justify-between -mt-[5px]">
         {STEPS.map((step, i) => {
           const isCompleted = i < currentIndex
           const isCurrent = i === currentIndex
@@ -43,43 +46,45 @@ export default function ProgressBar({ currentIndex, onStepClick }: ProgressBarPr
             <button
               key={step}
               type="button"
+              data-testid={`progress-step-${i}`}
               onClick={() => isClickable && onStepClick?.(i)}
               disabled={!isClickable}
-              className={`relative z-10 flex flex-col items-center gap-1.5 bg-transparent border-0 p-0 ${
+              className={`relative flex flex-col items-center gap-2 bg-transparent border-0 p-0 ${
                 isClickable ? 'cursor-pointer' : 'cursor-default'
               }`}
             >
               <motion.div
-                className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-semibold border-2 transition-colors ${
+                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
                   isCompleted
-                    ? 'bg-cheers-amber border-cheers-amber text-white'
+                    ? 'bg-primary scale-100'
                     : isCurrent
-                      ? 'bg-card border-cheers-amber text-cheers-amber'
-                      : 'bg-card border-border text-muted-foreground'
+                      ? 'bg-primary ring-4 ring-primary/15 scale-125'
+                      : 'bg-border/80 scale-100'
                 }`}
-                whileHover={isClickable ? { scale: 1.1 } : undefined}
-                whileTap={isClickable ? { scale: 0.95 } : undefined}
+                whileHover={isClickable ? { scale: 1.5 } : undefined}
+                whileTap={isClickable ? { scale: 0.9 } : undefined}
               >
-                {isCompleted ? (
+                {isCompleted && (
                   <motion.div
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
-                    transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+                    className="w-full h-full flex items-center justify-center"
                   >
-                    <Check className="w-5 h-5" />
+                    <Check className="w-1.5 h-1.5 text-primary-foreground" />
                   </motion.div>
-                ) : (
-                  i + 1
                 )}
               </motion.div>
+
               <span
-                className={`text-xs font-medium hidden sm:block whitespace-nowrap ${
+                className={`text-[10px] sm:text-xs font-medium whitespace-nowrap transition-colors ${
                   isCurrent
-                    ? 'text-cheers-amber'
-                    : 'text-muted-foreground'
+                    ? 'text-primary'
+                    : isCompleted
+                      ? 'text-muted-foreground'
+                      : 'text-muted-foreground/50'
                 }`}
               >
-                {STEP_LABELS[step]}
+                <span className="hidden sm:inline">{STEP_LABELS[step]}</span>
               </span>
             </button>
           )

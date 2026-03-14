@@ -108,10 +108,10 @@ export default function StepReview({
   return (
     <div className="space-y-6">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-foreground">
+        <h2 className="text-2xl sm:text-3xl font-light text-foreground tracking-tight">
           {t('review.heading')}
         </h2>
-        <p className="text-muted-foreground mt-2">
+        <p className="text-sm sm:text-base text-muted-foreground mt-2 font-light">
           {t('review.subheading')}
         </p>
       </div>
@@ -135,7 +135,7 @@ export default function StepReview({
       )}
 
       {/* Summary card */}
-      <div className="max-w-md mx-auto bg-card rounded-xl border border-border overflow-hidden">
+      <div className="max-w-md mx-auto bg-card/50 backdrop-blur-sm rounded-2xl border border-border/40 overflow-hidden">
         {rows.map(({ icon: Icon, label, value, editStep }, i) => (
           <motion.div
             key={label}
@@ -218,7 +218,7 @@ export default function StepReview({
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           onClick={onBack}
-          className="px-6 py-3 rounded-xl border border-border text-muted-foreground font-medium hover:bg-muted transition-colors"
+          className="px-6 py-3 rounded-full border border-border/50 text-muted-foreground font-medium hover:bg-muted transition-colors"
         >
           {t('review.back')}
         </motion.button>
@@ -226,9 +226,10 @@ export default function StepReview({
           type="button"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
+          data-testid="confirm-booking"
           onClick={onConfirm}
           disabled={isLoading || (availability !== null && !availability.available) || (!!siteKey && !turnstileReady)}
-          className="px-8 py-3 rounded-xl bg-gradient-to-r from-cheers-amber to-cheers-coral text-white font-semibold shadow-lg hover:shadow-xl transition-shadow disabled:opacity-50 disabled:cursor-not-allowed"
+          className="px-8 py-3 rounded-full bg-primary text-white font-medium shadow-lg glow-hover transition-all disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isLoading ? t('review.checking') : t('review.confirmReservation')}
         </motion.button>

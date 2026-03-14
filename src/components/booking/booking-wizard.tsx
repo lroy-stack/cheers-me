@@ -98,18 +98,22 @@ function reducer(state: WizardState, action: WizardAction): WizardState {
   }
 }
 
-const slideVariants = {
+/** Blur + slide transitions for step changes */
+const stepVariants = {
   enter: (direction: number) => ({
-    x: direction > 0 ? 200 : -200,
+    x: direction > 0 ? 120 : -120,
     opacity: 0,
+    filter: 'blur(6px)',
   }),
   center: {
     x: 0,
     opacity: 1,
+    filter: 'blur(0px)',
   },
   exit: (direction: number) => ({
-    x: direction > 0 ? -200 : 200,
+    x: direction > 0 ? -120 : 120,
     opacity: 0,
+    filter: 'blur(6px)',
   }),
 }
 
@@ -288,7 +292,7 @@ export default function BookingWizard() {
         <Button
           type="button"
           onClick={() => dispatch({ type: 'SET_BOOKING_RESULT', result: null })}
-          className="px-6 py-2 rounded-xl bg-cheers-amber text-white font-medium"
+          className="px-6 py-2 rounded-full bg-primary text-white font-medium glow-hover"
         >
           {t('aiAssistant.tryAgain')}
         </Button>
@@ -352,24 +356,40 @@ export default function BookingWizard() {
   }
 
   return (
-    <div ref={wrapperRef} className="py-6 sm:py-8 px-4 sm:px-6 scroll-mt-4">
+    <div ref={wrapperRef} className="py-12 sm:py-16 px-4 sm:px-6 scroll-mt-4">
       <div className="max-w-2xl lg:max-w-3xl mx-auto">
+        {/* Mini-hero heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-8 sm:mb-10"
+        >
+          <h2 data-testid="wizard-heading" className="text-3xl sm:text-4xl font-light text-foreground tracking-tight">
+            {t('hero.reserveTable')}
+          </h2>
+        </motion.div>
+
+        {/* Progress bar */}
         <ProgressBar currentIndex={stepIndex} onStepClick={goTo} />
 
-        <div ref={containerRef} className="relative mt-6 sm:mt-8">
-          <AnimatePresence mode="wait" custom={direction}>
-            <motion.div
-              key={currentStep}
-              custom={direction}
-              variants={slideVariants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-            >
-              {renderStep(currentStep)}
-            </motion.div>
-          </AnimatePresence>
+        {/* Glass card container */}
+        <div className="mt-8 sm:mt-10 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/40 p-6 sm:p-8 lg:p-10 shadow-sm">
+          <div ref={containerRef} className="relative">
+            <AnimatePresence mode="wait" custom={direction}>
+              <motion.div
+                key={currentStep}
+                custom={direction}
+                variants={stepVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+              >
+                {renderStep(currentStep)}
+              </motion.div>
+            </AnimatePresence>
+          </div>
         </div>
       </div>
 

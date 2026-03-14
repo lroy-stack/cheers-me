@@ -45,23 +45,22 @@ export default function StepOccasion({ selected, onSelect, onNext }: StepOccasio
 
   const handleSelect = (type: OccasionType) => {
     onSelect(type)
-    // Auto-advance after a brief delay for visual feedback
     setTimeout(onNext, 300)
   }
 
   return (
-    <div className="space-y-5 sm:space-y-6">
+    <div className="space-y-6 sm:space-y-8">
       <div className="text-center px-2">
-        <h2 className="text-xl sm:text-2xl font-bold text-foreground">
+        <h2 className="text-2xl sm:text-3xl font-light text-foreground tracking-tight">
           {t('occasion.heading')}
         </h2>
-        <p className="text-sm sm:text-base text-muted-foreground mt-2">
+        <p className="text-sm sm:text-base text-muted-foreground mt-2 font-light">
           {t('occasion.subheading')}
         </p>
       </div>
 
       <motion.div
-        className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-5"
+        className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4"
         variants={container}
         initial="hidden"
         animate="show"
@@ -75,29 +74,32 @@ export default function StepOccasion({ selected, onSelect, onNext }: StepOccasio
               key={type}
               type="button"
               variants={item}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
+              data-testid={`occasion-card-${type}`}
               onClick={() => handleSelect(type)}
-              className={`relative p-3 sm:p-4 md:p-6 rounded-xl border-2 text-left transition-colors touch-manipulation min-h-[100px] sm:min-h-[120px] ${
+              className={`relative p-4 sm:p-5 rounded-2xl text-left transition-all touch-manipulation min-h-[110px] sm:min-h-[130px] ${
                 isSelected
-                  ? 'border-cheers-amber bg-primary/10'
-                  : 'border-border bg-card hover:border-cheers-coral'
+                  ? 'bg-primary/8 border border-primary/30 shadow-[0_0_20px_oklch(var(--primary)/0.15)]'
+                  : 'bg-card/30 border border-border/30 hover:border-border/60 hover:bg-card/50'
               }`}
             >
               {isSelected && (
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
-                  className="absolute top-2 right-2 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-cheers-amber flex items-center justify-center"
+                  className="absolute top-3 right-3 w-5 h-5 rounded-full bg-primary flex items-center justify-center"
                 >
-                  <Check className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+                  <Check className="w-3 h-3 text-white" />
                 </motion.div>
               )}
-              <Icon className={`w-6 h-6 sm:w-7 sm:h-7 mb-2 sm:mb-3 ${isSelected ? 'text-cheers-amber' : 'text-muted-foreground'}`} />
-              <h3 className="font-semibold text-foreground text-sm sm:text-base leading-tight">
+              <Icon className={`w-6 h-6 sm:w-7 sm:h-7 mb-3 transition-colors ${
+                isSelected ? 'text-primary' : 'text-muted-foreground/60'
+              }`} />
+              <h3 className="font-medium text-foreground text-sm sm:text-base leading-tight">
                 {label}
               </h3>
-              <p className="text-xs sm:text-sm text-muted-foreground mt-1 line-clamp-2">
+              <p className="text-xs sm:text-sm text-muted-foreground mt-1 line-clamp-2 font-light">
                 {description}
               </p>
             </motion.button>

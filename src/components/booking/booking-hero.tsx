@@ -1,148 +1,137 @@
 'use client'
 
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { Star, Clock, Beer, Music, MapPin, ChevronDown } from 'lucide-react'
 import { useRef } from 'react'
 import { useBookingLanguage, LanguageSelector } from './booking-language-provider'
 import Image from 'next/image'
 import { useBranding } from '@/hooks/use-branding'
-import { Button } from '@/components/ui/button'
 
 export default function BookingHero() {
   const { t } = useBookingLanguage()
   const { logoUrl } = useBranding()
   const ref = useRef<HTMLDivElement>(null)
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start start', 'end start'],
   })
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '20%'])
-  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0])
+
+  // Hero fades out, scales down, and blurs as user scrolls
+  const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0])
+  const scale = useTransform(scrollYProgress, [0, 0.7], [1, 0.95])
 
   const scrollToWizard = () => {
     document.getElementById('booking-wizard')?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
-    <div ref={ref} className="relative overflow-hidden min-h-[70vh] sm:min-h-[80vh] lg:min-h-[85vh] flex items-center justify-center">
-      {/* Background image with parallax */}
-      <motion.div className="absolute inset-0" style={{ y }}>
+    <div ref={ref} className="relative h-screen min-h-[600px] max-h-[1200px] overflow-hidden">
+      {/* Background image with Ken Burns */}
+      <div className="absolute inset-0">
         <Image
           src="/cheers.jpeg"
           alt="GrandCafe Cheers Mallorca"
           fill
-          className="object-cover"
+          className="object-cover animate-ken-burns"
           sizes="100vw"
           priority
         />
-        {/* Dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
-      </motion.div>
+        {/* Sophisticated radial gradient overlay */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.25)_0%,rgba(0,0,0,0.65)_70%,rgba(0,0,0,0.8)_100%)]" />
+      </div>
 
-      {/* Content */}
+      {/* Content — sticky with scroll transforms */}
       <motion.div
-        className="relative z-10 py-12 sm:py-16 lg:py-20 px-4 text-center max-w-3xl mx-auto"
-        style={{ opacity }}
+        className="relative z-10 h-full flex flex-col items-center justify-center px-4"
+        style={{ opacity, scale }}
       >
-        {/* Logo */}
+        {/* Language selector — top right glass pill */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="mb-4 sm:mb-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="absolute top-6 right-6 sm:top-8 sm:right-8"
+        >
+          <div className="glass rounded-full">
+            <LanguageSelector />
+          </div>
+        </motion.div>
+
+        {/* Logo — blur-in */}
+        <motion.div
+          initial={{ opacity: 0, filter: 'blur(12px)' }}
+          animate={{ opacity: 1, filter: 'blur(0px)' }}
+          transition={{ duration: 0.8 }}
+          className="mb-6 sm:mb-8"
         >
           <Image
             src={logoUrl}
             alt="GrandCafe Cheers"
-            width={70}
-            height={70}
-            className="mx-auto rounded-xl shadow-lg sm:w-20 sm:h-20"
+            width={80}
+            height={80}
+            className="mx-auto rounded-2xl shadow-2xl sm:w-[90px] sm:h-[90px]"
           />
         </motion.div>
 
-        {/* Title & tagline */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
+        {/* Title — extralight, dramatic */}
+        <motion.h1
+          initial={{ opacity: 0, filter: 'blur(10px)', y: 20 }}
+          animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
+          transition={{ duration: 0.8, delay: 0.15 }}
+          data-testid="hero-title"
+          className="text-5xl sm:text-6xl lg:text-7xl font-extralight text-white tracking-tight text-center leading-[1.05]"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 sm:mb-3 tracking-tight leading-tight">
-            {t('hero.title')}
-          </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-white/90 font-medium">
-            {t('hero.tagline')}
-          </p>
-        </motion.div>
+          {t('hero.title')}
+        </motion.h1>
 
-        {/* Location & hours */}
+        {/* Tagline */}
+        <motion.p
+          initial={{ opacity: 0, filter: 'blur(8px)', y: 15 }}
+          animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mt-3 sm:mt-4 text-lg sm:text-xl font-light text-white/65 text-center max-w-lg"
+        >
+          {t('hero.tagline')}
+        </motion.p>
+
+        {/* CTA — glass pill */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mt-3 sm:mt-4 text-white/70 text-xs sm:text-sm"
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="mt-8 sm:mt-10"
         >
-          <span className="inline-flex items-center gap-1.5">
-            <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-            <span className="hidden sm:inline">{t('hero.location')}</span>
-            <span className="sm:hidden">El Arenal, Mallorca</span>
-          </span>
-          <span className="hidden sm:inline">|</span>
-          <span className="inline-flex items-center gap-1.5">
-            <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-            {t('hero.hours')}
-          </span>
+          <button
+            data-testid="hero-reserve-button"
+            onClick={scrollToWizard}
+            className="group inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full glass-strong text-white font-medium text-base sm:text-lg glow-hover transition-all hover:bg-white/15 active:scale-[0.97] touch-manipulation"
+          >
+            {t('hero.reserveTable')}
+            <svg
+              className="w-4 h-4 text-white/60 transition-transform group-hover:translate-x-0.5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </motion.div>
 
-        {/* Language Selector */}
+        {/* Scroll indicator — thin animated line */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-3 sm:mt-4"
+          transition={{ duration: 1, delay: 1.2 }}
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
         >
-          <LanguageSelector />
-        </motion.div>
-
-        {/* Badges */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.35 }}
-          className="flex flex-wrap justify-center gap-2 sm:gap-3 mt-4 sm:mt-6 px-4"
-        >
-          <span className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/15 backdrop-blur-sm text-white text-xs sm:text-sm font-medium border border-white/20">
-            <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-yellow-400 text-warning-foreground" />
-            {t('hero.ratingBadge')}
-          </span>
-          <span className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/15 backdrop-blur-sm text-white text-xs sm:text-sm font-medium border border-white/20">
-            <Beer className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-            {t('hero.craftBeersBadge')}
-          </span>
-          <span className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/15 backdrop-blur-sm text-white text-xs sm:text-sm font-medium border border-white/20">
-            <Music className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-            {t('hero.liveDjBadge')}
-          </span>
-        </motion.div>
-
-        {/* CTA Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-6 sm:mt-8"
-        >
-          <Button
-            onClick={scrollToWizard}
-            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-primary text-white font-bold text-base sm:text-lg hover:bg-primary/90 transition-all shadow-xl hover:shadow-2xl hover:scale-105 active:scale-100 touch-manipulation"
-          >
-            {t('hero.reserveTable')}
-            <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 animate-bounce" />
-          </Button>
+          <div className="w-px h-8 bg-white/30 animate-scroll-line" />
         </motion.div>
       </motion.div>
 
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
+      {/* Bottom gradient fade into background */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-20" />
     </div>
   )
 }

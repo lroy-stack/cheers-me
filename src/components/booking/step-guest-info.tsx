@@ -73,10 +73,10 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
   return (
     <div className="space-y-6">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-foreground">
+        <h2 className="text-2xl sm:text-3xl font-light text-foreground tracking-tight">
           {t('guestInfo.heading')}
         </h2>
-        <p className="text-muted-foreground mt-2">
+        <p className="text-sm sm:text-base text-muted-foreground mt-2 font-light">
           {t('guestInfo.subheading')}
         </p>
       </div>
@@ -109,7 +109,7 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
                 if (errors.guest_name) setErrors(prev => ({ ...prev, guest_name: '' }))
               }}
               placeholder={t('guestInfo.namePlaceholder')}
-              className={`w-full pl-10 pr-4 py-3 rounded-xl border bg-card text-foreground placeholder:text-muted-foreground transition-colors ${
+              className={`w-full pl-10 pr-4 py-3 rounded-2xl border bg-card/50 text-foreground placeholder:text-muted-foreground transition-colors ${
                 errors.guest_name
                   ? 'border-destructive/30 focus:ring-red-400'
                   : 'border-border focus:ring-cheers-amber'
@@ -143,7 +143,7 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
                 if (errors.guest_phone) setErrors(prev => ({ ...prev, guest_phone: '' }))
               }}
               placeholder={t('guestInfo.phonePlaceholder')}
-              className={`w-full pl-10 pr-4 py-3 rounded-xl border bg-card text-foreground placeholder:text-muted-foreground transition-colors ${
+              className={`w-full pl-10 pr-4 py-3 rounded-2xl border bg-card/50 text-foreground placeholder:text-muted-foreground transition-colors ${
                 errors.guest_phone
                   ? 'border-destructive/30 focus:ring-red-400'
                   : 'border-border focus:ring-cheers-amber'
@@ -176,7 +176,7 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
                 if (errors.guest_email) setErrors(prev => ({ ...prev, guest_email: '' }))
               }}
               placeholder={t('guestInfo.emailPlaceholder')}
-              className={`w-full pl-10 pr-4 py-3 rounded-xl border bg-card text-foreground placeholder:text-muted-foreground transition-colors ${
+              className={`w-full pl-10 pr-4 py-3 rounded-2xl border bg-card/50 text-foreground placeholder:text-muted-foreground transition-colors ${
                 errors.guest_email
                   ? 'border-destructive/30 focus:ring-red-400'
                   : 'border-border focus:ring-cheers-amber'
@@ -201,7 +201,7 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
               placeholder={t('guestInfo.requestsPlaceholder')}
               rows={3}
               maxLength={1000}
-              className="w-full pl-10 pr-4 py-3 rounded-xl border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-cheers-amber resize-none"
+              className="w-full pl-10 pr-4 py-3 rounded-2xl border border-border/50 bg-card/50 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-cheers-amber resize-none"
             />
           </div>
         </motion.div>
@@ -268,17 +268,19 @@ export default function StepGuestInfo({ formData, onUpdate, onNext, onBack }: St
           type="button"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
+          data-testid="wizard-back"
           onClick={onBack}
-          className="px-6 py-3 rounded-xl border border-border text-muted-foreground font-medium hover:bg-muted transition-colors"
+          className="px-6 py-3 rounded-full border border-border/50 text-muted-foreground font-medium hover:bg-muted transition-colors"
         >
           {t('guestInfo.back')}
         </motion.button>
         <motion.button
           type="button"
+          data-testid="wizard-next"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           onClick={handleNext}
-          className="px-8 py-3 rounded-xl bg-cheers-amber text-white font-semibold shadow-lg hover:shadow-xl transition-shadow"
+          className="px-8 py-3 rounded-full bg-primary text-white font-medium shadow-lg glow-hover transition-all"
         >
           {t('guestInfo.continue')}
         </motion.button>

@@ -49,10 +49,10 @@ export default function StepDateTime({ date, time, onDateChange, onTimeChange, o
   return (
     <div className="space-y-6">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-foreground">
+        <h2 className="text-2xl sm:text-3xl font-light text-foreground tracking-tight">
           {t('dateTime.heading')}
         </h2>
-        <p className="text-muted-foreground mt-2">
+        <p className="text-sm sm:text-base text-muted-foreground mt-2 font-light">
           {t('dateTime.subheading')}
         </p>
       </div>
@@ -63,7 +63,7 @@ export default function StepDateTime({ date, time, onDateChange, onTimeChange, o
         transition={{ duration: 0.3 }}
         className="flex flex-col items-center"
       >
-        <div className="bg-card rounded-xl border border-border p-5 sm:p-6 inline-block">
+        <div className="bg-card/50 rounded-2xl border border-border/40 p-5 sm:p-6 inline-block">
           <Calendar
             mode="single"
             selected={selectedDate}

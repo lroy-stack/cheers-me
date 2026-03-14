@@ -75,6 +75,7 @@ export default function TimeSlotPicker({ selectedTime, onSelectTime }: TimeSlotP
                   <motion.button
                     key={time}
                     type="button"
+                    data-testid={`time-slot-${time}`}
                     whileHover={{ scale: 1.06 }}
                     whileTap={{ scale: 0.94 }}
                     onClick={() => onSelectTime(time)}
