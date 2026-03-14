@@ -71,21 +71,25 @@ export function SchedulePrintView({
           @page { size: A4 landscape; margin: 12mm; }
           body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
           .no-print { display: none !important; }
-          .print-view { display: block !important; }
+          .print-view { display: block !important; color: #111 !important; background: #fff !important; }
+          .print-view * { color: #111 !important; }
+          .print-view th { color: #fff !important; }
+          .print-dept-header td { color: #fff !important; }
+          .print-totals-row td { color: #111 !important; }
         }
-        .print-cell-M { background-color: ${SHIFT_TYPE_CONFIG.M.printBg} !important; }
-        .print-cell-T { background-color: ${SHIFT_TYPE_CONFIG.T.printBg} !important; }
-        .print-cell-N { background-color: ${SHIFT_TYPE_CONFIG.N.printBg} !important; }
-        .print-cell-P { background-color: ${SHIFT_TYPE_CONFIG.P.printBg} !important; }
-        .print-cell-D { background-color: ${SHIFT_TYPE_CONFIG.D.printBg} !important; }
+        .print-cell-M { background-color: ${SHIFT_TYPE_CONFIG.M.printBg} !important; color: #92400e !important; }
+        .print-cell-T { background-color: ${SHIFT_TYPE_CONFIG.T.printBg} !important; color: #9a3412 !important; }
+        .print-cell-N { background-color: ${SHIFT_TYPE_CONFIG.N.printBg} !important; color: #1e40af !important; }
+        .print-cell-P { background-color: ${SHIFT_TYPE_CONFIG.P.printBg} !important; color: #166534 !important; }
+        .print-cell-D { background-color: ${SHIFT_TYPE_CONFIG.D.printBg} !important; color: #6b7280 !important; }
       `}</style>
 
       {/* Header */}
       <div style={{ textAlign: 'center', marginBottom: '12px' }}>
-        <h1 style={{ fontSize: '16px', fontWeight: 'bold', margin: 0 }}>
+        <h1 style={{ fontSize: '16px', fontWeight: 'bold', margin: 0, color: '#1a237e' }}>
           {t('schedule.printWeeklyTitle')}
         </h1>
-        <p style={{ fontSize: '12px', margin: '4px 0' }}>
+        <p style={{ fontSize: '12px', margin: '4px 0', color: '#333' }}>
           {format(weekStart, 'dd MMM')} - {format(parseISO(weekDates[6]), 'dd MMM yyyy')}
         </p>
       </div>
@@ -94,15 +98,15 @@ export function SchedulePrintView({
       <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '10px' }}>
         <thead>
           <tr>
-            <th style={{ border: '1px solid #ccc', padding: '4px 6px', textAlign: 'left', minWidth: '120px' }}>
+            <th style={{ border: '1px solid #999', padding: '4px 6px', textAlign: 'left', minWidth: '120px', backgroundColor: '#1a237e', color: '#fff' }}>
               {t('schedule.printEmployee')}
             </th>
             {weekDates.map((date, i) => (
-              <th key={date} style={{ border: '1px solid #ccc', padding: '4px', textAlign: 'center', minWidth: '60px' }}>
+              <th key={date} style={{ border: '1px solid #999', padding: '4px', textAlign: 'center', minWidth: '60px', backgroundColor: '#1a237e', color: '#fff' }}>
                 {dayLabels[i]}<br />{format(parseISO(date), 'd')}
               </th>
             ))}
-            <th style={{ border: '1px solid #ccc', padding: '4px', textAlign: 'right' }}>{t('schedule.printTotal')}</th>
+            <th style={{ border: '1px solid #999', padding: '4px', textAlign: 'right', backgroundColor: '#1a237e', color: '#fff' }}>{t('schedule.printTotal')}</th>
           </tr>
         </thead>
         <tbody>
@@ -111,17 +115,17 @@ export function SchedulePrintView({
           ))}
         </tbody>
         <tfoot>
-          <tr style={{ fontWeight: 'bold', backgroundColor: '#e5e7eb' }}>
-            <td style={{ border: '1px solid #ccc', padding: '4px 6px' }}>{t('schedule.printTotals')}</td>
+          <tr className="print-totals-row" style={{ fontWeight: 'bold', backgroundColor: '#e5e7eb' }}>
+            <td style={{ border: '1px solid #999', padding: '4px 6px', color: '#111' }}>{t('schedule.printTotals')}</td>
             {weekDates.map((date) => {
               const totals = dailyTotals[date] || { hours: 0 }
               return (
-                <td key={date} style={{ border: '1px solid #ccc', padding: '4px', textAlign: 'center' }}>
+                <td key={date} style={{ border: '1px solid #999', padding: '4px', textAlign: 'center', color: '#111' }}>
                   {totals.hours.toFixed(1)}h
                 </td>
               )
             })}
-            <td style={{ border: '1px solid #ccc', padding: '4px', textAlign: 'right' }}>
+            <td style={{ border: '1px solid #999', padding: '4px', textAlign: 'right', color: '#111', fontWeight: 'bold' }}>
               {grandTotal.hours.toFixed(1)}h
             </td>
           </tr>
@@ -129,7 +133,7 @@ export function SchedulePrintView({
       </table>
 
       {/* Legend */}
-      <div style={{ marginTop: '10px', display: 'flex', gap: '16px', fontSize: '9px' }}>
+      <div style={{ marginTop: '10px', display: 'flex', gap: '16px', fontSize: '9px', color: '#333' }}>
         {(['M', 'T', 'N', 'P', 'D'] as const).map((type) => {
           const c = SHIFT_TYPE_CONFIG[type]
           const tmpl = shiftTemplates?.[type]
@@ -153,7 +157,7 @@ export function SchedulePrintView({
 
       {/* Notes area */}
       <div style={{ marginTop: '16px', borderTop: '1px solid #ccc', paddingTop: '8px' }}>
-        <p style={{ fontSize: '9px', fontWeight: 'bold' }}>{t('schedule.printNotes')}</p>
+        <p style={{ fontSize: '9px', fontWeight: 'bold', color: '#333' }}>{t('schedule.printNotes')}</p>
         <div style={{ height: '40px' }} />
       </div>
     </div>
@@ -163,17 +167,17 @@ export function SchedulePrintView({
 function DepartmentPrintGroup({ group, weekDates }: { group: DepartmentGroup; weekDates: string[] }) {
   return (
     <>
-      <tr>
+      <tr className="print-dept-header">
         <td
           colSpan={weekDates.length + 2}
-          style={{ border: '1px solid #ccc', padding: '3px 6px', fontWeight: 'bold', backgroundColor: '#e5e7eb', fontSize: '9px', textTransform: 'uppercase' }}
+          style={{ border: '1px solid #999', padding: '3px 6px', fontWeight: 'bold', backgroundColor: '#455a64', color: '#fff', fontSize: '9px', textTransform: 'uppercase' }}
         >
           {group.label} ({group.employees.length})
         </td>
       </tr>
       {group.employees.map((row) => (
         <tr key={row.employee.id}>
-          <td style={{ border: '1px solid #ccc', padding: '3px 6px' }}>
+          <td style={{ border: '1px solid #ccc', padding: '3px 6px', color: '#111' }}>
             {row.employee.profile.full_name || '-'}
           </td>
           {weekDates.map((date) => {
@@ -188,13 +192,14 @@ function DepartmentPrintGroup({ group, weekDates }: { group: DepartmentGroup; we
                   padding: '3px',
                   textAlign: 'center',
                   fontWeight: 'bold',
+                  color: '#111',
                 }}
               >
                 {ct || ''}
               </td>
             )
           })}
-          <td style={{ border: '1px solid #ccc', padding: '3px', textAlign: 'right', fontWeight: 'bold' }}>
+          <td style={{ border: '1px solid #ccc', padding: '3px', textAlign: 'right', fontWeight: 'bold', color: '#111' }}>
             {row.totalHours.toFixed(1)}h
           </td>
         </tr>
