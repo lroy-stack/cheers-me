@@ -70,3 +70,6 @@ next-env.d.ts
 
 # Additional OS
 **/.DS_Store
+*.png
+!public/**/*.png
+!src/**/*.png
