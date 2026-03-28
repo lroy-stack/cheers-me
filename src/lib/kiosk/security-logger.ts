@@ -5,8 +5,6 @@
  * Events are persisted to Supabase for audit trails and monitoring.
  *
  * Event types tracked:
- * - turnstile_failed: Cloudflare challenge verification failed
- * - turnstile_fallback: Cloudflare API unavailable, fail-open applied
  * - rate_limit_exceeded: Too many failed PIN attempts
  * - invalid_pin: Incorrect PIN entered
  * - invalid_session_token: Invalid or malformed session token
@@ -22,8 +20,6 @@ import { createClient } from '@/lib/supabase/server'
  * Security event types
  */
 export type SecurityEventType =
-  | 'turnstile_failed'
-  | 'turnstile_fallback'
   | 'rate_limit_exceeded'
   | 'invalid_pin'
   | 'invalid_session_token'
@@ -43,12 +39,6 @@ export type SecurityEventMetadata = Record<string, unknown>
  *
  * @example
  * ```typescript
- * // Log Turnstile failure
- * await logSecurityEvent('turnstile_failed', {
- *   ip: '192.168.1.1',
- *   errorCodes: ['timeout-or-duplicate']
- * })
- *
  * // Log rate limit exceeded
  * await logSecurityEvent('rate_limit_exceeded', {
  *   ip: '192.168.1.1',

@@ -28,8 +28,6 @@ const envSchema = z.object({
   META_ACCESS_TOKEN: z.string().optional(),
   META_PAGE_ID: z.string().optional(),
   META_IG_USER_ID: z.string().optional(),
-  NEXT_PUBLIC_TURNSTILE_SITE_KEY: z.string().optional(),
-
   // Encryption — required for SSN encryption (uses NEXTAUTH_SECRET as fallback)
   POS_ENCRYPTION_SECRET: z.string().min(32, 'POS_ENCRYPTION_SECRET must be at least 32 characters').optional(),
 })

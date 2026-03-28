@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import { Calendar, Clock, Users, User, Phone, Mail, MessageSquare, Pencil, Loader2, CheckCircle } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import { useBookingLanguage } from './booking-language-provider'
-import { Turnstile } from '@marsidev/react-turnstile'
 import type { BookingFormData, OccasionType, AvailabilityResult } from './types'
 import { Button } from '@/components/ui/button'
 
@@ -16,7 +15,6 @@ interface StepReviewProps {
   onConfirm: () => void
   onBack: () => void
   onCheckAvailability: () => void
-  onTurnstileToken: (token: string) => void
 }
 
 export default function StepReview({
@@ -27,12 +25,9 @@ export default function StepReview({
   onConfirm,
   onBack,
   onCheckAvailability,
-  onTurnstileToken,
 }: StepReviewProps) {
   const { t } = useBookingLanguage()
   const [checked, setChecked] = useState(false)
-  const [turnstileReady, setTurnstileReady] = useState(false)
-  const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ''
 
   const OCCASION_LABELS: Record<OccasionType, string> = {
     casual: t('occasion.casual'),
@@ -196,21 +191,6 @@ export default function StepReview({
         ) : null}
       </div>
 
-      {/* Turnstile Security Widget */}
-      {siteKey && (
-        <div className="flex justify-center">
-          <Turnstile
-            siteKey={siteKey}
-            onSuccess={(token) => {
-              onTurnstileToken(token)
-              setTurnstileReady(true)
-            }}
-            onExpire={() => setTurnstileReady(false)}
-            onError={() => setTurnstileReady(false)}
-          />
-        </div>
-      )}
-
       {/* Buttons */}
       <div className="flex justify-center gap-3 pt-2">
         <motion.button
@@ -228,7 +208,7 @@ export default function StepReview({
           whileTap={{ scale: 0.98 }}
           data-testid="confirm-booking"
           onClick={onConfirm}
-          disabled={isLoading || (availability !== null && !availability.available) || (!!siteKey && !turnstileReady)}
+          disabled={isLoading || (availability !== null && !availability.available)}
           className="px-8 py-3 rounded-full bg-primary text-white font-medium shadow-lg glow-hover transition-all disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isLoading ? t('review.checking') : t('review.confirmReservation')}

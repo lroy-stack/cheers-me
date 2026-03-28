@@ -2,12 +2,10 @@
  * Kiosk PIN Verification Endpoint
  *
  * This endpoint verifies employee PINs for kiosk access with multiple security layers:
- * 1. Cloudflare Turnstile (anti-bot protection)
- * 2. Rate limiting (5 attempts per 15 minutes)
- * 3. PIN verification against database
- * 4. Session token generation (12-hour JWT)
+ * 1. Rate limiting (5 attempts per 15 minutes)
+ * 2. PIN verification against database
+ * 3. Session token generation (12-hour JWT)
  *
- * @see src/lib/turnstile/verify.ts
  * @see src/lib/kiosk/rate-limiter.ts
  * @see src/lib/kiosk/session.ts
  * @see src/lib/kiosk/security-logger.ts
@@ -18,15 +16,25 @@ import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import bcrypt from 'bcryptjs'
 import type { KioskEmployeeStatus } from '@/types'
-import { verifyTurnstileToken, getRateLimitKey } from '@/lib/turnstile/verify'
 import { checkRateLimit, recordAttempt, resetRateLimit } from '@/lib/kiosk/rate-limiter'
 import { generateKioskSessionToken } from '@/lib/kiosk/session'
 import { logSecurityEvent } from '@/lib/kiosk/security-logger'
 
 const pinSchema = z.object({
   pin: z.string().regex(/^\d{4}$/, 'PIN must be exactly 4 digits'),
-  turnstile_token: z.string().min(1, 'Turnstile token required'),
 })
+
+function getRateLimitKey(request: Request): string {
+  const forwardedFor = request.headers.get('x-forwarded-for')
+  if (forwardedFor) {
+    return forwardedFor.split(',')[0]?.trim() || 'unknown'
+  }
+  const realIp = request.headers.get('x-real-ip')
+  if (realIp) {
+    return realIp
+  }
+  return 'unknown'
+}
 
 export async function POST(request: NextRequest) {
   const ip = getRateLimitKey(request)
@@ -47,48 +55,10 @@ export async function POST(request: NextRequest) {
     )
   }
 
-  const { pin, turnstile_token } = validation.data
+  const { pin } = validation.data
 
   // ============================================================================
-  // STEP 1: Verify Turnstile token (anti-bot protection)
-  // ============================================================================
-  const turnstileResult = await verifyTurnstileToken(turnstile_token, ip)
-
-  if (!turnstileResult.success) {
-    // TURNSTILE_FAIL_MODE controls behavior on failure:
-    //   'block' = reject all failures (fail-closed, maximum security)
-    //   'log'   = allow on timeout/internal-error but log (fail-open, default)
-    const failMode = (process.env.TURNSTILE_FAIL_MODE || 'log').toLowerCase()
-
-    const isTransientError = turnstileResult.error === 'timeout' || turnstileResult.error === 'internal-error'
-
-    if (failMode === 'block' || !isTransientError) {
-      // Fail-closed: Reject on any failure (or always when fail_mode=block)
-      console.warn('[Kiosk] Turnstile verification failed (fail_mode=' + failMode + '):', turnstileResult.error)
-      await logSecurityEvent('turnstile_failed', {
-        ip,
-        error: turnstileResult.error,
-        failMode,
-        errorCodes: (turnstileResult as { errorCodes?: string[] }).errorCodes,
-      })
-      return NextResponse.json(
-        { error: 'Security verification failed', code: 'TURNSTILE_FAILED' },
-        { status: 403 }
-      )
-    }
-
-    // Fail-open: Allow on timeout/internal-error but log (failMode === 'log')
-    console.warn('[Kiosk] Turnstile verification unavailable, applying fail-open:', turnstileResult.error)
-    await logSecurityEvent('turnstile_fallback', {
-      ip,
-      error: turnstileResult.error,
-      failMode,
-      message: (turnstileResult as { message?: string }).message,
-    })
-  }
-
-  // ============================================================================
-  // STEP 2: Check rate limit (5 attempts per 15 minutes)
+  // STEP 1: Check rate limit (5 attempts per 15 minutes)
   // ============================================================================
   const rateCheck = await checkRateLimit(ip)
   if (rateCheck.blocked) {
@@ -103,7 +73,7 @@ export async function POST(request: NextRequest) {
   }
 
   // ============================================================================
-  // STEP 3: Verify PIN against database
+  // STEP 2: Verify PIN against database
   // ============================================================================
   const supabase = createAdminClient()
 
@@ -144,7 +114,7 @@ export async function POST(request: NextRequest) {
   }
 
   // ============================================================================
-  // STEP 4: Success - Reset rate limit and generate session token
+  // STEP 3: Success - Reset rate limit and generate session token
   // ============================================================================
   await resetRateLimit(ip)
   await recordAttempt(ip, true)
@@ -171,7 +141,7 @@ export async function POST(request: NextRequest) {
   }
 
   // ============================================================================
-  // STEP 5: Fetch employee status
+  // STEP 4: Fetch employee status
   // ============================================================================
 
   // Check for active clock record
